@@ -350,5 +350,13 @@
  "https://www.reddit.com/r/MuseAssistant/comments/1xwykna/muse_gadget_firmware_w_voice_calling": {
   "zh_title": "Muse Gadget 固件新增语音通话功能",
   "zh_oneliner": "刷入官方 Muse Gadget 固件的 ESP32 设备已支持实时语音通话，更新固件即可用上。"
+ },
+ "https://news.google.com/rss/articles/CBMif0FVX3lxTE5BZmF0emlFWnc1ZzdKcnNtVmhLMTMwSDRvaHhocTJWb1E2a25TS2hqeXpSOUtpYjF4X0w4MlNMVkx4U2hIaWl1Um5uM3EyNXVHWnNrelVuVjJqejZfdUZMRVRPdW84enJWX2RTVWJwdDNETXV1X0tKTWJIWDJhMkk?oc=5": {
+  "zh_title": "Meta Muse AI 助手现在能替你打电话了",
+  "zh_oneliner": "Muse 能替用户给商家打电话了，日常联络又多了一个可以交给 AI 助手处理的环节。"
+ },
+ "https://www.reddit.com/r/MuseAssistant/comments/1xwzkhd/muse_invite_needed": {
+  "zh_title": "求一个 Muse 邀请码",
+  "zh_oneliner": "一位网友在 r/MuseAssistant 发帖求 Muse 邀请名额，想尽快体验这款个人 AI 助手。"
  }
 }
