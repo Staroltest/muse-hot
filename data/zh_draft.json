@@ -294,5 +294,9 @@
  "https://www.reddit.com/r/MuseAgent/comments/1xws55k/my_agent_sounds_overexplains_like_ned_flanders": {
   "zh_title": "我的智能体像 Ned Flanders 一样啰嗦、过度解释",
   "zh_oneliner": "一位用户吐槽自己的 Muse 智能体事事过度解释、语气居高临下，像极了《辛普森一家》里的 Ned Flanders，帖子引发了关于智能体啰嗦语气的讨论。"
+ },
+ "https://www.reddit.com/r/MuseAgent/comments/1xwsr4k/another_reason_i_wanted_to_switch_to_grok_bot_is": {
+  "zh_title": "想换用 grok 机器人的另一个原因：Muse 绑定了我的 Facebook 账号，账号一旦出问题就全没了，而 grok 有自己的独立账号",
+  "zh_oneliner": "一位用户坦言想转投 grok，只因 Muse 与 Facebook 账号深度绑定，担心账号出事就失去智能体，而 grok 的独立账号让他更安心。"
  }
 }
