@@ -362,5 +362,9 @@
  "https://www.reddit.com/r/MuseAgent/comments/1xwzy85/muse_tools_updates": {
   "zh_title": "Muse 工具更新动态",
   "zh_oneliner": "一位社区用户分享了自己用 Muse 打造的三件工具的最新进展，包括桌面小组件套装、影视搜索连接器和更稳定的命令行工具。"
+ },
+ "https://www.reddit.com/r/MuseAgent/comments/1xx17ln/voice_calling_on_apple_watch_apple_music": {
+  "zh_title": "最新更新带来 Apple Watch 语音通话与 Apple Music 连接器",
+  "zh_oneliner": "Muse 的最新更新把语音通话带到了 Apple Watch 上，还新增了 Apple Music 连接器。"
  }
 }
