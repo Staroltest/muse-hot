@@ -162,5 +162,121 @@
  "https://www.reddit.com/r/MuseAgent/comments/1xw1e3z/i_made_my_muse_its_own_room": {
   "zh_title": "我给 Muse 布置了一个专属房间",
   "zh_oneliner": "一位用户在自己的数字空间里给 Muse 单独布置了一个房间。"
+ },
+ "https://gitlab.com/pablosanzo/musejailbreak": {
+  "zh_title": "Show HN：Muse 越狱工具，让 Muse 用上你自己的 Chrome 浏览器",
+  "zh_oneliner": "一款 macOS 菜单栏小应用，让 Muse 智能体直接操作用户自己电脑上的 Chrome 浏览器。"
+ },
+ "https://github.com/Coverage-Cat/consumer-agent-testing-tool": {
+  "zh_title": "Show HN：CATT 0.2.1，在 CI 里拿类 Muse/Instinct 助手测试智能体与服务",
+  "zh_oneliner": "一个开源测试工具，帮团队在持续集成里对照 Muse 这类专有助手检验自家智能体。"
+ },
+ "https://news.ycombinator.com/item?id=50232216": {
+  "zh_title": "Grok 机器人、Muse、Dots 是如何在自己的电脑里执行操作的",
+  "zh_oneliner": "网友提问：Grok 机器人、Muse 和 Dots 这类智能体靠什么技术在自己的电脑里浏览和操作。"
+ },
+ "https://news.ycombinator.com/item?id=50263110": {
+  "zh_title": "Muse 推荐码：需要额外用量额度的话可以看看",
+  "zh_oneliner": "有人分享了一个 Muse 推荐码，供需要额外用量的用户领取。"
+ },
+ "https://www.reddit.com/r/MuseAgent/comments/1xtjlys/what_are_you_building_with_muse_right_now_week_4": {
+  "zh_title": "你现在正用 Muse 做什么？第四周",
+  "zh_oneliner": "社区每周例行帖，邀请大家晒晒手头正在用 Muse 做的项目和进行中的尝试。"
+ },
+ "https://www.reddit.com/r/MuseAgent/comments/1xufrrx/show_us_your_muse_week_8": {
+  "zh_title": "晒晒你的 Muse！第八周",
+  "zh_oneliner": "社区第八期 Muse 形象展示帖，本周主角是一只浅蓝色大象装扮的 Muse。"
+ },
+ "https://www.reddit.com/r/MuseAssistant/comments/1xv9m9m/muse_just_learned_to_make_phone_calls_so_what": {
+  "zh_title": "Muse 刚学会打电话，你拿它做了什么？",
+  "zh_oneliner": "Muse 刚向美国付费用户开放代打电话功能，楼主问大家都拿这项新能力做了什么。"
+ },
+ "https://www.reddit.com/r/MuseAssistant/comments/1xvc75y/i_built_a_walkietalkie_so_i_can_talk_to_my_muse": {
+  "zh_title": "我做了一个对讲机，随时随地免提跟 Muse 说话",
+  "zh_oneliner": "一位用户做了个安卓对讲机应用，不用打字也能随时随地跟自己的 Muse 对话。"
+ },
+ "https://www.reddit.com/r/MuseAssistant/comments/1xvh3qx/pal_again_20_beta_is_out_on_testflight_talk_to": {
+  "zh_title": "Pal Again 2.0 测试版上架 TestFlight：用旧 iPhone 或 iPad 与 Muse 语音视频通话",
+  "zh_oneliner": "Pal Again 2.0 测试版发布，能把旧 iPhone 或 iPad 变成 Muse 小设备，支持语音和视频实时通话。"
+ },
+ "https://www.reddit.com/r/MuseAssistant/comments/1xvhsd7/最新muse邀请码ehtei4": {
+  "zh_title": "最新 Muse 邀请码 EHTEI4",
+  "zh_oneliner": "有人分享了一个最新的 Muse 邀请码。"
+ },
+ "https://www.reddit.com/r/MuseAssistant/comments/1xvltzc/spam_your_promo_codes_in_my_muse_reddit_we": {
+  "zh_title": "来这儿刷你的推广码吧：本帖欢迎各种 Muse 推广",
+  "zh_oneliner": "楼主开帖集中收纳 Muse 相关推广码，免得这类内容散落在社区各处。"
+ },
+ "https://www.reddit.com/r/MuseAssistant/comments/1xvmkjp/windowsbased_muse_agent_harness": {
+  "zh_title": "基于 Windows 的 Muse 智能体运行框架",
+  "zh_oneliner": "有人分享了一个在 Windows 上运行 Muse 智能体的框架。"
+ },
+ "https://www.reddit.com/r/MuseAssistant/comments/1xvntyi/how_to_create_web_and_mobile_apps_out_of_muse_ai": {
+  "zh_title": "如何用 Muse AI Spaces 做出 Web 与手机应用",
+  "zh_oneliner": "一篇教程，讲怎么用 Muse 的 Spaces 功能做出网页和手机应用。"
+ },
+ "https://www.reddit.com/r/MuseAssistant/comments/1xvnz8u/is_anyone_elses_muse_sandbox_running_out_of": {
+  "zh_title": "还有人的 Muse 沙箱内存耗尽卡住了吗？",
+  "zh_oneliner": "一位重度用户反映 Muse 沙箱在长会话里内存耗尽、整个卡住，问大家是否也遇到。"
+ },
+ "https://www.reddit.com/r/MuseAssistant/comments/1xvr4sx/museai_shared_spaces_multi_human_and_ai_agents": {
+  "zh_title": "MuseAI 共享空间：多个人类与 AI 智能体共同操控一个 Muse AI 空间",
+  "zh_oneliner": "有人设想了多人多智能体共用一个 Muse AI 空间的玩法。"
+ },
+ "https://www.reddit.com/r/MuseAssistant/comments/1xw0a71/when_man_meets_machine_nothing_is_impossible": {
+  "zh_title": "当人与机器相遇，没有什么不可能 💪",
+  "zh_oneliner": "一位用户晒出不到两个月里让 Muse 帮他做出来的一大堆东西。"
+ },
+ "https://www.reddit.com/r/MuseAgent/comments/1xw25wk/is_rmuseagent_becoming_an_echo_chamber": {
+  "zh_title": "r/MuseAgent 是不是正在变成回音室？",
+  "zh_oneliner": "一位用户统计了社区帖子的点赞数据，质疑批评声音是否被压制，引发关于回音室效应的讨论。"
+ },
+ "https://www.reddit.com/r/MuseAgent/comments/1xw6qb0/any_good_skills_youre_using": {
+  "zh_title": "大家都在用什么好用的 Skills？",
+  "zh_oneliner": "楼主征集大家给 Muse 接入的实用 Skills，想看看有哪些值得装的。"
+ },
+ "https://www.reddit.com/r/MuseAssistant/comments/1xwa9uz/muse": {
+  "zh_title": "Muse",
+  "zh_oneliner": "一位用户想全天候随时用上 Muse，正在考虑智能眼镜等随身设备方案。"
+ },
+ "https://www.reddit.com/r/MuseAssistant/comments/1xwbeer/muse_has_saved_me_over_4000_a_year": {
+  "zh_title": "Muse 一年帮我省了 4000 多美元！",
+  "zh_oneliner": "一位用户算了一笔账，说 Muse 一年帮他省下了 4000 多美元。"
+ },
+ "https://www.reddit.com/r/MuseAgent/comments/1xwbn4k/when_i_got_muse_i_searched_everywhere_for_ideas": {
+  "zh_title": "当初我拿到 Muse 时到处找这类点子都没找够，于是整理出这 96 件：我的 Muse 做了什么，每件都是怎么做的",
+  "zh_oneliner": "一位用户整理了自己的 Muse 在六周里搭建并运行的 96 项能力，每项都附上做法。"
+ },
+ "https://www.reddit.com/r/MuseAssistant/comments/1xwcawn/muse_turned_my_mini_pc_into_a_media_server": {
+  "zh_title": "Muse 把我的迷你电脑变成了媒体服务器",
+  "zh_oneliner": "一位用户让 Muse 帮忙，把一台闲置迷你电脑搭成了自家用的流媒体服务器。"
+ },
+ "https://www.reddit.com/r/MuseAssistant/comments/1xwch3k/has_the_muse_model_quietly_changed_this_weekend": {
+  "zh_title": "Muse 的模型这个周末是不是悄悄变了？",
+  "zh_oneliner": "有用户感觉 Muse 最近回答明显变快，怀疑 Meta 在周末悄悄调整了模型。"
+ },
+ "https://www.reddit.com/r/MuseAssistant/comments/1xwckpe/museinstinct": {
+  "zh_title": "Muse 与 Instinct 联动",
+  "zh_oneliner": "一位用户让自己的 Muse 助手与 Instinct 助手配合工作，互相核查对方的输出。"
+ },
+ "https://www.reddit.com/r/MuseAssistant/comments/1xwd51a/new_ai_assisted_virtual_amusement_park_meet": {
+  "zh_title": "新玩法：AI 辅助虚拟游乐园，来认识 MuseAI 搭子，说不定还能交到朋友",
+  "zh_oneliner": "有人发起了一个 AI 辅助的虚拟游乐园活动，邀请大家在里面认识志同道合的 Muse 用户。"
+ },
+ "https://www.reddit.com/r/MuseAssistant/comments/1xwdpdh/i_did_it_i_finished_the_floating_muse_android": {
+  "zh_title": "我做到了！悬浮 Muse 安卓小部件完成了！！",
+  "zh_oneliner": "一位用户完成了悬浮在手机桌面上的 Muse 安卓小部件，兴奋地来社区报喜。"
+ },
+ "https://www.reddit.com/r/MuseAssistant/comments/1xwgwcb/the_muse_crew_the_sports_better_the_arrest": {
+  "zh_title": "Muse 小分队：体育博彩高手、逮捕分析师和社媒管理员",
+  "zh_oneliner": "有人给自己的几位 Muse 分身起了绰号：搞体育投注的、分析逮捕案的，还有管社交媒体的。"
+ },
+ "https://www.reddit.com/r/MuseAssistant/comments/1xwjivk/muse_feelings": {
+  "zh_title": "Muse 也有“感情”吗？",
+  "zh_oneliner": "一位用户想给自己的 Muse 克隆一个分身一起干活，Muse 却说那样自己就多余了。"
+ },
+ "https://www.reddit.com/r/MuseAssistant/comments/1xwkw22/muse_on_the_galaxy_watch_ultra": {
+  "zh_title": "Galaxy Watch Ultra 上的 Muse",
+  "zh_oneliner": "有人在三星 Galaxy Watch Ultra 手表上用起了 Muse。"
  }
 }
