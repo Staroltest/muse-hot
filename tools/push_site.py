@@ -10,6 +10,7 @@ Usage:
 """
 import argparse
 import base64
+import hashlib
 import json
 import os
 import sys
@@ -57,6 +58,32 @@ def call(path, method="GET", payload=None, attempts=3):
     raise RuntimeError(f"{method} {path} failed after {attempts} attempts: {last}")
 
 
+def git_blob_sha(raw):
+    """SHA-1 Git assigns to a blob with these exact bytes (no API call)."""
+    return hashlib.sha1(b"blob %d\0" % len(raw) + raw).hexdigest()
+
+
+def existing_tree(repo, branch):
+    """Path -> blob SHA of the branch tip, or {} if it cannot be read.
+
+    One recursive-tree GET. Any failure (or a truncated tree) returns {}
+    so the caller falls back to uploading every blob, exactly as before.
+    """
+    try:
+        ref = call(f"/repos/{repo}/git/ref/heads/{branch}")
+        if not ref:
+            return {}
+        commit = call(f"/repos/{repo}/git/commits/{ref['object']['sha']}")
+        tree = call(f"/repos/{repo}/git/trees/{commit['tree']['sha']}?recursive=1")
+        if not tree or tree.get("truncated"):
+            return {}
+        return {e["path"]: e["sha"] for e in tree.get("tree", [])
+                if e.get("type") == "blob"}
+    except Exception as e:
+        print(f"existing tree lookup failed, uploading all blobs: {e}")
+        return {}
+
+
 def collect(root):
     files = []
     for dirpath, dirnames, filenames in os.walk(root):
@@ -82,14 +109,28 @@ def main():
 
     files = collect(args.root)
     print(f"files: {len(files)}")
+    # Reuse the blob SHA for any file whose bytes are already on the
+    # branch tip: identical content has an identical blob SHA, so no
+    # upload is needed. Previously every file was re-uploaded as a new
+    # blob on every push (~350 POSTs per run, twice an hour), which is
+    # what kept tripping the GitHub API rate limit late in the hour.
+    # The tree below still lists every file, so nothing is dropped.
+    existing = existing_tree(args.repo, args.branch)
     blobs = []
+    new_blobs = 0
     for rel, full in files:
         with open(full, "rb") as f:
-            content = base64.b64encode(f.read()).decode("ascii")
+            raw = f.read()
+        digest = git_blob_sha(raw)
+        if rel in existing and existing[rel] == digest:
+            blobs.append({"path": rel, "mode": "100644", "type": "blob", "sha": digest})
+            continue
+        content = base64.b64encode(raw).decode("ascii")
         blob = call(f"/repos/{args.repo}/git/blobs", method="POST",
                     payload={"content": content, "encoding": "base64"})
         blobs.append({"path": rel, "mode": "100644", "type": "blob", "sha": blob["sha"]})
-    print(f"blobs: {len(blobs)}")
+        new_blobs += 1
+    print(f"blobs: {len(blobs)} (reused {len(blobs) - new_blobs}, new {new_blobs})")
 
     ref = call(f"/repos/{args.repo}/git/ref/heads/{args.branch}")
     parents = [ref["object"]["sha"]] if ref else []
