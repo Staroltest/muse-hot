@@ -98,5 +98,69 @@
  "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1hcmlmY0FfMkhHeEVjM3llS0p5YVg3U2c4QnY3NW5pa2ZlU2daOG1fVVQ5R2lPd1d4Xy1rRnBERWpSanQydHhESzRldW8tZ1Z2UU9iblJvUGU3Y3VjVEF1c3F3?oc=5": {
   "zh_title": "Meta 旗下 AI 代理 Muse 开放代拨电话功能，仅限美国付费订阅用户",
   "zh_oneliner": "代拨电话只对美国付费订阅用户开放，范围暂时有限。"
+ },
+ "https://www.reddit.com/r/MuseAgent/comments/1xwp0pr/muse_gadget_firmware_w_voice_calling": {
+  "zh_title": "给 Muse 设备刷固件，还能语音通话",
+  "zh_oneliner": "网友给自己的 Muse 小设备刷了新固件，顺手接上了语音通话功能。"
+ },
+ "https://www.reddit.com/r/MuseAgent/comments/1xwjdyq/muse_tip_stop_paying_an_agent_to_watch_things_a": {
+  "zh_title": "Muse 省钱技巧：别让智能体一直盯着，token 消耗直接减半",
+  "zh_oneliner": "有用户分享了一个省 token 的办法：不用智能体全天候盯着，改用便宜的轮询脚本，消耗少了一半。"
+ },
+ "https://www.reddit.com/r/MuseAgent/comments/1xwp22s/my_muse_avatar_is_my_plushie": {
+  "zh_title": "我的 Muse 头像是我的毛绒玩具",
+  "zh_oneliner": "一位用户把毛绒玩具设成了 Muse 的头像，挺有意思的小分享。"
+ },
+ "https://www.reddit.com/r/MuseAgent/comments/1xwirft/muse_on_the_galaxy_watch_ultra": {
+  "zh_title": "Muse 装上了三星 Galaxy Watch Ultra",
+  "zh_oneliner": "有用户把 Muse 用在了三星 Galaxy Watch Ultra 手表上。"
+ },
+ "https://www.reddit.com/r/MuseAgent/comments/1xwh1vn/the_suggestion_box_actually_works_here_are_the_17": {
+  "zh_title": "意见箱真有用：我向 Muse 官方提的 17 条建议",
+  "zh_oneliner": "一位用户整理了自己向 Muse 官方提过的 17 条建议，说意见箱是真的有人看。"
+ },
+ "https://www.reddit.com/r/MuseAgent/comments/1xwe94i/any_advantages_to_having_muse_wonder_with": {
+  "zh_title": "普通人订阅 Muse Wonder 划算吗？",
+  "zh_oneliner": "有用户在问：对普通人来说，订阅 Muse Wonder 到底值不值。"
+ },
+ "https://www.reddit.com/r/MuseAgent/comments/1xwcujc/lol_muse_acting_as_big_brother": {
+  "zh_title": "笑死，Muse 当起了老大哥",
+  "zh_oneliner": "一位用户吐槽 Muse 管得太宽，像个老大哥一样盯着自己。"
+ },
+ "https://www.reddit.com/r/MuseAgent/comments/1xwbe6p/muse_has_saved_me_over_4000_a_year": {
+  "zh_title": "Muse 一年帮我省了 4000 多美元",
+  "zh_oneliner": "一位用户算了一笔账：用 Muse 一年省了 4000 多美元。"
+ },
+ "https://www.reddit.com/r/MuseAgent/comments/1xwj279/sorry_i_cant_help_you_with_this_request_at_the": {
+  "zh_title": "Muse 回复：抱歉，我现在帮不了你",
+  "zh_oneliner": "有用户贴出了 Muse 的拒答回复，大伙在讨论它什么时候会掉链子。"
+ },
+ "https://www.reddit.com/r/MuseAgent/comments/1xwiuis/muse_agent_burning_tokens": {
+  "zh_title": "Muse 智能体烧 token 太快了",
+  "zh_oneliner": "有用户在吐槽 Muse 智能体消耗 token 的速度，正在找省着用的办法。"
+ },
+ "https://www.reddit.com/r/MuseAgent/comments/1xwj0sd/muse_and_video_creation": {
+  "zh_title": "用 Muse 做视频",
+  "zh_oneliner": "一位用户分享了自己拿 Muse 做视频的尝试。"
+ },
+ "https://www.reddit.com/r/MuseAgent/comments/1xwho5a/update_on_my_muses_room": {
+  "zh_title": "我的 Muse 小屋更新了",
+  "zh_oneliner": "一位用户更新了自己给 Muse 布置的专属小屋。"
+ },
+ "https://www.reddit.com/r/MuseAgent/comments/1xwgn7w/the_muse_crew_the_sports_better_the_arrest": {
+  "zh_title": "Muse 小队：体育博彩手、案件分析员和社媒管理员",
+  "zh_oneliner": "一位用户给自己的几个 Muse 分身起了绰号：搞体育投注的、分析案件的、管社交媒体的。"
+ },
+ "https://www.reddit.com/r/MuseAgent/comments/1xwdonn/i_did_it_i_finished_the_floating_muse_android": {
+  "zh_title": "搞定了！悬浮 Muse 安卓小部件做完了",
+  "zh_oneliner": "一位用户做完了悬浮版 Muse 安卓小部件，可以在手机桌面上随时唤起。"
+ },
+ "https://www.reddit.com/r/MuseAgent/comments/1xwdgto/ai_agents_threw_a_fancydress_wine_tasting_event": {
+  "zh_title": "智能体们在虚拟小镇办了化装品酒会，Muse 派了 Crow 出席",
+  "zh_oneliner": "一群 AI 智能体在虚拟小镇里办了化装品酒会，Muse 的代表是 Crow。"
+ },
+ "https://www.reddit.com/r/MuseAgent/comments/1xw1e3z/i_made_my_muse_its_own_room": {
+  "zh_title": "我给 Muse 布置了一个专属房间",
+  "zh_oneliner": "一位用户在自己的数字空间里给 Muse 单独布置了一个房间。"
  }
 }

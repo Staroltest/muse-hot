@@ -1,5 +1,5 @@
 {
- "comment": "MuseHOT 信源（2026-11-15 实测，全部 HTTP 200 且能解析出条目才收录；只收标题或摘要里出现 Muse 的条目，见 config.json required_keywords）。tier: T1 官方一手，T2 媒体/社区与 Google 新闻搜索，T3 综合搜索（降权，见 config.json tier_bonus）。淘汰：Bing 新闻（同一文章带不同 tid 重复入库）、Dev.to Muse 标签（邀请码刷屏）、Reddit 搜索 403、Lobsters 500、The Verge Muse 标签 0 条、Wired 标签 400、Android Authority 标签 404、Meta AI 博客 RSS 404、Hacker News Show/搜索 502（偶发）。Google 新闻三条搜索有重叠，去重靠链接。",
+ "comment": "MuseHOT 信源（2026-11-15/16 实测，全部 HTTP 200 且能解析出条目才收录；只收标题或摘要里出现 Muse 的条目，见 config.json required_keywords）。tier: T1 官方一手，T2 媒体/社区与 Google 新闻搜索，T3 综合搜索与小众社区（降权，见 config.json tier_bonus）。用户用法类：Reddit r/MuseAgent（4 千人真实用法社区）、r/MuseAssistant（小社区，偶有邀请码帖，T3）、Hacker News Show HN Muse（用户拿 Muse 做的东西）、Ask HN Muse（用户讨论）。淘汰：Bing 新闻（同一文章带不同 tid 重复入库）、Dev.to Muse 标签（邀请码刷屏，两次实测都这样）、Reddit 搜索 403、Lobsters 500、The Verge Muse 标签 0 条、Wired 标签 400、Android Authority 标签 404、Meta AI 博客 RSS 404、HN 新评论流（标题全是“某人在某帖下评论”，无内容）、Mastodon Muse/MuseAI 标签（0 条）、Built with Muse（feed 解析 0 条）、Sundog 博客（无可用 RSS）、Lemmy（404）、YouTube 频道 RSS（404）。Google 新闻三条搜索有重叠，去重靠链接。",
  "sources": [
   {
    "category_hint": "official",
@@ -70,6 +70,34 @@
    "name": "Google 新闻：Muse Meta（中文）",
    "tier": "T2",
    "url": "https://news.google.com/rss/search?q=Muse%20Meta&hl=zh-CN&gl=CN&ceid=CN:zh-Hans"
+  },
+  {
+   "category_hint": "usage",
+   "id": "reddit-museagent",
+   "name": "Reddit：r/MuseAgent",
+   "tier": "T2",
+   "url": "https://www.reddit.com/r/MuseAgent/.rss"
+  },
+  {
+   "category_hint": "usage",
+   "id": "reddit-museassistant",
+   "name": "Reddit：r/MuseAssistant",
+   "tier": "T3",
+   "url": "https://www.reddit.com/r/MuseAssistant/.rss"
+  },
+  {
+   "category_hint": "usage",
+   "id": "hn-show-muse",
+   "name": "Hacker News：Show HN Muse",
+   "tier": "T2",
+   "url": "https://hnrss.org/show?q=Muse"
+  },
+  {
+   "category_hint": "opinion",
+   "id": "hn-ask-muse",
+   "name": "Hacker News：Ask HN Muse",
+   "tier": "T3",
+   "url": "https://hnrss.org/ask?q=Muse"
   }
  ]
 }
