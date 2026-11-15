@@ -358,5 +358,9 @@
  "https://www.reddit.com/r/MuseAssistant/comments/1xwzkhd/muse_invite_needed": {
   "zh_title": "求一个 Muse 邀请码",
   "zh_oneliner": "一位网友在 r/MuseAssistant 发帖求 Muse 邀请名额，想尽快体验这款个人 AI 助手。"
+ },
+ "https://www.reddit.com/r/MuseAgent/comments/1xwzy85/muse_tools_updates": {
+  "zh_title": "Muse 工具更新动态",
+  "zh_oneliner": "一位社区用户分享了自己用 Muse 打造的三件工具的最新进展，包括桌面小组件套装、影视搜索连接器和更稳定的命令行工具。"
  }
 }
