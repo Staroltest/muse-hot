@@ -342,5 +342,13 @@
  "https://www.reddit.com/r/MuseAgent/comments/1xwy5qo/ai_motion_videos_with_muse": {
   "zh_title": "用 Muse 制作 AI 动态视频",
   "zh_oneliner": "网友实测用 Muse 做动画视频：给一张参考图、写一句提示词，就能直接生成质量不错的成片。"
+ },
+ "https://news.google.com/rss/articles/CBMimAFBVV95cUxOVGtGQlpkbDdndWh0YTZCYWprcDBhY1Y2S0d3dy1kd0ZNdEw1RS1VMnBsako3UjZNUVpuY01LanFxc0dGRHFUV3JvVnh2WDZxenlDazVYZFRqa3ptZUt0MTZSa0ZZVUtuRlZiVGE1T1N0NU11YTM2SEVudHBSUTNxMHV5UHlfZ3hQNEc4M0R3RndLcTVWMEp1Zg?oc=5": {
+  "zh_title": "Meta 如何解决 Muse 的变现难题？",
+  "zh_oneliner": "Yahoo Finance 探讨 Meta 如何让拥有上千万用户的 Muse 赚到钱，变现路径仍在摸索之中。"
+ },
+ "https://www.reddit.com/r/MuseAssistant/comments/1xwykna/muse_gadget_firmware_w_voice_calling": {
+  "zh_title": "Muse Gadget 固件新增语音通话功能",
+  "zh_oneliner": "刷入官方 Muse Gadget 固件的 ESP32 设备已支持实时语音通话，更新固件即可用上。"
  }
 }
