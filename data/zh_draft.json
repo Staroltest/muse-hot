@@ -338,5 +338,9 @@
  "https://news.google.com/rss/articles/CBMicEFVX3lxTE9oSUNHVUxaMWVXTmhkX1hjRFUyT01Yc3ZLaUVqTVFoTGZYZUNLQnp4aWZEbmV6cWIzeXZXQ1RjTzYtbXRJZGRKUXBCenFRX1hSQWRjd1dwdmlFM3plREVwdEpTdXlUUzB1UmlsQTNpd0w?oc=5": {
   "zh_title": "Seedance 2.5 对比 Meta Muse Video：你无法调用的那一个",
   "zh_oneliner": "Seedance 2.5 与 Meta Muse Video 的横向对比，点出其中一个目前还无法真正调用使用。"
+ },
+ "https://www.reddit.com/r/MuseAgent/comments/1xwy5qo/ai_motion_videos_with_muse": {
+  "zh_title": "用 Muse 制作 AI 动态视频",
+  "zh_oneliner": "网友实测用 Muse 做动画视频：给一张参考图、写一句提示词，就能直接生成质量不错的成片。"
  }
 }
