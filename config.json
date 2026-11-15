@@ -1,0 +1,287 @@
+{
+ "categories": [
+  {
+   "key": "official",
+   "keywords": [
+    "introducing",
+    "announces",
+    "announcing",
+    "Meta introduces",
+    "Meta releases",
+    "Meta launches",
+    "Meta says",
+    "官方",
+    "正式发布",
+    "正式上线",
+    "新功能"
+   ],
+   "label": "官方动态",
+   "label_en": "Official"
+  },
+  {
+   "key": "model",
+   "keywords": [
+    "Ember",
+    "Wonder",
+    "Spark",
+    "模型",
+    "model",
+    "基准",
+    "benchmark",
+    "性能",
+    "performance",
+    "评分",
+    "score",
+    "轻量",
+    "lightweight",
+    "推理"
+   ],
+   "label": "模型与技术",
+   "label_en": "Models & tech"
+  },
+  {
+   "key": "guide",
+   "keywords": [
+    "教程",
+    "tutorial",
+    "指南",
+    "guide",
+    "入门",
+    "getting started",
+    "技巧",
+    "tips",
+    "设置",
+    "setup",
+    "提示词",
+    "prompt",
+    "怎么用",
+    "how to use"
+   ],
+   "label": "教程指南",
+   "label_en": "Guides & tutorials"
+  },
+  {
+   "key": "usage",
+   "keywords": [
+    "用法",
+    "工作流",
+    "workflow",
+    "日常",
+    "daily",
+    "帮我",
+    "替我",
+    "预约",
+    "购物",
+    "旅行",
+    "邮件",
+    "日程",
+    "案例",
+    "case study",
+    "怎么做",
+    "how to",
+    "拿 Muse",
+    "用 Muse",
+    "with Muse",
+    "用它"
+   ],
+   "label": "真实用法",
+   "label_en": "Real-world uses"
+  },
+  {
+   "key": "opinion",
+   "keywords": [
+    "观点",
+    "opinion",
+    "分析",
+    "analysis",
+    "隐私",
+    "privacy",
+    "安全",
+    "security",
+    "争议",
+    "风险",
+    "risk",
+    "泄露",
+    "评测",
+    "review",
+    "对比",
+    "体验",
+    "实测",
+    "试用"
+   ],
+   "label": "观点与争议",
+   "label_en": "Opinion & controversy"
+  },
+  {
+   "key": "news",
+   "keywords": [
+    "新闻",
+    "news",
+    "发布",
+    "release",
+    "公告",
+    "announcement",
+    "上线",
+    "launch",
+    "更新",
+    "update",
+    "订阅",
+    "subscription",
+    "电话",
+    "call",
+    "手表",
+    "watch",
+    "Spaces",
+    "语音",
+    "voice"
+   ],
+   "label": "新闻动态",
+   "label_en": "News"
+  }
+ ],
+ "required_keywords": [
+  "muse"
+ ],
+ "scoring": {
+  "base": 50,
+  "daily_hours": 24,
+  "daily_top": 10,
+  "decay_base": 0.8,
+  "dev_keyword_bonus": 5,
+  "dev_keyword_cap": 25,
+  "dev_keywords": [
+   "教程",
+   "tutorial",
+   "工作流",
+   "workflow",
+   "案例",
+   "case study",
+   "指南",
+   "guide",
+   "工具",
+   "tool",
+   "数据",
+   "data",
+   "评测",
+   "review",
+   "实测",
+   "体验",
+   "隐私",
+   "privacy",
+   "安全",
+   "security",
+   "模型",
+   "model",
+   "性能",
+   "performance",
+   "订阅",
+   "subscription",
+   "电话",
+   "call",
+   "Spaces",
+   "语音",
+   "voice",
+   "手表",
+   "watch",
+   "开源",
+   "open source",
+   "提示词",
+   "prompt"
+  ],
+  "history_days": 30,
+  "hot_days": 7,
+  "hot_top": 20,
+  "noise_keyword_floor": -15,
+  "noise_keyword_penalty": -5,
+  "noise_keywords": [
+   "invite code",
+   "邀请码",
+   "free tokens",
+   "1 billion",
+   "1b tokens",
+   "redeem",
+   "兑换",
+   "抽奖",
+   "促销",
+   "广告",
+   "the band",
+   "乐队",
+   "演唱会",
+   "壁纸",
+   "wallpaper",
+   "cosplay",
+   "mod",
+   "速通",
+   "彩蛋",
+   "easter egg"
+  ],
+  "recency": [
+   {
+    "bonus": 25,
+    "max_hours": 6
+   },
+   {
+    "bonus": 20,
+    "max_hours": 24
+   },
+   {
+    "bonus": 10,
+    "max_hours": 72
+   }
+  ],
+  "selected_hours": 48,
+  "selected_min": 65,
+  "tier_bonus": {
+   "T1": 10,
+   "T2": 0,
+   "T3": -15
+  },
+  "timeline_days": 7,
+  "timeline_max": 100
+ },
+ "site": {
+  "about_blocks": [
+   {
+    "h": "定位",
+    "paras": [
+     "MuseHOT 是给 Muse 用户和 AI 智能体关注者看的热点站：每天收全球各地人们拿 Muse 在做什么，官方发布、模型更新、真实用法、教程指南、评测与争议，每天精选 10 条，06:00 出一期日报。",
+     "只收和 Meta Muse 有关的内容；同名的乐队、神话缪斯等不收。"
+    ]
+   },
+   {
+    "h": "怎么做",
+    "paras": [
+     "采集——公开 RSS 信源，每半小时拉一次，只收标题或摘要里出现 Muse 的条目。",
+     "打分——规则打分（时效、相关度、来源），不是 AI 打分。",
+     "出报——只展示标题、一句自己写的一句话简介与原文链接，不转载全文。"
+    ]
+   },
+   {
+    "h": "制作人",
+    "paras": [
+     "由 Staroltest 制作，源码见 GitHub 仓库 Staroltest/muse-hot。"
+    ]
+   }
+  ],
+  "audience": "Muse 用户与 AI 智能体关注者",
+  "crawler_name": "MuseHOTBot/1.0",
+  "description": "MuseHOT 每天从一批公开信源里收 Muse 相关动态，按规则打分精选：官方发布、模型更新、真实用法、教程指南、评测与争议。只显示标题、一句简介与原文链接，不转载全文。",
+  "edition_time_cst": "06:00",
+  "footer_note": "本站由 HOT 流水线模板生成，代码按 MIT 协议开源。",
+  "launch_date": "2026-11-15",
+  "mcp_url": "",
+  "mirror_url": "",
+  "name": "MuseHOT",
+  "repo": "https://github.com/Staroltest/muse-hot",
+  "slug": "muse-hot",
+  "subtitle": "全球 Muse 用法热点",
+  "tagline": "每天盯着全球 Muse 的新玩法，值得看的，只有几条。",
+  "timezone": "Asia/Shanghai",
+  "tips": [],
+  "title": "MuseHOT Muse 热点",
+  "url": "https://staroltest.github.io/muse-hot"
+ },
+ "exclude_links": [
+  "https://medium.com/catharsis-chronicles/muse-ace34bcfd689?source=rss------muse-5"
+ ]
+}

@@ -1,0 +1,75 @@
+{
+ "comment": "MuseHOT 信源（2026-11-15 实测，全部 HTTP 200 且能解析出条目才收录；只收标题或摘要里出现 Muse 的条目，见 config.json required_keywords）。tier: T1 官方一手，T2 媒体/社区与 Google 新闻搜索，T3 综合搜索（降权，见 config.json tier_bonus）。淘汰：Bing 新闻（同一文章带不同 tid 重复入库）、Dev.to Muse 标签（邀请码刷屏）、Reddit 搜索 403、Lobsters 500、The Verge Muse 标签 0 条、Wired 标签 400、Android Authority 标签 404、Meta AI 博客 RSS 404、Hacker News Show/搜索 502（偶发）。Google 新闻三条搜索有重叠，去重靠链接。",
+ "sources": [
+  {
+   "category_hint": "official",
+   "id": "meta-newsroom",
+   "name": "Meta Newsroom",
+   "tier": "T1",
+   "url": "https://about.meta.com/news/rss"
+  },
+  {
+   "category_hint": "news",
+   "id": "techcrunch-muse",
+   "name": "TechCrunch：Muse 标签",
+   "tier": "T2",
+   "url": "https://techcrunch.com/tag/muse/feed/"
+  },
+  {
+   "category_hint": "news",
+   "id": "hnrss-muse",
+   "name": "Hacker News：Muse",
+   "tier": "T2",
+   "url": "https://hnrss.org/newest?q=Muse"
+  },
+  {
+   "category_hint": "news",
+   "id": "hnrss-muse-agent",
+   "name": "Hacker News：Muse agent",
+   "tier": "T2",
+   "url": "https://hnrss.org/newest?q=Muse+agent"
+  },
+  {
+   "category_hint": "opinion",
+   "id": "ars-muse",
+   "name": "Ars Technica：Muse 标签",
+   "tier": "T2",
+   "url": "https://arstechnica.com/tag/muse/feed/"
+  },
+  {
+   "category_hint": "usage",
+   "id": "medium-muse",
+   "name": "Medium：Muse 标签",
+   "tier": "T2",
+   "url": "https://medium.com/feed/tag/muse"
+  },
+  {
+   "category_hint": "usage",
+   "id": "medium-meta-muse",
+   "name": "Medium：Meta Muse 标签",
+   "tier": "T2",
+   "url": "https://medium.com/feed/tag/meta-muse"
+  },
+  {
+   "category_hint": "news",
+   "id": "googlenews-muse-meta-en",
+   "name": "Google 新闻：Muse Meta AI（英文）",
+   "tier": "T2",
+   "url": "https://news.google.com/rss/search?q=%22Muse%22%20Meta%20AI&hl=en-US&gl=US&ceid=US:en"
+  },
+  {
+   "category_hint": "news",
+   "id": "googlenews-meta-muse-en",
+   "name": "Google 新闻：Meta Muse（英文）",
+   "tier": "T2",
+   "url": "https://news.google.com/rss/search?q=%22Meta%20Muse%22&hl=en-US&gl=US&ceid=US:en"
+  },
+  {
+   "category_hint": "news",
+   "id": "googlenews-muse-meta-zh",
+   "name": "Google 新闻：Muse Meta（中文）",
+   "tier": "T2",
+   "url": "https://news.google.com/rss/search?q=Muse%20Meta&hl=zh-CN&gl=CN&ceid=CN:zh-Hans"
+  }
+ ]
+}

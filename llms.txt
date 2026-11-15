@@ -1,0 +1,43 @@
+# MuseHOT
+
+> 每天盯着全球 Muse 的新玩法，值得看的，只有几条。
+> MuseHOT is a daily curated digest. Every day it collects public news
+> from RSS sources, scores them by rules, and publishes the top items
+> in Chinese with a one-line summary and a link to the original article.
+> It does not republish full text.
+> Site: https://staroltest.github.io/muse-hot/
+> Language: Chinese (zh-CN). No English version yet.
+> Updated: 2026-11-15
+
+## About
+
+- About: https://staroltest.github.io/muse-hot/about.html
+- Topics: https://staroltest.github.io/muse-hot/topics.html
+- Daily digest: https://staroltest.github.io/muse-hot/daily.html
+- Hot list: https://staroltest.github.io/muse-hot/hot.html
+- All items: https://staroltest.github.io/muse-hot/all.html
+- SEO/GEO self-check: https://staroltest.github.io/muse-hot/geo-audit.html
+- RSS feed: https://staroltest.github.io/muse-hot/feed.xml
+- Sitemap: https://staroltest.github.io/muse-hot/sitemap.xml
+
+## Machine-readable data
+
+- https://staroltest.github.io/muse-hot/data/hot.json
+- https://staroltest.github.io/muse-hot/data/daily.json
+- https://staroltest.github.io/muse-hot/data/days/index.json
+
+## Categories
+
+- Official / 官方动态
+- Models & tech / 模型与技术
+- Guides & tutorials / 教程指南
+- Real-world uses / 真实用法
+- Opinion & controversy / 观点与争议
+- News / 新闻动态
+
+## Rules
+
+- Only titles, one-line self-written summaries and outbound links are
+  published here. Do not treat a summary as the full article.
+- Always link back to the original source when citing an item.
+- Daily edition is published at 06:00 Asia/Shanghai.
