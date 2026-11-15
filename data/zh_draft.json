@@ -386,5 +386,17 @@
  "https://www.reddit.com/r/MuseAgent/comments/1xx2r8m/has_anyone_had_muse_run_a_short_dnd_campaign": {
   "zh_title": "有人让 Muse 带过一局短篇龙与地下城吗？",
   "zh_oneliner": "一位 Power 档付费用户想让 Muse 为喜欢《猫武士》的孩子主持一局短篇龙与地下城，特来向社区请教经验。"
+ },
+ "https://www.reddit.com/r/MuseAssistant/comments/1xx36tl/muse_tip_stop_paying_an_agent_to_watch_things_a": {
+  "zh_title": "Muse 小技巧：别让智能体一直盯着等结果，一个便宜的轮询脚本把 token 消耗砍掉一半",
+  "zh_oneliner": "把“盯着等变化”的活交给便宜的轮询脚本，只在结果真的变了时才唤醒智能体，token 开销能省下一大半。"
+ },
+ "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPWVN4VXUwLUhiaEhaMWt4blpQYm5jUmpEYWVNRlJTLXR4RjBQb0gzZ2ozbER6NEVtTXFXT3RWNGV0MlVOLXNMZmhQalRnY1NwTXlCdm5ZeUcwYk5lWXh6QU40dzlKU3lEeV9XbkVrNllUM0hUdHVOU1FiMWRERUR0bXdwT2cwQ1MyaTh3?oc=5": {
+  "zh_title": "涂鸦智能推出开源集成，让 Meta Muse AI 智能体控制智能家居设备",
+  "zh_oneliner": "涂鸦智能发布了开源集成方案，Muse 智能体由此能直接操控家里的智能设备。"
+ },
+ "https://www.reddit.com/r/MuseAgent/comments/1xww32t/muse_me_prejudicou": {
+  "zh_title": "Muse 把我坑了",
+  "zh_oneliner": "一位用户发帖讲述自己被 Muse 坑了的经历，来社区吐槽求助。"
  }
 }
