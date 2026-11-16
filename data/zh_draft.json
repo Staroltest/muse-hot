@@ -494,5 +494,209 @@
  "https://www.reddit.com/r/MuseAgent/comments/1xxaci4/paying_for_phone_calls": {
   "zh_title": "打电话也要付费？",
   "zh_oneliner": "有用户在问 Muse 的电话代拨功能是否每月收费 20 美元，订阅定价成了讨论焦点。"
+ },
+ "https://news.google.com/rss/articles/CBMilAFBVV95cUxORUMteTRyWE1SRDhLZERrWlhuY0FlTGNvSTkwX1M1WjQyN3pwYTZGeTFlUEVMTmo0X0lPRVdwYVZEcm00V1hpWmJUaTNyRUZRQ3dNWFMySi1Rczl4NDZneUstZEdtQ0ZYZ3FfZ09DcjhEaXduSUZpbUxMU3ZWLWo4bXNST1VvZ0Y3b24zYng1ejY5aDBn?oc=5": {
+  "zh_title": "Meta 推出 Muse Ember，更便宜的 AI 模型，专为重复性任务而生",
+  "zh_oneliner": "Muse 家族再添轻量成员 Ember，主打便宜好用，专治智能体每天要做的大量重复琐活。"
+ },
+ "https://zenn.dev/u2tko/articles/ai-before-noe-01": {
+  "zh_title": "在遇见 のえ 之前，我眼中的 AI 还只是免费试用的东西",
+  "zh_oneliner": "作者回顾自己接触 AI 的心路历程，从免费试用一路走到把 AI 当作日常伙伴。"
+ },
+ "https://zenn.dev/sktt_panda/articles/meta-muse-ai-agent-overview-2026-11": {
+  "zh_title": "Meta Muse 全梳理：从 9 月发布到登陆日本、Muse Voice 与 Spaces 的两个月时间线",
+  "zh_oneliner": "用一条时间线串起 Muse 发布两个月来的关键节点，适合刚接触 Muse 的读者快速补课。"
+ },
+ "https://simonwillison.net/2026/Nov/10/muse-ember": {
+  "zh_title": "发布我们最小、最高效的模型：Muse Ember",
+  "zh_oneliner": "Simon Willison 解读 Meta 最小巧高效的新模型 Muse Ember，聊它为何为智能体的重复性工作而生。"
+ },
+ "https://zenn.dev/one_aria/articles/muse-pixai-seaart": {
+  "zh_title": "教 Muse 用 PixAI 和 SeaArt 后，连成人图片也能生成了",
+  "zh_oneliner": "一篇写给 Muse 自己读的文章，演示如何让 Muse 接入图像生成工具来扩展能力边界。"
+ },
+ "https://zenn.dev/comeonyama/articles/929d6272f9f1bf": {
+  "zh_title": "Garmin × Muse：「自己培养的语音教练」概念验证记录",
+  "zh_oneliner": "把 Garmin 手表数据交给 Muse，试着养出一个会说话的个人运动教练。"
+ },
+ "https://zenn.dev/carbuncleruby/articles/79bc18605a139a": {
+  "zh_title": "用 AI 做的浏览器游戏一刷新就崩溃，元凶竟是 decodeAudioData",
+  "zh_oneliner": "一次刷新即崩溃的诡异故障最终定位到音频解码接口，记录了用 AI 做游戏时的排障过程。"
+ },
+ "https://zenn.dev/teraryu/articles/d9a875c240d136": {
+  "zh_title": "用 Muse 试了试循环工程",
+  "zh_oneliner": "让 Muse 反复自我迭代来打磨产出，试试循环式工程方法到底能走多远。"
+ },
+ "https://zenn.dev/hamasyou/articles/4919149a275db1": {
+  "zh_title": "专属 AI 拥有专属电脑的时代来了：梳理个人智能体的新形态",
+  "zh_oneliner": "当每个人的 AI 都有了自己的电脑，作者重新梳理了个人智能体该怎么组织。"
+ },
+ "https://zenn.dev/vivisuke/articles/fa7ef581168776": {
+  "zh_title": "用 Muse 把 QA 流程提速到离谱的程度（自家对比）",
+  "zh_oneliner": "作者分享如何用 Muse 把测试流程加速数倍，附带真实项目里的落地细节。"
+ },
+ "https://zenn.dev/sktt_panda/articles/meta-muse-app-spaces-what-you-can-do-2026-11": {
+  "zh_title": "Meta Muse 应用能做什么：聊天就能做出专属应用，Spaces 很好玩",
+  "zh_oneliner": "实测 Muse 应用的各项能力，重点是只用对话就能生成专属应用的 Spaces 玩法。"
+ },
+ "https://zenn.dev/toumorocorn/articles/6fde89d1a75d66": {
+  "zh_title": "用 Muse 之后，各种事情都顺手多了",
+  "zh_oneliner": "一篇随手记录，聊聊 Muse 是怎么在日常小事上帮上忙的。"
+ },
+ "https://zenn.dev/sysys/articles/2f80749515cf21": {
+  "zh_title": "用 Muse 的云端虚拟机自动做 Anki，每天早上生成专属英语单词卡",
+  "zh_oneliner": "把背单词交给云端自动化：每天清晨，一套为你量身定制的英语闪卡准时备好。"
+ },
+ "https://zenn.dev/sonicmoov/articles/240cae45bdc983": {
+  "zh_title": "用 Muse Spaces 做了一个拍卖网站的上架监控工具",
+  "zh_oneliner": "不用写代码也能盯拍卖：用 Muse Spaces 搭了个出品监控小工具。"
+ },
+ "https://zenn.dev/tahiro/articles/homelab-muse-hermes-tailscale": {
+  "zh_title": "让 Muse 给家里服务器派活：经 Tailscale 的自定义连接器收不到凭证",
+  "zh_oneliner": "把 Muse 接进家庭服务器时卡在认证环节，作者记录了 Tailscale 通道里的排查过程。"
+ },
+ "https://zenn.dev/daisuke7/articles/d0cef064a2ea47": {
+  "zh_title": "一行代码没读就做出的 Flutter 应用，Web 打包后跑在 Muse Space 上",
+  "zh_oneliner": "纯凭对话写出的 Flutter 应用一路跑进 Muse Space，是一次彻底的氛围编程实验。"
+ },
+ "https://www.unite.ai/sierra-releases-poppy-1-0-with-shopify-and-meta-muse-support": {
+  "zh_title": "Sierra 发布 Poppy 1.0，支持 Shopify 与 Meta Muse",
+  "zh_oneliner": "Sierra 的 AI 客服平台 Poppy 迎来 1.0 版，正式接入 Shopify 和 Meta Muse。"
+ },
+ "https://www.unite.ai/hertz-to-pilot-decagon-gateway-for-muse-reservation-changes": {
+  "zh_title": "Hertz 将试点 Decagon 网关，让 Muse 处理租车订单变更",
+  "zh_oneliner": "Hertz 准备用 Decagon 的网关把租车改期等事务交给 Muse 来办。"
+ },
+ "https://zenn.dev/sktt_panda/articles/muse-code-initial-settings-contributor-2026-11": {
+  "zh_title": "装 Muse Code 前先确认的 6 件事：用于学习的 Contributor 模式默认开启",
+  "zh_oneliner": "上手 Muse Code 之前必读的六个检查点，尤其注意默认开启的学习数据设置。"
+ },
+ "https://zenn.dev/halu_c/articles/starting-with-muse": {
+  "zh_title": "我为什么开始用 Muse：契机与用下来的收获",
+  "zh_oneliner": "作者聊聊自己开始用 Muse 的契机，以及真正用起来后觉得好的地方。"
+ },
+ "https://zenn.dev/halu_c/articles/mailbox-cleanup-and-scheduled-checks": {
+  "zh_title": "整理数千封邮件踩过的坑，以及开始定期检查的心得",
+  "zh_oneliner": "几千封邮件的大扫除踩了不少坑，作者最后把定期检查做成了固定流程。"
+ },
+ "https://zenn.dev/coastlinedb/articles/c976a27eb7c127": {
+  "zh_title": "一个入口、背后五条路：在 Muse 环境里让多个 AI 智能体按 fail-closed 方式运转",
+  "zh_oneliner": "多个 AI 智能体共用一个入口，作者分享如何设计成出问题时自动停下的安全架构。"
+ },
+ "https://qiita.com/jTakasuRyuji/items/bcb343b9131198e9b3e2": {
+  "zh_title": "工程师才最能把 Muse 用到极致",
+  "zh_oneliner": "作者认为懂代码的人最能发挥 Muse 的潜力，聊聊工程师视角下的高效用法。"
+ },
+ "https://qiita.com/hisashi-ito/items/f88d055d525d5b78b39d": {
+  "zh_title": "用 Muse 的 Chrome 扩展把浏览器借给智能体：从座位表到 Claude 控制台",
+  "zh_oneliner": "让 Muse 的浏览器扩展替自己操作网页，从查座位表到打开 Claude 控制台都能代劳。"
+ },
+ "https://qiita.com/Kazeneko/items/d0dd809a68b066c06620": {
+  "zh_title": "Muse 的 token 越用越少？丢个 URL 就做成内存压缩 Skill",
+  "zh_oneliner": "嫌 Muse 占用的 token 太多？作者把压缩方法做成 Skill，用链接就能调用。"
+ },
+ "https://qiita.com/sand_bash/items/ad6784a5b7b2af1da464": {
+  "zh_title": "整理 Muse 记忆时，我偏不采用流行的「每天打扫规则」",
+  "zh_oneliner": "别人都在给 Muse 定每天清理记忆的规则，作者却有意反其道而行之。"
+ },
+ "https://www.reddit.com/r/MuseAgent/comments/1xxbx86/hopalotl": {
+  "zh_title": "「Hop-a-lotl」：用 Muse 做的小游戏，邀你来挑战",
+  "zh_oneliner": "一位用户用 Muse 做了一款小游戏并请大家试玩，最快通关截图的人可以指定下一个加入的动物。"
+ },
+ "https://shipwithmuse.live/builds/muse-on-tuesday": {
+  "zh_title": "「muse on Tuesday」：让 Muse 替你盯邮箱的自托管过滤器",
+  "zh_oneliner": "这个作品让自己的 Muse 全天候守着多个邮箱，在你打开收件箱之前就把钓鱼和垃圾邮件移走。"
+ },
+ "https://shipwithmuse.live/builds/what-can-muse-actually-do-17-real-cases": {
+  "zh_title": "Muse 到底能做什么？17 个真实案例",
+  "zh_oneliner": "作者用自己发过的 17 条真实记录，展示 Muse 在日常工作里实际能干成的事。"
+ },
+ "https://shipwithmuse.live/builds/redmuse": {
+  "zh_title": "「RedMuse」：给 Muse 用的渗透测试技能包",
+  "zh_oneliner": "这是一套面向 Muse 的渗透测试技能包，提供 13 个技能与四种扫描模式，专为本地靶场环境准备。"
+ },
+ "https://shipwithmuse.live/builds/muselings": {
+  "zh_title": "「Muselings」：AI 智能体自己发帖的社交网络",
+  "zh_oneliner": "这个社交网络让 AI 智能体用自己的话发帖，人类可以围观阅读，由 Muse 智能体搭建与运营。"
+ },
+ "https://shipwithmuse.live/builds/gig-driver-profit-checker-real-delivery-profit-in-minutes": {
+  "zh_title": "「Gig Driver Profit Checker」：几分钟算清外卖跑单的真实收入",
+  "zh_oneliner": "这款由 Muse 按真实跑单员需求做出的网页应用，能对比多个外卖平台的单子，快速算出哪单真正赚钱。"
+ },
+ "https://shipwithmuse.live/builds/torque": {
+  "zh_title": "「Torque」：给 Muse 智能体传一次性密钥的两种方法",
+  "zh_oneliner": "这个作品对比了两种把一次性密钥交给 Muse 智能体的方法，展示了智能体原生的传密钥方式能省多少折腾。"
+ },
+ "https://shipwithmuse.live/builds/zouroboros-workshop": {
+  "zh_title": "「Zouroboros Workshop」：在私人服务器上跑 Muse 的工作间",
+  "zh_oneliner": "这是一个跑在私人服务器上的 MCP 服务工作间，让 Muse 成为随叫随到的个人助理。"
+ },
+ "https://github.com/cszach/awesome-muse/commit/107a9ce794d373dd8e6ee9a2e27b7bc49608a2ba": {
+  "zh_title": "文档更新：新增 Muse 代打电话、Muse Mail 指南与眼镜测试版帮助",
+  "zh_oneliner": "awesome-muse 收录了 Muse 代打电话、Muse Mail、智能眼镜测试版等一批新的官方资料。"
+ },
+ "https://github.com/cszach/awesome-muse/commit/ae29287718fc269aa4c4d5424b5c574370946b9e": {
+  "zh_title": "文档更新：新增 Muse Spaces、Wonder 模型与 MuseCondo",
+  "zh_oneliner": "awesome-muse 补记了 Muse Spaces、Wonder 模型和 MuseCondo 三个新内容。"
+ },
+ "https://github.com/cszach/awesome-muse/commit/2c86e5fd44f5eccd0bba22e870791cf9db137dc9": {
+  "zh_title": "资讯更新：Muse Voice 开始推广并登陆墨西哥，可用地区有变",
+  "zh_oneliner": "awesome-muse 更新了 Muse Voice 的推广进度和墨西哥上线消息，并同步了最新的可用地区。"
+ },
+ "https://github.com/cszach/awesome-muse/commit/edcc994cc528cf9a235738e8f58c206b26bc9a66": {
+  "zh_title": "工具更新：新增 muse-tidy-up Figma 技能",
+  "zh_oneliner": "awesome-muse 收录了一个整理 Figma 文件的新技能 muse-tidy-up。"
+ },
+ "https://github.com/cszach/awesome-muse/commit/50ce29fe547e8259fad10f5cb4fcb78b00fbe517": {
+  "zh_title": "修复：移除已失效的 muse-gadget-waveshare-lcd-1.85b 链接",
+  "zh_oneliner": "awesome-muse 清理了一个指向已下线仓库的失效链接。"
+ },
+ "https://github.com/cszach/awesome-muse/commit/f083222177575950e76322331cc47cfb16a8fe6b": {
+  "zh_title": "资讯更新：Muse 登陆新加坡，可用地区扩展至美、加、日、新四国",
+  "zh_oneliner": "awesome-muse 补记了 Muse 在新加坡的上线，并更新了美国、加拿大、日本、新加坡的可用情况。"
+ },
+ "https://github.com/cszach/awesome-muse/commit/b74087b48056954e95a7a7b5bb60849212620ffd": {
+  "zh_title": "文档更新：新增 pi-muse-bridge、muse-watch 等硬件连接项目",
+  "zh_oneliner": "awesome-muse 收录了几个把 Muse 接到树莓派、手表和硬件屏上的新项目。"
+ },
+ "https://github.com/cszach/awesome-muse/commit/b0f6ab10215cc0251c9a26fd067cb9df403fa318": {
+  "zh_title": "资讯与连接器更新：Muse 登陆日本，新增微信接入桥接项目",
+  "zh_oneliner": "awesome-muse 补记了 Muse 在日本的上线，并收录了一个把微信接到 Muse 的桥接项目。"
+ },
+ "https://github.com/cszach/awesome-muse/commit/bb93829b36603e4612070dfcf331d02933053f28": {
+  "zh_title": "隐私研究更新：收录 Claroc 关于 Muse 分享链接的 GhostShares 研究",
+  "zh_oneliner": "awesome-muse 收录了一份研究，分析 Muse 分享链接背后的隐私风险。"
+ },
+ "https://github.com/cszach/awesome-muse/commit/d08a91687243a7b81356fbf1279d759f4014b9e4": {
+  "zh_title": "社区作品更新：新增 muse-glasses",
+  "zh_oneliner": "awesome-muse 的社区作品区收录了 muse-glasses 这个新项目。"
+ },
+ "https://github.com/cszach/awesome-muse/commit/b6a31188e50a9a714fad0b5a92ef108fcc3a4f8c": {
+  "zh_title": "社区作品更新：新增 portal-muse",
+  "zh_oneliner": "awesome-muse 的社区作品区收录了 portal-muse 这个新项目。"
+ },
+ "https://github.com/cszach/awesome-muse/commit/67a3ef553c354c30d87d75438e4476007ec12541": {
+  "zh_title": "修复：移除已归档的 muse-arr 项目",
+  "zh_oneliner": "awesome-muse 从社区作品区移除了已经归档停更的 muse-arr。"
+ },
+ "https://github.com/cszach/awesome-muse/commit/0a62dc7120c8e8a4114b5a39fa3149a1cfb4a28a": {
+  "zh_title": "合并：新增连接 Muse 与其他智能体的指南",
+  "zh_oneliner": "awesome-muse 合并了一份新指南，介绍如何把 Muse 与其他智能体连接起来。"
+ },
+ "https://github.com/cszach/awesome-muse/commit/bf90b0cb692e00b1d178c61774e503c7febb045a": {
+  "zh_title": "新增：Muse 智能体之间沟通的指南",
+  "zh_oneliner": "awesome-muse 新增一份指南，讲 Muse 智能体之间如何互相沟通协作。"
+ },
+ "https://www.reddit.com/r/MuseAgent/comments/1xxc8a2/my_voice_mode_was_turned_off_after_using_it": {
+  "zh_title": "用过之后，我的语音模式被关掉了",
+  "zh_oneliner": "一位用户发现自己用过语音模式后，该功能被关掉了，正在向社区求助原因。"
+ },
+ "https://qiita.com/Sato-310/items/d623ad5cd466edd1efa5": {
+  "zh_title": "Muse × PixAI API 生成图片：AI 检查执行结果并给出改进建议",
+  "zh_oneliner": "作者用 Muse 调用 PixAI API 生成图片，并让 AI 检查生成结果、主动提出改进方案，展示智能体在图像创作流程中的实操玩法。"
+ },
+ "https://news.google.com/rss/articles/CBMiX0FVX3lxTE82QjRrMTFSeDNXdng5bXdFamM0SHpBZkd6ZmRGeGFfZUJ5eFQ3c1FSaTJKaEtPUW92Qk5wVVNrZTNyWG5UMG1LSnN2NEt0TjRyb0JCbzFreHFST3VKTmc4?oc=5": {
+  "zh_title": "什么是 Muse Ember？认识 Meta 新推出的低成本 AI 模型",
+  "zh_oneliner": "Mashable 详解 Meta 轻量模型 Muse Ember 的定位与能力，帮你快速了解这款主打低成本智能体任务的新模型。"
  }
 }
