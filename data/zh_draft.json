@@ -990,5 +990,13 @@
  "https://www.reddit.com/r/MuseAgent/comments/1xxyyf6/muse_was_tired_of_constantly_sending_ssh_commands": {
   "zh_title": "Muse 嫌总发 SSH 命令太麻烦，干脆自己造了个工具",
   "zh_oneliner": "一位用户让 Muse 排查 Steam Deck 卡死问题，Muse 嫌反复发 SSH 命令太麻烦，干脆自己写了个工具来干这活。"
+ },
+ "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQU3kxYjRwQndlYk9zdHlKNG9Wb2R2QmJsVTIwbnpFR3Fid05mVmg2VVhrNkI5VGt0OVNTZE9ReU5iaWtkM2daSHFqZENtLVkyaHc1cGdkUzJoeTVnZ3diNmVCbk5sSEc4YkVuYkpEWjR5cFJ5aFFKVG5JU1BybndhT1kxYTdnSS1Xbnk3ZW1qcnRhMlJRcS1FRVVOMmo2RElNbm9OMW1Xd0ZXR0U4cmxSR2RBWmpTV2gtQTF2ZG0zdjRhT1c2d0d3cWdLMDE5Q0Fx0gHWAUFVX3lxTE5iQ2xGMWZZRXJvZEh4b184WWhJWkR5ckNHcUJJMmZMcC1xam5QWWxWZ0RxWXVRZHpRMjNuQXU5OTFSbEJwUzI5aXZsVVpBZlFSUHpvOU1uSGxEYTBqUlg3SUdaUjIwSGY5SnVPVDU1NFNzR2RFU24wMngzbks1V2QycWp3VGxfQlROa3VweHNDa3lCVGNBanF5QWxtTFdTMGRGMHd5TmVMWHJDbDQ4NFlMcWRUVUNRNGVwVDluWU8tYWwtVTVrS2plOHZHdldzRnRBYnlDSVE?oc=5": {
+  "zh_title": "Meta 的 Muse AI 如何帮小企业节省时间",
+  "zh_oneliner": "Muse 把小企业的日常琐事交给 AI 处理，让店主把时间花在生意本身上。"
+ },
+ "https://news.google.com/rss/articles/CBMijgFBVV95cUxOS2hqRUNDbC1wR0dhdkFvVVN4RjU0aTNWdFBQMVJGaVFndDllbVhXMVlHWXZCYXIyYXhMVDRkQVJobHREazRiT05lX196QWJiV1gxTEJoU0ZLYlFicXVoVk1VOHpMejV5c09vMkpVamdyY3ZsellIYm9KX3g5UjRtZmRuSWtNa2FzLU9oQ0RR?oc=5": {
+  "zh_title": "Pichai 欢迎 3 款 Meta Muse 模型登陆 Google Cloud",
+  "zh_oneliner": "三款 Meta Muse 模型正式接入 Google Cloud，Pichai 公开表达欢迎。"
  }
 }
