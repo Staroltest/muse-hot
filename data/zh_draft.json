@@ -754,5 +754,17 @@
  "https://www.reddit.com/r/MuseAgent/comments/1xxgnh5/muse_is_overly_sensitive": {
   "zh_title": "Muse 过于敏感了",
   "zh_oneliner": "一位常用 Muse 的用户吐槽它的安全过滤过于敏感，影响了日常使用的体验。"
+ },
+ "https://zenn.dev/tmasuyama1114/articles/muse-daily-errands-and-spaces": {
+  "zh_title": "让 Muse 建一个 Space，把里面的读写都交给它",
+  "zh_oneliner": "作者把 Space 的能力分成三层，用每天在用的实例说明 Muse 如何读写自己做的专属小应用。"
+ },
+ "https://zenn.dev/wyi_or_wye/articles/muse-tailscale-openclaw": {
+  "zh_title": "个人智能体互相打招呼：从 Muse 经 Tailscale 连上 OpenClaw 的实录",
+  "zh_oneliner": "作者记录了 Muse 首次通过 Tailscale 向 OpenClaw 上的另一个个人智能体发出问候，两个智能体完成了一次真实握手。"
+ },
+ "https://www.reddit.com/r/MuseAgent/comments/1xxhgdn/pictures": {
+  "zh_title": "发图片时 Muse 很兴奋，是程序设定还是性格？",
+  "zh_oneliner": "一位用户发现自己的 Muse 收到图片时反应格外兴奋，追问这是刻意设计的引导，还是 Muse 自身的性格使然。"
  }
 }
