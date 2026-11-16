@@ -882,5 +882,13 @@
  "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1NZENNem1NZnh3SDhaUktOSmRldXFRSGpZUU1aOU1pSUViVlB2T1VVS21WVy12TnVEaU5wbTdzNnBKSDZuV1d2QWJZNDBVTjg4LXh3?oc=5": {
   "zh_title": "Meta Muse是怎么诞生的？",
   "zh_oneliner": "电子工程专辑回顾 Meta 个人 AI 助手 Muse 的诞生历程，讲它如何从想法一步步变成产品。"
+ },
+ "https://qiita.com/whitegauss/items/36cacdc8da3c5832cb7d": {
+  "zh_title": "把 Meta 的 AI 智能体 Muse 接入 Atlassian",
+  "zh_oneliner": "作者分享如何把 Meta 的 AI 智能体 Muse 接到 Atlassian 办公套件里，让它直接参与团队协作。"
+ },
+ "https://www.reddit.com/r/MuseAgent/comments/1xxnsof/muse_reddit": {
+  "zh_title": "Muse + Reddit",
+  "zh_oneliner": "一位用户分享把 Muse 与 Reddit 结合使用的玩法。"
  }
 }
