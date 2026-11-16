@@ -742,5 +742,9 @@
  "https://www.reddit.com/r/MuseAgent/comments/1xxewo9/through_questions_we_learn_whats_capable": {
   "zh_title": "通过提问，我们才知道它能做什么",
   "zh_oneliner": "r/MuseAgent 用户分享通过不断提问来探索 Muse 能力边界的使用心得。"
+ },
+ "https://research.meta.ai/blog/introducing-muse-voice-transcribe": {
+  "zh_title": "Muse 语音转写",
+  "zh_oneliner": "Muse 新增语音转写功能，语音输入可以直接转为文字，方便随时记录想法和指令。"
  }
 }
