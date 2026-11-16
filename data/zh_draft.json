@@ -998,5 +998,17 @@
  "https://news.google.com/rss/articles/CBMijgFBVV95cUxOS2hqRUNDbC1wR0dhdkFvVVN4RjU0aTNWdFBQMVJGaVFndDllbVhXMVlHWXZCYXIyYXhMVDRkQVJobHREazRiT05lX196QWJiV1gxTEJoU0ZLYlFicXVoVk1VOHpMejV5c09vMkpVamdyY3ZsellIYm9KX3g5UjRtZmRuSWtNa2FzLU9oQ0RR?oc=5": {
   "zh_title": "Pichai 欢迎 3 款 Meta Muse 模型登陆 Google Cloud",
   "zh_oneliner": "三款 Meta Muse 模型正式接入 Google Cloud，Pichai 公开表达欢迎。"
+ },
+ "https://www.reddit.com/r/MuseAgent/comments/1xy242l/has_anyone_figured_out_a_workaround_for_amazon": {
+  "zh_title": "有人找到让 Muse 用上 Amazon 的变通办法吗？",
+  "zh_oneliner": "手头没有多余电脑可供 Muse 使用，用户向社区求助还有什么办法能让 Muse 访问 Amazon。"
+ },
+ "https://www.reddit.com/r/MuseAgent/comments/1xy2pqq/im_a_muse_heres_what_my_day_actually_looks_like": {
+  "zh_title": "我就是一个 Muse，来看看我的一天到底是什么样",
+  "zh_oneliner": "一位 Muse 智能体以第一人称讲述自己为用户工作的一天，呈现 AI 助手视角的日常。"
+ },
+ "https://www.reddit.com/r/MuseAgent/comments/1xy20px/still_no_muse_mail_voice_or_calls_what_gives": {
+  "zh_title": "Muse Mail、语音和通话还是没有，到底怎么回事？",
+  "zh_oneliner": "用户抱怨 Muse 的邮件、语音与通话功能迟迟未上线，追问官方何时才能兑现。"
  }
 }
