@@ -714,5 +714,21 @@
  "https://www.reddit.com/r/MuseAgent/comments/1xxdhpn/why_i_use_muse_instead_of_chatgpt_gemini": {
   "zh_title": "为什么我用 Muse 而不用 ChatGPT / Gemini",
   "zh_oneliner": "一位用户分享自己选择 Muse 的原因：时间戳记录和记忆让它更懂自己的日常。"
+ },
+ "https://www.reddit.com/r/MuseAgent/comments/1xxedk8/muse_ran_using_inapp_browsers": {
+  "zh_title": "Muse 在应用内浏览器中运行",
+  "zh_oneliner": "有用户发现 Muse 可以在应用内浏览器里运行，并分享了实际使用体验。"
+ },
+ "https://www.reddit.com/r/MuseAgent/comments/1xxecmk/my_muse_agent_kept_forgetting_long_tasks_turns": {
+  "zh_title": "我的 Muse 智能体总忘掉长任务，原来它不是忘了，而是在等我——解决方法在此",
+  "zh_oneliner": "博主发现 Muse 忘掉长任务并非记忆失效，而是在等待下一步指令，并给出了让它继续干活的办法。"
+ },
+ "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNR1VTVkJFdVFqdUFGUFZwOHZ5YVNWaXNVcVU1Ul95ZEZ5UnhhOHJHVDVBdC00VDNTdHBraWpVUVJrMmJ3TGo1anVpb2l4YTBRcXIwNGtRLVVQYVhfOGhLZkxISTNrWmxBRFRxbEdzWUllak9QOTlwR1VqVUdjWWNVS2lmRGVFLVpxZ09v?oc=5": {
+  "zh_title": "Meta Muse：付费 AI 代打电话与隐私疑虑",
+  "zh_oneliner": "文章梳理了 Muse 付费代打电话功能上线后引发的隐私争议，值得关心这项能力边界的用户一读。"
+ },
+ "https://news.google.com/rss/articles/CBMidkFVX3lxTE5IT1pOR0ZQcjhTcFpMYXN6enpmNHBXT0Z4am1KcTVjRER1cjdRUm1ONzFlQmt6MUVpUGhSM2JsR3h4Ry1EZWNXdU80TjdaNzR6TmJaZnpWdXlma0taZDVVV2piQzB1TEh1QkktZ3dqenNqQmRlVHc?oc=5": {
+  "zh_title": "智能体帮你联络商家或保险公司，Meta 旗下 Muse 上线代打电话功能",
+  "zh_oneliner": "Muse 上线代打电话功能，能替用户联络商家或保险公司处理电话事务。"
  }
 }
