@@ -746,5 +746,13 @@
  "https://research.meta.ai/blog/introducing-muse-voice-transcribe": {
   "zh_title": "Muse 语音转写",
   "zh_oneliner": "Muse 新增语音转写功能，语音输入可以直接转为文字，方便随时记录想法和指令。"
+ },
+ "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQQ1B1a2N2VnhjV3lobXRRVnJTZUNTTWc2Y2ZwWnAyQ1lpVGVRQVRVdHljREVUc1NvdURVa1lvaEgwUm15NTRLOGpoaGN5Y3EwR2I4Uy1FYjllcXpsalpOTURTSFNwUy11MVRYYUliWVJmNUl6cFhxcUl2ZjRGWTI2b1EwbWpIamZoNk00TlhZNHBsRlRJVkVqODE1WllEV1JTYkZvNmlsVlJnMVBrOS1MRTRjbml5N0JjbDJ6NEdMcmF5ZVowLTVBazhhbEp5TmMxd3fSAdcBQVVfeXFMTzhNa3ppQ3NjelJZajJPdlFlQkpJNGIzVWp3TnR3YzE0SU1HUV9kcUNkNnUzX2FEemo5a2JDTWR3U0RpS3BJZ18xNk1jdTduNkMxRW5CUGhfcXUtRWp6RzBIcG1EdHZQalpWdU1seVowUUpqeE9VZTY4UFNYT2dQYWhPaEhTYlZ4dTVmTDVBbWtrZU11WnBxY1JudkwyNDFFTXg3alFXMVFhN0UtX3ZTOVl1RDI0d19JTC1mWXdGc3hGVDRSWFUtRXhvVmEzLU1YN1hHZU1Mbk0?oc=5": {
+  "zh_title": "字节跳动筹备类 Muse 智能体，力图缩小 AI 差距",
+  "zh_oneliner": "字节跳动正在打造对标 Meta Muse 的 AI 智能体，试图在智能体竞赛中追上 Meta 的步伐。"
+ },
+ "https://www.reddit.com/r/MuseAgent/comments/1xxgnh5/muse_is_overly_sensitive": {
+  "zh_title": "Muse 过于敏感了",
+  "zh_oneliner": "一位常用 Muse 的用户吐槽它的安全过滤过于敏感，影响了日常使用的体验。"
  }
 }
