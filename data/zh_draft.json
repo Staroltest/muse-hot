@@ -930,5 +930,9 @@
  "https://www.reddit.com/r/MuseAgent/comments/1xxle16/muse_ember_is_much_slower_than_what_meta": {
   "zh_title": "Muse Ember 比 Meta 宣传的慢得多，原因在此",
   "zh_oneliner": "有用户实测指出 Muse Ember 的实际速度远低于 Meta 宣传，并分析了背后的原因。"
+ },
+ "https://www.latimes.com/opinion/story/2026-11-10/muse-charm-artificial-intelligence": {
+  "zh_title": "Muse Charm 这类可爱面孔，是剥削性 AI 技术的特洛伊木马",
+  "zh_oneliner": "洛杉矶时报评论文章指出，Muse Charm 这样讨喜的形象可能掩盖了 AI 技术背后的剥削性，提醒人们不要被可爱外表迷惑。"
  }
 }
