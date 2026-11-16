@@ -902,5 +902,33 @@
  "https://zenn.dev/mugipod/articles/hajimemashite-mugi": {
   "zh_title": "初次见面，我是むぎ——名字与形象确定之前",
   "zh_oneliner": "一位日本用户为自家的 Muse 个人助手起了名字、做了形象，记录从取名、定妆到按季节换装的幕后过程，并把“给它一个声音”定为下一步目标。"
+ },
+ "https://www.reddit.com/r/MuseAssistant/comments/1xxqk4a/anyone_else_have_their_muse_do_backups_of_itself": {
+  "zh_title": "还有人让自己的 Muse 给自己做备份吗？",
+  "zh_oneliner": "一位用户发现 Muse 会主动给自己做备份，引发网友讨论智能体自我维护的边界。"
+ },
+ "https://www.reddit.com/r/MuseAgent/comments/1xxqiyz/anyone_else_have_their_muse_do_backups": {
+  "zh_title": "还有人让 Muse 做备份吗？",
+  "zh_oneliner": "网友分享把日常备份交给 Muse 的用法，讨论智能体接手这类杂活的实际体验。"
+ },
+ "https://www.reddit.com/r/MuseAgent/comments/1xxqi5r/do_you_switch_businesses_if_they_hang_up_on_muse": {
+  "zh_title": "如果商家挂断 Muse 的电话，你会换一家吗？",
+  "zh_oneliner": "Muse 代打电话被商家挂断后，用户讨论是否该因此换商家，折射出 AI 代办服务的接受度。"
+ },
+ "https://www.reddit.com/r/MuseAgent/comments/1xxqgmn/fedaicrm_ai_agentic_assisted_customer": {
+  "zh_title": "FED-AI-CRM：AI 智能体辅助客户关系管理系统",
+  "zh_oneliner": "一个基于智能体的客户关系管理系统亮相，尝试用 AI 代理协助处理客户跟进工作。"
+ },
+ "https://www.reddit.com/r/MuseAgent/comments/1xxps9d/ios_shortcut_to_start_voice_call_works": {
+  "zh_title": "用 iOS 快捷指令发起 Muse 语音通话实测可行",
+  "zh_oneliner": "网友实测通过 iOS 快捷指令直接发起 Muse 语音通话，分享了一条更顺手的调用方式。"
+ },
+ "https://www.reddit.com/r/MuseAgent/comments/1xxpnk5/tip_reduceremove_github_permission_request_spam": {
+  "zh_title": "小技巧：让 Muse 搭建自定义 GitHub API 连接器，减少权限请求刷屏",
+  "zh_oneliner": "一个实用技巧：让 Muse 自建 GitHub API 连接器，显著减少反复弹出的权限请求。"
+ },
+ "https://www.reddit.com/r/MuseAgent/comments/1xxle16/muse_ember_is_much_slower_than_what_meta": {
+  "zh_title": "Muse Ember 比 Meta 宣传的慢得多，原因在此",
+  "zh_oneliner": "有用户实测指出 Muse Ember 的实际速度远低于 Meta 宣传，并分析了背后的原因。"
  }
 }
