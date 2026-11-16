@@ -486,5 +486,13 @@
  "https://www.reddit.com/r/MuseAssistant/comments/1xx9o6h/how_do_i_create_an_email_address_eg": {
   "zh_title": "怎么给 Muse 配邮箱地址和电话号码？",
   "zh_oneliner": "新手提问如何给自己的 Muse 创建邮箱、分配电话号码，方便日常使用。"
+ },
+ "https://the-decoder.com/metas-muse-now-calls-businesses-for-you-but-many-companies-might-just-hang-up-on-the-ai": {
+  "zh_title": "Meta Muse 现在能替你给商家打电话，但不少公司可能会直接挂断 AI 来电",
+  "zh_oneliner": "Muse 已能替付费用户致电商家办事，不过电话那头的企业未必愿意跟 AI 通话。"
+ },
+ "https://www.reddit.com/r/MuseAgent/comments/1xxaci4/paying_for_phone_calls": {
+  "zh_title": "打电话也要付费？",
+  "zh_oneliner": "有用户在问 Muse 的电话代拨功能是否每月收费 20 美元，订阅定价成了讨论焦点。"
  }
 }
