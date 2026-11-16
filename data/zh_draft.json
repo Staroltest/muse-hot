@@ -962,5 +962,9 @@
  "https://www.reddit.com/r/MuseAssistant/comments/1xxsvpg/need_a_working_muse_code_pleases": {
   "zh_title": "求一个能用的 Muse 邀请码",
   "zh_oneliner": "有用户在社区求一个可用的 Muse 邀请码，想尽快上手体验。"
+ },
+ "https://www.reddit.com/r/MuseAgent/comments/1xxtzs3/muse_bubble_for_windows_opensource_gh_and_ready": {
+  "zh_title": "Windows 版 Muse 悬浮气泡开源发布，可直接安装使用",
+  "zh_oneliner": "网友把 Muse 做成 Windows 桌面悬浮气泡，单击打开聊天面板、双击直达 Muse，登录状态保持不变，项目已开源并提供安装包。"
  }
 }
