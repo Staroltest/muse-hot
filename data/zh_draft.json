@@ -778,5 +778,25 @@
  "https://www.reddit.com/r/MuseAgent/comments/1xxhyso/for_the_users_and_not_the_corps": {
   "zh_title": "为了用户，而不是为了大公司！",
   "zh_oneliner": "一位用户发帖表态，希望 Muse 首先服务普通用户，而不是只为大公司打工。"
+ },
+ "https://news.google.com/rss/articles/CBMijwFBVV95cUxNQmtSb0F2Y3QzQmtoRzV6MVpXQ2VwSGR3d1NUcWRnUGctckswd3NENlRRVC1iU1hUVzlYQkpnempZbHAyZXNZemhoeWRURHVKMW1ZaEduNENhZ21YamlhUVh3WDE5eFkzb2N1ZXZRM2dyRnJPSEpjYndVSUZZa1Fhd1RobHRSekEzV2lXZ1NVcw?oc=5": {
+  "zh_title": "美联航率先禁止通过 Meta 的 AI 智能体 Muse 订票：“我不想再多一个中间商”",
+  "zh_oneliner": "美联航成为首家明确拒绝 Muse 代订机票的航司，折射出航司与 AI 智能体之间围绕订票渠道控制权的博弈。"
+ },
+ "https://news.google.com/rss/articles/CBMilAFBVV95cUxQOVhkWjVhR1NxSW5iQnNuVEJmbFNLcUpoR0Y3QmdESzJ4aXhBX1loYnZSUy15SF94ZzRWQ2Rja1FlODRjZHFFWkxLd2p2NkREQWxrS3RlSUxLS2dkNWV6QVZBM0JZYU1WbmtCRVcyYW1BbERDZHFXTkl5Wkd5RVM4NVZLMnF4bWk4UTlEOWtMQzYzcnF1?oc=5": {
+  "zh_title": "Meta 的 Muse AI 智能体以侧边栏扩展形式登陆 Chrome",
+  "zh_oneliner": "Muse 走进 Chrome 浏览器侧边栏，用户不用切换应用就能随时唤出这位个人 AI 智能体。"
+ },
+ "https://news.google.com/rss/articles/CBMiigFBVV95cUxPRGZWcWhsTGFPTDBWb2xjM0ExU3duM0tFSWl4UDZLNVZMQWxaYmhPNlIxLWtMQnFUOG0wVUpMVFE1bzhOSW9kLVhGWGtpR0NIZVRGRlYzWHZ6cTNzUkxGLXRjZWRySzU5M3Q3QTk2d2pUcjNwRF9rWV9nOUhpNHI2WWtSU0t6aV9fMGc?oc=5": {
+  "zh_title": "Muse Spark 1.4 在 Meta 的一次代码提交中泄露，据称已在内部使用",
+  "zh_oneliner": "一份公开的代码提交意外透露了 Muse Spark 1.4 的存在，显示新版模型已在 Meta 内部投入使用。"
+ },
+ "https://news.google.com/rss/articles/CBMiogFBVV95cUxNb3VhUThpdGhlZkJiZlJrdDNQRERkS19CTDhQUlY1bWlkN0tyZ0d2eXVkQndUM3NmSFFKcDBIdk9yNl9QQ0xsTHM1dHBwaDc2YndwVUNPM28yTDQxWGhIRWZyT3NHS1EyT1lRRDB2RENxMFdtTVhoZl84T2hGcnZUcHFndmY3dE15X2xSdjN0QVZyLWlYOG4ybGZhX3dqajk5TXc?oc=5": {
+  "zh_title": "ShopBack 成为 Meta Muse 的首批接入服务，亚马逊则在 12 天内封禁了购物机器人",
+  "zh_oneliner": "返利平台 ShopBack 率先接入 Muse 的购物生态，而亚马逊仅用 12 天就对 AI 购物机器人关上了大门。"
+ },
+ "https://news.google.com/rss/articles/CBMioAFBVV95cUxQdlJFODVCc2N2RzFTdjg3Qms4VTBiUk9xeFh3SFhZZWdwWE42Y0tSQ2xxNEZsd2FTVFlWZXg1YXZqWHREdjlFdndxSHNYMVZGNkRqOHFDVmxjY0tWMElqUzY2YWZEalF3ZjI4MDJ0ajNBNHFhQmw0SUlfRHJyNC1ZcUVpeVEwZThRVU9na0d4Rlc3VUtzYzVJbnQ4cmV6V3Zm?oc=5": {
+  "zh_title": "Meta 的 Muse 标志着 AI 智能体进入“萌化”时代",
+  "zh_oneliner": "福布斯认为 Muse 以亲和可爱的形象重新定义了 AI 智能体，开启了一个更贴近日常生活的“萌化”时代。"
  }
 }
