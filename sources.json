@@ -1,5 +1,5 @@
 {
- "comment": "MuseHOT 信源（2026-11-15/16 实测，全部 HTTP 200 且能解析出条目才收录；只收标题或摘要里出现 Muse 的条目，见 config.json required_keywords）。tier: T1 官方一手，T2 媒体/社区与 Google 新闻搜索，T3 综合搜索与小众社区（降权，见 config.json tier_bonus）。用户用法类：Reddit r/MuseAgent（4 千人真实用法社区）、r/MuseAssistant（小社区，偶有邀请码帖，T3）、Hacker News Show HN Muse（用户拿 Muse 做的东西）、Ask HN Muse（用户讨论）。淘汰：Bing 新闻（同一文章带不同 tid 重复入库）、Dev.to Muse 标签（邀请码刷屏，两次实测都这样）、Reddit 搜索 403、Lobsters 500、The Verge Muse 标签 0 条、Wired 标签 400、Android Authority 标签 404、Meta AI 博客 RSS 404、HN 新评论流（标题全是“某人在某帖下评论”，无内容）、Mastodon Muse/MuseAI 标签（0 条）、Built with Muse（feed 解析 0 条）、Sundog 博客（无可用 RSS）、Lemmy（404）、YouTube 频道 RSS（404）。Google 新闻三条搜索有重叠，去重靠链接。",
+ "comment": "MuseHOT 信源（2026-11-15/16 实测，全部 HTTP 200 且能解析出条目才收录；只收标题或摘要里出现 Muse 的条目，见 config.json required_keywords）。tier: T1 官方一手，T2 媒体/社区与 Google 新闻搜索，T3 综合搜索与小众社区（降权，见 config.json tier_bonus）。用户用法类：Reddit r/MuseAgent（4 千人真实用法社区）、r/MuseAssistant（小社区，偶有邀请码帖，T3）、Hacker News Show HN Muse（用户拿 Muse 做的东西）、Ask HN Muse（用户讨论）。淘汰：Bing 新闻（同一文章带不同 tid 重复入库）、Dev.to Muse 标签（邀请码刷屏，两次实测都这样）、Reddit 搜索 403、Lobsters 500、The Verge Muse 标签 0 条、Wired 标签 400、Android Authority 标签 404、Meta AI 博客 RSS 404、HN 新评论流（标题全是“某人在某帖下评论”，无内容）、Mastodon Muse/MuseAI 标签（0 条）、Built with Muse（feed 解析 0 条）、Sundog 博客（无可用 RSS）、Lemmy（404）、YouTube 频道 RSS（404）。2026-11-16 把关新增 The Decoder Muse 标签（T2，模型与技术向：10 条全是 Muse 相关，最新 2026-11-13，含 Wonder 模型、Muse Gadgets 等深度报道，补模型类缺口）。同轮实测未收：9to5Mac Muse 标签（最新 2026-10-07，已超两周）、HackerNoon Muse 标签（仅 3 条，最新 10-09）、VentureBeat Muse 标签（429，多 UA 均限流，无法验证）、The Verge Muse 标签（/rss/tag/muse/index.xml 200 但 0 条）、Wired 标签（404）、AI News Muse 标签（202 空）、MarkTechPost（403）、Tom's Guide（404）、9to5Google/Engadget/Android Central/CNET（404/410）、少数派标签（/feed/tag/muse 404，站内页 JS 渲染无 RSS）、RSSHub sspai/juejin（403）、掘金 RSS（200 但 0 条）、思否 feeds（403）、极客公园 RSS（综合站 feed，最新 30 条无 Muse 标题）、量子位/钛媒体/InfoQ 中文/IT之家/OSChina（综合 feed，Muse 命中极低或为 0）、机器之心 RSS（0 条）、Medium @MetaAI（2023 年停更）、ai.meta.com/blog/rss（400）、Meta 开发者博客（400）、r/MuseAI（无法验证是否存在，未收）。Reddit .rss 直连本机曾 429/403，但流水线以 HOTBot UA 重试可取到（store 有 2026-11-15 23:27 新帖），属间歇限流，持续观察。Ars（最新 10-20）、HN Show（10-22）/Ask（10-27）、Meta Newsroom（11-06）本轮确认 feed 本身 200 正常，干涸是内容侧原因，保留观察。r/MuseAssistant 与 r/MuseAgent 大量跨帖重复（同标题不同链接，9 对），T3 -15 使其不进精选，渲染层 group_similar 归组处理。Google 新闻三条搜索有重叠，去重靠链接。",
  "sources": [
   {
    "category_hint": "official",
@@ -98,6 +98,13 @@
    "name": "Hacker News：Ask HN Muse",
    "tier": "T3",
    "url": "https://hnrss.org/ask?q=Muse"
+  },
+  {
+   "category_hint": "model",
+   "id": "the-decoder-muse",
+   "name": "The Decoder：Muse 标签",
+   "tier": "T2",
+   "url": "https://the-decoder.com/tag/muse/feed/"
   }
  ]
 }
