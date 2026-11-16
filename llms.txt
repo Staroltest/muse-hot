@@ -8,7 +8,7 @@
 > Site: https://staroltest.github.io/muse-hot/
 > Mirror: https://muse-hot.pages.dev/
 > Language: Chinese (zh-CN). No English version yet.
-> Updated: 2026-11-16
+> Updated: 2026-11-17
 
 ## About
 
