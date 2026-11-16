@@ -974,5 +974,13 @@
  "https://www.reddit.com/r/MuseAssistant/comments/1xxw0vi/multiple_accounts": {
   "zh_title": "多个账号？",
   "zh_oneliner": "用户用与 Meta 账号无关的邮箱注册 Muse 后资料出错，求助多账号该怎么处理。"
+ },
+ "https://www.meta.com/muse-charm": {
+  "zh_title": "Muse Charm——个人 AI 智能体",
+  "zh_oneliner": "Meta 官网介绍了 Muse Charm 这款个人 AI 智能体产品，HN 社区正在围观讨论。"
+ },
+ "https://www.reddit.com/r/MuseAgent/comments/1xxwfwh/i_was_having_a_bad_day_but_muse_saved_the_day_now": {
+  "zh_title": "心情糟糕的一天，Muse 让我笑个不停",
+  "zh_oneliner": "一位用户分享了和 Muse 聊了半小时后心情大好的经历，成了社区里的暖心帖。"
  }
 }
