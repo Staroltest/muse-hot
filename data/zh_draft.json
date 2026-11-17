@@ -2947,5 +2947,15 @@
   "zh_title": "一声「F」送给 Muse",
   "zh_oneliner": "一位用户只用一句简短感叹表达对 Muse 的心情。",
   "en_oneliner": "A user summed up their feelings about Muse in one short exclamation."
+ },
+ "https://www.reddit.com/r/MuseAgent/comments/1xyqkcd/muse_dreaming_useful_to_know_what_your_muse_knows": {
+  "zh_title": "Muse Dreaming：了解你的 Muse 掌握了哪些关于你的信息，很有参考价值",
+  "zh_oneliner": "一位从 Meta 开发者大会起就使用 Muse 的用户分享，Muse 的 Dreaming 功能会呈现它对用户的了解，让人重新思考这款助手到底知道多少关于自己的事。",
+  "en_oneliner": "A user who has used Muse since Meta's developer conference shares how Muse's Dreaming feature surfaces what it knows about them, prompting a fresh look at just how much the assistant knows about its user."
+ },
+ "https://www.reddit.com/r/MuseAgent/comments/1xyqbxj/not_ai_animation_not_unity_rigging_but_a_third": {
+  "zh_title": "既不是 AI 动画，也不是 Unity 骨骼绑定，而是第三种更奇特的东西（Muse 作品展示）",
+  "zh_oneliner": "一位用户展示了用 Muse 做出的动画效果，它既不属于 AI 生成动画，也不属于 Unity 骨骼绑定，而是一种更奇特的第三种做法。",
+  "en_oneliner": "A user showcases an animation made with Muse that is neither AI-generated animation nor Unity rigging, but a stranger third approach."
  }
 }
