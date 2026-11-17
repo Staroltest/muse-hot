@@ -2298,5 +2298,16 @@
   "zh_title": "有人成功用 Muse 摆脱那些烦人的公开个人信息搜索网站吗（例如 Spokeo、whitepages.com 等）",
   "zh_oneliner": "一位用户想知道 Muse 能不能帮忙把自己的信息从 Spokeo、whitepages.com 这类公开个人信息搜索网站上清除掉，正在向社区求助实战经验。",
   "en_oneliner": "A user is asking the community whether Muse can actually help get their personal information removed from public people-search sites like Spokeo and whitepages.com."
+ },
+ "https://news.google.com/rss/articles/CBMihgFBVV95cUxQanNvM3Z6bVBkVXZfR0JPLU42SXE5TkhhZThDbGlqTkZUTDJVRnBPUG5OUVgxcFd3RU9keXFjZU51aHRDX3E3TVNSQ012aGRPSTVxbFA1azNmOWVPT18zemlwNFN0RkY4aTJDbnZ2b3RfZFdFRWxoUXltekhNOXktV1lTTDZiQQ?oc=5": {
+  "zh_title": "Meta Muse 模型登陆 Google Cloud：据报有三个角色",
+  "zh_oneliner": "Meta 的 Muse 模型已登陆 Google Cloud，报道称其将承担三种角色。",
+  "en_oneliner": "Meta's Muse models are now available on Google Cloud, reportedly taking on three roles."
+ },
+ "https://qiita.com/Sato-310/items/ee40b693e22341d2c280": {
+  "zh_title": "Muse×PixAI API 使用方法：批量生成图片、应用 LoRA、制作漫画与故障处理",
+  "zh_oneliner": "这篇教程介绍如何用 Muse 结合 PixAI API 批量生成图片、应用 LoRA、制作漫画，并处理常见问题。",
+  "en_oneliner": "This tutorial shows how to use Muse with the PixAI API to batch-generate images, apply LoRA, create comics, and troubleshoot common issues.",
+  "en_title": "How to Use Muse × PixAI API: Batch Image Generation, LoRA Application, Manga Creation, and Troubleshooting"
  }
 }
