@@ -3068,5 +3068,20 @@
   "zh_title": "ESP32：音频间隙时暂停回复动画（#429）",
   "zh_oneliner": "当 Muse 在音频片段之间短暂静默时，头像不再保持动画状态，改为暂停回复动画直至下一段语音到来。",
   "en_oneliner": "When Muse goes quiet between audio segments, the avatar now pauses its reply animation instead of staying animated until the next voice segment arrives."
+ },
+ "https://github.com/facebookincubator/muse-gadget-sdk/commit/1ec568f261a691b6967edc3fdbf9cab7cb2feeb5": {
+  "zh_title": "esp32：通过数据线把 Muse 开发板画面镜像到桌面窗口（#418）",
+  "zh_oneliner": "这次提交让 ESP32 驱动的 Muse 开发板能通过数据线把画面实时投到电脑桌面窗口上，方便直接在电脑前查看和调试板子上的内容。",
+  "en_oneliner": "This commit lets an ESP32-powered Muse board mirror its display to a desktop window over its cable, making it easy to view and debug the board's output right from a computer."
+ },
+ "https://github.com/facebookincubator/muse-gadget-sdk/commit/21c283bd5b5496a5d269dd083d803178e379615b": {
+  "zh_title": "esp32：仅以文字记录形式回复语音消息（#425）",
+  "zh_oneliner": "这次提交让 ESP32 上的 Muse 设备在收到语音消息后只回传文字记录，不再附带语音内容，回复更轻量直接。",
+  "en_oneliner": "This commit makes the ESP32-based Muse device reply to voice notes with a text transcript only, keeping replies lighter and more direct."
+ },
+ "https://github.com/facebookincubator/muse-gadget-sdk/commit/3c69e94ca9583dad2d2e3bc249b9f1a3567a28df": {
+  "zh_title": "Linux：服务以 PID 1 运行时回收被收养的孤儿进程（#420）",
+  "zh_oneliner": "这次提交让 Muse 服务在 Linux 上以 PID 1 运行时能正确回收被收养的孤儿进程，避免僵尸进程堆积。",
+  "en_oneliner": "This commit lets the Muse service running as PID 1 on Linux properly reap adopted orphan processes, preventing zombie processes from piling up."
  }
 }
