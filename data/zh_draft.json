@@ -2309,5 +2309,10 @@
   "zh_oneliner": "这篇教程介绍如何用 Muse 结合 PixAI API 批量生成图片、应用 LoRA、制作漫画，并处理常见问题。",
   "en_oneliner": "This tutorial shows how to use Muse with the PixAI API to batch-generate images, apply LoRA, create comics, and troubleshoot common issues.",
   "en_title": "How to Use Muse × PixAI API: Batch Image Generation, LoRA Application, Manga Creation, and Troubleshooting"
+ },
+ "https://news.google.com/rss/articles/CBMigAFBVV95cUxOTUhQWEVKX0VCalR3amFWbFdGVS02bWZnZWpxZXV6Zm83NXFEMXJOdm5KRTVDcC0tbm14UVdxSXdPZ00tTlBOa2dNakJoaVNMNWtteWUzOGxYMkIzRGY5c2hGdmJoMzFrVXBUSEZhbzN6QkIxX3hJTk1qS25GYXIxOA?oc=5": {
+  "zh_title": "Meta Muse Ember：智能体任务、API 定价与限额解析",
+  "zh_oneliner": "介绍 Meta Muse Ember 的智能体任务能力、API 定价与使用限额，帮开发者判断这款新模型是否适合接入自己的工作流。",
+  "en_oneliner": "An overview of Meta Muse Ember's agent-task capabilities, API pricing, and usage limits, helping developers decide whether the new model fits their workflow."
  }
 }
