@@ -2,8 +2,8 @@
  "generated_at": "2026-11-17",
  "site": "https://staroltest.github.io/muse-hot",
  "summary": {
-  "total": 9,
-  "passed": 7,
+  "total": 11,
+  "passed": 9,
   "warn": 2,
   "failed": 0
  },
@@ -18,7 +18,7 @@
    "key": "sitemap",
    "label": "sitemap.xml 条数与漏页",
    "status": "pass",
-   "detail": "共 989 条 URL，磁盘 988 个 HTML 页全部在列"
+   "detail": "共 991 条 URL，磁盘 990 个 HTML 页全部在列"
   },
   {
    "key": "llms",
@@ -43,6 +43,18 @@
    "label": "详情页 Article（抽查最新 1 篇）",
    "status": "pass",
    "detail": "含 datePublished / dateModified，og:type=article"
+  },
+  {
+   "key": "og",
+   "label": "OG 图与图标链接（batch 2 落地检查）",
+   "status": "pass",
+   "detail": "首页与最新详情页 og:image / twitter:image 均指向 /assets/og-image.png，twitter:card 为 summary_large_image，含 favicon.ico 与 apple-touch-icon 链接。"
+  },
+  {
+   "key": "period",
+   "label": "定期页 head（日报/周报/月报，中英）",
+   "status": "pass",
+   "detail": "抽查 6 页（日报/周报/月报，中英）全部含 canonical、hreflang zh-CN + x-default、robots meta、RSS 发现链接。"
   },
   {
    "key": "mcp",

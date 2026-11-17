@@ -2354,5 +2354,10 @@
   "zh_title": "如何把 Muse Agent 导出为 PDF、Word 或 Markdown",
   "zh_oneliner": "一位用户请教如何把 Muse Agent 的内容导出为 PDF、Word 或 Markdown，寻求实用的导出方法。",
   "en_oneliner": "A user asks how to export Muse Agent content to PDF, Word, or Markdown, looking for a practical export method."
+ },
+ "https://www.reddit.com/r/MuseAgent/comments/1xykai7/web_app_developing_via_muse_ai_spaces_i_no_longer": {
+  "zh_title": "用 Muse AI Spaces 开发网站与应用：免费选项没了",
+  "zh_oneliner": "用户分享了把网站交给 Muse AI Spaces 改造成应用的工作流，并吐槽免费选项取消后只能付费使用。",
+  "en_oneliner": "A user shared a workflow for turning a website into an app with Muse AI Spaces, and complained that losing the free option leaves only paid use."
  }
 }
