@@ -2248,5 +2248,15 @@
   "zh_title": "你信任 Muse 吗？",
   "zh_oneliner": "用户吐槽 Muse 有时不听指令、有时又不够给力，引发关于能否信任 AI 智能体的讨论。",
   "en_oneliner": "A user vents that Muse sometimes ignores instructions and sometimes falls short, sparking a discussion about whether AI agents can be trusted."
+ },
+ "https://www.reddit.com/r/MuseAssistant/comments/1xyatur/i_had_muse_build_me_a_bills_dashboard_that_reads": {
+  "zh_title": "我让 Muse 给我做了一个账单看板，能读懂真实水电账单，还像月末结账一样逐笔对账",
+  "zh_oneliner": "一位会计让 Muse 搭建账单看板，自动读取分散在四个服务商门户的水电燃气与通信账单，并像月末结账一样核对每笔金额与到期日。",
+  "en_oneliner": "An accountant had Muse build a bills dashboard that automatically reads utility and telecom bills scattered across four provider portals and reconciles each amount and due date like a month-end close."
+ },
+ "https://www.reddit.com/r/MuseAgent/comments/1xyb5mi/muse_is_fighting_me_on_something_its_done_before": {
+  "zh_title": "Muse 怎么突然不肯干上周还干过的事了？",
+  "zh_oneliner": "一位用户让 Muse 通过 SSH 登录自己越狱的 Kindle 写脚本，上周还配合得好好的，这次却说什么都不肯了。",
+  "en_oneliner": "A user asked Muse to SSH into their jailbroken Kindle to write scripts — something it did fine last week — but this time it refuses to cooperate."
  }
 }
