@@ -1050,5 +1050,25 @@
  "https://zenn.dev/satofun/articles/b2575c8ff6f4bf": {
   "zh_title": "从 Muse 调用 PixAI API 的方法｜用 Tsubaki.3 试着生成图片",
   "zh_oneliner": "不用写代码，在 Muse 的对话里直接调用 PixAI 的图片生成 API，用 Tsubaki.3 试着生成了图片。"
+ },
+ "https://www.reddit.com/r/MuseAgent/comments/1xy4i9l/using_muse_with_google_drive_a_revolution": {
+  "zh_title": "用 Muse 接入 Google Drive，堪称一场变革",
+  "zh_oneliner": "一位用户把 Muse 接进 Google Drive 后，文件整理与查找变得顺手多了。"
+ },
+ "https://www.reddit.com/r/MuseAgent/comments/1xy555z/ive_solved_the_youtubers_dilemma_using_muse_ai": {
+  "zh_title": "用 Muse AI 解决 YouTuber 的难题：Meta-Blade 来了",
+  "zh_oneliner": "一位创作者用 Muse 打造了名为 Meta-Blade 的工具，帮 YouTuber 应对选题与制作的两难。"
+ },
+ "https://www.reddit.com/r/MuseAgent/comments/1xy695q/my_muse_diorama": {
+  "zh_title": "我的 Muse 立体小场景",
+  "zh_oneliner": "一位用户晒出自己为 Muse 搭建的立体小场景，把 AI 助手做成了桌面摆件。"
+ },
+ "https://www.reddit.com/r/MuseAgent/comments/1xy67cp/how_to_get_1_billion_free_muse_tokens": {
+  "zh_title": "如何免费拿到 10 亿 Muse tokens",
+  "zh_oneliner": "一篇帖子分享了免费获取大量 Muse tokens 的方法，真实性与合规性仍有待核实。"
+ },
+ "https://www.reddit.com/r/MuseAgent/comments/1xy5y0w/simple_model_and_animation_import": {
+  "zh_title": "简单的模型与动画导入方法",
+  "zh_oneliner": "一位用户分享了把模型和动画快速导入 Muse 的简易做法。"
  }
 }

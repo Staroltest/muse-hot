@@ -5,8 +5,8 @@
  "date": "2026年11月17日",
  "date_iso": "2026-11-17",
  "issue": 3,
- "generated_at": "2026-11-16T22:12:46.040280+00:00",
- "summary": "过去 24 小时共收录 64 条动态，精选 10 条（新闻动态 7 条、真实用法 1 条、官方动态 1 条、观点与争议 1 条）。头条：Muse Mail、语音和通话还是没有，到底怎么回事？。",
+ "generated_at": "2026-11-17T01:11:20.427545+00:00",
+ "summary": "过去 24 小时共收录 69 条动态，精选 10 条（新闻动态 4 条、教程指南 1 条、真实用法 1 条、官方动态 1 条、观点与争议 2 条、模型与技术 1 条）。头条：Muse Mail、语音和通话还是没有，到底怎么回事？。",
  "items": [
   {
    "id": "298702b036e660222e0117902c1e6f87281a7755",
@@ -28,33 +28,9 @@
    "reason": "涉及call与voice · 6 小时内发布",
    "is_new": true,
    "trend": "same",
-   "hot_score": 84.5,
+   "hot_score": 82.2,
    "prev_rank": 1,
-   "prev_hot_score": 84.5
-  },
-  {
-   "id": "6220278af41f016ea79b9b812369a62b9f572c27",
-   "title": "Paying for phone calls?",
-   "link": "https://www.reddit.com/r/MuseAgent/comments/1xxaci4/paying_for_phone_calls",
-   "source": "Reddit：r/MuseAgent",
-   "source_id": "reddit-museagent",
-   "published": "2026-11-15T23:42:26+00:00",
-   "zh_title": "打电话也要付费？",
-   "zh_oneliner": "有用户在问 Muse 的电话代拨功能是否每月收费 20 美元，订阅定价成了讨论焦点。",
-   "category": "news",
-   "category_label": "新闻动态",
-   "tier": "T2",
-   "tags": [
-    "subscription",
-    "call"
-   ],
-   "score": 80,
-   "reason": "涉及subscription与call · 24 小时内发布",
-   "is_new": false,
-   "trend": "same",
-   "hot_score": 64.9,
-   "prev_rank": null,
-   "prev_hot_score": null
+   "prev_hot_score": 82.2
   },
   {
    "id": "fd27a2456dbc9b0c778ba3e2d48d7b6ca4826467",
@@ -76,56 +52,32 @@
    "reason": "涉及call与voice · 24 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 74.0,
-   "prev_rank": 5,
-   "prev_hot_score": 74.0
+   "hot_score": 72.0,
+   "prev_rank": 13,
+   "prev_hot_score": 72.0
   },
   {
-   "id": "b95b98cb69a01c6ccb523c24e4a625f7eeff4770",
-   "title": "Anyone have any issues with cancelling and renewing their upgraded Muse Subscription? Whenever I go to upgrade. It's telling me \"You renewed your plan. You can make changes again once your renewal is complete.\" and stalls there. I have not renewed.",
-   "link": "https://www.reddit.com/r/MuseAgent/comments/1xx9ksq/anyone_have_any_issues_with_cancelling_and",
+   "id": "5abf7b422000a7e82828204790b4382e200003bf",
+   "title": "I've solved the YouTuber's dilemma using Muse AI: Welcome to Meta-Blade",
+   "link": "https://www.reddit.com/r/MuseAgent/comments/1xy555z/ive_solved_the_youtubers_dilemma_using_muse_ai",
    "source": "Reddit：r/MuseAgent",
    "source_id": "reddit-museagent",
-   "published": "2026-11-15T23:07:29+00:00",
-   "zh_title": "升级版 Muse 订阅取消续订卡住了，有人遇到过吗？",
-   "zh_oneliner": "用户想取消升级版 Muse 订阅的续订，却被提示已续订、暂时无法更改，询问是否有人遇到同样问题。",
-   "category": "news",
-   "category_label": "新闻动态",
+   "published": "2026-11-16T23:45:28+00:00",
+   "zh_title": "",
+   "zh_oneliner": "",
+   "category": "guide",
+   "category_label": "教程指南",
    "tier": "T2",
    "tags": [
-    "subscription"
+    "prompt"
    ],
-   "score": 75,
-   "reason": "涉及subscription · 24 小时内发布",
-   "is_new": false,
+   "score": 80,
+   "reason": "涉及prompt · 6 小时内发布",
+   "is_new": true,
    "trend": "same",
-   "hot_score": 60.5,
-   "prev_rank": null,
-   "prev_hot_score": null
-  },
-  {
-   "id": "5a15b60fc8ff71780be9acf47a8cf1c81d582917",
-   "title": "My Voice Mode Was Turned Off After Using It",
-   "link": "https://www.reddit.com/r/MuseAgent/comments/1xxc8a2/my_voice_mode_was_turned_off_after_using_it",
-   "source": "Reddit：r/MuseAgent",
-   "source_id": "reddit-museagent",
-   "published": "2026-11-16T01:10:03+00:00",
-   "zh_title": "用过之后，我的语音模式被关掉了",
-   "zh_oneliner": "一位用户发现自己用过语音模式后，该功能被关掉了，正在向社区求助原因。",
-   "category": "news",
-   "category_label": "新闻动态",
-   "tier": "T2",
-   "tags": [
-    "call",
-    "voice"
-   ],
-   "score": 75,
-   "reason": "涉及call与voice · 24 小时内发布",
-   "is_new": false,
-   "trend": "same",
-   "hot_score": 61.7,
-   "prev_rank": null,
-   "prev_hot_score": null
+   "hot_score": 78.9,
+   "prev_rank": 2,
+   "prev_hot_score": 79.0
   },
   {
    "id": "cba36aa54d58ddff583ba16f4132d0d6c1809fa1",
@@ -146,7 +98,7 @@
    "reason": "涉及数据 · 24 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 62.7,
+   "hot_score": 61.0,
    "prev_rank": null,
    "prev_hot_score": null
   },
@@ -169,7 +121,7 @@
    "reason": "涉及Spaces · 24 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 63.1,
+   "hot_score": 61.4,
    "prev_rank": null,
    "prev_hot_score": null
   },
@@ -192,7 +144,7 @@
    "reason": "涉及voice · 24 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 63.3,
+   "hot_score": 61.5,
    "prev_rank": null,
    "prev_hot_score": null
   },
@@ -215,9 +167,9 @@
    "reason": "涉及review · 24 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 65.2,
-   "prev_rank": 20,
-   "prev_hot_score": 65.2
+   "hot_score": 63.4,
+   "prev_rank": null,
+   "prev_hot_score": null
   },
   {
    "id": "3ce739badab9ec76518aa2af18bcbfc790bb6585",
@@ -238,9 +190,55 @@
    "reason": "涉及watch · 24 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 67.9,
-   "prev_rank": 13,
-   "prev_hot_score": 67.9
+   "hot_score": 66.1,
+   "prev_rank": 19,
+   "prev_hot_score": 66.1
+  },
+  {
+   "id": "fea1a90c46164ce641a5a233979a0edb58831d46",
+   "title": "FED-AI-CRM (Ai Agentic Assisted Customer Relationship Management System)",
+   "link": "https://www.reddit.com/r/MuseAgent/comments/1xxqgmn/fedaicrm_ai_agentic_assisted_customer",
+   "source": "Reddit：r/MuseAgent",
+   "source_id": "reddit-museagent",
+   "published": "2026-11-16T14:17:14+00:00",
+   "zh_title": "FED-AI-CRM：AI 智能体辅助客户关系管理系统",
+   "zh_oneliner": "一个基于智能体的客户关系管理系统亮相，尝试用 AI 代理协助处理客户跟进工作。",
+   "category": "opinion",
+   "category_label": "观点与争议",
+   "tier": "T2",
+   "tags": [
+    "review"
+   ],
+   "score": 75,
+   "reason": "涉及review · 24 小时内发布",
+   "is_new": false,
+   "trend": "same",
+   "hot_score": 67.8,
+   "prev_rank": 18,
+   "prev_hot_score": 67.8
+  },
+  {
+   "id": "0e5175c6a8301fbc9e5efc51dfda2fc6824fc849",
+   "title": "Muse Ember is much SLOWER than what META advertised to you, and here is why",
+   "link": "https://www.reddit.com/r/MuseAgent/comments/1xxle16/muse_ember_is_much_slower_than_what_meta",
+   "source": "Reddit：r/MuseAgent",
+   "source_id": "reddit-museagent",
+   "published": "2026-11-16T09:47:48+00:00",
+   "zh_title": "Muse Ember 比 Meta 宣传的慢得多，原因在此",
+   "zh_oneliner": "有用户实测指出 Muse Ember 的实际速度远低于 Meta 宣传，并分析了背后的原因。",
+   "category": "model",
+   "category_label": "模型与技术",
+   "tier": "T2",
+   "tags": [
+    "工作流"
+   ],
+   "score": 75,
+   "reason": "涉及工作流 · 24 小时内发布",
+   "is_new": false,
+   "trend": "same",
+   "hot_score": 65.0,
+   "prev_rank": null,
+   "prev_hot_score": null
   }
  ]
 }

@@ -281,16 +281,19 @@
    {
     "label": "USDT · Solana（小额打赏，手续费不到 1 美分）",
     "image": "assets/tip-usdt-solana.png",
-    "address": "7pitxN5xECR2NH2qdhFiSRC3fDdMsmVczqFSY4Zz4v5H"
+    "address": "7pitxN5xECR2NH2qdhFiSRC3fDdMsmVczqFSY4Zz4v5H",
+    "label_en": "USDT · Solana (Small tips, fee under $0.01)"
    },
    {
     "label": "USDT · TRC20（大额 / 交易所提币，最通用）",
     "image": "assets/tip-usdt-trc20.png",
-    "address": "TBH8fAi6Vbr9G4VW3PDm3DugZU6fknr6na"
+    "address": "TBH8fAi6Vbr9G4VW3PDm3DugZU6fknr6na",
+    "label_en": "USDT · TRC20 (Large tips / exchange withdrawals, most widely supported)"
    }
   ],
   "title": "MuseHOT Muse 热点",
-  "url": "https://staroltest.github.io/muse-hot"
+  "url": "https://staroltest.github.io/muse-hot",
+  "description_en": "MuseHOT: daily picks of what people around the world are doing with Muse, with a daily issue at 06:00 Beijing time."
  },
  "exclude_links": [
   "https://medium.com/catharsis-chronicles/muse-ace34bcfd689?source=rss------muse-5"

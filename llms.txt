@@ -7,12 +7,13 @@
 > It does not republish full text.
 > Site: https://staroltest.github.io/muse-hot/
 > Mirror: https://muse-hot.pages.dev/
-> Language: Chinese (zh-CN). No English version yet.
+> Language: Chinese (zh-CN). English version: /en/.
 > Updated: 2026-11-17
 
 ## About
 
 - About: https://staroltest.github.io/muse-hot/about.html
+- English version: https://staroltest.github.io/muse-hot/en/
 - Topics: https://staroltest.github.io/muse-hot/topics.html
 - Daily digest: https://staroltest.github.io/muse-hot/daily.html
 - Hot list: https://staroltest.github.io/muse-hot/hot.html

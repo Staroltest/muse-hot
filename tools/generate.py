@@ -38,6 +38,13 @@ UA = {"User-Agent": "HOTBot/1.0"}
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
+# ---- 双语（中/英）全局状态：每写一页前由 main() 按语言与深度设置 ----
+PAGE_LANG = "zh"       # "zh" | "en"
+ASSET_BASE = ""        # 到站根的资源前缀：根页 ""，中文子目录 "../"，en 根页 "../"，en 子目录 "../../"
+PAGE_BASE = ""         # 到本语言根的页面前缀：根页 ""，子目录 "../"
+CAT_LABEL_EN = {}      # 分类 key -> label_en，main() 里由 config 填
+
+
 # ---------------------------------------------------------------- 工具函数
 
 def load_json(path):
@@ -141,7 +148,30 @@ def parse_date(text):
 
 
 def fmt_cst(dt):
-    return dt.astimezone(CST).strftime("%m月%d日 %H:%M")
+    dt = dt.astimezone(CST)
+    if PAGE_LANG == "en":
+        return f"{MONTHS_EN[dt.month - 1]} {dt.day} {dt.strftime('%H:%M')}"
+    return dt.strftime("%m月%d日 %H:%M")
+
+
+def disp_zh_date(s):
+    """把中文日期串翻成英文（英文站用）：'2026年11月17日 09:07' -> 'Nov 17, 2026 09:07'，
+    '2026年11月17日' -> 'Nov 17, 2026'，'2026年第47周' -> 'Week 47, 2026'，
+    '2026年11月' -> 'November 2026'，'11月16日' -> 'Nov 16'；中文站原样返回。"""
+    if PAGE_LANG == "zh":
+        return s
+    for fmt, out in (("%Y年%m月%d日 %H:%M", lambda d: f"{MONTHS_EN[d.month - 1]} {d.day}, {d.year} {d.strftime('%H:%M')}"),
+                     ("%Y年%m月%d日", lambda d: f"{MONTHS_EN[d.month - 1]} {d.day}, {d.year}"),
+                     ("%Y年%m月", lambda d: f"{MONTHS_EN[d.month - 1]} {d.year}"),
+                     ("%m月%d日", lambda d: f"{MONTHS_EN[d.month - 1]} {d.day}")):
+        try:
+            return out(datetime.strptime(s, fmt))
+        except ValueError:
+            continue
+    if "年第" in s and s.endswith("周"):
+        y, rest = s.split("年第", 1)
+        return f"Week {int(rest[:-1])}, {y}"
+    return s
 
 
 def local_name(tag):
@@ -472,6 +502,15 @@ aside.rail .brand{margin-bottom:12px}
 .switch a{padding:3px 14px;border-radius:9999px;font-size:13px;font-weight:500;color:var(--ink-3)}
 .switch a.on{background:var(--surface);color:var(--ink);font-weight:600;box-shadow:var(--shadow-card)}
 .topbar .title{margin:0 auto;font-size:15px;font-weight:600}
+/* 语言切换：仿 .switch 药丸样式，顶栏与页脚共用 */
+.lang-switch{display:inline-flex;align-items:center;gap:2px;padding:2px;border-radius:9999px;
+  background:var(--well);box-shadow:inset 0 0 0 1px var(--line-soft);font-size:12.5px;font-weight:500;white-space:nowrap}
+.lang-switch .on{padding:2px 10px;border-radius:9999px;background:var(--surface);color:var(--ink);
+  font-weight:600;box-shadow:var(--shadow-card)}
+.lang-switch a{padding:2px 10px;border-radius:9999px;color:var(--ink-3)}
+.lang-switch a:hover{color:var(--accent)}
+.topbar .lang-switch{flex-shrink:0}
+.foot-links .lang-switch{margin-right:4px}
 .icon-btn{display:inline-flex;width:36px;height:36px;align-items:center;justify-content:center;
   border:0;border-radius:8px;background:transparent;color:var(--ink-3)}
 .icon-btn:hover{background:var(--bg-sunk);color:var(--ink)}
@@ -940,8 +979,58 @@ def esc(s):
     return html.escape(s or "", quote=True)
 
 
+def tr(zh, en=None):
+    """界面文案翻译：英文站返回 en（未给 en 时返回中文原文），中文站返回中文。"""
+    if PAGE_LANG == "en":
+        return en if en is not None else zh
+    return zh
+
+
+def disp_title(it):
+    """页面上显示的标题：英文站显示源站原文标题，中文站优先中文翻译。"""
+    if PAGE_LANG == "en":
+        return it["title"]
+    return it.get("zh_title") or it["title"]
+
+
+def cat_label(it):
+    """分类标签：英文站用 label_en，中文站用中文标签。"""
+    if PAGE_LANG == "en":
+        return CAT_LABEL_EN.get(it.get("category", ""), it.get("category_label", ""))
+    return it.get("category_label", "")
+
+
+def _en_url(site_url, url):
+    """中文版绝对 URL -> 对应的英文版绝对 URL（site_url 后插入 en/）。"""
+    if url == site_url + "/":
+        return site_url + "/en/"
+    if url.startswith(site_url + "/"):
+        return site_url + "/en/" + url[len(site_url) + 1:]
+    return url
+
+
+def lang_switch_html(rel_path):
+    """语言切换：rel_path 是页面相对本语言根的路径（如 "hot.html"、"daily/2026-11-17.html"）。
+    空 rel_path（404 / geo-audit 等无英文版的页）返回空。"""
+    if not rel_path:
+        return ""
+    if PAGE_LANG == "zh":
+        href = ("en/" if ASSET_BASE == "" else "../en/") + rel_path
+        return (f'<span class="lang-switch" role="group" aria-label="语言">'
+                f'<span class="on" aria-current="true">中文</span>'
+                f'<a href="{href}" data-lang="en">EN</a></span>')
+    href = ("../" if ASSET_BASE == "../" else "../../") + rel_path
+    return (f'<span class="lang-switch" role="group" aria-label="Language">'
+            f'<span class="on" aria-current="true">EN</span>'
+            f'<a href="{href}" data-lang="zh">中文</a></span>')
+
+
 WEEKDAYS = ["星期一", "星期二", "星期三", "星期四", "星期五", "星期六", "星期日"]
 WEEKDAYS_SHORT = ["周一", "周二", "周三", "周四", "周五", "周六", "周日"]
+WEEKDAYS_EN = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+WEEKDAYS_SHORT_EN = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+MONTHS_EN = ["January", "February", "March", "April", "May", "June",
+             "July", "August", "September", "October", "November", "December"]
 
 # 线性描边小图标（feather 风格；不引入任何外部资源）
 ICONS = {
@@ -990,8 +1079,9 @@ def icon(name, size=17):
 def score_pill(score):
     """AIHOT Score 的分档药丸：85+ 红、70+ 青、其余安静；手机只留数字。"""
     tier = "t-hot" if score >= 85 else ("t-acc" if score >= 70 else "t-quiet")
-    return (f'<span class="score-pill {tier}" title="评分 {score}/100">'
-            f'<span class="lbl">评分</span><span class="sep"></span>'
+    lbl = tr("评分", "Score")
+    return (f'<span class="score-pill {tier}" title="{lbl} {score}/100">'
+            f'<span class="lbl">{lbl}</span><span class="sep"></span>'
             f'<span class="num">{score}</span></span>')
 
 
@@ -1006,27 +1096,30 @@ def _pub_dt(it):
 
 def feed_item(it, rank=None, badge=False, base=""):
     """AIHOT FeedItem 的静态版：来源行 + 标题 + 一句话简介 + 分类 + 推荐理由 + 星标。
-    标题有中文翻译时优先显示中文；简介是本站自己写的一句话（zh_oneliner），
-    不展示源站摘要原文。base 是到站根的目录前缀（'' 或 '../'，日报存档页用）。"""
+    标题：中文站优先中文翻译，英文站显示源站原文标题；简介是本站自己写的一句话
+    （zh_oneliner），英文站加 lang="zh-CN"，不展示源站摘要原文。
+    base 参数保留兼容：页面链接用 PAGE_BASE（到本语言根），资源链接用 ASSET_BASE。"""
     pub = _pub_dt(it)
     rank_html = ""
     if rank:
         cls = "r1" if rank == 1 else ("r2" if rank == 2 else ("r3" if rank == 3 else ""))
         rank_html = f'<span class="rank {cls}">{rank}</span>'
-    badge_html = '<span class="pick">精选</span>' if badge else ""
-    new_html = '<span class="new-pill">新</span>' if it.get("is_new") else ""
-    off_html = '<span class="off-tag">官方</span>' if it.get("_tier") == "T1" else ""
-    reason_html = (f'<p class="fi-reason">推荐理由：{esc(it["reason"])}</p>'
+    badge_html = f'<span class="pick">{tr("精选", "Featured")}</span>' if badge else ""
+    new_html = f'<span class="new-pill">{tr("新", "New")}</span>' if it.get("is_new") else ""
+    off_html = f'<span class="off-tag">{tr("官方", "Official")}</span>' if it.get("_tier") == "T1" else ""
+    reason_html = (f'<p class="fi-reason">{tr("推荐理由：", "Why it matters: ")}{esc(it["reason"])}</p>'
                    if it.get("reason") else "")
     tags_html = ""
     tags = it.get("tags") or []
     if tags:
         tags_html = ('<div class="fi-tags">' + "".join(
-            f'<a class="tag" href="{base}topics/{TAG_SLUGS.get(t, t)}.html">#{esc(t)}</a>'
+            f'<a class="tag" href="{PAGE_BASE}topics/{TAG_SLUGS.get(t, t)}.html">#{esc(t)}</a>'
             for t in tags[:3]) + '</div>')
-    title = it.get("zh_title") or it["title"]
+    title = disp_title(it)
     summary = it.get("zh_oneliner") or ""
     en_text = it["title"]
+    sum_attr = ' lang="zh-CN"' if (PAGE_LANG == "en" and summary) else ""
+    save_lbl = tr("收藏", "Save")
     return (f'<article class="feed-item" data-id="{esc(it["id"])}" data-category="{esc(it["category"])}"'
             f' data-official="{"1" if it.get("_tier") == "T1" else "0"}"'
             f' data-en="{esc(en_text)}">'
@@ -1034,12 +1127,12 @@ def feed_item(it, rank=None, badge=False, base=""):
             f'<time class="pt">· {esc(pub.astimezone(CST).strftime("%H:%M"))}</time>'
             f'{badge_html}{new_html}'
             f'<span class="sp">{score_pill(it["score"])}'
-            f'<button type="button" class="star-btn" aria-label="收藏" title="收藏">'
+            f'<button type="button" class="star-btn" aria-label="{save_lbl}" title="{save_lbl}">'
             f'{icon("bookmark", 16)}</button></span></header>'
-            f'<h3>{rank_html}<a href="{base}items/{esc(it["id"])}.html">{esc(title)}</a></h3>'
-            + (f'<p class="sum">{esc(summary)}</p>' if summary else "")
+            f'<h3>{rank_html}<a href="{PAGE_BASE}items/{esc(it["id"])}.html">{esc(title)}</a></h3>'
+            + (f'<p class="sum"{sum_attr}>{esc(summary)}</p>' if summary else "")
             + f'<div class="fi-foot"><button type="button" class="chip cat" data-filter="{esc(it["category"])}">'
-            f'{esc(it["category_label"])}</button>'
+            f'{esc(cat_label(it))}</button>'
             f'<span class="when">{esc(fmt_cst(pub))}</span></div>'
             + tags_html
             + reason_html
@@ -1051,7 +1144,7 @@ def hot_delta_html(it):
     prev = it.get("prev_hot_score")
     cur = it.get("hot_score")
     if prev is None or cur is None:
-        return '<span class="hot-delta new">新</span>'
+        return f'<span class="hot-delta new">{tr("新", "New")}</span>'
     if prev <= 0:
         return '<span class="hot-delta flat">–</span>'
     d = (cur - prev) / prev * 100.0
@@ -1066,11 +1159,11 @@ def hot_badges(it):
     """头条/次卡徽章：热度 ≥90 为“爆”，首次上榜为“新”，名次上升为“发酵中”。"""
     out = []
     if it.get("trend") == "new":
-        out.append('<span class="hot-badge b-new">新</span>')
+        out.append(f'<span class="hot-badge b-new">{tr("新", "New")}</span>')
     if (it.get("hot_score") or 0) >= 90:
-        out.append('<span class="hot-badge b-hot">爆</span>')
+        out.append(f'<span class="hot-badge b-hot">{tr("爆", "Hot")}</span>')
     if it.get("trend") == "up":
-        out.append('<span class="hot-badge b-up">发酵中</span>')
+        out.append(f'<span class="hot-badge b-up">{tr("发酵中", "Rising")}</span>')
     return "".join(out[:2])
 
 
@@ -1080,20 +1173,21 @@ def hot_row(it, rank, pad=False):
     num = f"{rank:02d}" if pad else str(rank)
     trend = it.get("trend", "same")
     if trend == "up":
-        trend_html = f'<span class="hot-trend"><span class="up" title="热度上升">{icon("trend-up", 14)}</span></span>'
+        trend_html = f'<span class="hot-trend"><span class="up" title="{tr("热度上升", "Heat rising")}">{icon("trend-up", 14)}</span></span>'
     elif trend == "down":
-        trend_html = f'<span class="hot-trend"><span title="热度回落">{icon("trend-down", 14)}</span></span>'
+        trend_html = f'<span class="hot-trend"><span title="{tr("热度回落", "Heat falling")}">{icon("trend-down", 14)}</span></span>'
     elif trend == "new":
-        trend_html = '<span class="hot-trend"><span class="new-pill">新</span></span>'
+        trend_html = f'<span class="hot-trend"><span class="new-pill">{tr("新", "New")}</span></span>'
     else:
-        trend_html = f'<span class="hot-trend"><span class="flat" title="热度持平">{icon("minus", 14)}</span></span>'
-    return (f'<li><a class="hot-row" href="items/{esc(it["id"])}.html">'
+        trend_html = f'<span class="hot-trend"><span class="flat" title="{tr("热度持平", "Heat flat")}">{icon("minus", 14)}</span></span>'
+    return (f'<li><a class="hot-row" href="{PAGE_BASE}items/{esc(it["id"])}.html">'
             f'<span class="rank {cls}">{num}</span>'
-            f'<span class="t">{esc(it.get("zh_title") or it["title"])}</span>'
-            f'<span class="hot-heat"><b class="num">{round(it["hot_score"])}</b> 热度</span>'
+            f'<span class="t">{esc(disp_title(it))}</span>'
+            f'<span class="hot-heat"><b class="num">{round(it["hot_score"])}</b> {tr("热度", "Heat")}</span>'
             f'{hot_delta_html(it)}'
             f'{trend_html}'
             f'</a></li>')
+
 
 THEME_BOOT = """<script>(function(){try{var k='__SLUG__-theme';function sys(){return window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}function apply(t){document.documentElement.setAttribute('data-theme',t==='dark'?'dark':'light');}var saved=localStorage.getItem(k);if(saved==='dark'||saved==='light'){apply(saved);}else{apply(sys());var mq=window.matchMedia&&matchMedia('(prefers-color-scheme: dark)');if(mq&&mq.addEventListener){mq.addEventListener('change',function(){try{if(!localStorage.getItem(k))apply(sys());}catch(e){}});}}}catch(e){}})();</script>"""
 
@@ -1102,6 +1196,10 @@ SCRIPT = """
 (function(){
 var LS_READ='__SLUG__-read',LS_STAR='__SLUG__-starred',LS_STAR_META='__SLUG__-starred-meta',
     LS_THEME='__SLUG__-theme',LS_RECENT='__SLUG__-recent-search',LS_CL_READ='__SLUG__-changelog-read';
+var IS_EN=document.documentElement.lang==='en';
+var DATA_BASE=document.documentElement.getAttribute('data-base')||'';
+function pickTitle(it){return IS_EN?(it.title||''):(it.zh_title||it.title);}
+function T(zh,en){return IS_EN?en:zh;}
 function loadSet(k){try{return new Set(JSON.parse(localStorage.getItem(k)||'[]'));}catch(e){return new Set();}}
 function saveSet(k,s){try{localStorage.setItem(k,JSON.stringify(Array.from(s)));}catch(e){}}
 function loadObj(k){try{return JSON.parse(localStorage.getItem(k)||'{}')||{};}catch(e){return {};}}
@@ -1130,7 +1228,7 @@ function syncThemeUI(){
     if(ic)ic.style.display=mode==='dark'?'inline-flex':'none';
     if(is)is.style.display=mode==='light'?'inline-flex':'none';
     if(im)im.style.display=mode==='system'?'inline-flex':'none';
-    b.setAttribute('aria-label','外观：'+(mode==='dark'?'深色':mode==='light'?'浅色':'跟随系统')+'（点击切换）');
+    b.setAttribute('aria-label',IS_EN?('Appearance: '+(mode==='dark'?'dark':mode==='light'?'light':'system')+' (click to switch)'):('外观：'+(mode==='dark'?'深色':mode==='light'?'浅色':'跟随系统')+'（点击切换）'));
   });
   document.querySelectorAll('.theme-seg button').forEach(function(b){
     b.classList.toggle('on',b.getAttribute('data-theme-opt')===mode);
@@ -1167,18 +1265,18 @@ function bindFeedItem(el){
   if(readSet.has(id))el.classList.add('is-read');
   var star=el.querySelector('.star-btn');
   if(star){
-    if(starSet.has(id)){star.classList.add('on');star.setAttribute('aria-label','取消收藏');star.title='取消收藏';}
+    if(starSet.has(id)){star.classList.add('on');star.setAttribute('aria-label',IS_EN?'Unsave':'取消收藏');star.title=IS_EN?'Unsave':'取消收藏';}
     star.addEventListener('click',function(){
       if(starSet.has(id)){
         starSet.delete(id);delete starMeta[id];
-        star.classList.remove('on');star.setAttribute('aria-label','收藏');star.title='收藏';
+        star.classList.remove('on');star.setAttribute('aria-label',IS_EN?'Save':'收藏');star.title=IS_EN?'Save':'收藏';
       }else{
         starSet.add(id);
         /* 收藏快照：标题/链接/来源/时间，供收藏页离线展示与下架置灰用 */
         var a=el.querySelector('h3 a'),src=el.querySelector('.fi-head .src');
         starMeta[id]={title:a?a.textContent.trim():'',link:a?a.getAttribute('href'):'',
           source:src?src.textContent.trim():'',at:new Date().toISOString()};
-        star.classList.add('on');star.setAttribute('aria-label','取消收藏');star.title='取消收藏';
+        star.classList.add('on');star.setAttribute('aria-label',IS_EN?'Unsave':'取消收藏');star.title=IS_EN?'Unsave':'取消收藏';
       }
       saveSet(LS_STAR,starSet);saveObj(LS_STAR_META,starMeta);applyFilters();
     });
@@ -1229,17 +1327,17 @@ function applyFilters(){
     nr.hidden=!!shown;nr.style.display='';
     var t=document.getElementById('noResultTitle'),x=document.getElementById('noResultText');
     if(state.cat==='starred'||state.star){
-      if(t)t.textContent='还没有收藏';
-      if(x)x.textContent='去点卡片右上角的书签，喜欢的动态就会出现在这里。';
+      if(t)t.textContent=IS_EN?'No saved items yet':'还没有收藏';
+      if(x)x.textContent=IS_EN?'Tap the bookmark on a card and it will show up here.':'去点卡片右上角的书签，喜欢的动态就会出现在这里。';
     }else if(state.unread){
-      if(t)t.textContent='这批都读过了';
-      if(x)x.textContent='关掉「只看未读」可以看到全部动态。';
+      if(t)t.textContent=IS_EN?'You have read this batch':'这批都读过了';
+      if(x)x.textContent=IS_EN?'Turn off "Unread only" to see everything.':'关掉「只看未读」可以看到全部动态。';
     }else if(state.q){
-      if(t)t.textContent='没有匹配「'+state.q+'」的动态。';
-      if(x)x.textContent='换个关键词试试，或者清除搜索看看全部。';
+      if(t)t.textContent=IS_EN?('No items matching "'+state.q+'".'):('没有匹配「'+state.q+'」的动态。');
+      if(x)x.textContent=IS_EN?'Try another keyword, or clear the search to see everything.':'换个关键词试试，或者清除搜索看看全部。';
     }else{
-      if(t)t.textContent='这个分类下暂无动态。';
-      if(x)x.textContent='换个分类看看，或者回到全部动态。';
+      if(t)t.textContent=IS_EN?'No items in this category yet.':'这个分类下暂无动态。';
+      if(x)x.textContent=IS_EN?'Try another category, or go back to all updates.':'换个分类看看，或者回到全部动态。';
     }
   }
   var sc=document.getElementById('starCount');
@@ -1407,7 +1505,7 @@ function renderRecent(){
   var list=loadRecent();
   box.innerHTML=list.length?list.map(function(q){
     return '<div class="recent-row"><button type="button" class="chip" data-recent="'+q.replace(/"/g,'&quot;')+'">'+q.replace(/</g,'&lt;')+'</button></div>';
-  }).join(''):'<p class="more-note">还没有搜索过。</p>';
+  }).join(''):'<p class="more-note">'+(IS_EN?'No searches yet.':'还没有搜索过。')+'</p>';
   box.querySelectorAll('[data-recent]').forEach(function(b){
     b.addEventListener('click',function(){
       var q=b.getAttribute('data-recent');
@@ -1453,7 +1551,7 @@ var dayIndexPromise=null;
 var dayCache={};
 function getDayIndex(){
   if(dayIndexPromise)return dayIndexPromise;
-  dayIndexPromise=fetch('data/days/index.json').then(function(r){
+  dayIndexPromise=fetch(DATA_BASE+'data/days/index.json').then(function(r){
     if(!r.ok)throw new Error('HTTP '+r.status);return r.json();
   }).then(function(d){
     return (d.days||[]).map(function(x){return x.date;});
@@ -1462,7 +1560,7 @@ function getDayIndex(){
 }
 function getDay(date){
   if(dayCache[date])return dayCache[date];
-  dayCache[date]=fetch('data/days/'+date+'.json').then(function(r){
+  dayCache[date]=fetch(DATA_BASE+'data/days/'+date+'.json').then(function(r){
     if(!r.ok)throw new Error('HTTP '+r.status);return r.json();
   }).then(function(d){
     return (d.items||[]).sort(function(a,b){return new Date(b.published)-new Date(a.published);});
@@ -1493,19 +1591,19 @@ function getStore(){
       var m=starMeta[id]||{};
       var it=live[id];
       var gone=!it;
-      var title=m.title||(it?(it.zh_title||it.title):'（标题未知）');
+      var title=m.title||(it?pickTitle(it):(IS_EN?'(Unknown title)':'（标题未知）'));
       var link=m.link||(it?it.link:'#');
       var source=m.source||(it?it.source:'');
       var at=m.at?new Date(m.at):null;
-      var atStr=at?('收藏于 '+at.getFullYear()+'年'+(at.getMonth()+1)+'月'+at.getDate()+'日'):'';
+      var atStr=at?(IS_EN?('Saved on '+at.getFullYear()+'-'+(at.getMonth()+1)+'-'+at.getDate()):('收藏于 '+at.getFullYear()+'年'+(at.getMonth()+1)+'月'+at.getDate()+'日')):'';
       return '<article class="feed-item starred-item'+(gone?' is-gone':'')+'">'
         +'<header class="fi-head"><span class="src">'+source.replace(/</g,'&lt;')+'</span>'
-        +(gone?'<span class="gone-tag">已下架</span>':'')
-        +'<span class="sp"><button type="button" class="star-btn on" data-unstar="'+id+'" aria-label="取消收藏" title="取消收藏">'
+        +(gone?'<span class="gone-tag">'+(IS_EN?'Removed':'已下架')+'</span>':'')
+        +'<span class="sp"><button type="button" class="star-btn on" data-unstar="'+id+'" aria-label="'+(IS_EN?'Unsave':'取消收藏')+'" title="'+(IS_EN?'Unsave':'取消收藏')+'">'
         +'<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>'
         +'</button></span></header>'
         +'<h3><a href="items/'+id+'.html">'+title.replace(/</g,'&lt;')+'</a></h3>'
-        +(gone?'<p class="sum">这条动态已不在本站 30 天数据里（可能已下架或超出保存期），只保留了你收藏时的标题与链接。</p>':'')
+        +(gone?'<p class="sum">'+(IS_EN?'This item is no longer in the 30-day data (it may have been removed or expired); only the title and link from when you saved it are kept.':'这条动态已不在本站 30 天数据里（可能已下架或超出保存期），只保留了你收藏时的标题与链接。')+'</p>':'')
         +(atStr?'<p class="starred-at">'+atStr+'</p>':'')
         +'</article>';
     }).join('');
@@ -1544,6 +1642,7 @@ function cstParts(date){
 function todayCST(){return cstParts(new Date()).iso;}
 function fmtCST(iso){
   var p=cstParts(new Date(iso));
+  if(IS_EN)return ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][p.m-1]+' '+p.d+' '+p.hm;
   return p.m+'月'+p.d+'日 '+p.hm;
 }
 /* 与 Python score()/reason_for() 同规则的客户端版（动态卡片用） */
@@ -1595,17 +1694,17 @@ function computeMeta(it){
 }
 function cardHTML(it){
   var m=computeMeta(it);
-  var title=it.zh_title||it.title;
+  var title=pickTitle(it);
   var summary=it.zh_oneliner||'';
   var en=it.title;
   var pub=cstParts(new Date(it.published));
-  var off=m.tier==='T1'?'<span class="off-tag">官方</span>':'';
+  var off=m.tier==='T1'?'<span class="off-tag">'+(IS_EN?'Official':'官方')+'</span>':'';
   var isNew=false;
   if(it.fetched_at){
     isNew=cstParts(new Date(it.fetched_at)).iso===todayCST()
       &&(Date.now()-new Date(it.published).getTime())<=86400000;
   }
-  var newHtml=isNew?'<span class="new-pill">新</span>':'';
+  var newHtml=isNew?'<span class="new-pill">'+(IS_EN?'New':'新')+'</span>':'';
   var tagsHtml=m.labels.length?'<div class="fi-tags">'+m.labels.map(function(t){
     return '<a class="tag" href="topics/'+((IH_CFG&&IH_CFG.tagSlugs[t])||t)+'.html">#'+escHtml(t)+'</a>';
   }).join('')+'</div>':'';
@@ -1614,16 +1713,16 @@ function cardHTML(it){
     +' data-official="'+(m.tier==='T1'?'1':'0')+'" data-en="'+escHtml(en)+'">'
     +'<header class="fi-head"><span class="src">'+escHtml(it.source)+'</span>'+off
     +'<time class="pt">· '+pub.hm+'</time>'+newHtml
-    +'<span class="sp"><span class="score-pill '+scoreCls+'" title="评分 '+m.score+'/100">'
-    +'<span class="lbl">评分</span><span class="sep"></span><span class="num">'+m.score+'</span></span>'
-    +'<button type="button" class="star-btn" aria-label="收藏" title="收藏">'+BOOKMARK_SVG+'</button></span></header>'
+    +'<span class="sp"><span class="score-pill '+scoreCls+'" title="'+(IS_EN?'Score ':'评分 ')+m.score+'/100">'
+    +'<span class="lbl">'+(IS_EN?'Score':'评分')+'</span><span class="sep"></span><span class="num">'+m.score+'</span></span>'
+    +'<button type="button" class="star-btn" aria-label="'+(IS_EN?'Save':'收藏')+'" title="'+(IS_EN?'Save':'收藏')+'">'+BOOKMARK_SVG+'</button></span></header>'
     +'<h3><a href="items/'+escHtml(it.id)+'.html">'+escHtml(title)+'</a></h3>'
-    +(summary?'<p class="sum">'+escHtml(summary)+'</p>':'')
+    +(summary?'<p class="sum"'+(IS_EN?' lang="zh-CN"':'')+'>'+escHtml(summary)+'</p>':'')
     +'<div class="fi-foot"><button type="button" class="chip cat" data-filter="'+escHtml(it.category||'')+'">'
-    +escHtml(it.category_label||it.category||'')+'</button>'
+    +escHtml(IS_EN?(it.category_label_en||it.category_label||it.category||''):(it.category_label||it.category||''))+'</button>'
     +'<span class="when">'+escHtml(fmtCST(it.published))+'</span></div>'
     +tagsHtml
-    +'<p class="fi-reason">推荐理由：'+escHtml(m.reason)+'</p>'
+    +'<p class="fi-reason">'+(IS_EN?'Why it matters: ':'推荐理由：')+escHtml(m.reason)+'</p>'
     +'</article>';
 }
 function slotHTML(it){
@@ -1639,14 +1738,14 @@ function normTitle(t){
 function groupSimilarJS(items){
   var groups=[];
   items.forEach(function(it){
-    var norm=normTitle(it.zh_title||it.title);
+    var norm=normTitle(pickTitle(it));
     var date=cstParts(new Date(it.published)).iso;
     var merged=false;
     if(norm.length>=10){
       for(var i=0;i<groups.length;i++){
         var g=groups[i],m=g.main;
         if(m.source_id!==it.source_id||cstParts(new Date(m.published)).iso!==date)continue;
-        var mn=normTitle(m.zh_title||m.title);
+        var mn=normTitle(pickTitle(m));
         if(mn.length<10)continue;
         if(norm===mn||((norm.indexOf(mn)===0||mn.indexOf(norm)===0)
             &&Math.min(norm.length,mn.length)/Math.max(norm.length,mn.length)>=0.8)){
@@ -1663,10 +1762,10 @@ function groupSlotHTML(g){
   if(!g.extra.length)return slot;
   var rows=g.extra.map(function(e){
     var p=cstParts(new Date(e.published));
-    return '<li><a href="items/'+escHtml(e.id)+'.html">'+escHtml(e.zh_title||e.title)+'</a>'
+    return '<li><a href="items/'+escHtml(e.id)+'.html">'+escHtml(pickTitle(e))+'</a>'
       +'<span class="ge-time">'+p.hm+'</span></li>';
   }).join('');
-  var toggle='<button type="button" class="group-toggle" aria-expanded="false">另有 '+g.extra.length+' 篇报道 <span aria-hidden="true">▾</span></button>';
+  var toggle='<button type="button" class="group-toggle" aria-expanded="false">'+(IS_EN?('Show '+g.extra.length+' more reports '):('另有 '+g.extra.length+' 篇报道 '))+'<span aria-hidden="true">▾</span></button>';
   var extra='<div class="group-extra" hidden><ul class="group-extra-list">'+rows+'</ul></div>';
   return slot.slice(0,-5)+toggle+extra+'</li>';
 }
@@ -1674,16 +1773,16 @@ function dayHeaderHTML(dateISO,count){
   var parts=dateISO.split('-');
   var wd=new Date(+parts[0],+parts[1]-1,+parts[2]).getDay();
   var isToday=dateISO===todayCST();
-  var name=isToday?'今天':(+parts[1]+'月'+(+parts[2])+'日');
-  var wdShort=['周日','周一','周二','周三','周四','周五','周六'][wd];
-  var wdFull=['星期日','星期一','星期二','星期三','星期四','星期五','星期六'][wd];
+  var name=isToday?(IS_EN?'Today':'今天'):(IS_EN?(+parts[1]+'/'+(+parts[2])):(+parts[1]+'月'+(+parts[2])+'日'));
+  var wdShort=(IS_EN?['Sun','Mon','Tue','Wed','Thu','Fri','Sat']:['周日','周一','周二','周三','周四','周五','周六'])[wd];
+  var wdFull=(IS_EN?['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']:['星期日','星期一','星期二','星期三','星期四','星期五','星期六'])[wd];
   return '<header class="day-head'+(isToday?' is-today':'')+'">'
     +'<span class="dh-name">'+name+'</span>'
     +'<span class="dh-date">'+(+parts[1])+'月'+(+parts[2])+'日</span>'
     +'<button type="button" class="dh-toggle" aria-label="收起/展开这一天">'+CHEV_SVG+'</button>'
     +'<span class="dh-wd dh-wd-short">'+wdShort+'</span>'
     +'<span class="dh-wd dh-wd-full">'+wdFull+'</span>'
-    +'<span class="dh-count"><b class="num">'+count+'</b> 条</span></header>';
+    +'<span class="dh-count"><b class="num">'+count+'</b> '+(IS_EN?'items':'条')+'</span></header>';
 }
 function renderBatch(items){
   var groups=groupSimilarJS(items);
@@ -1719,10 +1818,10 @@ function setLoadMoreState(s){
   var btn=document.getElementById('loadMoreBtn'),st=document.getElementById('loadMoreState'),
       wrap=document.getElementById('loadMoreWrap'),end=document.getElementById('feedEnd');
   if(!btn)return;
-  if(s==='loading'){btn.disabled=true;btn.innerHTML='<span class="spin"></span>正在加载';if(st)st.textContent='';}
-  else if(s==='error'){btn.disabled=false;btn.textContent='加载失败，点击重试';if(st)st.textContent='网络或数据有问题，点按钮再试一次。';}
+  if(s==='loading'){btn.disabled=true;btn.innerHTML='<span class="spin"></span>'+(IS_EN?'Loading':'正在加载');if(st)st.textContent='';}
+  else if(s==='error'){btn.disabled=false;btn.textContent=IS_EN?'Failed to load, click to retry':'加载失败，点击重试';if(st)st.textContent=IS_EN?'Something went wrong with the network or data. Click the button to try again.':'网络或数据有问题，点按钮再试一次。';}
   else if(s==='done'){if(wrap)wrap.hidden=true;if(end)end.hidden=false;}
-  else{btn.disabled=false;btn.textContent='加载更多';if(st)st.textContent='';}
+  else{btn.disabled=false;btn.textContent=IS_EN?'Load more':'加载更多';if(st)st.textContent='';}
 }
 /* 分页：按天取分块，一天不够再取下一天，直到凑满 30 条未见过的卡片 */
 var lmDayIdx=0,lmBuffer=[];
@@ -1804,13 +1903,13 @@ function renderSearchResults(){
   var srList=document.getElementById('srList'),srCount=document.getElementById('srCount');
   if(!srList)return;
   var q=state.q;
-  srList.innerHTML='<p class="more-note">正在搜索…</p>';
+  srList.innerHTML='<p class="more-note">'+(IS_EN?'Searching…':'正在搜索…')+'</p>';
   getStore().then(function(items){
     if(state.q!==q)return;
     var scored=[];
     items.forEach(function(it){
       if(!matchFiltersData(it))return;
-      var title=((it.zh_title||it.title||'')+'').toLowerCase();
+      var title=(((it.zh_title||'')+' '+(it.title||''))+'').toLowerCase();
       var sum=((it.zh_oneliner||'')+'').toLowerCase();
       var src=(it.source||'').toLowerCase();
       var tier=0;
@@ -1822,22 +1921,22 @@ function renderSearchResults(){
     scored.sort(function(a,b){
       return b.tier-a.tier||(new Date(b.it.published)-new Date(a.it.published));
     });
-    if(srCount)srCount.textContent='找到 '+scored.length+' 条';
+    if(srCount)srCount.textContent=IS_EN?('Found '+scored.length+' items'):('找到 '+scored.length+' 条');
     if(!scored.length){
       srList.innerHTML='<div class="empty-state"><div class="empty-icon">'+SEARCH_ICON_SVG+'</div>'
-        +'<h3 class="empty-title">没有匹配「'+escHtml(state.q)+'」的动态。</h3>'
-        +'<p class="empty-text">换个关键词试试，或者清除搜索看看全部。</p>'
-        +'<div class="empty-actions"><button type="button" class="empty-btn" data-empty-action="clear">清除筛选</button>'
-        +'<button type="button" class="empty-btn primary" data-empty-action="featured">去看精选</button></div></div>';
+        +'<h3 class="empty-title">'+(IS_EN?('No items matching "'+escHtml(state.q)+'".'):('没有匹配「'+escHtml(state.q)+'」的动态。'))+'</h3>'
+        +'<p class="empty-text">'+(IS_EN?'Try another keyword, or clear the search to see everything.':'换个关键词试试，或者清除搜索看看全部。')+'</p>'
+        +'<div class="empty-actions"><button type="button" class="empty-btn" data-empty-action="clear">'+(IS_EN?'Clear filters':'清除筛选')+'</button>'
+        +'<button type="button" class="empty-btn primary" data-empty-action="featured">'+(IS_EN?'See featured':'去看精选')+'</button></div></div>';
       return;
     }
     var show=scored.slice(0,50);
     srList.innerHTML=show.map(function(s){return cardHTML(s.it);}).join('')
-      +(scored.length>50?'<p class="more-note">只显示前 50 条，共 '+scored.length+' 条。</p>':'');
+      +(scored.length>50?'<p class="more-note">'+(IS_EN?('Showing the first 50 of '+scored.length+' items.'):('只显示前 50 条，共 '+scored.length+' 条。'))+'</p>':'');
     srList.querySelectorAll('.feed-item').forEach(bindFeedItem);
   }).catch(function(){
-    srList.innerHTML='<div class="empty-state"><h3 class="empty-title">搜索暂时不可用</h3>'
-      +'<p class="empty-text">数据没加载出来，刷新页面再试。</p></div>';
+    srList.innerHTML='<div class="empty-state"><h3 class="empty-title">'+(IS_EN?'Search is unavailable right now':'搜索暂时不可用')+'</h3>'
+      +'<p class="empty-text">'+(IS_EN?'The data did not load. Refresh the page and try again.':'数据没加载出来，刷新页面再试。')+'</p></div>';
   });
 }
 /* 滚动恢复（B18）：从详情页/热点页返回首页时恢复滚动位置与已加载批次数 */
@@ -1884,7 +1983,7 @@ document.addEventListener('click',function(e){
   extra.hidden=!open;
   t.setAttribute('aria-expanded',open?'true':'false');
   var n=extra.querySelectorAll('li').length;
-  t.innerHTML=open?'收起 <span aria-hidden="true">▴</span>':'另有 '+n+' 篇报道 <span aria-hidden="true">▾</span>';
+  t.innerHTML=open?(IS_EN?'Collapse <span aria-hidden="true">▴</span>':'收起 <span aria-hidden="true">▴</span>'):(IS_EN?('Show '+n+' more reports <span aria-hidden="true">▾</span>'):('另有 '+n+' 篇报道 <span aria-hidden="true">▾</span>'));
 });
 /* 浮层搜索框的清空按钮（B14） */
 var ovClear=document.getElementById('overlaySearchClear');
@@ -1902,8 +2001,8 @@ if(ovClear)ovClear.addEventListener('click',function(){
     var syncStar=function(){
       var on=starSet.has(id);
       star.classList.toggle('on',on);
-      var sp=star.querySelector('span');if(sp)sp.textContent=on?'已收藏':'收藏';
-      star.setAttribute('aria-label',on?'取消收藏':'收藏');star.title=on?'取消收藏':'收藏';
+      var sp=star.querySelector('span');if(sp)sp.textContent=on?(IS_EN?'Saved':'已收藏'):(IS_EN?'Save':'收藏');
+      star.setAttribute('aria-label',on?(IS_EN?'Unsave':'取消收藏'):(IS_EN?'Save':'收藏'));star.title=on?(IS_EN?'Unsave':'取消收藏'):(IS_EN?'Save':'收藏');
     };
     syncStar();
     star.addEventListener('click',function(){
@@ -1933,7 +2032,7 @@ if(ovClear)ovClear.addEventListener('click',function(){
   }
   if(copy)copy.addEventListener('click',function(){
     var url=location.href;
-    var done=function(){copy.textContent='已复制';setTimeout(function(){copy.textContent='复制链接';},1500);};
+    var done=function(){copy.textContent=IS_EN?'Copied':'已复制';setTimeout(function(){copy.textContent=IS_EN?'Copy link':'复制链接';},1500);};
     if(navigator.clipboard&&navigator.clipboard.writeText){
       navigator.clipboard.writeText(url).then(done).catch(function(){fallbackCopy(url);done();});
     }else{fallbackCopy(url);done();}
@@ -1976,17 +2075,14 @@ def _logo(size):
 
 
 def _nav_items(prefix, base=""):
-    """prefix：首页为 ''，其它根页面为 'index.html'，
-    子目录页为 '../index.html'（base 拼在前面）。
-    精选与全部动态是两个页面（对标 AIHOT / 与 /all），不再是站内锚点。"""
-    root = prefix or "index.html"
-    all_page = root.replace("index.html", "all.html")
+    """精选与全部动态是两个页面（对标 AIHOT / 与 /all），不再是站内锚点。
+    页面链接用 PAGE_BASE（到本语言根）；prefix/base 参数保留兼容。"""
     return [
-        ("featured", "精选", "zap", f"{base}{root}"),
-        ("all", "全部动态", "list", f"{base}{all_page}"),
-        ("hot", "热点榜", "trend", f"{base}hot.html"),
-        ("daily", "日报", "doc", f"{base}daily.html"),
-        ("starred", "收藏", "bookmark", f"{base}starred.html"),
+        ("featured", tr("精选", "Featured"), "zap", f"{PAGE_BASE}index.html"),
+        ("all", tr("全部动态", "All updates"), "list", f"{PAGE_BASE}all.html"),
+        ("hot", tr("热点榜", "Hot list"), "trend", f"{PAGE_BASE}hot.html"),
+        ("daily", tr("日报", "Daily"), "doc", f"{PAGE_BASE}daily.html"),
+        ("starred", tr("收藏", "Saved"), "bookmark", f"{PAGE_BASE}starred.html"),
     ]
 
 
@@ -1998,22 +2094,22 @@ def sidebar_html(site, active, prefix="", base=""):
         f'{"<span class=\"num\" id=\"starCount\"></span>" if key == "starred" else ""}</a>'
         for key, label, ic, href in items)
     more_links = (
-        f'<a class="side-link{" on" if active == "more" else ""}" href="{base}more.html">{icon("user")}<span>我的</span></a>'
-        f'<a class="side-link" href="{base}weekly.html">{icon("calendar")}<span>周报</span></a>'
-        f'<a class="side-link" href="{base}monthly.html">{icon("calendar")}<span>月报</span></a>'
-        f'<a class="side-link{" on" if active == "changelog" else ""}" href="{base}changelog.html">{icon("doc")}<span>更新日志</span></a>'
-        f'<a class="side-link{" on" if active == "about" else ""}" href="{base}about.html">{icon("rss")}<span>关于</span></a>'
-        f'<a class="side-link" href="{site["repo"]}/issues" target="_blank" rel="noopener">{icon("message")}<span>反馈</span></a>'
-        f'<a class="side-link" href="{base}data/hot.json">{icon("code")}<span>数据 JSON</span></a>')
-    return (f'<aside class="sidebar"><a class="brand" href="{base}index.html">{_logo(32)}'
-            f'<span><b>{esc(site["name"])}</b><small>{esc(site.get("subtitle", ""))}</small></span></a>'
-            f'<nav aria-label="主导航"><div class="nav-sec"><h3>内容</h3>{links}</div>'
-            f'<div class="nav-sec"><h3>更多</h3>{more_links}'
+        f'<a class="side-link{" on" if active == "more" else ""}" href="{PAGE_BASE}more.html">{icon("user")}<span>{tr("我的", "Mine")}</span></a>'
+        f'<a class="side-link" href="{PAGE_BASE}weekly.html">{icon("calendar")}<span>{tr("周报", "Weekly")}</span></a>'
+        f'<a class="side-link" href="{PAGE_BASE}monthly.html">{icon("calendar")}<span>{tr("月报", "Monthly")}</span></a>'
+        f'<a class="side-link{" on" if active == "changelog" else ""}" href="{PAGE_BASE}changelog.html">{icon("doc")}<span>{tr("更新日志", "Changelog")}</span></a>'
+        f'<a class="side-link{" on" if active == "about" else ""}" href="{PAGE_BASE}about.html">{icon("rss")}<span>{tr("关于", "About")}</span></a>'
+        f'<a class="side-link" href="{site["repo"]}/issues" target="_blank" rel="noopener">{icon("message")}<span>{tr("反馈", "Feedback")}</span></a>'
+        f'<a class="side-link" href="{ASSET_BASE}data/hot.json">{icon("code")}<span>{tr("数据 JSON", "Data JSON")}</span></a>')
+    return (f'<aside class="sidebar"><a class="brand" href="{PAGE_BASE}index.html">{_logo(32)}'
+            f'<span><b>{esc(site["name"])}</b><small>{esc(tr(site.get("subtitle", ""), "Global Muse usage hotspots"))}</small></span></a>'
+            f'<nav aria-label="{tr("主导航", "Main navigation")}"><div class="nav-sec"><h3>{tr("内容", "Content")}</h3>{links}</div>'
+            f'<div class="nav-sec"><h3>{tr("更多", "More")}</h3>{more_links}'
             f'</div></nav>'
             f'<div class="side-foot">'
-            f'<a class="gh" href="{site["repo"]}" target="_blank" rel="noopener">GitHub 仓库</a>'
+            f'<a class="gh" href="{site["repo"]}" target="_blank" rel="noopener">{tr("GitHub 仓库", "GitHub Repo")}</a>'
             f'{_theme_btn()}'
-            f'<p class="note">每天 {esc(site["edition_time_cst"])} 出日报</p>'
+            f'<p class="note">{tr("每天 " + esc(site["edition_time_cst"]) + " 出日报", "Daily issue at " + esc(site["edition_time_cst"]))}</p>'
             f'</div></aside>')
 
 
@@ -2023,87 +2119,98 @@ def rail_html(site, active, prefix="", base=""):
         f'<a class="rail-link{" on" if key == active else ""}" href="{href}">'
         f'{icon(ic, 20)}<span>{label}</span></a>'
         for key, label, ic, href in items)
-    links += (f'<a class="rail-link{" on" if active == "more" else ""}" href="{base}more.html">'
-              f'{icon("user", 20)}<span>我的</span></a>')
-    return (f'<aside class="rail"><a class="brand" href="{base}index.html" aria-label="{site["name"]} 首页">'
-            f'{_logo(28)}</a><nav aria-label="主导航">{links}</nav></aside>')
+    links += (f'<a class="rail-link{" on" if active == "more" else ""}" href="{PAGE_BASE}more.html">'
+              f'{icon("user", 20)}<span>{tr("我的", "Mine")}</span></a>')
+    return (f'<aside class="rail"><a class="brand" href="{PAGE_BASE}index.html" aria-label="{esc(tr(site["name"] + " 首页", site["name"] + " home"))}">'
+            f'{_logo(28)}</a><nav aria-label="{tr("主导航", "Main navigation")}">{links}</nav></aside>')
 
 
 def _theme_btn():
-    return ('<button type="button" class="icon-btn theme-btn theme-cycle" aria-label="外观：跟随系统（点击切换）">'
+    return (f'<button type="button" class="icon-btn theme-btn theme-cycle" aria-label="{tr("外观：跟随系统（点击切换）", "Appearance: system (click to switch)")}">' 
             f'<span class="ic-moon">{icon("moon", 20)}</span>'
             f'<span class="ic-sun">{icon("sun", 20)}</span>'
             f'<span class="ic-monitor">{icon("monitor", 20)}</span></button>')
 
 
-def topbar_html(site, active, prefix="", base=""):
+def topbar_html(site, active, prefix="", base="", rel_path=""):
     if active in ("daily", "weekly", "monthly"):
         center = ('<span class="title">'
-                  + {"daily": "日报", "weekly": "周报", "monthly": "月报"}[active] + '</span>')
+                  + {"daily": tr("日报", "Daily"), "weekly": tr("周报", "Weekly"), "monthly": tr("月报", "Monthly")}[active] + '</span>')
     else:
-        root = prefix or "index.html"
-        all_page = root.replace("index.html", "all.html")
         center = (f'<span class="switch">'
-                  f'<a class="{"on" if active == "featured" else ""}" href="{base}{root}">精选</a>'
-                  f'<a class="{"on" if active == "all" else ""}" href="{base}{all_page}">全部</a></span>')
-    return (f'<header class="topbar"><a class="brand" href="{base}index.html">{_logo(26)}<b>{site["name"]}</b></a>'
-            f'{center}{_theme_btn()}</header>')
+                  f'<a class="{"on" if active == "featured" else ""}" href="{PAGE_BASE}index.html">{tr("精选", "Featured")}</a>'
+                  f'<a class="{"on" if active == "all" else ""}" href="{PAGE_BASE}all.html">{tr("全部", "All")}</a></span>')
+    return (f'<header class="topbar"><a class="brand" href="{PAGE_BASE}index.html">{_logo(26)}<b>{site["name"]}</b></a>'
+            f'{center}{lang_switch_html(rel_path)}{_theme_btn()}</header>')
 
 
 def tabbar_html(active, prefix="", base=""):
-    root = prefix or "index.html"
-    all_page = root.replace("index.html", "all.html")
     tabs = [
-        ("featured", "精选", "zap", f"{base}{root}"),
-        ("hot", "热点", "trend", f"{base}hot.html"),
-        ("daily", "日报", "doc", f"{base}daily.html"),
-        ("all", "全部", "list", f"{base}{all_page}"),
-        ("starred", "收藏", "bookmark", f"{base}starred.html"),
+        ("featured", tr("精选", "Featured"), "zap", f"{PAGE_BASE}index.html"),
+        ("hot", tr("热点", "Hot"), "trend", f"{PAGE_BASE}hot.html"),
+        ("daily", tr("日报", "Daily"), "doc", f"{PAGE_BASE}daily.html"),
+        ("all", tr("全部", "All"), "list", f"{PAGE_BASE}all.html"),
+        ("starred", tr("收藏", "Saved"), "bookmark", f"{PAGE_BASE}starred.html"),
     ]
     links = "".join(
         f'<a class="{"on" if key == active else ""}" href="{href}">'
         f'{icon(ic, 20)}<span>{label}</span></a>'
         for key, label, ic, href in tabs)
-    return f'<nav class="tabbar" aria-label="主导航"><div class="tabbar-in">{links}</div></nav>'
+    return f'<nav class="tabbar" aria-label="{tr("主导航", "Main navigation")}"><div class="tabbar-in">{links}</div></nav>'
 
 
-def footer_html(site, base=""):
+def footer_html(site, base="", rel_path=""):
     name = esc(site["name"])
     repo = esc(site.get("repo", ""))
     note = site.get("footer_note", "")
-    mcp_link = f'<a href="{base}about.html">MCP 接入</a>' if site.get("mcp_url") else ""
+    mcp_link = f'<a href="{PAGE_BASE}about.html">{tr("MCP 接入", "MCP Access")}</a>' if site.get("mcp_url") else ""
     tips = site.get("tips") or []
     tip_html = ""
     if tips:
-        cards = "".join(
-            f'<div class="tip-card"><img class="tip-qr" src="{base}{esc(t["image"])}" alt="赞赏码：{esc(t["label"])}" width="150" height="150">'
-            f'<p class="tip-label">{esc(t["label"])}</p>'
-            f'<p class="tip-addr">{esc(t["address"])}</p></div>'
-            for t in tips
-        )
-        tip_html = ('<div class="tip"><p class="tip-title">赞赏支持</p>'
+        cards = ""
+        for t in tips:
+            lbl = (t.get("label_en") or t["label"]) if PAGE_LANG == "en" else t["label"]
+            cards += (
+                f'<div class="tip-card"><img class="tip-qr" src="{ASSET_BASE}{esc(t["image"])}" alt="{tr("赞赏码：", "Tip code: ")}{esc(lbl)}" width="150" height="150">'
+                f'<p class="tip-label">{esc(lbl)}</p>'
+                f'<p class="tip-addr">{esc(t["address"])}</p></div>')
+        tip_html = (f'<div class="tip"><p class="tip-title">{tr("赞赏支持", "Support Us")}</p>'
                     f'<div class="tip-cards">{cards}</div></div>')
-    return (f'<footer class="foot"><p>{name} 是聚合摘要与阅读索引，标题与摘要版权归各来源所有。'
-            f'内容只作资讯参考；本站不转载全文。</p>'
-            + (f'<p>{esc(note)}</p>' if note else '')
-            + f'<nav class="foot-links" aria-label="页脚链接">'
-            f'<a href="{base}feed.xml">RSS 订阅</a>'
+    return (f'<footer class="foot"><p>{tr(name + " 是聚合摘要与阅读索引，标题与摘要版权归各来源所有。内容只作资讯参考；本站不转载全文。", name + " is an aggregator and reading index. Titles and summaries belong to their original sources. Content is for reference only; full text is never republished.")}</p>'
+            + (f'<p>{esc(tr(note, "Built with the HOT pipeline template, open-sourced under the MIT License."))}</p>' if note else '')
+            + f'<nav class="foot-links" aria-label="{tr("页脚链接", "Footer links")}">'
+            f'{lang_switch_html(rel_path)}'
+            f'<a href="{ASSET_BASE}feed.xml">{tr("RSS 订阅", "RSS Feed")}</a>'
             f'{mcp_link}'
-            f'<a href="{base}data/days/index.json">数据 JSON</a>'
-            f'<a href="{repo}">GitHub 仓库</a>'
-            f'<a href="{repo}/issues">反馈</a>'
-            f'<a href="{base}more.html">我的</a>'
-            f'<a href="{base}about.html">关于</a>'
-            f'<a href="{base}terms.html">条款</a>'
-            f'<a href="{base}privacy.html">隐私</a></nav>'
+            f'<a href="{ASSET_BASE}data/days/index.json">{tr("数据 JSON", "Data JSON")}</a>'
+            f'<a href="{repo}">{tr("GitHub 仓库", "GitHub Repo")}</a>'
+            f'<a href="{repo}/issues">{tr("反馈", "Feedback")}</a>'
+            f'<a href="{PAGE_BASE}more.html">{tr("我的", "Mine")}</a>'
+            f'<a href="{PAGE_BASE}about.html">{tr("关于", "About")}</a>'
+            f'<a href="{PAGE_BASE}terms.html">{tr("条款", "Terms")}</a>'
+            f'<a href="{PAGE_BASE}privacy.html">{tr("隐私", "Privacy")}</a></nav>'
             f'{tip_html}</footer>')
 
 
 def page_open(site, active, title, description, prefix="", base="", canonical="",
               ld_items=None, page_cls="", ld_blocks=None, og_type="website",
-              extra_head=""):
+              extra_head="", rel_path=""):
     site_url = site.get("url", "")
-    canon = canonical or site_url + "/"
+    if PAGE_LANG == "en" and description == site.get("description", ""):
+        description = site.get("description_en", description)
+    canon_zh = canonical or site_url + "/"
+    en_url = _en_url(site_url, canon_zh)
+    canon = en_url if PAGE_LANG == "en" else canon_zh
+    lang_attr = "en" if PAGE_LANG == "en" else "zh-CN"
+    in_lang = "en" if PAGE_LANG == "en" else "zh-CN"
+    if PAGE_LANG == "en":
+        hreflang = (f'<link rel="alternate" hreflang="en" href="{esc(canon)}">\n'
+                    f'<link rel="alternate" hreflang="zh-CN" href="{esc(canon_zh)}">\n'
+                    f'<link rel="alternate" hreflang="x-default" href="{esc(canon)}">\n')
+    else:
+        hreflang = (f'<link rel="alternate" hreflang="zh-CN" href="{esc(canon_zh)}">\n'
+                    f'<link rel="alternate" hreflang="en" href="{esc(en_url)}">\n'
+                    f'<link rel="alternate" hreflang="x-default" href="{esc(en_url)}">\n')
     og = (f'<meta property="og:title" content="{esc(title)}">\n'
           f'<meta property="og:description" content="{esc(description)}">\n'
           f'<meta property="og:type" content="{og_type}">\n'
@@ -2115,14 +2222,14 @@ def page_open(site, active, title, description, prefix="", base="", canonical=""
           f'<meta name="twitter:image" content="{site_url}/favicon.svg">\n')
     ld = {"@context": "https://schema.org", "@type": "WebSite",
           "name": site["name"], "url": site_url,
-          "inLanguage": "zh-CN",
-          "description": site.get("description", "")}
+          "inLanguage": in_lang,
+          "description": site.get("description_en", site.get("description", "")) if PAGE_LANG == "en" else site.get("description", "")}
     ld_parts = [json.dumps(ld, ensure_ascii=False)]
     if ld_items:
         items_ld = {"@context": "https://schema.org", "@type": "ItemList",
                     "itemListElement": [
                         {"@type": "ListItem", "position": i + 1,
-                         "name": (it.get("zh_title") or it["title"]),
+                         "name": disp_title(it),
                          "url": site_url + "/items/" + it["id"] + ".html"}
                         for i, it in enumerate(ld_items[:10])]}
         ld_parts.append(json.dumps(items_ld, ensure_ascii=False))
@@ -2130,45 +2237,47 @@ def page_open(site, active, title, description, prefix="", base="", canonical=""
         ld_parts.append(json.dumps(block, ensure_ascii=False))
     ld_html = "".join(
         f'<script type="application/ld+json">{part}</script>\n' for part in ld_parts)
-    return (f"<!DOCTYPE html>\n<html lang=\"zh-CN\"><head><meta charset=\"utf-8\">\n"
+    return (f"<!DOCTYPE html>\n<html lang=\"{lang_attr}\" data-base=\"{ASSET_BASE}\"><head><meta charset=\"utf-8\">\n"
             f"<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n"
             f"<title>{esc(title)}</title>\n"
             f"<meta name=\"description\" content=\"{esc(description)}\">\n"
             f'<link rel="canonical" href="{esc(canon)}">\n'
-            f'<link rel="alternate" hreflang="zh-CN" href="{esc(canon)}">\n'
-            f'<link rel="alternate" hreflang="x-default" href="{esc(canon)}">\n'
+            f'{hreflang}'
             f'<meta name="robots" content="index, follow, max-image-preview:large">\n'
             f'<link rel="alternate" type="application/rss+xml" title="{esc(site["name"])}" href="{site_url}/feed.xml">\n'
             f"{extra_head}"
-            f'<link rel="icon" type="image/svg+xml" href="{base}favicon.svg">\n'
+            f'<link rel="icon" type="image/svg+xml" href="{ASSET_BASE}favicon.svg">\n'
             f"{og}"
             f'{ld_html}'
-            f"{theme_boot(site)}<link rel=\"stylesheet\" href=\"{base}assets/site.css\"></head>\n<body>"
+            f"{theme_boot(site)}<link rel=\"stylesheet\" href=\"{ASSET_BASE}assets/site.css\"></head>\n<body>"
             f'<div class="shell">{sidebar_html(site, active, prefix, base)}{rail_html(site, active, prefix, base)}'
-            f'<div class="main">{topbar_html(site, active, prefix, base)}<div class="page{page_cls}">')
+            f'<div class="main">{topbar_html(site, active, prefix, base, rel_path)}<div class="page{page_cls}">')
 
 
-def page_close(site, active, prefix="", base=""):
-    to_top = (f'<button type="button" class="to-top" id="toTop" aria-label="回到顶部">'
+def page_close(site, active, prefix="", base="", rel_path=""):
+    to_top = (f'<button type="button" class="to-top" id="toTop" aria-label="{tr("回到顶部", "Back to top")}">'
               f'{icon("arrow-up", 18)}</button>')
-    return (f"{footer_html(site, base)}</div></div></div>{to_top}{tabbar_html(active, prefix, base)}<script src='{base}assets/site.js'></script></body></html>\n")
+    return (f"{footer_html(site, base, rel_path)}</div></div></div>{to_top}{tabbar_html(active, prefix, base)}<script src='{ASSET_BASE}assets/site.js'></script></body></html>\n")
 
 
 def day_header(d, items, today, aside=False):
     is_today = d == today
-    name = "今天" if is_today else f"{d.month}月{d.day}日"
+    name = tr("今天", "Today") if is_today else tr(f"{d.month}月{d.day}日", f"{d.month}/{d.day}")
+    date_txt = (f"{d.month}月{d.day}日") if PAGE_LANG == "zh" else f"{MONTHS_EN[d.month - 1]} {d.day}"
     cls = "day-head is-today" if is_today else "day-head"
-    toggle = (f'<button type="button" class="dh-toggle" aria-label="收起/展开这一天">'
+    toggle = (f'<button type="button" class="dh-toggle" aria-label="{tr("收起/展开这一天", "Collapse/expand this day")}">'
               f'{icon("chevron-down", 14)}</button>')
     aside_html = ('<span class="dh-aside"><button type="button" class="toggle-chip unread-toggle">'
-                  '只看未读</button></span>') if aside else ""
+                  f'{tr("只看未读", "Unread only")}</button></span>') if aside else ""
+    wd = WEEKDAYS_EN[d.weekday()] if PAGE_LANG == "en" else WEEKDAYS[d.weekday()]
+    wd_short = WEEKDAYS_SHORT_EN[d.weekday()] if PAGE_LANG == "en" else WEEKDAYS_SHORT[d.weekday()]
     return (f'<header class="{cls}">'
             f'<span class="dh-name">{name}</span>'
-            f'<span class="dh-date">{d.month}月{d.day}日</span>'
+            f'<span class="dh-date">{date_txt}</span>'
             f'{toggle}'
-            f'<span class="dh-wd dh-wd-short">{WEEKDAYS_SHORT[d.weekday()]}</span>'
-            f'<span class="dh-wd dh-wd-full">{WEEKDAYS[d.weekday()]}</span>'
-            f'<span class="dh-count"><b class="num">{len(items)}</b> 条</span>{aside_html}</header>')
+            f'<span class="dh-wd dh-wd-short">{wd_short}</span>'
+            f'<span class="dh-wd dh-wd-full">{wd}</span>'
+            f'<span class="dh-count"><b class="num">{len(items)}</b> {tr("条", "items")}</span>{aside_html}</header>')
 
 
 def _norm_title(title):
@@ -2246,18 +2355,17 @@ def timeline_group_slot(group, sel_ids, base=""):
         return slot
     n = len(extra)
     rows = "".join(
-        f'<li><a href="{base}items/{esc(e["id"])}.html">'
-        f'{esc(e.get("zh_title") or e["title"])}</a>'
+        f'<li><a href="{PAGE_BASE}items/{esc(e["id"])}.html">'
+        f'{esc(disp_title(e))}</a>'
         f'<span class="ge-time">{esc(e["_pub"].astimezone(CST).strftime("%H:%M"))}</span></li>'
         for e in extra)
     toggle = (f'<button type="button" class="group-toggle" aria-expanded="false">'
-              f'另有 {n} 篇报道 <span aria-hidden="true">▾</span></button>')
+              f'{tr(f"另有 {n} 篇报道", f"Show {n} more reports")} <span aria-hidden="true">▾</span></button>')
     extra_html = (f'<div class="group-extra" hidden><ul class="group-extra-list">{rows}</ul></div>')
     # 把展开区插进主卡的 article 末尾之前：直接拼在 slot 的 </li> 之前
     return slot[:-5] + toggle + extra_html + "</li>"
 
 
-# 首页首屏服务端渲染的时间线条数上限（见 render_index 里的说明）
 INDEX_SSR_SLOTS = 20
 
 
@@ -2289,46 +2397,45 @@ def _tl_sections(items, sel_ids):
 def render_index(site, cats, cfg, src_by_id, selected, hot, timeline, generated_at, counts):
     sel_ids = {it["id"] for it in selected}
     cat_opts = "".join(
-        f'<button type="button" class="chip" data-filter="{c["key"]}">{esc(c["label"])}</button>'
+        f'<button type="button" class="chip" data-filter="{c["key"]}">{esc(tr(c["label"], c.get("label_en")))}</button>'
         for c in cats)
-    cat_opts += '<button type="button" class="chip" data-filter="official">官方</button>'
+    cat_opts += f'<button type="button" class="chip" data-filter="official">{tr("官方", "Official")}</button>'
     search_html = (f'<div class="search" role="search">{icon("search", 16)}'
-                   f'<input id="siteSearch" type="text" placeholder="搜索标题、摘要…" '
-                   f'maxlength="200" autocomplete="off" aria-label="搜索标题和摘要">'
-                   f'<button type="button" class="clear" id="searchClear" aria-label="清空">✕</button>'
+                   f'<input id="siteSearch" type="text" placeholder="{tr("搜索标题、摘要…", "Search titles & summaries…")}" '
+                   f'maxlength="200" autocomplete="off" aria-label="{tr("搜索标题和摘要", "Search titles and summaries")}">'
+                   f'<button type="button" class="clear" id="searchClear" aria-label="{tr("清空", "Clear")}">✕</button>'
                    f'<kbd>/</kbd></div>')
-    search_trigger = (f'<button type="button" class="search-trigger" aria-label="打开搜索">'
-                      f'{icon("search", 16)}<span>搜索标题、摘要…</span></button>')
+    search_trigger = (f'<button type="button" class="search-trigger" aria-label="{tr("打开搜索", "Open search")}">'
+                      f'{icon("search", 16)}<span>{tr("搜索标题、摘要…", "Search titles & summaries…")}</span></button>')
     overlay_cats = "".join(
-        f'<button type="button" class="chip" data-filter="{c["key"]}">{esc(c["label"])}</button>'
+        f'<button type="button" class="chip" data-filter="{c["key"]}">{esc(tr(c["label"], c.get("label_en")))}</button>'
         for c in cats)
-    overlay_cats += '<button type="button" class="chip" data-filter="official">官方</button>'
+    overlay_cats += f'<button type="button" class="chip" data-filter="official">{tr("官方", "Official")}</button>'
     overlay_hot = "".join(
         f'<li><span class="rank{" r1" if i == 0 else (" r2" if i == 1 else (" r3" if i == 2 else ""))}">{i + 1}</span>'
-        f'<a href="items/{esc(it["id"])}.html">{esc(it.get("zh_title") or it["title"])}</a></li>'
+        f'<a href="{PAGE_BASE}items/{esc(it["id"])}.html">{esc(disp_title(it))}</a></li>'
         for i, it in enumerate(hot[:5]))
     overlay_html = (
         f'<div class="search-overlay" id="searchOverlay" hidden>'
-        f'<div class="overlay-bar"><button type="button" class="icon-btn" id="overlayClose" aria-label="关闭搜索">{icon("x", 20)}</button>'
+        f'<div class="overlay-bar"><button type="button" class="icon-btn" id="overlayClose" aria-label="{tr("关闭搜索", "Close search")}">{icon("x", 20)}</button>'
         f'<div class="search overlay-search">{icon("search", 16)}'
-        f'<input id="overlaySearch" type="text" placeholder="搜索标题、摘要…" maxlength="200" autocomplete="off" aria-label="搜索标题和摘要">'
-        f'<button type="button" class="clear" id="overlaySearchClear" aria-label="清空">✕</button></div></div>'
-        f'<div class="overlay-sec"><h3>最近搜索</h3><div id="recentList"></div>'
-        f'<button type="button" class="recent-clear" id="clearRecent">清除最近搜索</button></div>'
-        f'<div class="overlay-sec"><h3>按分类找</h3><div class="overlay-cats">{overlay_cats}</div></div>'
-        f'<div class="overlay-sec"><h3>正在热议</h3><ol class="overlay-hot">{overlay_hot}</ol></div>'
+        f'<input id="overlaySearch" type="text" placeholder="{tr("搜索标题、摘要…", "Search titles & summaries…")}" maxlength="200" autocomplete="off" aria-label="{tr("搜索标题和摘要", "Search titles and summaries")}">'
+        f'<button type="button" class="clear" id="overlaySearchClear" aria-label="{tr("清空", "Clear")}">✕</button></div></div>'
+        f'<div class="overlay-sec"><h3>{tr("最近搜索", "Recent searches")}</h3><div id="recentList"></div>'
+        f'<button type="button" class="recent-clear" id="clearRecent">{tr("清除最近搜索", "Clear recent searches")}</button></div>'
+        f'<div class="overlay-sec"><h3>{tr("按分类找", "Browse by category")}</h3><div class="overlay-cats">{overlay_cats}</div></div>'
+        f'<div class="overlay-sec"><h3>{tr("正在热议", "Trending now")}</h3><ol class="overlay-hot">{overlay_hot}</ol></div>'
         f'</div>')
     sel_html = "".join(feed_item(it, badge=True) for it in selected) \
-        or "<p>今日暂无达到精选门槛的条目。</p>"
+        or f"<p>{tr('今日暂无达到精选门槛的条目。', 'No items reached the featured threshold today.')}</p>"
     top5 = hot[:5]
     hot_html = "".join(hot_row(it, i + 1) for i, it in enumerate(top5)) \
-        or "<li>暂无热点。</li>"
-    hot_more = ('<a class="hot-more" href="hot.html">'
-                '完整榜单 <span aria-hidden="true">→</span></a>') if len(hot) > 5 else ""
+        or f"<li>{tr('暂无热点。', 'No hot items yet.')}</li>"
+    hot_more = (f'<a class="hot-more" href="{PAGE_BASE}hot.html">'
+                f'{tr("完整榜单", "Full hot list")} <span aria-hidden="true">→</span></a>') if len(hot) > 5 else ""
     tl_sections = _tl_sections(timeline, sel_ids)
     unread_row = ('<div class="unread-row"><button type="button" class="toggle-chip unread-toggle">'
-                  '只看未读</button></div>')
-    # 给 JS 分页/搜索用的配置：打分参数 + 关键词标签映射 + 信源分级（供动态渲染卡片时算分/理由/标签）
+                  f'{tr("只看未读", "Unread only")}</button></div>')
     sc = cfg["scoring"]
     ih_cfg = {
         "base": sc["base"],
@@ -2347,26 +2454,30 @@ def render_index(site, cats, cfg, src_by_id, selected, hot, timeline, generated_
     empty_state = (
         '<div id="noResult" class="empty-state" hidden>'
         f'<div class="empty-icon" id="noResultIcon">{icon("search", 40)}</div>'
-        '<h3 class="empty-title" id="noResultTitle">这个分类下暂无动态。</h3>'
+        f'<h3 class="empty-title" id="noResultTitle">{tr("这个分类下暂无动态。", "No items in this category yet.")}</h3>'
         '<p class="empty-text" id="noResultText"></p>'
         '<div class="empty-actions">'
-        '<button type="button" class="empty-btn" data-empty-action="clear">清除筛选</button>'
-        '<button type="button" class="empty-btn primary" data-empty-action="featured">去看精选</button>'
+        f'<button type="button" class="empty-btn" data-empty-action="clear">{tr("清除筛选", "Clear filters")}</button>'
+        f'<button type="button" class="empty-btn primary" data-empty-action="featured">{tr("去看精选", "See featured")}</button>'
         '</div></div>')
-    return (page_open(site, "featured", f'{site["title"]} · 今日精选与热点榜',
-                      site["description"], ld_items=selected)
-            + f'<div class="m-title">精选</div>'
-            + f'<h1>精选</h1>'
-            + f'<p class="lede">更新于 {esc(generated_at)}（北京时间）<span class="lede-rest"> · 最近 7 天共 {counts["total_7d"]} 条 · '
-            f'精选 {counts["selected"]} 条 · 只显示标题与摘要，点击标题查看详情，详情页里有原文链接。</span></p>'
-            + f'<div class="filter-row"><div class="tabs" role="tablist" aria-label="分类筛选">'
+    lede = (f'更新于 {esc(generated_at)}（北京时间）<span class="lede-rest"> · 最近 7 天共 {counts["total_7d"]} 条 · '
+            f'精选 {counts["selected"]} 条 · 只显示标题与摘要，点击标题查看详情，详情页里有原文链接。</span>')
+    lede_en = (f'Updated {esc(disp_zh_date(generated_at))} (Beijing Time)<span class="lede-rest"> · '
+               f'{counts["total_7d"]} items in the last 7 days · {counts["selected"]} featured · '
+               f'Titles and summaries only; click a title for details and the original link.</span>')
+    return (page_open(site, "featured", tr(f'{site["title"]} · 今日精选与热点榜', f'{site["title"]} · Featured & Hot'),
+                      site["description"], ld_items=selected, rel_path="index.html")
+            + f'<div class="m-title">{tr("精选", "Featured")}</div>'
+            + f'<h1>{tr("精选", "Featured")}</h1>'
+            + f'<p class="lede">{tr(lede, lede_en)}</p>'
+            + f'<div class="filter-row"><div class="tabs" role="tablist" aria-label="{tr("分类筛选", "Filter by category")}">'
             f'<span class="tabs-thumb" id="tabsThumb"></span>'
-            f'<button type="button" class="chip on" data-filter="all">全部</button>{cat_opts}</div>'
+            f'<button type="button" class="chip on" data-filter="all">{tr("全部", "All")}</button>{cat_opts}</div>'
             + search_trigger + search_html + '</div>'
             + overlay_html
             + f'<section class="card hot-card" id="hot" aria-labelledby="hot-topics">'
             f'<div class="hot-head"><h2 id="hot-topics"><span class="live" aria-hidden="true">'
-            f'<span class="ping"></span><span class="dot"></span></span>当前热点</h2></div>'
+            f'<span class="ping"></span><span class="dot"></span></span>{tr("当前热点", "Hot right now")}</h2></div>'
             f'<ol class="hot-list hot-top5">{hot_html}</ol>'
             + hot_more
             + '</section>'
@@ -2375,19 +2486,19 @@ def render_index(site, cats, cfg, src_by_id, selected, hot, timeline, generated_
             + unread_row
             + tl_sections
             + '</div>'
-            + f'<a class="more-row" href="all.html">{icon("list", 18)}'
-            + '<span class="m-label">查看全部动态</span><span class="m-arrow">›</span></a>'
+            + f'<a class="more-row" href="{PAGE_BASE}all.html">{icon("list", 18)}'
+            + f'<span class="m-label">{tr("查看全部动态", "View all updates")}</span><span class="m-arrow">›</span></a>'
             + '<div id="searchResults" hidden>'
-            + '<div class="search-results-head"><h2>搜索结果</h2><span class="sr-count" id="srCount"></span></div>'
+            + f'<div class="search-results-head"><h2>{tr("搜索结果", "Search results")}</h2><span class="sr-count" id="srCount"></span></div>'
             + '<div id="srList"></div></div>'
             + empty_state
             + '<div id="loadMoreSentinel"></div>'
             + '<div class="load-more-wrap" id="loadMoreWrap">'
-            + '<button type="button" class="load-more-btn" id="loadMoreBtn">加载更多</button>'
+            + f'<button type="button" class="load-more-btn" id="loadMoreBtn">{tr("加载更多", "Load more")}</button>'
             + '<p class="load-more-state" id="loadMoreState"></p></div>'
-            + '<p class="feed-end" id="feedEnd" hidden>已经到底了</p>'
+            + f'<p class="feed-end" id="feedEnd" hidden>{tr("已经到底了", "You have reached the end")}</p>'
             + f'<script id="ihConfig" type="application/json">{cfg_json}</script>'
-            + page_close(site, "featured"))
+            + page_close(site, "featured", rel_path="index.html"))
 
 
 def render_all(site, cats, cfg, src_by_id, selected, hot, pool, generated_at):
@@ -2396,38 +2507,38 @@ def render_all(site, cats, cfg, src_by_id, selected, hot, pool, generated_at):
     无精选区、无热点框；分类筛选与搜索与首页共用同一套 JS。"""
     sel_ids = {it["id"] for it in selected}
     cat_opts = "".join(
-        f'<button type="button" class="chip" data-filter="{c["key"]}">{esc(c["label"])}</button>'
+        f'<button type="button" class="chip" data-filter="{c["key"]}">{esc(tr(c["label"], c.get("label_en")))}</button>'
         for c in cats)
-    cat_opts += '<button type="button" class="chip" data-filter="official">官方</button>'
+    cat_opts += f'<button type="button" class="chip" data-filter="official">{tr("官方", "Official")}</button>'
     search_html = (f'<div class="search" role="search">{icon("search", 16)}'
-                   f'<input id="siteSearch" type="text" placeholder="搜索标题、摘要…" '
-                   f'maxlength="200" autocomplete="off" aria-label="搜索标题和摘要">'
-                   f'<button type="button" class="clear" id="searchClear" aria-label="清空">✕</button>'
+                   f'<input id="siteSearch" type="text" placeholder="{tr("搜索标题、摘要…", "Search titles & summaries…")}" '
+                   f'maxlength="200" autocomplete="off" aria-label="{tr("搜索标题和摘要", "Search titles and summaries")}">'
+                   f'<button type="button" class="clear" id="searchClear" aria-label="{tr("清空", "Clear")}">✕</button>'
                    f'<kbd>/</kbd></div>')
-    search_trigger = (f'<button type="button" class="search-trigger" aria-label="打开搜索">'
-                      f'{icon("search", 16)}<span>搜索标题、摘要…</span></button>')
+    search_trigger = (f'<button type="button" class="search-trigger" aria-label="{tr("打开搜索", "Open search")}">'
+                      f'{icon("search", 16)}<span>{tr("搜索标题、摘要…", "Search titles & summaries…")}</span></button>')
     overlay_cats = "".join(
-        f'<button type="button" class="chip" data-filter="{c["key"]}">{esc(c["label"])}</button>'
+        f'<button type="button" class="chip" data-filter="{c["key"]}">{esc(tr(c["label"], c.get("label_en")))}</button>'
         for c in cats)
-    overlay_cats += '<button type="button" class="chip" data-filter="official">官方</button>'
+    overlay_cats += f'<button type="button" class="chip" data-filter="official">{tr("官方", "Official")}</button>'
     overlay_hot = "".join(
         f'<li><span class="rank{" r1" if i == 0 else (" r2" if i == 1 else (" r3" if i == 2 else ""))}">{i + 1}</span>'
-        f'<a href="items/{esc(it["id"])}.html">{esc(it.get("zh_title") or it["title"])}</a></li>'
+        f'<a href="{PAGE_BASE}items/{esc(it["id"])}.html">{esc(disp_title(it))}</a></li>'
         for i, it in enumerate(hot[:5]))
     overlay_html = (
         f'<div class="search-overlay" id="searchOverlay" hidden>'
-        f'<div class="overlay-bar"><button type="button" class="icon-btn" id="overlayClose" aria-label="关闭搜索">{icon("x", 20)}</button>'
+        f'<div class="overlay-bar"><button type="button" class="icon-btn" id="overlayClose" aria-label="{tr("关闭搜索", "Close search")}">{icon("x", 20)}</button>'
         f'<div class="search overlay-search">{icon("search", 16)}'
-        f'<input id="overlaySearch" type="text" placeholder="搜索标题、摘要…" maxlength="200" autocomplete="off" aria-label="搜索标题和摘要">'
-        f'<button type="button" class="clear" id="overlaySearchClear" aria-label="清空">✕</button></div></div>'
-        f'<div class="overlay-sec"><h3>最近搜索</h3><div id="recentList"></div>'
-        f'<button type="button" class="recent-clear" id="clearRecent">清除最近搜索</button></div>'
-        f'<div class="overlay-sec"><h3>按分类找</h3><div class="overlay-cats">{overlay_cats}</div></div>'
-        f'<div class="overlay-sec"><h3>正在热议</h3><ol class="overlay-hot">{overlay_hot}</ol></div>'
+        f'<input id="overlaySearch" type="text" placeholder="{tr("搜索标题、摘要…", "Search titles & summaries…")}" maxlength="200" autocomplete="off" aria-label="{tr("搜索标题和摘要", "Search titles and summaries")}">'
+        f'<button type="button" class="clear" id="overlaySearchClear" aria-label="{tr("清空", "Clear")}">✕</button></div></div>'
+        f'<div class="overlay-sec"><h3>{tr("最近搜索", "Recent searches")}</h3><div id="recentList"></div>'
+        f'<button type="button" class="recent-clear" id="clearRecent">{tr("清除最近搜索", "Clear recent searches")}</button></div>'
+        f'<div class="overlay-sec"><h3>{tr("按分类找", "Browse by category")}</h3><div class="overlay-cats">{overlay_cats}</div></div>'
+        f'<div class="overlay-sec"><h3>{tr("正在热议", "Trending now")}</h3><ol class="overlay-hot">{overlay_hot}</ol></div>'
         f'</div>')
     tl_sections = _tl_sections(pool, sel_ids)
     unread_row = ('<div class="unread-row"><button type="button" class="toggle-chip unread-toggle">'
-                  '只看未读</button></div>')
+                  f'{tr("只看未读", "Unread only")}</button></div>')
     sc = cfg["scoring"]
     ih_cfg = {
         "base": sc["base"],
@@ -2446,21 +2557,25 @@ def render_all(site, cats, cfg, src_by_id, selected, hot, pool, generated_at):
     empty_state = (
         '<div id="noResult" class="empty-state" hidden>'
         f'<div class="empty-icon" id="noResultIcon">{icon("search", 40)}</div>'
-        '<h3 class="empty-title" id="noResultTitle">这个分类下暂无动态。</h3>'
+        f'<h3 class="empty-title" id="noResultTitle">{tr("这个分类下暂无动态。", "No items in this category yet.")}</h3>'
         '<p class="empty-text" id="noResultText"></p>'
         '<div class="empty-actions">'
-        '<button type="button" class="empty-btn" data-empty-action="clear">清除筛选</button>'
-        '<button type="button" class="empty-btn primary" data-empty-action="featured">去看精选</button>'
+        f'<button type="button" class="empty-btn" data-empty-action="clear">{tr("清除筛选", "Clear filters")}</button>'
+        f'<button type="button" class="empty-btn primary" data-empty-action="featured">{tr("去看精选", "See featured")}</button>'
         '</div></div>')
-    return (page_open(site, "all", f'{site["title"]} · 全部动态',
-                      site["description"])
-            + f'<div class="m-title">全部动态</div>'
-            + f'<h1>全部动态</h1>'
-            + f'<p class="lede">更新于 {esc(generated_at)}（北京时间）<span class="lede-rest"> · 最近 30 天共 {len(pool)} 条 · '
-            f'只显示标题与摘要，点击标题查看详情，详情页里有原文链接。</span></p>'
-            + f'<div class="filter-row"><div class="tabs" role="tablist" aria-label="分类筛选">'
+    lede = (f'更新于 {esc(generated_at)}（北京时间）<span class="lede-rest"> · 最近 30 天共 {len(pool)} 条 · '
+            f'只显示标题与摘要，点击标题查看详情，详情页里有原文链接。</span>')
+    lede_en = (f'Updated {esc(disp_zh_date(generated_at))} (Beijing Time)<span class="lede-rest"> · '
+               f'{len(pool)} items in the last 30 days · '
+               f'Titles and summaries only; click a title for details and the original link.</span>')
+    return (page_open(site, "all", tr(f'{site["title"]} · 全部动态', f'{site["title"]} · All updates'),
+                      site["description"], rel_path="all.html")
+            + f'<div class="m-title">{tr("全部动态", "All updates")}</div>'
+            + f'<h1>{tr("全部动态", "All updates")}</h1>'
+            + f'<p class="lede">{tr(lede, lede_en)}</p>'
+            + f'<div class="filter-row"><div class="tabs" role="tablist" aria-label="{tr("分类筛选", "Filter by category")}">'
             f'<span class="tabs-thumb" id="tabsThumb"></span>'
-            f'<button type="button" class="chip on" data-filter="all">全部</button>{cat_opts}</div>'
+            f'<button type="button" class="chip on" data-filter="all">{tr("全部", "All")}</button>{cat_opts}</div>'
             + search_trigger + search_html + '</div>'
             + overlay_html
             + f'<div id="timeline">'
@@ -2468,16 +2583,16 @@ def render_all(site, cats, cfg, src_by_id, selected, hot, pool, generated_at):
             + tl_sections
             + '</div>'
             + '<div id="searchResults" hidden>'
-            + '<div class="search-results-head"><h2>搜索结果</h2><span class="sr-count" id="srCount"></span></div>'
+            + f'<div class="search-results-head"><h2>{tr("搜索结果", "Search results")}</h2><span class="sr-count" id="srCount"></span></div>'
             + '<div id="srList"></div></div>'
             + empty_state
             + '<div id="loadMoreSentinel"></div>'
             + '<div class="load-more-wrap" id="loadMoreWrap">'
-            + '<button type="button" class="load-more-btn" id="loadMoreBtn">加载更多</button>'
+            + f'<button type="button" class="load-more-btn" id="loadMoreBtn">{tr("加载更多", "Load more")}</button>'
             + '<p class="load-more-state" id="loadMoreState"></p></div>'
-            + '<p class="feed-end" id="feedEnd" hidden>已经到底了</p>'
+            + f'<p class="feed-end" id="feedEnd" hidden>{tr("已经到底了", "You have reached the end")}</p>'
             + f'<script id="ihConfig" type="application/json">{cfg_json}</script>'
-            + page_close(site, "all"))
+            + page_close(site, "all", rel_path="all.html"))
 
 
 LAUNCH_DATE = datetime(2026, 1, 1, tzinfo=CST).date()
@@ -2495,7 +2610,7 @@ def issue_no(kind, date_iso):
     return (d.year - LAUNCH_DATE.year) * 12 + (d.month - LAUNCH_DATE.month) + 1
 
 
-def render_period(site, kind, report, base="", prev=None, next_=None, canonical=""):
+def render_period(site, kind, report, base="", prev=None, next_=None, canonical="", rel_path=""):
     """日报/周报/月报共用同一模板（B9）：kind 为 daily/weekly/monthly。
     report: {kind, date, date_iso, issue, summary, items}。
     prev/next: (label, href) 或 None。base 是到站根的目录前缀。"""
@@ -2503,50 +2618,60 @@ def render_period(site, kind, report, base="", prev=None, next_=None, canonical=
               "weekly": ("周报", "过去 7 天", "本周精选", "每周"),
               "monthly": ("月报", "过去 30 天", "本月精选", "每月")}
     name, window, picked, _every = labels[kind]
+    name_en = {"daily": "Daily", "weekly": "Weekly", "monthly": "Monthly"}[kind]
+    window_en = {"daily": "past 24 hours", "weekly": "past 7 days", "monthly": "past 30 days"}[kind]
+    picked_en = {"daily": "Today's picks", "weekly": "This week's picks", "monthly": "This month's picks"}[kind]
     if kind == "daily":
-        sched_txt = f"每天 {esc(site['edition_time_cst'])} 出刊"
+        sched_txt = tr(f"每天 {esc(site['edition_time_cst'])} 出刊", f"Published daily at {esc(site['edition_time_cst'])}")
     elif kind == "weekly":
-        sched_txt = "过去 7 天滚动精选，每半小时更新"
+        sched_txt = tr("过去 7 天滚动精选，每半小时更新", "Rolling 7-day picks, updated every half hour")
     else:
-        sched_txt = "过去 30 天滚动精选，每半小时更新"
+        sched_txt = tr("过去 30 天滚动精选，每半小时更新", "Rolling 30-day picks, updated every half hour")
     items_html = "".join(feed_item(it, rank=i + 1, base=base)
                          for i, it in enumerate(report["items"])) \
-        or f"<p>{window}没有达到精选门槛的条目。</p>"
+        or f"<p>{tr(f'{window}没有达到精选门槛的条目。', f'No items in the {window_en} reached the featured threshold.')}</p>"
     try:
         wd = WEEKDAYS[datetime.strptime(report["date"], "%Y年%m月%d日").weekday()]
+        wd_en = WEEKDAYS_EN[datetime.strptime(report["date"], "%Y年%m月%d日").weekday()]
     except ValueError:
         wd = ""
+        wd_en = ""
+    wd_txt = wd_en if PAGE_LANG == "en" else wd
     nav = ""
     if prev or next_:
-        pl = (f'<a href="{esc(prev[1])}">← 上一期 · {esc(prev[0])}</a>') if prev else "<span></span>"
-        nl = (f'<a class="dn-next" href="{esc(next_[1])}">下一期 · {esc(next_[0])} →</a>') if next_ else ""
+        pl = (f'<a href="{esc(prev[1])}">← {tr("上一期", "Previous issue")} · {esc(disp_zh_date(prev[0]))}</a>') if prev else "<span></span>"
+        nl = (f'<a class="dn-next" href="{esc(next_[1])}">{tr("下一期", "Next issue")} · {esc(disp_zh_date(next_[0]))} →</a>') if next_ else ""
         nav = f'<nav class="daily-nav">{pl}{nl}</nav>'
     period_nav = (
         f'<p class="more-note">'
-        f'<a href="{base}daily.html">日报</a> · <a href="{base}weekly.html">周报</a> · '
-        f'<a href="{base}monthly.html">月报</a> · <a href="{base}daily/archive.html">往期存档</a></p>')
-    return (page_open(site, kind, f'{site["name"]}{name} · {report["date"]}',
+        f'<a href="{PAGE_BASE}daily.html">{tr("日报", "Daily")}</a> · <a href="{PAGE_BASE}weekly.html">{tr("周报", "Weekly")}</a> · '
+        f'<a href="{PAGE_BASE}monthly.html">{tr("月报", "Monthly")}</a> · <a href="{PAGE_BASE}daily/archive.html">{tr("往期存档", "Archive")}</a></p>')
+    issue_txt = tr(f"第 {report['issue']} 期", f"Issue {report['issue']}")
+    picked_txt = tr(f"{picked} {len(report['items'])} 条", f"{picked_en}: {len(report['items'])} items")
+    meta_txt = tr(f'{esc(report["date"])} {wd_txt} · {sched_txt} · {window}精选 {len(report["items"])} 条',
+                  f'{esc(disp_zh_date(report["date"]))} {wd_txt} · {sched_txt} · {len(report["items"])} featured in the {window_en}')
+    return (page_open(site, kind, tr(f'{site["name"]}{name} · {report["date"]}', f'{site["name"]} {name_en} · {disp_zh_date(report["date"])}'),
                       report.get("summary") or site["description"],
                       prefix="index.html", base=base,
-                      canonical=canonical, ld_items=report["items"], page_cls=" page-reading")
-            + f'<div class="m-title">{name}</div>'
+                      canonical=canonical, ld_items=report["items"], page_cls=" page-reading",
+                      rel_path=rel_path)
+            + f'<div class="m-title">{tr(name, name_en)}</div>'
             + f'<div class="report-shell"><div class="masthead"><div class="mp-brand">'
-            f'{_logo(44)}<b>{esc(site["name"])}{name}</b><span class="mp-issue">第 {report["issue"]} 期</span></div>'
-            + f'<p class="mp-meta">{esc(report["date"])} {wd} · {sched_txt} · '
-            f'{window}精选 {len(report["items"])} 条</p>{period_nav}</div>'
-            + f'<div class="well" style="margin-top:16px"><span class="kicker">速览</span>'
+            f'{_logo(44)}<b>{esc(site["name"])}{tr(name, name_en)}</b><span class="mp-issue">{issue_txt}</span></div>'
+            + f'<p class="mp-meta">{meta_txt}</p>{period_nav}</div>'
+            + f'<div class="well" style="margin-top:16px"><span class="kicker">{tr("速览", "At a glance")}</span>'
             f'<p>{esc(report["summary"])}</p></div>'
-            + f'<h2 class="sec">{picked} {len(report["items"])} 条</h2>'
+            + f'<h2 class="sec">{picked_txt}</h2>'
             + items_html + nav + "</div>"
-            + page_close(site, kind, prefix="index.html", base=base))
+            + page_close(site, kind, prefix="index.html", base=base, rel_path=rel_path))
 
 
-def render_daily(site, daily, base="", prev=None, next_=None, canonical=""):
+def render_daily(site, daily, base="", prev=None, next_=None, canonical="", rel_path=""):
     report = dict(daily)
     report.setdefault("kind", "daily")
     report.setdefault("issue", issue_no("daily", daily.get("date_iso", LAUNCH_DATE.isoformat())))
     return render_period(site, "daily", report, base=base, prev=prev, next_=next_,
-                         canonical=canonical)
+                         canonical=canonical, rel_path=rel_path)
 
 
 def render_starred(site):
@@ -2555,80 +2680,84 @@ def render_starred(site):
     empty_state = (
         '<div id="starEmpty" class="empty-state" hidden>'
         f'<div class="empty-icon">{icon("bookmark", 40)}</div>'
-        '<h3 class="empty-title">还没有收藏</h3>'
-        '<p class="empty-text">去点卡片右上角的书签，喜欢的动态就会出现在这里。</p>'
+        f'<h3 class="empty-title">{tr("还没有收藏", "No saved items yet")}</h3>'
+        f'<p class="empty-text">{tr("去点卡片右上角的书签，喜欢的动态就会出现在这里。", "Tap the bookmark on a card and it will show up here.")}</p>'
         '<div class="empty-actions">'
-        '<a class="empty-btn primary" href="index.html">去看精选</a>'
+        f'<a class="empty-btn primary" href="{PAGE_BASE}index.html">{tr("去看精选", "See featured")}</a>'
         '</div></div>')
-    return (page_open(site, "starred", f'{site["title"]} · 收藏',
+    lede = tr("收藏只保存在你的浏览器里（localStorage），换设备不会同步。",
+              "Saved items live only in your browser (localStorage) and do not sync across devices.")
+    lede_rest = tr("点开标题即记已读；下架的条目会置灰保留。",
+                   "Opening a title marks it as read; removed items stay greyed out.")
+    return (page_open(site, "starred", tr(f'{site["title"]} · 收藏', f'{site["title"]} · Saved'),
                       site["description"], prefix="index.html",
-                      canonical=site.get("url", "") + "/starred.html")
-            + f'<div class="m-title">收藏</div>'
-            + f'<h1>收藏</h1>'
-            + f'<p class="lede">收藏只保存在你的浏览器里（localStorage），换设备不会同步。<span class="lede-rest">'
-            f'点开标题即记已读；下架的条目会置灰保留。</span></p>'
+                      canonical=site.get("url", "") + "/starred.html", rel_path="starred.html")
+            + f'<div class="m-title">{tr("收藏", "Saved")}</div>'
+            + f'<h1>{tr("收藏", "Saved")}</h1>'
+            + f'<p class="lede">{lede}<span class="lede-rest">{lede_rest}</span></p>'
             + '<div id="starList"></div>'
             + empty_state
-            + page_close(site, "starred", prefix="index.html"))
+            + page_close(site, "starred", prefix="index.html", rel_path="starred.html"))
 
 
 def render_more(site, changelog_version):
     """“我的”页（B4）：收藏、外观、数据、更新日志、反馈、RSS、关于等入口收在一起。"""
     star_row = (
-        f'<a class="more-row" href="starred.html">{icon("bookmark", 18)}'
-        f'<span class="m-label">收藏</span>'
-        f'<span class="m-val"><span id="moreStarCount">0</span> 条</span>'
+        f'<a class="more-row" href="{PAGE_BASE}starred.html">{icon("bookmark", 18)}'
+        f'<span class="m-label">{tr("收藏", "Saved")}</span>'
+        f'<span class="m-val"><span id="moreStarCount">0</span> {tr("条", "items")}</span>'
         f'<span class="m-arrow">›</span></a>')
     theme_seg = (
         f'<div class="more-row" style="cursor:default">{icon("sun", 18)}'
-        f'<span class="m-label">外观</span>'
-        f'<span class="theme-seg" role="group" aria-label="外观">'
+        f'<span class="m-label">{tr("外观", "Appearance")}</span>'
+        f'<span class="theme-seg" role="group" aria-label="{tr("外观", "Appearance")}">'
         f'<span class="theme-seg-thumb" id="themeSegThumb"></span>'
-        f'<button type="button" data-theme-opt="dark">深色</button>'
-        f'<button type="button" data-theme-opt="system">跟随系统</button>'
-        f'<button type="button" data-theme-opt="light">浅色</button>'
+        f'<button type="button" data-theme-opt="dark">{tr("深色", "Dark")}</button>'
+        f'<button type="button" data-theme-opt="system">{tr("跟随系统", "System")}</button>'
+        f'<button type="button" data-theme-opt="light">{tr("浅色", "Light")}</button>'
         f'</span></div>')
     data_row = (
-        f'<a class="more-row" href="feed.xml">{icon("rss", 18)}'
-        f'<span class="m-label">RSS 订阅</span><span class="m-val">feed.xml</span>'
+        f'<a class="more-row" href="{ASSET_BASE}feed.xml">{icon("rss", 18)}'
+        f'<span class="m-label">{tr("RSS 订阅", "RSS Feed")}</span><span class="m-val">feed.xml</span>'
         f'<span class="m-arrow">›</span></a>'
-        f'<a class="more-row" href="data/days/index.json">{icon("code", 18)}'
-        f'<span class="m-label">数据 JSON</span><span class="m-val">30 天全量</span>'
+        f'<a class="more-row" href="{ASSET_BASE}data/days/index.json">{icon("code", 18)}'
+        f'<span class="m-label">{tr("数据 JSON", "Data JSON")}</span><span class="m-val">{tr("30 天全量", "30 days of data")}</span>'
         f'<span class="m-arrow">›</span></a>')
     about_rows = (
-        f'<a class="more-row" href="about.html">{icon("rss", 18)}'
-        f'<span class="m-label">关于 {site["name"]}</span><span class="m-arrow">›</span></a>'
-        f'<a class="more-row" href="changelog.html">{icon("doc", 18)}'
-        f'<span class="m-label">更新日志</span>'
+        f'<a class="more-row" href="{PAGE_BASE}about.html">{icon("rss", 18)}'
+        f'<span class="m-label">{tr("关于 " + site["name"], "About " + site["name"])}</span><span class="m-arrow">›</span></a>'
+        f'<a class="more-row" href="{PAGE_BASE}changelog.html">{icon("doc", 18)}'
+        f'<span class="m-label">{tr("更新日志", "Changelog")}</span>'
         f'<span class="dot-red" id="changelogDot" data-changelog-version="{esc(changelog_version)}" hidden></span>'
         f'<span class="m-arrow">›</span></a>'
         f'<a class="more-row" href="{site["repo"]}/issues" target="_blank" rel="noopener">{icon("message", 18)}'
-        f'<span class="m-label">反馈</span><span class="m-val">GitHub Issues</span>'
+        f'<span class="m-label">{tr("反馈", "Feedback")}</span><span class="m-val">GitHub Issues</span>'
         f'<span class="m-arrow">›</span></a>'
-        f'<a class="more-row" href="terms.html">{icon("doc", 18)}'
-        f'<span class="m-label">条款</span><span class="m-arrow">›</span></a>'
-        f'<a class="more-row" href="privacy.html">{icon("doc", 18)}'
-        f'<span class="m-label">隐私</span><span class="m-arrow">›</span></a>')
-    return (page_open(site, "more", f'{site["title"]} · 我的',
+        f'<a class="more-row" href="{PAGE_BASE}terms.html">{icon("doc", 18)}'
+        f'<span class="m-label">{tr("条款", "Terms")}</span><span class="m-arrow">›</span></a>'
+        f'<a class="more-row" href="{PAGE_BASE}privacy.html">{icon("doc", 18)}'
+        f'<span class="m-label">{tr("隐私", "Privacy")}</span><span class="m-arrow">›</span></a>')
+    data_note = tr(
+        f'RSS 用 feed.xml 订阅（精选 20 条，每半小时更新）。想自己拉全量数据：<a href="{ASSET_BASE}data/days/index.json">data/days/</a> 按天分块存放最近 30 天的条目，<a href="{ASSET_BASE}data/hot.json">data/hot.json</a> 是今日热点榜 Top 20。',
+        f'Subscribe via feed.xml (top 20 featured, updated every half hour). To pull the full data yourself: <a href="{ASSET_BASE}data/days/index.json">data/days/</a> holds the last 30 days of items in per-day chunks, and <a href="{ASSET_BASE}data/hot.json">data/hot.json</a> is today’s Top 20 hot list.')
+    return (page_open(site, "more", tr(f'{site["title"]} · 我的', f'{site["title"]} · Mine'),
                       site["description"], prefix="index.html",
-                      canonical=site.get("url", "") + "/more.html")
-            + f'<div class="m-title">我的</div>'
-            + f'<h1>我的</h1>'
-            + f'<p class="lede">收藏、外观、数据与关于，都在这里。</p>'
-            + f'<section class="more-sec"><h2>内容</h2>{star_row}'
-            f'<a class="more-row" href="daily/archive.html">{icon("calendar", 18)}'
-            f'<span class="m-label">往期日报</span><span class="m-arrow">›</span></a>'
-            f'<a class="more-row" href="weekly.html">{icon("calendar", 18)}'
-            f'<span class="m-label">周报</span><span class="m-arrow">›</span></a>'
-            f'<a class="more-row" href="monthly.html">{icon("calendar", 18)}'
-            f'<span class="m-label">月报</span><span class="m-arrow">›</span></a></section>'
-            + f'<section class="more-sec"><h2>外观</h2>{theme_seg}</section>'
-            + f'<section class="more-sec"><h2>数据与订阅</h2>{data_row}'
-            f'<p class="more-note">RSS 用 feed.xml 订阅（精选 20 条，每半小时更新）。'
-            f'想自己拉全量数据：<a href="data/days/index.json">data/days/</a> 按天分块存放最近 30 天的条目，'
-            f'<a href="data/hot.json">data/hot.json</a> 是今日热点榜 Top 20。</p></section>'
-            + f'<section class="more-sec"><h2>关于本站</h2>{about_rows}</section>'
-            + page_close(site, "more", prefix="index.html"))
+                      canonical=site.get("url", "") + "/more.html", rel_path="more.html")
+            + f'<div class="m-title">{tr("我的", "Mine")}</div>'
+            + f'<h1>{tr("我的", "Mine")}</h1>'
+            + f'<p class="lede">{tr("收藏、外观、数据与关于，都在这里。", "Saved items, appearance, data and about — all here.")}</p>'
+            + f'<section class="more-sec"><h2>{tr("内容", "Content")}</h2>{star_row}'
+            f'<a class="more-row" href="{PAGE_BASE}daily/archive.html">{icon("calendar", 18)}'
+            f'<span class="m-label">{tr("往期日报", "Past daily issues")}</span><span class="m-arrow">›</span></a>'
+            f'<a class="more-row" href="{PAGE_BASE}weekly.html">{icon("calendar", 18)}'
+            f'<span class="m-label">{tr("周报", "Weekly")}</span><span class="m-arrow">›</span></a>'
+            f'<a class="more-row" href="{PAGE_BASE}monthly.html">{icon("calendar", 18)}'
+            f'<span class="m-label">{tr("月报", "Monthly")}</span><span class="m-arrow">›</span></a></section>'
+            + f'<section class="more-sec"><h2>{tr("外观", "Appearance")}</h2>{theme_seg}</section>'
+            + f'<section class="more-sec"><h2>{tr("数据与订阅", "Data & subscriptions")}</h2>{data_row}'
+            f'<p class="more-note">{data_note}</p></section>'
+            + f'<section class="more-sec"><h2>{tr("关于本站", "About this site")}</h2>{about_rows}</section>'
+            + page_close(site, "more", prefix="index.html", rel_path="more.html"))
 
 
 def render_changelog(site, entries):
@@ -2641,14 +2770,14 @@ def render_changelog(site, entries):
             f'<article class="cl-item"><h3>{esc(e.get("title", ""))}</h3>'
             f'<p class="cl-date">{esc(e.get("date", ""))}</p>'
             f"<ul>{lis}</ul></article>")
-    return (page_open(site, "changelog", f'{site["title"]} · 更新日志',
+    return (page_open(site, "changelog", tr(f'{site["title"]} · 更新日志', f'{site["title"]} · Changelog'),
                       site["description"], prefix="index.html",
-                      canonical=site.get("url", "") + "/changelog.html")
-            + f'<div class="m-title">更新日志</div>'
-            + f'<h1>更新日志</h1>'
-            + f'<p class="lede">{site["name"]} 每次改版都记在这里。</p>'
+                      canonical=site.get("url", "") + "/changelog.html", rel_path="changelog.html")
+            + f'<div class="m-title">{tr("更新日志", "Changelog")}</div>'
+            + f'<h1>{tr("更新日志", "Changelog")}</h1>'
+            + f'<p class="lede">{tr(site["name"] + " 每次改版都记在这里。", "Every change to " + site["name"] + ", logged here.")}</p>'
             + f'<div id="changelogPage" data-changelog-version="{esc(latest)}">{items_html}</div>'
-            + page_close(site, "changelog", prefix="index.html"))
+            + page_close(site, "changelog", prefix="index.html", rel_path="changelog.html"))
 
 
 def render_archive(site, daily_entries, weekly_entries, monthly_entries):
@@ -2662,16 +2791,17 @@ def render_archive(site, daily_entries, weekly_entries, monthly_entries):
 
     def daily_section():
         if not daily_entries:
-            return "<p>还没有往期日报——从今天开始攒。</p>"
+            return f"<p>{tr('还没有往期日报——从今天开始攒。', 'No past daily issues yet — starting from today.')}</p>"
         out = ""
         for ym in sorted(month_groups(daily_entries), reverse=True):
             y, m = ym.split("-")
             rows = "".join(
-                f'<li><a href="{esc(e["file"])}"><span class="a-date">{e["date_short"]}</span>'
-                f'<span class="a-issue">第 {e["issue"]} 期</span>'
-                f'<span class="a-count">{e["count"]} 条</span></a></li>'
+                f'<li><a href="{esc(e["file"])}"><span class="a-date">{disp_zh_date(e["date_short"])}</span>'
+                f'<span class="a-issue">{tr("第 " + str(e["issue"]) + " 期", "Issue " + str(e["issue"]))}</span>'
+                f'<span class="a-count">{tr(str(e["count"]) + " 条", str(e["count"]) + " items")}</span></a></li>'
                 for e in month_groups(daily_entries)[ym])
-            out += (f'<div class="arch-month"><h3>{y}年{int(m)}月</h3>'
+            month_txt = (f"{y}年{int(m)}月") if PAGE_LANG == "zh" else f"{MONTHS_EN[int(m) - 1]} {y}"
+            out += (f'<div class="arch-month"><h3>{month_txt}</h3>'
                     f'<ul class="arch-list">{rows}</ul></div>')
         return out
 
@@ -2679,37 +2809,41 @@ def render_archive(site, daily_entries, weekly_entries, monthly_entries):
         if not entries:
             return ""
         rows = "".join(
-            f'<li><a href="{esc(e["file"])}"><span class="a-date">{e["date_short"]}</span>'
-            f'<span class="a-issue">第 {e["issue"]} 期</span>'
-            f'<span class="a-count">{e["count"]} 条</span></a></li>'
+            f'<li><a href="{esc(e["file"])}"><span class="a-date">{disp_zh_date(e["date_short"])}</span>'
+            f'<span class="a-issue">{tr("第 " + str(e["issue"]) + " 期", "Issue " + str(e["issue"]))}</span>'
+            f'<span class="a-count">{tr(str(e["count"]) + " 条", str(e["count"]) + " items")}</span></a></li>'
             for e in entries)
-        return (f'<div class="arch-month"><h3>{title}</h3>'
+        return (f'<div class="arch-month"><h3>{tr(title, label)}</h3>'
                 f'<ul class="arch-list">{rows}</ul></div>')
 
-    return (page_open(site, "archive", f'{site["title"]} · 往期存档',
+    launch_txt = ""
+    if site.get("launch_date"):
+        launch_txt = tr("期号从 " + esc(site.get("launch_date", "")) + " 上线日起算。",
+                        "Issue numbers count from the launch on " + esc(site.get("launch_date", "")) + ".")
+    return (page_open(site, "archive", tr(f'{site["title"]} · 往期存档', f'{site["title"]} · Archive'),
                       site["description"], prefix="index.html", base="../",
-                      canonical=site.get("url", "") + "/daily/archive.html")
-            + f'<div class="m-title">往期存档</div>'
-            + f'<h1>往期存档</h1>'
-            + f'<p class="lede">日报、周报、月报的合订本。{("期号从 " + esc(site.get("launch_date", "")) + " 上线日起算。") if site.get("launch_date") else ""}</p>'
-            + f'<h2 class="sec">日报</h2>' + daily_section()
-            + period_section("周报", weekly_entries, "周报")
-            + period_section("月报", monthly_entries, "月报")
-            + page_close(site, "archive", prefix="index.html", base="../"))
+                      canonical=site.get("url", "") + "/daily/archive.html", rel_path="daily/archive.html")
+            + f'<div class="m-title">{tr("往期存档", "Archive")}</div>'
+            + f'<h1>{tr("往期存档", "Archive")}</h1>'
+            + f'<p class="lede">{tr("日报、周报、月报的合订本。", "A bound collection of daily, weekly and monthly issues.")}{launch_txt}</p>'
+            + f'<h2 class="sec">{tr("日报", "Daily")}</h2>' + daily_section()
+            + period_section("周报", weekly_entries, "Weekly")
+            + period_section("月报", monthly_entries, "Monthly")
+            + page_close(site, "archive", prefix="index.html", base="../", rel_path="daily/archive.html"))
 
 
 def render_topic(site, label, slug, items):
     """主题页（B11）：某标签下的条目列表。"""
-    items_html = "".join(feed_item(it, base="../") for it in items) or "<p>这个标签下暂时没有条目。</p>"
+    items_html = "".join(feed_item(it, base="../") for it in items) or f"<p>{tr('这个标签下暂时没有条目。', 'No items under this tag yet.')}</p>"
     return (page_open(site, "topics", f'{site["title"]} · #{label}',
                       f"关于「{label}」的{site.get('audience', '')}动态。", prefix="index.html", base="../",
                       canonical=site.get("url", "") + "/topics/" + slug + ".html",
-                      ld_items=items)
+                      ld_items=items, rel_path="topics/" + slug + ".html")
             + f'<div class="m-title">#{esc(label)}</div>'
             + f'<h1>#{esc(label)}</h1>'
-            + f'<p class="lede">共 {len(items)} 条 · <a href="../topics.html">全部主题 →</a></p>'
+            + f'<p class="lede">{tr(f"共 {len(items)} 条", f"{len(items)} items")} · <a href="../topics.html">{tr("全部主题", "All topics")} →</a></p>'
             + items_html
-            + page_close(site, "topics", prefix="index.html", base="../"))
+            + page_close(site, "topics", prefix="index.html", base="../", rel_path="topics/" + slug + ".html"))
 
 
 def render_topics_index(site, tag_counts):
@@ -2717,32 +2851,32 @@ def render_topics_index(site, tag_counts):
     rows = "".join(
         f'<a class="more-row" href="topics/{slug}.html">{icon("rss", 18)}'
         f'<span class="m-label">#{esc(label)}</span>'
-        f'<span class="m-val">{n} 条</span><span class="m-arrow">›</span></a>'
+        f'<span class="m-val">{tr(str(n) + " 条", str(n) + " items")}</span><span class="m-arrow">›</span></a>'
         for label, slug, n in tag_counts)
-    return (page_open(site, "topics", f'{site["title"]} · 主题',
+    return (page_open(site, "topics", tr(f'{site["title"]} · 主题', f'{site["title"]} · Topics'),
                       f"按主题浏览{site.get('audience', '')}动态。", prefix="index.html",
-                      canonical=site.get("url", "") + "/topics.html")
-            + f'<div class="m-title">主题</div>'
-            + f'<h1>主题</h1>'
-            + f'<p class="lede">按标签浏览：点一个标签，看它下面最近 30 天的动态。</p>'
-            + (f'<section class="more-sec">{rows}</section>' if rows else "<p>暂无标签。</p>")
-            + page_close(site, "topics", prefix="index.html"))
+                      canonical=site.get("url", "") + "/topics.html", rel_path="topics.html")
+            + f'<div class="m-title">{tr("主题", "Topics")}</div>'
+            + f'<h1>{tr("主题", "Topics")}</h1>'
+            + f'<p class="lede">{tr("按标签浏览：点一个标签，看它下面最近 30 天的动态。", "Browse by tag: pick one to see its items from the last 30 days.")}</p>'
+            + (f'<section class="more-sec">{rows}</section>' if rows else f"<p>{tr('暂无标签。', 'No tags yet.')}</p>")
+            + page_close(site, "topics", prefix="index.html", rel_path="topics.html"))
 
 
-def render_simple_page(site, active, title, lede, blocks, canonical_path):
-    """静态文案页（B5 关于 / C4 条款与隐私）共用骨架。"""
+def render_simple_page(site, active, title, lede, blocks, canonical_path, title_en=None, lede_en=None):
+    """静态文案页（B5 关于 / C4 条款与隐私）共用骨架。正文内容保持中文原文不动。"""
     body = ""
     for h, paras in blocks:
         ps = "".join(f"<p>{p}</p>" for p in paras)
         body += (f'<h2 class="sec">{esc(h)}</h2>' if h else "") + ps
-    return (page_open(site, active, f'{site["title"]} · {title}',
+    return (page_open(site, active, tr(f'{site["title"]} · {title}', f'{site["title"]} · {title_en or title}'),
                       site["description"], prefix="index.html",
-                      canonical=site.get("url", "") + "/" + canonical_path)
-            + f'<div class="m-title">{esc(title)}</div>'
-            + f'<h1>{esc(title)}</h1>'
-            + f'<p class="lede">{esc(lede)}</p>'
+                      canonical=site.get("url", "") + "/" + canonical_path, rel_path=canonical_path)
+            + f'<div class="m-title">{esc(tr(title, title_en))}</div>'
+            + f'<h1>{esc(tr(title, title_en))}</h1>'
+            + f'<p class="lede">{esc(tr(lede, lede_en))}</p>'
             + body
-            + page_close(site, active, prefix="index.html"))
+            + page_close(site, active, prefix="index.html", rel_path=canonical_path))
 
 
 def render_about(site):
@@ -2762,7 +2896,8 @@ def render_about(site):
             f"端点：<code>{esc(mcp_url)}</code>（Streamable HTTP，无需密钥）。",
             "三个工具：get_hot（当前热点榜）、get_daily（最新一期日报）、search_items（按关键词与分类搜索最近动态）。",
             "以 Claude Desktop 为例，在配置文件里加一个 mcpServers 项，type 填 http，url 填上面这个端点即可。"]))
-    return render_simple_page(site, "about", "关于", f"{name} 是什么、怎么做、谁做的。", pairs, "about.html")
+    return render_simple_page(site, "about", "关于", f"{name} 是什么、怎么做、谁做的。", pairs, "about.html",
+                              title_en="About", lede_en=f"What {name} is, how it works, and who makes it.")
 
 
 def render_terms(site):
@@ -2770,43 +2905,44 @@ def render_terms(site):
         ("", ["本站为信息聚合，内容来自各家公开 RSS；站内只展示标题、摘要与原文链接，不转载全文。",
               "内容版权归原作者所有。",
               "如有内容不妥或希望下架，请通过 GitHub Issues 联系，我们会尽快处理。"]),
-    ], "terms.html")
+    ], "terms.html", title_en="Terms", lede_en="Please read this before using the site.")
 
 
 def render_privacy(site):
     return render_simple_page(site, "privacy", "隐私", "本站如何对待你的数据。", [
         ("", ["本站不收集、不上传任何个人信息。",
               "收藏与已读记录只保存在你自己的浏览器里（localStorage），清除浏览器数据即清除。"]),
-    ], "privacy.html")
+    ], "privacy.html", title_en="Privacy", lede_en="How this site treats your data.")
 
 
 def render_item(site, it, related, is_selected, daily_issue):
     """文章详情页（items/<id>.html）：只有标题、一句话简介、来源、评分、理由、标签、
     相关条目——不编造正文，不转载全文，不展示源站摘要或完整摘要原文。
     导读就是本站自己写的一句话简介（zh_oneliner）；没有简介时只显示标题与链接，
-    原文只通过“打开原文”按钮出去。"""
+    原文只通过“打开原文”按钮出去。英文站标题显示源站原文，一句话简介保持中文原文。"""
     site_url = site.get("url", "")
-    title = it.get("zh_title") or it["title"]
-    en_title = it["title"] if (it.get("zh_title") and it["zh_title"] != it["title"]) else ""
+    title = disp_title(it)
+    en_title = it["title"] if (PAGE_LANG == "zh" and it.get("zh_title") and it["zh_title"] != it["title"]) else ""
     oneliner = it.get("zh_oneliner") or ""
     desc = oneliner if oneliner else title
     pub = _pub_dt(it)
     domain = urllib.parse.urlparse(it["link"]).netloc
     canonical = f"{site_url}/items/{it['id']}.html"
-    mid_name = "精选" if is_selected else "全部动态"
+    mid_name = tr("精选", "Featured") if is_selected else tr("全部动态", "All updates")
     mid_href = "/" if is_selected else "/all.html"
+    in_lang = "en" if PAGE_LANG == "en" else "zh-CN"
     ld_blocks = [
         {"@context": "https://schema.org", "@type": "Article",
          "headline": title, "description": desc,
          "datePublished": pub.astimezone(timezone.utc).isoformat(),
          "dateModified": pub.astimezone(timezone.utc).isoformat(),
-         "inLanguage": "zh-CN",
+         "inLanguage": in_lang,
          "author": {"@type": "Organization", "name": it["source"]},
          "publisher": {"@type": "Organization", "name": site["name"]},
          "mainEntityOfPage": canonical},
         {"@context": "https://schema.org", "@type": "BreadcrumbList",
          "itemListElement": [
-             {"@type": "ListItem", "position": 1, "name": "首页",
+             {"@type": "ListItem", "position": 1, "name": tr("首页", "Home"),
               "item": site_url + "/"},
              {"@type": "ListItem", "position": 2, "name": mid_name,
               "item": site_url + mid_href},
@@ -2814,62 +2950,65 @@ def render_item(site, it, related, is_selected, daily_issue):
               "item": canonical}]},
     ]
     meta = (f'<span class="src">{esc(it["source"])}</span>'
-            + ('<span class="off-tag">官方</span>' if it.get("tier") == "T1" else "")
+            + (f'<span class="off-tag">{tr("官方", "Official")}</span>' if it.get("tier") == "T1" else "")
             + f'<time>· {esc(fmt_cst(pub))}</time>'
-            + ('<span class="pick">精选</span>' if is_selected else "")
+            + (f'<span class="pick">{tr("精选", "Featured")}</span>' if is_selected else "")
             + f'<span class="sp">{score_pill(it["score"])}</span>')
-    en_html = (f'<p class="item-en-title">原文标题：{esc(en_title)}</p>' if en_title else "")
+    en_html = (f'<p class="item-en-title">{tr("原文标题：", "Original title: ")}{esc(en_title)}</p>' if en_title else "")
     # 导读：只显示本站自己写的一句话简介；没有简介时不展示任何源站摘要文字。
     guide_text = oneliner
-    reason_html = (f'<section class="item-sec"><h2>推荐理由</h2>'
+    guide_attr = ' lang="zh-CN"' if (PAGE_LANG == "en" and guide_text) else ""
+    reason_html = (f'<section class="item-sec"><h2>{tr("推荐理由", "Why it matters")}</h2>'
                    f'<p>{esc(it.get("reason", ""))}</p></section>' if it.get("reason") else "")
     tags_html = ""
     tags = it.get("tags") or []
     if tags:
-        tags_html = ('<section class="item-sec"><h2>主题</h2><div class="fi-tags">' + "".join(
+        tags_html = (f'<section class="item-sec"><h2>{tr("主题", "Topics")}</h2><div class="fi-tags">' + "".join(
             f'<a class="tag" href="../topics/{TAG_SLUGS.get(t, t)}.html">#{esc(t)}</a>'
             for t in tags[:3]) + '</div></section>')
     issue_html = ""
     if daily_issue:
-        issue_html = (f'<p class="item-source-line">收录于'
-                      f'<a href="../daily/{daily_issue["key"]}.html">日报第 {daily_issue["issue"]} 期'
+        issue_html = (f'<p class="item-source-line">{tr("收录于", "In ")}'
+                      f'<a href="../daily/{daily_issue["key"]}.html">{tr("日报第 " + str(daily_issue["issue"]) + " 期", "Daily issue " + str(daily_issue["issue"]))}'
                       f'（{esc(daily_issue["date"])}）</a></p>')
     related_html = ""
     if related:
         cards = "".join(feed_item(r, base="../") for r in related)
-        related_html = (f'<section class="item-sec"><h2>相关条目</h2>'
+        related_html = (f'<section class="item-sec"><h2>{tr("相关条目", "Related items")}</h2>'
                         f'<div class="item-related-list">{cards}</div></section>')
     pub_iso = pub.astimezone(timezone.utc).isoformat()
     article_head = (f'<meta property="article:published_time" content="{pub_iso}">\n'
                     f'<meta property="article:modified_time" content="{pub_iso}">\n'
                     f'<meta property="article:author" content="{esc(site["name"])}">\n')
+    save_lbl = tr("收藏", "Save")
     return (page_open(site, "all", f"{title} · {site['name']}", desc,
                       prefix="index.html", base="../", canonical=canonical,
                       page_cls=" page-reading", ld_blocks=ld_blocks,
-                      og_type="article", extra_head=article_head)
+                      og_type="article", extra_head=article_head,
+                      rel_path=f"items/{it['id']}.html")
             + f'<article class="item-page" data-item-id="{esc(it["id"])}">'
-            + f'<button type="button" class="item-back" id="backBtn" data-home="../index.html">← 返回</button>'
+            + f'<button type="button" class="item-back" id="backBtn" data-home="../index.html">← {tr("返回", "Back")}</button>'
             + f'<div class="item-meta">{meta}</div>'
             + f'<h1 class="item-h1">{esc(title)}</h1>'
             + en_html
-            + f'<div class="well item-guide"><span class="kicker">导读</span>'
-            + (f'<p>{esc(guide_text)}</p>' if guide_text else '<p>这条动态暂无简介，点“打开原文”查看。</p>')
+            + f'<div class="well item-guide"><span class="kicker">{tr("导读", "Summary")}</span>'
+            + (f'<p{guide_attr}>{esc(guide_text)}</p>' if guide_text else f'<p>{tr("这条动态暂无简介，点“打开原文”查看。", "No summary for this item yet — open the original to read it.")}</p>')
             + '</div>'
             + reason_html
             + f'<div class="item-actions">'
-            f'<a class="item-open-btn" href="{esc(it["link"])}" target="_blank" rel="noopener">打开原文 ↗</a>'
+            f'<a class="item-open-btn" href="{esc(it["link"])}" target="_blank" rel="noopener">{tr("打开原文", "Read original")} ↗</a>'
             f'<button type="button" class="item-ghost-btn" id="itemStarBtn" data-id="{esc(it["id"])}" '
             f'data-title="{esc(title)}" data-link="{esc(it["link"])}" data-source="{esc(it["source"])}">'
-            f'{icon("bookmark", 16)}<span>收藏</span></button>'
-            f'<button type="button" class="item-ghost-btn" id="copyLinkBtn">复制链接</button>'
-            f'<button type="button" class="item-ghost-btn" id="shareBtn" hidden>分享</button>'
+            f'{icon("bookmark", 16)}<span>{save_lbl}</span></button>'
+            f'<button type="button" class="item-ghost-btn" id="copyLinkBtn">{tr("复制链接", "Copy link")}</button>'
+            f'<button type="button" class="item-ghost-btn" id="shareBtn" hidden>{tr("分享", "Share")}</button>'
             f'</div>'
-            + f'<p class="item-source-line">来源：<b>{esc(it["source"])}</b> · {esc(domain)}</p>'
+            + f'<p class="item-source-line">{tr("来源：", "Source: ")}<b>{esc(it["source"])}</b> · {esc(domain)}</p>'
             + issue_html
             + tags_html
             + related_html
             + '</article>'
-            + page_close(site, "all", prefix="index.html", base="../"))
+            + page_close(site, "all", prefix="index.html", base="../", rel_path=f"items/{it['id']}.html"))
 
 
 def render_404(site):
@@ -2904,13 +3043,13 @@ def render_hot(site, hot, generated_at, counts, cfg):
         hero = (
             f'<article class="card hot-hero"><div class="hot-hero-top">'
             f'<span class="no-tag">NO.01</span>{hot_badges(h0)}</div>'
-            f'<h2><a href="items/{esc(h0["id"])}.html">'
-            f'{esc(h0.get("zh_title") or h0["title"])}</a></h2>'
+            f'<h2><a href="{PAGE_BASE}items/{esc(h0["id"])}.html">'
+            f'{esc(disp_title(h0))}</a></h2>'
             f'<p class="hot-hero-meta">{esc(h0["source"])} · {esc(fmt_cst(_pub_dt(h0)))} · '
-            f'{esc(h0["category_label"])}</p>'
-            + (f'<p class="hot-hero-latest"><span class="k">最新进展</span>{esc(shorten(latest, 110))}</p>'
+            f'{esc(cat_label(h0))}</p>'
+            + (f'<p class="hot-hero-latest"><span class="k">{tr("最新进展", "Latest")}</span>{esc(shorten(latest, 110))}</p>'
                if latest else "")
-            + f'<div class="hot-hero-foot"><span class="hot-big"><b class="num">{round(h0["hot_score"])}</b>热度</span>'
+            + f'<div class="hot-hero-foot"><span class="hot-big"><b class="num">{round(h0["hot_score"])}</b>{tr("热度", " Heat")}</span>'
             f'{hot_delta_html(h0)}{score_pill(h0["score"])}</div></article>')
     if len(hot) > 1:
         sub_cards = ""
@@ -2918,10 +3057,10 @@ def render_hot(site, hot, generated_at, counts, cfg):
             sub_cards += (
                 f'<article class="card hot-sub"><div class="hot-sub-top">'
                 f'<span class="no-tag">NO.{i:02d}</span>{hot_badges(it)}</div>'
-                f'<h3><a href="items/{esc(it["id"])}.html">'
-                f'{esc(it.get("zh_title") or it["title"])}</a></h3>'
+                f'<h3><a href="{PAGE_BASE}items/{esc(it["id"])}.html">'
+                f'{esc(disp_title(it))}</a></h3>'
                 f'<p class="hot-sub-meta">{esc(it["source"])} · {esc(fmt_cst(_pub_dt(it)))}</p>'
-                f'<div class="hot-sub-foot"><span class="hot-num"><b class="num">{round(it["hot_score"])}</b> 热度</span>'
+                f'<div class="hot-sub-foot"><span class="hot-num"><b class="num">{round(it["hot_score"])}</b> {tr("热度", "Heat")}</span>'
                 f'{hot_delta_html(it)}</div></article>')
         subs = f'<div class="hot-sub-grid">{sub_cards}</div>'
     if len(hot) > 3:
@@ -2929,29 +3068,46 @@ def render_hot(site, hot, generated_at, counts, cfg):
         rest = (f'<section class="card hot-card" aria-labelledby="hot-rest" style="margin-top:12px">'
                 f'<ol class="hot-list">{rows}</ol></section>')
     elif not hot:
-        rest = "<p>暂无热点。</p>"
+        rest = f"<p>{tr('暂无热点。', 'No hot items yet.')}</p>"
     rec = sc["recency"]
     rec_txt = "、".join(f'{r["max_hours"]} 小时内 +{r["bonus"]}' for r in rec)
+    rec_txt_en = ", ".join(f'+{r["bonus"]} within {r["max_hours"]}h' for r in rec)
     tier_txt = f'官方信源 +{sc["tier_bonus"].get("T1", 0)}'
+    tier_txt_en = f'Official sources +{sc["tier_bonus"].get("T1", 0)}'
     if "T3" in sc["tier_bonus"]:
         tier_txt += f'；T3 信源 {sc["tier_bonus"]["T3"]}'
-    method = (
-        f'<section class="well hot-method"><span class="kicker">热度是怎么算的？</span>'
-        f'<p>每条动态先按规则打分：基础 {sc["base"]} 分；新鲜度（{rec_txt}）；'
+        tier_txt_en += f'; T3 sources {sc["tier_bonus"]["T3"]}'
+    method_txt = (
+        f'每条动态先按规则打分：基础 {sc["base"]} 分；新鲜度（{rec_txt}）；'
         f'{tier_txt}；命中主题关键词（{"、".join(sc["dev_keywords"])}）'
         f'每个 +{sc["dev_keyword_bonus"]}、上限 +{sc["dev_keyword_cap"]}；噪音关键词每个 {sc["noise_keyword_penalty"]}、'
         f'下限 {sc["noise_keyword_floor"]}；总分封顶 100 分。热度 = 评分 × {sc["decay_base"]}'
         f'^天数（每天衰减），只看最近 {sc["hot_days"]} 天。趋势对照上一轮榜单：名次上升 2 名以上为上升，'
-        f'下降 2 名以上为回落，只挪 1 名算持平；首次上榜标“新”。</p></section>')
-    return (page_open(site, "hot", f'{site["title"]} · 热点榜',
+        f'下降 2 名以上为回落，只挪 1 名算持平；首次上榜标“新”。')
+    method_txt_en = (
+        f'Each item is scored by rules: base {sc["base"]} points; freshness ({rec_txt_en}); '
+        f'{tier_txt_en}; matching topic keywords ({", ".join(sc["dev_keywords"])}) '
+        f'+{sc["dev_keyword_bonus"]} each, capped at +{sc["dev_keyword_cap"]}; noise keywords '
+        f'{sc["noise_keyword_penalty"]} each, floor {sc["noise_keyword_floor"]}; total capped at 100. '
+        f'Heat = score × {sc["decay_base"]}^days (decaying daily), looking at the last {sc["hot_days"]} days. '
+        f'Trends compare with the previous list: up 2+ places is rising, down 2+ is falling, '
+        f'1 place is flat; first-time entries are marked "New".')
+    method = (
+        f'<section class="well hot-method"><span class="kicker">{tr("热度是怎么算的？", "How is heat calculated?")}</span>'
+        f'<p>{tr(method_txt, method_txt_en)}</p></section>')
+    lede = (f'更新于 {esc(generated_at)}（北京时间）<span class="lede-rest"> · 最近 7 天共 {counts["total_7d"]} 条 · '
+            f'热度按评分随时间衰减，趋势对照上一轮榜单。</span>')
+    lede_en = (f'Updated {esc(disp_zh_date(generated_at))} (Beijing Time)<span class="lede-rest"> · '
+               f'{counts["total_7d"]} items in the last 7 days · '
+               f'Heat decays from score over time; trends compare with the previous list.</span>')
+    return (page_open(site, "hot", tr(f'{site["title"]} · 热点榜', f'{site["title"]} · Hot list'),
                       site["description"], prefix="index.html",
-                      canonical=site.get("url", "") + "/hot.html", ld_items=hot)
-            + f'<div class="m-title">热点榜</div>'
-            + f'<h1>热点榜</h1>'
-            + f'<p class="lede">更新于 {esc(generated_at)}（北京时间）<span class="lede-rest"> · 最近 7 天共 {counts["total_7d"]} 条 · '
-            f'热度按评分随时间衰减，趋势对照上一轮榜单。</span></p>'
+                      canonical=site.get("url", "") + "/hot.html", ld_items=hot, rel_path="hot.html")
+            + f'<div class="m-title">{tr("热点榜", "Hot list")}</div>'
+            + f'<h1>{tr("热点榜", "Hot list")}</h1>'
+            + f'<p class="lede">{tr(lede, lede_en)}</p>'
             + hero + subs + rest + method
-            + page_close(site, "hot", prefix="index.html"))
+            + page_close(site, "hot", prefix="index.html", rel_path="hot.html"))
 
 
 def rss_date(dt):
@@ -3085,7 +3241,7 @@ def build_llms_txt(site, cats, today_iso):
     if mirror_url:
         intro_lines.append(f"> Mirror: {mirror_url}/")
     intro_lines += [
-        "> Language: Chinese (zh-CN). No English version yet.",
+        "> Language: Chinese (zh-CN). English version: /en/.",
         f"> Updated: {today_iso}",
     ]
     intro_txt = "\n".join(intro_lines)
@@ -3123,6 +3279,7 @@ def build_llms_txt(site, cats, today_iso):
 ## About
 
 - About: {site_url}/about.html
+- English version: {site_url}/en/
 - Topics: {site_url}/topics.html
 - Daily digest: {site_url}/daily.html
 - Hot list: {site_url}/hot.html
@@ -3184,7 +3341,8 @@ def build_geo_audit(site, root, site_url, today_iso):
     # 首页以规范根路径 site_url/ 入 sitemap，等价于磁盘上的 index.html
     missing = sorted(f"{site_url}/{p}" for p in html_files
                      if f"{site_url}/{p}" not in sm_locs
-                     and not (p == "index.html" and f"{site_url}/" in sm_locs))
+                     and not (p == "index.html" and f"{site_url}/" in sm_locs)
+                     and not (p == "en/index.html" and f"{site_url}/en/" in sm_locs))
     if sitemap and not missing:
         _check("sitemap", "sitemap.xml 条数与漏页", "pass",
                f"共 {len(sm_locs)} 条 URL，磁盘 {len(html_files)} 个 HTML 页全部在列")
@@ -3315,6 +3473,20 @@ def main():
         print(f"launch_date 无效：{_launch}，改用默认 2026-01-01", file=sys.stderr)
     cats = cfg["categories"]
     cat_label = {c["key"]: c["label"] for c in cats}
+    cat_label_en = {c["key"]: c.get("label_en", "") for c in cats}
+    global CAT_LABEL_EN
+    CAT_LABEL_EN = cat_label_en
+
+    def set_lang(lang, depth):
+        """写一页前设置双语全局：lang 为 "zh"/"en"，depth 为页面相对站根的深度（0 根页，1 子目录）。"""
+        global PAGE_LANG, ASSET_BASE, PAGE_BASE
+        PAGE_LANG = lang
+        if lang == "zh":
+            ASSET_BASE = "" if depth == 0 else "../"
+            PAGE_BASE = "" if depth == 0 else "../"
+        else:
+            ASSET_BASE = "../" if depth == 0 else "../../"
+            PAGE_BASE = "" if depth == 0 else "../"
     sc = cfg["scoring"]
     now = datetime.now(timezone.utc)
     now_cst = now.astimezone(CST)
@@ -3527,7 +3699,8 @@ def main():
                 "published": it["published"],
                 "score": it["score"], "tags": it.get("tags", []),
                 "tier": it.get("_tier", "T2"), "category": it["category"],
-                "category_label": it["category_label"]}
+                "category_label": it["category_label"],
+                "category_label_en": cat_label_en.get(it["category"], "")}
     days_dir = os.path.join(data_dir, "days")
     os.makedirs(days_dir, exist_ok=True)
     by_day = {}
@@ -3559,7 +3732,8 @@ def main():
         f.write(script_js(site))
     site_url = site.get("url", "")
 
-    # 主页与热点榜
+    # 主页与热点榜（中文站；英文站的 en/ 镜像在下面）
+    set_lang("zh", 0)
     with open(os.path.join(root, "index.html"), "w", encoding="utf-8") as f:
         f.write(render_index(site, cats, cfg, src_by_id, selected, hot, timeline,
                              gen_cst, hot_data["counts"]))
@@ -3595,6 +3769,32 @@ def main():
     with open(os.path.join(root, "404.html"), "w", encoding="utf-8") as f:
         f.write(render_404(site))
 
+    # 英文站（en/ 镜像：与中文站同结构；没有 feed.xml、404、geo-audit）
+    en_root = os.path.join(root, "en")
+    os.makedirs(en_root, exist_ok=True)
+    set_lang("en", 0)
+    with open(os.path.join(en_root, "index.html"), "w", encoding="utf-8") as f:
+        f.write(render_index(site, cats, cfg, src_by_id, selected, hot, timeline,
+                             gen_cst, hot_data["counts"]))
+    with open(os.path.join(en_root, "all.html"), "w", encoding="utf-8") as f:
+        f.write(render_all(site, cats, cfg, src_by_id, selected, hot,
+                           sorted(live, key=lambda x: x["_pub"], reverse=True),
+                           gen_cst))
+    with open(os.path.join(en_root, "hot.html"), "w", encoding="utf-8") as f:
+        f.write(render_hot(site, hot, gen_cst, hot_data["counts"], cfg))
+    with open(os.path.join(en_root, "starred.html"), "w", encoding="utf-8") as f:
+        f.write(render_starred(site))
+    with open(os.path.join(en_root, "more.html"), "w", encoding="utf-8") as f:
+        f.write(render_more(site, changelog_version))
+    with open(os.path.join(en_root, "changelog.html"), "w", encoding="utf-8") as f:
+        f.write(render_changelog(site, changelog))
+    with open(os.path.join(en_root, "about.html"), "w", encoding="utf-8") as f:
+        f.write(render_about(site))
+    with open(os.path.join(en_root, "terms.html"), "w", encoding="utf-8") as f:
+        f.write(render_terms(site))
+    with open(os.path.join(en_root, "privacy.html"), "w", encoding="utf-8") as f:
+        f.write(render_privacy(site))
+
     # 主题页（B11）：按标签从 30 天全量里取条目，每标签一页 + 索引页
     tag_items = {}
     for it in live:
@@ -3603,13 +3803,23 @@ def main():
     tag_counts = []
     topics_dir = os.path.join(root, "topics")
     os.makedirs(topics_dir, exist_ok=True)
+    en_topics_dir = os.path.join(en_root, "topics")
+    os.makedirs(en_topics_dir, exist_ok=True)
     for label in sorted(tag_items, key=lambda l: -len(tag_items[l])):
         items = sorted(tag_items[label], key=lambda x: x["_pub"], reverse=True)[:50]
         slug = TAG_SLUGS.get(label, label)
         tag_counts.append((label, slug, len(tag_items[label])))
+        set_lang("zh", 1)
         with open(os.path.join(topics_dir, slug + ".html"), "w", encoding="utf-8") as f:
             f.write(render_topic(site, label, slug, [pub_item(it) for it in items]))
+        set_lang("en", 1)
+        with open(os.path.join(en_topics_dir, slug + ".html"), "w", encoding="utf-8") as f:
+            f.write(render_topic(site, label, slug, [pub_item(it) for it in items]))
+    set_lang("zh", 0)
     with open(os.path.join(root, "topics.html"), "w", encoding="utf-8") as f:
+        f.write(render_topics_index(site, tag_counts))
+    set_lang("en", 0)
+    with open(os.path.join(en_root, "topics.html"), "w", encoding="utf-8") as f:
         f.write(render_topics_index(site, tag_counts))
 
     # RSS / robots / sitemap / favicon（C5；每轮都写）
@@ -3656,6 +3866,15 @@ def main():
         for _fn in sorted(os.listdir(_items_dir)):
             if _fn.endswith(".html"):
                 _add_sitemap("items/" + _fn, _pub_dates.get(_fn[:-5], today_iso))
+    # 英文镜像：与中文条目一一对应（feed.xml 与 geo-audit.html 没有英文版；
+    # 详情页只镜像本轮 live 里的条目，过期条目的英文页可能不存在）
+    live_ids = {it["id"] for it in live}
+    for _p, _lm in list(sitemap_entries.items()):
+        if _p in ("feed.xml", "geo-audit.html"):
+            continue
+        if _p.startswith("items/") and _p[len("items/"):-len(".html")] not in live_ids:
+            continue
+        _add_sitemap(("en/" + _p) if _p else "en/", _lm)
     sm = ["<?xml version=\"1.0\" encoding=\"UTF-8\"?>",
           "<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">"]
     for _p, _lm in sitemap_entries.items():
@@ -3704,9 +3923,10 @@ def main():
                 "items": [pub_item(it) for it in items],
             }
 
-        def render_archived(kind, reports, out_dir):
+        def render_archived(kind, reports, out_dir, lang_root=None):
             """渲染某类全部存档页（带上一期/下一期）；out_dir 为 daily/weekly/monthly。"""
-            os.makedirs(os.path.join(root, out_dir), exist_ok=True)
+            base_root = lang_root or root
+            os.makedirs(os.path.join(base_root, out_dir), exist_ok=True)
             for i, rep in enumerate(reports):
                 prev = None
                 nxt = None
@@ -3714,21 +3934,24 @@ def main():
                     prev = (reports[i + 1]["label"], reports[i + 1]["key"] + ".html")
                 if i > 0:
                     nxt = (reports[i - 1]["label"], reports[i - 1]["key"] + ".html")
-                with open(os.path.join(root, out_dir, rep["key"] + ".html"),
+                with open(os.path.join(base_root, out_dir, rep["key"] + ".html"),
                           "w", encoding="utf-8") as f:
                     f.write(render_period(site, kind, rep, base="../", prev=prev,
                                           next_=nxt,
-                                          canonical=f"{site_url}/{out_dir}/{rep['key']}.html"))
+                                          canonical=f"{site_url}/{out_dir}/{rep['key']}.html",
+                                          rel_path=f"{out_dir}/{rep['key']}.html"))
 
-        def current_page(kind, cur, reports, out_dir):
+        def current_page(kind, cur, reports, out_dir, lang_root=None):
             """当前页（daily.html/weekly.html/monthly.html，站根）：上一期指向上一个存档。"""
+            base_root = lang_root or root
             prev = None
             older = [r for r in reports if r["key"] != cur["key"]]
             if older:
                 prev = (older[0]["label"], f"{out_dir}/{older[0]['key']}.html")
-            with open(os.path.join(root, kind + ".html"), "w", encoding="utf-8") as f:
+            with open(os.path.join(base_root, kind + ".html"), "w", encoding="utf-8") as f:
                 f.write(render_period(site, kind, cur, base="", prev=prev, next_=None,
-                                      canonical=f"{site_url}/{kind}.html"))
+                                      canonical=f"{site_url}/{kind}.html",
+                                      rel_path=kind + ".html"))
 
         # --- 日报（每天一份存档）
         last_24h = [it for it in live if (now - it["_pub"]) <= timedelta(hours=sc["daily_hours"])]
@@ -3738,8 +3961,14 @@ def main():
         os.makedirs(daily_data_dir, exist_ok=True)
         save_json(os.path.join(daily_data_dir, daily["key"] + ".json"), daily)
         daily_reports = load_period_archive(daily_data_dir)
+        set_lang("zh", 1)
         render_archived("daily", daily_reports, "daily")
+        set_lang("en", 1)
+        render_archived("daily", daily_reports, "daily", en_root)
+        set_lang("zh", 0)
         current_page("daily", daily, daily_reports, "daily")
+        set_lang("en", 0)
+        current_page("daily", daily, daily_reports, "daily", en_root)
         print(f"daily: {daily['date']}, {len(daily['items'])} items, 第 {daily['issue']} 期")
 
         # --- 周报（滚动 7 天精选；每周只存一份快照）
@@ -3751,8 +3980,14 @@ def main():
         if not os.path.exists(os.path.join(weekly_data_dir, weekly["key"] + ".json")):
             save_json(os.path.join(weekly_data_dir, weekly["key"] + ".json"), weekly)
         weekly_reports = load_period_archive(weekly_data_dir)
+        set_lang("zh", 1)
         render_archived("weekly", weekly_reports, "weekly")
+        set_lang("en", 1)
+        render_archived("weekly", weekly_reports, "weekly", en_root)
+        set_lang("zh", 0)
         current_page("weekly", weekly, weekly_reports, "weekly")
+        set_lang("en", 0)
+        current_page("weekly", weekly, weekly_reports, "weekly", en_root)
         print(f"weekly: {weekly['label']}, {len(weekly['items'])} items, 第 {weekly['issue']} 期")
 
         # --- 月报（滚动 30 天精选；每月只存一份快照）
@@ -3764,8 +3999,14 @@ def main():
         if not os.path.exists(os.path.join(monthly_data_dir, monthly["key"] + ".json")):
             save_json(os.path.join(monthly_data_dir, monthly["key"] + ".json"), monthly)
         monthly_reports = load_period_archive(monthly_data_dir)
+        set_lang("zh", 1)
         render_archived("monthly", monthly_reports, "monthly")
+        set_lang("en", 1)
+        render_archived("monthly", monthly_reports, "monthly", en_root)
+        set_lang("zh", 0)
         current_page("monthly", monthly, monthly_reports, "monthly")
+        set_lang("en", 0)
+        current_page("monthly", monthly, monthly_reports, "monthly", en_root)
         print(f"monthly: {monthly['label']}, {len(monthly['items'])} items, 第 {monthly['issue']} 期")
 
         # --- 往期存档页（B8/B9）：日报按月分组；周报、月报各列一组
@@ -3781,7 +4022,12 @@ def main():
         m_entries = [arch_entry(r, "../monthly/" + r["key"] + ".html", r["label"])
                      for r in monthly_reports]
         os.makedirs(os.path.join(root, "daily"), exist_ok=True)
+        set_lang("zh", 1)
         with open(os.path.join(root, "daily", "archive.html"), "w", encoding="utf-8") as f:
+            f.write(render_archive(site, d_entries, w_entries, m_entries))
+        os.makedirs(os.path.join(en_root, "daily"), exist_ok=True)
+        set_lang("en", 1)
+        with open(os.path.join(en_root, "daily", "archive.html"), "w", encoding="utf-8") as f:
             f.write(render_archive(site, d_entries, w_entries, m_entries))
         # sitemap 补上本轮新出的存档页（主 sitemap 已扫描磁盘，只补还没有的；
         # lastmod 用报告真实日期，不再全写当天）
@@ -3797,6 +4043,10 @@ def main():
                 _loc = f"{site_url}/{_out}/{_r['key']}.html"
                 if _loc not in _existing_locs:
                     _sm_extra.append(f"<url><loc>{_loc}</loc>"
+                                     f"<lastmod>{_r['date_iso']}</lastmod></url>")
+                _loc_en = f"{site_url}/en/{_out}/{_r['key']}.html"
+                if _loc_en not in _existing_locs:
+                    _sm_extra.append(f"<url><loc>{_loc_en}</loc>"
                                      f"<lastmod>{_r['date_iso']}</lastmod></url>")
         if _sm_extra:
             with open(os.path.join(root, "sitemap.xml"), encoding="utf-8") as _sf:
@@ -3819,6 +4069,8 @@ def main():
     sel_ids = {it["id"] for it in selected}
     items_dir = os.path.join(root, "items")
     os.makedirs(items_dir, exist_ok=True)
+    en_items_dir = os.path.join(en_root, "items")
+    os.makedirs(en_items_dir, exist_ok=True)
     by_cat = {}
     by_src = {}
     for it in live:
@@ -3842,13 +4094,20 @@ def main():
                     break
         # 详情页只用 pub_item 的发布字段（标题 + 一句话简介），不并完整摘要。
         detail = dict(pub_item(it))
+        set_lang("zh", 1)
         with open(os.path.join(items_dir, it["id"] + ".html"), "w", encoding="utf-8") as f:
             f.write(render_item(site, detail, [pub_item(r) for r in picked],
                                 it["id"] in sel_ids,
                                 daily_issue.get(it["id"])))
+        set_lang("en", 1)
+        with open(os.path.join(en_items_dir, it["id"] + ".html"), "w", encoding="utf-8") as f:
+            f.write(render_item(site, detail, [pub_item(r) for r in picked],
+                                it["id"] in sel_ids,
+                                daily_issue.get(it["id"])))
         n_items += 1
-    print(f"items: {n_items} detail pages")
-    # --- /geo-audit 自检页 + 数据（SEO/GEO：每轮生成后自检，日报复用同一份数据）---
+    print(f"items: {n_items} detail pages (+{n_items} en)")
+    # --- /geo-audit 自检页 + 数据（SEO/GEO：每轮生成后自检，日报复用同一份数据；只中文版）---
+    set_lang("zh", 0)
     geo_html, geo_data = build_geo_audit(site, root, site_url, today_iso)
     with open(os.path.join(root, "geo-audit.html"), "w", encoding="utf-8") as f:
         f.write(geo_html)
