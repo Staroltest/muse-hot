@@ -2390,5 +2390,16 @@
   "zh_oneliner": "作者介绍如何把无法从外部 SSH 登录的 Muse 虚拟机当作文件存放处，再以 Google Drive 为中枢串起整套智能体工作流。",
   "en_oneliner": "The author shows how to treat a Muse VM with no outside SSH access as a file store and run an agent workflow around Google Drive as the hub.",
   "en_title": "Managing a Muse VM You Can't SSH Into as a 'File Store': AI Agent Operations Hubbed on Google Drive"
+ },
+ "https://news.google.com/rss/articles/CBMioAFBVV95cUxPa0diLU9hQTl2VGF6a2cta1NVcFF6dGh2bTBrS1d1WVVvYkR0NTZ5VWRLUk16dkZTei1oeTdiaFRmQU1LZm04bEliN1VRSUN0VlhMZ3BwRGVGR3RvUTItcHBmYUg3OWF6T1NTZUlKZWdOWHE0ZHZsd2gxRHY5aWFPOGI1X1JENVl0MHFWMWhZcng1TFlxcmNrSkpnNzRJaGdx?oc=5": {
+  "zh_title": "Meta 用“Window Shopping”广告呈现假日季与 AI 眼镜",
+  "zh_oneliner": "Meta 推出假日季广告“Window Shopping”，把 AI 眼镜塑造成节日送礼的主角。",
+  "en_oneliner": "Meta's holiday ad \"Window Shopping\" casts its AI glasses as the season's gift."
+ },
+ "https://zenn.dev/mugipod/articles/shiru-shikumi": {
+  "zh_title": "让制作人“被了解”的机制——连接器篇",
+  "zh_oneliner": "作者分享如何用连接器让个人 AI 助手 Muse 了解制作人的工作方式。",
+  "en_oneliner": "The author shares how connectors let a personal AI assistant, Muse, get to know a producer's workflow.",
+  "en_title": "The Mechanism for \"Knowing\" a Producer — On Connectors"
  }
 }
