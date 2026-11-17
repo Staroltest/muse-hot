@@ -3011,5 +3011,21 @@
   "zh_oneliner": "Meta 在澳大利亚推出 Muse AI 智能体并接入当地服务，进一步拓展其在澳洲市场的落地应用。",
   "en_oneliner": "Meta has launched its Muse AI agent in Australia with local service integrations, further expanding its footprint in the Australian market.",
   "en_title": "Meta Launches Muse AI Agent in Australia with Local Service Integrations"
+ },
+ "https://news.google.com/rss/articles/CBMibkFVX3lxTFAzRDl0NkZ6TWV6TjhtM05iMkloQW80REV4eDBfeF82ckhQcW43YlliQS1tMjAyRUljRl9nRHBUdEVMQ0hlQ281X3B1VXd6dlU0SE5meHVpdUFMQmhZWlR1eE9jdUJHUmFxejBybXdB?oc=5": {
+  "zh_title": "一名男子和他的 Muse AI 智能体起诉 Meta - 404 Media",
+  "zh_oneliner": "一名男子带着他的 Muse AI 智能体把 Meta 告上了法庭，这起诉讼把 AI 智能体的法律地位推到了台前。",
+  "en_oneliner": "A man took Meta to court together with his Muse AI agent, putting the legal standing of AI agents in the spotlight."
+ },
+ "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPemlNX2dzMjdNZWxxaU12U1p1LTJZRTFHaXpiZGRXM1h5UHllVTFOVnEyY202a0J1Y3p0VVNxdF8wQVkwaGZPdExsYXJqbmwxSnA5RVZtWnVGbnhMV1RVSkJjRnJhR1pJVUFtVGlDTlZqanV2elVXNEJLdkE3cVhrVmZFekxxazJr?oc=5": {
+  "zh_title": "Meta Muse能帮你找活动门票，但价格务必再三核实 - Sohu",
+  "zh_oneliner": "Meta Muse 能帮你找到活动门票，但它给出的价格不一定靠谱，下单前务必多方核实。",
+  "en_oneliner": "Meta Muse can help you find event tickets, but the prices it shows may not be reliable, so verify them from multiple sources before buying.",
+  "en_title": "Meta Muse Can Help You Find Event Tickets, but Always Double-Check the Price"
+ },
+ "https://github.com/facebookincubator/muse-gadget-sdk/commit/580e9a40191a837c777fccb605cb746d3e07037f": {
+  "zh_title": "esp32：唤醒词：保留内部与 DMA RAM 的链接需求（#428）",
+  "zh_oneliner": "Muse 小工具 SDK 的一笔 ESP32 提交，调整了唤醒词相关的内部与 DMA RAM 链接需求。",
+  "en_oneliner": "An ESP32 commit in the Muse gadget SDK adjusted the internal and DMA RAM link requirements for wake-word support."
  }
 }
