@@ -2974,5 +2974,10 @@
   "zh_title": "Meta 在澳大利亚推出 AI 个人智能体 Muse - AFR",
   "zh_oneliner": "Meta 在澳大利亚推出 AI 个人智能体 Muse，进一步扩大这款助手的覆盖范围。",
   "en_oneliner": "Meta has launched its AI personal agent Muse in Australia, expanding the assistant's reach."
+ },
+ "https://www.unite.ai/meta-launches-muse-ai-agent-in-australia-with-local-connectors": {
+  "zh_title": "Meta 在澳大利亚推出 Muse AI 智能体，接入本地连接器",
+  "zh_oneliner": "Meta 把 Muse AI 智能体带到澳大利亚并接入本地连接器，让当地用户用上更贴合本地场景的 AI 助手。",
+  "en_oneliner": "Meta brings its Muse AI agent to Australia with local connectors, giving local users an AI assistant better suited to local needs."
  }
 }
