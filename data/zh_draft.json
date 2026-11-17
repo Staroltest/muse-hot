@@ -2887,5 +2887,25 @@
   "zh_title": "你的 Muse 不在家也能跑家里的 Stable Diffusion 算力——Tailscale + ComfyUI 完整搭建指南",
   "zh_oneliner": "作者分享了一套完整方案，让 Muse 通过 Tailscale 远程操控家里的 ComfyUI 出图机，出门在外也能随时跑 Stable Diffusion。",
   "en_oneliner": "The author shares a complete setup for letting Muse remotely operate a home ComfyUI image-generation rig via Tailscale, so Stable Diffusion keeps running while you're away."
+ },
+ "https://medium.com/aimonks/how-muse-ember-achieves-4x-faster-multimodal-subagent-automation-2b591b34de24?source=rss------meta_muse-5": {
+  "zh_title": "Muse Ember 如何实现 4 倍速多模态子智能体自动化",
+  "zh_oneliner": "文章拆解 Muse Ember 让多模态子智能体提速四倍的做法。",
+  "en_oneliner": "This article breaks down how Muse Ember makes multimodal subagent automation four times faster."
+ },
+ "https://www.reddit.com/r/MuseAgent/comments/1xyp1fm/muse_wonder_on_powermaximum": {
+  "zh_title": "升级 Power/Maximum 套餐后，Muse Wonder 模型要等多久才生效",
+  "zh_oneliner": "用户升级一天多仍未用上 Wonder 模型，在社区询问切换通常需要等多久。",
+  "en_oneliner": "A user who upgraded more than a day ago still hasn't gotten access to the Wonder model and asks the community how long the switch usually takes."
+ },
+ "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPall2X3diSjRjLUZrZWMyX3IxS081cG1PSHZvZWF1RkVHLU1TeUpKdjJYaXpCbm1RcHZFT05wcC1WSGRfZjJUT0JFaDM0ZTJral9KVXpmUEF1ZkZBS256UHh4dlNMTXA1MnpBRTRSdWhJTjNIVGY3Q0hvd3JpWm9NQzdHV1pFTXh1UkVB?oc=5": {
+  "zh_title": "扎克伯格发布 Muse Ember，Meta 最小的 AI 模型，定价与 Haiku 每 token 相当",
+  "zh_oneliner": "扎克伯格推出 Meta 体量最小的 AI 模型 Muse Ember，token 定价对标 Haiku。",
+  "en_oneliner": "Zuckerberg launches Muse Ember, Meta's smallest AI model, priced per token on par with Haiku."
+ },
+ "https://www.youtube.com/shorts/j-1sK4dhtTA": {
+  "zh_title": "吃光 UMMA 的饭后，他请 Muse 帮忙才挽回局面",
+  "zh_oneliner": "这支短片讲有人吃光了 UMMA 的饭，差点闹翻，最后请 Muse 出手帮忙收场。",
+  "en_oneliner": "In this short, someone eats UMMA's food and nearly ruins things before asking Muse to help fix it."
  }
 }
