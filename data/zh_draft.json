@@ -2293,5 +2293,10 @@
   "zh_title": "用旧安卓手机和 Muse SDK 给 Muse 装了个身体",
   "zh_oneliner": "一位独自经营媒体工作室的用户把 Muse 当作幕僚长，本已在云端打理日程、消息与设备，如今又用旧安卓手机给它接上了能动手干活的身体。",
   "en_oneliner": "A solo media-studio owner who already uses Muse as a chief of staff in the cloud — running their schedule, messages, and machines — has now given it a physical body built from an old Android phone and the Muse SDK."
+ },
+ "https://www.reddit.com/r/MuseAgent/comments/1xyd2qd/anyone_have_success_using_muse_to_get_off_those": {
+  "zh_title": "有人成功用 Muse 摆脱那些烦人的公开个人信息搜索网站吗（例如 Spokeo、whitepages.com 等）",
+  "zh_oneliner": "一位用户想知道 Muse 能不能帮忙把自己的信息从 Spokeo、whitepages.com 这类公开个人信息搜索网站上清除掉，正在向社区求助实战经验。",
+  "en_oneliner": "A user is asking the community whether Muse can actually help get their personal information removed from public people-search sites like Spokeo and whitepages.com."
  }
 }
