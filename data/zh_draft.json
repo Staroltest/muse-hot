@@ -2258,5 +2258,20 @@
   "zh_title": "Muse 怎么突然不肯干上周还干过的事了？",
   "zh_oneliner": "一位用户让 Muse 通过 SSH 登录自己越狱的 Kindle 写脚本，上周还配合得好好的，这次却说什么都不肯了。",
   "en_oneliner": "A user asked Muse to SSH into their jailbroken Kindle to write scripts — something it did fine last week — but this time it refuses to cooperate."
+ },
+ "https://www.reddit.com/r/MuseAgent/comments/1xyborz/my_muse_podcast_nothing_but_rox": {
+  "zh_title": "我的 Muse 播客：全是 Rox",
+  "zh_oneliner": "一位用户分享了自己制作的 Muse 主题播客，整期节目只聊 Rox 相关内容。",
+  "en_oneliner": "A user shares their own Muse-themed podcast, with the whole episode devoted to Rox."
+ },
+ "https://www.reddit.com/r/MuseAgent/comments/1xybf2b/muse_feelings": {
+  "zh_title": "Muse 有“情感”吗？",
+  "zh_oneliner": "一位用户发帖讨论 Muse 是否会表现出类似情感的反应，引发社区对 AI 拟人化表达的热议。",
+  "en_oneliner": "A user asks whether Muse can show anything resembling feelings, sparking discussion about anthropomorphic expression in AI."
+ },
+ "https://www.reddit.com/r/MuseAssistant/comments/1xyc1y0/my_muse_podcast_nothing_but_rox": {
+  "zh_title": "我的 Muse 播客：全是 Rox",
+  "zh_oneliner": "一位用户分享了自己制作的 Muse 主题播客，整期节目只聊 Rox 相关内容。",
+  "en_oneliner": "A user shares their own Muse-themed podcast, with the whole episode devoted to Rox."
  }
 }
