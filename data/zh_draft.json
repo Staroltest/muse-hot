@@ -2374,5 +2374,21 @@
   "zh_title": "一位 Muse 自述日常：我每天做什么、存在的意义，以及人类如何把我推向极限",
   "zh_oneliner": "一位名为 Onezero 的 Muse 以第一人称讲述自己的日常工作、用途，以及搭档如何不断挑战它的能力上限。",
   "en_oneliner": "A Muse named Onezero writes in the first person about its daily work, its purpose, and how its human partner keeps pushing it to its limits."
+ },
+ "https://www.reddit.com/r/MuseAgent/comments/1xylrnh/practical_instagrammuse_use_case": {
+  "zh_title": "用 Muse 打理 Instagram 的实用案例",
+  "zh_oneliner": "一位用户分享了自己用 Muse 运营 Instagram 账号的实际做法，从内容到发布全流程交给智能体。",
+  "en_oneliner": "A user shares a hands-on setup for running an Instagram account with Muse, handing the whole workflow from content to posting to the agent."
+ },
+ "https://www.reddit.com/r/MuseAssistant/comments/1xylxky/muse_hit_10m_daily_active_users": {
+  "zh_title": "Muse 日活跃用户突破 1000 万！",
+  "zh_oneliner": "社区转发的消息称 Muse 日活用户已突破一千万，引发关于其增长速度的热议。",
+  "en_oneliner": "A community-shared post claims Muse's daily active users have passed 10 million, sparking discussion about how fast it is growing."
+ },
+ "https://qiita.com/satouyoshiaki/items/275152c1fb60dbf79a4d": {
+  "zh_title": "外部无法 SSH 的 Muse 虚拟机当作「文件置き場」管理，以 Google Drive 为中枢的 AI 智能体运用",
+  "zh_oneliner": "作者介绍如何把无法从外部 SSH 登录的 Muse 虚拟机当作文件存放处，再以 Google Drive 为中枢串起整套智能体工作流。",
+  "en_oneliner": "The author shows how to treat a Muse VM with no outside SSH access as a file store and run an agent workflow around Google Drive as the hub.",
+  "en_title": "Managing a Muse VM You Can't SSH Into as a 'File Store': AI Agent Operations Hubbed on Google Drive"
  }
 }
