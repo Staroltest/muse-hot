@@ -1042,5 +1042,13 @@
  "https://zenn.dev/ocha50107/articles/216a7ba96cbb36": {
   "zh_title": "30 篇 Muse 入门文章都提到的 4 个安全设置",
   "zh_oneliner": "作者通读 30 篇 Muse 入门文章后发现，无论作者是谁，推荐的安全设置几乎都是这 4 项。"
+ },
+ "https://www.reddit.com/r/MuseAssistant/comments/1xy55hu/ive_solved_the_youtubers_dilemma_using_muse_ai": {
+  "zh_title": "用 Muse AI 解决了 YouTuber 的难题：Meta-Blade 来了",
+  "zh_oneliner": "一位 YouTuber 用 Muse AI 解决了创作中的难题，并把这套做法做成了 Meta-Blade。"
+ },
+ "https://zenn.dev/satofun/articles/b2575c8ff6f4bf": {
+  "zh_title": "从 Muse 调用 PixAI API 的方法｜用 Tsubaki.3 试着生成图片",
+  "zh_oneliner": "不用写代码，在 Muse 的对话里直接调用 PixAI 的图片生成 API，用 Tsubaki.3 试着生成了图片。"
  }
 }
