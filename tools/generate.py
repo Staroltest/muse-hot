@@ -41,6 +41,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # ---- 双语（中/英）全局状态：每写一页前由 main() 按语言与深度设置 ----
 PAGE_LANG = "zh"       # "zh" | "en"
 ASSET_BASE = ""        # 到站根的资源前缀：根页 ""，中文子目录 "../"，en 根页 "../"，en 子目录 "../../"
+ANALYTICS = "<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{\"token\": \"faf0f409e3ee4f429210e586a98b58bd\"}'></script><!-- End Cloudflare Web Analytics -->"  # Cloudflare Web Analytics 统计代码
 PAGE_BASE = ""         # 到本语言根的页面前缀：根页 ""，子目录 "../"
 CAT_LABEL_EN = {}      # 分类 key -> label_en，main() 里由 config 填
 
@@ -2257,7 +2258,7 @@ def page_open(site, active, title, description, prefix="", base="", canonical=""
 def page_close(site, active, prefix="", base="", rel_path=""):
     to_top = (f'<button type="button" class="to-top" id="toTop" aria-label="{tr("回到顶部", "Back to top")}">'
               f'{icon("arrow-up", 18)}</button>')
-    return (f"{footer_html(site, base, rel_path)}</div></div></div>{to_top}{tabbar_html(active, prefix, base)}<script src='{ASSET_BASE}assets/site.js'></script></body></html>\n")
+    return (f"{footer_html(site, base, rel_path)}</div></div></div>{to_top}{tabbar_html(active, prefix, base)}<script src='{ASSET_BASE}assets/site.js'></script>{ANALYTICS}</body></html>\n")
 
 
 def day_header(d, items, today, aside=False):
@@ -3028,7 +3029,7 @@ def render_404(site):
             f'<div class="empty-actions">'
             f'<a class="empty-btn primary" href="{site_url}/index.html">回首页</a>'
             f'<a class="empty-btn" href="{site_url}/hot.html">去看热点榜</a>'
-            f'</div></div></div></div></div></body></html>\n')
+            f'</div></div></div></div></div>{ANALYTICS}</body></html>\n')
 
 
 def render_hot(site, hot, generated_at, counts, cfg):
