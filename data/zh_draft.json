@@ -2338,5 +2338,21 @@
   "zh_oneliner": "作者记录了让 Muse 记住目标、提前思考并从失败中调整工作方式的观察，探讨它能否从助手变成会不断成长的搭档。",
   "en_oneliner": "The author records observations of Muse remembering goals, thinking ahead, and adjusting how it works after failures, asking whether it can grow from an assistant into a partner that keeps improving.",
   "en_title": "Can Muse Become a 'Growing Partner'? Observing the Accumulation of Memory and Improvement"
+ },
+ "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5WNEdFUU9CQzJ5NTNIeURDTWxRb2JkQkd4bFIyZ05UWUxVSGtHR3B0V2VhbTZYd1R2aVpqanRZYUxDakJJa2F2bHlYd3hTdw?oc=5": {
+  "zh_title": "Muse 登录 Apple Watch：个人 Agent 入场，AI 硬件各寻出路",
+  "zh_oneliner": "Muse 登陆 Apple Watch，手腕上的个人智能体开始入场，AI 硬件厂商各自寻找出路。",
+  "en_oneliner": "Muse arrives on Apple Watch as personal agents move onto the wrist, while AI hardware makers each look for their own path forward.",
+  "en_title": "Muse Lands on Apple Watch: Personal Agents Arrive as AI Hardware Finds Its Own Paths"
+ },
+ "https://www.reddit.com/r/MuseAgent/comments/1xyiy5z/this_alignment_is_in_muses_alignment_in_sys_files": {
+  "zh_title": "这份对齐原则就写在 Muse 的系统文件里",
+  "zh_oneliner": "一位用户发现 Muse 的对齐原则直接写在系统文件里，引发关于智能体行为边界的讨论。",
+  "en_oneliner": "A user found Muse's alignment principles written directly in its system files, sparking discussion about where an agent's behavior boundaries lie."
+ },
+ "https://www.reddit.com/r/MuseAgent/comments/1xyiqbt/how_to_export_muse_agent_to_pdf_word_or_md": {
+  "zh_title": "如何把 Muse Agent 导出为 PDF、Word 或 Markdown",
+  "zh_oneliner": "一位用户请教如何把 Muse Agent 的内容导出为 PDF、Word 或 Markdown，寻求实用的导出方法。",
+  "en_oneliner": "A user asks how to export Muse Agent content to PDF, Word, or Markdown, looking for a practical export method."
  }
 }
