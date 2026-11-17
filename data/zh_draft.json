@@ -2273,5 +2273,25 @@
   "zh_title": "我的 Muse 播客：全是 Rox",
   "zh_oneliner": "一位用户分享了自己制作的 Muse 主题播客，整期节目只聊 Rox 相关内容。",
   "en_oneliner": "A user shares their own Muse-themed podcast, with the whole episode devoted to Rox."
+ },
+ "https://www.reddit.com/r/MuseAgent/comments/1xycq40/muse_x_hermes": {
+  "zh_title": "Muse 搭配 Hermes",
+  "zh_oneliner": "用户把 Muse 和 Hermes 接在同一个 Tailscale 网络里分工：Muse 管购物、点评和邮件，Hermes 负责内容创作与写代码，并问大家都是怎么搭配的。",
+  "en_oneliner": "The user runs Muse and Hermes on the same Tailscale network with a split of duties — Muse handles shopping, reviews, and email while Hermes does content creation and coding — and asks others how they combine the two."
+ },
+ "https://www.reddit.com/r/MuseAgent/comments/1xycizr/i_gave_muse_a_body_using_an_old_android_phone_and": {
+  "zh_title": "用旧安卓手机和 Muse SDK 给 Muse 装了个身体",
+  "zh_oneliner": "一位独自经营媒体工作室的用户把 Muse 当作幕僚长，本已在云端打理日程、消息与设备，如今又用旧安卓手机给它接上了能动手干活的身体。",
+  "en_oneliner": "A solo media-studio owner who already uses Muse as a chief of staff in the cloud — running their schedule, messages, and machines — has now given it a physical body built from an old Android phone and the Muse SDK."
+ },
+ "https://www.reddit.com/r/MuseAgent/comments/1xycist/all_my_tokens_are_gone_2b_tokens": {
+  "zh_title": "我的 token 全没了！20 亿个 token",
+  "zh_oneliner": "用户让 Muse 帮忙找菜谱，结果在登录 Facebook 时不小心合并了账号，20 亿个 token 就此消失。",
+  "en_oneliner": "A user asked Muse to find a recipe, then accidentally merged accounts while signing in to Facebook — and lost 2 billion tokens in the process."
+ },
+ "https://www.reddit.com/r/MuseAssistant/comments/1xyck8t/i_gave_muse_a_body_using_an_old_android_phone_and": {
+  "zh_title": "用旧安卓手机和 Muse SDK 给 Muse 装了个身体",
+  "zh_oneliner": "一位独自经营媒体工作室的用户把 Muse 当作幕僚长，本已在云端打理日程、消息与设备，如今又用旧安卓手机给它接上了能动手干活的身体。",
+  "en_oneliner": "A solo media-studio owner who already uses Muse as a chief of staff in the cloud — running their schedule, messages, and machines — has now given it a physical body built from an old Android phone and the Muse SDK."
  }
 }
