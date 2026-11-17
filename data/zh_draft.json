@@ -2332,5 +2332,11 @@
   "zh_title": "Muse 智能体能访问你的个人隐私信息，你现在有多担心隐私问题？",
   "zh_oneliner": "一位用户发帖询问大家，既然 Muse 智能体可以接触个人隐私信息，是否还对隐私感到安心，引发了关于 AI 助手权限边界的讨论。",
   "en_oneliner": "A user asks the community how comfortable they feel about privacy now that the Muse agent can access their personal information, sparking a discussion about the boundaries of AI assistant access."
+ },
+ "https://zenn.dev/daydream/articles/muse-observation-01-memory-and-boundaries": {
+  "zh_title": "Muse 能成为「会成长的搭档」吗？观察记忆与改进的积累",
+  "zh_oneliner": "作者记录了让 Muse 记住目标、提前思考并从失败中调整工作方式的观察，探讨它能否从助手变成会不断成长的搭档。",
+  "en_oneliner": "The author records observations of Muse remembering goals, thinking ahead, and adjusting how it works after failures, asking whether it can grow from an assistant into a partner that keeps improving.",
+  "en_title": "Can Muse Become a 'Growing Partner'? Observing the Accumulation of Memory and Improvement"
  }
 }
