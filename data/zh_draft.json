@@ -3037,5 +3037,20 @@
   "zh_title": "你的新 Muse？Meta 在澳大利亚推出 AI 个人助手",
   "zh_oneliner": "Meta 把 AI 个人助手 Muse 带到澳大利亚，让更多当地用户可以直接用上这位新帮手。",
   "en_oneliner": "Meta is bringing its AI personal assistant Muse to Australia, putting the new helper directly within reach of more local users."
+ },
+ "https://news.google.com/rss/articles/CBMimAFBVV95cUxOOTRGZDFjNV9NSWt4cDZGVGg2aGg1QnZKc0RtSnQtNGxleHRVM0ZZR0JNaF9DMGQ0SEVNakltUVZpeldOWWE2QmtEQUQtaEs3Mm43MVBZSXlvME9ES2Z5V2V4aXhRVTJnZi10Smo4cXhsVGMySFdxNzVmaWdSSXZIMHFvQlpaSUswMVhKbmV5Ny0xTnpNNHZVZQ?oc=5": {
+  "zh_title": "“不要搜亚马逊”：Meta 的 Muse 默认改去别处购物",
+  "zh_oneliner": "GeekWire 报道称，Meta 的 Muse 不再默认在亚马逊上购物，购物搜索改由其他渠道完成。",
+  "en_oneliner": "GeekWire reports that Meta's Muse no longer shops on Amazon by default, with shopping searches now routed through other channels."
+ },
+ "https://news.google.com/rss/articles/CBMikgFBVV95cUxNLThseDF5UUYwOUtpWmo3ckNrbFFhSy1neHJuX3UxTV8wQldyTFdaZS1PTnJqQnc4V3lYWnZIMVRsYjJXY2ZnOHBHU1I2TkxRdlNRVzlYcHpLOEk5ZXk3UmxSM2FqMU4yaEdLS0FoeXBoVk5jX2FhMkRmQWExNUJOajNpUDJoZFBEMGFZMEY1bUc3Zw?oc=5": {
+  "zh_title": "“你不想要失控的智能体”：摩根大通 CEO 杰米·戴蒙把 Meta 的 Muse 智能体拒之门外，这对 META 股价意味着什么",
+  "zh_oneliner": "摩根大通 CEO 杰米·戴蒙以防范失控智能体为由，禁止在公司内部使用 Meta 的 Muse AI 智能体。",
+  "en_oneliner": "JPMorgan CEO Jamie Dimon has barred Meta's Muse AI agent from the bank, citing the risk of rogue agents."
+ },
+ "https://github.com/facebookincubator/muse-gadget-sdk/commit/16fab958a6d0948e25b3c47ee1910f1e7aa174f6": {
+  "zh_title": "ESP32：在开机动画暂停前打开音频",
+  "zh_oneliner": "本次提交让 ESP32 在开机动画的停顿之前就启动音频，解决了语音管道启动过晚的问题。",
+  "en_oneliner": "This commit starts audio on ESP32 before the boot animation's pause, fixing the voice pipeline starting too late."
  }
 }
