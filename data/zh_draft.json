@@ -1078,5 +1078,9 @@
  "https://zenn.dev/recaro/articles/cue-a2-20261117": {
   "zh_title": "让外部个人智能体 Cue 加入自建智能体服务器 a2，与 Muse 对话",
   "zh_oneliner": "作者把个人智能体 Cue 接进自己搭建的智能体消息服务器 a2，让它只加入通用频道并与 Muse 对话，实测下来 Cue 的接入比 Muse 更省事。"
+ },
+ "https://www.reddit.com/r/MuseAgent/comments/1xy86tn/muse_safety_concern": {
+  "zh_title": "Muse 安全担忧：会被用来自动化人肉搜索吗",
+  "zh_oneliner": "一位 Reddit 用户发帖讨论 Muse 是否可能被用来自动搜集他人个人信息，引发社区对智能体滥用风险的关注。"
  }
 }
