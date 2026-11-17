@@ -3052,5 +3052,21 @@
   "zh_title": "ESP32：在开机动画暂停前打开音频",
   "zh_oneliner": "本次提交让 ESP32 在开机动画的停顿之前就启动音频，解决了语音管道启动过晚的问题。",
   "en_oneliner": "This commit starts audio on ESP32 before the boot animation's pause, fixing the voice pipeline starting too late."
+ },
+ "https://qiita.com/givemegohan/items/183aeb53473e9ed8d540": {
+  "zh_title": "让 AI（Muse）读懂古文书与草书体的方法",
+  "zh_oneliner": "作者分享用 Muse 搭配草书专用 OCR 识别古文书的做法，先由 OCR 转录文字再交给 AI 处理，比直接让 AI 读图更可靠。",
+  "en_title": "How to Have AI (Muse) Read Historical Documents and Kuzushiji",
+  "en_oneliner": "The author shares a method for reading historical documents with Muse by pairing it with a kuzushiji-specific OCR tool — transcribing the text first, then letting the AI work with it, which proves more reliable than having the AI read images directly."
+ },
+ "https://github.com/facebookincubator/muse-gadget-sdk/commit/0310a2a8afa2285a46acb96c45e130d2cb359ae2": {
+  "zh_title": "ESP32：Muse 删除冗余代码，释放 S3 内部 RAM（#415）",
+  "zh_oneliner": "该提交清理了 ESP32 S3 上占用内部 RAM 的冗余代码，为完整界面腾出宝贵的片上内存。",
+  "en_oneliner": "This commit removes dead code occupying internal RAM on the ESP32 S3, freeing precious on-chip memory for the full UI."
+ },
+ "https://github.com/facebookincubator/muse-gadget-sdk/commit/0c8cdb9d883303bff15580b9c3be81d1e58c2c32": {
+  "zh_title": "ESP32：音频间隙时暂停回复动画（#429）",
+  "zh_oneliner": "当 Muse 在音频片段之间短暂静默时，头像不再保持动画状态，改为暂停回复动画直至下一段语音到来。",
+  "en_oneliner": "When Muse goes quiet between audio segments, the avatar now pauses its reply animation instead of staying animated until the next voice segment arrives."
  }
 }
