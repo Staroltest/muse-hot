@@ -1070,5 +1070,9 @@
  "https://www.reddit.com/r/MuseAgent/comments/1xy5y0w/simple_model_and_animation_import": {
   "zh_title": "简单的模型与动画导入方法",
   "zh_oneliner": "一位用户分享了把模型和动画快速导入 Muse 的简易做法。"
+ },
+ "https://www.reddit.com/r/MuseAgent/comments/1xy7gqt/sharing_spaces": {
+  "zh_title": "分享 Spaces：让 Muse 把协作空间打包成压缩包发给别人",
+  "zh_oneliner": "想把自己的 Muse 协作空间分享给别人，可以让 Muse 把空间打包成压缩包并给出下载链接，对方再把压缩包交给自己的 Muse，就能原样重建出这个空间。"
  }
 }

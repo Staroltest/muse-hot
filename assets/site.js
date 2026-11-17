@@ -47,6 +47,8 @@ document.querySelectorAll('.theme-btn').forEach(function(b){b.addEventListener('
 document.querySelectorAll('.theme-seg button').forEach(function(b){b.addEventListener('click',function(){
   applyTheme(b.getAttribute('data-theme-opt'));
 });});
+/* 语言切换：点顶栏/页脚的切换时记住选择，自动跳转不再覆盖手动选择 */
+document.querySelectorAll('.lang-switch a[data-lang]').forEach(function(a){a.addEventListener('click',function(){try{localStorage.setItem('muse-hot-lang',a.getAttribute('data-lang'));}catch(e){}});});
 /* 三向切换的滑动 thumb：量一下当前选中项的位置 */
 var themeSegEl=document.querySelector('.theme-seg');
 var themeThumb=document.getElementById('themeSegThumb');

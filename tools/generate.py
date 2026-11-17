@@ -41,7 +41,6 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # ---- 双语（中/英）全局状态：每写一页前由 main() 按语言与深度设置 ----
 PAGE_LANG = "zh"       # "zh" | "en"
 ASSET_BASE = ""        # 到站根的资源前缀：根页 ""，中文子目录 "../"，en 根页 "../"，en 子目录 "../../"
-ANALYTICS = "<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{\"token\": \"faf0f409e3ee4f429210e586a98b58bd\"}'></script><!-- End Cloudflare Web Analytics -->"  # Cloudflare Web Analytics 统计代码
 PAGE_BASE = ""         # 到本语言根的页面前缀：根页 ""，子目录 "../"
 CAT_LABEL_EN = {}      # 分类 key -> label_en，main() 里由 config 填
 
@@ -1010,20 +1009,47 @@ def _en_url(site_url, url):
     return url
 
 
-def lang_switch_html(rel_path):
-    """语言切换：rel_path 是页面相对本语言根的路径（如 "hot.html"、"daily/2026-11-17.html"）。
+def lang_counterpart_href(rel_path):
+    """当前页在另一语言下的对应页相对路径（切换链接与自动跳转共用）。
     空 rel_path（404 / geo-audit 等无英文版的页）返回空。"""
     if not rel_path:
         return ""
     if PAGE_LANG == "zh":
-        href = ("en/" if ASSET_BASE == "" else "../en/") + rel_path
+        return ("en/" if ASSET_BASE == "" else "../en/") + rel_path
+    return ("../" if ASSET_BASE == "../" else "../../") + rel_path
+
+
+def lang_switch_html(rel_path):
+    """语言切换：rel_path 是页面相对本语言根的路径（如 "hot.html"、"daily/2026-11-17.html"）。
+    空 rel_path（404 / geo-audit 等无英文版的页）返回空。"""
+    href = lang_counterpart_href(rel_path)
+    if not href:
+        return ""
+    if PAGE_LANG == "zh":
         return (f'<span class="lang-switch" role="group" aria-label="语言">'
                 f'<span class="on" aria-current="true">中文</span>'
                 f'<a href="{href}" data-lang="en">EN</a></span>')
-    href = ("../" if ASSET_BASE == "../" else "../../") + rel_path
     return (f'<span class="lang-switch" role="group" aria-label="Language">'
             f'<span class="on" aria-current="true">EN</span>'
             f'<a href="{href}" data-lang="zh">中文</a></span>')
+
+
+def lang_redirect_script(site, rel_path):
+    """浏览器语言自动跳转（与 tool-hot / ecommerce-hot 同款）：
+    首次访问且未手动选过语言时，按 navigator.language 跳到对应语言版并记住选择；
+    爬虫不跳。空 rel_path（无英文版的页）不注入。"""
+    target = lang_counterpart_href(rel_path)
+    if not target:
+        return ""
+    key = _storage_prefix(site) + "-lang"
+    cur = "zh" if PAGE_LANG == "zh" else "en"
+    return ("<script>(function(){try{var k='" + key + "';"
+            "if(localStorage.getItem(k))return;"
+            "if(/bot|crawler|spider|crawling|slurp|facebookexternal|preview/i.test(navigator.userAgent||''))return;"
+            "var want=(navigator.language||navigator.userLanguage||'en').toLowerCase().indexOf('zh')===0?'zh':'en';"
+            "localStorage.setItem(k,want);"
+            "if(want!==\"" + cur + "\")location.replace(\"" + target + "\");"
+            "}catch(e){}})();</script>")
 
 
 WEEKDAYS = ["星期一", "星期二", "星期三", "星期四", "星期五", "星期六", "星期日"]
@@ -1192,6 +1218,8 @@ def hot_row(it, rank, pad=False):
 
 THEME_BOOT = """<script>(function(){try{var k='__SLUG__-theme';function sys(){return window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}function apply(t){document.documentElement.setAttribute('data-theme',t==='dark'?'dark':'light');}var saved=localStorage.getItem(k);if(saved==='dark'||saved==='light'){apply(saved);}else{apply(sys());var mq=window.matchMedia&&matchMedia('(prefers-color-scheme: dark)');if(mq&&mq.addEventListener){mq.addEventListener('change',function(){try{if(!localStorage.getItem(k))apply(sys());}catch(e){}});}}}catch(e){}})();</script>"""
 
+CF_BEACON = """<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "faf0f409e3ee4f429210e586a98b58bd"}'></script><!-- End Cloudflare Web Analytics -->"""
+
 SCRIPT = """
 <script>
 (function(){
@@ -1243,6 +1271,8 @@ document.querySelectorAll('.theme-btn').forEach(function(b){b.addEventListener('
 document.querySelectorAll('.theme-seg button').forEach(function(b){b.addEventListener('click',function(){
   applyTheme(b.getAttribute('data-theme-opt'));
 });});
+/* 语言切换：点顶栏/页脚的切换时记住选择，自动跳转不再覆盖手动选择 */
+document.querySelectorAll('.lang-switch a[data-lang]').forEach(function(a){a.addEventListener('click',function(){try{localStorage.setItem('__SLUG__-lang',a.getAttribute('data-lang'));}catch(e){}});});
 /* 三向切换的滑动 thumb：量一下当前选中项的位置 */
 var themeSegEl=document.querySelector('.theme-seg');
 var themeThumb=document.getElementById('themeSegThumb');
@@ -2087,7 +2117,18 @@ def _nav_items(prefix, base=""):
     ]
 
 
-def sidebar_html(site, active, prefix="", base=""):
+def _side_lang_link(site, rel_path):
+    """侧栏底部语言链接（左下角按钮）：中文页 English，英文页 中文；点即记住选择。"""
+    href = lang_counterpart_href(rel_path)
+    if not href:
+        return ""
+    key = _storage_prefix(site) + "-lang"
+    if PAGE_LANG == "zh":
+        return ('<a class="gh" href="' + href + '" onclick="try{localStorage.setItem(\'' + key + '\',\'en\')}catch(e){}">English</a>')
+    return ('<a class="gh" href="' + href + '" onclick="try{localStorage.setItem(\'' + key + '\',\'zh\')}catch(e){}">中文</a>')
+
+
+def sidebar_html(site, active, prefix="", base="", rel_path=""):
     items = _nav_items(prefix, base)
     links = "".join(
         f'<a class="side-link{" on" if key == active else ""}" href="{href}">'
@@ -2109,6 +2150,7 @@ def sidebar_html(site, active, prefix="", base=""):
             f'</div></nav>'
             f'<div class="side-foot">'
             f'<a class="gh" href="{site["repo"]}" target="_blank" rel="noopener">{tr("GitHub 仓库", "GitHub Repo")}</a>'
+            f'{_side_lang_link(site, rel_path)}'
             f'{_theme_btn()}'
             f'<p class="note">{tr("每天 " + esc(site["edition_time_cst"]) + " 出日报", "Daily issue at " + esc(site["edition_time_cst"]))}</p>'
             f'</div></aside>')
@@ -2250,15 +2292,15 @@ def page_open(site, active, title, description, prefix="", base="", canonical=""
             f'<link rel="icon" type="image/svg+xml" href="{ASSET_BASE}favicon.svg">\n'
             f"{og}"
             f'{ld_html}'
-            f"{theme_boot(site)}<link rel=\"stylesheet\" href=\"{ASSET_BASE}assets/site.css\"></head>\n<body>"
-            f'<div class="shell">{sidebar_html(site, active, prefix, base)}{rail_html(site, active, prefix, base)}'
+            f"{theme_boot(site)}{lang_redirect_script(site, rel_path)}<link rel=\"stylesheet\" href=\"{ASSET_BASE}assets/site.css\"></head>\n<body>"
+            f'<div class="shell">{sidebar_html(site, active, prefix, base, rel_path)}{rail_html(site, active, prefix, base)}'
             f'<div class="main">{topbar_html(site, active, prefix, base, rel_path)}<div class="page{page_cls}">')
 
 
 def page_close(site, active, prefix="", base="", rel_path=""):
     to_top = (f'<button type="button" class="to-top" id="toTop" aria-label="{tr("回到顶部", "Back to top")}">'
               f'{icon("arrow-up", 18)}</button>')
-    return (f"{footer_html(site, base, rel_path)}</div></div></div>{to_top}{tabbar_html(active, prefix, base)}<script src='{ASSET_BASE}assets/site.js'></script>{ANALYTICS}</body></html>\n")
+    return (f"{footer_html(site, base, rel_path)}</div></div></div>{to_top}{tabbar_html(active, prefix, base)}<script src='{ASSET_BASE}assets/site.js'></script>{CF_BEACON}</body></html>\n")
 
 
 def day_header(d, items, today, aside=False):
@@ -3029,7 +3071,7 @@ def render_404(site):
             f'<div class="empty-actions">'
             f'<a class="empty-btn primary" href="{site_url}/index.html">回首页</a>'
             f'<a class="empty-btn" href="{site_url}/hot.html">去看热点榜</a>'
-            f'</div></div></div></div></div>{ANALYTICS}</body></html>\n')
+            f'</div></div></div></div></div>{CF_BEACON}</body></html>\n')
 
 
 def render_hot(site, hot, generated_at, counts, cfg):

@@ -5,8 +5,8 @@
  "date": "2026年11月17日",
  "date_iso": "2026-11-17",
  "issue": 1,
- "generated_at": "2026-11-17T01:11:20.427545+00:00",
- "summary": "过去 7 天共收录 321 条动态，精选 10 条（新闻动态 5 条、教程指南 1 条、真实用法 1 条、官方动态 1 条、观点与争议 2 条）。头条：Muse Mail、语音和通话还是没有，到底怎么回事？。",
+ "generated_at": "2026-11-17T01:38:05.137472+00:00",
+ "summary": "过去 7 天共收录 322 条动态，精选 10 条（新闻动态 6 条、教程指南 1 条、真实用法 1 条、官方动态 1 条、观点与争议 1 条）。头条：Muse Mail、语音和通话还是没有，到底怎么回事？。",
  "items": [
   {
    "id": "298702b036e660222e0117902c1e6f87281a7755",
@@ -28,9 +28,9 @@
    "reason": "涉及call与voice · 6 小时内发布",
    "is_new": true,
    "trend": "same",
-   "hot_score": 82.2,
+   "hot_score": 81.9,
    "prev_rank": 1,
-   "prev_hot_score": 82.2
+   "prev_hot_score": 81.9
   },
   {
    "id": "fd27a2456dbc9b0c778ba3e2d48d7b6ca4826467",
@@ -52,9 +52,9 @@
    "reason": "涉及call与voice · 24 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 72.0,
-   "prev_rank": 13,
-   "prev_hot_score": 72.0
+   "hot_score": 71.7,
+   "prev_rank": 14,
+   "prev_hot_score": 71.7
   },
   {
    "id": "5abf7b422000a7e82828204790b4382e200003bf",
@@ -63,8 +63,8 @@
    "source": "Reddit：r/MuseAgent",
    "source_id": "reddit-museagent",
    "published": "2026-11-16T23:45:28+00:00",
-   "zh_title": "",
-   "zh_oneliner": "",
+   "zh_title": "用 Muse AI 解决 YouTuber 的难题：Meta-Blade 来了",
+   "zh_oneliner": "一位创作者用 Muse 打造了名为 Meta-Blade 的工具，帮 YouTuber 应对选题与制作的两难。",
    "category": "guide",
    "category_label": "教程指南",
    "tier": "T2",
@@ -75,9 +75,32 @@
    "reason": "涉及prompt · 6 小时内发布",
    "is_new": true,
    "trend": "same",
-   "hot_score": 78.9,
+   "hot_score": 78.6,
+   "prev_rank": 3,
+   "prev_hot_score": 78.6
+  },
+  {
+   "id": "a1eeeb893cc4b670480a73b578f6ef02b159fe22",
+   "title": "Sharing spaces",
+   "link": "https://www.reddit.com/r/MuseAgent/comments/1xy7gqt/sharing_spaces",
+   "source": "Reddit：r/MuseAgent",
+   "source_id": "reddit-museagent",
+   "published": "2026-11-17T01:30:37+00:00",
+   "zh_title": "",
+   "zh_oneliner": "",
+   "category": "news",
+   "category_label": "新闻动态",
+   "tier": "T2",
+   "tags": [
+    "Spaces"
+   ],
+   "score": 80,
+   "reason": "涉及Spaces · 6 小时内发布",
+   "is_new": true,
+   "trend": "same",
+   "hot_score": 79.9,
    "prev_rank": 2,
-   "prev_hot_score": 79.0
+   "prev_hot_score": 79.9
   },
   {
    "id": "ca6c20e714cdf0ab0504f5eb5fdc9e4d19c4ae73",
@@ -100,7 +123,7 @@
    "reason": "涉及call与voice · 与本主题相关",
    "is_new": false,
    "trend": "same",
-   "hot_score": 55.8,
+   "hot_score": 55.6,
    "prev_rank": null,
    "prev_hot_score": null
   },
@@ -123,7 +146,7 @@
    "reason": "涉及数据 · 24 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 61.0,
+   "hot_score": 60.7,
    "prev_rank": null,
    "prev_hot_score": null
   },
@@ -146,7 +169,7 @@
    "reason": "涉及Spaces · 24 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 61.4,
+   "hot_score": 61.1,
    "prev_rank": null,
    "prev_hot_score": null
   },
@@ -169,7 +192,7 @@
    "reason": "涉及voice · 24 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 61.5,
+   "hot_score": 61.3,
    "prev_rank": null,
    "prev_hot_score": null
   },
@@ -192,7 +215,7 @@
    "reason": "涉及review · 24 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 63.4,
+   "hot_score": 63.1,
    "prev_rank": null,
    "prev_hot_score": null
   },
@@ -215,32 +238,9 @@
    "reason": "涉及watch · 24 小时内发布",
    "is_new": false,
    "trend": "same",
-   "hot_score": 66.1,
-   "prev_rank": 19,
-   "prev_hot_score": 66.1
-  },
-  {
-   "id": "fea1a90c46164ce641a5a233979a0edb58831d46",
-   "title": "FED-AI-CRM (Ai Agentic Assisted Customer Relationship Management System)",
-   "link": "https://www.reddit.com/r/MuseAgent/comments/1xxqgmn/fedaicrm_ai_agentic_assisted_customer",
-   "source": "Reddit：r/MuseAgent",
-   "source_id": "reddit-museagent",
-   "published": "2026-11-16T14:17:14+00:00",
-   "zh_title": "FED-AI-CRM：AI 智能体辅助客户关系管理系统",
-   "zh_oneliner": "一个基于智能体的客户关系管理系统亮相，尝试用 AI 代理协助处理客户跟进工作。",
-   "category": "opinion",
-   "category_label": "观点与争议",
-   "tier": "T2",
-   "tags": [
-    "review"
-   ],
-   "score": 75,
-   "reason": "涉及review · 24 小时内发布",
-   "is_new": false,
-   "trend": "same",
-   "hot_score": 67.8,
-   "prev_rank": 18,
-   "prev_hot_score": 67.8
+   "hot_score": 65.8,
+   "prev_rank": 20,
+   "prev_hot_score": 65.8
   }
  ]
 }
