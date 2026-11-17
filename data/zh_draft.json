@@ -2228,5 +2228,25 @@
   "zh_title": "Muse 去除 YouTube 视频静音比我的 SaaS 工具还快",
   "zh_oneliner": "有人发现 Muse 去除 YouTube 视频里的静音片段比自己用的 SaaS 工具还快。",
   "en_oneliner": "Someone found Muse removes silence from YouTube videos faster than their SaaS tool."
+ },
+ "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQdU1RV2V4N2ozME5ibUxLT1R5T19lUXlQVnlwQlpmN3FBaE10YmdacmpoOEJMcjctUVdybkNTRnMtMXc2YmJVZkY4c3FDMDNvOWFhbHFrZlk4TlIyUmRyLURNeXkySHFxQlNNQWhGRDB5d2NIQVlVZlZUa09fcDVyR201SWNyTmw4SFl6S1VyXzNMMWZqSFdlNWpoYTc3YlE1S0libVc2WEpJM3FteFF1WlhvQThFMjVOQlR2NGNEMXNwNkhIalk3OXZIcjR4RjV2ZGh1UG8tdw?oc=5": {
+  "zh_title": "字节跳动计划挑战 Meta Muse，未来数周内推出竞品 AI 智能体：报道",
+  "zh_oneliner": "报道称字节跳动正准备在未来数周内推出自家 AI 智能体，直接对标 Meta 的 Muse。",
+  "en_oneliner": "A report says ByteDance is preparing to launch its own AI agent in the coming weeks, taking direct aim at Meta's Muse."
+ },
+ "https://www.reddit.com/r/MuseAgent/comments/1xy9rgt/metas_muse_has_a_surprisingly_powerful_container": {
+  "zh_title": "Meta 的 Muse 容器环境出人意料地强大",
+  "zh_oneliner": "用户实测发现 Muse 底层的容器环境权限出乎意料地大，称其为用过的最顺手的 AI 智能体环境之一。",
+  "en_oneliner": "A user testing Muse found its underlying container environment surprisingly permissive, calling it one of the nicest AI agent environments they have used."
+ },
+ "https://www.reddit.com/r/MuseAgent/comments/1xy9rb0/how_to_handle_todo_with_muse": {
+  "zh_title": "如何用 Muse 管理待办事项？",
+  "zh_oneliner": "用户分享了让 Muse 读写 iPhone 待办应用、按日期提醒截止事项，并为待办建专属空间的做法。",
+  "en_oneliner": "A user shares how they let Muse read and write their iPhone to-do app, remind them of deadlines by date, and keep a dedicated space for their tasks."
+ },
+ "https://www.reddit.com/r/MuseAgent/comments/1xy9h59/do_you_trust_muse": {
+  "zh_title": "你信任 Muse 吗？",
+  "zh_oneliner": "用户吐槽 Muse 有时不听指令、有时又不够给力，引发关于能否信任 AI 智能体的讨论。",
+  "en_oneliner": "A user vents that Muse sometimes ignores instructions and sometimes falls short, sparking a discussion about whether AI agents can be trusted."
  }
 }
