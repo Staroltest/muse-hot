@@ -2327,5 +2327,10 @@
   "zh_title": "任何智能体、任何平台：你的 Muse 如何连接其他 Muse、Claude、ChatGPT 等一切智能体",
   "zh_oneliner": "介绍如何让 Muse 与 Claude、ChatGPT 等不同平台的智能体互联互通，打通跨平台的智能体协作。",
   "en_oneliner": "How to connect Muse with Claude, ChatGPT and other agents across platforms, enabling cross-platform agent collaboration."
+ },
+ "https://www.reddit.com/r/MuseAgent/comments/1xyhw5u/how_worried_are_you_about_your_privacy_now_that": {
+  "zh_title": "Muse 智能体能访问你的个人隐私信息，你现在有多担心隐私问题？",
+  "zh_oneliner": "一位用户发帖询问大家，既然 Muse 智能体可以接触个人隐私信息，是否还对隐私感到安心，引发了关于 AI 助手权限边界的讨论。",
+  "en_oneliner": "A user asks the community how comfortable they feel about privacy now that the Muse agent can access their personal information, sparking a discussion about the boundaries of AI assistant access."
  }
 }
