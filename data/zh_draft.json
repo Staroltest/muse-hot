@@ -3027,5 +3027,10 @@
   "zh_title": "esp32：唤醒词：保留内部与 DMA RAM 的链接需求（#428）",
   "zh_oneliner": "Muse 小工具 SDK 的一笔 ESP32 提交，调整了唤醒词相关的内部与 DMA RAM 链接需求。",
   "en_oneliner": "An ESP32 commit in the Muse gadget SDK adjusted the internal and DMA RAM link requirements for wake-word support."
+ },
+ "https://www.404media.co/a-man-and-his-muse-ai-agent-sue-meta": {
+  "zh_title": "一名男子与其 Muse AI 智能体起诉 Meta",
+  "zh_oneliner": "一名男子与他使用的 Muse AI 智能体共同对 Meta 提起诉讼，引发关于 AI 智能体法律主体地位的讨论。",
+  "en_oneliner": "A man and the Muse AI agent he uses have jointly sued Meta, raising questions about the legal standing of AI agents."
  }
 }
