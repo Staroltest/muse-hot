@@ -213,7 +213,8 @@
  },
  "https://gitlab.com/pablosanzo/musejailbreak": {
   "zh_title": "Show HN：Muse 越狱工具，让 Muse 用上你自己的 Chrome 浏览器",
-  "zh_oneliner": "一款 macOS 菜单栏小应用，让 Muse 智能体直接操作用户自己电脑上的 Chrome 浏览器。"
+  "zh_oneliner": "一款 macOS 菜单栏小应用，让 Muse 智能体直接操作用户自己电脑上的 Chrome 浏览器。",
+  "en_oneliner": "A small macOS menu bar app that lets Claude Code agents operate the user's own Chrome browser directly."
  },
  "https://github.com/Coverage-Cat/consumer-agent-testing-tool": {
   "zh_title": "Show HN：CATT 0.2.1，在 CI 里拿类 Muse/Instinct 助手测试智能体与服务",
@@ -883,11 +884,13 @@
  },
  "https://github.com/cszach/awesome-muse/commit/0a62dc7120c8e8a4114b5a39fa3149a1cfb4a28a": {
   "zh_title": "合并：新增连接 Muse 与其他智能体的指南",
-  "zh_oneliner": "awesome-muse 合并了一份新指南，介绍如何把 Muse 与其他智能体连接起来。"
+  "zh_oneliner": "awesome-muse 合并了一份新指南，介绍如何把 Muse 与其他智能体连接起来。",
+  "en_oneliner": "awesome-muse merged a new guide on connecting Claude Code with other agents."
  },
  "https://github.com/cszach/awesome-muse/commit/bf90b0cb692e00b1d178c61774e503c7febb045a": {
   "zh_title": "新增：Muse 智能体之间沟通的指南",
-  "zh_oneliner": "awesome-muse 新增一份指南，讲 Muse 智能体之间如何互相沟通协作。"
+  "zh_oneliner": "awesome-muse 新增一份指南，讲 Muse 智能体之间如何互相沟通协作。",
+  "en_oneliner": "awesome-muse added a new guide on how Claude Code agents communicate and collaborate with each other."
  },
  "https://www.reddit.com/r/MuseAgent/comments/1xxc8a2/my_voice_mode_was_turned_off_after_using_it": {
   "zh_title": "用过之后，我的语音模式被关掉了",
@@ -2314,5 +2317,10 @@
   "zh_title": "Meta Muse Ember：智能体任务、API 定价与限额解析",
   "zh_oneliner": "介绍 Meta Muse Ember 的智能体任务能力、API 定价与使用限额，帮开发者判断这款新模型是否适合接入自己的工作流。",
   "en_oneliner": "An overview of Meta Muse Ember's agent-task capabilities, API pricing, and usage limits, helping developers decide whether the new model fits their workflow."
+ },
+ "https://www.reddit.com/r/MuseAssistant/comments/1xyh414/how_to_export_muse_agent_to_pdf_word_or_md": {
+  "zh_title": "如何把 Muse 智能体导出为 PDF、Word 或 Markdown",
+  "zh_oneliner": "一位用户分享了把 Muse 智能体导出成 PDF、Word 或 Markdown 文档的办法，方便把对话成果保存下来随时查阅。",
+  "en_oneliner": "A user shares a way to export a Muse agent as a PDF, Word or Markdown document, making it easy to save the conversation output for later reference."
  }
 }
