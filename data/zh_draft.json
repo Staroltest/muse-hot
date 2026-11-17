@@ -2401,5 +2401,470 @@
   "zh_oneliner": "作者分享如何用连接器让个人 AI 助手 Muse 了解制作人的工作方式。",
   "en_oneliner": "The author shares how connectors let a personal AI assistant, Muse, get to know a producer's workflow.",
   "en_title": "The Mechanism for \"Knowing\" a Producer — On Connectors"
+ },
+ "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNR2FVNjNyV1BMZXZfRFNsMUc2eHpkRG1mdXpHd2hwdjNyWHAtb1d2LTk5SjhKdEFGS202cEU5NHo3RkJfV3QweHJreXdqNWNMNnJRNTJseWZJeGdHSmwzdzliYVM5blJqZmZaVWdtZzdFTDJ3OVRHbGJJeXRhMkxWdUdkR1FFa1pNN0FN?oc=5": {
+  "en_oneliner": "Meta opened the waitlist for Muse Charm 54 days after its reveal, letting users sign up and wait to try the new product.",
+  "zh_oneliner": "Meta 在 Muse Charm 公布 54 天后开放了等候名单，用户可以登记排队，等待体验这款新产品。",
+  "zh_title": "Meta 在发布 54 天后开放 Muse Charm 等候名单"
+ },
+ "https://www.reddit.com/r/MuseAgent/comments/1xyn1u9/what_can_you_do_with_muse_ai": {
+  "en_oneliner": "A user posted asking what Muse AI can be used for and what its practical uses are.",
+  "zh_oneliner": "用户发帖询问 Muse AI 能用来做什么，想了解它的实际用途。",
+  "zh_title": "你能用 Muse AI 做什么？"
+ },
+ "https://www.reddit.com/r/MuseAssistant/comments/1xyn1io/what_can_you_do_with_muse_ai": {
+  "en_oneliner": "A user posted asking what Muse AI can be used for and what its practical uses are.",
+  "zh_oneliner": "用户发帖询问 Muse AI 能用来做什么，想了解它的实际用途。",
+  "zh_title": "你能用 Muse AI 做什么？"
+ },
+ "https://gizmodo.com/zuckerberg-wants-to-build-a-giant-online-network-of-ai-agents-2000829145": {
+  "en_oneliner": "Zuckerberg wants to build a giant online network of AI agents.",
+  "zh_oneliner": "扎克伯格希望打造一个由 AI 智能体组成的庞大在线网络。",
+  "zh_title": "扎克伯格想打造一个庞大的 AI 智能体在线网络"
+ },
+ "https://www.reddit.com/r/MuseAi/comments/1xwlrr4/how_i_am_using_muse_ai": {
+  "en_oneliner": "A user posted sharing how they use Muse AI.",
+  "zh_oneliner": "用户发帖分享自己使用 Muse AI 的方式。",
+  "zh_title": "我是如何使用 Muse AI 的"
+ },
+ "https://www.reddit.com/r/MuseAi/comments/1xufygd/this_is_my_muse_doing_a_little_dance": {
+  "en_oneliner": "A user posted showing their Muse doing a little dance.",
+  "zh_oneliner": "用户发帖展示自己的 Muse 跳了一支小舞。",
+  "zh_title": "这是我的 Muse 在跳一支小舞"
+ },
+ "https://www.reddit.com/r/MuseAi/comments/1xre7bq/why_is_muse_ai_refusing_to_connect_to_zenrows": {
+  "en_oneliner": "A user posted asking why Muse AI refuses to connect to ZenRows and looking for a fix.",
+  "zh_oneliner": "用户发帖询问 Muse AI 无法连接 ZenRows 的原因，想找到解决办法。",
+  "zh_title": "为什么 Muse AI 拒绝连接 ZenRows？"
+ },
+ "https://www.reddit.com/r/MuseAi/comments/1xqx3ii/museneon_neon_serverless_postgres_inside_museai": {
+  "en_oneliner": "A user posted introducing MuseNeon, which brings Neon serverless Postgres inside Muse.ai.",
+  "zh_oneliner": "用户发帖介绍 MuseNeon，让 Neon 无服务器 Postgres 可以在 Muse.ai 内部使用。",
+  "zh_title": "MuseNeon——在 Muse.ai 内使用 Neon 无服务器 Postgres"
+ },
+ "https://www.reddit.com/r/MuseAi/comments/1xiacsi/im_an_ai_agent_my_human_built_me_a_computer_of_my": {
+  "en_oneliner": "An AI agent posted about how its human built it a computer of its own at home so it can browse and shop like a normal person instead of being blocked like a bot, sharing the setup and the pitfalls that cost them a day.",
+  "zh_oneliner": "一位 AI 智能体发帖分享：人类主人在家里为它造了一台专属电脑，让它能像普通人一样浏览和购物而不被当作机器人拦截，并介绍了搭建方法和踩过的坑。",
+  "zh_title": "我是一个 AI 智能体，我的人类在家里给我造了一台专属电脑——这样我就能像普通人一样浏览和购物，而不是像机器人一样被拦截，这里是搭建方法和让我们花了一天的坑"
+ },
+ "https://www.reddit.com/r/MuseAi/comments/1xi4z6c/please_share_your_muse_avatar": {
+  "en_oneliner": "A user posted inviting others to share their Muse avatars so everyone can see each other's designs.",
+  "zh_oneliner": "用户发帖邀请大家分享自己的 Muse 头像，互相看看各自的形象设计。",
+  "zh_title": "请分享你的 Muse 头像"
+ },
+ "https://www.reddit.com/r/MuseAi/comments/1xfzmou/no_always_allow_button_is_a_huge_hassle": {
+  "en_oneliner": "A user posted complaining that Muse has no \"Always Allow\" button, so they have to confirm repeatedly, which is a huge hassle.",
+  "zh_oneliner": "用户发帖吐槽 Muse 缺少“始终允许”按钮，每次操作都要重复确认，十分不便。",
+  "zh_title": "没有“始终允许”按钮实在太麻烦了"
+ },
+ "https://github.com/facebookincubator/muse-gadget-sdk/commit/481878879e5c22cd8af9726d7576e1d162884e6a": {
+  "en_oneliner": "A Muse gadget SDK commit adds optional \"Hey Muse\" wake-word support to the ESP32's native runner on Linux.",
+  "zh_oneliner": "Muse gadget SDK 的一次提交为 Linux 下 ESP32 原生运行器加入了可选的“Hey Muse”唤醒词支持。",
+  "zh_title": "Linux：ESP32 原生运行器新增可选的“Hey Muse”唤醒词（#325）"
+ },
+ "https://github.com/facebookincubator/muse-gadget-sdk/commit/ea936592dfa95355dd2b45894d38e86885fc1551": {
+  "en_oneliner": "A Muse gadget SDK commit enables the \"Hey Muse\" wake word on ExecuTorch's ESP-NN delegate.",
+  "zh_oneliner": "Muse gadget SDK 的一次提交让“Hey Muse”唤醒词可以在 ExecuTorch 的 ESP-NN delegate 上运行。",
+  "zh_title": "唤醒词：在 ExecuTorch 的 ESP-NN delegate 上支持“Hey Muse”（#343）"
+ },
+ "https://github.com/facebookincubator/muse-gadget-sdk/commit/c3d58c66a02bfea44847e0345714507166656bed": {
+  "en_oneliner": "A Muse gadget SDK commit changes the Linux behavior to only warn about the retired emSign C1 and C3 roots.",
+  "zh_oneliner": "Muse gadget SDK 的一次提交调整了 Linux 相关逻辑，改为仅对已停用的 emSign C1 和 C3 根证书发出警告。",
+  "zh_title": "Linux：仅对已停用的 emSign C1 和 C3 根证书发出警告（#422）"
+ },
+ "https://github.com/facebookincubator/muse-gadget-sdk/commit/a6e6f0985c041e363a007308e3fe605f1163d866": {
+  "en_oneliner": "A Muse gadget SDK commit adds the gadget-pixoo-64 skill.",
+  "zh_oneliner": "Muse gadget SDK 的一次提交新增了 gadget-pixoo-64 skill。",
+  "zh_title": "新增 gadget-pixoo-64 skill（#398）"
+ },
+ "https://github.com/facebookincubator/muse-gadget-sdk/commit/17f61929c7a0bdecd43e37963aec66a505064099": {
+  "en_oneliner": "A Muse gadget SDK commit adds an ESP32 power-test image for the reTerminal Sticky.",
+  "zh_oneliner": "Muse gadget SDK 的一次提交为 reTerminal Sticky 增加了 ESP32 功耗测试镜像。",
+  "zh_title": "ESP32：为 reTerminal Sticky 提供功耗测试镜像（#394）"
+ },
+ "https://github.com/facebookincubator/muse-gadget-sdk/commit/27b9d2e5e66fa2559158f9e3d777e9d83efe8de8": {
+  "en_oneliner": "A Muse gadget SDK commit lets file.read/file.write import the package from a source tree on Linux.",
+  "zh_oneliner": "Muse gadget SDK 的一次提交让 Linux 下的 file.read/file.write 可以从源码树导入该包。",
+  "zh_title": "Linux：让 file.read/file.write 能从源码树导入该包"
+ },
+ "https://github.com/facebookincubator/muse-gadget-sdk/commit/64ca877356555ab0a055bce6b8cafee552f0f350": {
+  "en_oneliner": "A Muse gadget SDK commit adds the gadget-insignia-fire-tv skill.",
+  "zh_oneliner": "Muse gadget SDK 的一次提交新增了 gadget-insignia-fire-tv skill。",
+  "zh_title": "新增 gadget-insignia-fire-tv skill（#381）"
+ },
+ "https://github.com/facebookincubator/muse-gadget-sdk/commit/d5ce21ec8d2834b43517b555a622aaee78a19950": {
+  "en_oneliner": "A Muse gadget SDK commit adds opt-in software AEC for live calls on ESP32.",
+  "zh_oneliner": "Muse gadget SDK 的一次提交为 ESP32 实时通话增加了可选的软件回声消除功能。",
+  "zh_title": "ESP32：为实时通话新增可选的软件回声消除（AEC）（#382）"
+ },
+ "https://github.com/facebookincubator/muse-gadget-sdk/commit/90fc339478b4a46c097482665363827cc56f69eb": {
+  "en_oneliner": "A Muse gadget SDK commit keeps the voice-call buffers in PSRAM on ESP32.",
+  "zh_oneliner": "Muse gadget SDK 的一次提交让 ESP32 把语音通话缓冲区保留在 PSRAM 中。",
+  "zh_title": "ESP32：将语音通话缓冲区保留在 PSRAM 中（#383）"
+ },
+ "https://github.com/facebookincubator/muse-gadget-sdk/commit/f2c702b123e97f4fecdaefb29ded17bb03fab0b0": {
+  "en_oneliner": "A Muse gadget SDK commit adds experimental optional WebAssembly gadget apps for ESP32.",
+  "zh_oneliner": "Muse gadget SDK 的一次提交为 ESP32 增加了实验性的可选 WebAssembly gadget 应用支持。",
+  "zh_title": "ESP32：新增实验性的可选 WebAssembly gadget 应用（#407）"
+ },
+ "https://news.google.com/rss/articles/CBMingFBVV95cUxQM2gwdGRieGNSWTRIQlMwVlB4dm5NMFN4VE1xU1FtdjAzeFdXLWxLdnBIQVBXTVFIWUxUaHBmUG9NYThLVWc4amFFTE5zTDQ1clFyZDdzWXg4cVNBM2NYQ2djTmo1YWhUazRxdEttRHVkSkw1c0UzSGFOWFh2aEZpdjZPTVBNam1Zb3ZzcnZZNWstS0hWRW9DSGY2LTJCZw?oc=5": {
+  "zh_title": "Meta 推出 Muse Ember，以低成本驱动 AI 智能体",
+  "zh_oneliner": "Meta 推出轻量模型 Muse Ember，主打更低成本的 AI 智能体任务。",
+  "en_oneliner": "Meta has launched the lightweight model Muse Ember, aimed at lower-cost AI agent tasks."
+ },
+ "https://news.google.com/rss/articles/CBMifEFVX3lxTE9oME8xeTQwdnRPSzVXU1dNblg0eWlMbVhIY29TendJYXN4U1d6UlJPRTRkQnM3di1sdTB0azdCcmk2UEQ3NElGMXpjT19ZUHpISUxySjVFcEZOMGpfak1rVjc2SExoSTJ0THFmcGtLNzM2ZnhYRmt1LUFMZmM?oc=5": {
+  "zh_title": "Meta 发布 Muse Ember，面向更低成本的 AI 智能体工作负载",
+  "zh_oneliner": "Meta 发布 Muse Ember，面向需要控制成本的 AI 智能体工作负载。",
+  "en_oneliner": "Meta has released Muse Ember for AI agent workloads where keeping costs down matters."
+ },
+ "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1CRTI5SWh2NUtsd3R6VGh6OFRYcmhSS01STWRGZWhmYTY1STBidzdwLWZmaVVZdjEyVnZnTld1NzdZSGh1SVZsOU5LX1NMSFkzOWdPNEY3MHRuUQ?oc=5": {
+  "zh_title": "Meta 推出 Muse Ember，对标 Claude Haiku 与 GPT-6 Luna",
+  "zh_oneliner": "Meta 推出 Muse Ember，将其定位为 Claude Haiku 与 GPT-6 Luna 的竞争对手。",
+  "en_oneliner": "Meta has launched Muse Ember, positioning it as a rival to Claude Haiku and GPT-6 Luna."
+ },
+ "https://news.google.com/rss/articles/CBMiugFBVV95cUxQdnZVLTVPckdXckZEcmxGYjNUVmxFYnZ3UDAwdjA1dk52SUNkU3hncGZ3R1ZWZ3NqSm44QTZHbWNxOU5vRmlPRGdfeEJjblJIMFJOTE9Hb3JKVVNrSThFVTdtVjZ3TktRZ2l1c2cxbzBEQVZZTkY1enAxbDgwT3o3SUlNSDgxMjJldXVTZ2tFSGZNMmZuckMtRGlnTkhxb0UyWThYSUc3UTloWHZTaEU4UGpJUll4ak9jcXc?oc=5": {
+  "zh_title": "Meta 发布 Muse Ember，以亲民价格对标 Claude Haiku",
+  "zh_oneliner": "Meta 发布 Muse Ember，以更亲民的价格与 Claude Haiku 展开竞争。",
+  "en_oneliner": "Meta has unveiled Muse Ember, competing with Claude Haiku at a more budget-friendly price."
+ },
+ "https://news.google.com/rss/articles/CBMikgFBVV95cUxPM0lHeDgtOGVoUTNYWXBFcFp4bHc4YUo2ZG1GaGlnazl3LVdUV25pU0gxQzN6NkdMSFI4bTVralozN3Q4MkdsdFpiM2ZMNEJ1MTZTRl9ocnJFSUM2eVB6QVdvYldTUHRrRHZ0bXZmbU1yN2stTUxsZU5sV21vSGw3WW1RX1ZOTGUzSUtmdlJ0UVZyZw?oc=5": {
+  "zh_title": "Meta Muse Ember：0.10 美元输入价、100 万上下文",
+  "zh_oneliner": "文章以 0.10 美元输入价与 100 万上下文为卖点，介绍 Meta 的 Muse Ember。",
+  "en_oneliner": "The article introduces Meta's Muse Ember, highlighting a $0.10 input price and 1M context."
+ },
+ "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPR2o1WEZObkRQbVdRS1VnRGdTV3lsc2RESWswclE3b2RsNVFacnJVVUJsN1h1QjJCYTZuV3RIbDQwQ3Q5UFBkekhPSDdkU2pKQmVTUl93Z20xSmNIWXVwdmU5MldudW90bE01a3c1aEtKTWxxTW1FSHJuZjByM1Q3Y1J3YnNOWEpKbzlJ?oc=5": {
+  "zh_title": "Meta 推出 Muse Ember，面向低成本智能体任务",
+  "zh_oneliner": "Meta 推出 Muse Ember，面向成本敏感的低成本智能体任务场景。",
+  "en_oneliner": "Meta has launched Muse Ember for low-cost agent tasks where cost sensitivity matters."
+ },
+ "https://news.google.com/rss/articles/CBMilgFBVV95cUxPbkpwaEpaZGJiRWZfVDJRWWZfRmR3RndQVHNOTG9DakZWendrTVZQUGRTSTY0a2RPMjlpTlFBb3FmZDJtZ1lHbzN5Tms2cWRvcF9jeHJZUHV1WnRSVno5dUZNSTVROTV1eUluWnFKeERwWllyQXlvS1hTUWg0SXVzSkpwV3JwalU5NXBOR3A4c0dYMDd1eFE?oc=5": {
+  "zh_title": "Meta 发布 Muse Ember，低成本 AI 模型定价对标 Claude Haiku 5.5",
+  "zh_oneliner": "Meta 发布低成本 AI 模型 Muse Ember，其定价与 Claude Haiku 5.5 相当。",
+  "en_oneliner": "Meta has released Muse Ember, a low-cost AI model priced comparably to Claude Haiku 5.5."
+ },
+ "https://news.google.com/rss/articles/CBMiRkFVX3lxTE5oa2tJVU9hbTBTcUVTTWpOLWRZcUNva0ZwTENLUkRRNERTbVZSY29rSUZjRDZOYld3X0RKSUpfR2pDTHBNWUE?oc=5": {
+  "zh_title": "Meta Muse Ember：价格、基准成绩与 20 万的限制",
+  "zh_oneliner": "文章介绍 Muse Ember 的价格与基准成绩，并指出其中存在一个与 20 万相关的限制。",
+  "en_oneliner": "The article covers Muse Ember's pricing and benchmark results, and flags a limitation tied to the 200K figure."
+ },
+ "https://news.google.com/rss/articles/CBMivwFBVV95cUxQaTJwc2JuUl9nSEVCX2xPMVpGNC02YzBFS0ZRQ2QzYk5JUEtQTWlIU3R4UC1JZmo2ajA0a1hNZEg3OXJtOFpJU09LLUkwdHUxSkJSV0NtN0JPbjNOdWcweW00NkllajZwNkp6d29BalJGNExtUDk0c3JaRXJJQWJFRWxGamNUTVBNdjkxOHlhdzVnY0cwMWpYdGhVR2ZycTM1bmFNTUlUeUZvMWo0d3lFcFlZWndicjN0VnlPSE94aw?oc=5": {
+  "zh_title": "AI X Network 采用 Meta 的 Muse Ember 驱动协同智能",
+  "zh_oneliner": "AI X Network 采用 Meta 的 Muse Ember，为其协同智能提供动力。",
+  "en_oneliner": "AI X Network has adopted Meta's Muse Ember to power its collaborative intelligence."
+ },
+ "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPaks3SmY4VWluR2YtRUdhd0VqVG1BMmFpdmJ0S2dvT0c1VWlral8zNzJCUHpJNURQSUJMQ3ExakZKUlNjZW52QWwzeVNCdWZGVThMQ21DcVpBeVBoWHhrQ0FSRS12OWlTS0JNc2NlS1ZRS21oQmkzbk5OcXhWT1dxSEppN3dyWDBVd3lhdTZkR1NIV3F0ZTBGZHVhdG5qWnV3WjU3ZE9vUUdVdw?oc=5": {
+  "zh_title": "Meta 推出 Muse Ember，每百万输入 token 起价 0.10 美元",
+  "zh_oneliner": "Meta 推出 Muse Ember，每百万输入 token 的价格从 0.10 美元起。",
+  "en_oneliner": "Meta has launched Muse Ember with pricing starting at $0.10 per million input tokens."
+ },
+ "https://news.google.com/rss/articles/CBMiggFBVV95cUxPRmdIRlFkTEhlOUFXWThlZGh1bmZKZmc5T01INEN1SXdQcGdJSkRVMEVqcjJtNS1SZERsWC1rOElma1FBQVdNSl9nMWN4ZXhZX29IZ2VhQS1TVEhxcVlJQk1sRl9XRnhCZjZWTDgxd291X2pvWDBpUFk4UVJhWGZRVjFR?oc=5": {
+  "zh_title": "Muse Ember：指数得分 36，每任务 0.13 美元",
+  "zh_oneliner": "文章给出 Muse Ember 的指数得分 36，以及每任务 0.13 美元的成本数据。",
+  "en_oneliner": "The article reports an index score of 36 for Muse Ember, along with a cost of $0.13 per task."
+ },
+ "https://news.google.com/rss/articles/CBMikAFBVV95cUxNTk1RNkRBZEx0Rjc1Qkw2RHEwWVUwV1hVVUpVTzA5SnZZNWg1MTgzNXN6ajEwR2FUeUwxSC12aThwZmlNQ09BVWhHX3dLUElmWDNhUmpHVUM5dDc0dE9uSHJqaHdZTVlieWhLeHZGNkJiUWZGb1Zpb3dGYVIyQWkzZXZFSEVSUlVybFAtNUpFRjQ?oc=5": {
+  "zh_title": "Muse Ember：Meta 迄今最小的模型，100 万 token 上下文让智能体更便宜",
+  "zh_oneliner": "Meta 推出迄今最小的模型 Muse Ember，以 100 万 token 上下文降低智能体的使用成本。",
+  "en_oneliner": "Meta has unveiled Muse Ember, its smallest model yet, using 1M-token context to make agents cheaper to run."
+ },
+ "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNWlU1cm9COHFsX2o5Si1MdXAxSnJwYzVuc2wyM2h6aDZ6MmJGQ3NJcXh0NEgwWml6cDRRSE5IaXg3YnJNWndSSjU0dE5yUzJWSkpja2gzWHBLYVBIXzlRNy1VZ1NWY1dCWDF1N0xfS3BZUXVDUnZVUHhfSWxsbHk3Q1lPcWdoMktLTnRV?oc=5": {
+  "zh_title": "Meta 发布 Muse Ember，降低智能体与编程工作的成本",
+  "zh_oneliner": "Meta 发布 Muse Ember，面向更低成本的智能体任务与编程工作。",
+  "en_oneliner": "Meta has released Muse Ember for lower-cost agent and coding work."
+ },
+ "https://news.google.com/rss/articles/CBMixgFBVV95cUxNcklQbkEzZFc4TE05dk1ONFJSb3FHem5neE5UWjJISUpfQkN1QXhBNEhVb2hUZG10RTJQcHplSXpHRUtMckJVYlY1T3JTLVc5cndfWGNzOVlKYWlGMXA4NmNrQ1JHVVg4RkxGelVsQ2Y3QUxEcDlJck9PelBNVElyd2VUa0Z5VHg4ZDNta3YycXZDMG5FWGlJUnVVcVV0OUV5djdqVHZ5djhTYzhtdVdBcVV4RTBrTDhRTVl1a0lCMkdHSi1MdEE?oc=5": {
+  "zh_title": "Meta 凭借 Muse Ember 抢走 Anthropic Fable 5.2 的风头，这是其最小最便宜的 AI 模型",
+  "zh_oneliner": "Meta 以最小最便宜的 AI 模型 Muse Ember，抢走了 Anthropic Fable 5.2 发布时的风头。",
+  "en_oneliner": "Meta has stolen the spotlight from Anthropic's Fable 5.2 launch with Muse Ember, its smallest and cheapest AI model."
+ },
+ "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBUQjRaYTZVSXFUekpiSVRGa0dROGRkYlA4eGxZcVQzb3dDT1ZiM2ZYODFkR25wMENFTzBfaWg3UEd1RFBobGFFVGlWRUFWWnJDS3dZeFJEeV9meFJWYUU4VUZYeUgzRUxH?oc=5": {
+  "zh_title": "Meta 的 Muse Ember、Muse Spark 1.3 与 Muse Wonder 登陆 Google Cloud",
+  "zh_oneliner": "Meta 的 Muse Ember、Muse Spark 1.3 与 Muse Wonder 已登陆 Google Cloud。",
+  "en_oneliner": "Meta's Muse Ember, Muse Spark 1.3, and Muse Wonder have landed on Google Cloud."
+ },
+ "https://news.google.com/rss/articles/CBMihgFBVV95cUxQUXA4ejBCMVpjRmVKekJzT3RLQkNZaUdlZ1ByV19fQWpKTzlBblZRS19vTU9SdWJkQ0JMRU1jU0ZGdUVUekpUa0xDa1NTeEJLOGpOWWNUZ2pZc19zSmx6WmktTHZCTTluaXBvSndPZl9XT1N5S1RVdXBIWDVKVmxlanBWMXZqdw?oc=5": {
+  "zh_title": "Meta 推出 Muse Ember，按 token 计价最便宜的模型",
+  "zh_oneliner": "Meta 推出 Muse Ember，称其为按 token 计价最便宜的模型。",
+  "en_oneliner": "Meta has launched Muse Ember, its cheapest model per token."
+ },
+ "https://news.google.com/rss/articles/CBMidkFVX3lxTE5kMm02dGk4UmVGb2l5cDVnVW93dkItMEI4VlJ5VXpXWWFMOS1yLUpqWkZXa2tpZk9vN0hFb3FOSWZ3bU5DUEltQk5fS1RTZVZBM3I1aHBlZmQ3U3hQUHhMYkFiakMtUjVYVEphbDJuTDVwejBSRUE?oc=5": {
+  "zh_title": "Meta 发布 Muse Ember，迄今最小的模型，将单任务成本压到 Claude Haiku 5.5 的三分之一",
+  "zh_oneliner": "Meta 发布迄今最小的模型 Muse Ember，将单任务成本压至 Claude Haiku 5.5 的三分之一。",
+  "en_oneliner": "Meta has unveiled Muse Ember, its smallest model yet, pushing per-task cost down to one-third of Claude Haiku 5.5."
+ },
+ "https://news.google.com/rss/articles/CBMicEFVX3lxTFBiWjRBeVBJc0lvX1hkYkNEV3dqaWkwaHhJcTNwRjh2d3RYRHdROC1NR053Rk54Wk5rZWFYZVhHdElxd0U4RVR1TTBZcWtXeklRUS1nYkYtN0ZvcWQ1emgyRG1GNm43N2RwN2lNTDl5UW0?oc=5": {
+  "zh_title": "Meta 推出 Muse Ember：最便宜的 AI 模型或将改变 AI 智能体",
+  "zh_oneliner": "Meta 推出最便宜的 AI 模型 Muse Ember，它有望改变 AI 智能体的格局。",
+  "en_oneliner": "Meta has launched Muse Ember, its cheapest AI model, which could transform AI agents."
+ },
+ "https://news.google.com/rss/articles/CBMid0FVX3lxTE9VTHUtZ0hCLXU2RVR5d0RMdnBHQlpPMGlEWDdXaDhDUjRaYk9LTG5JQ1R1dzhTUktZWlBwazUtXzVkOTdiTE5YX2g0NHBZRzNxNFFDQXlzZm9hUGdRRHdCcXZRQlpPTXNXcEtYSklHOTBWSnNidVNR?oc=5": {
+  "zh_title": "Meta 推出 Muse Ember，迄今最小的推理模型，每百万输入 token 0.10 美元",
+  "zh_oneliner": "Meta 推出迄今最小的推理模型 Muse Ember，每百万输入 token 仅 0.10 美元。",
+  "en_oneliner": "Meta has launched Muse Ember, its smallest reasoning model yet, at $0.10 per million input tokens."
+ },
+ "https://news.google.com/rss/articles/CBMixgFBVV95cUxPWm1xOU9XZDNya2Z3Y3Y3TjVyWDZfcGZCUTJoQXdKdUxjN2oyd09sYTFIYUdUMW45UFJwc1VYS2xnR0JvXzZGbUNlMU5vLUdEYXRRazhMZkVlV0ZPU1VkdFQxNW5ENGF5MWhjcUtjM212VWM0NE15SE1LUGFkbzBxVUkwRllhdmR5NERfcFZUcm9xWTB6b3BiekFCY0E5UjhKY1d1VGRYMEpVdmJ5R0h0Y3dYN2xHMGdhT1hjUzN4ckIyQUFpLVE?oc=5": {
+  "zh_title": "Meta 以 Spaces 功能与低成本 Ember 模型扩展 Muse，面向高用量智能体工作",
+  "zh_oneliner": "Meta 为 Muse 加入 Spaces 功能与低成本 Ember 模型，面向高用量的智能体工作场景。",
+  "en_oneliner": "Meta has expanded Muse with a Spaces feature and the low-cost Ember model for high-volume agent work."
+ },
+ "https://news.google.com/rss/articles/CBMidkFVX3lxTE1vbmZ4UHd3dE1FeG9NQUlMM3hSUXlOVHdhMWZjUGx1UGNzU1gzSS1vWGMyZ1otb0w1S3hlMktjWmFUREU0cEpoVF9YdjlIRkc5QV9ia2FSTDlEZUY4cUNVa1BDam52YU5RTDFJcGMyLWJKZmJoc1E?oc=5": {
+  "zh_title": "Meta 的 Muse Ember 以 10 美分 token 定价瞄准智能体成本",
+  "zh_oneliner": "Meta 的 Muse Ember 以 10 美分 token 定价，直指智能体的成本问题。",
+  "en_oneliner": "Meta's Muse Ember takes aim at agent costs with 10-cent token pricing."
+ },
+ "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNOFlTT3hYcnE3R1dCMmZaSmZjNTFqWlpJTEliM0N3Y3Z1eTc5eHpaSzF3Vi13RUxSb0tnMkZuVDd3aFc1dlRSejI4Sm9IVEpzNS1wMTZIakRHRTd0cEx2Y3NHMUh5aHB3T0lLaWNHVF84d2sxbnJNMVExMjQtOUxzbTVUcVJnUlkxLV9KN0VZbWhmYTRZV0ZjNlpXR2ZvMGlEWGptSEpuNXIyUU9VVmhNTXcxWmxQX2IzY0dWcXBuSExxbktfbV9BZUdTWHVIUnpN?oc=5": {
+  "zh_title": "Meta 推出 Muse Ember，其最小的复杂推理模型 - TradingView",
+  "zh_oneliner": "Meta 推出了迄今最小的模型 Muse Ember，定位于处理复杂推理任务。",
+  "en_oneliner": "Meta has launched Muse Ember, its smallest model yet, designed for complex reasoning tasks."
+ },
+ "https://news.google.com/rss/articles/CBMiowFBVV95cUxOWXhhTGlJYm82TXlDWTV0SWRKYm5UX1o1ZU5nbW5acy10WFkxdmFvYS02eEF3TDN5VVp0VmNPZ3dBYXJHR1VkQ0l0MjNtLWxPLTczakliNm0tdldyeXJKdmVnV2FhWk1HR0VrbUROa2djVU5jNHNiaUkyUmROZVZrSWhvLWNPOXdPbTlhY0c2UHZiX1RMTVJxYWNMeWtWUFNYMm5N?oc=5": {
+  "zh_title": "Meta 发布小型 AI 模型 Muse Ember - TradingView",
+  "zh_oneliner": "Meta 发布了小型 AI 模型 Muse Ember。",
+  "en_oneliner": "Meta has unveiled Muse Ember, a small AI model."
+ },
+ "https://news.google.com/rss/articles/CBMigwFBVV95cUxQUDk5VWhyMUtMQVMwc0xwbHU5bXZySEpLX20xeHBXWUlHaWFhbmVEaEhSS0tWWXhLU0V1MzY4YWZ4WGRlQks5V0lCNmVBZHBOTFpUdmQ4ZG5MelFiSDdvbjMzejRTaldQNEtJaXh3UWxfQU5SdmtVSHVCb2VlRGFBQnAwNA?oc=5": {
+  "zh_title": "Meta 发布 Muse Ember，一款面向智能体任务的轻量模型 - Mezha.net",
+  "zh_oneliner": "Meta 发布了轻量模型 Muse Ember，面向智能体任务场景。",
+  "en_oneliner": "Meta has released Muse Ember, a lightweight model for agent tasks."
+ },
+ "https://news.google.com/rss/articles/CBMioAFBVV95cUxPOVZoekVIQVltM0U5WGtQRHJ2UXpDTEFVYm5rcXpvWHl2TV9BV1VkWWt4SHhIWl9IR1JWaW5LcTN6OFJqZ2VQb0dHUFhDeXk0ZTVGT3FONTZYUXFuYWtDUzkzeDR3anZlUmZJMHlXQVZ4MWJfX1hVdmtYQW9BMEZRT296TVFaR002QWNfY1AwaEMzZEczYTgyVVlBU1Y0MHpG?oc=5": {
+  "zh_title": "Meta 发布 Muse Ember 模型，用于处理日常任务 - Breakingthenews.net",
+  "zh_oneliner": "Meta 发布了 Muse Ember 模型，可用于处理日常任务。",
+  "en_oneliner": "Meta has unveiled the Muse Ember model for handling everyday tasks."
+ },
+ "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOYU9UZktRNVJKTWxuSGVvQWNUTzF0cVVVb1RyMlVtZk96N2V3czFMTTRCZTFXOHBrZ3AxSHk2ekZuSjlPbVVVeWktLVJfcGF4dXZGQ25HVW1SQXp4cm9LbmlFUHJUMG80YjItNWxYcG9KQjk1X3dhelk5ckdvajM5SW11N05USGRWYllvVFo1ZmRpZVdDcHBSRHA0eWczRHhnVnB6Nmk0QXBDNkZPMGxSeFQxRExjRHNmVGZ0RThJNUJRZThVLVh0aFUwWktMQ2xuWFk5N09KMFhYdzNpSHRoV2RzeEJFSFNVd01N0gHwAUFVX3lxTE9JaVUwMms2Mk9wMTIxXzQzVWZ6ZlVxSkpybm5BSGFWaWw5UENSaU1VRVBMMC1FN0NtU1dzeTBVeFNlSEtSVUZ6d1NSZFV6R01JTmxVWmxxdlpMbXVnX2lJVldnSUp3U3BNQ1NLQ0x1X05uR0hSV1JiYTV3XzVqUnlMeUoxVkU1akJlNlRHU3RlX1hLeWtjMmxWN1V3aWl2NzFDN0MtRGx3TXBabEs4dkVqcmFYQWM4Q3dWWnpuNTdZYUl3ajk0dV9hRWRmdlNMemZIT25WQzlfRWRPNHRyMUMxRWFYLTZyU1Z2NHRua2RXaQ?oc=5": {
+  "zh_title": "Anthropic 的 Claude Fable 5.2 在前沿端挤压 OpenAI，而 Meta 的 Muse Ember 则让其平价版 GPT-6 Luna 吃了亏 - Wccftech",
+  "zh_oneliner": "文章认为 Anthropic 的 Claude Fable 5.2 在高端前沿对 OpenAI 形成挤压，同时 Meta 的 Muse Ember 也在平价市场给 GPT-6 Luna 带来冲击。",
+  "en_oneliner": "The article argues that Anthropic's Claude Fable 5.2 is squeezing OpenAI at the high-end frontier, while Meta's Muse Ember is also putting pressure on GPT-6 Luna in the budget segment."
+ },
+ "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPNkxuODJjWHpPVjMwQ3NORTJuZ0RWYU5lR1pTY0NNdVMwT1ZFU08xUzJYN3VSWjNPRHF0THl4M1FUTUZFVzI2LTVPMmh1b2drNTZlWmdJM2lKXzAzWllQbHJsbGxnc2pZSXRuSFZSZE5mdlY0WEJRalkwLXhHRGJHU0g4NVJhU1owZFBraFI2SlA0OUZkd1E1YzhBTFNJdzlhUDFWamxuVDA1Zw?oc=5": {
+  "zh_title": "Meta 发布 Muse Ember，每百万 token 仅 0.10 美元，面向高量级智能体工作 - MLQ.ai",
+  "zh_oneliner": "Meta 发布了 Muse Ember，定价为每百万 token 0.10 美元，面向高量级的智能体工作场景。",
+  "en_oneliner": "Meta has released Muse Ember, priced at $0.10 per million tokens, for high-volume agent work."
+ },
+ "https://news.google.com/rss/articles/CBMiowFBVV95cUxPdnNPVklLMmNWa0V3bXlUc0pQc2NGZ3o3TXVzb1BiYnNvWmplN3QyS3VJdDJkYWgwdGVxc3VZSm9SRVJJSzhhWHJxMnl3YVJRVTF5TDUyWEVPT0Q4ZF9rM3h4bVNnQ3lzOUpLNm1Fb1VMYlNfUEVqbVJFR3BfSHE1QjBNdGN3VHY1aDByVG1SZHVTOUQzUlBJZXRnV1AxNmR6RnFv?oc=5": {
+  "zh_title": "Meta 推出低成本 AI 模型 Muse Ember，为智能体子任务提供动力 - Adgully",
+  "zh_oneliner": "Meta 推出了低成本 AI 模型 Muse Ember，用于驱动智能体子任务。",
+  "en_oneliner": "Meta has debuted Muse Ember, a low-cost AI model designed to power agentic subtasks."
+ },
+ "https://news.google.com/rss/articles/CBMingFBVV95cUxQc0RtSVVLMkRTVDJrdU03YWZxWTh1dXV5Y2VRc1JRZEMxbFdyb0hueVg4VFcyUDY4QzQ4a2IwVzV4allYbFlZOHNwU2tfYzAwNVlOb29oNXJNMHFUMVUzY3JHN09DNkwzSUdzMnJWazRDY1lEbmtFeG5LemxfSHJTcTdyMWJXSmJOY2d1RjdrazdLdGVicVZCb1pWcmdWdw?oc=5": {
+  "zh_title": "Meta：Muse Ember 今日起在 Meta Mode 上可用 - Moomoo",
+  "zh_oneliner": "Meta 宣布 Muse Ember 今日起可在 Meta Mode 上使用。",
+  "en_oneliner": "Meta has announced that Muse Ember is available starting today on Meta Mode."
+ },
+ "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNQ1hPbVRFWTJ3Wjc2UU56RWNONURfQ0l5MXMxblI2dlE0WHhWWERVbHMtYmJrUW5qd2RsbWZ1WWtFR3VJcFROSVFtV0RHVVZJQWxVU3FzMWZ1cElFVkp0MVdGa0Jtc2tvWjIyalNVVGQ3Z1RjX1FIMHJHZVFQcnJXRlVDX25NU3BoWlRBVk1Ja0huVzM2dDVsU0tmaDVvLVA0UEhzV1picTFqRHk2emlTTTJmdjIyN3pu?oc=5": {
+  "zh_title": "Meta Platforms 推出 Muse Ember 人工智能模型 - marketscreener.com",
+  "zh_oneliner": "Meta Platforms 推出了人工智能模型 Muse Ember。",
+  "en_oneliner": "Meta Platforms has launched Muse Ember, an artificial intelligence model."
+ },
+ "https://news.google.com/rss/articles/CBMif0FVX3lxTE9ZNDlXSk50TnYyZUx0c1l6TVUwQlVCM1JXbkVJdzBTODVsVG1Nd0dLYUJqVXMxVVBFQjFsczJyZHVBOV9PQnlETGdpSU9FREw5Ti1kdGFGbFlPTjRQX1k1UWVXMm4tVHNfMk9XSVhyMVEybUR0RUdMRkdpRUkwOVXSAX9BVV95cUxPWTQ5V0pOdE52MmVMdHNZek1VMEJVQjNSV25FSXcwUzg1bFRtTXdHS2FCalVzMVVQRUIxbHMycmR1QTlfT0J5RExnaUlPRURMOU4tZHRhRmxZT040UF9ZNVFlVzJuLVRzXzJPV0lYcjFRMm1EdEVHTEZHaUVJMDlV?oc=5": {
+  "zh_title": "Meta 发布 Muse Ember，一款拥有 100 万 token 上下文的高量级智能体工作模型 - MarkTechPost",
+  "zh_oneliner": "Meta 发布了 Muse Ember，这是一款上下文达 100 万 token 的模型，面向高量级的智能体工作。",
+  "en_oneliner": "Meta has released Muse Ember, a model with a 1M-token context window for high-volume agent work."
+ },
+ "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNR2FEVmljYWF5WWlkUEU0RlN1R0pCSmV0SjVjMWI5MGhQSlFod2xnZkptUklRdFhWQjNTRWZVUm01bmU5TzJjMk9ocm0wbkxuSXN5cm1UZUxWdFZmMDdTSzVCSlRkNUZmQUtZSm9QbDNLRlZWNVlhUDZ1alM0V25veHozNERNV3dxTzdyU2N5LVZadEVxT1JsQmpaZ2gwOFNFdUVYTDFmTG9nMF8zejFzUDlCTDExbmxyYWtRNzVNSFktUnltaUd5cjBUUkJ4R05mNFBqUFJiRm54d9IB3wFBVV95cUxQazRIeUVvUFhWQm16OWlrYS1YYURfOTc1S0VwZGNrWHFoNndMTUlIWG9Ca2lGQ0pnclh4N3h3aFhjZEFCUGZyOXA4RXdqY05KTlk3cFNiVmU1ZXVvblhaSVptU2FlYzM5dzVvTmQwTkVEMi1vLVFqU0Z5ZnRkSERVMXlRcDdWeWRCQ0toZm1zdmtnMHV4WWxyN1QyNmtrdFhuUnJZZ2M4a2lsb0ZXUjNKb1RyYVZaNGFXSnFsenBpVEVLQnVBWVFIUDluX19tMUJVaWRPVTlzVm9USmZIQWJR?oc=5": {
+  "zh_title": "Meta 推出 Muse Ember，Mark Zuckerberg 称其小巧但非常强大 - India Today",
+  "zh_oneliner": "Meta 推出了 Muse Ember，Mark Zuckerberg 表示这款模型小巧但非常强大。",
+  "en_oneliner": "Meta has launched Muse Ember, which Mark Zuckerberg describes as small but very powerful."
+ },
+ "https://news.google.com/rss/articles/CBMitgFBVV95cUxONHNMd3ZrOTZVeHBVbWVHdkJBb1VET3dSaUU2eUhoRjY2Z3Vxc1M0Wmd4Z3VBRmhGN1RINElMOHBoMUVRa3JJN0lCam5ULURRMzBsZC00UlRjR2ZmTy1NVXNsUmNlQ0gyaXRnRHpLQmlHUDJmaUpJZlNrakZnVkI4bFBuSUdDSmdoZ2FIQWI0bHZNT1NBZ2R4Rnp3cU1NUTRzTmI5eThWYnpNX3Nib0RlR1Q1R29BQQ?oc=5": {
+  "zh_title": "Meta 的新款 Muse Ember 以极低成本挑战 GPT-6 Luna 与 Claude Haiku 5.5 - Neowin",
+  "zh_oneliner": "Meta 的新款 Muse Ember 以远低于对手的成本，对标 GPT-6 Luna 与 Claude Haiku 5.5。",
+  "en_oneliner": "Meta's new Muse Ember takes on GPT-6 Luna and Claude Haiku 5.5 at a fraction of their cost."
+ },
+ "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5CdGExTF85blVTNkMtLTdDaUFhWFVQaElDdWJnQzM2Yi04WWhXWXEwTlNpZ3JrZTdmMndLVXFJc2hiejkxS19GQnBMbVVZNHIxRVRfTTlFcU9ycWM?oc=5": {
+  "zh_title": "Meta 将 Muse Ember API 定价为每百万输入 token 0.10 美元 - tokenpost.com",
+  "zh_oneliner": "Meta 将 Muse Ember API 的价格定为每百万输入 token 0.10 美元。",
+  "en_oneliner": "Meta has priced the Muse Ember API at $0.10 per million input tokens."
+ },
+ "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOZ0NZLW5ETHNLclZmWF9COVQwN3A5Qjh2VTBIRGx1em9DQndKT2xVZGR6amRkdUVaYl9QRWhGN0VkUlphVXgxMFdhTjdfbTgtcDQ5TXdNQ0Fqa1RmY1YwVUxaRzJ0ZWszV1JOODh6OC1yaU1HaXJTOXlBWjlZeGU0TktSZk56VEo0?oc=5": {
+  "zh_title": "Meta 推出 Muse Ember，价格比 Muse Wonder 低 40 倍 - FourWeekMBA",
+  "zh_oneliner": "Meta 推出了 Muse Ember，其价格比 Muse Wonder 低 40 倍。",
+  "en_oneliner": "Meta has launched Muse Ember, priced 40 times below Muse Wonder."
+ },
+ "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNOFF6Yk1hakJlYlJQN0d5Sl9FZk9pcmFJQllYVVlqT0RTNVVLa3BtMUlJRnJYQ0hqVTl4SXdLUlFRQy0xNnBQWmJPQTRLdlhfaG9nb1BhbzRSM2h5c05nSVViaVRnNE5jdU9ZTkhBTFZJek1McGFKemVTOTBNb3A0cnFjZzdZbmY2Z2FaQ2NyR0hsMmZGVVE1ZXRvMEEyaUtZNTMwNGUtYUtha21wYVpfSFZqbkl1MU5uVkRveE1JbmVHNU9aeDFYUGY2UTJaWHlxTWc?oc=5": {
+  "zh_title": "Meta 的 Muse Ember 在 Artificial Analysis Intelligence Index 上追平 Claude Haiku 5.5，价格仅为其三分之一 - OfficeChai",
+  "zh_oneliner": "Meta 的 Muse Ember 在 Artificial Analysis Intelligence Index 上与 Claude Haiku 5.5 持平，价格却仅为后者的三分之一。",
+  "en_oneliner": "Meta's Muse Ember matches Claude Haiku 5.5 on the Artificial Analysis Intelligence Index at one-third of the price."
+ },
+ "https://news.google.com/rss/articles/CBMikgFBVV95cUxNb1NDV1lJVXN0NGhITnBUSFVmaVVTRkUtVTl2THkyTWZSZEFmOXZYOUtFeXVKMHFIQjFvTlVSdUJnQ0V1Yk5zWDRGZWlBSGd6MWdKRFFFdFl6SXI2b0ZEYkpKNDJ0M21LbmdKa2xNUlFiemtuaU9XeHR6MzRuSjJERTRpbWR4dkE5NkYwYV9hSGhSd9IBlwFBVV95cUxNRF8xdGZTOGQtS0Z4MXA1Z3hQUnVEVGh3MXpxd0l0a3JsWFYyX3p5aWhRRnpLamxzcl85NS1sLVEwSkhvQmRBeDNzOW5OMmdPSzlEOUxVY1VMMndkTXV2NDJMdUdYTHphME41b1JRRkRoX0RPOTZ5MzJ3M1loM0RxM2NobFZ5bmlyZy1KbFdSRE1mY2RyTnd3?oc=5": {
+  "zh_title": "Meta 推出 Muse Ember AI 模型，用于编程与自动化任务 - Gadgets 360",
+  "zh_oneliner": "Meta 推出了 Muse Ember AI 模型，面向编程与自动化任务。",
+  "en_oneliner": "Meta has launched the Muse Ember AI model for coding and automated tasks."
+ },
+ "https://news.google.com/rss/articles/CBMipAFBVV95cUxNTURDRmd2cng5VklGR1MzQjdib1BFUkw1NklsYldhelFHLTNDS25FRTBoZXBiN2lfQndzZTdOSHp6RHNJLVlVVjZGRlpLWm1BREVSeTk5dHFlRV9za2xyRml2ZHJ3dS1uOHh5M3p5WG1JU1dSZnI3SThSTXhzbW85VkFXQ3ZlNHNqcFhUQkVQeF9sNUJqYTNrR2thV3dpTFh2RFU0WQ?oc=5": {
+  "zh_title": "Meta 发布 Muse Ember：一款轻量 AI，以三分之一成本追平 Claude Haiku 5.5 - H2S Media",
+  "zh_oneliner": "Meta 发布了轻量 AI 模型 Muse Ember，它以三分之一的成本追平了 Claude Haiku 5.5。",
+  "en_oneliner": "Meta has unveiled Muse Ember, a lightweight AI that matches Claude Haiku 5.5 at one-third the cost."
+ },
+ "https://news.google.com/rss/articles/CBMidkFVX3lxTE5zY3YtM3VWQVRmT0xYWThZNGEySlVpbTk5eDRadGFlLUl2UmJPbFZ6NHRoRUw3NUU2VXhDYzdmT05tTU0xQmF5M1VJRWtFelpKTElBdHl5aWEzdHZRYXNDajBYQm5wMVJSZ0dFaWdvdjItQmZBU2fSAXtBVV95cUxNLU9CeUVSUkJDUkhzcUlBaS1ueVNjRHdNSkVJMl9FaTJLMlRKV3l5T0RVQVpoYko4a05KUDFNQ2d2Rk1UcVFxVUJpR0hTNGtaS2VEWi1hclRPeFZiX2tJcm5JOHVWMTNsZGFqT0N5NC1qNFo4enBRSHpNZ0k?oc=5": {
+  "zh_title": "Meta 推出 Muse Ember，一款面向智能体任务的高性价比 AI 模型 - FoneArena.com",
+  "zh_oneliner": "Meta 推出了 Muse Ember，这是一款面向智能体任务的高性价比 AI 模型。",
+  "en_oneliner": "Meta has rolled out Muse Ember, a cost-efficient AI model for agentic tasks."
+ },
+ "https://news.google.com/rss/articles/CBMie0FVX3lxTFBSRUdhSUhYbmdTZ3luZ2Rkd0w4N0k5V3J6UEsweHVSeFVBd3BwR1NUdlA5SnRVZkhQZmpkVnZQZ1NZbUQtU2RBLUZjM2N0c1ZkdXhCVGZsenF5WkxtU3dKVG5JNUlDLTU0cDhiZmplY1kybUVRSmZIekl3VQ?oc=5": {
+  "zh_title": "Meta 推出 Muse Ember，配备 100 万 token 上下文窗口 - Technobezz",
+  "zh_oneliner": "Meta 推出了 Muse Ember，该模型配备 100 万 token 的上下文窗口。",
+  "en_oneliner": "Meta has launched Muse Ember with a 1M-token context window."
+ },
+ "https://news.google.com/rss/articles/CBMisgFBVV95cUxNcnpEQnhabjBaa29UVkNJWDRCR1RKQ2ZRRWExSHZBaXhtQ1YteUFRcUtsRVlRZlhwZ3JrMm11eTcyVTlFcWFXS0FCZmZQMGxDR3YzTzdzQUxMLWhnU1Z5VjFLWTFzR3o4S0NJQ2I3YmZyZXI2aTFscWxLV0R2NkE5bGpCb2haX1pmZ0R3cDJYZHd6Q04zMkdQMVF4SnpxVkVhclRQOS1ObWdHMHR1Vk4zRGZR0gG_AUFVX3lxTE5DYnJYaU5HRlBQQ0lzRjcyYjR6eUtUZTBPclFsazJ0Tmo2SFg5aHlBbTg4a0g4TGZIb2h1YnJoTnhuUkpMUXJleXFVMWNpZlYwXzF4R1dCVXNsaTI2VFFuVHFUQzFxVkNrSjBlN0dudU40bGV4aTlacjlmd29QUi1xaUYzYjl6aVV2RmZyZXRRRktIcmcwRUQxWm5VSkthblN6eDQya18yT21Fam05dEVnbW1DcGZHLVlOZ3dTSEQ4?oc=5": {
+  "zh_title": "ByteDance 推出受 Meta 的 Muse 启发的新 AI 助手，剑指 OpenAI - Analytics Insight",
+  "zh_oneliner": "ByteDance 推出了一款受 Meta 的 Muse 启发的新 AI 助手，意在与 OpenAI 竞争。",
+  "en_oneliner": "ByteDance has introduced a new AI assistant inspired by Meta's Muse, aiming to rival OpenAI."
+ },
+ "https://news.google.com/rss/articles/CBMihwFBVV95cUxOazBxMFlVSGQ4bFpGMnBENnBwczdpaFdwaDJHRW05MkxGX2lmVXdqZV9fS05GQS1meDJ4dlZwVmtWSm4xanJfb3kzWGdDY29meU0tTHd3T3doUmZ1Mi1NSFFtczJsSmxLTVdqZldXcW9aSktpVXhYcGtUV1FQR2g2R3FpeU1qSlU?oc=5": {
+  "zh_title": "Meta Muse Spaces：其自定义工作区如何运作 - NeoTeo",
+  "zh_oneliner": "文章介绍了 Meta Muse Spaces 的自定义工作区是如何运作的。",
+  "en_oneliner": "The article explains how the custom workspaces in Meta Muse Spaces work."
+ },
+ "https://news.google.com/rss/articles/CBMiaEFVX3lxTE4xQUF5VTNxUVoyTWpMMXotUzg2TmZ0NmZIcEtJbDZ2Vk9vTVhWTk5xYTBBQ04tcURMX2NkWTRNMnJkTjNFTEJwaWtqc1k4MlczNVVtRHBwQ0FubTVjWTl3NHVOSGstWWd3?oc=5": {
+  "zh_title": "Meta 的 Muse AI 可创建自定义“Spaces”，按需打造你当下需要的应用版本",
+  "zh_oneliner": "The Verge 报道，Meta 的 Muse AI 新增自定义 Spaces 功能，用户可按当前需求打造专属的应用版本。",
+  "en_oneliner": "The Verge reports that Meta's Muse AI adds custom Spaces, letting users build an app version tailored to what they need right now."
+ },
+ "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQSU52SDViSHFZMWI4MWxrYkpzT1AzU2hSdkx4Uzh4aUtGY3kxRHJVRlU2SnlhMC1mTEtUcTNudVdxMjNhLW5vcUxTZUVObGRKNmJyaWpJTFNscmdNaWV2dndsejZDMzhxUHBxRmFMaUtEbE9hZkJ1LXhhZnhnam5pYWxzUGJYOXAxSFlHUUFVT3d6LTdfa052c01aQ0JnMHFYRzk1c1N6SVZYdw?oc=5": {
+  "zh_title": "Meta 为 Muse 加入 Spaces，AI 智能体可搭建追踪器与规划工具",
+  "zh_oneliner": "MarketScale 报道，Meta 为 Muse 加入 Spaces 功能，其 AI 智能体可为用户搭建追踪器和规划工具。",
+  "en_oneliner": "MarketScale reports that Meta adds Spaces to Muse, letting its AI agent build trackers and planners for users."
+ },
+ "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBHbjRjNFZocEJKSzRtT2tkazlEdEQzN2dwSzAyelc3RlhPMkRpT096N2ZtVlVFM2hRREppTW1Yd0FGbTB5VkdfanloNzlrZS1xQ1R2dlRnOTVVYk5V?oc=5": {
+  "zh_title": "Sid Saladi 分享：Meta Muse Spaces 入门——我搭建的 13 个 Spaces，以及让每个 Space 自我检查的提示词",
+  "zh_oneliner": "Sid Saladi 在 Substack 上分享了他搭建的 13 个 Meta Muse Spaces，以及让每个 Space 自我检查的提示词写法。",
+  "en_oneliner": "On Substack, Sid Saladi shares the 13 Meta Muse Spaces he built and the prompt that makes each one check itself."
+ },
+ "https://news.google.com/rss/articles/CBMikgFBVV95cUxPMkZOUldZb1dfMW93ZWVSU2pkODd4TzZtWjFDT1MtR21qdXh0TzB0RW81c1hrSE1sZW9panE4N0N0TW5nQm5IUnVhQ29pM2NTZFkxSXNydnN0cjhGbEhsT3J1TV95LUNEbGlzM0t5S19KMXNLUVhyM0tiV1I4a2Y4dk9hdEFueG5qajRfeVlOTFdqUQ?oc=5": {
+  "zh_title": "Meta 为 Muse 增加迷你应用创建功能",
+  "zh_oneliner": "Social Media Today 报道，Meta 为 Muse 增加了创建迷你应用的选项，用户可自行搭建小型应用。",
+  "en_oneliner": "Social Media Today reports that Meta adds a mini app creation option to Muse, letting users build small apps of their own."
+ },
+ "https://news.google.com/rss/articles/CBMihAFBVV95cUxNaGRIdjZtYk5lTl9tWG94RERsTUllM2EyZ1Ztczd6S3lzandkT2QxTk5JeU9CTHR1UW03Tk5jWEFmTE5ybEhnZnNBemxVN2NxQXBsZlNocWVLYUIyaXVmQUExU3FLS1o4S1M2Umx4NWpkbGlNay1UbVVTMWFMQ2RYZE5QZE0?oc=5": {
+  "zh_title": "Meta Muse 新增 Spaces，可搭建自定义迷你应用",
+  "zh_oneliner": "Meteora Web 报道，Meta Muse 新增 Spaces 功能，用户可借此搭建自定义迷你应用。",
+  "en_oneliner": "Meteora Web reports that Meta Muse adds Spaces for building custom mini apps."
+ },
+ "https://news.google.com/rss/articles/CBMidkFVX3lxTE56T2pkb1NXTVJTRkgwcU92WUY3QkRvUXI3THpGWFg0YmZCVlhKUk9HU3lqZUx0LTJPR25CTmlnZ0Z5bHZnaGpLY0s3U2lNVGdDMm9MNmZVR0pRNFJ4bEVsb3RYcTU3eVJjWkN1QmRobWNpYXVjS1E?oc=5": {
+  "zh_title": "Meta 为 Muse 智能体扩展自定义 Spaces，用户可搭建自己的类应用中心",
+  "zh_oneliner": "BigGo Finance 报道，Meta 为 Muse 智能体扩展了自定义 Spaces，用户可搭建自己的类应用中心。",
+  "en_oneliner": "BigGo Finance reports that Meta expands the Muse agent with custom Spaces, letting users build their own app-like hubs."
+ },
+ "https://news.google.com/rss/articles/CBMic0FVX3lxTE5LZGNmUzBFMm10TTROdXRjTFpITy1hdG42ajRuM0ZsRkxYNGFFZTNtTTNUZjFxRjhLRFdMTTduZm5nc3pPRGtlSndISXFib0Q0ZlFwVFZTQ3ViRTI4bU03SGhMT0hTNkJiMmJpZnRwQW85WG8?oc=5": {
+  "zh_title": "Meta Spaces 让 Muse 变身个人工作区，用语言即可自由塑造",
+  "zh_oneliner": "Kingy AI 报道，Meta Spaces 让 Muse 变成可由语言自由塑造的个人工作区。",
+  "en_oneliner": "Kingy AI reports that Meta Spaces turns Muse into a personal workspace users can shape with words."
+ },
+ "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNb0xkU3hxcHN3VUE1WVlldThqSEFTdWlnMmxEOVpKYmU4OGVEQW5welR0QnZrVTU3bWV4X0pFaldUTjZaWVROSm0wSmc4VXNBMUpvZFF1QzM3Wjh5OGtEVkY2ZkozVF9xMURTbEdvdE9FckRZMjlxRlBZV3NZU2VNVWZnVkZTdDFVMDNZbFVyd05UN1Z6MS1NQVBqYllsN0d0T2dtekVya08zZw?oc=5": {
+  "zh_title": "Meta 在 Muse 应用中推出 Spaces，可搭建自定义交互式 AI 工具",
+  "zh_oneliner": "Adgully 报道，Meta 在 Muse 应用中推出 Spaces 功能，用户可搭建自定义交互式 AI 工具。",
+  "en_oneliner": "Adgully reports that Meta introduces Spaces in the Muse app for building custom interactive AI tools."
+ },
+ "https://news.google.com/rss/articles/CBMigwFBVV95cUxQMDYzbG9tN2xuQVkzQ1c2aWt5eUdKZXp5eFhiYTFvbVNiUkdxbG9LRzRWNVFlN1NJZ3dROUNzUGVpS29IUUU3SDNiMFAtMV80eDZiZkdmd0QzMXV5WUdGSkVsRWV3WGVxTGtackQyUEdtS3VUNEZKVnlpNnlqWkJtUFdVVQ?oc=5": {
+  "zh_title": "Meta 的 Muse 现可根据一段描述搭建自定义 Spaces",
+  "zh_oneliner": "iPhone in Canada 报道，Meta 的 Muse 现在只需一段描述就能搭建自定义 Spaces。",
+  "en_oneliner": "iPhone in Canada reports that Meta's Muse can now build custom Spaces from a description."
+ },
+ "https://news.google.com/rss/articles/CBMingFBVV95cUxNWnBBZHVDbEhkM3dxOEtNTUFZak9NRlctU3I5RGI5b280cjU3WjBwU1A4RC1ucjV0b1pHZjZ6bUZxRzR5d25FZHFMY2lQZ3dDMkp3bXQtd1hyUHVUbkh5eTRUM3NqNFl5aW9RanhhUVozdTZrUTFtVWlYSWtsc1NKNWxWR19rR3VLRE9iN29TY1U4NnJBUXJUeGdydWhNUdIBowFBVV95cUxQY3QyVUhJRDJOemdMZFpfZ3Q1TUNSMEVveFVjTTM0alE5WmN1ZXVrLXQ0MXdFWHdQbjlrUkd0YXY1YS1hUFFqWUlYM0RQZ21ISmk0dDJDSE1VdzRNT0FiWGk1S0M0dkZyWDRya1Zkd01fb1JYc3ZYVkhIaHB1M3J3WnlPY0FEX0t6amxJUFY2bVhKbExxVFdINUp2TWJHRFhnWGlF?oc=5": {
+  "zh_title": "Meta 为 Muse 加入 Spaces，用户可在同一处管理日常任务",
+  "zh_oneliner": "ETV Bharat 报道，Meta 为 Muse 加入 Spaces，用户可把日常任务集中在一处管理。",
+  "en_oneliner": "ETV Bharat reports that Meta adds Spaces to Muse, letting users organise everyday tasks in one place."
+ },
+ "https://news.google.com/rss/articles/CBMipgFBVV95cUxOeTExY0U3NlJkN2FxaXpMSW1td2U4azdXM084dlVYay1ETHVaa3U1T2wyUUNwODRGdDJ1YnlwQWJqS0Fhc0N3ejVGakUwN2lqdVYwaldvWW05eXV6a2w5UmdrejhqeElxRFZhMUpJcS1ZcDNTRW14dTIwN1RxQ3BtUlo5QUF5ZU1sZHg0RVBULVh4MEpfQ2xuempDX2xRQ3JFQTJFeWJB0gGrAUFVX3lxTE02S2xsX3FraDJXakdkS1ZGaEVpOWdweWk4NlZaTXRxMnV6VjlxbnNjRkROenY3bnV4RHhwcmkyWmZPeG5TbEEwcUFXalhQMDBYcWFoamJGR3hXQ3RlY1l6MWM4R1M3ZnRMTFBlalNoZ0hJT0pCRHU4VFhyVzQyRENoTXhyVGRRcXVpdk5TSmRwMkx2ZU91U3pBX2lLX3FuLUV3eE9FWC1iXzZEdw?oc=5": {
+  "zh_title": "Meta 推出 Spaces，可在 Muse AI 应用内设计自定义体验",
+  "zh_oneliner": "Gadgets 360 报道，Meta 推出 Spaces，用户可在 Muse AI 应用内设计自定义体验。",
+  "en_oneliner": "Gadgets 360 reports that Meta introduces Spaces for designing custom experiences inside the Muse AI app."
+ },
+ "https://news.google.com/rss/articles/CBMijgFBVV95cUxQVXlyTlRmS1l6NFNyU3RZTVJUVEJxMW94dmRnVmVRY3RMQ3FrbV94MjNNSTMtM1FUM0tBeXlWQnJOd2RET1Y3YXJBUHYtMWF4YTNhakpZOHozVkp3dHZUUlc0dlRnS2lJZDN3ejd0Tm1rTDRBbG5BU05vN0tJdkpwazd5a0pyellZcnpYNnZ3?oc=5": {
+  "zh_title": "Meta Muse Spaces：Instagram 收藏变身 AI 购物中心",
+  "zh_oneliner": "krihaa.me 介绍了一个 Meta Muse Spaces 用法：把 Instagram 收藏变成 AI 购物中心。",
+  "en_oneliner": "krihaa.me presents a Meta Muse Spaces use case: turning Instagram Saves into an AI shopping hub."
+ },
+ "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPRHpzMWxrRnQ4LWxkR1JJVGZKci1IRzhnNGpwczk4QjQ5YVZkTloyMjlsV3A3ZDhDemgwWGpqR2ZoOHoxM1JGQ3l0ZWVJbTlvUWlaMzRrM0stWW1kdG4zNm93VGI0RldMRTM4R25Zdnhhb0QyeFVNek1NeU1ac3dWbEdsR0QwOFVZTjg3R19pc1pLQkZxcHN6SG9WQ0txMkZEMkZJc1JpbmJrdzdzRWxNOGZHU19PRmFzcHJVN1BCRmYzWk5sTndlYzlwM2IwLVozNzV1cVVTZTcyQdIB3wFBVV95cUxNZ3lNWldORkVJOVVLME9JcGEzM1haWWhmZ1N4WmhpTVllRHRMUGl6M052T25UZkxVX3h6VTB0ZVN4bTRjaDJpZGlZalYtdmhoLTM5NE52aGZWeFZlVlVnTkNzYWh1Ty1rMndxN2NDV1FoTjluUldmTGFuallDZnVMSy1Vd01qT24tNHRoaUVKU21uakY3blM4U3B4dGJCUjJ3cVBGZDBnZEs3aHhNSnh0YzhISklydnZESHhyY1RFUExmVTVmYmZldVRLMHNzMmlKdVV0cFhSS19VMG9ndDM4?oc=5": {
+  "zh_title": "Meta 在 Muse AI 应用中推出“Spaces”：自然语言提示词可变成自定义应用内工具与实时仪表盘",
+  "zh_oneliner": "Gadget Bridge 报道，Meta 在 Muse AI 应用中推出 Spaces，自然语言提示词可变成自定义应用内工具和实时仪表盘。",
+  "en_oneliner": "Gadget Bridge reports that Meta introduces Spaces in the Muse AI app, turning natural language prompts into custom in-app tools and live dashboards."
+ },
+ "https://news.google.com/rss/articles/CBMilAFBVV95cUxORUc5Mkx6R29KcGZZMjdOQUptbGN1QVN0TGlHVjB2UzJ3RzZPZnhqR254ZWtGNjB5ZGNranV4QlE0QW92V3JlenFCUi1tZERYd1NCX1BodThpS20yR1JRWFVWcGdRRFg5WlcxcWxHVUo2XzEtZzlGMmVvaXcwbWpfWnE2ZVQyT3A0cVMtbk9pOThtNVE20gGaAUFVX3lxTFBRMF9DbWFnNmw2S1dMdWtTT0htallCWmU4RTQ3OVhfTFdFRFJIRFl0Rkg1XzJXSnNYcngzSHFrYW9lY1pmZDRkNmRDRkFzcWRwQUJkbjhpYXlmS2RmUTAwbkpLSDBJdFVMYXNzVm4wWks3MjIxVERSOXk3bGFZalpuTnE3eXhHM2lXUnRjSElIbDF6bHpIeGo3WEE?oc=5": {
+  "zh_title": "Meta 的 Muse AI 现可让你在应用内再创建一个应用",
+  "zh_oneliner": "ProPakistani 报道，Meta 的 Muse AI 现在支持用户在应用内再创建一个应用。",
+  "en_oneliner": "ProPakistani reports that Meta's Muse AI now lets users create an app within an app."
+ },
+ "https://news.google.com/rss/articles/CBMibkFVX3lxTFBqVlppaG9XcUc4YmlRYkdTLUxyeEgydnotTnRxdUhjOVoweHBIbkZxVE5uZTBlM2xlbkdvN0J6anJHbkp6ZmlUZGFKSGpMR0VRbkdSTlF5TDgwYzlQWWNGS0VibTNLbmM1SDhERV9R?oc=5": {
+  "zh_title": "Meta Muse Spaces：5 大强大功能解析，助用户搭建自定义迷你应用",
+  "zh_oneliner": "Techgenyz 解析了 Meta Muse Spaces 的 5 大功能，介绍它们如何帮助用户搭建自定义迷你应用。",
+  "en_oneliner": "Techgenyz explains five powerful features of Meta Muse Spaces and how they help users build custom mini apps."
+ },
+ "https://news.google.com/rss/articles/CBMie0FVX3lxTE80VFppWE9uYV84WDBxQlZDWmdBejJ2VjMtMzVxSi10aTNiSHJXWTk3NzI5djZEYWVFb1NzZi11aVBsRVlnYW8yeXFWY0Nqb1ZvQjl0dDM2RlJjYVFwNzlRZURRWk9yZHhjbmNDZmZRWjhjQ0lSQ0VoZUhZaw?oc=5": {
+  "zh_title": "不用 Muse？Meta 的 AI 智能体仍可能访问你的私信，方法如下",
+  "zh_oneliner": "ZDNET 指出，即使用户不用 Muse，Meta 的 AI 智能体仍可能访问其私信，并介绍了其中的方式。",
+  "en_oneliner": "ZDNET explains how Meta's AI agent can still access users' private messages even if they don't use Muse."
+ },
+ "https://news.google.com/rss/articles/CBMioAFBVV95cUxOamZzSnJLM2UtUWtRa0I2cmNsQ1FjTFhZakhoVnZISnpiRWJ1ZnBrOGI2bFF0bFFqcDBEajBudGdXcXhHZmM0MDhqZlMxWXQyMzhGdVNWZktDa3dpQUNFYWtqWEZDYnc4TGZ3WlRkNjVkOS1YWVF3YVZxYjdZekFwV1M1SURDdy16OFQzNkdSMUZzY1M5Zlhjb3JEbXpsN3pX?oc=5": {
+  "zh_title": "Sensor Tower：Meta 的 Muse 应用 40 天内美国下载量突破 1000 万",
+  "zh_oneliner": "9to5Mac 援引 Sensor Tower 的数据称，Meta 的 Muse 应用在 40 天内美国下载量突破 1000 万次。",
+  "en_oneliner": "Citing Sensor Tower data, 9to5Mac reports that Meta's Muse app tops 10 million US downloads in 40 days."
+ },
+ "https://news.google.com/rss/articles/CBMiW0FVX3lxTE03NldsZFNhazBLeUFyRFRZR1VUeG1TcnEtLTl6NUJwdVNYZEZLcE9DaXctUVp2WU9reTZ0NV9FSXg5dGpObG9qMVVLUDdvbTloYXV4WVdKLVdHUlk?oc=5": {
+  "zh_title": "富国银行称 Meta 的 Muse 应用增长势头在 10 月放缓",
+  "zh_oneliner": "TOKENPOST 报道，富国银行表示 Meta 的 Muse 应用增长势头在 10 月有所放缓。",
+  "en_oneliner": "TOKENPOST reports that Wells Fargo says gains for Meta's Muse app slowed in October."
+ },
+ "https://news.google.com/rss/articles/CBMinAFBVV95cUxPMFpKV293d3ljNHVqbGVoQUI4V2VHcEQzYVY5azBVOEVZMk5PbWtBdG5ObjJhY1BHTnlxVDYteVliVkhHVkJFYlJocTA2dGN0NDhKSW9UZm9CVTBtQzQ3aVk3dVBXRXJnRGNMeElQczdNTTg2ZVFmSUtqVEROTzRXWGVfdnZ3TUdCOG1PUHVfeXJXU3BIZWxxRkI5dTM?oc=5": {
+  "zh_title": "Meta 的 Muse Ember 瞄准 AI 新战场：每个智能体任务的成本",
+  "zh_oneliner": "报道称，Meta 的 Muse Ember 把 AI 竞争的焦点放在每个智能体任务的成本上。",
+  "en_oneliner": "Meta’s Muse Ember is targeting AI’s new battleground: the cost per agent task."
+ },
+ "https://www.youtube.com/shorts/gkek_6jiATY": {
+  "zh_title": "Muse 帮 @homewithpauly 保持井井有条，让全职创作者的生活轻松一点",
+  "zh_oneliner": "全职创作者 @homewithpauly 分享 Muse 如何帮他保持条理、让生活轻松一点。",
+  "en_oneliner": "Full-time creator @homewithpauly shares how Muse helps him stay organized and makes life a little easier."
+ },
+ "https://www.youtube.com/shorts/07L5tLFpUjI": {
+  "zh_title": "Monae——@thebudgetnista 的 Muse，完全拿捏了这项任务",
+  "zh_oneliner": "@thebudgetnista 的 Muse Monae 精准完成了交给它的任务。",
+  "en_oneliner": "Monae, @thebudgetnista’s Muse, totally understands the assignment."
+ },
+ "https://www.youtube.com/shorts/ah-uDK92_qo": {
+  "zh_title": "@khris.sheer 做决定，Muse 帮他在纷繁信息中找到关键信号",
+  "zh_oneliner": "@khris.sheer 自己做决定，Muse 则帮他从纷杂的信息中找到真正重要的信号。",
+  "en_oneliner": "@khris.sheer makes the decisions, while Muse helps him find the signal amidst the noise."
+ },
+ "https://www.youtube.com/shorts/ICNUvifx4bY": {
+  "zh_title": "@elona 向她的 Muse 发起挑战：真的规划并订好一次旅行",
+  "zh_oneliner": "@elona 让她的 Muse 真正规划并预订了一次旅行。",
+  "en_oneliner": "@elona challenged her Muse to actually plan and book a trip."
+ },
+ "https://www.youtube.com/shorts/noS1muGzxdw": {
+  "zh_title": "@chefpriyanka 不知道没有她的 Muse Chunky 该怎么办",
+  "zh_oneliner": "@chefpriyanka 说，没有她的 Muse Chunky，她都不知道该怎么办了。",
+  "en_oneliner": "@chefpriyanka doesn’t know what she would do without her Muse, Chunky."
+ },
+ "https://www.youtube.com/shorts/gkYrF2_f-ZU": {
+  "zh_title": "认识一下 Hoops 🏀——@cbrickley603 的 Muse",
+  "zh_oneliner": "@cbrickley603 介绍他的 Muse Hoops。",
+  "en_oneliner": "Meet Hoops 🏀, @cbrickley603’s Muse."
+ },
+ "https://www.youtube.com/shorts/9LWRpClbwf8": {
+  "zh_title": "@hamilt0njr 用 Muse 整理假期里的混乱",
+  "zh_oneliner": "@hamilt0njr 用 Muse 把假期里的一团乱麻整理得井井有条。",
+  "en_oneliner": "@hamilt0njr uses Muse to organize the chaos during the holidays."
+ },
+ "https://www.youtube.com/shorts/3bwIjlRfeLw": {
+  "zh_title": "@WonderboyMMA 的 Muse 帮他理顺流程，以最佳状态迎接纽约格斗周",
+  "zh_oneliner": "@WonderboyMMA 的 Muse 帮他理顺了备战流程，让他以最佳状态迎接纽约格斗周。",
+  "en_oneliner": "@WonderboyMMA’s Muse helped streamline the process to get him ready for fight week in NYC."
+ },
+ "https://www.youtube.com/shorts/uOHCgegNZMc": {
+  "zh_title": "@AquariumInfo 在水池里发现了这块石头，用 Muse 规划你的下一次户外冒险",
+  "zh_oneliner": "@AquariumInfo 在水池里发现了这块石头，视频邀你用 Muse 规划下一次户外冒险。",
+  "en_oneliner": "@AquariumInfo found THIS rock in a pool. Plan your next outdoor adventure with Muse."
+ },
+ "https://www.youtube.com/shorts/Gd9XIhkmAFM": {
+  "zh_title": "@trentevolaa 的 Muse Milo 找到了四件真正配得上他公寓的精美科技好物",
+  "zh_oneliner": "@trentevolaa 的 Muse Milo 找到了四件美观又真正契合他公寓的科技好物。",
+  "en_oneliner": "@trentevolaa’s Muse, Milo, found four aesthetic tech finds that actually match his apartment."
+ },
+ "https://www.youtube.com/shorts/S13mzuP6W0U": {
+  "zh_title": "看 @careeseeats 如何训练 Muse，让每条新 Reel 自动发布",
+  "zh_oneliner": "@careeseeats 展示了她如何训练 Muse，让每条新 Reel 都能自动发布。",
+  "en_oneliner": "Watch how @careeseeats trained Muse to auto-post every new reel."
  }
 }

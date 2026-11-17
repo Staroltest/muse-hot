@@ -338,6 +338,15 @@ SOURCE_NAME_EN = {
     "unite-ai": "Unite.AI",
     "ship-with-muse": "Ship with Muse",
     "awesome-muse-commits": "awesome-muse commits",
+    "gizmodo-muse": "Gizmodo: Muse",
+    "siliconangle-muse": "SiliconANGLE: Muse",
+    "hnrss-muse-ember": "Hacker News: Muse Ember",
+    "reddit-museai": "Reddit: r/MuseAI",
+    "muse-gadget-sdk-commits": "Muse gadget SDK commits",
+    "googlenews-muse-ember-en": "Google News: Muse Ember",
+    "googlenews-muse-spaces-en": "Google News: Muse Spaces",
+    "googlenews-muse-app-en": "Google News: Muse app",
+    "youtube-muse-official": "YouTube: Muse official channel",
 }
 
 
