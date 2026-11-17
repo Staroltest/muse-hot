@@ -3,7 +3,7 @@ var LS_READ='muse-hot-read',LS_STAR='muse-hot-starred',LS_STAR_META='muse-hot-st
     LS_THEME='muse-hot-theme',LS_RECENT='muse-hot-recent-search',LS_CL_READ='muse-hot-changelog-read';
 var IS_EN=document.documentElement.lang==='en';
 var DATA_BASE=document.documentElement.getAttribute('data-base')||'';
-function pickTitle(it){return IS_EN?(it.title||''):(it.zh_title||it.title);}
+function pickTitle(it){return IS_EN?(it.en_title||it.title||''):(it.zh_title||it.title);}
 function T(zh,en){return IS_EN?en:zh;}
 function loadSet(k){try{return new Set(JSON.parse(localStorage.getItem(k)||'[]'));}catch(e){return new Set();}}
 function saveSet(k,s){try{localStorage.setItem(k,JSON.stringify(Array.from(s)));}catch(e){}}
@@ -398,9 +398,9 @@ function getStore(){
       var m=starMeta[id]||{};
       var it=live[id];
       var gone=!it;
-      var title=m.title||(it?pickTitle(it):(IS_EN?'(Unknown title)':'（标题未知）'));
+      var title=it?pickTitle(it):(m.title||(IS_EN?'(Unknown title)':'（标题未知）'));
       var link=m.link||(it?it.link:'#');
-      var source=m.source||(it?it.source:'');
+      var source=it?(IS_EN?(it.source_en||it.source):it.source):(m.source||'');
       var at=m.at?new Date(m.at):null;
       var atStr=at?(IS_EN?('Saved on '+at.getFullYear()+'-'+(at.getMonth()+1)+'-'+at.getDate()):('收藏于 '+at.getFullYear()+'年'+(at.getMonth()+1)+'月'+at.getDate()+'日')):'';
       return '<article class="feed-item starred-item'+(gone?' is-gone':'')+'">'
@@ -466,7 +466,7 @@ function computeMeta(it){
       if(ageH<=r.max_hours){score+=r.bonus;break;}
     }
     score+=((IH_CFG.tierBonus||{})[tier]||0);
-    var text=((it.title||'')+' '+(it.zh_oneliner||'')).toLowerCase();
+    var text=((it.title||'')+' '+(it.en_title||'')+' '+(it.zh_title||'')+' '+(it.zh_oneliner||'')+' '+(it.en_oneliner||'')).toLowerCase();
     var devHits=0;
     Object.keys(IH_CFG.devLabels||{}).forEach(function(kw){
       if(text.indexOf(kw.toLowerCase())>-1)devHits++;
@@ -489,10 +489,13 @@ function computeMeta(it){
       labels=labels.slice(0,3);
     }
     var parts=[];
-    if(tier==='T1')parts.push('官方来源');
-    if(labels.length)parts.push('涉及'+labels.slice(0,2).join('与'));
-    if(ageH<=6)parts.push('6 小时内发布');else if(ageH<=24)parts.push('24 小时内发布');
-    if(parts.length<2)parts.push('与本主题相关');
+    if(tier==='T1')parts.push(IS_EN?'Official source':'官方来源');
+    if(labels.length){
+      var labs=labels.slice(0,2).map(function(l){return (IH_CFG&&IH_CFG.labelEn&&IH_CFG.labelEn[l])||l;});
+      parts.push(IS_EN?('About '+labs.join(' and ')):('涉及'+labels.slice(0,2).join('与')));
+    }
+    if(ageH<=6)parts.push(IS_EN?'Published within 6 hours':'6 小时内发布');else if(ageH<=24)parts.push(IS_EN?'Published within 24 hours':'24 小时内发布');
+    if(parts.length<2)parts.push(IS_EN?'Related to this topic':'与本主题相关');
     reason=parts.join(' · ');
   }else{
     score=it.score||0;reason=it.reason||'';
@@ -502,8 +505,8 @@ function computeMeta(it){
 function cardHTML(it){
   var m=computeMeta(it);
   var title=pickTitle(it);
-  var summary=it.zh_oneliner||'';
-  var en=it.title;
+  var summary=IS_EN?(it.en_oneliner||''):(it.zh_oneliner||'');
+  var en=pickTitle(it);
   var pub=cstParts(new Date(it.published));
   var off=m.tier==='T1'?'<span class="off-tag">'+(IS_EN?'Official':'官方')+'</span>':'';
   var isNew=false;
@@ -513,18 +516,18 @@ function cardHTML(it){
   }
   var newHtml=isNew?'<span class="new-pill">'+(IS_EN?'New':'新')+'</span>':'';
   var tagsHtml=m.labels.length?'<div class="fi-tags">'+m.labels.map(function(t){
-    return '<a class="tag" href="topics/'+((IH_CFG&&IH_CFG.tagSlugs[t])||t)+'.html">#'+escHtml(t)+'</a>';
+    return '<a class="tag" href="topics/'+((IH_CFG&&IH_CFG.tagSlugs[t])||t)+'.html">#'+escHtml(IS_EN?((IH_CFG&&IH_CFG.labelEn&&IH_CFG.labelEn[t])||t):t)+'</a>';
   }).join('')+'</div>':'';
   var scoreCls=m.score>=85?'t-hot':(m.score>=70?'t-acc':'t-quiet');
   return '<article class="feed-item" data-id="'+escHtml(it.id)+'" data-category="'+escHtml(it.category||'')+'"'
     +' data-official="'+(m.tier==='T1'?'1':'0')+'" data-en="'+escHtml(en)+'">'
-    +'<header class="fi-head"><span class="src">'+escHtml(it.source)+'</span>'+off
+    +'<header class="fi-head"><span class="src">'+escHtml(IS_EN?(it.source_en||it.source):it.source)+'</span>'+off
     +'<time class="pt">· '+pub.hm+'</time>'+newHtml
     +'<span class="sp"><span class="score-pill '+scoreCls+'" title="'+(IS_EN?'Score ':'评分 ')+m.score+'/100">'
     +'<span class="lbl">'+(IS_EN?'Score':'评分')+'</span><span class="sep"></span><span class="num">'+m.score+'</span></span>'
     +'<button type="button" class="star-btn" aria-label="'+(IS_EN?'Save':'收藏')+'" title="'+(IS_EN?'Save':'收藏')+'">'+BOOKMARK_SVG+'</button></span></header>'
     +'<h3><a href="items/'+escHtml(it.id)+'.html">'+escHtml(title)+'</a></h3>'
-    +(summary?'<p class="sum"'+(IS_EN?' lang="zh-CN"':'')+'>'+escHtml(summary)+'</p>':'')
+    +(summary?'<p class="sum"'+(IS_EN?' lang="en"':'')+'>'+escHtml(summary)+'</p>':'')
     +'<div class="fi-foot"><button type="button" class="chip cat" data-filter="'+escHtml(it.category||'')+'">'
     +escHtml(IS_EN?(it.category_label_en||it.category_label||it.category||''):(it.category_label||it.category||''))+'</button>'
     +'<span class="when">'+escHtml(fmtCST(it.published))+'</span></div>'
@@ -585,8 +588,8 @@ function dayHeaderHTML(dateISO,count){
   var wdFull=(IS_EN?['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']:['星期日','星期一','星期二','星期三','星期四','星期五','星期六'])[wd];
   return '<header class="day-head'+(isToday?' is-today':'')+'">'
     +'<span class="dh-name">'+name+'</span>'
-    +'<span class="dh-date">'+(+parts[1])+'月'+(+parts[2])+'日</span>'
-    +'<button type="button" class="dh-toggle" aria-label="收起/展开这一天">'+CHEV_SVG+'</button>'
+    +'<span class="dh-date">'+(IS_EN?((+parts[1])+'/'+(+parts[2])):((+parts[1])+'月'+(+parts[2])+'日'))+'</span>'
+    +'<button type="button" class="dh-toggle" aria-label="'+(IS_EN?'Collapse/expand this day':'收起/展开这一天')+'">'+CHEV_SVG+'</button>'
     +'<span class="dh-wd dh-wd-short">'+wdShort+'</span>'
     +'<span class="dh-wd dh-wd-full">'+wdFull+'</span>'
     +'<span class="dh-count"><b class="num">'+count+'</b> '+(IS_EN?'items':'条')+'</span></header>';
@@ -716,9 +719,9 @@ function renderSearchResults(){
     var scored=[];
     items.forEach(function(it){
       if(!matchFiltersData(it))return;
-      var title=(((it.zh_title||'')+' '+(it.title||''))+'').toLowerCase();
-      var sum=((it.zh_oneliner||'')+'').toLowerCase();
-      var src=(it.source||'').toLowerCase();
+      var title=(((it.en_title||'')+' '+(it.zh_title||'')+' '+(it.title||''))+'').toLowerCase();
+      var sum=((IS_EN?(it.en_oneliner||''):(it.zh_oneliner||''))+'').toLowerCase();
+      var src=((IS_EN?(it.source_en||it.source):it.source)||'').toLowerCase();
       var tier=0;
       if(title.indexOf(q)>-1)tier=3;
       else if(sum.indexOf(q)>-1)tier=2;
