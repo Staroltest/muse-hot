@@ -2872,5 +2872,20 @@
   "zh_oneliner": "Meta 的 Muse 能帮用户查找活动门票，不过下单前最好再三核对价格，以免多花冤枉钱。",
   "en_oneliner": "Meta's Muse can help you find event tickets, but double-check the price before ordering so you don't overpay.",
   "en_title": "Meta Muse Can Help You Find Event Tickets, but Always Double-Check the Price"
+ },
+ "https://www.reddit.com/r/MuseAssistant/comments/1xyo3i4/your_muse_can_run_your_home_stable_diffusion_rig": {
+  "zh_title": "你的 Muse 不在家也能跑家里的 Stable Diffusion 算力——Tailscale + ComfyUI 完整搭建指南",
+  "zh_oneliner": "作者分享了一套完整方案，让 Muse 通过 Tailscale 远程操控家里的 ComfyUI 出图机，出门在外也能随时跑 Stable Diffusion。",
+  "en_oneliner": "The author shares a complete setup for letting Muse remotely operate a home ComfyUI image-generation rig via Tailscale, so Stable Diffusion keeps running while you're away."
+ },
+ "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQWnVuTHBtMHBwdV95Q2hjemI1dmE0bGQ2YkNjNVUtcGNNOE5pRWNFenhUbThJcmF3QkxIalI4SWx3UGlPS3VvVHpYN1ZZd0phR043dzZTcTZuaUY4eWcyeDJ4Z2k0VnVnNmpnZkVlejZ6SzdEdDNJM05qZ0hoQ0JDVTY1dnE4eTM2cVdHYkVjU0FUODNnczRudDc0TmNoendwallmdTRxU2hjdy04Zi16SWVTY3dvSFZsU1VWUzRSTkNidTVGb0xjVjBWZFNRdEtQdWdwNVhlc3lTV2ZXMmtscXFOXzNsLUV6?oc=5": {
+  "zh_title": "“你不想要失控的智能体”：摩根大通 CEO 杰米·戴蒙把 Meta 的 Muse AI 智能体挡在门外，这对 META 股价意味着什么",
+  "zh_oneliner": "摩根大通 CEO 杰米·戴蒙以“不想要失控的智能体”为由，禁止在行内使用 Meta 的 Muse AI 智能体，文章分析了这一决定对 META 股价的影响。",
+  "en_oneliner": "JPMorgan CEO Jamie Dimon has barred Meta's Muse AI agent inside the bank, saying \"you don't want rogue agents,\" and the article examines what the move means for META stock."
+ },
+ "https://www.reddit.com/r/MuseAgent/comments/1xyo3b7/your_muse_can_run_your_home_stable_diffusion_rig": {
+  "zh_title": "你的 Muse 不在家也能跑家里的 Stable Diffusion 算力——Tailscale + ComfyUI 完整搭建指南",
+  "zh_oneliner": "作者分享了一套完整方案，让 Muse 通过 Tailscale 远程操控家里的 ComfyUI 出图机，出门在外也能随时跑 Stable Diffusion。",
+  "en_oneliner": "The author shares a complete setup for letting Muse remotely operate a home ComfyUI image-generation rig via Tailscale, so Stable Diffusion keeps running while you're away."
  }
 }
