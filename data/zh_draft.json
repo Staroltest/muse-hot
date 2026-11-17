@@ -1074,5 +1074,9 @@
  "https://www.reddit.com/r/MuseAgent/comments/1xy7gqt/sharing_spaces": {
   "zh_title": "分享 Spaces：让 Muse 把协作空间打包成压缩包发给别人",
   "zh_oneliner": "想把自己的 Muse 协作空间分享给别人，可以让 Muse 把空间打包成压缩包并给出下载链接，对方再把压缩包交给自己的 Muse，就能原样重建出这个空间。"
+ },
+ "https://zenn.dev/recaro/articles/cue-a2-20261117": {
+  "zh_title": "让外部个人智能体 Cue 加入自建智能体服务器 a2，与 Muse 对话",
+  "zh_oneliner": "作者把个人智能体 Cue 接进自己搭建的智能体消息服务器 a2，让它只加入通用频道并与 Muse 对话，实测下来 Cue 的接入比 Muse 更省事。"
  }
 }
