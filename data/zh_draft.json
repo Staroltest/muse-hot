@@ -3750,5 +3750,36 @@
   "zh_title": "Loblaw 现支持用户通过 Meta 的 Muse AI 购买杂货",
   "zh_oneliner": "Loblaw 现已支持用户通过 Meta 的 Muse AI 下单购买杂货。",
   "en_oneliner": "Loblaw now lets users buy groceries through Meta's Muse AI."
+ },
+ "https://news.google.com/rss/articles/CBMiowFBVV95cUxOUG5hSGNmaUFYMXZKbXpVWTdpNHQ0cFlYOW5QU1NrMnFBakhnakF4V0hUbnhMUjk3WEN3MDN4aVJBT3dpclRDNDJ5aThYM2NEbzhFX0J6c1VjeDZyNnFsT1IxVE9TNUN1NU95SzFNc3pfT2V4T240LTBNX1czMHhMWDE1cUhwLTI2dHY3X2dCbUR3Y3hYUTJiTjlrTGE0MXIxTTdB?oc=5": {
+  "zh_title": "Loblaw 将支持用 Meta 的 Muse AI 助手购物",
+  "zh_oneliner": "加拿大连锁超市 Loblaw 将接入 Meta 的 Muse AI 助手，用户可以直接通过对话下单购物。",
+  "en_oneliner": "Canadian supermarket chain Loblaw will integrate Meta's Muse AI assistant, letting users shop by chatting with it."
+ },
+ "https://news.google.com/rss/articles/CBMid0FVX3lxTE5HTU9TOVpjVEFpcWVaODRiaFpyOVAwdjlaUF9MbkJVWmdWdjdNZ0ZqdUdSbDd0eFFxRkhSUlF1d1pkdzY0RDY5X09WeVpoMFloZ0x0bzhtaGYzQXVjWGhlTDZCc2d4UFl0Wk5nMjV1YWFtOFVTSDRv?oc=5": {
+  "zh_title": "Loblaw 现已支持用户通过 Meta 的 Muse AI 购买杂货",
+  "zh_oneliner": "Loblaw 已上线与 Muse AI 的整合，用户可以直接用 AI 助手买菜下单。",
+  "en_oneliner": "Loblaw has launched its Muse AI integration, letting users buy groceries directly through the AI assistant."
+ },
+ "https://news.google.com/rss/articles/CBMiigFBVV95cUxNYllRTWR1QlZLUWZqeVl6SWtWRkthSlFVZ0MtVEYyS283U1lfcTdJMHlDajIyNjZTSjZDZGtOaUw4dXFKbnIzRjY2cFhZcUdtN29FdEg3V1FRd25PNnd0dklpQ1ZDQTc0YkxUQWxSUkZUVTFvM3hnNm52UlJlUENyel9Qc21WcFBNblE?oc=5": {
+  "zh_title": "路透社：Meta 的 Muse 在三台设备中的两台上读取了 Signal 短信",
+  "zh_oneliner": "据路透社报道，Meta 的 Muse 在测试的三台设备中有两台读取了用户的 Signal 短信，引发隐私争议。",
+  "en_oneliner": "Reuters reports that Meta's Muse read users' Signal messages on two of three test devices, raising privacy concerns."
+ },
+ "https://news.google.com/rss/articles/CBMijAFBVV95cUxQc0paS3hVVGx4eUViVFJKNnV1QzRoc2labnNVREozQzFweS1DUzk0MWRRalBQRzJ3aGYwa0ZOWWw4WFA0NXR3akxuam9XV1hYcHZHS3R6TWZyQ0F1UG9VWVM5VTN4QS1NR0Z6SDJja09xN0Y1VHRiUFJSeU9JZXNKUWhWcDNuNmwwOHFuSg?oc=5": {
+  "zh_title": "Meta 的 Muse 现在能帮你处理电话琐事了——一文了解它如何工作",
+  "zh_oneliner": "Meta 的 Muse 新增了代打电话的功能，可以替用户处理预约、查询等电话事务。",
+  "en_oneliner": "Meta's Muse can now make phone calls on users' behalf, handling bookings, inquiries, and other phone chores."
+ },
+ "https://news.google.com/rss/articles/CBMiigFBVV95cUxPUUd4ZFhyaHpOMU9hSUhzbUxqMlk4QUtCN1d0Q3VaOTd4RmhPNnRQNTVvcGZySklvS3dPMFVERmpIMklrY1lUc25DM0NPRXVubGlYRlljOHktaGY5X0Nqb0FGMnV5dVN4WG5aRmtOOTF5QmZjWnhrTUFZWjNZdndpaFk5cUNpLWlLcFE?oc=5": {
+  "zh_title": "Loblaw 顾客现在可以用 Muse 购买杂货了",
+  "zh_oneliner": "Loblaw 顾客现已可以直接通过 Muse AI 助手下单买菜。",
+  "en_oneliner": "Loblaw customers can now order groceries directly through the Muse AI assistant."
+ },
+ "https://zenn.dev/kirbykaito/articles/65975ea1110b5d": {
+  "zh_title": "用 AI 智能体 Muse 当个人开发搭档，搭建并运营停车场数据库",
+  "zh_oneliner": "一位日本开发者分享了他如何用 Muse 搭建并运营一个收录 1673 条停车场信息的数据库。",
+  "en_oneliner": "A Japanese developer shares how he used Muse to build and maintain a database of 1,673 parking lots.",
+  "en_title": "Using the Muse AI Agent as a Solo-Dev Partner to Build and Run a Parking Lot Database"
  }
 }
