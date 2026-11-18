@@ -3452,5 +3452,11 @@
   "zh_title": "Meta 的 Muse AI 助手登陆 Wear OS 与 Apple Watch",
   "zh_oneliner": "Muse 现已上架 Wear OS 和 Apple Watch，抬起手腕就能随时唤出这位 AI 助手。",
   "en_oneliner": "Muse is now available on Wear OS and Apple Watch, so the AI assistant is just a wrist raise away."
+ },
+ "https://mitaimon.com/%E8%87%AA%E5%88%86%E3%81%AE%E3%83%AD%E3%83%BC%E3%82%AB%E3%83%ABx%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88-%E3%83%84%E3%82%A4%E3%83%BC%E3%83%88-%E5%88%86%E6%9E%90%E3%82%92muse%E3%81%AE%E3%82%B9%E3%83%9A%E3%83%BC%E3%82%B9%E3%81%A7%E4%BD%9C%E3%82%8B%E3%81%AB%E3%81%AFgoogle%E3%83%89%E3%83%A9%E3%82%A4%E3%83%96%E3%81%8C%E5%BF%85%E9%A0%88%E3%81%A7%E3%81%97%E3%81%9F-fac25e7a1e27?source=rss------muse-5": {
+  "zh_title": "在 Muse 空间里分析自己的本地 X 账号（推文），Google Drive 是必不可少的",
+  "zh_oneliner": "作者尝试在 Muse 空间里搭建本地 X 账号的推文分析工具，实践下来发现接入 Google Drive 是绕不开的一步。",
+  "en_oneliner": "The author tried building a local X-account tweet analysis tool in a Muse Space and found connecting Google Drive to be an unavoidable step.",
+  "en_title": "To Build an Analysis of My Local X Account (Tweets) in a Muse Space, Google Drive Was Essential"
  }
 }
