@@ -3702,5 +3702,33 @@
   "zh_oneliner": "瑞银下调 Meta 目标价至 815 美元，并估计 Muse 能带来 600 亿至 1000 亿美元的增量收入。",
   "en_oneliner": "UBS lowered Meta's price target to $815 and estimated Muse could bring $60-100 billion in incremental revenue.",
   "en_title": "UBS Cuts Meta Price Target to $815, Estimates Muse Will Bring $60-100 Billion in Incremental Revenue"
+ },
+ "https://news.google.com/rss/articles/CBMiogFBVV95cUxNbU1BaFpwOFNfX2FWZFFLb3h3WEpmX1JucVUyT0t0SUlZbzlCQjBBZ0c3M1dwb0hSU0lKVE85U1V4UmRrVE1oUUR6eWcyd3dRRmJjbnRyekwyYXh2MkVfNTcyTlJoWVczaTh1allJdl9yNVY5eUtZVTVyT3ZlaFJfXzdPM2pFUFdWUU1IRUs1ZzBtRDhhblpaeHh4cUd5aUxLSHc?oc=5": {
+  "zh_title": "Meta AI 智能体 Muse 因主动发消息和访问应用权限面临隐私审查",
+  "zh_oneliner": "Muse 被曝会在未经提示的情况下发消息、访问应用，隐私问题引发质疑。",
+  "en_oneliner": "Muse is reported to send messages unprompted and access apps, raising privacy concerns."
+ },
+ "https://news.google.com/rss/articles/CBMiWkFVX3lxTE14eDBmSmYyX214OVJ0ZGdMaXl3ZDBkM09Jd01BR09aVUhGTEh1RUFZbjNxYXNidzNZcXZ5c3AtbW14ZG5xSFgydGlaazZSd3BUYVViOFFHNGFEdw?oc=5": {
+  "zh_title": "Meta人工智能助手Muse被曝读取Signal私信、编造交易信息，员工担忧隐私泄露",
+  "zh_oneliner": "据报道，Muse 会读取 Signal 私信并编造交易信息，内部员工对隐私泄露表示担忧。",
+  "en_oneliner": "Muse is reported to read Signal messages and fabricate trading information, leaving employees worried about privacy leaks.",
+  "en_title": "Meta AI Assistant Muse Reportedly Reads Signal Messages and Fabricates Trading Information, Raising Employee Privacy Concerns"
+ },
+ "https://zenn.dev/mmmot/articles/83a7275e9e2de8": {
+  "zh_title": "Muse×Grok Bot 使用指南——从基础到作者的实际运用全公开",
+  "zh_oneliner": "作者公开自己用 Muse×Grok Bot 的完整实践，从基础用法到真实工作流一次讲清。",
+  "en_oneliner": "The author shares their complete hands-on practice with Muse×Grok Bot, from basics to real workflows.",
+  "en_title": "Muse×Grok Bot Guide: From Basics to the Author's Real-World Practice, Fully Revealed"
+ },
+ "https://zenn.dev/eternal/articles/64186326c60d19": {
+  "zh_title": "用台账管理 AI 智能体「能做的事」——Muse 与「精神与时间之屋」",
+  "zh_oneliner": "作者用一本台账管起 AI 智能体能做的事，把 Muse 的能力清单变得一目了然。",
+  "en_oneliner": "The author keeps a ledger of what AI agents can do, turning Muse's capabilities into a clear, at-a-glance list.",
+  "en_title": "Managing What AI Agents Can Do With a Ledger: Muse and the 'Hyperbolic Time Chamber'"
+ },
+ "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBGMzVhTkM2d1BjUzZGNWhjOHdreDdPbEUwaWtvY2hEbHUyaFdmMVdHRHFERlFvWkNzdzQ3eEFRTHN1aUhpampybE1PV2puU3VQQ192V2xubUt1ZHJsV0xscA?oc=5": {
+  "zh_title": "Loblaw 现在允许用户通过 Meta 的 Muse AI 购买杂货",
+  "zh_oneliner": "用户现在可以直接让 Meta 的 Muse AI 帮忙买杂货，Loblaw 已接入这项服务。",
+  "en_oneliner": "Users can now buy groceries through Meta's Muse AI, with Loblaw onboard."
  }
 }
