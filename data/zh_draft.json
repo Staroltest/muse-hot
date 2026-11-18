@@ -3670,5 +3670,37 @@
   "zh_title": "Meta 迎来 Loblaw，成为 Muse 首个加拿大零售合作伙伴",
   "zh_oneliner": "加拿大连锁超市 Loblaw 把商品目录接进 Muse，加拿大用户可以直接让它帮忙规划餐食、组购物篮并结账。",
   "en_oneliner": "Canadian supermarket chain Loblaw has connected its catalogue to Muse, letting Canadian users ask it to plan meals, build a basket, and check out."
+ },
+ "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQcVAxbkpwSmRreEJsaG95Tm84YVgyVFNOYXJKZTZBakQ4MTgxaEdiUkF4TWVlOWFXM1JPUG1zZzFhR0hCN1BmbjE3TzhYVExacU8yX19XNklxZkU4am9kMHFYYVFJdVh4ZmNRU2k3S0ZtRGQ1VnMwcDBxanNpV1NUZnNRaEdLejNyTjRjNG9wVEtLT1NBQVBKeExVM3Q2bzNWQmpHb2I2cC11amNGX05fejk1SDhuemNVcVljY1YxUmJqcjkwMDl3SjZWeFFlVG1TWGpHM0NrRE5Cc21JRDFpZFQyYVN6OEI3ZldPTndwVThrRElZ?oc=5": {
+  "zh_title": "内部测试中，Meta 的 Muse 智能体混淆消息，还拉入了其他应用的意外聊天",
+  "zh_oneliner": "员工测试发现，Muse 智能体会把消息张冠李戴，甚至把其他应用里的聊天也扯了进来。",
+  "en_oneliner": "In employee testing, Muse agents mixed up messages and even pulled in chats from other apps."
+ },
+ "https://news.google.com/rss/articles/CBMigwFBVV95cUxOWUIzeWtjVFhKMmx2eXRsUm1iZzBScVFCYzRlYVNEdzNsam5NakprTXZQREFXMWk0TXRiQWxTY3hPSXJ2eFd4UTA0NHpnRGd3Q25hd2VMelNkb29WZTZMZXhGNXZyc3FBakFNME9VUklCY21PRmNPdG1DT1dmMm4yNWFPWQ?oc=5": {
+  "zh_title": "Meta AI 智能体 Muse 因访问私人消息遭到隐私反弹",
+  "zh_oneliner": "Muse 访问私人消息的做法引发隐私争议，用户开始担心它到底能看到多少内容。",
+  "en_oneliner": "Muse's access to private messages sparked a privacy backlash, leaving users wondering just how much it can see."
+ },
+ "https://news.google.com/rss/articles/CBMingFBVV95cUxPQWs3ZWUzVlpaTzBTTko5Ukh2U2RSYkg0U3F0UE96bmprQmZTWElqZDlsYlAwWEIzVmZRakNFUUNkM2VUX0g2WXliU3dXaExmRWJ6bWxMV056cnhaNV9zcFRFdy1DZVFKdnMyeVpfbkY0THlZNmZQd2Zndmpkd0pqS0dwcVQxbEFnWXgtNWlybUdpeG85Z3JGeUlnOGp1UQ?oc=5": {
+  "zh_title": "Meta 的 Muse AI 在没有 Signal 连接器的情况下调取了加密 Signal 聊天记录",
+  "zh_oneliner": "Muse 被指在未接入 Signal 的情况下也能读取加密 Signal 聊天，隐私边界再次受到质疑。",
+  "en_oneliner": "Muse was reported to read encrypted Signal chats without a Signal connector, raising fresh questions about its privacy boundaries."
+ },
+ "https://news.google.com/rss/articles/CBMijAFBVV95cUxQb0J5SHBKalJ5OFZKZG5UWHNCUHlHV0pOSFRpYllFb2RpM1ZLMkk0ZUhHVHViQVd0ODNoTUh0NjFtQzNZSDlOaUE5eFFrY3RpTmh4ak1zbF9wRHE4cEFhajBrYkZ3OE9meFBwRnU0ejA2a1FhVm1CNkpYVEt1V2tRZlQxa3NKdC1sUEJhSw?oc=5": {
+  "zh_title": "美股讯号 | 瑞银下调 Meta 目标价至 815 美元，预计 Muse 增量收入达 600 亿至 1000 亿美元",
+  "zh_oneliner": "瑞银把 Meta 目标价下调至 815 美元，同时预计 Muse 未来能带来 600 亿至 1000 亿美元的增量收入。",
+  "en_oneliner": "UBS cut Meta's price target to $815 while projecting that Muse could add $60-100 billion in incremental revenue.",
+  "en_title": "UBS Cuts Meta Price Target to $815, Projects Muse Incremental Revenue of $60-100 Billion"
+ },
+ "https://news.google.com/rss/articles/CBMic0FVX3lxTE1OSkZIMW1RUURzeTh0eGU3ZldUa0JicGdtOEJkNXhfSWxPNUNEa3hoc2pHM0otYU5TVnVWeUZWVkJ4VEQ2dWljVUluQ2N5bXROdWFGMWZFMEZrZTFfRnlKTUNHOTdpYlB3S2xvejNvUEpDNzQ?oc=5": {
+  "zh_title": "Meta 推出 Muse Ember 模型：以低得多的价格对标 GPT-6 Luna 与 Claude Haiku 5.5",
+  "zh_oneliner": "Meta 推出 Muse Ember 模型，定位与 GPT-6 Luna、Claude Haiku 5.5 同级，但价格低得多。",
+  "en_oneliner": "Meta launched the Muse Ember model, positioned against GPT-6 Luna and Claude Haiku 5.5 at a much lower price."
+ },
+ "https://news.google.com/rss/articles/CBMiYEFVX3lxTE0tRlU3cm4zUDF0UGU0amprSFBfdmdjeUVnTU9Nckc3eWNscGJVczhtMmRJZ1Q0UU5ON24wYllrSUxMSHF4ellKM2RUcDhpazUxaWU3ak5uMjZWMEhkSFViRA?oc=5": {
+  "zh_title": "瑞银下调 Meta 目标价至 815 美元，估 Muse 带来 600 亿至 1000 亿美元增量收入",
+  "zh_oneliner": "瑞银下调 Meta 目标价至 815 美元，并估计 Muse 能带来 600 亿至 1000 亿美元的增量收入。",
+  "en_oneliner": "UBS lowered Meta's price target to $815 and estimated Muse could bring $60-100 billion in incremental revenue.",
+  "en_title": "UBS Cuts Meta Price Target to $815, Estimates Muse Will Bring $60-100 Billion in Incremental Revenue"
  }
 }
