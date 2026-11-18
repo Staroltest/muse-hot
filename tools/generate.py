@@ -2501,15 +2501,81 @@ def group_similar(items):
     return groups
 
 
+_TOPIC_STOPWORDS = set("""muse meta ai agent assistant app the a an and or of to in on for with by at from
+over after before about into its it is are was were be been this that these those as new
+first can could will would should may might also more most other another per via vs
+says said shows show faces facing amid report reports news anyone else have has get got
+make made take using used work works thing things way days day week today just still back even
+really much many very well one two three also screen add adds added fix fixed issue""".split())
+
+
+def _strip_outlet(title):
+    """去掉标题末尾的 outlet 后缀（Google 新闻标题常带 " - Ars Technica"；
+    outlet 名会污染同事件判定，如两家不同报道同为 "- Crypto Briefing"）。"""
+    t = (title or "").strip()
+    for sep in (" ——《", " —— ", " - ", " | ", " — "):
+        if sep in t:
+            head, tail = t.rsplit(sep, 1)
+            if len(head) >= 15 and len(tail) <= 25:
+                t = head.strip()
+                break
+    return t
+
+
+def _stem_word(w):
+    if len(w) > 5 and w.endswith("ing"):
+        w = w[:-3]
+    if len(w) > 4 and w.endswith("ers"):
+        w = w[:-3]
+    elif len(w) > 3 and w.endswith("s"):
+        w = w[:-1]
+    return w
+
+
+def _sig_tokens(text):
+    """标题显著词：拉丁词（去停用词、轻量词干）+ 中文双字（只从纯 CJK 片段取，
+    避免 "meta/muse" 本身拼出 me/et/ta 等垃圾双字）。"""
+    t = _strip_outlet(text or "").lower()
+    lat, cjk = set(), set()
+    for w in re.findall(r"[a-z0-9]+", t):
+        if len(w) < 4 or w in _TOPIC_STOPWORDS:
+            continue
+        lat.add(_stem_word(w))
+    for run in re.findall(r"[\u4e00-\u9fff]+", t):
+        for i in range(len(run) - 1):
+            cjk.add(run[i:i + 2])
+    return lat, cjk
+
+
 def _same_topic(a, b):
-    """跨来源同事件判定（2026-11-11 把关新增）：归一化标题一短一长、
-    短者是长者的前缀且至少 10 字 -> 同一事件（如两家媒体同报 UE 5.9 预览）。
+    """跨来源同事件判定（2026-11-11 把关新增；2026-11-19 加强）：
+    (1) 原规则：归一化标题一短一长、短者是长者的前缀且至少 10 字；
+    (2) 新增：标题显著词重叠——拉丁词共享 >=2 个且至少一个 >=6 字，
+        或中文双字共享 >=6 个（如两家媒体同报路透社隐私调查，
+        标题措辞不同但共享 privacy/signal/message 等词）。
     只用于精选/热点/日报的取前 N 去重，时间线不受影响。"""
-    na = _norm_title(a.get("zh_title") or a["title"])
-    nb = _norm_title(b.get("zh_title") or b["title"])
-    if len(na) < 10 or len(nb) < 10:
-        return False
-    return na.startswith(nb) or nb.startswith(na)
+    ta = _strip_outlet(a.get("zh_title") or a["title"])
+    tb = _strip_outlet(b.get("zh_title") or b["title"])
+    na = _norm_title(ta)
+    nb = _norm_title(tb)
+    if len(na) >= 10 and len(nb) >= 10 and (na.startswith(nb) or nb.startswith(na)):
+        return True
+    la, ca = _sig_tokens((a.get("title") or "") + " " + (a.get("zh_title") or ""))
+    lb, cb = _sig_tokens((b.get("title") or "") + " " + (b.get("zh_title") or ""))
+    shared_lat = la & lb
+    if len(shared_lat) >= 2 and any(len(w) >= 6 for w in shared_lat):
+        return True
+    if len(ca & cb) >= 6:
+        return True
+    return False
+
+
+def _reject_hit(kw, text):
+    """排除词命中：词边界匹配（可带复数 s），如 museum 拦住 "Meta Museum"，
+    amusement 拦住 "Amusement Park"，rock band 拦住乐队 Muse；
+    但不拦 MuseAgent / musegadget / Museverse 等合法复合词。"""
+    pat = r"(?<![a-z0-9])" + re.escape(kw.lower()) + r"s?(?![a-z0-9])"
+    return re.search(pat, (text or "").lower()) is not None
 
 
 def dedup_topics(items):
@@ -3830,6 +3896,7 @@ def main():
 
     src_by_id = {s["id"]: s for s in sources}
     required_keywords = [k.lower() for k in cfg.get("required_keywords", [])]
+    reject_keywords = [k.lower() for k in cfg.get("reject_keywords", [])]
     exclude_links = {norm_link(u) for u in cfg.get("exclude_links", [])}
 
     def enrich_store_item(it):
@@ -3885,6 +3952,11 @@ def main():
             new_items = [it for it in new_items
                          if any(kw in (it["title"] + " " + (it.get("summary") or "")).lower()
                                 for kw in required_keywords)]
+        if reject_keywords:
+            # 排除词：标题/摘要命中即整条丢弃（museum/amusement/rock band 等同名误命中）
+            new_items = [it for it in new_items
+                         if not any(_reject_hit(kw, it["title"] + " " + (it.get("summary") or ""))
+                                    for kw in reject_keywords)]
         if exclude_links:
             new_items = [it for it in new_items if norm_link(it["link"]) not in exclude_links]
         fetched += len(new_items)
