@@ -3088,5 +3088,25 @@
   "zh_title": "Meta 在澳大利亚推出 Muse 个人 AI 助手，接入 Canva、REA、Kogan、MECCA 和 Ticketek",
   "zh_oneliner": "Meta 把 Muse 个人 AI 助手带到澳大利亚，并接入 Canva、REA、Kogan、MECCA 与 Ticketek 等本地服务。",
   "en_oneliner": "Meta brings its Muse personal AI assistant to Australia, connecting it with local services including Canva, REA, Kogan, MECCA and Ticketek."
+ },
+ "https://news.google.com/rss/articles/CBMibkFVX3lxTE96SDZNb3p1YUxmUjNuRzdURlU0Q210ODQ0MWFVVzhkQTNrd0U1RU90QW9wTVFLX3M1OHF1eWpES3hxN2VqMVdWc0sxQmxEZy1mYWRnanNUTTZpOVZZU2F2YzZoOHRrd0llQnRINGt3?oc=5": {
+  "zh_title": "澳大利亚品牌纷纷接入 Meta Muse",
+  "zh_oneliner": "澳大利亚多家品牌开始接入 Meta 的 Muse，用 AI 智能体做营销和客服。",
+  "en_oneliner": "Australian brands are signing up for Meta's Muse to use AI agents for marketing and customer service."
+ },
+ "https://news.google.com/rss/articles/CBMihAFBVV95cUxOWkEzcFloSjQ2YWdDakR4b3hfa2FUUElCNDIyd3F0dXdtR0txWTR1RGd6RDNUVTNhUmJzTUdXNVg4UlllMlM2M016SnhqOUJyLXhqb3B0eHVib0xYR3k3Vm1kNjVmOTNuTzdRVzdfQzIwalMwT3AyTHBjeXp0akpSaE1oc3I?oc=5": {
+  "zh_title": "Meta Muse 在澳大利亚上线，接入本地应用",
+  "zh_oneliner": "Meta 的 Muse 正式登陆澳大利亚，并接入当地应用，让用户直接在常用服务里使用 AI 智能体。",
+  "en_oneliner": "Meta's Muse has launched in Australia with local app connections, letting users use AI agents inside the services they already use."
+ },
+ "https://github.com/facebookincubator/muse-gadget-sdk/commit/cffce4c0b883a3bda024e28b5bb6576e9afee102": {
+  "zh_title": "为 Linux 小工具添加可选命令防护示例（#274）",
+  "zh_oneliner": "Muse 的 Linux 小工具新增一个可选命令防护示例，展示如何给命令加一道确认关卡。",
+  "en_oneliner": "Muse's Linux gadget gained an opt-in command guard example showing how to add a confirmation step before commands run."
+ },
+ "https://github.com/facebookincubator/muse-gadget-sdk/commit/ae42eb900456c638db6e6bc5c3524a1334af0746": {
+  "zh_title": "ESP32：显示并回答 Muse 的文字选项提示（#406）",
+  "zh_oneliner": "Muse 的 ESP32 小工具现在能显示文字选项提示并直接作答，硬件上的交互更完整了。",
+  "en_oneliner": "Muse's ESP32 gadget can now display and answer text-option prompts, making on-device interaction more complete."
  }
 }
