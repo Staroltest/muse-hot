@@ -3480,5 +3480,23 @@
   "zh_title": "Meta 在澳大利亚推出 Muse AI 智能体，携手本地购物与房产合作伙伴",
   "zh_oneliner": "Meta 把 Muse AI 智能体带到澳大利亚，联合当地购物和房产平台，让用户可以直接在对话里完成购物与找房。",
   "en_oneliner": "Meta is bringing the Muse AI agent to Australia, teaming up with local shopping and property platforms so users can shop and search for homes right inside a conversation."
+ },
+ "https://zenn.dev/ocha50107/articles/ea29b7ed57867b": {
+  "zh_title": "Muse Code 的倍率：“3 倍”与“5 倍”都是官方数值",
+  "zh_oneliner": "文章考证了 Muse Code 宣传中“3 倍”与“5 倍”两种倍率的出处，结论是两者都有官方依据。",
+  "en_oneliner": "The article traces the origins of the \"3x\" and \"5x\" multipliers quoted for Muse Code, concluding that both figures have official backing.",
+  "en_title": "Both the \"3x\" and \"5x\" Multipliers for Muse Code Were Official Figures"
+ },
+ "https://zenn.dev/fujihide/articles/cf3eb84525346c": {
+  "zh_title": "把 Stack-chan 做成 Muse 小组件，用 Google TTS 让它开口说话",
+  "zh_oneliner": "作者把桌面小机器人 Stack-chan 做成 Muse 小组件，并接入 Google 文字转语音，让它能开口说话。",
+  "en_oneliner": "The author turns the desktop robot Stack-chan into a Muse gadget and hooks it up to Google text-to-speech so it can speak aloud.",
+  "en_title": "Turning Stack-chan into a Muse Gadget That Talks with Google TTS"
+ },
+ "https://qiita.com/noguchi_offgrid/items/9534a53cc87f2b656dfd": {
+  "zh_title": "让 Muse 做了个“能和 Muse 互动”的应用——试用新功能“空间”",
+  "zh_oneliner": "作者请 Muse 帮忙做了一个能与 Muse 互动的应用，顺带试用了 Muse 的新功能“空间”。",
+  "en_oneliner": "The author asks Muse to build an app for interacting with Muse, and tries out Muse's new Spaces feature along the way.",
+  "en_title": "I Had Muse Build an App for Interacting with Muse — Trying the New Spaces Feature"
  }
 }
