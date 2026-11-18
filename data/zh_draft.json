@@ -3083,5 +3083,10 @@
   "zh_title": "Linux：服务以 PID 1 运行时回收被收养的孤儿进程（#420）",
   "zh_oneliner": "这次提交让 Muse 服务在 Linux 上以 PID 1 运行时能正确回收被收养的孤儿进程，避免僵尸进程堆积。",
   "en_oneliner": "This commit lets the Muse service running as PID 1 on Linux properly reap adopted orphan processes, preventing zombie processes from piling up."
+ },
+ "https://news.google.com/rss/articles/CBMitAFBVV95cUxNNjN1ay1VODEyUU9nMzdQajdpS3J3V014MW9wWU4xX3dQYTE3Qm03Znp0VmZGOWctdy1HZzRlN3QydmYzLXQyT3dYZDFEYkxualB3aXd5aV9aZ2M5Z3kwdmZtUXpmWjNHSHp2T0VnZnplUWFlSVh1U1dsSDZneWJfWnprQWxldkpwbHpwMG56NEZQcjd6VDl0ZXIxZFh1ZmNlcjZsZC1qTTl3ckhSblVtbUVsMzU?oc=5": {
+  "zh_title": "Meta 在澳大利亚推出 Muse 个人 AI 助手，接入 Canva、REA、Kogan、MECCA 和 Ticketek",
+  "zh_oneliner": "Meta 把 Muse 个人 AI 助手带到澳大利亚，并接入 Canva、REA、Kogan、MECCA 与 Ticketek 等本地服务。",
+  "en_oneliner": "Meta brings its Muse personal AI assistant to Australia, connecting it with local services including Canva, REA, Kogan, MECCA and Ticketek."
  }
 }
