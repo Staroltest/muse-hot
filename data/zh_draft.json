@@ -3421,5 +3421,20 @@
   "zh_title": "据报道 Meta 将 Muse AI 智能体引入澳大利亚，覆盖手机、网页和 Mac",
   "zh_oneliner": "据报道，Meta 的 Muse AI 智能体登陆澳大利亚，手机、网页和 Mac 都能用上。",
   "en_oneliner": "Meta's Muse AI agent is reportedly coming to Australia, available on mobile, web, and Mac."
+ },
+ "https://news.google.com/rss/articles/CBMieEFVX3lxTE9JdVV4U2pvSHY0ek9fT0hieVhIYkRzQWUzVm5FWEhTcmE1RlQtd29RanMybUlXWTFBcnlSMmdOLURwUlpfRFhBRkVXajJxT3RUam5heERsMW1BMlBlQ2xOU09LNmZBSFpicHp2QzdfR3ltUGpabDIyTtIBfkFVX3lxTE1RcHJVTWFUUGlSNExVZzBhdm5NS3BrN0R3V0pnYXY4YzQzWHY3WGljNDB3UW9ubnVUS3ZpcDhTa2VCOHVQNkhBc3EwanQxWUpkRWxQQ0NxYTVJNWhtNTBkekJSdUU1eng0T3RrWW1aWnVjcE5PLUVheEM5cjhPZw?oc=5": {
+  "zh_title": "Muse 现已登陆澳大利亚：全球首款面向所有人的个人 AI 智能体",
+  "zh_oneliner": "Muse 正式在澳大利亚上线，Meta 称其为全球首款为每个人打造的个人 AI 智能体。",
+  "en_oneliner": "Muse is now available in Australia, billed by Meta as the world's first personal AI agent built for everyone."
+ },
+ "https://news.google.com/rss/articles/CBMixgFBVV95cUxQNzg1REp1LUMyZ2Njb0RyaWx2cHJSVU8taDFsUHBtcjlhUDlsT25MYmY4NGxrRElZbUNrNFJGRDBiSjlGOFdHbXhseXNJYTk4eFpvMXhGUTh1QXVDQmdFem43dWZId01nNzRndVRGU0c1ckJaam03ZG0yckJMNjYySUdDTGhvSFJSMmRoaDliRjFXcTNIVmduQ2JoVndfREtsYXlBUldNeE1PQmRSLVRqejhNWFYzUWVpMXBnRkFlNU9nZ1ljLVE?oc=5": {
+  "zh_title": "英伟达与 Meta 扩大合作，共推 Muse 及 Muse 系列模型",
+  "zh_oneliner": "英伟达与 Meta 宣布深化合作，共同推进 Muse 及其系列模型的发展，业务增长势头强劲。",
+  "en_oneliner": "NVIDIA and Meta announced an expanded collaboration to advance Muse and the Muse family of models amid robust growth."
+ },
+ "https://github.com/facebookincubator/muse-gadget-sdk/commit/8ca8cf900c6bfaacec6db462a2f657273d30979e": {
+  "zh_title": "ESP32：收到回复时闪烁屏幕并发出提示",
+  "zh_oneliner": "Muse 小工具 SDK 新增 ESP32 功能，收到回复时屏幕闪烁并发出提示音。",
+  "en_oneliner": "The Muse gadget SDK adds an ESP32 feature that flashes the screen and pings when a reply arrives."
  }
 }
