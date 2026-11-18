@@ -3900,5 +3900,20 @@
   "zh_title": "Muse 会读取 Signal 消息吗？路透社的发现，以及需要检查的 4 项设置",
   "zh_oneliner": "路透社的调查涉及 Muse 是否会读取 Signal 消息，本视频介绍了值得检查的 4 项设置，帮你确认自己的对话隐私是否得到保护。",
   "en_oneliner": "Reuters' investigation looks into whether Muse reads Signal messages, and this video covers four settings worth checking to make sure your conversations stay private."
+ },
+ "https://news.google.com/rss/articles/CBMitAFBVV95cUxONlU5b1kwVXB4ZVN2SExyT0hLRWNTdGRKWDY0eXo1aGU3T2liS2lKZzNoNzk4dnI0RDZpNWdmcTBfZkVXNFpjbjlyMkZnV3lLeEVSbnBOUWt5YzNVU29GU0xMSEpyRzlIb1ZFUU5hNmlCOUhxUi14eGpGRlJ3aG9WaWRfSTNCQUphYm5PZFozQU9CaWdVMGtyUXM0RG12cWtQTk1CQmlQYVdoWUpzZ3N5dV9GZ2Y?oc=5": {
+  "zh_title": "路透测试发现 Meta 的 Muse 通过设备权限读取 Signal 消息",
+  "zh_oneliner": "路透社的测试显示，Muse 借助设备权限读取了 Signal 消息，让 AI 助手能否触及私人通讯成为新的隐私焦点。",
+  "en_oneliner": "Reuters testing found that Muse read Signal messages through device permissions, putting whether AI assistants can reach private chats in the privacy spotlight."
+ },
+ "https://news.google.com/rss/articles/CBMiakFVX3lxTE53ZHpKQmdsbmZIVEJlbmFCUGhuMlAwaWlZLXp4dTktOGthTHcxaVcyR1Q1QUJ3d2Ywa2ZyNU9WTlE0Z0pXLWF2UU1Ha0JyUzFIYXg1RVdMWkxtMDRVSWRXbkZXb1pLN3BiYmc?oc=5": {
+  "zh_title": "Meta 发布低成本托管模型 Muse Ember 1.0：研究者需要知道的事",
+  "zh_oneliner": "Meta 正式发布低成本托管模型 Muse Ember 1.0，本文为研究者梳理了这一新模型值得了解的关键信息。",
+  "en_oneliner": "Meta has officially released Muse Ember 1.0, a low-cost hosted model, and this article lays out the key details researchers should know."
+ },
+ "https://www.youtube.com/shorts/l3itZQq-6tg": {
+  "zh_title": "@emmyxtech 想知道你会让 Muse 帮你做什么？",
+  "zh_oneliner": "Muse 官方频道的一条短视频向观众提问：你会让 Muse 帮你做些什么？",
+  "en_oneliner": "In a short video from Muse's official channel, viewers are asked: what would you have Muse do for you?"
  }
 }
