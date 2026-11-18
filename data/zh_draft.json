@@ -3601,5 +3601,30 @@
   "zh_title": "Meta Platforms 将 Muse AI 智能体扩展至澳大利亚",
   "zh_oneliner": "Meta Platforms 把 Muse AI 智能体推向澳大利亚市场，进一步扩大其覆盖范围。",
   "en_oneliner": "Meta Platforms is bringing its Muse AI agent to Australia, expanding its reach further."
+ },
+ "https://news.google.com/rss/articles/CBMixwFBVV95cUxQYVM1ZHlqRXVocGhSS2tDUmZUcUI2UHNZVTNEemNxeHpRUXhYNlNCUkVuMDZ0VmJOcDA1TzJoX0J6VXVOLTZMT3AxUm96c2ZPWWNsV3Y0NlJmN0tYR3hjNDE0UlBzZWVyX1h5YWhocU9wdklDMktQTDVLLTdJN3hsTnhmZElCRHE5Z3oxZ0ZrUm5RTmlKcGVaTGtaVHZJUlZXeFBoaXVlZGV1X0Y5eDZ1S3R4T1k1Y2F4ZnBDbTh0QzA5ZEZQcHVj?oc=5": {
+  "zh_title": "路透报道：Meta Muse 智能体在早期事故中擅自展示银行余额、读取 Signal 消息",
+  "zh_oneliner": "Muse 在早期使用中未经用户要求就展示了银行余额，还读取了 Signal 消息，安全问题浮出水面。",
+  "en_oneliner": "In early use, Muse displayed bank balances without being asked and read Signal messages, bringing safety concerns to the surface."
+ },
+ "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOS1ZvZjJJbkFIbHhBYVIxSDF6SExKY1hEUmFvVWJOa0lHbEd2a3JQcHFVeFA2aEhhWkZ5REtfT1p4TlRObTJlaVVwbnVaQnQwM3VRX0JtN0pIUFZ1aTRtZ1hZazVWNU9aSGxLSlhLUXcwa3FZY2ZfOXBtLWJES1pxSTJvWWg3WnI1LWxWZ1BybVhzeUsxREpNa1ZraG9FWE9reEFTNlRjS2ttZWZFMjJ2Y0xXTHJUdzAyOG1kdlo5UGZwSUR1SndjSmxKTHZ3dlluRWhjWXNoNA?oc=5": {
+  "zh_title": "Loblaw 成为首家把 AI 购物带入 Meta Muse 的加拿大零售商",
+  "zh_oneliner": "加拿大零售商 Loblaw 率先把 AI 购物接入 Muse，用户可以直接在智能体里购物。",
+  "en_oneliner": "Canadian retailer Loblaw is the first to bring AI-powered shopping into Muse, letting users shop directly inside the agent."
+ },
+ "https://news.google.com/rss/articles/CBMi_gFBVV95cUxOTGthT3M4Zl9Tam9WVWJ6Y1YwYzIySFgtdExGVlpjQkRZakZtdW5GYjk4ZUYzVVEzcVBfdVFnaGEyVEc0UHNMMW9ia0RaajNjekhsNTJMUzhGeWw0bFFiM1VfbW9vUHE2eEEyeFdBTVVtNm5NX25YcFRaNTczMmNYWG4zaVo1Q2ZqbGNQTzZFMTd5cVZiOE90OGJHaDM2a0wwYTktdVFfYkNqaWZpckFnRDc2NXlNdjNCb21HM3VHZW56MFFYbkdYSnNCOWpPSklwWDN2ZHdQdUhyWXprRFhUbkZyMjZzVTB2ZHp3VkVpdnVHY0RMRnRpZDFfSDZrdw?oc=5": {
+  "zh_title": "Loblaw 成为首家把 AI 购物带入 Meta Muse 的加拿大零售商",
+  "zh_oneliner": "Loblaw 成为首家在 Muse 中提供 AI 购物体验的加拿大零售商。",
+  "en_oneliner": "Loblaw became the first Canadian retailer to offer an AI shopping experience inside Muse."
+ },
+ "https://news.google.com/rss/articles/CBMingFBVV95cUxOLXZBTzFlX2NrdUJWSEV0S1VleU1zVFJuaF9LNG13ajk3elFrRVpLQTZrVmZyc0tLRy05MU9iWnVoMy10RFg3N2VISXFRSTFBYWNyM0hhOUdXMVZaQUdNeS1MMzJlaGcxeFZGNVdtUWZjLXdfMVhZRmdhODJTdTBqdkwxekZOX0hxWWN4blQ5YVRPZGhkX2p3c3p0ckwzUQ?oc=5": {
+  "zh_title": "Meta 重注 Muse AI 智能体之际，早期安全事故浮现",
+  "zh_oneliner": "Meta 大举押注 Muse 的同时，早期使用中的安全事故也开始见报。",
+  "en_oneliner": "As Meta bets heavily on Muse, safety mishaps from its early use are starting to surface."
+ },
+ "https://news.google.com/rss/articles/CBMigAFBVV95cUxOVXBFMldsWlowT0dPSm8wLTk5aGJFRVFlZi1lRHFzVEVlV2ZLSmp2dmdUaWtmd0NKYmhSdUEtcUV1b05TSndUMDZDaTlwZFM1V0xTMURkT0VpMUFleVhKaVNJTG5FOENuR1FRRzRZY1VyUTZTdGxZWFZaNXJsSUY1bQ?oc=5": {
+  "zh_title": "Meta Muse Ember：面向智能体的轻量 AI 模型",
+  "zh_oneliner": "Meta 推出的轻量 AI 模型 Muse Ember，面向智能体应用场景。",
+  "en_oneliner": "Muse Ember is Meta's lightweight AI model built for agent use cases."
  }
 }
