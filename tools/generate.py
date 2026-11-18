@@ -4194,13 +4194,17 @@ def main():
             if _fn.endswith(".html"):
                 _add_sitemap("items/" + _fn, _pub_dates.get(_fn[:-5], today_iso))
     # 英文镜像：与中文条目一一对应（feed.xml 与 geo-audit.html 没有英文版；
-    # 详情页只镜像本轮 live 里的条目，过期条目的英文页可能不存在）
+    # 详情页镜像本轮 live 里的条目，以及磁盘上已有的过期条目英文页，
+    # 否则 geo-audit 会因磁盘有页而 sitemap 无对应 URL 报错）
     live_ids = {it["id"] for it in live}
     for _p, _lm in list(sitemap_entries.items()):
         if _p in ("feed.xml", "geo-audit.html"):
             continue
-        if _p.startswith("items/") and _p[len("items/"):-len(".html")] not in live_ids:
-            continue
+        if _p.startswith("items/"):
+            _iid = _p[len("items/"):-len(".html")]
+            if _iid not in live_ids and not os.path.exists(
+                    os.path.join(root, "en", "items", _iid + ".html")):
+                continue
         _add_sitemap(("en/" + _p) if _p else "en/", _lm)
     sm = ["<?xml version=\"1.0\" encoding=\"UTF-8\"?>",
           "<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">"]
