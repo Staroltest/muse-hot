@@ -18,7 +18,7 @@
    "key": "sitemap",
    "label": "sitemap.xml 条数与漏页",
    "status": "fail",
-   "detail": "共 1484 条 URL，漏 3 页：https://staroltest.github.io/muse-hot/en/items/40211eca4941cb325b59c63f184c59c9df15e652.html、https://staroltest.github.io/muse-hot/en/items/b696fe7ef568774ff0ec9f111b5bf4ae45a14be9.html、https://staroltest.github.io/muse-hot/en/items/d90bf11846c5b0e963bfa8539869a67dc91cb176.html"
+   "detail": "共 1488 条 URL，漏 3 页：https://staroltest.github.io/muse-hot/en/items/40211eca4941cb325b59c63f184c59c9df15e652.html、https://staroltest.github.io/muse-hot/en/items/b696fe7ef568774ff0ec9f111b5bf4ae45a14be9.html、https://staroltest.github.io/muse-hot/en/items/d90bf11846c5b0e963bfa8539869a67dc91cb176.html"
   },
   {
    "key": "llms",

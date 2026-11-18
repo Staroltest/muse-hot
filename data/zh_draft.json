@@ -3626,5 +3626,16 @@
   "zh_title": "Meta Muse Ember：面向智能体的轻量 AI 模型",
   "zh_oneliner": "Meta 推出的轻量 AI 模型 Muse Ember，面向智能体应用场景。",
   "en_oneliner": "Muse Ember is Meta's lightweight AI model built for agent use cases."
+ },
+ "https://qiita.com/satouyoshiaki/items/6c13578f9dc71257f9b0": {
+  "zh_title": "Muse 虚拟机的出口 IP 改不了：Tailscale 出口节点和 VPN 都行不通，作者分享了真正可行的解决办法",
+  "zh_oneliner": "作者发现 Muse 虚拟机的出口 IP 无法更改，Tailscale 出口节点和 VPN 都走不通，于是记录了实际可行的替代方案。",
+  "en_oneliner": "The author found the Muse VM egress IP cannot be changed — neither a Tailscale exit node nor a VPN worked — and documents the workaround that actually works.",
+  "en_title": "The Muse VM egress IP cannot be changed: why neither a Tailscale exit node nor a VPN worked, and the solution that did"
+ },
+ "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNUjdwQUVGNFZyTVBJM3hpcWdiVVY4V3MtelRySTR1WEY4VUlQbFRvQWxwal8ySFZmWEFIaVBZNUdNZG1WWTEzV3ZMaXNIZXVxNUQ4Qm1uaHRmZjBJelR1M2MwSU1hZHg2N0NyRm94MmVDeFlWVmNvbGFMMHpNY1FpY21zWXRVSnMyMlJfZ0xjVjFRNVhhMHplRUpoVFpFM3RoZXRzWFBXdGEwX2ZUVmpZWDA0QVZqRnh1Rkh6cU42VG1zZGhlUWVwTXl5djZLT1pmbUxBQUsyOEs1Y0JULUFlZ1BkdG9hSTVRdVB30gHwAUFVX3lxTE1ieGtHSTVYejgwTVlPM3VmR1JYMXJ1dTFzSGthT0xmeVdXeHJ5SXRVNk15NWtNamRRUWdxRE1SUERRdmJoOC1IcjVQTVQtZThDcURIVjE2ZC1MNUxTdTl3WGk3bTQ3aWU3UEd2Uk4zRUtqaU5IRjdQenFLeFg5eEN4WHFJTHVlQzFWdEtiakY0UFBZUzFEZnRnM3lYd1E2QUpVOXh2MDFlQVQwd1ZKaFRCR2VXNEZCZGVqemJiWDE1LWxSdTlrczVtTnF6VHRydXZlQUdQaXlMNzBGbnpZMmY0Q1VPV1liMzk0WVh1bE44Yg?oc=5": {
+  "zh_title": "Loblaw 成为首家把 Meta Muse AI 购物带给加拿大消费者的零售商",
+  "zh_oneliner": "加拿大零售商 Loblaw 率先把 Meta Muse 的 AI 购物能力带给本地消费者，在实体零售场景里试水智能体购物。",
+  "en_oneliner": "Canadian retailer Loblaw is the first to bring Meta Muse AI-powered shopping to local consumers, trying agentic shopping in a brick-and-mortar retail setting."
  }
 }
