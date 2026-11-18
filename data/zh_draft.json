@@ -3514,5 +3514,16 @@
   "zh_title": "关键事实：Meta 被罚 8.05 亿欧元、瑞银给予买入评级，Muse AI 在澳大利亚上线",
   "zh_oneliner": "这则市场要点汇总提到 Muse AI 已在澳大利亚上线，同时还涉及 Meta 遭巨额罚款与瑞银的买入评级。",
   "en_oneliner": "This market roundup notes that Muse AI has launched in Australia, alongside Meta's hefty fine and a UBS buy rating."
+ },
+ "https://qiita.com/shizuoka_ngt/items/a925528c83d00f9ebf96": {
+  "zh_title": "【失败谈】自制 Muse 应用每次读 Drive 都弹出授权卡，于是改成了“不读取的设计”",
+  "zh_oneliner": "作者把自制 Muse 应用改成不直接读取 Drive，用设计绕开了每次操作都要手动确认授权的麻烦。",
+  "en_oneliner": "The author redesigned a homemade Muse app to avoid reading Drive directly, sidestepping the approval prompt on every operation.",
+  "en_title": "[Failure Story] My Homemade Muse App Showed an Approval Card Every Time It Read Drive, So I Switched to a Design That Doesn't Read It"
+ },
+ "https://news.google.com/rss/articles/CBMihwFBVV95cUxOdVZaZThnUjAxQWEyTTdUSjA0d1F1bmZNNUZvRDVjUmhoY3kwNkoxMnlaeHJFQU9fOVo3N2pFQWJ5LXZXSlpBUUVYNzRkWEt1NHJqSU9TaEtrRkZFczNGc3NjQXVxNldiZkZFTHBGcUl0UWxkUkJGWmpmVExZRUw3RFB3eUhqQjA?oc=5": {
+  "zh_title": "Meta 推出面向重复性 AI 工作负载的 Muse Ember",
+  "zh_oneliner": "Meta 发布 Muse Ember，把重复性 AI 工作负载作为主打场景。",
+  "en_oneliner": "Meta launched Muse Ember, targeting repetitive AI workloads as its main use case."
  }
 }
