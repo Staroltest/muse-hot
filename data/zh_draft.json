@@ -3458,5 +3458,11 @@
   "zh_oneliner": "作者尝试在 Muse 空间里搭建本地 X 账号的推文分析工具，实践下来发现接入 Google Drive 是绕不开的一步。",
   "en_oneliner": "The author tried building a local X-account tweet analysis tool in a Muse Space and found connecting Google Drive to be an unavoidable step.",
   "en_title": "To Build an Analysis of My Local X Account (Tweets) in a Muse Space, Google Drive Was Essential"
+ },
+ "https://zenn.dev/satofun/articles/e679732a3fc735": {
+  "zh_title": "Muse × PixAI API 实战指南：批量生成、LoRA 应用与漫画制作中的实现注意事项",
+  "zh_oneliner": "这篇实战指南介绍了用 Muse 调用 PixAI API 批量生成图片、应用 LoRA 并辅助漫画制作的做法，同时提醒 API 与网页版的能力并不完全相同，同一角色多次生成也难以保证构图与服装完全一致。",
+  "en_oneliner": "This hands-on guide shows how to use Muse with the PixAI API for batch image generation, LoRA application, and manga production assistance, while noting that the API and the web version do not offer exactly the same capabilities and that repeated generations of the same character rarely keep composition and outfits fully consistent.",
+  "en_title": "A Practical Guide to the Muse x PixAI API: Batch Generation, LoRA Application, and Implementation Lessons from Manga Production"
  }
 }
