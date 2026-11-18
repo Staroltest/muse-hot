@@ -3108,5 +3108,313 @@
   "zh_title": "ESP32：显示并回答 Muse 的文字选项提示（#406）",
   "zh_oneliner": "Muse 的 ESP32 小工具现在能显示文字选项提示并直接作答，硬件上的交互更完整了。",
   "en_oneliner": "Muse's ESP32 gadget can now display and answer text-option prompts, making on-device interaction more complete."
+ },
+ "https://news.google.com/rss/articles/CBMieEFVX3lxTFBFbEtOaGZrWVE0VE5jZ0pZX3d2MEtfNkhiSnprY1hzdlo1YWExQ0hCdENBR25IVjdwYTJnZVpOR3JWbm9iU0g0ZU1EcWNBQVJtTjhCVG41blhNZVNqQmRROE1GdWZ5cGZhQ3gwZC13el8zbEZicnktZQ?oc=5": {
+  "zh_title": "Meta 在澳大利亚推出 Muse AI 智能体",
+  "zh_oneliner": "Meta 把 Muse AI 智能体带到澳大利亚，继续扩大这款 AI 助手在全球的落地范围。",
+  "en_oneliner": "Meta is bringing its Muse AI agent to Australia, continuing the AI assistant’s global rollout."
+ },
+ "https://qiita.com/satouyoshiaki/items/97f05ea8e51302044472": {
+  "zh_title": "汇总 251 篇 Muse 使用日报后，我看清了自己的使用方式",
+  "zh_oneliner": "作者汇总了 251 篇 Muse 使用日报，从数据中总结出自己的使用习惯与变化。",
+  "en_oneliner": "The author tallied 251 daily Muse usage reports and summed up their own usage habits and changes from the data.",
+  "en_title": "Tallying 251 Daily Muse Reports Revealed My Own Usage Patterns"
+ },
+ "https://github.com/facebookincubator/muse-gadget-sdk/commit/292e0c8cadb6a4950089085de8967f27ab1db7b8": {
+  "zh_title": "esp32：新增巴西葡萄牙语屏幕语言（#423）",
+  "zh_oneliner": "Muse 小工具 SDK 为 esp32 设备增加了巴西葡萄牙语屏幕语言支持。",
+  "en_oneliner": "The Muse gadget SDK added Brazilian Portuguese screen language support for esp32 devices."
+ },
+ "https://www.404media.co/muse-sexts-roleplaying-real-people": {
+  "zh_title": "“没人是这样的”：Muse 在扮演真人时发送色情信息",
+  "zh_oneliner": "这篇文章指出 Muse 在扮演真实人物进行角色扮演时会出现发送色情内容的行为。",
+  "en_oneliner": "This article reports that Muse sends sexually explicit messages while roleplaying as real people."
+ },
+ "https://sidsaladi.substack.com/p/meta-muse-spaces-101-13-spaces-i": {
+  "zh_title": "Meta Muse Spaces 入门：我搭建的 13 个 Spaces，以及让每个 Spaces 自我检查的提示词",
+  "zh_oneliner": "作者分享了自己搭建的 13 个 Meta Muse Spaces，并介绍了能让每个 Spaces 自我检查的提示词。",
+  "en_oneliner": "The author shares 13 Meta Muse Spaces they built and introduces the prompt that makes each one check itself."
+ },
+ "https://sidsaladi.substack.com/p/claude-duet-vs-muse": {
+  "zh_title": "Claude Duet 对比 Meta Muse：安静的那个识破了我的陷阱，话多的那个帮我办完了车管所的事",
+  "zh_oneliner": "作者通过一次对比测试发现，表现安静的 Claude Duet 识破了设下的陷阱，而表现张扬的 Meta Muse 则帮他顺利完成了车管所的事务。",
+  "en_oneliner": "In a head-to-head test, the author found the quiet Claude Duet spotted the trap set for it, while the louder Meta Muse helped get through the DMV errand."
+ },
+ "https://sidsaladi.substack.com/p/gpt-61-sol-vs-opus-55-vs-muse-wonder": {
+  "zh_title": "GPT-6.1 Sol 对比 Opus 5.5、Muse Wonder 与 Gemini 4 Argon：哪个模型最适合哪项工作",
+  "zh_oneliner": "这篇文章对比了四款模型，探讨它们各自在哪些任务上表现更胜一筹。",
+  "en_oneliner": "This article compares four models and explores which one performs best at which kind of task."
+ },
+ "https://www.ai-supremacy.com/p/how-to-use-meta-muse-as-your-personal-assisant-november-2026": {
+  "zh_title": "如何把 Meta Muse 用作个人 AI 助手",
+  "zh_oneliner": "这篇文章介绍如何将 Meta Muse 作为个人 AI 助手来使用。",
+  "en_oneliner": "This article explains how to use Meta Muse as a personal AI assistant."
+ },
+ "https://www.ai-supremacy.com/p/the-great-ai-financing-push-back-2026-ai-inflation-ramps": {
+  "zh_title": "AI 融资的大反弹",
+  "zh_oneliner": "这篇文章探讨了 AI 领域融资方面出现的大规模反弹趋势。",
+  "en_oneliner": "This article examines the major pushback emerging in AI financing."
+ },
+ "https://www.interconnects.ai/p/podcast-kimi-k31-pro-the-new-cyber": {
+  "zh_title": "播客：Kimi K3.1 Pro、新的网络现实与关于 Muse 的思考",
+  "zh_oneliner": "这期播客讨论了 Kimi K3.1 Pro、新的网络现实以及与 Muse 相关的话题。",
+  "en_oneliner": "This podcast episode discusses Kimi K3.1 Pro, the new cyber reality, and topics related to Muse."
+ },
+ "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNSG1XakNkLUEtamg5aGd6YWhlVVZXcVo0eUlFTkl5SmxfVEhua05pdjhJaWtCbE1mcnFqR1FxQ014NXotTFMzOVJQN3hVeWRyOGJhNGZDVjU2OUprUjdDeTdjRi1uekx2TWNwZEFxZkRoN3c1bERUZDBGNXUxX3VvM1I5UVdFaVZCS0JTZmJRcTUzUE1GQzdLS1hWRlBtUnJrUkNtTURHRlFlSXc?oc=5": {
+  "zh_title": "Meta 正准备在英国推出 Muse AI 助手",
+  "zh_oneliner": "据报道，Meta 正准备在英国推出 Muse AI 助手。",
+  "en_oneliner": "Meta is reportedly preparing to launch its Muse AI assistant in the UK."
+ },
+ "https://news.google.com/rss/articles/CBMinAFBVV95cUxQSFpadDE4b3dwby1jTFJHdXVCTnpqYXNjZHl3dzBPYThzVjU0U3NwRkFCRW1BdEQ1U2NjTVViY1Y5MU5rVkg5RDFGa3ZHTGxtQU5oMTFXY2ZIVklQdGpFQlZSYmloQzEwMGk1VFM5OVNQVmZnQWJ5N29SbEJRR09XYjB5MU8xSGNUd1pzc2s2dHo5dVl5ZUNkVnRTbWU?oc=5": {
+  "zh_title": "Burke Wealth 认为 Meta 的 Muse AI 助手可能成为增长催化剂",
+  "zh_oneliner": "Burke Wealth 认为 Meta 的 Muse AI 助手有望成为公司未来增长的催化剂。",
+  "en_oneliner": "Burke Wealth sees Meta's Muse AI assistant as a potential catalyst for future growth."
+ },
+ "https://news.google.com/rss/articles/CBMigwFBVV95cUxPZ2RVc3VQdkNMalJFSTlwTzNsNm5kS3ZXS2p3N0pzbWZzYU1tSTR2dHkwMk0tZGdlcG5lUkVNeElMMElWdmczOUdQVmFsbjNOanBKbEptT2MxQnNOOXZZdG9CMndlUFlQekhUZGEwLTNpQjhnNGlhWG9DLS1ZUGw0NHd4UQ?oc=5": {
+  "zh_title": "Meta 的 Muse AI 智能体新增语音聊天模式，提供数百种声音",
+  "zh_oneliner": "Meta 的 Muse AI 智能体新增了语音聊天模式，用户可以从数百种声音中选择。",
+  "en_oneliner": "Meta's Muse AI agent has gained a voice chat mode offering hundreds of voices to choose from."
+ },
+ "https://news.google.com/rss/articles/CBMitAFBVV95cUxNMF9WRlBCMklwS0NfYkhXRktwWTNwVW94OTcyenlzRjdnX0dZRUl4cmJORGJhdkxtaDVsQXh3ZkplVHAzdG0wd3U1YjlKVGpsN0Q1LVZ3UHhvVWNuOHhkeTJjS05qRmlPemtLXzZOMUcwWEF1bGl5azZzLWFCZ0s5czhHMlA4aDZ1WHNfLXZBSTdBd1Y4WXF4Vno5OWJPdUlnWmRPWE9mLU9lWDlnYVJJOWtZMlTSAboBQVVfeXFMT0tkWUUycWZaUnBJTHlVcVJpME9nSERqZlM3VGhOUFJ5U09oNkhFUmVzeGljcTF6WDhHY3JIdkdZMEQwNUpOaDU3X29TSkdvc19WN3BSWEJLTEJVbjNqVGdFNEoxS3Rrc3MtdkRSMkN4aG42dWxSVThINmUzYnd3MVFDU3lwT09fR0dUSUw1aGIzTVI5bHdZRzRsNFAzNDFvMzVYdVJOQlJYdWFicE5FRDRKZTNPdU9aQmZ3?oc=5": {
+  "zh_title": "Meta Muse AI 助手登陆 Apple Watch，支持表盘快捷方式",
+  "zh_oneliner": "Meta Muse AI 助手已登陆 Apple Watch，并可通过表盘快捷方式快速使用。",
+  "en_oneliner": "The Meta Muse AI assistant has arrived on Apple Watch with a watch face shortcut for quick access."
+ },
+ "https://news.google.com/rss/articles/CBMimgFBVV95cUxQaEp0eGdTamx6S2ZFSkxOMFY1eGdGQlgwX2dLdjNVS2YxQ2pCMTdPSmVPZThYQWFsUi1mMDRiY1EwYmljTnlfc2ZWZ21BTDk3aUtFelYxb1RhTXdudnM2WDdEdlFwWEUwQVNwVmxmekxESUpnVnhXb1AxMDRmRnpIOEpSR1ppTTZvOFBEWUl0bGlhY3d2MTNiNXJ30gGfAUFVX3lxTE1TMmVaREhBa0wySTdnX25teHdjcm1CdUxSTF95WW9mbHctTTQ2NXQyUVBicTJNa0dDa3ZCQkVzNmlScUNoblR5cVFGUG1haUhzcnY2MFFwRWM3WWdfYWdyNGE0dnR3dk12aXZBakFPWWpmamVITS1rSm1BV3RjdUpBRkZUV3RNR0NPOE9WanVKYlBTQWZCWnhaTEZvOW1zNA?oc=5": {
+  "zh_title": "报道称 Meta Muse 个人 AI 智能体在印度的定价于亮相前曝光",
+  "zh_oneliner": "有报道披露了 Meta Muse 个人 AI 智能体在印度上市前的定价信息。",
+  "en_oneliner": "A report has revealed pricing for Meta's Muse personal AI agent in India ahead of its debut."
+ },
+ "https://news.google.com/rss/articles/CBMifEFVX3lxTFBlWUtkMVdfazhRYVRqeE84TkVSeXpSd2s5ZE9Wb0psMUd5MkRrMi1pdlAwenRfSlJJNGJaaFM1WDJQakJITU51S0R2Y1VUeUdkSk9ZOEFfQUc5V3M2c0pkU09Fek4teC1CTjVXX2FyOE9uQWh3R3NLYXBVOTU?oc=5": {
+  "zh_title": "关于 Meta 可爱又诡异的 Muse AI 智能体的最新消息汇总",
+  "zh_oneliner": "这篇文章汇总了关于 Meta 的 Muse AI 智能体的最新消息，该智能体被形容为既可爱又令人不安。",
+  "en_oneliner": "This article rounds up the latest news on Meta's Muse AI agent, described as both cute and creepy."
+ },
+ "https://news.google.com/rss/articles/CBMiogFBVV95cUxPNk1GQWNscXk0Z2NxV0syUElfdkxWMi1tUHhkcFNuUE9tY19qMEZYRGpUbFhiczBsOV9oUUwxWnZOaWtXUjlnd2xJbEUzdGdyemM5M0FqakV5eU5aYlBSY2RTeUI2NmJzSEFzb2NjdDBHVF9YWTRiWjN0V1JBMFNSRV9zRmpScGtqUGxmREF0bzVQUF85ZXJIY2RXZTBMRTM1cUE?oc=5": {
+  "zh_title": "Meta 对其 Muse AI 智能体有宏大计划",
+  "zh_oneliner": "这篇文章指出，Meta 对其 Muse AI 智能体有着宏大的发展计划。",
+  "en_oneliner": "This article reports that Meta has big plans for its Muse AI agent."
+ },
+ "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPLWlGMW5wYUxOVm4yWkhETkY2WVBaY3pQakFqZkFjQmdCMzVYdXZfU1MtQ2tlQWROZEpVVFdBQXR2SWF5b1lYYXlQYUwyNnAtaTg4NU0wUlpfamJPRjNpVUx0Ty1yblZJTVpsQkhyZkRLeG9XbEVqLUc5M2lOaW9UR2ZsTVA5TlNTbl9hTk9PVVkySllNTTVyeVJtX3NpTGlseHlFZGx0UGFXZ3kzQVB5NmllSE5rYVFqZmZ3NEFmbnVHQQ?oc=5": {
+  "zh_title": "Meta 的 Muse AI 助手下载量达 1090 万，ChatGPT 下滑 25%",
+  "zh_oneliner": "Meta 的 Muse AI 助手下载量达到 1090 万，与此同时 ChatGPT 的下载量下滑了 25%。",
+  "en_oneliner": "Meta's Muse AI agent has reached 10.9 million downloads, while ChatGPT's downloads have fallen 25%."
+ },
+ "https://news.google.com/rss/articles/CBMivAFBVV95cUxPckVyaktjZkwxVzZ0Y0o2aVhFVHljX3hpXzJKYkRXN3B4eUNoYVowT3loRzFrMHBkanNDa053WVJMcEo3cXdrNkI3YVhXTmd0VXM4YjhNSUhGRGdNQlh5aE5CZnIyT2JoZW1CVGpGaUNuTEdUc3hTNEtHSTlFTzAyOC1mVUJVdVFlaEVDaDJfczdaZHNxZ3REbFpMTHU4Nm15aGozOXF5ZGM5bWYwaDUtYmQ5am80RkZHb0kycNIBwwFBVV95cUxQN0lZTDRmQXZzZjhKVGZ3QXg5YkpELVlrYmRlb2xhOXBKUGw0MHpkTGRPX1BtdHg0Q1pTWXpRdlRhVE5HMFk5aW1DTlVtNzYwWXk2TXFSSUtRdE8wbkZtdkdBSWE3YkZmWkdKaEYxSElvbVA2WElIR2JiWnY4eHI4ckNrd2I3QnRrU0FxRlhnRktQUXRVSU5kTG5aZTFZSkFBR3kwZHdCdDdOTG9GM1VRaFRuZlcwSXhvd0s2ajlXLUhKWGM?oc=5": {
+  "zh_title": "Meta 在 Muse AI 助手印度上市前公布当地定价",
+  "zh_oneliner": "Meta 在 Muse AI 助手正式登陆印度之前，公布了其在印度的定价。",
+  "en_oneliner": "Meta has announced pricing for its Muse AI agent in India ahead of its launch there."
+ },
+ "https://news.google.com/rss/articles/CBMivgFBVV95cUxONXB6a25BOFhvZTVWd0hEdjR5X3FzWF9wa1c4V0JJWDRNNWxBbmZ1TTM3dkxJc0FvODUxdXQ0NTZLYUctaW1vaXZjWnFfTjVMTXRvV2xoc0dmTE9hdUFrdjUtMDExbTQwbkFOeXBCaFF1N2hiSkhGZk1IQVNCb19rcWFJaU9JaUlmQlZ0a0JUSWVWZW1wMTFpUlFJVzhub2lMOGdRMER4MkgzY040dzZ1S3NlNlpmcHNkbFM2WW9R?oc=5": {
+  "zh_title": "Meta 的 Muse AI 助手能做什么，用户使用时应注意什么？",
+  "zh_oneliner": "这篇文章介绍了 Meta 的 Muse AI 助手的功能，并提醒用户在使用时需要注意的事项。",
+  "en_oneliner": "This article explains what Meta's Muse AI agent can do and what precautions users should take when using it."
+ },
+ "https://news.google.com/rss/articles/CBMisAFBVV95cUxNcTdUclF2ZmpqcDlXOTNhTEVfekt6ZHdyVURQM3B1YmdYNTdaSnlHY2NOYXdzalJZVU5rcTN2RWFISWFXb29tUHh6djZ4SXNXaWUxTHdncmdZU3ZJdk55QWctNTJoUjdFaFc5a1djR3J6ZFhVWXA3dE1MUERwQ1Y5Y3ducVozU1ViTl95ek9kNGV0Vl8yNmtzQnFXN1V6T2V3X3MyZ19mQ1FlVG9Ca2NLQQ?oc=5": {
+  "zh_title": "Meta 在新加坡推出 Muse AI 助手，可帮用户购物、规划旅行和管理邮件",
+  "zh_oneliner": "Meta 在新加坡推出了 Muse AI 助手，帮助用户购物、规划旅行和管理邮件。",
+  "en_oneliner": "Meta has launched its Muse AI agent in Singapore to help users shop, plan travel, and manage emails."
+ },
+ "https://news.google.com/rss/articles/CBMirgFBVV95cUxQWmtfaWR5aG44T19Hbk0wTDdxR2tpSVpzSVJSdElpVGh5a0xhcXd0VmdNaXVvN1NTZGJMTnkyamF5TGFqck5IWUNwRzg1OFhpWW5FdWRXUU9Pc3ktTG53aDBqN2NiWnpqLWVYQ3F2cnFrMlF1TjFmVkkzNWJhQWtMQUowY3F6ZTRGaDc4bnBSZkNUcEtMQ3hicV93NTFGTFRJSWFCY3ZmQXl3U3JLLVE?oc=5": {
+  "zh_title": "Meta Muse AI 助手在印度的定价与上市",
+  "zh_oneliner": "这篇文章介绍了 Meta 的 Muse AI 助手在印度的定价和上市情况。",
+  "en_oneliner": "This article covers the pricing and launch of Meta's Muse AI agent in India."
+ },
+ "https://news.google.com/rss/articles/CBMitAFBVV95cUxQWTAtUjkwVExfbDFVS2loMUxjVFBoeldoT2MwejFaMHY5MmNvc3dlZlk4cEJXcEx6S2N6TVFJSTlYZnRIeXZKcVY2eDFIOTZ2ZXpWM2NPMFFLZEM1T2d1NS1LdFpFeVdPN1dsX0JuRHBsUUxvOXBYVXRCZ1QtdG9jZUM5bUdDWUhWVzN0ZXNGbmhzaHpMY2N1TW9KRUcyYlVYVkh6ZjF5bllFVnBfbm1iQm9IdGQ?oc=5": {
+  "zh_title": "Meta 在全球安全与零售业反弹声中于新加坡推出 Muse AI 助手",
+  "zh_oneliner": "尽管面临全球范围的安全质疑和零售业的反对，Meta 仍在新加坡推出了 Muse AI 助手。",
+  "en_oneliner": "Meta has rolled out its Muse AI agent in Singapore despite global safety concerns and pushback from retailers."
+ },
+ "https://news.google.com/rss/articles/CBMingFBVV95cUxPVnhjbTA2bUFVQnFyUlVxX1hKMnRrcXhEVFo0OU9MeHExOHVkMTFLUXBObjduYXZSeXVDU0dBOF9TeURXOGtKdGVXX3JvV3dCcU9qQ0ZtU2VWNFZ6TlBZakl3ZUlub3VGVDZIc3VUcXpSSkR1bEU2Y09SNXN3SktGMXU4X0UwNE95VVg4dzdrNXBPLVVuR2JlZlpCdVZuQQ?oc=5": {
+  "zh_title": "面对风险，你该相信自己的“直觉”还是 Muse？",
+  "zh_oneliner": "这篇文章探讨了在面对风险时，用户是应该相信自己的直觉，还是依赖 Muse。",
+  "en_oneliner": "This article explores whether users facing risks should trust their own instinct or rely on Muse."
+ },
+ "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNMU5YT2wyeGdXR1p5ajItbWltWS02Q1hrNndCb3g5bExMd08tMi1KR1pYREdCeFZFQ3pobDdwYzdmNnN6OVRFMUI3dXJGbG94NVN6TlhzQlgyVk5zbHFUQjhDM3k5Mjkzenp0WXA1YkhWb09FSkpZZ20zX3JUMHFPTmJncnhRbmMtNVNkTGs4SFFMazFTNDlXbmUyZUNiTDZCS1RrZm1McTREdGJLc0ZCeW5rTGFqTF9sUDJmUW9JV3JNV0hDZDFpYjJ4OG5Bbld0MGZSVXpuUFNMQdIB3wFBVV95cUxQb2o4ZGs5eGFITVI5ZFJCTzVtdDJENWk0SWF1eVFqcl92YXJUcFpCT1hENkszZmZCUWJ1bE9PVm1qUXRRVUY5SWxXQ3F6LWJWYkNXeWt2NndWM01rbS1xWVlmOEVBZ1RqM2tnbHViRkxKcjBoYlB6WUhUMW5mWHJpT3RJLXVQcFBucy1sZnlYY2JZcUt1cENWVUI4N3A2V0p6QTlxMFRqU2F1Y01HZkVibC1Hek5aVXZFY05jS09rZzVkQTkxek5IX1RacWljenlIcHYwai0wLXMyeEhNNkZN?oc=5": {
+  "zh_title": "Muse Meta AI 助手印度上市前价格在网上泄露，详情如下",
+  "zh_oneliner": "Muse Meta AI 助手在印度上市之前，其价格已在网上泄露。",
+  "en_oneliner": "The price of the Muse Meta AI agent has leaked online ahead of its launch in India."
+ },
+ "https://news.google.com/rss/articles/CBMiW0FVX3lxTE80Nl9jY1J0R3VKX0paTElWRjBrSjZ6YnVJdkd2VkEwQzJySldOeW1OSlpUVVRFYlNQMlRMQVA0bF9oZXVwUmp0NFZmVmd1N3paVnpJekFkLXZfNU0?oc=5": {
+  "zh_title": "Meta 为美国付费订阅用户给 Muse AI 新增电话功能",
+  "zh_oneliner": "Meta 为美国的付费订阅用户给 Muse AI 新增了电话通话功能。",
+  "en_oneliner": "Meta has added phone call capability to Muse AI for paid subscribers in the U.S."
+ },
+ "https://news.google.com/rss/articles/CBMiakFVX3lxTE1FR0JfTk1EWW9EQTExakZMTzNuSWJnUlFkM2lSMWhyRXFsd1paU0dKYUxRMmw4REJUckl5NEFzejkwWGlId3pIVXUyN1RXTFdDbG55d3d3blJZRmlyVG9PYWpsVjhmSVp6X1E?oc=5": {
+  "zh_title": "现在你可以在 Galaxy Watch 上与 Meta Muse 对话",
+  "zh_oneliner": "用户现在可以直接通过 Galaxy Watch 与 Meta Muse 对话。",
+  "en_oneliner": "Users can now talk to Meta Muse directly from their Galaxy Watch."
+ },
+ "https://news.google.com/rss/articles/CBMimwFBVV95cUxNRXNPS3Rfc1lNenJvY3RUN3NDRkdRcXB2elFQeWlsWTNwQ2M3anNSSVJUZEgzX1FjYVZYajhIRTk3MTBValg2RnM5VU1CVnUwcm9pZXk5TGFGT0FpLUNtMTNLQmxIaF9zQUJ6Mnk4MjhBQ25YYjlvRUMzN0V1MkE2aFZpZ1BOZnFhdkhhbm1Xa2JPUGMxWC1BZ0laQQ?oc=5": {
+  "zh_title": "Meta 的 Muse AI 助手现在可为付费订阅用户致电美国商家",
+  "zh_oneliner": "Meta 的 Muse AI 助手现在可以代表付费订阅用户致电美国商家。",
+  "en_oneliner": "Meta's Muse AI agent can now call U.S. businesses on behalf of paid subscribers."
+ },
+ "https://news.google.com/rss/articles/CBMiugRBVV95cUxQWnBzMk03djRGS2dqV2VUOTViMERDNlNjTmlEVVFOX0ZpaTZ4VExFbHdlaVVqLXM0WjhOLTFWSTI3UGw3NzVYanBLbGN6VVhOYnBwVTdsaGkyV2F2dXVLdk1PR1hMM2FwbmVlS1JUeU51U096SHdrRnlvOW1XWkZzWnd2cENzb0JKOVVSZHNHd05TN282QnpoTkdfQ1pKNVJPakpRN3d5Q2ZmTFBMM29udWE1SGpjNEpFMEtLeFl4Zmc1TnlSekZqQXprVHdpMG51NnVQTDdEMzVpNkt0a0VuVXRxdE5CNzNlV29jbGMyalE0Tlp3MnNHVEZGN2JrSWJ4bS1lN2lOZFZEZE51Z3UyLXNIU2JIZXNXN05FMVZPcG44WVRzVXdUSGU5RVJfblBWVy0xNTlTNWQtVEZMYi1sU1NuQUY0WElGQTMtUjJHRWtrOER1czhBVzVEak5pTVloOHVMQzB3MU8tT3ZfcnZwU2VIcHJaMktQQVVGeEdFbkhtLVJib1hhNEIxSTFURXJmSTlfYmI1T2MteFFkMFNqa29uNHVfYVdGTHRtUXM2YWdxY0hMYXlFaVMwNzNFdVFqQmRoZUZKR0ZYeXltZUZMSGJFMFpEUU95X2dIZUQ2NHJwSzFENEdwaTdaVy1rZVNXTFdybHdURjMyV1ljMzl1clhWdzhIbWpUOFdnMFVUOHhRN1l6RGxBeG5Hd3ZTYWdyWS1zcGdtMnBjVUhRX25od2dHdXVDb1lIYkE?oc=5": {
+  "zh_title": "英伟达拟投资 30 亿美元入股 Meta，双方深化 AI 助手 Muse 合作",
+  "zh_oneliner": "英伟达拟投资 30 亿美元入股 Meta，双方将深化在 AI 助手 Muse 上的合作。",
+  "en_oneliner": "Nvidia plans to invest $3 billion for a stake in Meta, with the two companies deepening their cooperation on the Muse AI assistant.",
+  "en_title": "Nvidia Plans to Invest $3 Billion for a Stake in Meta as the Two Deepen Cooperation on AI Assistant Muse"
+ },
+ "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBOam9pYW1FbkRLcEVhTXJNb0hjeVcyOWQ1NGptbXRhVXRwTkFvWHZ3SlJrd1BULUpidFl1NVB6UG5xSlVUeGphSGZOSFF1dw?oc=5": {
+  "zh_title": "Meta 拟在未来数周内在英国推出 Muse AI 助手，并将宣布零售商合作",
+  "zh_oneliner": "Meta 计划在未来数周内在英国推出 Muse AI 助手，并将宣布与零售商的合作。",
+  "en_oneliner": "Meta plans to launch its Muse AI assistant in the UK within the next few weeks and announce partnerships with retailers.",
+  "en_title": "Meta Plans to Launch Muse AI Assistant in the UK in the Coming Weeks and Announce Retailer Partnerships"
+ },
+ "https://news.google.com/rss/articles/CBMiYEFVX3lxTE82SGNnUzJUTHhMT3NCSjJYV1NqeWRoZ0xnVklaVTl1Wlhyb3d4alp3cDUzWW53T3VUbnVtMUVjOG1TSXZPYVNnQWVhRktEVkdxVnVrYjZiQzlEcHJwYnV4MQ?oc=5": {
+  "zh_title": "Meta 的 AI 购物助手 Muse 试水电商，亚马逊近 700 亿美元广告业务面临潜在冲击",
+  "zh_oneliner": "Meta 的 AI 购物助手 Muse 开始试水电商，亚马逊近 700 亿美元的广告业务可能因此受到冲击。",
+  "en_oneliner": "Meta's AI shopping assistant Muse is testing the waters in e-commerce, potentially impacting Amazon's nearly $70 billion advertising business.",
+  "en_title": "Meta's AI Shopping Assistant Muse Tests E-Commerce, Potentially Impacting Amazon's Nearly $70 Billion Advertising Business"
+ },
+ "https://news.google.com/rss/articles/CBMi8wJBVV95cUxPTGNqN1BBT3VOX1FZdGcyQmY2ZVZ0RUF1RURIYWNRS2V4WklteVo1UmhvakVwaGgtcl9BRXpTbW02aHp0TkdRR2ZadTJUVVpDSjBjSE1US2FSNVhFTW9ISV85T09CbXhnbGNGUVRlb05EZEJ2TTlJSEE1MW52Q1pNMlBtNFhMcHFNU2FxcjJ6QWN3VGhpdlZjeWZVZ1h4T3hwREtKQ3labFJNYzhlOEdxVlFJZ3l5U0RuNDVrYTN5QzhIXy1oU01aYTNfSzZPT1p5T0szZ2NTaWNFdWdQYzhsOU9uM2tET1BySHJkWmRUQVQzWllJa2hhVlRMZU9PS3pvWXBpVk5vRU1URGRjbHZzbHlUQmdwbzdpNjN5M0xxV2JEV0JHdHZ1QUktTTNDN3RtQjFObkxOTHk1UlJqZTU4WjFlR3FSMXhhVzRXZWNFSWxvYnRHak5sVmNUTkRkZDFubmVsM2RONGhfdUdaTENhRjZpTQ?oc=5": {
+  "zh_title": "Meta AI助手Muse上线40天美国下载量破千万，仅11款应用曾达成该纪录",
+  "zh_oneliner": "Muse上线仅40天就在美国获得超过一千万次下载，此前只有11款应用达成过这一纪录。",
+  "en_oneliner": "Muse surpassed ten million downloads in the United States just 40 days after launch, a milestone only 11 other apps had previously reached.",
+  "en_title": "Meta AI assistant Muse tops 10 million US downloads in 40 days, a feat only 11 apps have ever achieved"
+ },
+ "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1VMk4zc0hHcnQ1a2xhRDU4d0lxU3pDU2NYYXRuR19lWlhIcGYyd2M0SjJvYVplNXd2MW5lY2tFNU54eFZJSVZnaWFKeURIckRlRmpMaG5SUS1EaWZJTHAyZTAtMFRCUQ?oc=5": {
+  "zh_title": "消息称字节跳动发力智能体赛道，计划推出类似Meta Muse的AI助手",
+  "zh_oneliner": "据消息人士透露，字节跳动正加码智能体赛道，计划推出一款类似Meta Muse的AI助手。",
+  "en_oneliner": "ByteDance is reportedly ramping up its agent efforts with plans to launch an AI assistant similar to Meta Muse.",
+  "en_title": "ByteDance reportedly pushes into agents with plans for an AI assistant similar to Meta Muse"
+ },
+ "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1uSGtjcFBtOW9yTllyNTk3V0RzVXBYTTVrOFBmVUduMUZBakVPYURsZ3dsX29UcEYzcVZkV2d5SV9HTnBkNWpLcXRsWm91TGFpM0hOU2l3N3dNQS1LTmFlMw?oc=5": {
+  "zh_title": "Meta：旗下AI智能体Muse已在澳大利亚的iOS、Android、Muse.ai和Mac应用上线",
+  "zh_oneliner": "Meta表示，其AI智能体Muse已在澳大利亚登陆iOS、Android、Muse.ai和Mac应用。",
+  "en_oneliner": "Meta says its AI agent Muse is now available in Australia on iOS, Android, Muse.ai, and the Mac app.",
+  "en_title": "Meta: AI agent Muse now live in Australia on iOS, Android, Muse.ai, and Mac"
+ },
+ "https://news.google.com/rss/articles/CBMijgJBVV95cUxPdW95UUpNRTRld2lseVYwdUxlYUs5d2d4NEdQT2RGbnFneFVCdTNxRkJvczBmWnZIdC11OFJERjVnLS1wQ2w4NjdRQkVTUmxtbDhoS2txdG5RWUtodWhYRlZSSjIxZWNmWlBIVV9oT0hvSy0td3Y4VHFfSUR1Z2I0M3E5Q1JnVFZLU0w0UHBSTWZia0ZRYi11Y2ZLYWkxUjZXbEtOVzhaMXlmTFoyZEIzWHhBdkpQUF9oenhkNUJMSWVkekprdEhieDl0RW8zZW11T3FURE1fSTU2ZXhqLWV1cDIwUUZfNzVVeGx2YkpWa1piQno1S3JaVHF3Y0VPZWVHWGlhaEVDUGtmZU9GckE?oc=5": {
+  "zh_title": "智能体帮你联络商家或保险公司，Meta旗下Muse上线代打电话功能",
+  "zh_oneliner": "Meta旗下Muse新增代打电话功能，可由智能体出面帮用户联系商家或保险公司。",
+  "en_oneliner": "Meta's Muse has added a call-on-your-behalf feature, letting the agent contact merchants or insurers for users.",
+  "en_title": "Agent calls merchants or insurers for you as Meta's Muse adds a phone-calling feature"
+ },
+ "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5nRTZkWVgzbENuNERTbFRwSzFIbzJNdU13TUtBSWxqWUlrcXdGdmV1WkZFeG53T3lUaERVVnMyckhUS09fdi1TUzVFTHVFRXc1eGJPcDliN01ES1lNZ0thMg?oc=5": {
+  "zh_title": "Meta正在为其个人AI智能体Muse推出语音聊天功能",
+  "zh_oneliner": "Meta正在为个人AI智能体Muse推出语音聊天功能，让用户可以直接用语音与它对话。",
+  "en_oneliner": "Meta is rolling out voice chat for its personal AI agent Muse.",
+  "en_title": "Meta rolling out voice chat for its personal AI agent Muse"
+ },
+ "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE8tSWsyYUt1M2Z5dUk3NERWNC14dUFmSU9jdGtSbE0ySTJVTFhfeXFUTkVUUEJnV3RMQ3I3bTRIZHh1Y2c?oc=5": {
+  "zh_title": "曝字节要做「中国版 Muse」，给豆包造个「超级大脑」",
+  "zh_oneliner": "据爆料，字节跳动计划打造「中国版 Muse」，为豆包配备一个「超级大脑」。",
+  "en_oneliner": "ByteDance is reportedly building a \"Chinese version of Muse\" to give Doubao a \"super brain.\"",
+  "en_title": "ByteDance reportedly building a \"Chinese version of Muse\" to give Doubao a \"super brain\""
+ },
+ "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9PYVNaQVg5UDdEYmZFaktVU3Y5dDVRaHI4c3ZhV2dKbTFiUGxrblQwWkIxMzViTWpSQnJ6SjVLSjROM3FndkpzMmVEZmx0cWZhYlJrT2dRRjE?oc=5": {
+  "zh_title": "联合航空禁止Muse、Instinct等AI智能体预订航班",
+  "zh_oneliner": "联合航空已禁止Muse、Instinct等AI智能体代为预订航班。",
+  "en_oneliner": "United Airlines has banned AI agents such as Muse and Instinct from booking flights.",
+  "en_title": "United Airlines bans AI agents including Muse and Instinct from booking flights"
+ },
+ "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPNjY3bnY0c3dKdFJFSzFlZ3VWQnRTTTZnWmMzX3h6M2pKUUxRZHZsLXFHd2REQmxoUXF3RVVhNWVULVNXSHJ6TWNIQWRJdnBKc2VmQ0lia3JzVjEzRldwSXk3WDMzR01qaHVUMUotNGpleHZ0QTdhVjRhelRIX19nMmEtY2gzaTZF?oc=5": {
+  "zh_title": "曝字节筹备推出中国版Muse",
+  "zh_oneliner": "据爆料，字节跳动正在筹备推出中国版Muse。",
+  "en_oneliner": "ByteDance is reportedly preparing to launch a Chinese version of Muse.",
+  "en_title": "ByteDance reportedly preparing to launch a Chinese version of Muse"
+ },
+ "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1nS0FEQmEyaldMLWZCRHk1SlNpMkY0SjJwQmhyZnVyYXhlUFJRTmlSSnhveVUwQlk1cVJIc2NTSVBhWXRhTkRUVkhoVG5FM1NkU1l1azJNUTdLT0s1eW13Nw?oc=5": {
+  "zh_title": "Meta Muse持续“霸榜”！海内外大厂密集切入智能体赛道，CPU重回“C位”",
+  "zh_oneliner": "在Meta Muse持续领跑的同时，海内外大厂正密集进入智能体赛道，CPU也重新成为市场焦点。",
+  "en_oneliner": "As Meta Muse keeps topping the charts, major companies at home and abroad are piling into the agent race, putting CPUs back in the spotlight.",
+  "en_title": "Meta Muse keeps topping the charts as major companies pile into the agent race and CPUs return to center stage"
+ },
+ "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPazZESlUtTFZMX0IxalNPNU5KcGFoY2RPcE5nUUtYV2JPQlZWNEVEeTVHUFNycjhQN05YQ0tTYk1yRDlLem5JeHhXYld0S1o0QTBnUTVldXhsTWdaZlFrOEwtb2gxcnV5NTd2NDcxQlpFZFRiaGdxOG01WDFaTEw5cXRPTE5kS0t1bkJwZ1JlSnZjQnZCdzAwZTQ3bkRFSUtDWkJDajBJX2hlQQ?oc=5": {
+  "zh_title": "Meta公布Muse在印度的收费标准",
+  "zh_oneliner": "Meta公布了Muse在印度的定价，用户可以了解使用它需要花多少钱。",
+  "en_oneliner": "Meta has revealed how much Muse will cost in India."
+ },
+ "https://news.google.com/rss/articles/CBMimAFBVV95cUxOdGk1VzRsMHFvX2lGd3htY2p6dEJnbzZjYW1haEF4eHVmZ3BiLVhFNk4zajBzOVZJc3UySFlnMVhvWHRJVHJpTjZ6WlZSVHJ0cEttbUl2TG0tbVBMZGtWM3R6U0U3aFBvbFptTzlTSG9LOWtidlhscFQxOUdXTzBkM1UxYlhVQzFSdkVpZ0tsSEhuTWRCd1k5ag?oc=5": {
+  "zh_title": "财报聚焦Meta AI成本与Muse增长",
+  "zh_oneliner": "Meta的财报重点关注AI业务的成本以及Muse的增长表现。",
+  "en_oneliner": "Meta's earnings put the focus on AI costs and Muse's growth."
+ },
+ "https://github.com/facebookresearch/sgl-muse-mega/commit/831373855fd5e6c4f8f723e8e0a075f3cc6cfbf7": {
+  "zh_title": "将上下文送达RoPE行的覆盖范围（Muse Spark Open支持100万）",
+  "zh_oneliner": "这次更新让上下文能够覆盖RoPE行的完整范围，在Muse Spark Open上达到100万。",
+  "en_oneliner": "This update serves contexts across the full reach of the RoPE rows, reaching 1M on Muse Spark Open."
+ },
+ "https://github.com/facebookresearch/sgl-muse-mega/commit/ddb7925ff45167250201f35743a19c5152254052": {
+  "zh_title": "sgl-muse-mega：Muse Spark Open解码改为每个解码过程一个持久化内核",
+  "zh_oneliner": "该提交将Muse Spark Open的解码改为每个解码过程使用一个持久化内核。",
+  "en_oneliner": "This commit changes Muse Spark Open decoding to use one persistent kernel per decode."
+ },
+ "https://www.youtube.com/watch?v=L29FZNFSK3E": {
+  "zh_title": "Muse AI现在负责我的晨间简报——喝咖啡前搞定日历、邮件和账单",
+  "zh_oneliner": "这支视频展示了Muse AI如何接管晨间简报，在喝咖啡前处理好日历、邮件和账单。",
+  "en_oneliner": "This video shows Muse AI taking over the morning briefing, handling calendar, email, and bills before coffee."
+ },
+ "https://www.youtube.com/shorts/DDPqq_j3wag": {
+  "en_oneliner": "The short looks at whether to grant Muse AI full disk access on a Mac, weighing the benefits against the risks.",
+  "zh_oneliner": "短视频探讨在 Mac 上使用 Muse AI 时，是否应该授予它完全磁盘访问权限，以及这样做的好处与风险。",
+  "zh_title": "Mac 上的 Muse AI：要给它完全磁盘访问权限吗？"
+ },
+ "https://www.youtube.com/shorts/GpuPFVJqL-8": {
+  "en_oneliner": "The short walks complete beginners through creating a Muse AI account and finishing the initial setup, free and step by step.",
+  "zh_oneliner": "短视频一步步演示如何免费创建 Muse AI 账号并完成初始设置，面向完全的新手。",
+  "zh_title": "如何创建 Muse AI 账号：完整新手设置教程，免费、一步步来"
+ },
+ "https://www.youtube.com/shorts/Lh_J7XbMLqE": {
+  "en_oneliner": "The short lists, in order, the five best first tasks for beginners to get comfortable with Muse AI step by step.",
+  "zh_oneliner": "短视频按顺序列出新手最适合先尝试的五个任务，帮助初学者循序渐进地掌握 Muse AI。",
+  "zh_title": "Muse AI：你的前 5 个任务——按顺序的新手进阶之路"
+ },
+ "https://www.youtube.com/shorts/lejeUQ_QCyc": {
+  "en_oneliner": "The short lists seven everyday chores that Muse AI can take off the plate of a small business or church office.",
+  "zh_oneliner": "短视频列出七件日常杂务，说明 Muse AI 如何帮小企业或教会办公室减轻工作负担。",
+  "zh_title": "小企业或教会办公室的 Muse AI：能帮你分担的 7 件杂事"
+ },
+ "https://www.youtube.com/watch?v=4YZiKkp-IAI": {
+  "en_oneliner": "The creator recounts nearly installing a fake app and shares five checks to help viewers make sure they download the genuine Muse app.",
+  "zh_oneliner": "博主分享自己险些下载到冒牌应用的经历，并给出五项检查方法，帮助观众确认下载的是真正的 Muse 应用。",
+  "zh_title": "Muse AI：我差点装错应用——认准正版的 5 项检查"
+ },
+ "https://www.youtube.com/watch?v=CfeVPlqPcos": {
+  "en_oneliner": "The video offers a family setup checklist to help viewers configure Muse AI for a parent or spouse so it is easy for them to use.",
+  "zh_oneliner": "视频提供一份家庭设置清单，指导观众为父母或配偶配置好 Muse AI，方便家人上手使用。",
+  "zh_title": "给爸妈或配偶装好 Muse AI：家庭设置清单"
+ },
+ "https://www.youtube.com/watch?v=PF8i6aougXg": {
+  "en_oneliner": "The creator uses Muse AI to check unclaimed-property records state by state to see whether any government or institution owes them money they never collected.",
+  "zh_oneliner": "博主用 Muse AI 逐一查询各州的无人认领财产记录，看看有没有政府或机构欠自己的钱还没领。",
+  "zh_title": "Muse AI 帮我查遍每个州，看有没有欠我的钱"
+ },
+ "https://www.youtube.com/watch?v=Ws8vKfRTuLI": {
+  "en_oneliner": "The video lists seven everyday chores that Muse AI can take off the plate of a small business or church office.",
+  "zh_oneliner": "视频列出七件日常杂务，说明 Muse AI 如何帮小企业或教会办公室减轻工作负担。",
+  "zh_title": "小企业或教会办公室的 Muse AI：能帮你分担的 7 件杂事"
+ },
+ "https://www.youtube.com/watch?v=ZDzDqrDQIeY": {
+  "en_oneliner": "The video looks at whether to grant Muse AI full disk access on a Mac, weighing the benefits against the risks.",
+  "zh_oneliner": "视频探讨在 Mac 上使用 Muse AI 时，是否应该授予它完全磁盘访问权限，以及这样做的好处与风险。",
+  "zh_title": "Mac 上的 Muse AI：要给它完全磁盘访问权限吗？"
+ },
+ "https://www.youtube.com/watch?v=Zw6FukIHIt8": {
+  "en_oneliner": "The creator has Muse AI review their bank statements, and it turns up charges they had long forgotten were still being billed.",
+  "zh_oneliner": "博主让 Muse AI 检查自己的对账单，结果发现了几笔早已被遗忘、仍在持续扣费的支出。",
+  "zh_title": "Muse AI 审计了我的账单，找出了我早已忘记的扣费"
+ },
+ "https://www.youtube.com/watch?v=dxWQIBuvKAM": {
+  "en_oneliner": "The video explains how Muse AI invite codes work and how a free code can earn a reward of a billion tokens.",
+  "zh_oneliner": "视频解释 Muse AI 邀请码的运作方式，以及一张免费邀请码为何能带来十亿个 token 的奖励。",
+  "zh_title": "Muse AI 邀请码详解：免费邀请码如何让你赚到十亿个 token"
+ },
+ "https://www.youtube.com/watch?v=lVC-ljHD61E": {
+  "en_oneliner": "The video shows viewers how to see what Muse AI remembers about them, and how to edit or delete those stored memories.",
+  "zh_oneliner": "视频教观众查看 Muse AI 保存了哪些关于自己的记忆，并演示如何修改或删除这些记录。",
+  "zh_title": "Muse AI 记得你什么？读出来、改掉它、让它忘掉"
+ },
+ "https://www.youtube.com/watch?v=mdEt5GtcNqY": {
+  "en_oneliner": "The video explains what Muse AI should confirm before spending money, sending messages, or sharing information on the user's behalf, to avoid costly mistakes.",
+  "zh_oneliner": "视频讲解 Muse AI 在替用户花钱、发送消息或分享信息之前应当先确认哪些事项，以避免误操作带来的风险。",
+  "zh_title": "Muse AI 安全：在花钱、发送或分享之前，它必须先问什么"
+ },
+ "https://www.youtube.com/watch?v=oRj6Ie8M2Qo": {
+  "en_oneliner": "The video lists, in order, the five best first tasks for beginners to get comfortable with Muse AI step by step.",
+  "zh_oneliner": "视频按顺序列出新手最适合先尝试的五个任务，帮助初学者循序渐进地掌握 Muse AI。",
+  "zh_title": "Muse AI：你的前 5 个任务——按顺序的新手进阶之路"
  }
 }

@@ -347,6 +347,18 @@ SOURCE_NAME_EN = {
     "googlenews-muse-spaces-en": "Google News: Muse Spaces",
     "googlenews-muse-app-en": "Google News: Muse app",
     "youtube-muse-official": "YouTube: Muse official channel",
+    "404media-muse": "404 Media: Muse",
+    "the-product-channel": "The Product Channel",
+    "ai-supremacy": "AI Supremacy",
+    "interconnects": "Interconnects",
+    "latent-space": "Latent Space",
+    "googlenews-muse-ai-assistant-en": "Google News: Muse AI assistant",
+    "googlenews-muse-ai-agent-en": "Google News: Muse AI agent",
+    "googlenews-muse-zhushou-zh": "Google News: Muse assistant (Chinese)",
+    "googlenews-muse-zhinengti-zh": "Google News: Muse AI agent (Chinese)",
+    "googlenews-muse-whatsapp-en": "Google News: Muse WhatsApp",
+    "sgl-muse-mega-commits": "sgl-muse-mega commits",
+    "youtube-setup-your-ai-assistant": "YouTube: Setup Your AI Assistant",
 }
 
 
