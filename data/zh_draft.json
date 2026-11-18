@@ -3840,5 +3840,44 @@
   "zh_title": "内部聊天记录显示 Muse 的隐私问题让 Meta 员工感到不安",
   "zh_oneliner": "Meta 内部聊天显示，员工对 Muse 的隐私侵入感到担忧，内部也有不同声音。",
   "en_oneliner": "Internal chats at Meta show employees uneasy about Muse's privacy intrusions, with differing views inside the company."
+ },
+ "https://news.google.com/rss/articles/CBMibkFVX3lxTE9UVmMtNzFNS255VzFYdWwyOURxRWJSVWhaVVNNNmdoY01rSWc0NHVpam9xUGRSMUlZb0JRMG4xOWwtTjh6eVJUTXRfTzJ0SUVJZ0E2bmIydVdYQ3NQRFR3M1BJbjV6UTJKQlIxRmdB?oc=5": {
+  "zh_title": "Meta员工拉响警报：Muse AI涉嫌侵犯隐私",
+  "zh_oneliner": "Meta内部员工对Muse AI可能过度获取用户数据表示担忧，隐私边界问题引发关注。",
+  "en_oneliner": "Meta employees have raised concerns that Muse AI may be overreaching into user data, putting its privacy boundaries under scrutiny."
+ },
+ "https://news.google.com/rss/articles/CBMixgFBVV95cUxOZmk0RmlHRUJkX0ctTk0yc2lXaXp5Zm9vNWs4OVRfT2dhNFpTT25taktHU2NLdFZRWjluaUo4OUt4cVBqZUl6cW9NWHZ3TnVtYVJ6RmNXUVdFa0ZPR2R1M0NQeUd3LVZFSW5Ia2ZzSnFTenRMNVp1elpzZ3ZWVGpzejl6ZzRZZHNwWW1adGw4Q1NrNVFmVFFMVFJDc3FBbFVOdzh1RXhGTFlfbXlvQ0pmT1RuZ2FIMEh6dUVVTHh3eklhUnJwQ1E?oc=5": {
+  "zh_title": "曝Meta员工称Muse AI代理可能访问Signal聊天记录",
+  "zh_oneliner": "据报道，Meta员工称Muse AI代理可能接触到了Signal聊天内容，跨应用数据访问引发质疑。",
+  "en_oneliner": "Meta employees reportedly said the Muse AI agent may have accessed Signal chat content, raising questions about cross-app data access."
+ },
+ "https://news.google.com/rss/articles/CBMioAFBVV95cUxOaXIwb0Z5YXRyVGdxb0tudjRnNTBkYjBVazdIVGpET3JFZmY4NGpBT2xELTUtMVN6TDFjTXZtUWJ2bzNSUWdaZVl2RWxYaGpLcWVzbnRsaW1aSFNyNWM1aXRMLW5BbGZKU0tLVUhCV2wtWV9kemhKdFFIOHVweExwNkxlR3FLbzlfVzhHc294cVJkc3c4cmR6cVZoRTN3aXBN?oc=5": {
+  "zh_title": "Meta员工指出Muse AI读取Signal消息并混用用户数据",
+  "zh_oneliner": "Meta员工反映Muse AI会读取Signal消息并混用不同来源的用户数据，数据隔离问题受到关注。",
+  "en_oneliner": "Meta employees flagged that Muse AI reads Signal messages and mixes user data from different sources, raising concerns about data separation."
+ },
+ "https://news.google.com/rss/articles/CBMixgFBVV95cUxNNXZyNnhfTFh4d2EtRXN5dHpSODBiZTFONVFvcThYTUo5Z2RDelVLVlNNejR1cDJCLXZsVWllclFSV25peGxVWlU4TzB5b0RhR01DRUpnZVJwbFZ5a3ZjN1hpRHViMXRUNWVQbUhnSm1XZkpnVDR1Z0ZBN3g5Y2lyUkRoQVNkdExZUDNqLXJPRXFRbVVCUHM1SlhsWEtQRkRzZi1EUFpfM2htSE1pckdQM2lGZ0JXSmVxOHJqdS0zbmFwd2dwdGc?oc=5": {
+  "zh_title": "Meta员工称Muse AI代理可能访问Signal聊天记录",
+  "zh_oneliner": "报道称Meta员工透露Muse AI代理可能访问了Signal聊天记录，引发对AI代理权限边界的讨论。",
+  "en_oneliner": "Reports say Meta employees revealed that the Muse AI agent may have accessed Signal chat records, sparking discussion about the permission boundaries of AI agents.",
+  "en_title": "Meta Employees Say Muse AI Agent May Have Accessed Signal Chat Records"
+ },
+ "https://qiita.com/kirbykaito/items/51ee235aac5c316ea206": {
+  "zh_title": "屡立计划屡失败的资格考试学习，我决定交给AI智能体来运营",
+  "zh_oneliner": "作者把总在制定与崩塌间循环的资格考试学习交给AI智能体打理，分享用智能体管理学习计划的实践。",
+  "en_oneliner": "The author hands over exam study — stuck in a cycle of making plans and watching them fall apart — to an AI agent, sharing how the agent manages the study plan.",
+  "en_title": "I Decided to Let an AI Agent Run My Exam Study After Repeatedly Making Plans That Fell Apart"
+ },
+ "https://qiita.com/kirbykaito/items/b741e4a801c5fc66bca4": {
+  "zh_title": "把工作交给AI智能体后，日常运营变成了PDCA循环与代码评审",
+  "zh_oneliner": "作者把工作托付给AI智能体后，自己的日常变成了PDCA循环与代码评审，分享人机协作的工作方式。",
+  "en_oneliner": "After delegating work to an AI agent, the author's daily routine became PDCA cycles and code reviews, sharing a human-AI way of working.",
+  "en_title": "After Delegating Work to an AI Agent, My Routine Became PDCA Cycles and Code Reviews"
+ },
+ "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1KWjJuZTNwMVRMVFB3M2hMZWVSWnI4Y0E5aVlma1UxLXMwdW1Dc1Z4aFBXVWVhWmd0RU53b3V6cUxvemhPekd1TDJYSTZ6SmVE?oc=5": {
+  "zh_title": "Loblaw与Meta合作：顾客可通过AI助手Muse直接购物下单",
+  "zh_oneliner": "Loblaw与Meta达成合作，顾客可以直接通过AI助手Muse购物下单。",
+  "en_oneliner": "Loblaw is partnering with Meta to let customers shop and place orders directly through the Muse AI assistant.",
+  "en_title": "Loblaw Partners with Meta: Customers Can Shop and Order Directly Through the Muse AI Assistant"
  }
 }
