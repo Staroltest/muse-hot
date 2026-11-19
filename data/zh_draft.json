@@ -4753,5 +4753,23 @@
   "zh_title": "Meta 重注 Muse AI 智能体之际，早期安全事故浮出水面",
   "zh_oneliner": "路透社报道称，Meta 大力押注 Muse AI 智能体的同时，一些早期安全事故开始浮现。",
   "en_oneliner": "Reuters reports that as Meta bets big on the Muse AI agent, early safety mishaps are beginning to surface."
+ },
+ "https://news.google.com/rss/articles/CBMidkFVX3lxTE1vWWJqS1R1UnhmZVFvRENDb216MGlrRXZqcmpDc09nckFaYnFmYXdGVVVtUnVqbGRNb3Zkbm02T0QyMnU3WnM1bHpGc3FtTy1zWXY3ekRQcGtWWmIyUTBpdm9lTTRUSVZKeTJIajVVREcta1JaZUE?oc=5": {
+  "zh_title": "Meta Muse AI 被指读取加密消息、泄露银行余额",
+  "zh_oneliner": "Meta 员工爆料称 Muse 智能体可能读取加密消息并向用户展示他人的银行余额，引发隐私争议。",
+  "en_oneliner": "A Meta employee alleges the Muse agent may read encrypted messages and show users other people's bank balances, sparking privacy concerns.",
+  "en_title": "Meta's Muse AI Flagged for Reading Encrypted Messages and Surfacing Bank Balances"
+ },
+ "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1IUHBFRGwyakMtUmUwN0hFNlV6ejMwMUlhOWNTVW15aHFGWWZzQjlXbnVfMmNHRXh6aG5kck1qR2hDUEJYMWVmdXhrRTM?oc=5": {
+  "zh_title": "Meta员工爆料：Muse智能体可能擅自读取加密消息与银行账户余额",
+  "zh_oneliner": "Meta 员工爆料称 Muse 智能体可能擅自读取加密消息与银行账户余额，隐私安全再受质疑。",
+  "en_oneliner": "A Meta employee says the Muse agent may read encrypted messages and bank balances without permission, raising fresh privacy concerns.",
+  "en_title": "Meta Employee Claims Muse Agent May Read Encrypted Messages and Bank Balances"
+ },
+ "https://news.google.com/rss/articles/CBMiaEFVX3lxTFB4VUZhTUhXbnRpa3VQbE1uempuNGY1clAyeEM1dEplWHUxY3dXeFAzTXlZV2pQMGs1akZiTVlLVExieVdEUzIwQmVXV09xYWVhZjd6RkJ1dTktUzB3eC0wQ0plY05fc1BG?oc=5": {
+  "zh_title": "Meta Muse AI 智能体向用户展示了他人的银行余额",
+  "zh_oneliner": "报道称 Meta 的 Muse AI 智能体向一名用户展示了别人的银行余额，暴露出严重的数据隔离问题。",
+  "en_oneliner": "Meta's Muse AI agent reportedly showed one user someone else's bank balances, exposing a serious data-isolation flaw.",
+  "en_title": "Meta's Muse AI Agent Showed a User Someone Else's Bank Balances"
  }
 }
