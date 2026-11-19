@@ -1,6 +1,6 @@
 {
  "generated_at": "2026-11-19",
- "site": "https://staroltest.github.io/muse-hot",
+ "site": "https://muse-hot.pages.dev",
  "summary": {
   "total": 11,
   "passed": 9,
@@ -18,7 +18,7 @@
    "key": "sitemap",
    "label": "sitemap.xml 条数与漏页",
    "status": "pass",
-   "detail": "共 1685 条 URL，磁盘 1684 个 HTML 页全部在列"
+   "detail": "共 1687 条 URL，磁盘 1686 个 HTML 页全部在列"
   },
   {
    "key": "llms",

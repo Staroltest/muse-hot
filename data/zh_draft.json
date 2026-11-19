@@ -4155,5 +4155,11 @@
   "zh_title": "ESP32：重复绘制图片时唤醒休眠屏幕，失败时回退到 L…",
   "zh_oneliner": "这次提交让 ESP32 在重复绘制图片时唤醒休眠的屏幕，并在失败时回退。",
   "en_oneliner": "This commit wakes the sleeping display on repeat image draws on ESP32, with a fallback when that fails."
+ },
+ "https://qiita.com/sakutto-panda/items/1ede8f959d729a71a316": {
+  "zh_title": "用 Muse 打造专属 AI 秘书：4 个人格文件与记忆设计，养出性格不跑偏的秘书",
+  "zh_oneliner": "手把手教你用 4 个人格文件和记忆设计，在 Muse 里养一个性格稳定、越用越懂你的专属 AI 秘书。",
+  "en_oneliner": "A hands-on guide to raising a dependable personal AI secretary in Muse with four persona files and a memory design that keeps its character steady.",
+  "en_title": "How to Build Your Own AI Secretary with Muse: 4 Persona Files and Memory Design for a Secretary Whose Personality Never Drifts"
  }
 }

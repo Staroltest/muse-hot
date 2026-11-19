@@ -1,5 +1,5 @@
 # MuseHOT — 允许搜索引擎与 AI 爬虫抓取公开内容
-# 规范域名为 https://staroltest.github.io/muse-hot/
+# 规范域名为 https://muse-hot.pages.dev/
 # 镜像 https://muse-hot.pages.dev 内容相同，请以规范域名为准
 # 给 AI 看的站点说明见 llms.txt（站根 /llms.txt）
 
@@ -45,4 +45,4 @@ Disallow: /
 User-agent: PetalBot
 Disallow: /
 
-Sitemap: https://staroltest.github.io/muse-hot/sitemap.xml
+Sitemap: https://muse-hot.pages.dev/sitemap.xml

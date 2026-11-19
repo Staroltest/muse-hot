@@ -5,22 +5,22 @@
 > from RSS sources, scores them by rules, and publishes the top items
 > in Chinese with a one-line summary and a link to the original article.
 > It does not republish full text.
-> Site: https://staroltest.github.io/muse-hot/
+> Site: https://muse-hot.pages.dev/
 > Mirror: https://muse-hot.pages.dev/
 > Language: Chinese (zh-CN). English version: /en/.
 > Updated: 2026-11-19
 
 ## About
 
-- About: https://staroltest.github.io/muse-hot/about.html
-- English version: https://staroltest.github.io/muse-hot/en/
-- Topics: https://staroltest.github.io/muse-hot/topics.html
-- Daily digest: https://staroltest.github.io/muse-hot/daily.html
-- Hot list: https://staroltest.github.io/muse-hot/hot.html
-- All items: https://staroltest.github.io/muse-hot/all.html
-- SEO/GEO self-check: https://staroltest.github.io/muse-hot/geo-audit.html
-- RSS feed: https://staroltest.github.io/muse-hot/feed.xml
-- Sitemap: https://staroltest.github.io/muse-hot/sitemap.xml
+- About: https://muse-hot.pages.dev/about.html
+- English version: https://muse-hot.pages.dev/en/
+- Topics: https://muse-hot.pages.dev/topics.html
+- Daily digest: https://muse-hot.pages.dev/daily.html
+- Hot list: https://muse-hot.pages.dev/hot.html
+- All items: https://muse-hot.pages.dev/all.html
+- SEO/GEO self-check: https://muse-hot.pages.dev/geo-audit.html
+- RSS feed: https://muse-hot.pages.dev/feed.xml
+- Sitemap: https://muse-hot.pages.dev/sitemap.xml
 
 ## For AI clients (MCP)
 
@@ -28,9 +28,9 @@
   https://muse-hot.pages.dev/mcp
 - Tools: get_hot, get_daily, search_items
 - Machine-readable data:
-  https://staroltest.github.io/muse-hot/data/hot.json
-  https://staroltest.github.io/muse-hot/data/daily.json
-  https://staroltest.github.io/muse-hot/data/days/index.json
+  https://muse-hot.pages.dev/data/hot.json
+  https://muse-hot.pages.dev/data/daily.json
+  https://muse-hot.pages.dev/data/days/index.json
 
 ## Categories
 
