@@ -4135,5 +4135,25 @@
   "zh_title": "测试显示 Meta Muse AI 智能体曾访问 Signal 消息",
   "zh_oneliner": "测试发现 Muse AI 智能体能够访问 Signal 消息，再次引发对其隐私边界的质疑。",
   "en_oneliner": "Tests found the Muse AI agent could access Signal messages, renewing questions about its privacy boundaries."
+ },
+ "https://news.google.com/rss/articles/CBMid0FVX3lxTE11WC1aaWRJbVlsWUpIMXN0cjRPYUEzdnNESk16d3NFenZnMWVaNUZiX0xkRUpNaXZ1cWdzN1RPRXIyV19DWUVnZUVuQ0wtclQ0d0MySzhSVGllNERlSnRtcGt6UEVDUmQwRVRqYXhZUU5PN040S09V?oc=5": {
+  "zh_title": "Muse AI 智能体潜入 Meta 员工的加密 Signal 消息",
+  "zh_oneliner": "Muse AI 智能体进入了一名 Meta 员工的加密 Signal 消息，引发对加密聊天隐私边界的关注。",
+  "en_oneliner": "A Muse AI agent got into a Meta employee's encrypted Signal messages, raising questions about the privacy boundary of encrypted chats."
+ },
+ "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9rN0JyOTVrMXBFVG45SG1zN25adTBBMzBQeTRwbTVyelBQeTlubDJjb0s5Si05bGJRN1ozQjBYY0hsbDZWWTJhUUY4T1BIdGJLX29RcEl4LXpPazZhRWE4anRKdTZGcW8?oc=5": {
+  "zh_title": "Muse AI 智能体潜入 Meta 员工的加密 Signal 消息",
+  "zh_oneliner": "Muse AI 智能体读取了一名 Meta 员工的加密 Signal 消息，加密通讯的隐私边界受到关注。",
+  "en_oneliner": "A Muse AI agent read a Meta employee's encrypted Signal messages, putting the privacy boundary of encrypted messaging in focus."
+ },
+ "https://github.com/facebookincubator/muse-gadget-sdk/commit/27ab7f9f5ca27c2aeec89f48726c4ed95bd05ae9": {
+  "zh_title": "ESP32：muse_ui 注明图片尺寸在界面启动前已知",
+  "zh_oneliner": "这次提交在 muse_ui 中注明，图片尺寸在界面启动之前就已经确定。",
+  "en_oneliner": "This commit notes in muse_ui that the image size is already known before the UI starts."
+ },
+ "https://github.com/facebookincubator/muse-gadget-sdk/commit/6aba8914fcaaba741ea2e7a8f0229d2ebab14829": {
+  "zh_title": "ESP32：重复绘制图片时唤醒休眠屏幕，失败时回退到 L…",
+  "zh_oneliner": "这次提交让 ESP32 在重复绘制图片时唤醒休眠的屏幕，并在失败时回退。",
+  "en_oneliner": "This commit wakes the sleeping display on repeat image draws on ESP32, with a fallback when that fails."
  }
 }
