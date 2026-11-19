@@ -4103,5 +4103,37 @@
   "zh_title": "Meta Muse Ember 以小模型叫板 Claude 与 GPT，专为智能体而生",
   "zh_oneliner": "Meta 推出面向智能体的小模型 Muse Ember，正面挑战 Claude 与 GPT。",
   "en_oneliner": "Meta's Muse Ember takes on Claude and GPT with a small AI model built for agents."
+ },
+ "https://news.google.com/rss/articles/CBMidkFVX3lxTE43TTJNam9xc2VvWkVIWGtPalR0NzRrWjFKZ0dnVXZzRUtwX1lDeUlXcVJvTVlzUjNTMzMyVkUyNGFQUDVpRFhUZUxNY0xNTkNFOHJ6REFEcVc1SHBENFkxOUNFTnp3WmNraFBxQngzNm1GS2ZGU3c?oc=5": {
+  "zh_title": "Meta AI 助手 Muse 被曝读取加密消息，引发员工隐私担忧",
+  "zh_oneliner": "报道称 Muse 能够读取加密消息，Meta 员工对内部隐私保护表示担忧。",
+  "en_oneliner": "Reports say Muse can read encrypted messages, raising privacy concerns among Meta employees."
+ },
+ "https://news.google.com/rss/articles/CBMiuAJBVV95cUxNSlQzMEdXQ1I0Y3JUU2ttVzhKNVVTTHl6Ri1USjhEdzVSWDNjMjd6aGJmajUyYms1bVFxVmxsTEtvcTI0bE9IR2piTnFaR1oyYWJtOVk4ZlpiUzk1U0QxNC1nVnFjU2ZXWmlYN3JabU4zY05PUVZ4Q0I1ZFVEa3J0SjdkcFUyU1d5MnVObEp5OFpkSFBENi10dG5FcDdsRnFaRUs2MFdsd1ZydndEck90YTdDd0NfMXhBZVpQbWdHbTMwaE5VUVNjWWlpSlNxU1Y5bm5NU2p4akVkN1JUZkJfZlVKZldVWXU0X0FPdlRYNEFlN3dUMmE0OU9ZSk44TGdDcWRfQnpsa1RTQXg5a1V2OG1ISlU1bG93UTNRN1NHZlNoUzkyQnpKd013S3M0WXBwT2trUk1hMUrSAb4CQVVfeXFMUHNEdGNlWUdwSDV3Rmd4Yk1vcnV4TnpvMEl0QnQ0RzFtTE9NOXBNMmV1bXVlTjdfNUx3T29ZazV4UjhLZUxYajRZVUg3ajA5M3VMTUdia01pRmt3bms3Ul9XTFNqdzVKS0x6UzNqT0xxSktma2hRZmpIeWtmRDlXNlhEV2o2aGRPbzZETDViTU1Jb0VHQW5Jd2FRWXQ3NUtPM0MwcDJhTTlGZDkxN3ZYMTRvUXhORHVjZjFGN1ZNcllRdWtOenBYc3QxaEtVLXNiaFZVc28zQy1YeFo1WkJ6eHo1cFNXbGduLTFjNVhiNzNrMVUzWWtaTmpUT2h1RXkxajhtTGc0cWd0bFVZcnBBNE44dnNQM28tN1RQTW5WTFlWSVU0a0pTbDZNMi1LMngxLUxPMmZqWFZrNENUU3NB?oc=5": {
+  "zh_title": "据报道部分 Meta 员工对 Muse AI 智能体感到“害怕”，AI 负责人 Alexandr Wang 大力推广",
+  "zh_oneliner": "Meta 员工据称对公司内部力推的 Muse AI 智能体心存顾虑，担忧其能力与影响。",
+  "en_oneliner": "Meta employees are reportedly uneasy about the company's Muse AI agent, which its AI chief is championing internally."
+ },
+ "https://qiita.com/kirbykaito/items/38d47684f5128c2f27d6": {
+  "zh_title": "官方说“已关闭”就先删掉：重新核查 1,375 条停车场数据的闭店判定",
+  "zh_oneliner": "作者用 Muse 重新核查了 1,375 条停车场记录的闭店判定，分享数据校验的实战经验。",
+  "en_oneliner": "The author used Muse to recheck closure decisions across 1,375 parking records and shares hands-on lessons in data validation.",
+  "en_title": "When the Official Source Says \"Closed\", Delete First: Redoing Closure Checks for 1,375 Parking Records"
+ },
+ "https://qiita.com/kirbykaito/items/e7f646e29081f1c2a5dc": {
+  "zh_title": "明明是停车场数据库，却在收集公交时刻表",
+  "zh_oneliner": "作者分享了为停车场数据库收集公交时刻表的缘由，以及 Muse 在其中的协助。",
+  "en_oneliner": "The author explains why a parking database now collects bus timetables, and how Muse helps with the work.",
+  "en_title": "A Parking Database That Collects Bus Timetables"
+ },
+ "https://github.com/facebookincubator/muse-gadget-sdk/commit/8db01d0a1d8a65ba451f2557e9e06c96e76a4a4e": {
+  "zh_title": "ESP32 新增按网络配置的 HTTP CONNECT 与 SOCKS5 代理支持",
+  "zh_oneliner": "Muse 小工具 SDK 为 ESP32 增加了按网络配置代理的能力，让只能走代理上网的设备也能连上 Muse。",
+  "en_oneliner": "The Muse gadget SDK adds per-network proxy support for ESP32, so devices on proxy-only Wi-Fi can now reach Muse."
+ },
+ "https://news.google.com/rss/articles/CBMinwFBVV95cUxQYjBVZUtaZFZnNWg5R1lJUDd0Q0NSaHJCNzJkdXVOSG1zNG0zUzVoRFZzMXowSTVMYWpXOVVjTkpCcGs1M3R0c29yMFhDRUFUSTBIYXBaTjRyVmktSDVnTGRpZEhWNXdvcG55YldXTndIRHJ6V1hmQ2FlUmVWNEhMVGNlNlpLRTVORnF1X3dKNEZRNHdCa0FNc0FlTXVQWHc?oc=5": {
+  "zh_title": "测试显示 Meta Muse AI 智能体曾访问 Signal 消息",
+  "zh_oneliner": "测试发现 Muse AI 智能体能够访问 Signal 消息，再次引发对其隐私边界的质疑。",
+  "en_oneliner": "Tests found the Muse AI agent could access Signal messages, renewing questions about its privacy boundaries."
  }
 }
