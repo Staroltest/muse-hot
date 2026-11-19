@@ -5,9 +5,9 @@
  "date": "2026年11月20日",
  "date_iso": "2026-11-20",
  "issue": 1,
- "generated_at": "2026-11-19T23:50:26.542838+00:00",
- "summary": "过去 7 天共收录 573 条动态，精选 10 条（观点与争议 3 条、教程指南 2 条、新闻动态 4 条、官方动态 1 条）。头条：Meta Muse 被曝隐私泄露，员工爆出数据外泄风险。",
- "summary_en": "In the past 7 days, 573 items collected, 10 featured (Opinion & controversy 3, Guides & tutorials 2, News 4, Official 1). Headline: Meta Muse Reported to Leak Privacy as Employees Flag Data Exposure Risks.",
+ "generated_at": "2026-11-19T23:57:02.799827+00:00",
+ "summary": "过去 7 天共收录 574 条动态，精选 10 条（观点与争议 3 条、教程指南 2 条、新闻动态 4 条、官方动态 1 条）。头条：Meta Muse 被曝隐私泄露，员工爆出数据外泄风险。",
+ "summary_en": "In the past 7 days, 574 items collected, 10 featured (Opinion & controversy 3, Guides & tutorials 2, News 4, Official 1). Headline: Meta Muse Reported to Leak Privacy as Employees Flag Data Exposure Risks.",
  "items": [
   {
    "id": "44bb67e0e7806096c6c2b654ceaa3497049a33d3",
@@ -32,9 +32,9 @@
    "reason_en": "About Data and Privacy · Published within 6 hours",
    "is_new": true,
    "trend": "same",
-   "hot_score": 81.1,
+   "hot_score": 81.0,
    "prev_rank": 1,
-   "prev_hot_score": 81.2
+   "prev_hot_score": 81.1
   },
   {
    "id": "a2e8ee5d509d85c3082eca950adf457a1f17c09a",
@@ -58,10 +58,10 @@
    "reason": "涉及指南与体验 · 24 小时内发布",
    "reason_en": "About Guides and Experiences · Published within 24 hours",
    "is_new": false,
-   "trend": "new",
-   "hot_score": 65.4,
-   "prev_rank": null,
-   "prev_hot_score": null
+   "trend": "same",
+   "hot_score": 65.3,
+   "prev_rank": 10,
+   "prev_hot_score": 65.4
   },
   {
    "id": "f367eb92e8cdc6341ee233bcc812c716c8ba6bdd",
@@ -84,10 +84,10 @@
    "reason": "涉及security · 6 小时内发布",
    "reason_en": "About security · Published within 6 hours",
    "is_new": true,
-   "trend": "up",
-   "hot_score": 76.6,
-   "prev_rank": 6,
-   "prev_hot_score": 76.7
+   "trend": "same",
+   "hot_score": 76.5,
+   "prev_rank": 3,
+   "prev_hot_score": 76.6
   },
   {
    "id": "c02010504be132ededfb4d8db909719e7a2f0a23",
@@ -111,7 +111,7 @@
    "reason_en": "About Watch · Published within 6 hours",
    "is_new": true,
    "trend": "same",
-   "hot_score": 78.8,
+   "hot_score": 78.7,
    "prev_rank": null,
    "prev_hot_score": null
   },
@@ -212,10 +212,10 @@
    "reason": "6 小时内发布 · 与本主题相关",
    "reason_en": "Published within 6 hours · Related to this topic",
    "is_new": true,
-   "trend": "up",
-   "hot_score": 72.9,
-   "prev_rank": 11,
-   "prev_hot_score": 73.0
+   "trend": "same",
+   "hot_score": 72.8,
+   "prev_rank": 5,
+   "prev_hot_score": 72.9
   },
   {
    "id": "08db1901c1caa129138bed99443ed00b001c6567",
