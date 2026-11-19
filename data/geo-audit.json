@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-11-19",
+ "generated_at": "2026-11-20",
  "site": "https://muse-hot.pages.dev",
  "summary": {
   "total": 11,
-  "passed": 8,
+  "passed": 9,
   "warn": 2,
-  "failed": 1
+  "failed": 0
  },
  "checks": [
   {
@@ -17,8 +17,8 @@
   {
    "key": "sitemap",
    "label": "sitemap.xml 条数与漏页",
-   "status": "fail",
-   "detail": "共 1991 条 URL，漏 1 页：https://muse-hot.pages.dev/google62220726582f76c7.html"
+   "status": "pass",
+   "detail": "共 1997 条 URL，磁盘 1996 个 HTML 页全部在列"
   },
   {
    "key": "llms",
