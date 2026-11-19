@@ -4224,5 +4224,16 @@
   "zh_title": "Meta 的 Muse AI 助手在一系列安全事故后面临隐私担忧",
   "zh_oneliner": "Meta 的 AI 助手 Muse 在接连出现安全问题后，引发了外界对其隐私保护的质疑。",
   "en_oneliner": "Meta's AI assistant Muse is facing questions over its privacy protections after a series of safety incidents."
+ },
+ "https://qiita.com/Oursship/items/5cce61a710e3c702e5ff": {
+  "zh_title": "让 Muse 挑战 ISUCON：把性能测量与实现交给它 8 小时的记录",
+  "zh_oneliner": "作者把 ISUCON 性能竞赛的测量与实现全权交给 Muse，记录了 8 小时里人机协作的得失。",
+  "en_oneliner": "The author handed ISUCON performance measurement and implementation entirely to Muse and recorded eight hours of human-AI collaboration, wins and losses.",
+  "en_title": "Letting Muse Tackle ISUCON: An 8-Hour Record of Delegating Measurement and Implementation"
+ },
+ "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNbklYLVZfeWZ0OWlZMzdDOVZpOHNPczc0SlpwSGFEbk55OVNzTEY5eUt6SVFkLTFHNVRkMV9acW5pOGszUXpvVEs0aUplWERSRm1uNXZ5WVZrci0xV2RWS284eGh6NVFNZ29Lc0xSZi1Ic3BBb3ZfSlZrSDdpQ284MVZEOE45N052djdUZF9IcUc3VGdIMUhXaWlDejE1VTJ4cENrNUNNWHVxRXptR2lIaGJzNTRCM1NuaWVTLURVSWlJYTFUX2tvdGl1eC1UbnllYWc?oc=5": {
+  "zh_title": "Loblaw 借助 Meta Muse 加码 AI 购物体验，创下首例",
+  "zh_oneliner": "加拿大零售商 Loblaw 率先引入 Meta Muse，推动 AI 购物体验升级。",
+  "en_oneliner": "Canadian retailer Loblaw is the first to bring in Meta Muse as it ramps up its AI shopping experiences."
  }
 }
