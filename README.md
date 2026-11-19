@@ -1,10 +1,16 @@
 # MuseHOT Muse 热点
 
+**在线访问：[https://muse-hot.pages.dev](https://muse-hot.pages.dev)**（主站）· [GitHub Pages 镜像](https://staroltest.github.io/muse-hot) · [RSS](https://muse-hot.pages.dev/feed.xml) · [MCP](https://muse-hot.pages.dev/mcp)
+
 全球各地的人们在拿 Muse 做什么，这个站每天盯着看：官方发布、模型更新、真实用法、教程指南、评测与争议，每天精选 10 条，06:00 出一期日报。
 
 ## 一句话
 
 用 hot-site-template 搭的 Muse 热点站，面向 Muse 用户与 AI 智能体关注者，信源逐个实测后定。
+
+## English
+
+MuseHOT tracks what people around the world are doing with Meta's Muse AI assistant: official releases, model updates, real-world usage, tutorials, reviews and controversies. 42 sources, top 10 picks daily, a daily issue at 06:00 Beijing time, in Chinese and English.
 
 ## 模板里有什么
 
@@ -13,7 +19,7 @@
 | `tools/generate.py` | 生成器：拉 RSS → 去重 → 规则打分 → 生成全站。纯 Python 标准库，零依赖。另加了一项 config 可配的 `required_keywords` 主题过滤：只收标题或摘要里出现 Muse 的条目 |
 | `tools/geo_audit.py` | GEO 自检：独立运行，只读生成物，输出 `geo-audit.html` + `data/geo-audit.json` |
 | `config.json` | 全部可调项：站名、受众、分类与关键词、打分权重、关于页、页脚、赞赏码 |
-| `sources.json` | 信源清单（12 条，2026-11-15 实测） |
+| `sources.json` | 信源清单（42 条，2026-11-17 第四轮扩至 42 条，2026-11-19 复核） |
 | `_worker.js` | MCP 端点（Cloudflare Pages Advanced Mode，单文件无依赖） |
 | `_routes.json` | 只把 `/mcp` 交给 worker，其余路径静态托管 |
 | `favicon.svg` | 通用站标 |
