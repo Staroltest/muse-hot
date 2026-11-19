@@ -1354,7 +1354,15 @@ def hot_row(it, rank, pad=False):
 THEME_BOOT = """<script>(function(){try{var k='__SLUG__-theme';function sys(){return window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}function apply(t){document.documentElement.setAttribute('data-theme',t==='dark'?'dark':'light');}var saved=localStorage.getItem(k);if(saved==='dark'||saved==='light'){apply(saved);}else{apply(sys());var mq=window.matchMedia&&matchMedia('(prefers-color-scheme: dark)');if(mq&&mq.addEventListener){mq.addEventListener('change',function(){try{if(!localStorage.getItem(k))apply(sys());}catch(e){}});}}}catch(e){}})();</script>"""
 
 CF_BEACON = """<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "faf0f409e3ee4f429210e586a98b58bd"}'></script><!-- End Cloudflare Web Analytics -->"""
-CLARITY_SNIPPET = """<script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window, document, "clarity", "script", "zfum63mebz");</script>"""
+def clarity_snippet(site):
+    """Microsoft Clarity 统计代码：项目 ID 取自 config.json 的 site.clarity_id，未配则不输出。"""
+    cid = (site or {}).get("clarity_id", "")
+    if not cid:
+        return ""
+    return ("<script type=\"text/javascript\">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};"
+            "t=l.createElement(r);t.async=1;t.src=\"https://www.clarity.ms/tag/\"+i;"
+            "y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})"
+            f"(window, document, \"clarity\", \"script\", \"{esc(cid)}\");</script>")
 
 SCRIPT = """
 <script>
@@ -2443,7 +2451,7 @@ def page_open(site, active, title, description, prefix="", base="", canonical=""
 def page_close(site, active, prefix="", base="", rel_path=""):
     to_top = (f'<button type="button" class="to-top" id="toTop" aria-label="{tr("回到顶部", "Back to top")}">'
               f'{icon("arrow-up", 18)}</button>')
-    return (f"{footer_html(site, base, rel_path)}</div></div></div>{to_top}{tabbar_html(active, prefix, base)}<script src='{ASSET_BASE}assets/site.js'></script>{CF_BEACON}{CLARITY_SNIPPET}</body></html>\n")
+    return (f"{footer_html(site, base, rel_path)}</div></div></div>{to_top}{tabbar_html(active, prefix, base)}<script src='{ASSET_BASE}assets/site.js'></script>{CF_BEACON}{clarity_snippet(site)}</body></html>\n")
 
 
 def day_header(d, items, today, aside=False):
@@ -3336,7 +3344,7 @@ def render_404(site):
             f'<div class="empty-actions">'
             f'<a class="empty-btn primary" href="{site_url}/index.html">回首页</a>'
             f'<a class="empty-btn" href="{site_url}/hot.html">去看热点榜</a>'
-            f'</div></div></div></div></div>{CF_BEACON}{CLARITY_SNIPPET}</body></html>\n')
+            f'</div></div></div></div></div>{CF_BEACON}{clarity_snippet(site)}</body></html>\n')
 
 
 def render_hot(site, hot, generated_at, counts, cfg):
