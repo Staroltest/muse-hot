@@ -3925,5 +3925,17 @@
   "zh_title": "Meta Muse 在澳大利亚上线：可用性与本地连接器",
   "zh_oneliner": "Meta Muse 已在澳大利亚推出，本文介绍当地的可用情况与可接入的本地服务。",
   "en_oneliner": "Meta Muse is now available in Australia, with details on local availability and connectors."
+ },
+ "https://qiita.com/kirbykaito/items/c920c8a8c2c25356cee4": {
+  "zh_title": "停车场数据库：为何刻意不做「实时空满」功能",
+  "zh_oneliner": "作者用 Muse 搭建仙台市中心停车场数据库，分享为何刻意不做实时空满信息，以及背后的取舍。",
+  "en_oneliner": "The author built a parking database for central Sendai with Muse and explains why they deliberately left out real-time availability, and the trade-offs behind that choice.",
+  "en_title": "Why I Deliberately Left Real-Time Availability Out of My Parking Database"
+ },
+ "https://qiita.com/kirbykaito/items/19cfebf14015f84ab942": {
+  "zh_title": "地址坐标不等于设施位置：停车场数据库为何把图钉放在「实际位置」",
+  "zh_oneliner": "同一位作者继续分享停车场数据库的细节：地图上的图钉为何不按地址坐标，而是放在设施的实际位置。",
+  "en_oneliner": "The same author shares another detail from the parking database project: why map pins sit at each facility's actual location instead of its address coordinates.",
+  "en_title": "Address Coordinates Aren't the Facility's Location: Why I Place Map Pins at the Real Spot"
  }
 }
