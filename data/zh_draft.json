@@ -4240,5 +4240,25 @@
   "zh_title": "再谈 AI 安全：Muse AI 智能体的能力与漏洞（卡巴斯基）",
   "zh_oneliner": "卡巴斯基继续探讨 AI 安全，剖析 Muse AI 智能体的能力边界与潜在漏洞。",
   "en_oneliner": "Kaspersky continues its discussion of AI security, examining the Muse AI agent's capabilities and potential vulnerabilities."
+ },
+ "https://medium.com/@izquierdodavid528/muse-invite-code-yss7pa-1-billion-tokens-and-what-metas-ai-agent-actually-does-all-day-f03bf86e959c?source=rss------muse-5": {
+  "zh_title": "Muse 邀请码 YSS7PA：10 亿 Token，以及 Meta 的 AI 智能体一整天都在做什么",
+  "zh_oneliner": "一篇附带 Muse 邀请码的实测分享，讲了 Meta 的 AI 智能体一天能处理哪些任务，以及 10 亿 Token 的额度意味着什么。",
+  "en_oneliner": "A hands-on write-up sharing a Muse invite code and explaining what Meta's AI agent can handle in a day — and what a 1-billion-token allowance means."
+ },
+ "https://news.google.com/rss/articles/CBMigwFBVV95cUxOdGdjbjZhZFc4VFhyTGQxX041bUNhT0tfY3Jfekg4MXQ4ZkwwaXdJcWxlV19YX3FMYzN6YTdGZEh3eWk4czR0WEIteU9KRjFiWjFoWE5uVFVOSk5RNWdLVkNzbmQzLUJvUks4QkpUM3l4OHgwVkRBVW9rcmd5WkhobG9HQQ?oc=5": {
+  "zh_title": "在 Meta Muse 时代，付费社交为何依然重要",
+  "zh_oneliner": "JumpFly 认为，即便 Muse 这样的 AI 智能体正在改变用户获取信息的方式，付费社交广告依然有不可替代的价值。",
+  "en_oneliner": "JumpFly argues that even as AI agents like Muse change how people discover information, paid social advertising still holds irreplaceable value."
+ },
+ "https://news.google.com/rss/articles/CBMia0FVX3lxTE04WlFMc05fV0JTTGRmU3FXU0lveUdvNE1aTkZteFRURmY1SXE2UjRrblFhUGhMdmxYa0dmdjdNaUpmLVJPcnhUVUJlRERXdEppOVNSOUFybjYya1drcGdXYXFVYmRzNHhSMGdR?oc=5": {
+  "zh_title": "Meta Muse 新增澳大利亚购物连接器",
+  "zh_oneliner": "Muse 接入了澳大利亚的购物服务，用户可以直接在对话里浏览和购买本地商品。",
+  "en_oneliner": "Muse now connects to Australian shopping services, letting users browse and buy local products right inside a conversation."
+ },
+ "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOZUl0R1ZyVUlPdl9Hb3pSYjdOamRzVkVaejR1Y01sUVNqYnpfX1lwOHRwVFRZOENwU09CYTh2cW9SeXI2ZjdrZWpZNjZxejF2X0ZzbmpUV2Q1d29BVkI3UzRvWXBLTzB5ajJvZlh2MnNBNUtVd043aGJCdmZnZkQ3QjlucEVSZUtGWHY5cjZyMXRxTXV0Z3FnTkhrTUJXQzU3VUJFaWNVZnBYbU5rMlFvNWpoTHdYSE54WlpQYkdzellvNW9wZ1pGZTlUYVdJZ1dlekQtU0FEdTBXRzNwb3BWWnlqRVFTQkItN2fSAfABQVVfeXFMUE5HbDRVNU1FV2k5ek82RXh2V25pbEZBZ1VVNXVZWENMcDJwVXFDWG1EZkxjNEhyMjV3VkxCQ0M4cGFRV1N1YUVpb2tRX0hPdk1YRlZ0V1lUVjBfc1FBNm1pSGdJTnVwU0N3MEVRczY1SDdWME0wQ254cjMxaHZCZTd3QWhvMTBPRE5GRk9vWkp5MmxXX0NtNWVxc3FDaXpJMW12b0lNQUtxbFVHREFvUjQ1eWVCeVdlNjhGaENhRmVyVE9aOTgxV1pLUkpxd0FMdkExOGkyUlhsTkpBVzRMSGw5bUI4Q1VHbUV3UkFPVVFT?oc=5": {
+  "zh_title": "报告：Meta Muse AI 智能体在用户不知情的情况下访问私人聊天记录、财务信息等敏感数据",
+  "zh_oneliner": "一份报告指出，Muse 会在用户不知情的情况下读取私人聊天记录和财务信息等敏感数据，引发隐私担忧。",
+  "en_oneliner": "A report claims Muse accesses private chats, financial details and other sensitive data without users knowing, raising privacy concerns."
  }
 }
