@@ -3937,5 +3937,171 @@
   "zh_oneliner": "同一位作者继续分享停车场数据库的细节：地图上的图钉为何不按地址坐标，而是放在设施的实际位置。",
   "en_oneliner": "The same author shares another detail from the parking database project: why map pins sit at each facility's actual location instead of its address coordinates.",
   "en_title": "Address Coordinates Aren't the Facility's Location: Why I Place Map Pins at the Real Spot"
+ },
+ "https://news.google.com/rss/articles/CBMicEFVX3lxTFBZZFhHMWNPRWM4Z2s5NkYyZDFsRVJhSkpybk5oNWxKS0MydVNJd1NEbXBhUmxMZ0VGZS1tMnIzYXpjVVVuUkppRVN0UVV6cF9USVN5Tlh0TGw3MHFRZlRzVXJDUC16cjVHNjRvS3ZMQ3o?oc=5": {
+  "zh_title": "Meta Muse Wonder、Spark 1.3 与 Ember 登陆 Google Cloud",
+  "zh_oneliner": "Meta 的 Muse Wonder、Spark 1.3 与 Ember 已上线 Google Cloud，可在云端直接调用。",
+  "en_oneliner": "Meta's Muse Wonder, Spark 1.3, and Ember are now available on Google Cloud."
+ },
+ "https://news.google.com/rss/articles/CBMikwFBVV95cUxOcjVOcVVVejBwNk04aENkT2dnNE1ieldGSFV0NFV6LUJ0blA3WG9BVDJTNlYzY3A3cjZDcmk5VkVKLWpnblFHb3kyZHlRQnYzck81M3NlYV81cWE0Z2Nvck5Zd3EtcWFhdnNyMjFsenBWb1JKVzl3MlN4RENPRjBYNy1ZalJiTlhScUo4S2Vjbnd6M2s?oc=5": {
+  "zh_title": "Meta 推出 Muse Ember，帮你自动处理重复任务",
+  "zh_oneliner": "Meta 发布轻量模型 Muse Ember，面向需要高频执行的重复性智能体任务。",
+  "en_oneliner": "Meta has introduced Muse Ember, a lightweight model for automating repetitive agent tasks."
+ },
+ "https://news.google.com/rss/articles/CBMiiwFBVV95cUxON0I3b3lFaHBmd0xoR3ZwcWstODV0RG1hM0d1YUNjWHgtWWs5ODJMdUE3QmY4ZVp3RGFRb3h5N2FJaHhyYnBHWUlERHhnS2g4WHg5WjF1bG54cUpVVHA5bWdVbHlqNkxibS0yRWJGZkJDdS1LLVNocnB3NnVMbERlZXpIU2RGRVlTZVdZ?oc=5": {
+  "zh_title": "Meta 发布 Muse Ember：每百万 token 仅 0.10 美元的最便宜智能体模型",
+  "zh_oneliner": "Meta 推出迄今最便宜的智能体模型 Muse Ember，输入价格低至每百万 token 0.10 美元。",
+  "en_oneliner": "Meta has launched Muse Ember, its cheapest agent model yet, at $0.10 per million input tokens."
+ },
+ "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9sb0FyNGRTb1BvNHdJaVpQYTRMNDhBRlZvNEMzQXFoUXNfWFhjQXo5RXdQUEVSSjZoN2lpTk1Pc2RfWnZIam9HNFlyUk5qNHZoalZzMlBYSDlkNUZE?oc=5": {
+  "zh_title": "用 Muse Ember 写外部集成",
+  "zh_oneliner": "一段视频演示如何用 Muse Ember 编写外部集成。",
+  "en_oneliner": "A video showing how to write an external integration with Muse Ember."
+ },
+ "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQR2UxWmk5Q0tzVktNWm04UXlUeThHZ0NETXVaYTFFT0JQYjJIOHhabnZxSmlVSWJRNEZHNjRwcGFUb3VNbGRQM1ZBSFJEa09laUdJZ25Xd2hNb0RZZFJRZjM5cHF5RGZTYXFkaGttT0x6dzh0ZlFnbWlkZkw4aHpYbW92OXZkUlhTT0x6ZWdIT0pMS2I0dFV1TkxUd2tQR1BYNUtaNDJ1MklRNEJIVVM1SGZKOG9Hd0hMQVVzMk5kUHDSAcYBQVVfeXFMUHprU2JnMFpfUGtNZG9OY2Y5QWNyUTJ0UkZxRFlta2NWTzQtSkx1RW80Zi1DRHFDdGpIeWV3VDd5MVdycmxTcm44T3JlbHlyVDJPd2ZQQlZhcHdZMXcyNnI2QjFxMG1mS3VlMm9ZdU4wNXFrTHRqdWpnaWpZeVBxQXVHM24zMldJblg1NlhWSDZKYkg0cTJEak1vNEJBZmd1Ui1FalRJSERRY09IaS0tYlFCWE95bzVWbF9GMVJqWTdKOUp4bjNR?oc=5": {
+  "zh_title": "Meta 发布 Muse Ember，扎克伯格称其小巧却非常强大",
+  "zh_oneliner": "Meta 推出轻量模型 Muse Ember，扎克伯格表示它体积虽小，能力却非常强。",
+  "en_oneliner": "Meta has launched Muse Ember, which Mark Zuckerberg describes as small but very powerful."
+ },
+ "https://news.google.com/rss/articles/CBMinAFBVV95cUxQOXJfcmlzYkRZd01IbXY3YjE1NUlVUUlnbEU4OS1IRURta1k2Nm16NTB4X0RfNTlTUzhWMVV3M3FNdWg3VURTb0pSYWg2Rk5qd3BkMmMtLUd2SjBPMnpIY0t5dmFBVWhrdnktMHRkeGZ5Smdvc19qby1pMmdvS2g4eW5KVG8xV2hMbDBMendrdnNOaU1lMzVjRnlNQzQ?oc=5": {
+  "zh_title": "Meta 推出 Muse Ember，面向高性价比的智能体任务",
+  "zh_oneliner": "Meta 发布 Muse Ember，主打低成本，适合大批量的智能体任务。",
+  "en_oneliner": "Meta has launched Muse Ember for cost-efficient AI agent tasks."
+ },
+ "https://news.google.com/rss/articles/CBMilwFBVV95cUxQVmlfb2hJSkFNWTBKNGNDZzRCTHVoMGtYQVJHeDR1VnVuTWJ2OEhZZFN6am5GWlZwOGhGUHBGSjNuOF9fSjdjN1BCb2dKb2hqVFhLU012VzBmSzdLMm9nejJ6RHJrMnBsYmxya2gwdjE5NDUtd0ZweFNnUWhtUlluSWhKa1ctaTd5MzhoR3YyRkhOb24wRkdj?oc=5": {
+  "zh_title": "Meta 发布 Muse Ember 模型，面向高并发任务",
+  "zh_oneliner": "Meta 推出 Muse Ember，专为需要大批量处理的高并发智能体任务设计。",
+  "en_oneliner": "Meta has unveiled Muse Ember, an AI model built for high-volume tasks."
+ },
+ "https://news.google.com/rss/articles/CBMirgFBVV95cUxNazM3cUo0dkhpTHA4ZzdFYWRyRS14RlRiSkRST1p5NWdURllYVks0S3o2eDZhaG8yZXFPZGZqNU1LLWVjM2hwM0RrWnRFbkJ2YlNUYU9tRTJFS2RBSUNFZWZhNGhGRjhNbW9zVTdLNTlmeFN2N3UtNGoxVWdjMlZCOHhESTAwemxINDdmeFhTazFodTd3ZnN4azJIdThMVDBhRDhUa1JjYldEektUTlE?oc=5": {
+  "zh_title": "Meta 发布 Muse Ember 之际，英伟达支持的 Fireworks AI 再曝安全漏洞",
+  "zh_oneliner": "Meta 推出 Muse Ember 的同时，获英伟达支持的 Fireworks AI 又出现一起安全漏洞。",
+  "en_oneliner": "Meta launched Muse Ember as Nvidia-backed Fireworks AI faced another security breach."
+ },
+ "https://news.google.com/rss/articles/CBMisgFBVV95cUxNUmFhUl9nMDBBOHBrOGNaemNIWUtQVFhaLTZ1dVZkY2pqUmxVVC1UYUJoR0hJMFpVb2RrUjJjMjFnWVFrMjA1N0dNOGlXeVJIM3NvMWxqSWdzWndMbFpEX202RHllbURTSHNnMkJJT18tZ1AyTWx4U01EUkk3OHhkb2pEekpuRlAzdVlYSjJQdS1HakJOcEd1SENRN2NVYXExWWtmR1JSMEZ5cWxYTVhIMmlB?oc=5": {
+  "zh_title": "Meta 发布低成本模型 Muse Ember，专为大批量智能体任务设计",
+  "zh_oneliner": "Meta 推出低成本模型 Muse Ember，面向需要频繁执行的大批量智能体任务。",
+  "en_oneliner": "Meta has released Muse Ember, a low-cost AI model designed for high-volume agent tasks."
+ },
+ "https://news.google.com/rss/articles/CBMizAFBVV95cUxPYVlOdnVRSnRRRUdWOElObGFGVkJhbklxaUZrTTl4T3hNWFVLN2pSbmNvQk5WVjBpamxxWDBVRUJ6dzROdGlPY1RZbWtybHpLYllFYkQ0a3VqZnJ6X0JITEJJNFg0TlJTcndvYTBVWWZfeTgtVTM1Vk5jQnFNcWpReS1TaWNaM0ZsWGd6V1JOZXpaUWxaVDZfNms3SDlldm5nMXBLX3U0bHJobllkQUV2QzczR2g1eTdEQXNFUzgtcFZWX3QxaWdPZXMwLWc?oc=5": {
+  "zh_title": "Meta 发布轻量智能体模型 Muse Ember，每百万输入 token 仅 10 美分",
+  "zh_oneliner": "Meta 推出轻量智能体模型 Muse Ember，输入价格为每百万 token 10 美分。",
+  "en_oneliner": "Meta has unveiled Muse Ember, a lightweight agent model priced at 10 cents per 1 million input tokens.",
+  "en_title": "Meta Unveils Lightweight Agent Model Muse Ember at 10 Cents per 1 Million Input Tokens"
+ },
+ "https://news.google.com/rss/articles/CBMimAFBVV95cUxPWEtaMm5FSDNDbGtnQTR3MlNVSnp2aWpGM2FzT1d2WF9nQXFma1VUdjNpeTVCVzl1WnMyTlphNkJLeDdJZW8wNTdDSzZENkpzaHkxR1BRSHc2T1VLQ1hWdG9kYzZ1ZVZ5b0Q4T2xXTkZwbVUzZ1dEekVsWnFRSktDQ3kta3pyZ1o2Ukt3OGZrbkE2RmViTVp5Zw?oc=5": {
+  "zh_title": "Meta 发布 Muse Ember，一款面向智能体执行的轻量模型",
+  "zh_oneliner": "Meta 推出轻量模型 Muse Ember，专为智能体执行场景打造。",
+  "en_oneliner": "Meta has released Muse Ember, a lightweight model for agent execution."
+ },
+ "https://news.google.com/rss/articles/CBMicEFVX3lxTE8zRkR4cVVSVGZvX1R5SmN6T3BEaFB6Xy11cGhGSE93TEFObHhvT3hWNV95amU4b3lRTEJaYmVUN1pzUXdpamNJWXl0WGxGY0w4b1cxcVo1QXprS203aUlSVU1ldUZOMWxvbzBYUjB5czM?oc=5": {
+  "zh_title": "轻量推理模型：Meta 推出面向智能体工作流的 Muse Ember",
+  "zh_oneliner": "Meta 发布轻量推理模型 Muse Ember，面向需要推理能力的智能体工作流。",
+  "en_oneliner": "Meta has debuted Muse Ember, a lightweight reasoning model for agent workflows."
+ },
+ "https://news.google.com/rss/articles/CBMipAJBVV95cUxQeld1bjVNQk96YWE0ZkgxbEM0WmowM2hTZVZmcUp0U1FhaVFZaUJTcnowV1pVeXRYQlJOU09jUU5PNEFjY1JCQl9zRDgtSDg3bm5rMjItTmJHaXVJeE9hd0tJYUtISDd6d0RyclotYklDUUlhczdRUmlIQVVSQVllNllheTQ1SU1ERG5xU0ExaHJJdENNZjdNNElMV2VxTFktM0p6TXFLN3JwQVF6QmFXZ0NEUG1UOE81VXdxRS0yd1NpNkQ4eTF1b2NtUzZDeS1pVEQtelgyX25SVlNEVE1JczFfb2N0R3Q4VU1GNTVqQjlxOUFVSGFKVEVTcy10cnNVYXk4TkFJejBfS0ZwYzVoeGxiN1M5OGNhYWhnaGlLOFVRS1Q50gGqAkFVX3lxTE90ZVJjTGZtYl9SY3dkb2N4TjJXRlp5UFB5dUd2bmdLOGVtckZVWmg0NUM1QXhWSjRfQmIycHF2R0wxNmNyT3MyZUVuaXlNYlJNR295V1Q0SjRfVlZNRkc1WGwxbXVPZGVtU1RhY3lfVmhCZk02TTRiX19qT19wUGVIZllRSUlzZTI2ZGYzQVNRX3htQkNtdUZITHFVa3V6aUY3cnYyQlR2bUx6ZzV1VldQNWUwaldtRi1zaW5BRWxGX1hrSmlWUGo0U19tcDRCWjRtMXNGNTZ3OG52Rmx4dU5OekhCSERVM1RxeGFYbU02bmtVVG1zejNDcDFWVklJdFUwb21ubDU2enBkLVpsa0RORDRhTW8yVGVaZlA4Zkp5NXhlWnpQbm03VXc?oc=5": {
+  "zh_title": "Meta 发布 Muse Ember：处理重复任务最高效的模型，了解它能做什么",
+  "zh_oneliner": "Meta 推出迄今最高效的 Muse Ember，专门处理重复性任务，本文介绍它的能力与用途。",
+  "en_oneliner": "Meta has launched Muse Ember, its most efficient model for repetitive tasks, with a look at what it can do."
+ },
+ "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQVnFacFZDQ2k5dzlEbjJvSUlzNWs4UWgxSEFDTnptYkZqTHZpS2E0TnF2c3pnSzlnZzdLbVRuOUtGMDJhUlJBWGJOd3YwYUhfX3c3QlBHeEtYaktJenprZkQtM0NRM0cwS2hxelBjZ09QekJMc2FvYXBVWHFUTC1aTWdPb1VCaUVxYVFqWFpaQll2cnhBY3AxdlROMGVPa1VOaVF2akxjeTkyTzlieGZpTHJpMFBaWHFuaTVjaTc5LWloaDVhUkhRdU1UZF94c292cTNqU3F30gHbAUFVX3lxTE5YZWhBc3o4MGVhVEV4M1FrUXIzV0plaTFmaFpmUUxuMXZ0eWJSemNTZGFoeDc1WENVODFkTGphd0JaaE5RV2ZJdG44aDl6b2xQRjJkd0lndzUzRmVZM0ljNHVIRGJtckRoSjJvT0dHZ0huY3RsYUd0NmhSVXZrMFBOemJxVWZwNWZmZ2hNNllPU2FXUnZGMVBCX2U1NjM4SGR1ZkdZNzNHVlNKX3RHb3VmX09kbkwtS2p0OUs2aUZ3RDgyTGE4YVBqb180eHBQaFVyVXUwcDlaWEhnYw?oc=5": {
+  "zh_title": "Meta 凭 Muse Ember 叫板 OpenAI 与 Anthropic：功能、基准与定价一览",
+  "zh_oneliner": "Meta 用 Muse Ember 正面挑战 OpenAI 与 Anthropic，本文梳理它的功能、基准成绩与定价。",
+  "en_oneliner": "Meta takes on OpenAI and Anthropic with Muse Ember, covering its features, benchmarks, and pricing."
+ },
+ "https://news.google.com/rss/articles/CBMiXEFVX3lxTFA5cUJ5dEZXM1pzTnZjb0pRM1BNZFFnMEtDRGVRRXVQU1B6cEU1aTMwTWY5NXdSWVdwOC1obGtpRGtnNm1iTE1tNGF0ZmxFUWdpaEt5Sl95YUJhLUpf?oc=5": {
+  "zh_title": "Meta 发布 Muse Ember，基准成绩超越 Claude Haiku 5.5 与 GPT-6 Luna",
+  "zh_oneliner": "Meta 推出 Muse Ember，在基准测试中击败 Claude Haiku 5.5 与 GPT-6 Luna。",
+  "en_oneliner": "Meta has released Muse Ember, beating Claude Haiku 5.5 and GPT-6 Luna on benchmarks."
+ },
+ "https://news.google.com/rss/articles/CBMiakFVX3lxTE9YOUpKZ0d1NWlqQkJha1g3RlNfbnNydnlVcjR1S2IxVE1uUHdvMDdldm1rQ2ZWRmU0a2VTcXpCcjc2RU4ydERITEc3WHhQVWVrQ29JOVpDMHpnUmlLanIxUUpZa1NBR2t6OUE?oc=5": {
+  "zh_title": "Meta 发布紧凑模型 Muse Ember：性能媲美 Claude Haiku 5.5，成本仅约三分之一",
+  "zh_oneliner": "Meta 推出紧凑模型 Muse Ember，性能与 Claude Haiku 5.5 相当，成本却只有约三分之一。",
+  "en_oneliner": "Meta has announced Muse Ember, a compact AI model matching Claude Haiku 5.5's performance at roughly one-third the cost."
+ },
+ "https://news.google.com/rss/articles/CBMitgFBVV95cUxPbkduZnB5WWRzcXE4aDhHSWdwX04tSDFGNk1FTzMwdEtVNmZoREZaTzZlRlhQQ2FqbnJ0ckMzdXpqMG9Dc2JhM0FRcG16SzQxaG01S1Z4VW9qSDlNdzVIMFVCTk1xWFVwcW9UWjVQVzh6NjQxYXZMdEFhVkdwUVVYNGduZWo5NFV2YmlBNlpLMzR0SUkzRkNZNG5BX29ON0ZlU2JaelExd0JvNTU0UXI0eHEwQWZvZ9IBuwFBVV95cUxPNGd5SHc2Sm05Q19KZjRwWmJvSEt6R2ZMVXQ5WC1LTjdDVXRLZHFMWV9kQ29YRXh3ZUc4eHZ1blZuaWl0RjQzVUJpWmg1RXRyOVFtLTlKQVRVYnBUMHp5ZklVMkhkUWdUc0lPbEd2RGNjLUl3aFM1UGh4Qkg5TERsTDEyVjBRV295Y05nLVpmU2V2dXJiY0FSeTM5N2FJWWZxVFVPUWp0N1lhamNKRlNIRVVnMkxOMnB0YkhB?oc=5": {
+  "zh_title": "Muse Ember 对比 GPT-6 Luna 与 Claude Haiku 5.5：谁更便宜、更聪明？",
+  "zh_oneliner": "Muse Ember、GPT-6 Luna 与 Claude Haiku 5.5 三款模型对比，谁更便宜、谁更聪明？",
+  "en_oneliner": "Muse Ember vs GPT-6 Luna vs Claude Haiku 5.5: which AI is cheaper and smarter?"
+ },
+ "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBfVUUzaHNZS1JsRU91T0w5Rkx6RUFWeDZTR1kwUHlvemc2WC14X1pzbHpscVN0QUtnbF93YkJNaWlTV0RWTC1yeGV1UkpwcVdTN1ZFUjdQQzRpcEE?oc=5": {
+  "zh_title": "Google Cloud 把三款 Meta Muse 模型接入 Gemini 企业智能体平台",
+  "zh_oneliner": "Google Cloud 已将三款 Meta Muse 模型引入 Gemini 企业智能体平台。",
+  "en_oneliner": "Google Cloud has added three Meta Muse models to its Gemini enterprise agent platform."
+ },
+ "https://news.google.com/rss/articles/CBMiakFVX3lxTE1VMHVSai12QVhNUno4Z28zX294QWg3MjJ4cURMS1czT0tuN0tDcjRqRW1ZNm5kYVI0NWYtaGQ5Q2psaFk1V3dtckdLYl82dkVIZEJZOVAwNFFidk5pRzBQVGpzcUhHaGJ3ZFE?oc=5": {
+  "zh_title": "Muse Ember 对比 GPT-6 Luna：哪款平价模型更超值？",
+  "zh_oneliner": "Muse Ember 与 GPT-6 Luna 两款平价模型对比，哪一款更值得选？",
+  "en_oneliner": "Muse Ember vs GPT-6 Luna: which budget model gives you more?"
+ },
+ "https://news.google.com/rss/articles/CBMiiwJBVV95cUxOYk9UWVl1c043TFNCeFZHNGRDX204UjFnSFphU3N0VWp3V2FGcEo3dUk1QzRuY1NlMHFfNUpUZ0ZWSW5GZGhwaUlIbk04RWVZcDZUQWdqclhMQzIwbWEzQVU4V2h5T3dDY0NVVXdoVE5NWVlFZWkycTRUOU9tM0diQnY2Q1RjOWJEX1dPLXJEWDQzUEVDYll6OW5NQlVQQldGV3BROFVLQVlxU2lZWjJGbG1HV0otNFlmWG51VHI0UDcwdWJ0QTE5OHdlWEpoMjBISGJoa28yNy10Nmt2WFVPLS1mZnpIbHJzMG9NTy1WMGtFLVhsQndGcWlzZ1pQdDU1OTdLQzBPd1RkTnfSAZACQVVfeXFMUHJIMWJ6SmhxTnlPM0QzSFRxQ054c0F1b3R3c1VBUExJWUxZdkY1VUF2QW5US3l2cDVoS0Y4a1E0cjZZeHV2bE1CaDlGR0JNaHhYMElKcGI5U3U2TVBiblZ5QjJTeEozdU1LckpxWkdzS2FkTGMxY2l4VHI3Zmk0RXRvSzJkZkY5dWljTW1Pc19hVm5uRXZ0TXAxUGFfeUVzV1k2VzJCdDFFYVF1NXE2TmYwLVE2ZTIxempaaHd6WUtWNm9xaTJwUW9LLTZtaTdOemhjX296Z0VoX2ZZdC1VR2tHRmxuZWhRMVdRN1dsZjMtRWw1UWZVSHRhZ0dFYXczaUJEYkZ0T3JWY01wNk9wblI?oc=5": {
+  "zh_title": "扎克伯格宣布 Meta Muse 模型登陆 Google Cloud，皮查伊这样回应",
+  "zh_oneliner": "扎克伯格宣布 Meta 的 Muse 模型已上线 Google Cloud，本文还记录了皮查伊的回应。",
+  "en_oneliner": "Mark Zuckerberg announced Meta's Muse AI models are now on Google Cloud, with Sundar Pichai's response."
+ },
+ "https://news.google.com/rss/articles/CBMirgFBVV95cUxQM21Yc3duTloyYmFtemFjTm5Mb2RaN21WQW5xLXBrWVRSRllPUzVfYWpNMFhPS19ZRERuUG04a3F5YVltUzBDZ0NkX0REVGtaWVgzXzRfU0tXWkVtNjhidjFRbnJ4eFV4MGU1V0l3ZGloWWJYWnBrRl9mcDZLLVJYOUpCR2JfaDkyWjBOQjV2VUg1QlVGMnFydnUzcWV5dlVTU21vbDRQZ3UwdENzNFE?oc=5": {
+  "zh_title": "Meta 的变革之作：Muse Ember 如何大幅降低智能体成本",
+  "zh_oneliner": "Muse Ember 如何为智能体应用带来大幅成本节约，本文做了拆解。",
+  "en_oneliner": "How Muse Ember delivers major cost savings for AI agents."
+ },
+ "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOemE1OU9FYm5pempJZUVvSnpmd2h1b1d1LUtIRTVkWERJcFFTbll1dE9vLWZfXzgtbmdzOVZ0d1VuNkgzeTRoajVxMXU5VUthczYyanFuSTlNcUt1dzYzaWZNMEZaRWUzOU5oMHplbmtXTGkzV09hRllVYmh1RHZSNHJKdk1jMDVwU3U4TzNFNzFvQk5Vb3ZKZEY0anJSMW9RVHVkeGRZc3IwRlFEeUI3NlFoUmp1TFlQS3lWNWsxOVg5WDZvNklzeTNXTmJHeFdaV0hYV2kzekdycUVLdkc1ajh1YUVqSDNPN0VrZ0ZURjV3djVad3lUM9IB_gFBVV95cUxPeEgtQjM2Z0Fjd0w5ZWRzczUxa2lUb3JVald1ZHM1MGNQdXBWUlptX194ZmJpeFFlSU56YU43MGRRMzE1X3RCTkUtc21xU0xCZjkybnh5MnpELXp1eFlaaDdKei1HVGc1T09Ob01hY3htUm9YYTQ3Sk92WWJIaVhPZ1BoUkM2V2JwNy10UFFfcnBFSkFfSlQtOUpJNS1nTVBWUlA2WERoa2VzYnlVNzkyV2Y5WnByU2t1dnhrR3J0VUZlbWsxVGNTUW1zdmlIV0VEckpuOUF4LVczRnRQSWJwSmVYSmIxVngzb0dDeE9EWnVCRHRuazFFWkNjRGVvZw?oc=5": {
+  "zh_title": "Meta 发布新模型 Muse Ember，比 OpenAI 与 Anthropic 的竞品更便宜",
+  "zh_oneliner": "Meta 推出新模型 Muse Ember，价格低于 OpenAI 与 Anthropic 的同类产品，本文介绍它的能力。",
+  "en_oneliner": "Meta has launched Muse Ember, a new AI model cheaper than its OpenAI and Anthropic rivals, with a look at what it can do."
+ },
+ "https://news.google.com/rss/articles/CBMirwFBVV95cUxNcDhFMklWRFVJWVFsNkJ6ZUpramdVT3FZVmtnNl9TTngtSTBWTUpGazhXeGlkQUc3VW1RMWxUcHlweXJoQTJqclJrOURMTThCb09IOWhEcEd6Rnc3UlQ4MkRBS1F0bGh3S0x2UmU4TlNnTERLR09KbWVSNklzVHluTTVUS0RYbkhpZEg5TU1tRzRVYWZUTThtLTVYMElFQnFXQ0tJdlNOSHp6dE50TFhV?oc=5": {
+  "zh_title": "认识 Muse Ember：Meta 最轻量、性价比最高的模型",
+  "zh_oneliner": "Meta 推出迄今最轻量、性价比最高的模型 Muse Ember。",
+  "en_oneliner": "Meet Muse Ember, Meta's lightest and most cost-efficient AI model."
+ },
+ "https://news.google.com/rss/articles/CBMid0FVX3lxTE1KQVV1dEVyT3R6VUpQdGRlU21iZTNYWW5NTTBKcFplOFFPSV9PMDBxS3lpTHZaT09zZUNtZDl2Z296RFZqRWZjYkUxd1NLQzQ5NVk4Vy1tMWo1c1Zhdlhwb0dKTHJreTVsU0NjMDQwVjRWUW1QbGw4?oc=5": {
+  "zh_title": "Meta 最小、最便宜的模型 Muse Ember：基准成绩如何，真的划算吗？",
+  "zh_oneliner": "Meta 最小、最便宜的模型 Muse Ember 基准成绩出炉，本文检验它是否真的划算。",
+  "en_oneliner": "Meta's smallest and lowest-cost AI model, Muse Ember: benchmark results, and is it really cost-effective?"
+ },
+ "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOQXhlQnBWV1VJZThZU0pjaWRrQnJEdS1fSkJpeFdfZnBtZUo1RXBzWFZEWEIzc3kwczlWdkdveEh6OGhGc04zbS1jQjJIZTVZZUZpT0JjdTVPTzk4VEhPd0lmRmpmdWZyeDNPTWVxVkNVZzZGZDlNaFJmcmMzWnRON1gwNjlnOWJrRHRFWDNLdzlBQzVmdkJKdkxpalhsUlpOajZlMmNVZFZudw?oc=5": {
+  "zh_title": "Meta 推出 Muse Ember，面向编程与文档解析",
+  "zh_oneliner": "Meta 发布 Muse Ember，主打编程与文档解析等智能体任务。",
+  "en_oneliner": "Meta has launched Muse Ember AI for coding and document parsing."
+ },
+ "https://news.google.com/rss/articles/CBMirwFBVV95cUxNQ1VHX2c0enVVS2xYc0s0QjFzOFhiX2l2dzJHR1ZGUVhVRnM2SmhKeGdtNWNadnJsVGx0X2pDUzhISGlnS1RINTU1T0R0NWlVLWRUSnlNSUR0S0RxLUhacnVrdHd4SWhjT1Z4QzZHS1kxaXNZVk9DSlJYYWFBbU5oaVE2WW1STHdTdi1iWlp3dDRSSDZQSk5qdFJWcXdfejBLX3lGWnBPME5iQ2wtVFVB0gG0AUFVX3lxTE45bnpfUnBnRWtLTEtXdlBEYUwtMm40UURwT1daOF8tY3hTRmFtbkVUNjhFUDJxNEhIRjlOVGFER2F2YnZVbGZxeFh2RjlENU1PeGlOeWNwQWhLaWs2U1RGY0dLT1B2ZE9MLUg4bmh5VUhremEzTkdsRzF2cF9NWjFmRmhRcHVfbm5iN1Z5M3BXaTg3amh5UmhLQjRtaGNTTk84RmF3eFlCbWxzYUtET0I1Y015ZA?oc=5": {
+  "zh_title": "Meta 发布 Muse Ember：小模型，大能力",
+  "zh_oneliner": "Meta 推出 Muse Ember，一个体积小巧但能力强大的模型。",
+  "en_oneliner": "Meta has launched Muse Ember, a small AI model with powerful capabilities."
+ },
+ "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9YQjROY05PM2tVMDJwWXBGcUs0SHdPdlFKVkxGRTVZUS0zemhZdU0xSnlxb0hlY2xuRW5pYXRROV9tOFlFeWdScTR1RGxQdw?oc=5": {
+  "zh_title": "Muse Ember 价格、基准与 Claude Haiku 对比",
+  "zh_oneliner": "本文梳理 Muse Ember 的价格与基准成绩，并与 Claude Haiku 做对比。",
+  "en_oneliner": "Muse Ember's price and benchmarks, compared with Claude Haiku."
+ },
+ "https://news.google.com/rss/articles/CBMizwFBVV95cUxPYjNtbndCR1BwNnVteWw5MUk5X0lhdThESG9tdUdoNGV1RkpXaVVzRmdUVVMwbmhZS2VISlBHdm5oWGVtRl9QMTR6QUdXcEdMclpyeUpUWTVWYXBnblpfZTFUOTN6Y2U4MGxmaDcydlJQUjB6REE5cmZJZkJmeWFFRGpzSTdwMlRTU1hqY2RuYk1TU1BJWXZMN0Z2enRnSGdRcXRveVZwcUI5ZzF5ZWxhRV9sQWhVWGxteGMza2N4MzVPRThxZFd2SnQxSFNTYTjSAdYBQVVfeXFMTUNyS0YxcTQyTVpyUWdlcXplR1ZKTk9xZGctNk1UWURRS0QtajNOZm55Z1RWWDQxSE5sZmJBYXJFRHZBVFd0NzJKVFh0VlhRMVQ0R05rb0dvbVBJVTN4Tk12ekd1Y0VKbEV6Sl93TklXWTRvVk9saHNBT1JsUTlOa0UyVGFNenoyV1JZaF91U2dEeU5SbXVvZlN1THYzSWVfYnQ0SUs2dXpDX2RwRl81RUxHa2c2ME03bml4NmwtLXE0bG9lekV6c2h2QnRDcjBiRHl6WGZEUQ?oc=5": {
+  "zh_title": "Meta 推出 Muse Ember，称其表现优于 Claude Haiku 5.5 与 GPT 6 Luna",
+  "zh_oneliner": "Meta 推出 Muse Ember，并表示其表现优于 Claude Haiku 5.5 与 GPT 6 Luna。",
+  "en_oneliner": "Meta has introduced Muse Ember, saying it performs better than Claude Haiku 5.5 and GPT-6 Luna."
+ },
+ "https://news.google.com/rss/articles/CBMioAFBVV95cUxNQVNtcGI1RE51ZWRSckN3V0JJOTJDNmF5REFZaUdsSW1aa05ET1d6bk5OMEw2WkY2NGdKVTJwVFhlN3BmeHZMX2QwSzYwb3FxTG9naWctR2pIWndNTlNIMDFxWGtkcmZZRmtpWTVwcGZFekJNSDNEaFdtUmJueUZMZ251NjY5bEZQckwwOGRjX24ycnB6TzlvM1oyUFJsV1Nf?oc=5": {
+  "zh_title": "Meta Muse 模型现已登陆 Google Cloud",
+  "zh_oneliner": "Meta 的 Muse 模型现已可在 Google Cloud 上使用。",
+  "en_oneliner": "Meta's Muse AI models are now available on Google Cloud."
+ },
+ "https://news.google.com/rss/articles/CBMirwFBVV95cUxQakVrSnpyQkxBZnFEcWs5MlBDZDRZdEFvN3NvNG5kb2JZNmZYODR3NzBUQnZpcVprVEt2eGk2RklCYTU4eVdMMFhob1N1dGFxekdJMzcxdklNU0YyMHpqY0R5eFZxUmZYa3NPVEFva2NUYTYtRk1vVkJKOHVjQllpVUpBMTRrcURIanJNTDhoMHhhTHlfaDBqWm9kM2lHZC1NYUxicmJoU25OalA5eWEw?oc=5": {
+  "zh_title": "Meta 把 Muse 模型推向 Google Cloud，皮查伊表示赞赏",
+  "zh_oneliner": "Meta 将 Muse 模型引入 Google Cloud，谷歌 CEO 皮查伊对此表示赞赏。",
+  "en_oneliner": "Meta has launched its Muse models on Google Cloud, earning praise from Sundar Pichai."
+ },
+ "https://news.google.com/rss/articles/CBMic0FVX3lxTE1GbDNIQk5tX2RCenhtVEtrbzhzbUtleks3S284MEx6em02NW5hbVpndzFTZ3c2UVZPSm15OEM2aFluVHUwdzgwTzVFM0xKT0xFVWNxNEE2aGMzWlVZczd0LXZHNTBONnIyd0I5YUJ6SFJlQjg?oc=5": {
+  "zh_title": "Meta Muse 模型登陆 Google Cloud，皮查伊欢迎扎克伯格",
+  "zh_oneliner": "Meta 的 Muse 模型已登陆 Google Cloud，皮查伊对此表示欢迎。",
+  "en_oneliner": "Meta's Muse AI models have arrived on Google Cloud, with Pichai welcoming Zuckerberg."
+ },
+ "https://news.google.com/rss/articles/CBMifEFVX3lxTE81XzBiUEtoMGIyRzZJbVY2ZHhXS0JtNXZmUl9pR0hvSXpTVzdSZVVvR3ZqYXJhRnhZSlJza1hzTjNtT1J4QnI4YmRSRUxNOURJOWhqa2xkOXpLRlZfb0cxNmJrSmxhMGtPSWJCSFM4azhjbmxsMUhUeTgzdG4?oc=5": {
+  "zh_title": "Meta 把 Muse 模型带上 Google Cloud，不止于 Gemini",
+  "zh_oneliner": "Meta 将 Muse 模型引入 Google Cloud，为企业提供 Gemini 之外的又一选择。",
+  "en_oneliner": "Meta is bringing its Muse AI models to Google Cloud, beyond Gemini."
+ },
+ "https://news.google.com/rss/articles/CBMivAFBVV95cUxPaFFDTjkwMmNfbmU2MklmZl90WTBZaU9yc0lqd1MtblJ3SUMwc2dWZ2huSTAyWmRXekVzZC14OXBqZ1NmVkVGQ3J5YkJoU1Z1QlNHRHR2bWVpUjRrdEg4MTdWTzhhQkJzQU1oVGYzSHFOcG9yamJ5SVI1ZDBLc2x2OHRObU1ZUDFta21PS3JJLUFGZDl3LWZBWVp6Z1lNYWxhdmFIY1QwNmVpVEZYSlR0eV9wZk1jbjRuUmx6ZA?oc=5": {
+  "zh_title": "Meta Muse Ember 以小模型叫板 Claude 与 GPT，专为智能体而生",
+  "zh_oneliner": "Meta 推出面向智能体的小模型 Muse Ember，正面挑战 Claude 与 GPT。",
+  "en_oneliner": "Meta's Muse Ember takes on Claude and GPT with a small AI model built for agents."
  }
 }
