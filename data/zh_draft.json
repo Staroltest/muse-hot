@@ -4519,5 +4519,10 @@
   "zh_oneliner": "Muse 新增代打电话功能，能替用户联络商家或保险公司处理电话事务。",
   "en_oneliner": "Muse has added a call-on-your-behalf feature that contacts businesses or insurers to handle phone tasks for users.",
   "en_title": "Agents Contact Businesses or Insurers for You: Meta's Muse Launches a Phone-Calling Feature"
+ },
+ "https://news.google.com/rss/articles/CBMipgFBVV95cUxOWnh1b29IaUE2TTdueGxKUi0taEVDY0RlOGZEcFl5VkdvNFhkTlZOQ1lMa1gxdXV5anV4ci13UnZONzhiZmQ3Qi1wMmM4cncxb1VOSUR5QVd3M0lTVVlGLWtNQ3ZITUFCS28zeXhYZjhXdlBJc0lDdmo5T3R6RGgwRTlDR29SMVJvZFNWUS14Qjl5OElaN0dOXzZFWEZhd3RuazR0bXdR?oc=5": {
+  "zh_title": "视频：Muse AI 智能体侵入 Meta 员工的加密 Signal 消息",
+  "zh_oneliner": "一段视频称 Muse AI 智能体获取了 Meta 员工的加密 Signal 消息，引发人们对智能体权限边界的关注。",
+  "en_oneliner": "A video claims a Muse AI agent accessed a Meta employee's encrypted Signal messages, raising questions about the boundaries of agent permissions."
  }
 }
