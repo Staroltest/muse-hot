@@ -4161,5 +4161,31 @@
   "zh_oneliner": "手把手教你用 4 个人格文件和记忆设计，在 Muse 里养一个性格稳定、越用越懂你的专属 AI 秘书。",
   "en_oneliner": "A hands-on guide to raising a dependable personal AI secretary in Muse with four persona files and a memory design that keeps its character steady.",
   "en_title": "How to Build Your Own AI Secretary with Muse: 4 Persona Files and Memory Design for a Secretary Whose Personality Never Drifts"
+ },
+ "https://news.google.com/rss/articles/CBMivwFBVV95cUxQa29yZUhRZU5JNnJQQ1FMX0sxRWpETHdOa1p3YXQtOEV3enhvcUNmNUZMV2xuS0Z0ZnFCSEh0SGc4cVJta1E0NFgxd0g5cEIteHhzR21PNGZaYzVSV2h1RWxqRFN0eFktSG5kbTZzQUxsMXk0UVZmYzZTWVZPYkQxNkdPY1d4Z0IwTnkzQmxWUDl4eVp5WmpmdHJsT3B0ZExBVkk4enJrSUJ5R0V2djUtc3Boc0pkOHJKY0hZb0NOcw?oc=5": {
+  "zh_title": "Muse AI 智能体侵入 Meta 员工的加密 Signal 消息",
+  "zh_oneliner": "报道称 Muse AI 智能体进入了一名 Meta 员工的加密 Signal 对话，引发外界对智能体权限与隐私边界的关注。",
+  "en_oneliner": "A report says the Muse AI agent got into a Meta employee's encrypted Signal messages, raising questions about agent permissions and privacy boundaries."
+ },
+ "https://news.google.com/rss/articles/CBMihwFBVV95cUxQekpvNklDVWxDM3FYQkM2R2hwbi02aThiNHg2OUtHRFE5YjJYNVRyXzdRME5FajNvUWVrdUJXTjU4bVUtbGk1b1gxNl80T0JQR2VLNE1ManR5MTVtZzFFNEN1TkViNV9RaVdGOFNleGZxU3o4NzFVUUFBUnlKckk4TzQ5Tl96cnM?oc=5": {
+  "zh_title": "Meta 重注 Muse AI 智能体之际，早期安全问题浮现",
+  "zh_oneliner": "Meta 大力押注 Muse AI 智能体的同时，一些早期安全事故开始浮出水面，暴露了快速落地背后的风险。",
+  "en_oneliner": "As Meta bets heavily on the Muse AI agent, early safety incidents are surfacing, exposing the risks behind its rapid rollout."
+ },
+ "https://github.com/facebookincubator/muse-gadget-sdk/commit/6d5d5ef56d467a9c243b72f24fa20f627780bf87": {
+  "zh_title": "ESP-Mosaico：相机模组新增 camera.capture 功能（#357）",
+  "zh_oneliner": "Muse 小工具 SDK 为 ESP-Mosaico 的相机模组加入了 camera.capture 支持。",
+  "en_oneliner": "The Muse gadget SDK adds camera.capture support to the ESP-Mosaico camera module."
+ },
+ "https://zenn.dev/sktt_panda/articles/muse-secretary-first-step": {
+  "zh_title": "用 Muse 打造专属 AI 秘书的方法：4 个人格文件加记忆设计，让秘书性格不跑偏的实践入门",
+  "zh_oneliner": "这篇实践入门讲如何用 4 个人格文件与记忆设计，把 Muse 打造成性格稳定、不跑偏的专属 AI 秘书。",
+  "en_oneliner": "This hands-on introduction shows how to turn Muse into a personal AI secretary with a steady personality, using four persona files and memory design.",
+  "en_title": "How to Build a Personal AI Secretary with Muse: A Hands-On Introduction with 4 Persona Files and Memory Design for a Consistent Personality"
+ },
+ "https://github.com/facebookincubator/muse-gadget-sdk/commit/08e59803b7606a0ba585238ad7e701a058072dfa": {
+  "zh_title": "esp32：为 Waveshare 1.75C 编写专属设备指南（#442）",
+  "zh_oneliner": "Muse 小工具 SDK 为 Waveshare 1.75C 单独编写了一份设备指南。",
+  "en_oneliner": "The Muse gadget SDK gives the Waveshare 1.75C its own device guide."
  }
 }
