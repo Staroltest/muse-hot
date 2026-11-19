@@ -4984,5 +4984,10 @@
   "zh_oneliner": "作者和 MUSE 一起只用浏览器做了一个强化学习赛车游戏，无需安装任何东西就能玩。",
   "en_oneliner": "The author built a reinforcement-learning racing game with MUSE that runs entirely in the browser, with nothing to install.",
   "en_title": "Built a \"Somehow Familiar Reinforcement-Learning Racing Game\" That Runs in the Browser Alone, Together with MUSE"
+ },
+ "https://www.youtube.com/watch?v=8ieSCC-KPY4": {
+  "zh_title": "Muse AI：掌握基础后的 12 个进阶技巧——Spaces 与云端任务全解析",
+  "zh_oneliner": "在入门之后，教你用 Spaces 与云端任务把 Muse 用得更顺手，12 个进阶技巧帮你把日常 AI 助手工作流再提一个档次。",
+  "en_oneliner": "After the basics, this video walks through 12 advanced tricks for using Spaces and cloud tasks to make Muse a smoother everyday AI assistant."
  }
 }

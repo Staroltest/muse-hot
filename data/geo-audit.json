@@ -3,9 +3,9 @@
  "site": "https://muse-hot.pages.dev",
  "summary": {
   "total": 11,
-  "passed": 9,
+  "passed": 8,
   "warn": 2,
-  "failed": 0
+  "failed": 1
  },
  "checks": [
   {
@@ -17,8 +17,8 @@
   {
    "key": "sitemap",
    "label": "sitemap.xml 条数与漏页",
-   "status": "pass",
-   "detail": "共 1989 条 URL，磁盘 1988 个 HTML 页全部在列"
+   "status": "fail",
+   "detail": "共 1991 条 URL，漏 1 页：https://muse-hot.pages.dev/google62220726582f76c7.html"
   },
   {
    "key": "llms",
