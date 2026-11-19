@@ -4550,5 +4550,11 @@
   "zh_title": "报道称 Meta Muse AI 智能体可能在用户不知情的情况下读取私人消息",
   "zh_oneliner": "有报道称 Meta 的 Muse AI 智能体可能在用户不知情的情况下访问私人消息，引发对其隐私保护的质疑。",
   "en_oneliner": "A report claims Meta's Muse AI agent may be accessing private messages without users' knowledge, raising questions about its privacy safeguards."
+ },
+ "https://news.google.com/rss/articles/CBMicEFVX3lxTE5jZTFhRjVIY0ZuQk9vN2lfTHhlZmpFOWlBbXFHLUlua3VtZ0tZMHdpWjI5MHhHZEs2UFR5YUtMSmQ1OXBmZTM1NkhhZXUyVTRaTm1XSldwbW54XzdZdkg2MDJNYXZQVGRQdDRaemtoUnQ?oc=5": {
+  "zh_title": "Meta 的 Muse AI 智能体：了解它之前，它可能已经“了解”了你",
+  "zh_oneliner": "这篇文章提醒读者，在你熟悉 Meta 的 Muse 智能体之前，它可能已经通过你的数据对你有了相当的了解，值得留意它会如何使用这些信息。",
+  "en_oneliner": "This article reminds readers that before you get to know Meta's Muse agent, it may already know quite a lot about you through your data — worth paying attention to how it uses that information.",
+  "en_title": "Meta's Muse AI Agent: Before You Get to Know It, It May Already 'Know' You"
  }
 }
