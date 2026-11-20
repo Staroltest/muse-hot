@@ -6029,5 +6029,10 @@
   "zh_title": "Meta 新 AI 应用 Muse 陷隐私质疑：员工曝出聊天串号与数据泄露",
   "zh_oneliner": "Meta 新推出的 AI 应用 Muse 被曝出现聊天内容串号问题，员工对隐私保护与数据泄露风险提出质疑。",
   "en_oneliner": "Meta's new AI app Muse has reportedly mixed up users' chat content, prompting employees to raise concerns about privacy protection and data leaks."
+ },
+ "https://github.com/facebookincubator/muse-gadget-sdk/commit/2af744b7f44a11578349b789d48ea3b55332ae6a": {
+  "zh_title": "esp32：新增 M5Stack CoreMatrix 支持（#446）",
+  "zh_oneliner": "Muse 小工具 SDK 为 ESP32 平台新增 M5Stack CoreMatrix 硬件支持，扩展了可运行智能体的设备范围。",
+  "en_oneliner": "The Muse gadget SDK adds M5Stack CoreMatrix hardware support for the ESP32 platform, expanding the range of devices that can run agents."
  }
 }
