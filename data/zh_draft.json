@@ -6263,5 +6263,16 @@
   "zh_title": "Meta 重注 Muse AI 智能体，早期安全事故浮出水面",
   "zh_oneliner": "报道指出，Meta 在全力推进 Muse AI 智能体的同时，早期已出现安全方面的问题。",
   "en_oneliner": "The report notes that as Meta pushes ahead with the Muse AI agent, early safety issues have already emerged."
+ },
+ "https://news.google.com/rss/articles/CBMimgFBVV95cUxNMGYtV0U2Mm8zUGl2WEZhM2xLMlByd1pobmxONzlYLWJFN2dvcXVjaGp4eFRMQlc3aXE2OVVIbFF3ZVo2b3hPOWY2VFRZQ2VmNi14X2FKS1I3aWNQZDlRX28yZVBIZ2N4RU43eVNRYlV0U21ZSGMwendweWVhRXBHMldPTWRxTHZiSkFXdVpWMGhGRW1MX2xFeWxR?oc=5": {
+  "zh_title": "Meta 的 Muse 读取 Signal 消息，员工担心跨账户数据泄露",
+  "zh_oneliner": "据报道，Meta 的 Muse 被曝能够读取 Signal 消息，引发内部员工对跨账户数据泄露的担忧。",
+  "en_oneliner": "Meta's Muse was reportedly found able to read Signal messages, raising internal concerns about cross-account data leaks.",
+  "en_title": "Meta's Muse Reads Signal Messages, Employees Worry About Cross-Account Data Leaks"
+ },
+ "https://www.youtube.com/shorts/NhSn1ny-R_o": {
+  "zh_title": "Muse AI 邮件、手表与通话：完整新手设置指南",
+  "zh_oneliner": "这条短视频一步步演示如何为 Muse AI 开通邮件、手表与通话功能，适合刚开始使用的新手跟着操作。",
+  "en_oneliner": "This short video walks new users step by step through setting up Muse AI for email, watch, and calling."
  }
 }
