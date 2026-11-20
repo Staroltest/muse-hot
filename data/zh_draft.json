@@ -5877,5 +5877,22 @@
   "zh_title": "ESP32：在完整界面字幕中显示表情符号（#461）",
   "zh_oneliner": "Muse gadget SDK 的界面改进，让完整界面的字幕也能正常显示表情符号。",
   "en_oneliner": "A UI improvement in the Muse gadget SDK lets captions on the full interface display emoji properly."
+ },
+ "https://news.google.com/rss/articles/CBMiY0FVX3lxTE43T2dFV1lSNUJnc2J2bmFDU2VJa2hTR2FpbGd6ak1QUGR0Y3VPYVJHLUtwakU5NlZna2dmMVdKdUlSd1NrejR0OWlwZHdyUlpSV0RIOUhKZXpvd2hWVHhmVlFaYw?oc=5": {
+  "zh_title": "Meta 计划对 Muse Charm 收费 300 美元，包含最长一年 Verizon 免费 5G 服务",
+  "zh_oneliner": "Meta 计划为 Muse Charm 定价 300 美元，购买者可获赠最长一年的 Verizon 免费 5G 服务。",
+  "en_oneliner": "Meta reportedly plans to price Muse Charm at $300, bundling up to a year of free Verizon 5G service.",
+  "en_title": "Meta Plans to Charge $300 for Muse Charm, Including Up to a Year of Free Verizon 5G Service"
+ },
+ "https://qiita.com/noguchi_offgrid/items/fff1eeeb0d1429d81adb": {
+  "zh_title": "试了试 Muse 还没用过的功能（上篇）：语音、Muse Mail 与 WhatsApp 联动",
+  "zh_oneliner": "作者逐一体验了 Muse 尚未尝试的功能，包括语音、Muse Mail 和 WhatsApp 联动，并记录了上手感受。",
+  "en_oneliner": "The author tries out Muse features they hadn't used yet — voice, Muse Mail and WhatsApp integration — and shares first impressions.",
+  "en_title": "Trying Out Muse Features I Haven't Used Yet (Part 1): Voice, Muse Mail, and WhatsApp Integration"
+ },
+ "https://github.com/facebookincubator/muse-gadget-sdk/commit/6a51310b888fca5d76333285bb902808fe09d84c": {
+  "zh_title": "ESP32：说明如何开启 Hey Muse 唤醒词（#458）",
+  "zh_oneliner": "本次提交为 ESP32 说明了如何开启 Hey Muse 唤醒词。",
+  "en_oneliner": "This commit documents how to turn on the Hey Muse wake word on ESP32."
  }
 }
