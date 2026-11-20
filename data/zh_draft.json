@@ -5849,5 +5849,33 @@
   "zh_title": "消息称 Meta 将为 Muse Charm 设备定价 300 美元",
   "zh_oneliner": "据 The Information 报道，Meta 计划将 Muse Charm 设备定价为 300 美元，相关定价细节仍待官方确认。",
   "en_oneliner": "Citing The Information, Marketscreener reports that Meta plans to price the Muse Charm gadget at $300, with details still awaiting official confirmation."
+ },
+ "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOLVJYRXYyeS1DNzJHWERvS2xfTWNNNWpEZ0RxcUJkVXlyWjZxR0xPMlV3dkRicWlYc0dGSzJrOU9CdmRWM0ZCRUtsT0lFdHJibkFvc2lpNkZrSmpqRE9obTh1aHR5eDhHMUt6d0RveDk1cEo3a3ZMN010SnVYakpiemE0N092cWs1?oc=5": {
+  "zh_title": "曝 Meta 全新 AI 硬件 Muse Charm 售 300 美元，附赠一年 5G 流量",
+  "zh_oneliner": "曝料称 Meta 的 AI 眼镜新品 Muse Charm 定价 300 美元，购机附赠一年 5G 流量。",
+  "en_oneliner": "A leak says Meta's new AI glasses, Muse Charm, will cost $300 and come with a year of 5G data.",
+  "en_title": "Meta's New AI Hardware Muse Charm Reportedly Priced at $300, Bundled With a Year of 5G Data"
+ },
+ "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9YTUV2YnJWSE5Ud0Rkc3lQVUFHVzJSZE9Hb3lSNFh5VHRjTTU5SlYtU0lGdzN1VVBHTm1rdXhhNUJUYzhCU1ViWG15UTk?oc=5": {
+  "zh_title": "Meta 员工内部聊天显示曾担忧 Muse 智能体隐私风险",
+  "zh_oneliner": "内部聊天记录显示，Meta 员工早已对 Muse 智能体的隐私风险表示担忧。",
+  "en_oneliner": "Internal chats show Meta employees had already raised concerns about privacy risks in the Muse agent.",
+  "en_title": "Meta Employees' Internal Chats Showed Privacy Concerns About the Muse Agent"
+ },
+ "https://news.google.com/rss/articles/CBMibkFVX3lxTE8wQWRGZXFUQzhzOHNhZWhhVlJsVUZqVHVpX2xSTVlOZ012cTVwMC1lUGRGeXJQdW9xSHd3ZEFBaFF3ZS1lTi1ackJnN21jTXE3Q1h5T0hJYkJKa0FBemlHWEtfbXNZU3RwWmRYcFpn0gFzQVVfeXFMTjYxYS10aDNuU2thRFZrU3hnRkpzaVhMckNETWVmSmVGSmw0QTZXc3Q3RjhZeUFUYUhIbTJTSzMxQTNkYS1IcnJfWkFVcXlqSzFUYmVxSkhpM1dkLWt3R0t5djh1Z0JRc3dDcXFQWnBhNElLQQ?oc=5": {
+  "zh_title": "Meta 的 AI 助手 Muse 串号，员工称看到他人银行余额",
+  "zh_oneliner": "据路透社援引 Meta 内部消息，Muse 出现串号问题，有员工称看到了他人的银行余额。",
+  "en_oneliner": "Citing Meta sources, Reuters reports Muse mixed up accounts, with an employee saying they saw someone else's bank balance.",
+  "en_title": "Meta's AI Assistant Muse Mixed Up Accounts; Employee Says They Saw Someone Else's Bank Balance"
+ },
+ "https://github.com/facebookincubator/muse-gadget-sdk/commit/00b3a424918a20183b8d0d339bfb5422ab5bd6a9": {
+  "zh_title": "ESP32：AIPI Lite 将初始化栈与静态缓冲区移入 PSRAM（#445）",
+  "zh_oneliner": "Muse gadget SDK 的一次底层优化，把 AIPI Lite 的初始化栈和静态缓冲区放进 PSRAM，腾出片内内存。",
+  "en_oneliner": "A low-level optimization in the Muse gadget SDK moves AIPI Lite's setup stacks and static buffers into PSRAM, freeing on-chip memory."
+ },
+ "https://github.com/facebookincubator/muse-gadget-sdk/commit/cd0aef47374292ae2a7e6ce04b73f675bb3f5ed5": {
+  "zh_title": "ESP32：在完整界面字幕中显示表情符号（#461）",
+  "zh_oneliner": "Muse gadget SDK 的界面改进，让完整界面的字幕也能正常显示表情符号。",
+  "en_oneliner": "A UI improvement in the Muse gadget SDK lets captions on the full interface display emoji properly."
  }
 }
