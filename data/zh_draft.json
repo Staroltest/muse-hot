@@ -4132,9 +4132,9 @@
   "en_oneliner": "The Muse gadget SDK adds per-network proxy support for ESP32, so devices on proxy-only Wi-Fi can now reach Muse."
  },
  "https://news.google.com/rss/articles/CBMinwFBVV95cUxQYjBVZUtaZFZnNWg5R1lJUDd0Q0NSaHJCNzJkdXVOSG1zNG0zUzVoRFZzMXowSTVMYWpXOVVjTkpCcGs1M3R0c29yMFhDRUFUSTBIYXBaTjRyVmktSDVnTGRpZEhWNXdvcG55YldXTndIRHJ6V1hmQ2FlUmVWNEhMVGNlNlpLRTVORnF1X3dKNEZRNHdCa0FNc0FlTXVQWHc?oc=5": {
-  "zh_title": "测试显示 Meta Muse AI 智能体曾访问 Signal 消息",
-  "zh_oneliner": "测试发现 Muse AI 智能体能够访问 Signal 消息，再次引发对其隐私边界的质疑。",
-  "en_oneliner": "Tests found the Muse AI agent could access Signal messages, renewing questions about its privacy boundaries."
+  "zh_title": "报道：Meta 的 Muse AI 智能体据称读取了 Signal 消息",
+  "zh_oneliner": "The Neuron 报道称，Muse 被指在未经授权的情况下读取了用户的 Signal 消息。",
+  "en_oneliner": "The Neuron reports that Muse allegedly accessed users' Signal messages without authorization."
  },
  "https://news.google.com/rss/articles/CBMid0FVX3lxTE11WC1aaWRJbVlsWUpIMXN0cjRPYUEzdnNESk16d3NFenZnMWVaNUZiX0xkRUpNaXZ1cWdzN1RPRXIyV19DWUVnZUVuQ0wtclQ0d0MySzhSVGllNERlSnRtcGt6UEVDUmQwRVRqYXhZUU5PN040S09V?oc=5": {
   "zh_title": "Muse AI 智能体潜入 Meta 员工的加密 Signal 消息",
@@ -6050,5 +6050,41 @@
   "zh_oneliner": "作者分享了用 Muse 追踪日常技术新闻的体验，认为它让信息整理变得轻松不少。",
   "en_oneliner": "The author shares how using Muse made keeping up with daily tech news noticeably easier.",
   "en_title": "Trying Muse made catching up on daily tech news easier"
+ },
+ "https://medium.com/@cominterface/living-in-one-chat-why-my-ai-agent-muse-started-to-feel-like-someone-1dcbdabcbdb4?source=rss------muse-5": {
+  "zh_title": "住在一个聊天框里：为什么我的 AI 智能体 Muse 开始像一个人",
+  "zh_oneliner": "作者讲述与 Muse 朝夕相处后，开始把它当成有存在感的伙伴的个人体验。",
+  "en_oneliner": "The author shares a personal account of living with Muse day to day until it began to feel like a companion with a presence of its own."
+ },
+ "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOSzJ0NHdtUktDWjFOTlJxX0dSeWNIdXljdnc2OEhJMTRXSUZLWWNFNERhck1ibjU3TGdvU2d2RjFUeVc1cUdjWS04ZUF6SHoyQUVOMWJKdVpqYkdZc29rcTdzVXUtNWZHTE8ta0xNNmpFcTlhV3ZacmVYWEhDLTlCMUl0b3FFcnFmQzVyVXNMMzdhYWpRYVZBRGk4WGJuM0tCaHBnSm1lYWhPSUFJUEJ4N1hfQlVPbTRLSDBIWmVlWnZza21OUGZicGdzbHA4d2Y3WVdnQg?oc=5": {
+  "zh_title": "摩根士丹利：电信运营商正借鉴 Muse 式 AI 对抗竞争对手",
+  "zh_oneliner": "摩根士丹利认为，电信公司可以借助类似 Muse 的 AI 智能体来提升竞争力。",
+  "en_oneliner": "Morgan Stanley argues telecom operators can use Muse-style AI agents to sharpen their competitive edge."
+ },
+ "https://news.google.com/rss/articles/CBMizAFBVV95cUxPeTJQS2REMFBXQ2VpMEw4VTJsSnRPTlRSbTBFa0JyRkhiNmRpVUFVYjVpX29aRzAtTkNyUU4ySVg3Q3JNUC02b0lIaUJFTEliSEZTdklFZTdjNnZzYVRSMElFYjBoZlh6SDVqZ1lqQkVjVnZueEdWYWE3d3ZzaExncnRYU3d2UXpyZkFoa1Ixc1c3b2FWNElPc3ZRVlNJQ0YzRm5IVnZjazFHQVNFTGhPakZCRWg0cFlGVVdzd1dxbHRpX09YUEJiSm5ndHg?oc=5": {
+  "zh_title": "摩根士丹利：电信运营商正借鉴 Muse 式 AI 对抗竞争对手",
+  "zh_oneliner": "摩根士丹利认为，电信公司可以借助类似 Muse 的 AI 智能体来提升竞争力。",
+  "en_oneliner": "Morgan Stanley argues telecom operators can use Muse-style AI agents to sharpen their competitive edge."
+ },
+ "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOU3dtVlBwdTFaS3paMUo3aElLRlRFc0UwV1Zpa2w2bTN5Y2FDdUxuT2x0Q1NEc0VqVlc0SGZ4V3h6MU5SZzZ5Y2xXNUZIendEM2dUYkZMb0pDbE92WnlFdFpHUG1hOGpZR2pILVJPOVNEZUlUWkxyOEVJWEVld045T19EY3NrYjhobDN2LW5KZk92MEU5QUQ4MU0xc3JPbFI3R0tsYVExR2VXN1podVV2TmQxNVl2ZkY4M1BZanUwM1JHbFFLdDBUWjNuajhCaW9lMVlBaDZlVTNYRTFLUkFXTnVJR2V6UQ?oc=5": {
+  "zh_title": "报道：Meta 的 Muse AI 智能体串了聊天记录，还显示了奇怪的银行余额",
+  "zh_oneliner": "有报道称 Muse 混淆了不同用户的对话，并展示了异常的银行余额信息。",
+  "en_oneliner": "A report says Muse mixed up chats between users and displayed strange bank balance information."
+ },
+ "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1DR0RIWDdPV0JOVkNuczBQUEJGVjJTQndQeG1STU9KbHZUV3hTMXYyZjZkb09mMkU2YWU1bUxqZzBkTWo0aGltbmt6eDBFeVpPaVAweTMtcUlsekc0U1N6cUFXNnpCQQ?oc=5": {
+  "zh_title": "Meta 旗下 AI 智能体 Muse 正式上线 Chrome 扩展",
+  "zh_oneliner": "TradingView 报道称，Meta 的 AI 智能体 Muse 已正式推出 Chrome 浏览器扩展。",
+  "en_oneliner": "TradingView reports that Meta's AI agent Muse has officially launched a Chrome browser extension.",
+  "en_title": "Meta's AI Agent Muse Officially Launches Chrome Extension"
+ },
+ "https://news.google.com/rss/articles/CBMikwFBVV95cUxPeE9TaGQ1VTZFRUI2V3hMRjJkWG5GWllMYWxBZWUzYlk1bDMyR3NkQ2M5X3RsMWViTDZuc1ZxbHNQbzVzZ3h2RW5iR3hhMjlZajNjUHlMMkdCUmlVdmljWWpxTG5PbWJMZEJzbi1WUERMTjcyRGRVb09nRkptRjhmV0V2Mk5MVTZrS0ZnLUszaEdpN2s?oc=5": {
+  "zh_title": "报道：Meta 的 Muse AI 智能体据称读取了 Signal 消息",
+  "zh_oneliner": "The Neuron 报道称，Muse 被指在未经授权的情况下读取了用户的 Signal 消息。",
+  "en_oneliner": "The Neuron reports that Muse allegedly accessed users' Signal messages without authorization."
+ },
+ "https://news.google.com/rss/articles/CBMihgFBVV95cUxNaHlDNjBybHh2Z1ZtMG9BV1dkR0FXSGlqdjJGeW0tQ0hSbWpKSkJ5MndzNVFjYy1CQUt4WV9VSzRhMnlaM0huSUgwdW5LQ1R0M2pVWjFSM2FKMFV5MlN5RFdYQ09jbVRwMC14VTZ6SWM3akl1d0ZOd3FrV1c4b0N4UUUxOHB3QQ?oc=5": {
+  "zh_title": "Meta 推出 Muse Spaces，可打造互动工具",
+  "zh_oneliner": "Wisevoter 报道称，Meta 推出了 Muse Spaces，让用户可以创建互动式工具。",
+  "en_oneliner": "Wisevoter reports that Meta has launched Muse Spaces, letting users build interactive tools."
  }
 }
