@@ -1144,6 +1144,13 @@ def _en_url(site_url, url):
     return url
 
 
+def _enc_url(url):
+    """把完整 URL 里的非 ASCII 字符按 UTF-8 做 percent-encoding，保留 :/?# 等结构字符。
+    Google 要求 sitemap / canonical / hreflang 里的 URL 用编码后的形式；
+    只影响对外输出的 URL 文本，不改磁盘文件名。"""
+    return urllib.parse.quote(url, safe=":/?#[]@!$&'()*+,;=%")
+
+
 def lang_counterpart_href(rel_path):
     """当前页在另一语言下的对应页相对路径（切换链接与自动跳转共用）。
     空 rel_path（404 / geo-audit 等无英文版的页）返回空。"""
@@ -2390,6 +2397,8 @@ def page_open(site, active, title, description, prefix="", base="", canonical=""
         description = site.get("description_en", description)
     canon_zh = canonical or site_url + "/"
     en_url = _en_url(site_url, canon_zh)
+    canon_zh = _enc_url(canon_zh)
+    en_url = _enc_url(en_url)
     canon = en_url if PAGE_LANG == "en" else canon_zh
     lang_attr = "en" if PAGE_LANG == "en" else "zh-CN"
     in_lang = "en" if PAGE_LANG == "en" else "zh-CN"
@@ -3698,7 +3707,7 @@ def build_geo_audit(site, root, site_url, today_iso):
         _check("robots", "robots.txt 点名放行 AI 爬虫", "fail", "robots.txt 不存在")
 
     sitemap = _read_text(os.path.join(root, "sitemap.xml"))
-    sm_locs = set(re.findall(r"<loc>([^<]+)</loc>", sitemap)) if sitemap else set()
+    sm_locs = set(urllib.parse.unquote(u) for u in re.findall(r"<loc>([^<]+)</loc>", sitemap)) if sitemap else set()
     html_files = set()
     for _base, _dirs, _files in os.walk(root):
         rel = os.path.relpath(_base, root)
@@ -4333,7 +4342,8 @@ def main():
     sm = ["<?xml version=\"1.0\" encoding=\"UTF-8\"?>",
           "<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">"]
     for _p, _lm in sitemap_entries.items():
-        sm.append(f"<url><loc>{site_url}/{_p}</loc><lastmod>{_lm}</lastmod></url>")
+        _loc = site_url + "/" if not _p else f"{site_url}/{_p}"
+        sm.append(f"<url><loc>{_enc_url(_loc)}</loc><lastmod>{_lm}</lastmod></url>")
     sm.append("</urlset>")
     with open(os.path.join(root, "sitemap.xml"), "w", encoding="utf-8") as f:
         f.write("\n".join(sm) + "\n")
