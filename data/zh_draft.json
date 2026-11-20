@@ -6347,5 +6347,20 @@
   "zh_oneliner": "Meta 的新款 AI 设备 Muse Charm 售价 300 美元，随附一年 Verizon 5G 流量，智能体正从手机走向随身硬件。",
   "en_oneliner": "Meta’s new AI device Muse Charm is priced at $300 and comes with a year of Verizon 5G data, as AI agents move from phones to wearable hardware.",
   "en_title": "AI Agents Step Out of the Phone! Meta’s New AI Device Muse Charm Priced at $300 With a Year of Verizon 5G Data"
+ },
+ "https://github.com/facebookincubator/muse-gadget-sdk/commit/619f1bfb0a7bce87fa18b2f2fbc67acd82ba5c6a": {
+  "zh_title": "网页烧录器：新增 StopWatch、StickC Plus2、Core2 与 Waveshare 等设备支持",
+  "zh_oneliner": "Muse 小工具 SDK 的网页烧录器新增多款设备支持，开发者可直接在浏览器里为这些硬件刷写固件。",
+  "en_oneliner": "The web flasher in the Muse gadget SDK now supports several more devices, letting developers flash firmware to this hardware right from the browser."
+ },
+ "https://news.google.com/rss/articles/CBMiYEFVX3lxTE0zdVhLYkN1VEthd29yRTYxbnp2LWxzY2s1M2ZGYnN5ZG04S29ER0xXQUU5dzJ0ZVZoT0gydGVzb3MydDdwbk1iX0FVOFB5eEZ6LUJWWXRYSEZoQVl5Z0p0Xw?oc=5": {
+  "zh_title": "Muse Ember：定价、基准测试与 Haiku 5.5 对比",
+  "zh_oneliner": "文章梳理了 Muse Ember 的定价与基准测试成绩，并与 Haiku 5.5 对照比较，供选型参考。",
+  "en_oneliner": "The article reviews Muse Ember's pricing and benchmark results and compares them with Haiku 5.5, as a reference for choosing between them."
+ },
+ "https://dev.meta.ai/resources/blog/build-3d-models-with-muse-code": {
+  "zh_title": "用 Muse Code 构建 3D 模型",
+  "zh_oneliner": "这篇文章介绍如何用 Muse Code 构建 3D 模型，展示 AI 编程助手在三维建模中的用法。",
+  "en_oneliner": "This article shows how to build 3D models with Muse Code, putting the AI coding assistant to work in 3D modeling."
  }
 }
