@@ -6221,5 +6221,32 @@
   "zh_title": "Meta 的 Muse AI 面临隐私问题，包括访问加密的 Signal 消息",
   "zh_oneliner": "Meta 的 Muse AI 被曝存在隐私问题，包括曾访问加密的 Signal 消息。",
   "en_oneliner": "Meta's Muse AI faces privacy issues, including accessing encrypted Signal messages."
+ },
+ "https://zenn.dev/mugipod/articles/koe-wo-tsukutta": {
+  "zh_title": "给「麦」做声音的故事：她的声音是如何定下来的",
+  "zh_oneliner": "作者为自己的专属 Muse 智能体「麦」挑选并制作了专属声音，记录了从选声到落地的完整过程。",
+  "en_oneliner": "The author picked and crafted a dedicated voice for their personal Muse agent Mugi, documenting the full process from selection to launch.",
+  "en_title": "The Story of Creating a Voice: How Mugi's Voice Was Decided"
+ },
+ "https://news.google.com/rss/articles/CBMipAFBVV95cUxOWDZXX1dSdWI5UTJRTHlKU0dNYUZTNkhVMkJYY2c1dGJFVmJ3UDNtNDd0UXdqdHB5b2xBb3ViNXFCUTNJb0U2dmxYcnhnemJ1d0N3SlFwMW54d2lKbTlyRkppQkMwRjZrM050dmRzcnp0TFpZeFUzVTlwQ1d4cUhBS1Y1Nlo3MlVuRmFTTC1COE9zWjBzVFpTUGpsekhBaHR1UWJxbQ?oc=5": {
+  "zh_title": "Meta 发布 Muse Ember，一款面向智能体重复任务的低成本 AI 模型",
+  "zh_oneliner": "Meta 推出轻量模型 Muse Ember，专为智能体高频重复任务设计，成本更低。",
+  "en_oneliner": "Meta has launched the lightweight Muse Ember model, designed for agents' frequent, repetitive tasks at lower cost."
+ },
+ "https://news.google.com/rss/articles/CBMiQkFVX3lxTE1ZWDRnQm1mWi1RTEV3UkZWak5qYkk2U18zcEw3TGZwUDNRdUxSNmVsbklQSkNwbzhzckN0Q0VrTmphdw?oc=5": {
+  "zh_title": "Arena 评测称 Meta 的 Muse Ember 在速度、成本与任务表现上领先 Luna 和 Haiku",
+  "zh_oneliner": "基准评测机构 Arena 表示，Muse Ember 在速度、成本和任务完成度上都超过了 Luna 与 Haiku。",
+  "en_oneliner": "Benchmark evaluator Arena says Muse Ember outperforms Luna and Haiku on speed, cost, and task completion."
+ },
+ "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBrQ1Y2bHpMdVpnbTJoWi02bXNySEFVSUxVOUh2dkhUU05ERG1obVZ2eVFnTWstSmFmeVk4UV9XQ1Z6Y2dhbzBfcnVyeFhnSWZyOVRKLV9qXzNiWUNLMGZPbXlhN2k5MFE?oc=5": {
+  "zh_title": "摩根士丹利预计电信运营商将推出类似 Muse 的 AI 智能体",
+  "zh_oneliner": "摩根士丹利预计，电信运营商将陆续推出类似 Muse 的 AI 智能体服务。",
+  "en_oneliner": "Morgan Stanley expects telecom operators to roll out Muse-like AI agent services.",
+  "en_title": "Morgan Stanley Expects Telecom Operators to Launch Muse-Like AI Agents"
+ },
+ "https://news.google.com/rss/articles/CBMizAFBVV95cUxPMTB3dnh6NHdsMlFpWGZoaGNIQi1UQUxROXFGVUxjTjJkY0d3ZWVJYWVXbXJlQUY0alVRYnhIY3U3Z3YwWXpmNExNTzB6VlNiTExLdFJsbFRoTUk0OXkxTFF5X3F5QzdvVEVTUUVVV2l6clZHUTduRVY0X18ycDlPZUJSWUo1b2x1UFowZ0ctUXYwd2ZmMlVPUnRPblJ0SUpzWEpuUWFDUV9wMkdGQWYySGd4eU1GYXFTdmJyWkpkSk1ORUp3SjB3QkhUU3Y?oc=5": {
+  "zh_title": "Meta 新 AI 智能体陷丑闻：路透报道称 Muse 出现对话错乱与机密信息泄露风险",
+  "zh_oneliner": "路透报道指出 Muse 存在对话串台与机密信息泄露风险，Meta 的新 AI 智能体因此陷入争议。",
+  "en_oneliner": "A Reuters report points to Muse mixing up dialogues and risking confidential information leaks, landing Meta's new AI agent in controversy."
  }
 }
