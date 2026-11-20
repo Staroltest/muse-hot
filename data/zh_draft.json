@@ -5936,5 +5936,33 @@
   "zh_title": "ESP32：通过 SenseCAP Watcher 用语音备注发送照片",
   "zh_oneliner": "Muse 小工具 SDK 新增示例，展示如何在 SenseCAP Watcher 上用语音备注发送照片。",
   "en_oneliner": "A new example in the Muse gadget SDK shows how to send a photo with a voice note on the SenseCAP Watcher."
+ },
+ "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNX1AyNVF4TzVWUl9HTWlIaEVHdURicGpvRWhVR0ozTGtpd2dNV1ZMdS1RdmNCdkNYRWFGODVLeFlOU0hpdmptQnVFRFRVWEZNRi1CUklNdmdqNG1aeGhoazZGTHFiY3Q3d1lPSTNiV1VBRmk3bzFlRnRFT2NXX3c1akFlR2F5aVBVNnRaRG11dnAzZEdHdm93aWpvWTlxempxdEkzVXZhZkVLQTZyMS1rLVB6VDhCT2lrdXVaT1QtV3J5SU0?oc=5": {
+  "zh_title": "关键要点：Meta AI 广告增长、2027 年支出；300 美元的 Muse 与智能体测试缺陷",
+  "zh_oneliner": "TradingView 梳理 Meta AI 的广告进展与 2027 年支出计划，并点出 300 美元 Muse 设备和智能体测试中暴露的问题。",
+  "en_oneliner": "TradingView rounds up Meta AI's advertising progress and 2027 spending plans, and flags issues with the $300 Muse device and agent testing."
+ },
+ "https://qiita.com/austinnnn/items/dca95d5e08d84465d7ff": {
+  "zh_title": "Muse101 入门｜用喜欢的虚拟形象，养成专属 AI 秘书",
+  "zh_oneliner": "一篇日文入门教程，教你选一个喜欢的虚拟形象，从零培养属于自己的 Muse AI 秘书。",
+  "en_oneliner": "A Japanese beginner's guide to picking a favorite avatar and raising your own Muse AI secretary from scratch.",
+  "en_title": "Muse 101 for Beginners: Raise Your Own AI Secretary with Your Favorite Avatar"
+ },
+ "https://github.com/facebookincubator/muse-gadget-sdk/commit/47abe623de667068f7bed7bb49a7295357e4b56e": {
+  "zh_title": "esp32：持续发送语音消息，直到 Muse 收到为止（#460）",
+  "zh_oneliner": "Muse gadget SDK 的一次提交，让 esp32 设备反复发送语音消息，直到 Muse 确认收到。",
+  "en_oneliner": "A Muse gadget SDK commit that makes an ESP32 device keep resending a voice note until Muse confirms receipt."
+ },
+ "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBNRm1GeW5KV3dldjFOZW05dUV0TXNSX0tQTURBQWdIdktjS3E5a2xtZ3UzUXVFNEdKQ3JDeVo3TWJYcm9nMHJqcThwSkNXUndnc3lqemExOU1pcTJhUXNHczFCRzU?oc=5": {
+  "zh_title": "智能体走出手机！Meta 新款 AI 设备 Muse Charm 定价 300 美元，附赠一年 Verizon 5G 流量",
+  "zh_oneliner": "Meta 的 Muse Charm 让智能体走出手机，售价 300 美元，还附赠一年 Verizon 5G 流量。",
+  "en_oneliner": "Meta's Muse Charm takes the AI agent beyond the phone, priced at $300 with a year of Verizon 5G data included.",
+  "en_title": "AI Agents Step Out of the Phone! Meta's New AI Device Muse Charm Priced at $300, Bundled with a Year of Verizon 5G Data"
+ },
+ "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5sWm9Xd2dLQkU5bGpCWTVsQndYcGZDTjZQeEMyMVA1YW11VEsweVlockRybUE3QThhWmtlMHdPQmZPeGlCTF94WjdFQ0stM09HOUtF?oc=5": {
+  "zh_title": "Meta Muse 遭封堵！亚马逊、摩根大通限制第三方 AI 智能体接入",
+  "zh_oneliner": "亚马逊与摩根大通开始限制第三方 AI 智能体接入，Meta Muse 首当其冲。",
+  "en_oneliner": "Amazon and JPMorgan are restricting third-party AI agents' access, with Meta Muse among the first affected.",
+  "en_title": "Meta Muse Blocked! Amazon and JPMorgan Restrict Third-Party AI Agent Access"
  }
 }
