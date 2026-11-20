@@ -5894,5 +5894,47 @@
   "zh_title": "ESP32：说明如何开启 Hey Muse 唤醒词（#458）",
   "zh_oneliner": "本次提交为 ESP32 说明了如何开启 Hey Muse 唤醒词。",
   "en_oneliner": "This commit documents how to turn on the Hey Muse wake word on ESP32."
+ },
+ "https://news.google.com/rss/articles/CBMixwFBVV95cUxPREo0ZV9OVTFjaGZEZ1BhcWpXWFFIVjNCTC1oak12SmpTNWthRWxCY19WLVl0d09oeVZzaFF0ODlCVmd3eGRwVVk5ZVFFeERKR296THp4NmxSMVdJbGpjREQ2c25HLXVqdGxoeUs0YVRFZVhQd2xVOGRHeEpycXZCTThUME5nbUkyWFZHQXlwMVZ1NkE1eFpma0R0WkVuMVBySG1Obko0NFRDTTN4R1I4dTcxS2JtOUdHdVpmZG9oSXhrd2k3c0Jn?oc=5": {
+  "zh_title": "Meta 的 Muse Charm 智能钥匙扣或售价 300 美元，即将上市？",
+  "zh_oneliner": "报道称 Meta 的 AI 钥匙扣 Muse Charm 定价可能高达 300 美元，引发对其上市时间的猜测。",
+  "en_oneliner": "Reports suggest Meta's AI keychain Muse Charm could cost as much as $300, sparking speculation about when it will launch."
+ },
+ "https://news.google.com/rss/articles/CBMirAFBVV95cUxQYTltQmxfVXBHczVkRHlPV0ltaVh0eUZxZFhrMUthZXdkZTY1NnJHRV94WndoblY0MGhIbVlFNUc5OExVQ0hxTERyUWF3cDBqSXBqMXZOd1RLMFd3clNwTnF6dUxCeFBuOHRDa0lENGpHQ2w5V0EzVmxwenpuelRuNXB4dUpZYUpHOG1MdS16VWZDVlI5Z2pBampDQ19PZ2JPWURyVE9uLVdmaXZi0gGsAUFVX3lxTFBhOW1CbF9VcEdzNWREeU9XSW1pWHR5RnFkWGsxS2Fld2RlNjU2ckdFX3had2huVjQwaEhtWUU1Rzk4TFVDSHFMRHJRYXdwMGpJcGoxdk53VEswV3dyU3BOcXp1TEJ4UG44dENrSUQ0akdDbDlXQTNWbHB6em56VG41cHh1SllhSkc4bUx1LXpVZkNWUjlnakFqakNDX09nYk9ZRHJUT24tV2ZpdmI?oc=5": {
+  "zh_title": "Meta 的 AI 智能体 Muse 因访问私人消息引发隐私担忧",
+  "zh_oneliner": "报道指出 Muse 能够读取用户的私人消息，引发外界对其隐私保护的担忧。",
+  "en_oneliner": "Reports say Muse can access users' private messages, raising concerns about how it protects privacy."
+ },
+ "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1NRWxrYmRaSms5STUzOXdUNlJXejkxRXBncmNqQjVPdmRGazNOMGtUWjlSekZwVUxRTE1BZ05GXzJFY0lSQXE4emxYSlVvM1lIZTk0OTNkd2pTck1aMzZtbFRJazA?oc=5": {
+  "zh_title": "Meta 的 Muse Chrome 扩展把 AI 放进浏览器侧边栏",
+  "zh_oneliner": "Meta 为 Chrome 推出 Muse 扩展，把 AI 助手直接放进浏览器侧边栏，随时可用。",
+  "en_oneliner": "Meta has released a Muse extension for Chrome that puts its AI assistant right in the browser sidebar, ready whenever needed."
+ },
+ "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPTmNfV3dfamxSNmtlZnRQQ044eFBuREM3bXBZUmdiUDZ6enFmOUFWNUNpYUhmNnVxXzc0akktTEJiMWItZjNyTlZGVHlqeXBqZ1VUSDZzSkZEd1NMY0UwbVZIQndESzFjSGx1RGgtUUthNk50ZnJMdjU1ZENvbUltWFBEbUJUQ3lELVZnSmpmWngtVlBicGhZMUt0cks1STk3X05FaWxGTll2V1NWOUd4Y3FBcE9VVnBKeFhUZldnSG1WMnVvbTdiRDByakl5ckwtQmhRVHRKcjJfOUE2blF6MWhHNmNZT2p4Rmx5cGNaNTAxd9IB9wFBVV95cUxQXzRmajRMSXFuZHdrb0Z4eGhmZGtYdzVKb2FhbmNBYmx0Y2VqVGUySzJPOFVlaXZBSTVldVpsMVZVLTdGSjlQZ2RGV19GaFY0dFdNZERZbFpjZ0JuVjNWdUhpakk5OHVYTWdXUFRwWEJ6YVNia2ptOEVXMDh4dWNFTWJWd3RFMGdfNjNTUlZBTWxQUFRISmszNHd2Zlpfa0Z3Q2JFOXRxOFQxcU9NYlJoczU2RkFsT01YdTV5VExXT2NWZ2NlbkppdF9RaVZuMXVtMC1IcmRpTnMyQzRhUy1hZVdJYzFyME9UZU9lUFBoME1jZFlIeUY0?oc=5": {
+  "zh_title": "Meta 员工问 Muse 天气，它却报出了银行余额",
+  "zh_oneliner": "一名 Meta 员工向 Muse 询问天气，得到的回答却是银行账户余额，暴露出 AI 混淆对话内容的隐患。",
+  "en_oneliner": "A Meta employee asked Muse about the weather and got bank account balances in reply, exposing how the AI can mix up conversations."
+ },
+ "https://news.google.com/rss/articles/CBMic0FVX3lxTE1BQUdOZ3ZZLUVOQi1MXzFXZFlzdmp3bHU0RFJhcUdzRy1hYmdobTkwckJSWWM2UTJwLWNIem4taFpMZDh0Qm1yZW5lNF9PS1JENTZvUUxTY3RyeU5keUY1YVdydndwSGs2V01iR3A2N2RITnc?oc=5": {
+  "zh_title": "路透社报道后，Meta 的 Muse 面临隐私质疑",
+  "zh_oneliner": "路透社的一篇报道之后，Meta 的 Muse 因隐私问题受到质疑。",
+  "en_oneliner": "Following a Reuters report, Meta's Muse is facing questions over privacy."
+ },
+ "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBFM3JQbEpWWmZsTnNRY1RSck9GSG4wODlOSFpMbk5hR1l6d1RPMi1qN1JvM0xUWGFvUmhRa1lJVC1LMGV6LUVYNWVUSQ?oc=5": {
+  "zh_title": "Meta 新 AI 设备 Muse Charm 售价曝光：300 美元，或赠送最长 12 个月 5G 流量服务",
+  "zh_oneliner": "Muse Charm 的售价被曝为 300 美元，购买可能附赠最长 12 个月的 5G 流量服务。",
+  "en_oneliner": "Muse Charm is reportedly priced at $300, with purchases possibly including up to 12 months of 5G data service.",
+  "en_title": "Meta's New AI Device Muse Charm Priced at $300, May Include Up to 12 Months of 5G Data Service"
+ },
+ "https://news.google.com/rss/articles/CBMibkFVX3lxTE8tcUxBWlZwNXhBaWJPd3R4WUJsbHFNSURxdHFfdzJIdkR3Smd6Rkg1eU1xQjVhbms0UFV4ZEV4MUc5V29SYWk4Qk9OWFVPMzdnaVdBMUhRLXJRNloxYkl2OW9ReThYMnVOM3FSdEZn0gFzQVVfeXFMUEJGcnZpdzNVMnZBcGZxUjQ2U0lHVTNsdTBaLWRZdEhUUm13Nl9zcEhBWS1xbkRvckJ2N2JJWG5CSjNCRjE5MnRsNk5CQlVjZk5UV0VwVDdJZkJxbmdtWEM0YmlkV0k1eFZhaVFfVzBod3NsNA?oc=5": {
+  "zh_title": "Meta 的 AI 智能体 Muse 正在混淆对话并可能暴露私人数据",
+  "zh_oneliner": "据称有 Meta 员工在内部帖子中反映，Muse 会混淆不同对话，存在泄露私人数据的风险。",
+  "en_oneliner": "Meta employees have reportedly flagged in internal posts that Muse mixes up conversations, risking exposure of private data.",
+  "en_title": "Meta's AI Agent Muse Is Mixing Up Conversations and May Expose Private Data"
+ },
+ "https://github.com/facebookincubator/muse-gadget-sdk/commit/e2f96ba977b7bffa97a5d536c9ad0e8d1bb42574": {
+  "zh_title": "ESP32：通过 SenseCAP Watcher 用语音备注发送照片",
+  "zh_oneliner": "Muse 小工具 SDK 新增示例，展示如何在 SenseCAP Watcher 上用语音备注发送照片。",
+  "en_oneliner": "A new example in the Muse gadget SDK shows how to send a photo with a voice note on the SenseCAP Watcher."
  }
 }
