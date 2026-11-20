@@ -6034,5 +6034,21 @@
   "zh_title": "esp32：新增 M5Stack CoreMatrix 支持（#446）",
   "zh_oneliner": "Muse 小工具 SDK 为 ESP32 平台新增 M5Stack CoreMatrix 硬件支持，扩展了可运行智能体的设备范围。",
   "en_oneliner": "The Muse gadget SDK adds M5Stack CoreMatrix hardware support for the ESP32 platform, expanding the range of devices that can run agents."
+ },
+ "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPMzkzSVNtbXBvWUc0YlNnTWhnalpSeldLVTZHbllYYXE1RkllbDJ1aDJsNVJsX2hMOE1PcGFXU1U0b1Zqc3J0NXVjM01HcnFRTTU5THdsd3JYQWhwSlN5SnZqX2U1M3NFeTRXNWpJNVpaQUV6dV9zZWdra0x1WWFTNGF3bVprR3c0ZmZNUFgxZHF0OENPUk9BYTRrQlNEcS1RX3M2V0FQTXRIZVo1d2hBSXRKNG9Qd1piX2VPMEx4SjlKZw?oc=5": {
+  "zh_title": "苹果似乎正在打造自己的 AI 智能体，这对 Meta 的 Muse 可能是坏消息",
+  "zh_oneliner": "苹果被曝正在自研 AI 智能体，若成真将直接冲击 Meta 的 Muse 助手布局。",
+  "en_oneliner": "Apple is reportedly building its own AI agent, which could directly challenge Meta's Muse assistant if it materializes."
+ },
+ "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPU2hjZVZMb0tyb1VTNXJLOTd2Z3NlVFlWWU5Ic0U3UFdHekZ5WjhoeEhfTXZSeFdiQUlaNDh3TlBSMm44UmZWajlCNTJCUFl0UTNvd3ZPeGR3SllhZTlQempfcWJXSVItYzJOMndUM1NGNUtzWUVYRzZQYkZDQjdraS1pQkFaRldZcWRwNFF5VF9ZcktucmxTOWlaU2s2N2FORnNNRlo0bGg?oc=5": {
+  "zh_title": "安全播客：两个月了，Meta Muse 的隐私问题仍未解决",
+  "zh_oneliner": "一档安全播客回顾了 Meta Muse 两个月来接连不断的隐私争议，指出问题至今没有得到妥善处理。",
+  "en_oneliner": "A security podcast reviews two months of recurring privacy controversies around Meta Muse, noting the issues remain unresolved."
+ },
+ "https://zenn.dev/ryokasai/articles/99a9bc244fcf24": {
+  "zh_title": "用了 Muse 之后，每天追技术新闻轻松多了",
+  "zh_oneliner": "作者分享了用 Muse 追踪日常技术新闻的体验，认为它让信息整理变得轻松不少。",
+  "en_oneliner": "The author shares how using Muse made keeping up with daily tech news noticeably easier.",
+  "en_title": "Trying Muse made catching up on daily tech news easier"
  }
 }
