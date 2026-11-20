@@ -2582,6 +2582,81 @@ works using used make makes take takes show shows face faces issue issues screen
 added fix fixed""".split())
 
 
+_ANCHOR_LAT_VARIANTS = {
+    "privacy": {"privacy", "private"},
+    "lawsuit": {"lawsuit", "suit", "suing", "sued", "sue"},
+    "signal": {"signal"},
+    "encrypt": {"encrypted", "encryption", "encrypt"},
+    "bank": {"bank", "balance", "balances"},
+    "charm": {"charm"},
+    "reuters": {"reuters"},
+}
+_ANCHOR_CJK = ("隐私", "加密", "银行", "余额", "起诉", "诉讼", "诉状", "路透", "信号", "泄露")
+
+# 锚词家族：同一新闻浪潮的不同角度用不同锚词
+# （如路透隐私调查：privacy / encrypt / bank / breach / flaw 各篇不同），
+# 家族用于热点榜单的每族上限，规则 (4) 的同锚合并仍用上面的单个锚词。
+_ANCHOR_FAMILIES = {
+    "privacy": (
+        {"privacy", "private", "signal", "encrypted", "encryption", "encrypt",
+         "bank", "balance", "balances", "reuters", "breach", "unauthorized", "flaw"},
+        ("隐私", "加密", "银行", "余额", "泄露", "路透", "信号", "缺陷", "隐患", "擅自")),
+    "lawsuit": (
+        {"lawsuit", "suit", "suing", "sued", "sue"},
+        ("起诉", "诉讼", "诉状")),
+    "charm": (
+        {"charm"},
+        ()),
+}
+_HOT_FAMILY_CAP = 2
+
+
+def _anchor_families(it):
+    """该条目所属的锚词家族集合（用于热点榜单每族上限）。"""
+    text = " ".join([it.get("title") or "", it.get("zh_title") or "",
+                     it.get("zh_oneliner") or ""]).lower()
+    words = set(re.findall(r"[a-z0-9]+", text))
+    fams = set()
+    for name, (lat, cjk) in _ANCHOR_FAMILIES.items():
+        if words & lat or any(w in text for w in cjk):
+            fams.add(name)
+    return fams
+
+
+def cap_families(items, max_per=_HOT_FAMILY_CAP):
+    """热点榜单多样性上限：按分数顺序取，每个锚词家族最多保留 max_per 条；
+    无家族的条目不受限；多家族条目只有在其全部家族都已满额时才跳过
+    （如 Charm 规格泄露同时属 privacy 与 charm 家族，不因 privacy 满额被误杀）。
+    被跳过的条目仍在时间线与详情页里，只是 不进热点榜。"""
+    kept, counts = [], {}
+    for it in items:
+        fams = _anchor_families(it)
+        if fams and all(counts.get(f, 0) >= max_per for f in fams):
+            continue
+        kept.append(it)
+        for f in fams:
+            counts[f] = counts.get(f, 0) + 1
+    return kept
+
+
+def _story_anchors(it):
+    """事件锚词：标题+中文标题+一句话简介里的专属事件词。
+    拉丁词按变体归一（如 private/privacy、suit/suing/lawsuit），
+    中文按词子串匹配（如 起诉/诉讼/诉状 各自独立，不强行归一，
+    靠拉丁锚词覆盖跨语言同一事件）。"""
+    text = " ".join([it.get("title") or "", it.get("zh_title") or "",
+                     it.get("zh_oneliner") or ""]).lower()
+    words = set(re.findall(r"[a-z0-9]+", text))
+    anchors = set()
+    for key, variants in _ANCHOR_LAT_VARIANTS.items():
+        if words & variants:
+            anchors.add("L:" + key)
+    for w in _ANCHOR_CJK:
+        if w in text:
+            anchors.add("C:" + w)
+    return anchors
+
+
 def _same_topic(a, b):
     """跨来源同事件判定（2026-11-11 把关新增；2026-11-19 加强；2026-11-20 再加强）：
     (1) 原规则：归一化标题一短一长、短者是长者的前缀且至少 10 字；
@@ -2596,6 +2671,15 @@ def _same_topic(a, b):
         背景：11-20 日报 10 条里 8 条同属路透隐私调查、热点 20 条里
         11 条是 Charm 300 美元，规则 (2) 的中文阈值 6 对短中文标题过严，
         且纯中文标题没有拉丁词可共享，导致同事件漏并。
+    (4) 2026-11-20 再新增：共享一个事件锚词且发布时间相差 <=3 天。
+        背景：同一调查的不同角度改写（如隐私调查的银行余额、加密消息、
+        账号混淆、擅自预订几篇）措辞几乎不重叠，规则 (2)(3) 全漏，
+        实测当时热点前 20 里 0 对合并。锚词只取事件专属词
+        （privacy/private、lawsuit/suit/suing、signal、encrypt、bank、
+        charm、reuters，及中文 隐私/加密/银行/余额/起诉/诉讼/诉状/
+        路透/信号/泄露），3 天窗口防不同事件误并。
+        注意：去重只影响精选/热点/日报取前 N，时间线不受影响，
+        被并掉的条目仍在时间线与详情页里。
     只用于精选/热点/日报的取前 N 去重，时间线不受影响。"""
     ta = _strip_outlet(a.get("zh_title") or a["title"])
     tb = _strip_outlet(b.get("zh_title") or b["title"])
@@ -2625,6 +2709,15 @@ def _same_topic(a, b):
     anchors = {w for w in shared_lat2 if len(w) >= 5 and w not in _GENERIC_LAT}
     if anchors and len(shared_cjk2) >= 1:
         return True
+    # (4) 共享事件锚词且 3 天内发布：同一调查的不同角度改写。
+    pa, pb = a.get("_pub"), b.get("_pub")
+    if pa is not None and pb is not None:
+        try:
+            if abs((pa - pb).total_seconds()) <= 3 * 86400:
+                if _story_anchors(a) & _story_anchors(b):
+                    return True
+        except TypeError:
+            pass
     return False
 
 
@@ -4088,7 +4181,7 @@ def main():
     for it in last_7d:
         age_days = (now - it["_pub"]).total_seconds() / 86400.0
         it["hot_score"] = round(it["score"] * (sc["decay_base"] ** age_days), 1)
-    hot = dedup_topics(sorted(last_7d, key=lambda x: x["hot_score"], reverse=True))[:sc["hot_top"]]
+    hot = cap_families(dedup_topics(sorted(last_7d, key=lambda x: x["hot_score"], reverse=True)))[:sc["hot_top"]]
     timeline = sorted(last_7d, key=lambda x: x["_pub"], reverse=True)[:sc["timeline_max"]]
 
     # 趋势：对照上一轮已发布的榜单名次与热度（读旧 data/hot.json，写新文件之前）
