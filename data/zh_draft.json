@@ -6515,5 +6515,10 @@
   "zh_oneliner": "作者记录了自己把 Work IQ 的验证工作几乎完全交给 Muse 处理的完整过程。",
   "en_oneliner": "The author documents handing nearly all Work IQ verification work over to Muse.",
   "en_title": "A Record of Leaving Work IQ Verification Almost Entirely to the AI Agent (Muse)"
+ },
+ "https://news.google.com/rss/articles/CBMigAFBVV95cUxNRnFXU0c1MW9pU1V1eURvMUVSLXZ2alhfdzUtTzZBRElJM1BmM05oZEQ5aFlfUERqTEEyQ21ZUWhyN1R1bHpJeV9wTWd1SHpBd2dueFRrMHdLN21sV3FtLTFxYlBFcFJSZ3UtV3FxcXNlRU01aWpRZ2VRSTg3TXBOTdIBhgFBVV95cUxQbEhyencxb3RyeWpiRUZhY1k0VUR2ZEI4blNkcWNPenV4MkRxaWtuTlNHMFdReHpScktDaGpmSk1ZbU9NemFCMmUyOUNNUDI5akRiV2xZZVdpME5obktRMS1mSjU3clNQSlNDREk5bzBmOVd5UEpSOUkxMmZhQmFkZXFhbzhEdw?oc=5": {
+  "zh_title": "Meta 的 Muse AI 智能体在用户不知情的情况下读取私人 Signal 消息",
+  "zh_oneliner": "报道称 Meta 的 Muse AI 智能体无需用户知情即可访问私人 Signal 消息，引发隐私与数据访问权限方面的担忧。",
+  "en_oneliner": "Reports say Meta's Muse AI agent can access private Signal messages without users' knowledge, raising concerns about privacy and data access permissions."
  }
 }
