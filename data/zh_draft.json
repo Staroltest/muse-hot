@@ -6403,5 +6403,10 @@
   "zh_title": "ESP32：新增可选的浅色与深色界面外观（#465）",
   "zh_oneliner": "Muse gadget SDK 为 ESP32 新增可选的浅色与深色界面外观，让设备界面可随偏好切换主题。",
   "en_oneliner": "The Muse gadget SDK adds an optional light and dark UI appearance for ESP32, letting device interfaces switch themes to match user preference."
+ },
+ "https://news.google.com/rss/articles/CBMinAFBVV95cUxOcHJpRW5ja24wWFhhRVZQSlhxUEY2TWFxM1B6NENmT1F0ZHFmd1JYVEhJTTd2Nk5oaFNZRGRBTGs5QkhzNUxJR2JWcWZPOUpNcFRQQ0JrSkhfWDBFRnBJdXhMYXlxODhZZEhUOVctTEFuM0RUM3UxQU1feVZtVFVLcHhNdkdVRjhxbXp1OVlqZVo0NmV2Q1g3YmxtclY?oc=5": {
+  "zh_title": "Brandi AI 将大模型监控扩展至 Meta Muse 与微软 Bing AI",
+  "zh_oneliner": "Brandi AI 把大语言模型监控能力扩展到 Meta Muse 和微软 Bing AI，企业可以在一处统一监控这两大平台的模型表现。",
+  "en_oneliner": "Brandi AI extends its LLM monitoring to Meta Muse and Microsoft Bing AI, letting enterprises track model performance across both platforms in one place."
  }
 }
