@@ -6611,5 +6611,21 @@
   "zh_title": "Meta 计划为 Muse Charm AI 设备定价 300 美元，并附赠 Verizon 免费 5G 套餐",
   "zh_oneliner": "报道称，Meta 计划将 Muse Charm AI 设备定价 300 美元，并搭配 Verizon 免费 5G 优惠销售。",
   "en_oneliner": "Meta reportedly plans to price its Muse Charm AI device at $300 with a free Verizon 5G offer included."
+ },
+ "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOeTY1ai1RLVRNbDRtM2E2RnhhZkw2OEpPSWw4bk44bmYzTkJHMWktSWg0dGtiR2VPX19yT2VSN1BmQXB2OS1PdkN4em02TTZCVlBGZ0hiQ3lYMXJOSDE4Z1RHVHVvVkZDSXF1U0Y5ZVFOVE1YZUVGUHN0dFgyMUktcW8wZUJLMnlkUWwyOV9qeFVXWUctUmY3UlpVeERuWmVfLVZ3R3FtdWw1cEc4YWpZTDljUDNkemk4d05fU3dZbG02M25ISmYtbmQ5Q2lhWDFadTE1RzhTTUNyQQ?oc=5": {
+  "zh_title": "恶意网页或可窃取 Meta Muse 聊天内容，研究人员发出警告",
+  "zh_oneliner": "研究人员发现，恶意网页可能利用漏洞窃取用户与 Meta Muse 的聊天记录，提醒用户留意相关风险。",
+  "en_oneliner": "Researchers found that a malicious webpage could exploit a vulnerability to steal users' chat history with Meta Muse, and warned users to watch out for the risk."
+ },
+ "https://zenn.dev/oursship_blog/articles/ff9cdb2e04e781": {
+  "zh_title": "让 Muse 挑战 ISUCON：把性能测量与实现交给它 8 小时的记录（后端工程师 H 执笔）",
+  "zh_oneliner": "作者把 ISUCON 性能竞赛的测量与实现交给 Muse，记录了 8 小时人机协作的完整过程。",
+  "en_oneliner": "The author handed ISUCON performance measurement and implementation to Muse and recorded the full eight hours of human-AI collaboration.",
+  "en_title": "Letting Muse Tackle ISUCON: An 8-Hour Record of Delegating Measurement and Implementation"
+ },
+ "https://news.google.com/rss/articles/CBMie0FVX3lxTE9aWXVjVTNCbEJVQ21zWTh0bE9LQUJaRFFMU1U5Q1pTYTBldG8wdTBhU3p2enpvRTJpbm1mLVhoUmVDcEp2TXg1VU5mTVMwT0RfcVFwOVhyZGx0MF82WlZiUHFSU3pqYlVGRHNBMkk0d2NDMkhkQmxNdjhFRQ?oc=5": {
+  "zh_title": "Muse Ember：每任务 0.14 美元，成本上击败 Haiku",
+  "zh_oneliner": "文章对比 Muse Ember 与 Haiku 的任务成本，称前者每任务仅 0.14 美元，在成本上更胜一筹。",
+  "en_oneliner": "The article compares Muse Ember and Haiku on per-task cost, saying the former costs only $0.14 per task and comes out ahead on price."
  }
 }
