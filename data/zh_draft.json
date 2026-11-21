@@ -6408,5 +6408,10 @@
   "zh_title": "Brandi AI 将大模型监控扩展至 Meta Muse 与微软 Bing AI",
   "zh_oneliner": "Brandi AI 把大语言模型监控能力扩展到 Meta Muse 和微软 Bing AI，企业可以在一处统一监控这两大平台的模型表现。",
   "en_oneliner": "Brandi AI extends its LLM monitoring to Meta Muse and Microsoft Bing AI, letting enterprises track model performance across both platforms in one place."
+ },
+ "https://github.com/facebookincubator/muse-gadget-sdk/commit/e2c5525eeb4345b691d196d0a0aafa426e6e57b3": {
+  "zh_title": "esp32：新增可选的 Muse 头像同步与手机剪辑播放功能（#466）",
+  "zh_oneliner": "Muse 小工具 SDK 为 ESP32 设备加入可选功能，可同步 Muse 头像并在手机上播放剪辑内容。",
+  "en_oneliner": "The Muse gadget SDK adds an optional feature for ESP32 devices to sync the Muse avatar and play clips on a phone."
  }
 }
