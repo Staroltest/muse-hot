@@ -6393,5 +6393,15 @@
   "zh_oneliner": "据报道，Meta计划12月推出便携AI设备Muse Charm，售价约2000元。",
   "en_oneliner": "Meta is reportedly planning to launch the portable AI device Muse Charm in December, priced at around 2,000 yuan.",
   "en_title": "Meta Reportedly to Launch Portable AI Device Muse Charm in December, Priced Around 2,000 Yuan"
+ },
+ "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBIM2l0VXBDVDktMzJmcGtkTHktcG9McmpPdXMzcWNlRHZJSUpWcDdOSm9KNEZSNkU5QklaUVNWYXM1SnVaY0dOUWM2RjJqcV8yLUhDWlB5dVlRNzY3VkJ1SHlDUzg3dm8?oc=5": {
+  "zh_title": "Meta 重押 Muse AI 智能体之际，早期安全事故浮出水面",
+  "zh_oneliner": "路透社报道，Meta 大力押注 Muse AI 智能体的同时，早期安全事故已经浮现，引发外界对智能体安全性的关注。",
+  "en_oneliner": "Reuters reports that as Meta bets big on its Muse AI agent, early safety mishaps have already surfaced, drawing attention to agent safety."
+ },
+ "https://github.com/facebookincubator/muse-gadget-sdk/commit/f267f952f55fa0f241eca2e1d1b09440207d9c73": {
+  "zh_title": "ESP32：新增可选的浅色与深色界面外观（#465）",
+  "zh_oneliner": "Muse gadget SDK 为 ESP32 新增可选的浅色与深色界面外观，让设备界面可随偏好切换主题。",
+  "en_oneliner": "The Muse gadget SDK adds an optional light and dark UI appearance for ESP32, letting device interfaces switch themes to match user preference."
  }
 }
