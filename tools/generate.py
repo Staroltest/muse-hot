@@ -4400,6 +4400,13 @@ def main():
         _add_sitemap(_p, today_iso)
     for _l, slug, _n in tag_counts:
         _add_sitemap("topics/" + slug + ".html", today_iso)
+    # 磁盘上已有的主题页（主题最后一项过期后文件仍在）也要进 sitemap，
+    # 否则 geo-audit 会因磁盘有页而 sitemap 无对应 URL 报错
+    _topics_dir = os.path.join(root, "topics")
+    if os.path.isdir(_topics_dir):
+        for _fn in sorted(os.listdir(_topics_dir)):
+            if _fn.endswith(".html"):
+                _add_sitemap("topics/" + _fn, today_iso)
     _pub_dates = {}
     for _it in live:
         _pub_dates[_it["id"]] = _it["_pub"].astimezone(CST).date().isoformat()
