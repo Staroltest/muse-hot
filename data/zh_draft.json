@@ -6627,5 +6627,10 @@
   "zh_title": "Muse Ember：每任务 0.14 美元，成本上击败 Haiku",
   "zh_oneliner": "文章对比 Muse Ember 与 Haiku 的任务成本，称前者每任务仅 0.14 美元，在成本上更胜一筹。",
   "en_oneliner": "The article compares Muse Ember and Haiku on per-task cost, saying the former costs only $0.14 per task and comes out ahead on price."
+ },
+ "https://news.google.com/rss/articles/CBMiywFBVV95cUxNV3hJSUFQV1hJWS01SmV2U3o2VFFlWUUwNGttV2xnR2kyUmhRcjlWVlM2T2N1RkpDQjBLS2pIOE5yQk1ZTnB4bF8zN0xYZmxncS1iZ1ZrcGVuNHg3cUhpZnYzTUQwS1NFWnJMcU5RY3UwRjhBTW9Ob0Z0OUpuYzIwSFFDZnIxWWMtd2cwd05MWmdXek55N2xKQzFXbG1jRndySHJVYXE5SUVLWVVOMGltOU1ERlhxUnNFM253MTdnX3VqX0JWOV9pNVJyMA?oc=5": {
+  "zh_title": "研究人员披露已修复的 Meta Muse 漏洞：测试中曾暴露聊天记录与凭证",
+  "zh_oneliner": "研究人员公开披露了一处现已修复的 Muse 安全漏洞，该漏洞曾让测试中的聊天记录和凭证面临泄露风险。",
+  "en_oneliner": "Researchers have disclosed a now-patched Muse security flaw that had put chats and credentials at risk of exposure during testing."
  }
 }
