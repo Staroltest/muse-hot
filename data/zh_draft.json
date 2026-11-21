@@ -6493,5 +6493,16 @@
   "zh_oneliner": "Anthropic 的 IPO 被视为检验市场对 AI 投资意愿的试金石，与此同时 Meta 正向 AI 项目 Muse 投入巨资，早期安全问题也开始浮出水面。",
   "en_oneliner": "Anthropic's IPO is seen as a test of market appetite for AI investment, while Meta pours money into its AI project Muse and early safety concerns begin to surface.",
   "en_title": "US Stocks Outlook: Anthropic IPO Seen as a Test of AI Investment Appetite; Meta Pours Money into AI Project 'Muse' as Early Safety Concerns Surface"
+ },
+ "https://zenn.dev/sktt_panda/articles/muse-memory-3layers": {
+  "zh_title": "Muse AI 秘书的「忘不掉」记忆设计：分三层存放，避免新旧决定互相混线",
+  "zh_oneliner": "把 AI 秘书的记忆分成「当前结论、每日记录、操作步骤」三层，订正时只替换第一层、把经过留在日志里，让新旧决定不再互相干扰。",
+  "en_oneliner": "Splitting an AI secretary's memory into three layers — current conclusions, daily logs, and procedures — and replacing only the first layer when correcting a decision keeps old and new decisions from getting tangled.",
+  "en_title": "How to Design a Memory System So Muse's AI Secretary Never Forgets: Three Layers to Keep Old and New Decisions from Getting Tangled"
+ },
+ "https://news.google.com/rss/articles/CBMiQkFVX3lxTE9jNXgwUTJzYVVZT1lkOTdCejRXTk9OZ2ZQWDhSR2FTRnpHUTV6ZjlVanBTVUJjdjljdjVDTDdhTmRZUQ?oc=5": {
+  "zh_title": "Meta 的 Muse Charm 开放候补名单，华尔街引擎率先报道",
+  "zh_oneliner": "据华尔街引擎报道，Meta 的 Muse Charm 已开放候补名单，感兴趣的用户可以先排队等候体验。",
+  "en_oneliner": "Meta's Muse Charm has opened a waitlist, according to @wallstengine, so interested users can queue up for access."
  }
 }
