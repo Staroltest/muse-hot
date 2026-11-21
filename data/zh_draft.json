@@ -6556,5 +6556,10 @@
   "zh_oneliner": "这篇实战解析讲了如何用 Meta 的 Muse Gadget SDK，在 ESP32-S3 芯片上跑起一个 AI 智能体。",
   "en_oneliner": "This hands-on walkthrough shows how to run an AI agent on an ESP32-S3 chip using Meta's Muse Gadget SDK.",
   "en_title": "Running an AI Agent on ESP32-S3: A Hands-On Guide to Meta's Muse Gadget SDK"
+ },
+ "https://news.google.com/rss/articles/CBMieEFVX3lxTFAxa0RNTU1sM2NTNHktam9TeFE1OU1qOEZmeTg0UlZSTzdjZEFtYjAxNDkwNmtZQnlhdzF3YnRHRXJEaHkwUGlKV0R3akFSa2dLUjN1QWs5SXRGQkJqV00weVJ3UkZiZ0RYZy04SllWdDZsWmVIRlhvSQ?oc=5": {
+  "zh_title": "一个恶意网页让研究人员劫持 Meta Muse 并访问私人聊天",
+  "zh_oneliner": "研究人员发现单个恶意网页就能劫持 Meta Muse 会话、读取私人对话，暴露了 AI 助手处理网页内容时的安全隐患。",
+  "en_oneliner": "Researchers found that a single malicious webpage could hijack a Meta Muse session and read private chats, exposing a security risk in how AI assistants handle web content."
  }
 }
