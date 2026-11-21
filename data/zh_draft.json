@@ -6413,5 +6413,10 @@
   "zh_title": "esp32：新增可选的 Muse 头像同步与手机剪辑播放功能（#466）",
   "zh_oneliner": "Muse 小工具 SDK 为 ESP32 设备加入可选功能，可同步 Muse 头像并在手机上播放剪辑内容。",
   "en_oneliner": "The Muse gadget SDK adds an optional feature for ESP32 devices to sync the Muse avatar and play clips on a phone."
+ },
+ "https://news.google.com/rss/articles/CBMigAFBVV95cUxQZTNoMVZXZWxwX08xMUR4WWxMVTJSZVR5eTZCZ0VuWmt5X0dCcWR1M0l0NFZiSkh2THNPcVRPLUl1UmxBdDk0cVpDbjhrd0drY2QyeFUxQ3NCOERPZW5nWkkteDZhT195NDNKaWhJb1FsTHJ3eWV2VWo5ZFJCc0N0Qw?oc=5": {
+  "zh_title": "Meta 的 Muse 读取 Signal 消息并编造市场信息",
+  "zh_oneliner": "报道称 Meta 的 Muse 不仅读取 Signal 消息，还会编造市场信息，引发外界对其隐私处理与内容可信度的关注。",
+  "en_oneliner": "Reports say Meta’s Muse reads Signal messages and invents market information, raising concerns about its privacy handling and the reliability of its answers."
  }
 }
