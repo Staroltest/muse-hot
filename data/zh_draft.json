@@ -6550,5 +6550,11 @@
   "zh_oneliner": "Meta 的新款 AI 设备 Muse Charm 定价 300 美元，还附赠一年 Verizon 5G 流量，标志着智能体开始走出手机。",
   "en_oneliner": "Meta's new AI device Muse Charm costs $300 and comes with a year of Verizon 5G data, as AI agents move beyond the phone.",
   "en_title": "AI Agents Move Beyond the Phone: Meta's New Muse Charm Device Priced at $300 With a Year of Verizon 5G Data"
+ },
+ "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9UTkRWYnVBN0FYU3FGZU90RzBFMTVXTXNIdnZjbHEwRDZXcHBERzBuSHJhYmpHVk51a3dDMlI5T3NVbmRJUElSNEFzMVBwenNGSF92SHplRW02bkl6cWNn?oc=5": {
+  "zh_title": "在 ESP32-S3 上运行 AI 智能体：Meta Muse Gadget SDK 实战解析",
+  "zh_oneliner": "这篇实战解析讲了如何用 Meta 的 Muse Gadget SDK，在 ESP32-S3 芯片上跑起一个 AI 智能体。",
+  "en_oneliner": "This hands-on walkthrough shows how to run an AI agent on an ESP32-S3 chip using Meta's Muse Gadget SDK.",
+  "en_title": "Running an AI Agent on ESP32-S3: A Hands-On Guide to Meta's Muse Gadget SDK"
  }
 }
