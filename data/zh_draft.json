@@ -6571,5 +6571,10 @@
   "zh_title": "恶意网页让研究人员劫持 Meta Muse 并访问私人聊天",
   "zh_oneliner": "研究人员发现，恶意网页可以劫持 Meta Muse 并读取用户的私人聊天，暴露了智能体浏览网页时的安全隐患。",
   "en_oneliner": "Researchers found that a malicious webpage could hijack Meta Muse and read users' private chats, exposing a security risk when the agent browses the web."
+ },
+ "https://www.youtube.com/shorts/Yde_AQoP4uU": {
+  "zh_title": "Muse AI 编造了答案：10 秒钟识破错误回答",
+  "zh_oneliner": "教你用 10 秒钟快速核查 Muse 给出的答案，识破 AI 一本正经编造的错误内容。",
+  "en_oneliner": "Learn how to verify Muse's answers in 10 seconds and catch confidently fabricated mistakes."
  }
 }
