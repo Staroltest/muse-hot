@@ -6456,5 +6456,10 @@
   "zh_title": "文档：列出虚拟形象叠加层与面板动态钩子（#476）",
   "zh_oneliner": "本次提交更新了文档，列出虚拟形象叠加层与面板动态钩子，方便开发者调用相关功能。",
   "en_oneliner": "This commit updates the docs to list the avatar overlays and board motion hooks, making the related features easier for developers to use."
+ },
+ "https://dev.meta.ai/models/muse-spark": {
+  "zh_title": "Muse Spark 1.3",
+  "zh_oneliner": "Meta 开发者站点上线了 Muse Spark 1.3 的模型页面，这是 Muse Spark 系列的最新版本。",
+  "en_oneliner": "Meta’s developer site now lists the Muse Spark 1.3 model page, the latest release in the Muse Spark series."
  }
 }
