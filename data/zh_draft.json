@@ -6428,5 +6428,33 @@
   "zh_title": "AAPL 股票提醒：苹果正开发 AI 智能体与 Muse 竞争，投资者需要知道的事",
   "zh_oneliner": "苹果被曝正在开发可与 Muse 竞争的 AI 智能体，消息引发市场对苹果股价的关注。",
   "en_oneliner": "Apple is reportedly developing an AI agent to compete with Muse, drawing market attention to Apple's stock."
+ },
+ "https://medium.com/inconvenience-institute/muse-meet-linux-930854e8bc7a?source=rss------muse-5": {
+  "zh_title": "Muse 遇见 Linux",
+  "zh_oneliner": "作者把 Muse 接入 Linux 环境，记录了这款 AI 助手在桌面系统上的实际使用体验。",
+  "en_oneliner": "The author connects Muse to a Linux environment and records how the AI assistant actually works on a desktop system."
+ },
+ "https://medium.com/@hiro/meta-muse%E3%82%92%E8%A7%A6%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%8B-40baf182c8ea?source=rss------meta_muse-5": {
+  "zh_title": "试玩 Meta Muse",
+  "zh_oneliner": "作者上手体验了 Meta Muse，分享了初次使用的感受与发现。",
+  "en_oneliner": "The author tries out Meta Muse and shares first impressions and findings.",
+  "en_title": "Trying Out Meta Muse"
+ },
+ "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBTMEhCZi1ubDRoczItQml3dzJleE1WdXFJSVhKelFhaEZERHpBb1ZfeldTYkQ3Y1UwbThpaUtUU050S3J2aHBZbC1LR3dLREdyRXlwRkRWZF9nb052X296Vw?oc=5": {
+  "zh_title": "首次专访 Muse 负责人：七个月从玩具到 1000 万下载",
+  "zh_oneliner": "澎湃新闻首次专访 Muse 负责人，回顾这款 AI 助手七个月内下载量突破一千万的历程。",
+  "en_oneliner": "The Paper interviews the head of Muse for the first time, looking back at how the AI assistant passed ten million downloads within seven months.",
+  "en_title": "First Exclusive Interview With the Head of Muse: From Toy to 10 Million Downloads in Seven Months"
+ },
+ "https://qiita.com/sakutto-panda/items/ecb0e59c0156fb499ef6": {
+  "zh_title": "Muse AI 秘书不会遗忘的记忆设计方法：分三层避免新旧决定混淆的实践笔记",
+  "zh_oneliner": "作者分享了为 Muse AI 秘书设计记忆系统的方法，用三层结构区分新旧决定，避免信息混淆。",
+  "en_oneliner": "The author shares a method for designing a memory system for a Muse AI secretary, using a three-layer structure to keep old and new decisions from getting mixed up.",
+  "en_title": "How to Design a Memory System Your Muse AI Secretary Won't Forget: A Hands-On Guide to Separating Old and New Decisions Across Three Layers"
+ },
+ "https://github.com/facebookincubator/muse-gadget-sdk/commit/7207ce6d77c4f62a0fe524202de58f4726aa001f": {
+  "zh_title": "文档：列出虚拟形象叠加层与面板动态钩子（#476）",
+  "zh_oneliner": "本次提交更新了文档，列出虚拟形象叠加层与面板动态钩子，方便开发者调用相关功能。",
+  "en_oneliner": "This commit updates the docs to list the avatar overlays and board motion hooks, making the related features easier for developers to use."
  }
 }
