@@ -6418,5 +6418,15 @@
   "zh_title": "Meta 的 Muse 读取 Signal 消息并编造市场信息",
   "zh_oneliner": "报道称 Meta 的 Muse 不仅读取 Signal 消息，还会编造市场信息，引发外界对其隐私处理与内容可信度的关注。",
   "en_oneliner": "Reports say Meta’s Muse reads Signal messages and invents market information, raising concerns about its privacy handling and the reliability of its answers."
+ },
+ "https://news.google.com/rss/articles/CBMikwFBVV95cUxPN21kM2dyWmZKY2t6aG40emZma1gyUEpBRG1zNXZmbEFBQlNBd3pZeHBQTWlpVGxSZmYzZGRWMEQ4aFFSU3NnbzJQcmhUOUhjOTNqRkpNWDVpcDBpc01OTnpERXQ3LWNjYkNZUTNBM2ExLUczQ2lXX0RXUHdrb2YtTkpXdDJ1clpQZGNIdWlLY1BzQVk?oc=5": {
+  "zh_title": "muse-protocol 仓库：解析 Muse.ai 的 HTTP 流程，并提示服务条款风险",
+  "zh_oneliner": "有人开源整理了 Muse.ai 的 HTTP 调用流程，同时提醒这类逆向用法可能违反服务条款。",
+  "en_oneliner": "Someone open-sourced a breakdown of Muse.ai's HTTP flow, while warning that this kind of reverse-engineered use may breach the terms of service."
+ },
+ "https://news.google.com/rss/articles/CBMilgFBVV95cUxQekFPM3ZncUc5OWU5R3NERDJHalhFbE9WNURJNUNmc3RnelpCTW9OcHNHcXZuTDMxVGtMbWkwUnM3WDBCSHVYalU4dnhzWFY4NW10dGJROGVEOE5KNXNIUjJUY1ltN1A3SHJTZE9XS0ZUQTNUT0c5S1BVUzJGRDlzVlVuZkV4YUNNTHFxZVhmai05QUcwdmc?oc=5": {
+  "zh_title": "AAPL 股票提醒：苹果正开发 AI 智能体与 Muse 竞争，投资者需要知道的事",
+  "zh_oneliner": "苹果被曝正在开发可与 Muse 竞争的 AI 智能体，消息引发市场对苹果股价的关注。",
+  "en_oneliner": "Apple is reportedly developing an AI agent to compete with Muse, drawing market attention to Apple's stock."
  }
 }
