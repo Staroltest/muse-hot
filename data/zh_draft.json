@@ -6566,5 +6566,10 @@
   "zh_title": "Muse AI 也会编造答案：10 秒识破错误回答的方法",
   "zh_oneliner": "教你用 10 秒快速判断 Muse 给出的答案是否靠谱，别被一本正经的错误回答带偏。",
   "en_oneliner": "Learn how to tell in just 10 seconds whether Muse's answer is trustworthy, so a confidently wrong reply doesn't lead you astray."
+ },
+ "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPaVp4czdZSzBpZzJ2NjdLVGF4dHRCMnBwM2RnOGNtTlJqRzJOMktMMk1yQlBvaHZ4bHJ4UUxWSkJLUEZHaG5xUElFTGxFYkgxNEpISHpKX2pDd2ZPei1nUl9LWGlPMm8wY29JNkR0ZWpUSTBPMXhOTEVNVndtZzZmajA0elZ2Q1dGTl94N3J0RnFrZmFCekQ1WjJVaFBOT1VrQklGcnc3UHQ3UQ?oc=5": {
+  "zh_title": "恶意网页让研究人员劫持 Meta Muse 并访问私人聊天",
+  "zh_oneliner": "研究人员发现，恶意网页可以劫持 Meta Muse 并读取用户的私人聊天，暴露了智能体浏览网页时的安全隐患。",
+  "en_oneliner": "Researchers found that a malicious webpage could hijack Meta Muse and read users' private chats, exposing a security risk when the agent browses the web."
  }
 }
