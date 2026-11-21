@@ -301,6 +301,13 @@
    "name": "9to5Mac：Muse 标签",
    "tier": "T3",
    "url": "https://9to5mac.com/tag/muse/feed/"
+  },
+  {
+   "category_hint": "usage",
+   "id": "youtube-ai-hodan",
+   "name": "YouTube：AI放談",
+   "tier": "T2",
+   "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCkL0w7Uv4DiJQcHQ4eYYewg"
   }
  ]
 }
