@@ -6905,5 +6905,11 @@
   "zh_title": "Meta 的 Muse AI 智能体引发隐私担忧",
   "zh_oneliner": "Meta 的 Muse 智能体因数据收集方式引发隐私担忧，提醒人们留意 AI 助手如何使用个人信息。",
   "en_oneliner": "Meta's Muse AI agent has raised privacy concerns over how it collects data, reminding people to watch how AI assistants use personal information."
+ },
+ "https://qiita.com/Kazeneko/items/88be8f6bf39b300c7056": {
+  "zh_title": "用 Muse 的 Space 做了个虚拟形象服装目录，每天早上自动换装",
+  "zh_oneliner": "作者用 Muse 的 Space 功能做了一个虚拟形象服装目录，服装可以随机生成攒起来，每天早上自动换上一套。",
+  "en_oneliner": "The author used Muse's Space feature to build an avatar outfit catalog that randomly generates and collects outfits, then automatically changes into a new one every morning.",
+  "en_title": "I Built an Avatar Outfit Catalog in Muse's Space, With an Automatic Outfit Change Every Morning"
  }
 }
