@@ -74,6 +74,36 @@ def strip_html(text):
     return text
 
 
+def title_from_text(text, limit=70):
+    """无 <title> 的 feed（如 Mastodon 标签 RSS）用正文首句作标题：
+    去掉开头的 Re: 与裸链接/域名串、去掉末尾的 hashtag 串，截到词边界；
+    剩不下有效文字时返回空（调用方跳过该条）。"""
+    text = (text or "").strip()
+    text = re.sub(r"^(re:\s*)?(https?://\s*)?", "", text, flags=re.I)
+    toks = text.split(" ")
+    drop = 0
+    for t in toks:
+        if (t.startswith("http") or "://" in t
+                or re.match(r"^[\w-]+(\.[\w-]+)+/\S*$", t)
+                or "%3A" in t or "%2F" in t or t.startswith("www.")):
+            drop += 1
+        else:
+            break
+    text = " ".join(toks[drop:]).strip()
+    text = re.sub(r"(?:\s+#[^\s#]+)+\s*$", "", text)
+    text = re.sub(r"\s+", " ", text).strip()
+    if len(text) < 8:
+        return ""
+    if len(text) <= limit:
+        return text
+    cut = text[:limit]
+    for sep in (" ", "，", "、", "。"):
+        i = cut.rfind(sep)
+        if i > limit // 2:
+            return cut[:i].rstrip()
+    return cut.rstrip()
+
+
 def shorten(text, limit=200):
     if len(text) <= limit:
         return text
@@ -219,11 +249,14 @@ def parse_feed(body, source):
                     fields.setdefault(cn, (child.text or "").strip())
         title = fields.get("title", "").strip()
         link = norm_link(fields.get("link", ""))
-        if not title or not link:
-            continue
         summary = strip_html(fields.get("description") or fields.get("summary") or "")
         if not summary:
             summary = strip_html(fields.get("content") or fields.get("encoded") or "")
+        if not title:
+            # 无 <title> 的 feed（如 Mastodon 标签 RSS）：用正文首句作标题
+            title = title_from_text(summary)
+        if not title or not link:
+            continue
         # 完整摘要：详情页用（卡片仍用 200 字短摘要）。只有比短摘要明显更长时
         # 才存，短摘要本身已完整的条目不存，省体积。收成完整的一段话，
         # 不截断到半句、不挂省略号（导读/正文摘要不允许截断）。
