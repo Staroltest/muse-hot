@@ -6933,5 +6933,10 @@
   "zh_title": "Muse AI 能替你评论：说出来，确认后就发出",
   "zh_oneliner": "演示用 Muse 口述生成评论、人工确认后自动发布的用法。",
   "en_oneliner": "A demo of dictating a comment with Muse, approving it, and having it posted automatically."
+ },
+ "https://www.youtube.com/shorts/ZHFh-OWAiL4": {
+  "zh_title": "Muse AI 能替你评论：说出来，确认后就发出",
+  "zh_oneliner": "这条短视频演示用 Muse AI 语音下达评论指令、确认后自动发布，展示语音驱动的评论代发流程。",
+  "en_oneliner": "This short shows Muse AI taking a spoken comment instruction, confirming it, and posting it automatically."
  }
 }
