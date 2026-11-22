@@ -6780,5 +6780,15 @@
   "zh_title": "Meta 的 Muse AI 智能体 11 月 21 日至 22 日在 New Bahru 开放免费体验",
   "zh_oneliner": "Meta 在 New Bahru 设点，11 月 21 日至 22 日向公众免费开放 Muse AI 智能体的上手体验。",
   "en_oneliner": "Meta has set up a hands-on spot at New Bahru, opening free trials of the Muse AI agent to the public on 21–22 November."
+ },
+ "https://news.google.com/rss/articles/CBMihwFBVV95cUxOdlZSVF9lV01sTFc2QjIyeHdvX3B5aU5oRHQzbFpFZDJCNWhoUTd5U2I5cEQ4ZlNDYkFKc2JHS3Y4eGl0ZEx4ZVdWTEUzSlRLLWxiMmtCTnpUNUhxT3RZOFI0YUo2eXVFUzBzU3pmMjc2a0Z3ZG5paEtYQ2dhVVVGZVBIekh1bVU?oc=5": {
+  "zh_title": "Meta Muse 实验室测试：恶意页面可触及私人聊天",
+  "zh_oneliner": "实验室测试显示，恶意网页可能绕过防护触及 Muse 的私人对话，暴露出 AI 助手在浏览网页时的隐私风险。",
+  "en_oneliner": "A lab test shows a malicious webpage could bypass safeguards to reach Muse's private chats, exposing a privacy risk when the AI assistant browses the web."
+ },
+ "https://medium.com/@abirami.vina/how-to-use-muse-ai-to-generate-anime-art-through-the-pixai-api-acb39262aadf?source=rss------muse-5": {
+  "zh_title": "如何用 Muse AI 通过 PixAI API 生成动漫艺术",
+  "zh_oneliner": "这篇教程手把手教你把 Muse AI 接入 PixAI 的 API，用自然语言提示词批量生成动漫风格图片。",
+  "en_oneliner": "This tutorial walks you through connecting Muse AI to PixAI's API to generate anime-style images in bulk with natural-language prompts."
  }
 }
