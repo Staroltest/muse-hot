@@ -6938,5 +6938,11 @@
   "zh_title": "Muse AI 能替你评论：说出来，确认后就发出",
   "zh_oneliner": "这条短视频演示用 Muse AI 语音下达评论指令、确认后自动发布，展示语音驱动的评论代发流程。",
   "en_oneliner": "This short shows Muse AI taking a spoken comment instruction, confirming it, and posting it automatically."
+ },
+ "https://dev.to/paragon666/chisto-dlia-istorii-meta-56084-22-noiabria-2026-18io": {
+  "zh_title": "仅作记录：META 股价 560.84 美元，2026 年 11 月 22 日",
+  "zh_oneliner": "随手记一笔：今天问 Muse，Meta 股价是多少，Muse 说周日休市，上周五 META 收于 560.84 美元。",
+  "en_oneliner": "A quick note for the record: asked Muse today what Meta stock costs, and Muse said the market is closed on Sunday and META closed at $560.84 on Friday.",
+  "en_title": "Just for the record: META — $560.84, November 22, 2026"
  }
 }
