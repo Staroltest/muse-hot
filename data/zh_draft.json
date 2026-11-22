@@ -6833,5 +6833,60 @@
   "zh_title": "Meta Muse Spaces：用一句话提示搭建应用",
   "zh_oneliner": "评测文章介绍 Meta Muse 的 Spaces 功能，用户只需输入提示词即可生成定制迷你应用，并对官方宣传中的说法逐项核查。",
   "en_oneliner": "A review introduces Meta Muse's Spaces feature, which lets users build custom mini-apps from a simple prompt, and fact-checks the claims in Meta's pitch one by one."
+ },
+ "https://dev.to/aj-on-dev/i-asked-an-ai-agent-to-sort-my-inbox-and-it-actually-did-the-work-od7": {
+  "zh_title": "我让一个 AI 智能体帮我整理收件箱，它真的把活干完了",
+  "zh_oneliner": "作者把收件箱整理交给 AI 智能体打理，实测下来它不只是说说而已，是真的完成了任务。",
+  "en_oneliner": "The author handed inbox triage over to an AI agent, and in practice it didn't just talk about the job — it actually got it done."
+ },
+ "https://dev.to/hacksgr/researchers-find-security-flaws-in-metas-muse-digital-assistant-kjf": {
+  "zh_title": "研究人员在 Meta 的 Muse 数字助手中发现安全漏洞",
+  "zh_oneliner": "研究人员发现 Meta 的 Muse 数字助手存在安全漏洞，给这款个人 AI 助手的防护能力打上问号。",
+  "en_oneliner": "Researchers found security flaws in Meta's Muse digital assistant, raising questions about how well the personal AI assistant is protected."
+ },
+ "https://dev.to/richard_7f353366a8103eee6/i-tried-muse-metas-personal-ai-agent-heres-what-it-actually-does-1jnc": {
+  "zh_title": "我试用了 Muse，Meta 的个人 AI 智能体——它到底能干什么",
+  "zh_oneliner": "作者亲手试用了 Meta 的个人 AI 智能体 Muse，记录它实际能做到的事情，而不是宣传口径。",
+  "en_oneliner": "The author tried Meta's personal AI agent Muse firsthand and recorded what it can actually do, rather than what the marketing says."
+ },
+ "https://dev.to/shoyataguchi/trying-metas-muse-architecture-and-security-mechanism-525l": {
+  "zh_title": "试用 Meta 的 Muse：架构与安全机制解析",
+  "zh_oneliner": "作者上手体验 Meta 的 Muse，并拆解其背后的架构设计与安全机制。",
+  "en_oneliner": "The author tries Meta's Muse hands-on and unpacks the architecture and security mechanisms behind it."
+ },
+ "https://dev.to/hacksgr/meta-executive-posts-ai-video-with-mark-zuckerberg-and-sam-altman-a5a": {
+  "zh_title": "Meta 高管发布与扎克伯格、奥尔特曼同框的 AI 视频",
+  "zh_oneliner": "一位 Meta 高管发布了一段由 AI 生成的视频，画面中出现了马克·扎克伯格和萨姆·奥尔特曼。",
+  "en_oneliner": "A Meta executive posted an AI-generated video featuring Mark Zuckerberg and Sam Altman."
+ },
+ "https://dev.to/kirbykaito/how-i-verify-ai-generated-work-1375-rows-761-candidates-and-a-lot-of-counting-3926": {
+  "zh_title": "我如何核查 AI 生成的工作成果：1375 行数据、761 个候选对象和大量计数",
+  "zh_oneliner": "作者分享自己核查 AI 生成内容的方法，靠 1375 行数据和 761 个候选对象逐项比对验证。",
+  "en_oneliner": "The author shares a method for checking AI-generated work, verifying it row by row across 1,375 rows of data and 761 candidates."
+ },
+ "https://agentusecases.ai/use-case/book-travel-with-an-ai-agent": {
+  "zh_title": "用 AI 智能体预订旅行",
+  "zh_oneliner": "这个用例展示如何让 AI 智能体帮你搞定旅行预订，从查行程到下单一步到位。",
+  "en_oneliner": "This use case shows how to let an AI agent handle travel booking for you, from checking itineraries to placing the order."
+ },
+ "https://agentusecases.ai/use-case/sign-up-for-races-with-a-browser-agent": {
+  "zh_title": "用浏览器智能体报名参加比赛",
+  "zh_oneliner": "这个用例展示如何让浏览器智能体替你完成赛事报名，省去手动填表的麻烦。",
+  "en_oneliner": "This use case shows how to let a browser agent sign you up for races, sparing you the manual form-filling."
+ },
+ "https://news.google.com/rss/articles/CBMidEFVX3lxTE9FUXpMYkRYMmNzVjR4SXluOGhmM1dYaGpwdE9KSnVCYmVJTTBXTElQMDIwXzFJakhtVkZsM3RrZjFSSnl1eS0zdkY0bzJFQllxeUpHU1BCRXZQNDdYdnB2M0lvejBGWl9rTXRMWndET2RrOTdK?oc=5": {
+  "zh_title": "Muse 教程：免费获取 AMD 的 API",
+  "zh_oneliner": "这篇 Muse 教程讲解如何免费获取 AMD 的 API。",
+  "en_oneliner": "This Muse tutorial explains how to get AMD's API for free."
+ },
+ "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1JYXZGcmtZVTJMTU1HRHlWRTlXZFk4Mmg0eElKYzVGVDFmWW9GNHBZVGo1NjNJQ2ozTmhFdC1EUnQ3bHZpQmtkbzB3YTFlQ0cydHU5b05QY20tQzl2?oc=5": {
+  "zh_title": "如何使用 Muse：工作与生活中的 7 个实用例子",
+  "zh_oneliner": "这段视频用 7 个贴近工作与生活的实例，演示 Muse 在日常场景里的具体用法。",
+  "en_oneliner": "This video walks through seven practical examples from work and everyday life, showing how Muse is actually used."
+ },
+ "https://news.google.com/rss/articles/CBMijgFBVV95cUxNbnZTVHBIb2JoVG1TX2ZtVjlyQk9ZODFHZDRoMFdlQnFzazRtTUxYTmdjUnpUUXd2N0VLQmZOem4yaVR3NG1PY0hWNlNfeFJPTE1TZ0tjU0Z3a0tpRGpwb1IzQ1c4Q0ROZnplUER6MjdhZGU1N003d0NRUmZRdUk5ZG5JaG1VTUdJb1JVa3l3?oc=5": {
+  "zh_title": "我如何安全地用 Meta Muse 省 AI 预算——以及我绝不让它做的事",
+  "zh_oneliner": "作者分享自己安全使用 Meta Muse 的经验，靠它拉长 AI 预算，同时划出绝不交给它的红线。",
+  "en_oneliner": "The author shares how to use Meta Muse safely to stretch an AI budget — and draws the line at what it should never be allowed to do."
  }
 }
