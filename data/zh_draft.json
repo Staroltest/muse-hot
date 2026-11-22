@@ -6944,5 +6944,11 @@
   "zh_oneliner": "随手记一笔：今天问 Muse，Meta 股价是多少，Muse 说周日休市，上周五 META 收于 560.84 美元。",
   "en_oneliner": "A quick note for the record: asked Muse today what Meta stock costs, and Muse said the market is closed on Sunday and META closed at $560.84 on Friday.",
   "en_title": "Just for the record: META — $560.84, November 22, 2026"
+ },
+ "https://github.com/devniz/znp-re": {
+  "zh_title": "自己动手做一个 Meta Muse / AI 挂件钥匙扣",
+  "zh_oneliner": "一个开源小项目，教你亲手打造 Meta Muse 风格的 AI 挂件钥匙扣。",
+  "en_oneliner": "An open-source mini project that shows you how to build your own Meta Muse-style AI charm keychain.",
+  "en_title": ""
  }
 }
