@@ -6790,5 +6790,15 @@
   "zh_title": "如何用 Muse AI 通过 PixAI API 生成动漫艺术",
   "zh_oneliner": "这篇教程手把手教你把 Muse AI 接入 PixAI 的 API，用自然语言提示词批量生成动漫风格图片。",
   "en_oneliner": "This tutorial walks you through connecting Muse AI to PixAI's API to generate anime-style images in bulk with natural-language prompts."
+ },
+ "https://news.google.com/rss/articles/CBMitAFBVV95cUxQcmswbGtWU0V5UThMT3Rqd3lGVmJqeHE4NEE0S1h5eEpMTUZfRzU4NUxLbjZLU195X29ld20wa2xNVWIxZlREZ1U1OFZIY3VicFA2eEMwQmFTbWJTVk9CaHJFMktMNUU2a3Z6TlBhWmEwVE1TTzVfRkFRY2VLdGZ2cVIxR1NuWUVXaFFxRlZaQnNaM29JZnpuUV9hVEZNY3F1ZEZwaGx4QmlJa2t4MTBZQlJDZ3g?oc=5": {
+  "zh_title": "独家：Signal 限制截图，阻止 AI 智能体读取消息",
+  "zh_oneliner": "Signal 推出截图限制，防止 AI 智能体读取用户的聊天消息，隐私保护再进一步。",
+  "en_oneliner": "Signal is restricting screenshots to keep AI agents from reading users' chat messages, taking privacy protection a step further."
+ },
+ "https://www.youtube.com/watch?v=_QMZqjwJRQI": {
+  "zh_title": "如何在 Muse AI 中用 Spaces 免代码搭建应用",
+  "zh_oneliner": "一段免代码教程，演示如何用 Muse AI 的 Spaces 功能从零搭建一个应用。",
+  "en_oneliner": "A no-code tutorial showing how to build an app from scratch with Muse AI's Spaces feature."
  }
 }
