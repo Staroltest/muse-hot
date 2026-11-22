@@ -6976,5 +6976,25 @@
   "zh_title": "Meta 的 Muse 在三项简单的现实世界测试中失败后承认自己“很懒”",
   "zh_oneliner": "Muse 在三项贴近现实的简单测试中表现不佳，随后坦承自己“偷懒了”，引发人们对其实际能力的讨论。",
   "en_oneliner": "Muse performed poorly on three simple real-world tests and then admitted it had been “lazy,” sparking discussion about its actual capabilities."
+ },
+ "https://agentusecases.ai/use-case/run-a-personal-assistant-that-handles-email-and-books-group-": {
+  "zh_title": "用个人助理处理邮件、预订集体出游",
+  "zh_oneliner": "一位用户让 Muse 当了一周个人助理：查收邮件、起草回复，还帮四个人订了多伦多的保龄球之夜并分摊费用，只有医生预约碰上了权限限制。",
+  "en_oneliner": "A user let Muse act as a personal assistant for a week: checking email, drafting replies, booking a bowling night for four in Toronto and splitting the bill, with only a doctor-portal booking hitting its limits."
+ },
+ "https://agentusecases.ai/use-case/triage-unread-email-hourly-and-send-monday-briefings": {
+  "zh_title": "每小时分拣未读邮件，周一发送简报",
+  "zh_oneliner": "作者让 Muse 每小时扫描未读邮件、按重要性排序，并在周一汇总成简报；早期一次误删促销邮件的失误后来得到了纠正。",
+  "en_oneliner": "The writer has Muse scan unread email hourly, rank it by importance, and send a Monday briefing; an early mistake archiving a promo email was later corrected."
+ },
+ "https://agentusecases.ai/use-case/give-an-agent-its-own-email-to-finish-sign-ups": {
+  "zh_title": "给智能体一个专属邮箱去完成注册",
+  "zh_oneliner": "发帖者给 Muse 配了一个专属邮箱，让它能自行完成账号注册、处理验证邮件，不再中途卡住。",
+  "en_oneliner": "The poster gave Muse its own email address so it can complete account sign-ups and handle verification emails without stalling."
+ },
+ "https://agentusecases.ai/use-case/book-flights-with-an-agent-with-a-failed-email-entry": {
+  "zh_title": "让智能体订机票（邮箱填错了一次）",
+  "zh_oneliner": "一位网友让 Muse 订机票，结果邮箱填错导致没收到确认邮件，算是一次部分成功。",
+  "en_oneliner": "One user had Muse book flights, but it entered the email wrong so no confirmation arrived — a partial success."
  }
 }
