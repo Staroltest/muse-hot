@@ -6769,5 +6769,11 @@
   "zh_oneliner": "据报道，Meta 内部员工对 Muse AI 突然发出的意外消息感到不安，认为这种做法严重侵犯了用户隐私。",
   "en_title": "",
   "en_oneliner": "Meta employees are reportedly alarmed by unexpected messages from Muse AI, which they see as a serious invasion of user privacy."
+ },
+ "https://qiita.com/musing_lab/items/e3e41911f5481309e817": {
+  "zh_title": "让 AI 智能体（Muse）接管网站运营：从零搭建完整配置——从创建账号到下达指令",
+  "zh_oneliner": "手把手教你从零搭建一套让 Muse 智能体接管网站日常运营的配置，从创建账号到写好指令，全流程一次讲清。",
+  "en_oneliner": "A step-by-step guide to building a setup from scratch that lets the Muse agent take over day-to-day website operations, covering everything from creating accounts to writing instructions.",
+  "en_title": "Building a Setup from Scratch That Lets the AI Agent (Muse) Run Website Operations — From Creating Accounts to Giving Instructions"
  }
 }
