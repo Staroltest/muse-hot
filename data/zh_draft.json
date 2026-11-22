@@ -6817,5 +6817,21 @@
   "zh_oneliner": "Muse 新增代打电话功能，订阅用户可以让 AI 替自己联系商家办事。",
   "en_oneliner": "Muse adds a call-on-your-behalf feature, letting subscribers have AI contact businesses for them.",
   "en_title": "Meta's Muse Launches AI Phone-Call Feature for Subscribers to Contact Businesses"
+ },
+ "https://nebusec.ai/research/meta-muse-credential-exposure": {
+  "zh_title": "黑客攻击 Muse：通过浏览器使用窃取私人聊天记录",
+  "zh_oneliner": "安全研究发现，恶意网页可利用 Muse 的浏览器使用功能读取用户的私人聊天记录，暴露了 AI 助手调用浏览器时的权限风险。",
+  "en_oneliner": "Security research finds a malicious webpage can exploit Muse's browser-use feature to read users' private chats, exposing permission risks when an AI assistant drives the browser."
+ },
+ "https://news.google.com/rss/articles/CBMilwFBVV95cUxQb0w4eUk1cWdZWTBwclBjNV9MdHQxbXFKNHY5N1JXZW9XTTRPWFc2Zm5DYTQ2S3NsTkt0VjgzbjlPTFR0U2NBSmJmUy1XLTUta2ttX1dCZlVBM1p5N2lKRVNHM1FjVGdfZ19xWGhXQVh2TmNVSjRveWNUSVhHRUl6MWxwRjBVeU15ZFdPbXhFS1RyMG5EM2NN?oc=5": {
+  "zh_title": "Meta Muse 恶意网页可访问私人聊天记录",
+  "zh_oneliner": "报道称，恶意网页能在实验室测试中访问 Muse 用户的私人聊天记录，再次引发对 AI 助手浏览器权限与隐私保护的担忧。",
+  "en_oneliner": "Reports say a malicious webpage could access Muse users' private chat history in lab tests, renewing concerns over AI assistants' browser permissions and privacy safeguards.",
+  "en_title": "Malicious Webpage Could Access Meta Muse Private Chat History"
+ },
+ "https://news.google.com/rss/articles/CBMipwFBVV95cUxORVRpc0xmc1I3Nm1hdFo3ZVhxT0h2Ym14ZzlPSHAzSmhHMkVsVEVObUdaa1NmZjFPbHR1OTdzUnlhZmNKalJUQ1ZNNGtfeHZUWko5b2pFY2E0OU5GeXd6dnQyZXBBaVRiRTRCdWE2MWV1ekxBVS1lWmlaX0dDZkVSd2dVa2ZOMUJCMkNQd0xDWHNGVXZsSFZiT01xVlNDVUN0Y1RYRUkxNA?oc=5": {
+  "zh_title": "Meta Muse Spaces：用一句话提示搭建应用",
+  "zh_oneliner": "评测文章介绍 Meta Muse 的 Spaces 功能，用户只需输入提示词即可生成定制迷你应用，并对官方宣传中的说法逐项核查。",
+  "en_oneliner": "A review introduces Meta Muse's Spaces feature, which lets users build custom mini-apps from a simple prompt, and fact-checks the claims in Meta's pitch one by one."
  }
 }
