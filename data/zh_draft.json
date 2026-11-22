@@ -6757,5 +6757,11 @@
   "zh_title": "Meta 的 Muse AI 登陆 Apple Watch 与 Android Wear OS 智能穿戴设备",
   "zh_oneliner": "报道称，Meta 的 Muse AI 登陆 Apple Watch 与 Android Wear OS 智能穿戴设备。",
   "en_oneliner": "Meta's Muse AI is coming to Apple Watch and Android Wear OS smart wearables."
+ },
+ "https://qiita.com/musing_lab/items/ab02ef9ad04d9a3a294f": {
+  "zh_title": "把网站运营交给 AI 智能体（Muse）的架构与验证总结——图解、角色分工与检查清单",
+  "zh_oneliner": "这篇总结介绍如何把网站日常运营交给 Muse 智能体，并给出架构、角色分工与验证用的检查清单。",
+  "en_oneliner": "This write-up explains how to hand day-to-day site operations to the Muse agent, with an architecture, role division, and a verification checklist.",
+  "en_title": "Summary of the Setup and Verification for Entrusting Site Operations to the AI Agent (Muse) — Diagrams, Role Division, and Checklist"
  }
 }
