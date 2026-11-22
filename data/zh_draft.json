@@ -6800,5 +6800,22 @@
   "zh_title": "如何在 Muse AI 中用 Spaces 免代码搭建应用",
   "zh_oneliner": "一段免代码教程，演示如何用 Muse AI 的 Spaces 功能从零搭建一个应用。",
   "en_oneliner": "A no-code tutorial showing how to build an app from scratch with Muse AI's Spaces feature."
+ },
+ "https://www.youtube.com/shorts/XuyDz6N1lMs": {
+  "zh_title": "在 Muse AI 中用 Spaces 零代码搭建应用的方法",
+  "zh_oneliner": "演示如何不用写代码，在 Muse AI 的 Spaces 里从零做出一个应用。",
+  "en_oneliner": "Shows how to build an app from scratch inside Muse AI's Spaces without writing any code."
+ },
+ "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBKMWp0QWpDTXVETWJNd2ZXZXRYeWMxR0taMWI0QnppT3JuRmEzaDBLd20tbkhuUnhEeDNuRjZseFM3SlE1Q0N6RlB3b2g1cVky?oc=5": {
+  "zh_title": "Meta 计划将 Muse Charm 人工智能设备定价 300 美元",
+  "zh_oneliner": "报道称 Meta 打算为 Muse Charm 人工智能设备定价 300 美元。",
+  "en_oneliner": "Meta reportedly plans to price its Muse Charm AI device at $300.",
+  "en_title": "Meta Plans to Price Its Muse Charm AI Device at $300"
+ },
+ "https://news.google.com/rss/articles/CBMiVkFVX3lxTE0xNS1nVUtxdTNvR09RdUtSbHIxSHdrVWgwREJhZ3ZZRUJOYV9tQzVQeW9aRG5VeFRETGFUNEMxaHc2U2Zqc1loUVR5NzFvdzU1cUh5N1pn?oc=5": {
+  "zh_title": "Meta 旗下 Muse 上线代打电话功能，订阅用户可用 AI 联络商家",
+  "zh_oneliner": "Muse 新增代打电话功能，订阅用户可以让 AI 替自己联系商家办事。",
+  "en_oneliner": "Muse adds a call-on-your-behalf feature, letting subscribers have AI contact businesses for them.",
+  "en_title": "Meta's Muse Launches AI Phone-Call Feature for Subscribers to Contact Businesses"
  }
 }
