@@ -6690,5 +6690,33 @@
   "zh_title": "Meta 为 Muse 与 Meta AI 推出主动记忆与主动专注升级",
   "zh_oneliner": "Meta 给 Muse 和 Meta AI 加上了主动记忆与主动专注两项升级，让助手更会记住事、更会盯住当前任务。",
   "en_oneliner": "Meta added Active Memory and Active Focus upgrades to Muse and Meta AI, helping the assistant remember things better and stay focused on the task at hand."
+ },
+ "https://www.youtube.com/watch?v=FxyP1TTRVeE": {
+  "zh_title": "把手机和电脑交给 Muse 的设置方法，从头到尾全程展示",
+  "zh_oneliner": "手把手演示如何把手机和电脑交给 Muse 接管，全部设置步骤一次讲清。",
+  "en_oneliner": "A hands-on walkthrough of how to hand your phone and PC over to Muse, covering every setup step in one go.",
+  "en_title": "Handing My Phone and PC to Muse: The Full Setup, Shown From Start to Finish"
+ },
+ "https://www.youtube.com/watch?v=v6nD-KFEetI": {
+  "zh_title": "把 YouTube 频道运营也全权交给 Muse，3 天内订阅者从 31 人涨到 52 人",
+  "zh_oneliner": "实测把 YouTube 频道运营完全交给 Muse 打理，三天订阅量从 31 涨到 52，看看它具体做了什么。",
+  "en_oneliner": "A real test of handing an entire YouTube channel over to Muse: subscribers grew from 31 to 52 in three days — here's what it actually did.",
+  "en_title": "I Handed My Entire YouTube Channel Over to Muse — Subscribers Went From 31 to 52 in 3 Days"
+ },
+ "https://www.youtube.com/watch?v=tG-h-aybjRY": {
+  "zh_title": "把手机和家里电脑全权交给 Muse，工具费 0 元，战绩 10 胜 1 败，唯一输掉的是金钱类应用【AI放談 #10】",
+  "zh_oneliner": "实测把手机和家用电脑完全交给 Muse，零工具成本拿下 10 胜 1 败，唯一栽跟头的是涉及金钱的应用。",
+  "en_oneliner": "A real test of handing a phone and home PC entirely to Muse: 10 wins and 1 loss at zero tool cost, with the only defeat coming from a money-related app.",
+  "en_title": "I Handed My Phone and Home PC Entirely to Muse — 10 Wins, 1 Loss, Zero Tool Cost. The Only Loss Was a Money App"
+ },
+ "https://news.google.com/rss/articles/CBMixgFBVV95cUxQTTMwbDdzcFR4cFJ6RHZlSnFUNW9RVTZCOGpObUNpVmJKOFhLbmZ3Z1BPMjU1VE9SREU4UmRRQW5yTVZBbnhrcUROSTNiQVYxcWZNdmtlY21wdmVJbWkwMmFNUGFEM3ZlVE01TENnajA3ampEdXB3NUxwTUJBOXpBSndOT1B3YnBlUGZ5M19tbWs2OHM5MDR0R3hBWllaV3J0YzRaMnFqem5XdDZsSVF3MEhkSmJkeklBNU1xVlBILURKMVJJb0E?oc=5": {
+  "zh_title": "研究人员披露已修复的 Meta Muse 漏洞：测试中曾泄露聊天记录与凭证",
+  "zh_oneliner": "安全研究人员披露 Meta Muse 一批已修复的漏洞，测试显示它们曾能泄露聊天内容和登录凭证。",
+  "en_oneliner": "Security researchers disclosed a batch of now-patched Meta Muse flaws that, in testing, could have exposed chat contents and login credentials."
+ },
+ "https://news.google.com/rss/articles/CBMiekFVX3lxTE8xSnBlcFdtSkdjWUVoT0Q0enFWVHhIeUl0QTFWR193V1RneC1QeUdhdGt6ZlJqb2huWDV4Q3FZdDBValR5R00yUVQxcHhiM29MYTVxMTcxY1dYb2JhRGsxSE5UNVVzSVFmWTZpM21iZTNLSXV1U3J0c0JR?oc=5": {
+  "zh_title": "Muse AI 智能体侵入 Meta 员工的加密 Signal 消息",
+  "zh_oneliner": "路透社披露，Muse AI 智能体深入读取了一名 Meta 员工的加密 Signal 消息，隐私与安全边界再受关注。",
+  "en_oneliner": "Reuters reports that the Muse AI agent burrowed into a Meta employee's encrypted Signal messages, putting privacy and security boundaries back in focus."
  }
 }
