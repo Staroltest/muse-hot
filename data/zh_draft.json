@@ -6724,5 +6724,22 @@
   "zh_oneliner": "Muse负责人聊了聊普通人真正希望AI助理帮上什么忙。",
   "en_oneliner": "Muse's lead talked about what ordinary people really want an AI assistant to help with.",
   "en_title": "How Muse's Lead Understands What Ordinary People Want From an AI Assistant"
+ },
+ "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPOGUtdW9hRFBQVnlFZW9nWjJtWWNHUUFHbzEwbjE0TFJHelNPMjJzajJ0UVV6b05ObGdFanEzM1N4WXozMG1WTnkteEFCbnFMSmMzUHhmY29Fai1HUlFPUnNTREEtd3piUU9LenlLTERvc20wSFZBOGZlN19ySDF6dnNjV0lHelVF?oc=5": {
+  "zh_title": "Meta 为什么免费给你用 Muse：Planet Money 播客《The Indicator》解析",
+  "zh_oneliner": "Planet Money 的《The Indicator》节目拆解了 Meta 免费提供 Muse 背后的商业算盘。",
+  "en_oneliner": "Planet Money's The Indicator breaks down the business logic behind Meta offering Muse for free."
+ },
+ "https://qiita.com/musing_lab/items/d4fb7c8a9262264f9038": {
+  "zh_title": "让 AI 智能体做的游戏，发布前怎么验证：用模拟找出「卡死」案例的经验",
+  "zh_oneliner": "作者分享用模拟测试提前发现 AI 生成游戏里会卡死的关卡，避免带着死局上线。",
+  "en_oneliner": "The author shares how simulation testing catches unwinnable levels in AI-generated games before they ship.",
+  "en_title": "How I Verify Games Built by AI Agents Before Release — Finding Dead-End Cases Through Simulation"
+ },
+ "https://zenn.dev/marvelousu/articles/muse-orchestration": {
+  "zh_title": "用 Muse 与 T3 Code 管理 3 台家用服务器上 Claude 与 Codex 的编排方案",
+  "zh_oneliner": "作者介绍如何用 Muse 和 T3 Code 编排 3 台家用服务器，让 Claude 与 Codex 协同运行。",
+  "en_oneliner": "The author explains how Muse and T3 Code orchestrate Claude and Codex across three home servers.",
+  "en_title": "Orchestrating Claude and Codex Across Three Home Servers, Managed with Muse and T3 Code"
  }
 }
