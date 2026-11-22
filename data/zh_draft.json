@@ -6966,5 +6966,10 @@
   "zh_oneliner": "这篇教程用 ESP32-S3 跑起 Muse 调制器，展示以 Vibe Coding 做硬件开发的新玩法。",
   "en_oneliner": "This tutorial runs a Muse modulator on the ESP32-S3, showing a new vibe-coding approach to hardware development.",
   "en_title": "Running a Muse Modulator on ESP32-S3: A New Vibe Coding Paradigm for Hardware Development"
+ },
+ "https://news.google.com/rss/articles/CBMilwFBVV95cUxQNUU1dG4weThQeEowOElZVjVGUEhqenpYQmw2eWxTMDNxNUdzcU1IdHppeENqRHI1X1dOQ2NHbWZCRmNjN0RXTnNwOWpudFpJb3VrbG4xQ0RRVGZYVVcwdjdhTlg4dzFuOGQ0cTlvUlU4a2hlU3BsRnhJMWtRZzNVcndXZEZQeGZ3ZnFIME1uYW9KTnZxX09v?oc=5": {
+  "zh_title": "苹果似乎正在打造自家 AI 智能体，这对 Meta 的 Muse 可能是个坏消息",
+  "zh_oneliner": "苹果传出自研 AI 智能体的消息，文章分析这可能对 Meta 的 Muse 构成竞争压力。",
+  "en_oneliner": "Apple is reportedly building its own AI agent, which the article says could put competitive pressure on Meta’s Muse."
  }
 }
