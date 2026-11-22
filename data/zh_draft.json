@@ -6922,5 +6922,16 @@
   "zh_title": "Meta 将 Muse AI 智能体带入 Chrome，以侧边栏扩展形式呈现",
   "zh_oneliner": "Meta 把 Muse 做成 Chrome 侧边栏扩展，让用户在浏览器里直接调用 AI 智能体完成任务。",
   "en_oneliner": "Meta has turned Muse into a Chrome side-panel extension, letting users call on the AI agent directly inside the browser to get things done."
+ },
+ "https://zenn.dev/kurotoppo/articles/b74a9e9426c236": {
+  "zh_title": "玩着玩着，我家的 AI 制作团队也成长起来了",
+  "zh_oneliner": "作者一边画画一边和 Muse 聊创作感受，在玩乐之中不知不觉组建起自己的 AI 制作小队。",
+  "en_oneliner": "The author chats with Muse about his drawings while creating, and an AI production team gradually takes shape as he plays.",
+  "en_title": "Playing Around, My AI Production Team Grew Up Too"
+ },
+ "https://www.youtube.com/watch?v=HLcp-4pVml0": {
+  "zh_title": "Muse AI 能替你评论：说出来，确认后就发出",
+  "zh_oneliner": "演示用 Muse 口述生成评论、人工确认后自动发布的用法。",
+  "en_oneliner": "A demo of dictating a comment with Muse, approving it, and having it posted automatically."
  }
 }
