@@ -7080,5 +7080,23 @@
   "zh_oneliner": "Meta 的 AI 智能体 Muse 正式推出 Chrome 扩展，用户可以直接在浏览器里调用它来处理任务。",
   "en_oneliner": "Meta's AI agent Muse has officially launched a Chrome extension, letting users call on it directly from the browser to get things done.",
   "en_title": "Meta's AI Agent Muse Officially Launches Chrome Extension"
+ },
+ "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBJcXZ2QTU3TTF0Mlc0al9DbE4zMHFBZmdOWFBXS3NpMUY5dG9CeXYtVEJxSlZ2eVFkZ3RaZ1JuaURzeUtaWTlNa0Vzd1lMSzlhU1FPdGJR?oc=5": {
+  "zh_title": "eBay 限制第三方 AI 代理访问，Meta Muse 等工具被拦截",
+  "zh_oneliner": "eBay 开始拦截第三方 AI 代理的访问，Muse 这类工具也被挡在门外。",
+  "en_oneliner": "eBay has begun blocking access by third-party AI agents, shutting out tools such as Muse.",
+  "en_title": "eBay Restricts Third-Party AI Agent Access, Blocking Tools Such as Meta Muse"
+ },
+ "https://news.google.com/rss/articles/CBMihwFBVV95cUxQdjQ1MXNrRzZNME1CTEs2Zm1iNHc3T1A5T0w1LUFOcy11OWhKR0VMeldENGZ3c1dBTVdVV1JrZmFxS2JfMmF6c1FmZ2R1aDhaNDVId2NrU1JVczlNYnJ4SXc3bEtPN3R0WlZOanotZVRVN1NZZEFEdGpqVEhjOF9mTEZBT0ZrV2s?oc=5": {
+  "zh_title": "Muse Wonder 现可训练 Meta 的 Muse 和 Meta AI 模型",
+  "zh_oneliner": "Muse Wonder 现在能用来训练 Meta 的 Muse 与 Meta AI 模型了。",
+  "en_oneliner": "Muse Wonder can now be used to train Meta's Muse and Meta AI models.",
+  "en_title": "Muse Wonder Can Now Train Meta's Muse and Meta AI Models"
+ },
+ "https://qiita.com/mii2026/items/fd212009a193c7e9f72d": {
+  "zh_title": "Muse 交换笔记：把工作全权交给 Muse AI 的台账方法",
+  "zh_oneliner": "用一本交换笔记当台账，把工作放心交给 Muse AI 去办。",
+  "en_oneliner": "An exchange notebook used as a ledger lets you hand work over to Muse AI with confidence.",
+  "en_title": "Muse Exchange Notebook: A Ledger Method for Entrusting Work Entirely to Muse AI"
  }
 }
