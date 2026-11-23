@@ -7242,5 +7242,25 @@
   "zh_oneliner": "这篇文章介绍了一套把每周例行检查交给 Muse AI 代理的架构，让它自动完成检查并给出下一步的计划方案。",
   "en_oneliner": "This article presents a setup that hands weekly routine checks to the Muse AI agent, letting it run the checks automatically and propose a plan for what to do next.",
   "en_title": "Handing weekly checks to the AI agent (Muse): automating everything from checks to proposed plans"
+ },
+ "https://news.google.com/rss/articles/CBMimgFBVV95cUxNVkEwdFBQZV9feU5GWEt2Mm1iRE9GRmFjdnd1dVIwU3pWdFRiUnRxSDlCaml3LTVXZ0VmcmhMSTZ6eFItaDNVcHZvRWRWb0xMVWFhelllbDE0RWlycjJCekRZa3lCSnFLX3BMV1VraWJrY0RBV0h0MzZKYm1sNU5fNVBNaHBuUUFiV1hXLVVrSHY0VlJfQ3hJaGh3?oc=5": {
+  "zh_title": "Meta Muse 接入沃尔玛结账功能，赶上黑五购物季",
+  "zh_oneliner": "Muse 现可直接在沃尔玛完成结账，赶在黑色星期五购物季前打通购物流程。",
+  "en_oneliner": "Muse can now check out directly on Walmart, completing the shopping flow just ahead of the Black Friday season."
+ },
+ "https://news.google.com/rss/articles/CBMilAFBVV95cUxOMnd3ZnM5dlFJUG8xYkpvcHhWM0RDTGgzY0hOZEs5U2hEaEFabmZ5ZzUweUNwbDlfVzBMODhIaUhuTm1VTHlTaDU2ZUdVQ1BDbFA2Wk9kWEZiSThobWVvMllDOHhGckN3VkxoM3FVOVY0VHlOSm1NWlNWZ3hKUjdQYUE5dV9TeXFVVl9ITUJwdHBxU1o2?oc=5": {
+  "zh_title": "Meta 的 Muse AI 现在能替你打电话，还支持 Apple Watch",
+  "zh_oneliner": "Muse 新增代打电话功能并登陆 Apple Watch，让 AI 助手随时跟在手腕上。",
+  "en_oneliner": "Muse can now make phone calls on your behalf and works on Apple Watch, keeping the AI assistant on your wrist."
+ },
+ "https://news.google.com/rss/articles/CBMifEFVX3lxTFBpeG1iaWJyQzl4TlpLYndLeUZ1T1ZOc0FueE5IMlBLdi14TEEwcXJINWd0Q2VJVm40REU1MEhxcUJLQmVkY3NURlpMV0E2YlpWTFhDTnhpcmc0dHhkOHBBTVRkakEtdVY1Z181VXRFTGczaVdiWDNuY3VaMV8?oc=5": {
+  "zh_title": "消息称 Meta 将为 Muse Charm 设备定价 300 美元",
+  "zh_oneliner": "据 The Information 报道，Meta 的 Muse Charm 智能设备售价定为 300 美元。",
+  "en_oneliner": "Meta will price its Muse Charm device at $300, according to a report from The Information."
+ },
+ "https://www.unite.ai/walmart-enables-muse-shopping-through-its-agent-gateway": {
+  "zh_title": "沃尔玛通过智能体网关接入 Muse 购物",
+  "zh_oneliner": "沃尔玛开放其智能体网关，让 Muse 可以直接为用户选购商品。",
+  "en_oneliner": "Walmart has opened its agent gateway so Muse can shop for users directly."
  }
 }
