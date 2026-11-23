@@ -7123,5 +7123,33 @@
   "zh_title": "Meta 将把 Muse 放进 Chrome 侧边栏，官方公告刚刚发布",
   "zh_oneliner": "Meta 官方刚刚宣布，Muse 将进入 Chrome 浏览器侧边栏，浏览网页时可在侧边直接使用。",
   "en_oneliner": "Meta has just officially announced that Muse is coming to the Chrome browser sidebar, so it can be used directly from the side while browsing the web."
+ },
+ "https://medium.com/inconvenience-institute/muse-couldnt-visit-medium-so-it-borrowed-my-chrome-e4e208efb8fd?source=rss------muse-5": {
+  "zh_title": "Muse 访问不了 Medium，于是借用了我的 Chrome",
+  "zh_oneliner": "作者让 Muse 通过自己的 Chrome 浏览器代为访问 Medium，绕过了直接访问的限制。",
+  "en_oneliner": "The author had Muse access Medium through their own Chrome browser, working around the direct-access limit."
+ },
+ "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOMXJ3Z211NkhqN0F4MlpXT1FMY2NRSkw4ZnFNZEhYWlZ1TnFNNlFMTGx1Ujdfbk93TlJYeDBVaW43VTR5V05LdENESWRUeDhERnZySGxyc3drNGFUQmRJdE82bVRhOXNGa1pjSDBoVWQxQUw2Z0tfRTZSSjg1cFhnY1FfZFc2UlpuTGNnX1JJYWRRZ05ZdjM4VHhjOEMydXdwRTJiQ1M5UHIyR0ZZNmFjd2lxcTh6cmNQSk02YnFobFc5UmZ3S1N3LWF2Vkl1VkV2a0ExQVA3MA?oc=5": {
+  "zh_title": "Meta AI 负责人谈超级智能，同时 Muse 模型仍落后于对手",
+  "zh_oneliner": "Meta 的 AI 负责人畅谈超级智能愿景之际，外界仍在关注 Muse 模型与竞争对手的差距。",
+  "en_oneliner": "As Meta's AI chief talks up superintelligence, attention remains on how Muse models stack up against rivals."
+ },
+ "https://zenn.dev/eternal/articles/180b977d92d540": {
+  "zh_title": "Muse 操作不了 Windows？经 CRD 从 Mac 的 Chrome 中转就能触达",
+  "zh_oneliner": "作者尝试用 Chrome 远程桌面从 Mac 的 Chrome 中转，让 Muse 间接操作 Windows。",
+  "en_oneliner": "The author used Chrome Remote Desktop via Chrome on a Mac to let Muse indirectly operate Windows.",
+  "en_title": "Can Muse Operate Windows? Reaching It via Chrome on a Mac Through CRD"
+ },
+ "https://zenn.dev/mii_mii/articles/daichou-houshiki": {
+  "zh_title": "Muse 交接笔记：把工作放心交给 Muse AI 的台账方法",
+  "zh_oneliner": "作者分享了一套台账式交接方法，让 Muse AI 能持续接手并推进工作。",
+  "en_oneliner": "The author shares a ledger-style handover method for letting Muse AI take over and keep pushing work forward.",
+  "en_title": "Muse Handover Notes: A Ledger Method for Entrusting Work to Muse AI"
+ },
+ "https://zenn.dev/ocha50107/articles/e0edbdff25ea43": {
+  "zh_title": "「年收入超 2000 万美元就不能商用」是真的吗？受限的只是「卖模型的业务」",
+  "zh_oneliner": "作者核查了传言中的收入门槛，指出商用限制其实只针对销售模型本身的业务。",
+  "en_oneliner": "The author checks the rumored revenue threshold and finds the commercial-use limit only applies to businesses that sell the model itself.",
+  "en_title": "Is It True That Commercial Use Is Barred Past $20M in Revenue? The Condition Only Applies to Businesses That Sell Models"
  }
 }
