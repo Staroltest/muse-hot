@@ -7062,5 +7062,23 @@
   "zh_title": "AI：Meta 重注 Muse 之际，早期安全事故浮现",
   "zh_oneliner": "Meta 大力押注 Muse 的同时，早期安全事故开始浮出水面，文章梳理了已经出现的问题。",
   "en_oneliner": "As Meta bets big on Muse, early safety mishaps are surfacing, and the article reviews the problems that have already emerged."
+ },
+ "https://qiita.com/sakutto-panda/items/c335886f1a1f1a894f03": {
+  "zh_title": "用 Muse 打造“待判断”仪表盘的方法｜把 AI 秘书的运作与定期任务集中到一屏的实践记录",
+  "zh_oneliner": "作者分享了用 Muse 搭建待判断事项仪表盘的实战经验，把 AI 秘书的日常运作与定期任务汇总到一个界面，便于一眼掌握哪些事项在等自己拍板。",
+  "en_oneliner": "The author shares hands-on experience building a pending-decision dashboard with Muse, pulling an AI secretary's daily work and recurring tasks into one view so it's easy to see at a glance what is waiting for a human call.",
+  "en_title": "How to Build a Pending-Decision Dashboard with Muse: A Hands-On Record of Visualizing an AI Secretary's Operations and Recurring Tasks on One Screen"
+ },
+ "https://zenn.dev/sktt_panda/articles/muse-dashboard-judgment": {
+  "zh_title": "用 Muse 打造“待判断”仪表盘的方法｜把 AI 秘书的运作与定期任务集中到一屏的实践记录",
+  "zh_oneliner": "作者分享了用 Muse 搭建待判断事项仪表盘的实战经验，把 AI 秘书的日常运作与定期任务汇总到一个界面，便于一眼掌握哪些事项在等自己拍板。",
+  "en_oneliner": "The author shares hands-on experience building a pending-decision dashboard with Muse, pulling an AI secretary's daily work and recurring tasks into one view so it's easy to see at a glance what is waiting for a human call.",
+  "en_title": "How to Build a Pending-Decision Dashboard with Muse: A Hands-On Record of Visualizing an AI Secretary's Operations and Recurring Tasks on One Screen"
+ },
+ "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5qMlhxZDhlSVZ3ckFVQ2FCdmdWRklRRGxPZEdGZkFFMjBHS085UlU0Zks3Mk1YWTB1VWpwRDNmczNoRE9vRXJ2Q2xCQzdFbmQyLVJrc3VBeW8wbnZPTTlPazEwZHY2QQ?oc=5": {
+  "zh_title": "Meta 旗下 AI 智能体 Muse 正式上线 Chrome 扩展",
+  "zh_oneliner": "Meta 的 AI 智能体 Muse 正式推出 Chrome 扩展，用户可以直接在浏览器里调用它来处理任务。",
+  "en_oneliner": "Meta's AI agent Muse has officially launched a Chrome extension, letting users call on it directly from the browser to get things done.",
+  "en_title": "Meta's AI Agent Muse Officially Launches Chrome Extension"
  }
 }
