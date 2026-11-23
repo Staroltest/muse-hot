@@ -148,7 +148,8 @@
   "rock band",
   "invite code",
   "邀请码",
-  "invitación"
+  "invitación",
+  "招待コード"
  ],
  "scoring": {
   "base": 50,
@@ -332,6 +333,7 @@
  "exclude_links": [
   "https://medium.com/catharsis-chronicles/muse-ace34bcfd689?source=rss------muse-5",
   "https://news.google.com/rss/articles/CBMie0FVX3lxTE5ZdmVYY0xSbmxSMjF4ME9aWGg1RS1XSFJOSy13WXZCZzNjcjVRTmMtVGtzaUxlMWZtdzdxa0NmWWtFVHE4WmpBaDBpLTU5LUV2WEZwZ2VaY2RLQlhpOVNBVkMyNDlzVEprRElDUVJvdDdGZGJYcEFpWnEyNA?oc=5",
-  "https://news.google.com/rss/articles/CBMinwFBVV95cUxQRXlVYjBocDNOMDRBOUFSaVJGeTkxeGljQkZnaWU0V09YOFNlS3BjZHdnRmFGUTV5RFFFYzN2VDRvWUtWZS0tT2ZkekduRFpJZ3RETTFVVDFYMnFGX3kwaHFOZjZDUkJhOVdzMkFUSTdXODFtdDZ2VFgwM1VIdGo1VU5xUHlUdFJTNXhkRENaQVRrcEdPekJ2a2FCUkxXbE0?oc=5"
+  "https://news.google.com/rss/articles/CBMinwFBVV95cUxQRXlVYjBocDNOMDRBOUFSaVJGeTkxeGljQkZnaWU0V09YOFNlS3BjZHdnRmFGUTV5RFFFYzN2VDRvWUtWZS0tT2ZkekduRFpJZ3RETTFVVDFYMnFGX3kwaHFOZjZDUkJhOVdzMkFUSTdXODFtdDZ2VFgwM1VIdGo1VU5xUHlUdFJTNXhkRENaQVRrcEdPekJ2a2FCUkxXbE0?oc=5",
+  "https://qiita.com/ai-muse-ai/items/bd12b5ed8b6b2a2ffe86"
  ]
 }
