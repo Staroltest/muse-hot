@@ -7365,5 +7365,65 @@
   "zh_title": "Meta Muse AI 新增面对面语音聊天功能，提供数百种声音",
   "zh_oneliner": "Muse 新增面对面语音聊天功能，用户可以从数百种声音中挑选，与 AI 进行更自然的对话。",
   "en_oneliner": "Muse has added a face-to-face voice chat feature, letting users pick from hundreds of voices for more natural conversations with the AI."
+ },
+ "https://news.google.com/rss/articles/CBMihgFBVV95cUxOUDJrRHdLcnEzU1lZTkwzM0gzSnZuanc1dlZ1MHR4SHN3ZFlIUHhNdVgzVUVwcXRuMGE1REdMMTdPTzAzU0wxNWppVjQ4OW5vbVNDdm1JWkxNNjdkM3pBVE5qQ2R0X1ZZZzZUNFhQbFNwNmNkU3hrdTUyVGlkbnZtNTAzZEJHZw?oc=5": {
+  "zh_title": "Meta Muse 升级：可与 AI 智能体实时对话",
+  "zh_oneliner": "Meta Muse 新增实时语音能力，用户可以直接开口与 AI 智能体对话。",
+  "en_oneliner": "Meta Muse adds real-time voice, letting users talk directly with their AI agent."
+ },
+ "https://news.google.com/rss/articles/CBMipwFBVV95cUxNNWFOVndqY0RrbmxCUC0xeFJhVmFiQ2tUVUlINnpXb1BvWDNKTTNtVDZqX1lqWlROTE51RGQ0WHdoV01zWTN5bmJvdU1FYnNnTWtKSG5mTXdhTVo1TGl2WjI2bzRNQjZmNk50WmdwRDFUekc1TVNRcjBZcGxHeEFQdklLa0JHbXVVM2NTb2JkOXMxUnB2Q3lfYy03WUVCc3ZwVmQwZUNocw?oc=5": {
+  "zh_title": "Signal 开始屏蔽 AI 智能体截图，此前 Muse 曾酿成事故",
+  "zh_oneliner": "继 Muse 截图外泄引发风波后，Signal 开始阻止 AI 智能体截取聊天截图。",
+  "en_oneliner": "After a Muse screenshot leak caused a stir, Signal now blocks AI agents from capturing chat screenshots."
+ },
+ "https://news.google.com/rss/articles/CBMiggFBVV95cUxPQXMya09yUWlmdnk1OEtseTdyY0VUN1RqclA2aEc5Q19iMkpnc2Rza05aNV9UZ2ZMX1Jwa3lJLU1XZFZjbzFGUjdIOU5sUTdFS0NXcU5tQzgyWUhrdjVDZjFuQVFUdkxwcE5BUmdlMUdQR1RoeFQwckdXY19LekdVS0pR?oc=5": {
+  "zh_title": "DXL 把大码高个男装选购带入 Meta Muse",
+  "zh_oneliner": "DXL 与 Meta Muse 合作，让大码高个男士能在 AI 智能体里发现合身服装。",
+  "en_oneliner": "DXL is working with Meta Muse so big-and-tall men can discover well-fitting apparel inside the AI agent."
+ },
+ "https://news.google.com/rss/articles/CBMiigFBVV95cUxONWttX29NeGtKSUZSanRfM1NnRDBrY2M1ZW1hNG4wWTZkT2dvNGIwaE1Vd1lSWEZYSWdqNUx0b0laUUJ4akZXWVNhbWVVY3FPWlN2YXFvMTdpcEtGaE40UVlibE1LSEhRY2QtdkN5NDVLajhNMGc1SDA0S0I4aExfbjluUlRVU3QxOWc?oc=5": {
+  "zh_title": "DXL 将大码高个男装带入 Meta 的 Muse，方便用户发现商品",
+  "zh_oneliner": "DXL 与 Meta Muse 合作，让大码高个男士能在 AI 智能体里发现合身服装。",
+  "en_oneliner": "DXL is working with Meta Muse so big-and-tall men can discover well-fitting apparel inside the AI agent.",
+  "en_title": "DXL Brings Big-and-Tall Apparel Discovery to Meta's Muse"
+ },
+ "https://www.unite.ai/dxl-brings-big-and-tall-apparel-discovery-to-meta-muse": {
+  "zh_title": "DXL 把大码高个男装选购带入 Meta Muse",
+  "zh_oneliner": "DXL 与 Meta Muse 合作，让大码高个男士能在 AI 智能体里发现合身服装。",
+  "en_oneliner": "DXL is working with Meta Muse so big-and-tall men can discover well-fitting apparel inside the AI agent."
+ },
+ "https://news.google.com/rss/articles/CBMiigFBVV95cUxOcDJxV3YwOFpGekVScnRJS0FnNUp2WlNTWWMxYnBvRWl2UGpEaHdqMTJtWW9MMEkwb0ROd1IyeEc4TXRRbTF0dUU2NWlBZ2Z0cnpNMVRqTkFJeEhmRU1wRVBjbloyQWVaRnZ2a3RIVGJQd1Z3R2I5SHVsQ2lXZzgzdUFqYVZhcV9USmc?oc=5": {
+  "zh_title": "Destination XL 集团在 Meta Muse 上推出智能体购物",
+  "zh_oneliner": "Destination XL 集团借助 Meta Muse 推出智能体购物，大码男装选购再添新入口。",
+  "en_oneliner": "Destination XL Group launches agentic shopping through Meta Muse, adding a new way to shop big-and-tall menswear."
+ },
+ "https://zenn.dev/hoshigumo/articles/gemini-hand-inpaint": {
+  "zh_title": "用 Muse 做 AI 插画修正工作流：开口说“把这只手改好”就行",
+  "zh_oneliner": "作者搭建了一套工作流，对 Muse 说一句“把这只手改好”，就能让 AI 修正插画里的手部。",
+  "en_oneliner": "The author built a workflow where telling Muse \"fix this hand\" gets the AI to correct hands in illustrations.",
+  "en_title": "An AI Illustration Fix Workflow for Muse: Just Ask It to 'Fix This Hand'"
+ },
+ "https://zenn.dev/confiln/articles/a11cb168fa75a5": {
+  "zh_title": "给 Muse 的 AI 伙伴加上声音与表情",
+  "zh_oneliner": "作者为 Muse 里的 AI 伙伴配上了声音和表情，让它更像一个有生命的搭档。",
+  "en_oneliner": "The author gave the AI partner inside Muse a voice and facial expressions, making it feel more like a living companion.",
+  "en_title": "Giving Muse's AI Partner a Voice and Facial Expressions"
+ },
+ "https://news.google.com/rss/articles/CBMieEFVX3lxTE11N1JORXR1WVQ4Nk9WRHZfanA0YWF1UEQ1aHRQQTFIUnBIZjQxTFA0aHhhWGNESlEzdFlObUhEVEM0MEhIdWd3UHZ3eTdLOWE5WHdaMTBqUS1hRm55b3FPbGpObEJLR0QtaDNvejZBbkFsRUZFRlUzaQ?oc=5": {
+  "zh_title": "Avatar 6 对比 Muse Realtime Avatar：租用还是入住其中",
+  "zh_oneliner": "对比 Avatar 6 与 Muse 实时化身，探讨该租用算力还是直接“入住”其中。",
+  "en_oneliner": "A comparison of Avatar 6 and Muse Realtime Avatar, weighing whether to rent compute or move in.",
+  "en_title": "Avatar 6 vs Muse Realtime Avatar: Rent or Move In"
+ },
+ "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5zRmhuTTNFNnVLOFRKSnpYdTl2Yk1qYVk0VzRzVUlGQ2NSaDVmbnZoT3pYTUNtSzFtUEZwQ2ZKOHFxZS1yUGFpcmpVMUxwc293RXc?oc=5": {
+  "zh_title": "Meta 新款 AI 设备 Muse Charm 或售 300 美元，可语音直连 AI 智能体并附赠一年 5G 流量",
+  "zh_oneliner": "传闻称 Meta 的 Muse Charm 设备售价约 300 美元，支持语音直连 AI 智能体，还附赠一年 5G 流量。",
+  "en_oneliner": "Meta's Muse Charm device is rumored to cost around $300, offering voice access to the AI agent plus a year of free 5G data.",
+  "en_title": "Meta's New Muse Charm AI Device May Cost $300, With Voice Access to the AI Agent and a Year of Free 5G Data"
+ },
+ "https://news.google.com/rss/articles/CBMitgFBVV95cUxNaXYzbDFpLXpNVVF5YXdxbEVKemJGTjktSnJMT3NjbE85cTR1bk84QXh3cWMzbF9weXdQRTFERVAwTWR0dm5oaGQyZUV5clJRSmtqVHd4ZmpQcE5naWh6X1FFdTBzbFlUemZzNFpyVjIzM2ZKbWdpZDhFU0dqcGFZMHY2V2pTSDlOQ3FlRVhobno2Nk5wbTBiZGlnTzUyQlVoNUVRSm1jVER5R3RVMm9RVUFFWmhqZw?oc=5": {
+  "zh_title": "沃尔玛开放智能体网关，Meta Muse 成为首个可购物的 AI 智能体",
+  "zh_oneliner": "沃尔玛推出智能体网关，Meta Muse 率先接入，用户可直接通过 AI 智能体购物。",
+  "en_oneliner": "Walmart launches its Agent Gateway with Meta Muse as the first AI agent shoppers can buy through."
  }
 }
