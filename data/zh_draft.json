@@ -7098,5 +7098,10 @@
   "zh_oneliner": "用一本交换笔记当台账，把工作放心交给 Muse AI 去办。",
   "en_oneliner": "An exchange notebook used as a ledger lets you hand work over to Muse AI with confidence.",
   "en_title": "Muse Exchange Notebook: A Ledger Method for Entrusting Work Entirely to Muse AI"
+ },
+ "https://shipwithmuse.live/builds/floor-47-chrome-glass-virtual-office": {
+  "zh_title": "Floor 47——Chrome 与 Glass 虚拟办公室",
+  "zh_oneliner": "用 Muse 打造的虚拟办公室「Floor 47」，以 Chrome 与 Glass 为主题的沉浸式办公空间。",
+  "en_oneliner": "A virtual office called Floor 47, built with Muse as an immersive workspace themed around Chrome and Glass."
  }
 }
