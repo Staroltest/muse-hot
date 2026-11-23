@@ -7190,5 +7190,15 @@
   "zh_oneliner": "这篇对比把 GLM-5.4 与 Muse Wonder 放在一起，从能力与定位上比较了两款闭源旗舰模型各自的长处。",
   "en_oneliner": "This comparison puts GLM-5.4 and Muse Wonder side by side, weighing the strengths of the two closed-source flagship models in capability and positioning.",
   "en_title": "GLM-5.4 vs Muse Wonder: A Comparison of Two Closed-Source Flagship Models"
+ },
+ "https://news.google.com/rss/articles/CBMivgFBVV95cUxOTl9yYjJQMV9TcnlSNkNvSV9XbU83ZU5kamcwUGpHLVRvYlpJREQwX2dDZGhtcVdUaEQtNHpmd0Q4WXZ0d0M3ckFfa1lHSHpwSGNZaWRTM3BkaDFiWUtFWWVQT3plMVZzdnV0d2Ytb2JGR19QTlI4a3lvN0hrRU41UGM2Q0l3ckFJS0NaVWhlM19fMU1obmpPeEY0LW1rckJ3QTA3Q2hHM3FTX1NFZEhMWVFEOHRXT0NxMWhJUXNn?oc=5": {
+  "zh_title": "Meta 的 Muse 智能体面临隐私担忧，公司正筹备 300 美元 Muse Charm 设备",
+  "zh_oneliner": "Meta 准备推出 300 美元的 Muse Charm 设备之际，其 Muse 智能体引发了隐私方面的担忧。",
+  "en_oneliner": "As Meta prepares its $300 Muse Charm device, its Muse agent is raising privacy concerns."
+ },
+ "https://dev.to/aj-on-dev/i-asked-muse-to-research-a-trip-and-sort-my-gmail-and-it-actually-helped-ag8": {
+  "zh_title": "我让 Muse 帮我做旅行攻略、整理 Gmail，它真的帮上了忙",
+  "zh_oneliner": "作者让 Muse 规划旅行并整理 Gmail，实际用下来发现它确实帮上了忙。",
+  "en_oneliner": "The author asked Muse to plan a trip and sort Gmail, and found in practice that it actually helped."
  }
 }
