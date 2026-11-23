@@ -7108,5 +7108,15 @@
   "zh_title": "从 FBI 到 Meta 的 Muse：数据泄露与 AI 权限对假日购物隐私意味着什么",
   "zh_oneliner": "从 FBI 的警示到 Muse 的权限设置，解析假日购物季里数据暴露的风险与自我保护方法。",
   "en_oneliner": "From FBI warnings to Muse's permission settings, an explainer on data-exposure risks and how to protect yourself during holiday shopping."
+ },
+ "https://medium.com/inconvenience-institute/giving-muse-a-shell-on-macos-45a746e9e23e?source=rss------muse-5": {
+  "zh_title": "给 macOS 上的 Muse 配一个 Shell",
+  "zh_oneliner": "Mac 版 Muse 能看屏幕、读写文件却跑不了命令，作者用 Tailscale 加密钥 SSH 补上了这一环。",
+  "en_oneliner": "The Mac Muse app can see the screen and work with files but can't run commands, so the author bridged that gap with Tailscale and key-only SSH."
+ },
+ "https://news.google.com/rss/articles/CBMirgFBVV95cUxQUEczQnJQVWhBd2VfYVZZUmNZZ2p6eTNRVHdWQTFnbEFhN04zTFdtSXJ1RzNwZGhqeWdGRGFzc05TN3ZTT0l1ZFVSMFU3Xy1OUDl1LVotSzdITnRNdlZJMWNCOElzNjRVZmJyX2Y2UlQwdFVCMXdVTFBudDR0dlVTR2Nya3FoU3IyVkFFdmJFSXZkb1gyZDk4d0l2ZXlUX2hMRkhiMHVUTW83T3g1R3c?oc=5": {
+  "zh_title": "Meta 首款口袋大小的 Muse Charm AI 设备或售 300 美元",
+  "zh_oneliner": "报道称 Meta 首款口袋大小的 Muse Charm AI 小设备可能以 300 美元上市。",
+  "en_oneliner": "Reports say Meta's first pocket-sized Muse Charm AI gadget could launch at 300 USD."
  }
 }
