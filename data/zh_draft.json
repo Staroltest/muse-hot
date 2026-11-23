@@ -7151,5 +7151,33 @@
   "zh_oneliner": "作者核查了传言中的收入门槛，指出商用限制其实只针对销售模型本身的业务。",
   "en_oneliner": "The author checks the rumored revenue threshold and finds the commercial-use limit only applies to businesses that sell the model itself.",
   "en_title": "Is It True That Commercial Use Is Barred Past $20M in Revenue? The Condition Only Applies to Businesses That Sell Models"
+ },
+ "https://news.google.com/rss/articles/CBMilgFBVV95cUxOVFpWUnlVcHdfaV9HMHNDMURxMWRUZXc2WFdoZTRVbzA0d1FKMmhBZ09lYW9kV3o5WUxRcFFLRHFFZUs2XzBXS192dENuNXB5anhrT051enRNYkhVTGVFQjNkalhVZGFtMWc5OWVtTEdDZlNFUnF1OFk0UVBqaGJiQkNQaGxHTVplLWFLZk9XYU1SdUF2OHc?oc=5": {
+  "zh_title": "Meta 的 Muse 被曝读取 Signal 消息，员工担忧跨账号泄露",
+  "zh_oneliner": "报道称 Meta 的 Muse 能够读取 Signal 消息，引发员工对跨账号数据泄露的担忧。",
+  "en_oneliner": "Reports say Meta's Muse can read Signal messages, raising staff concerns about cross-account data leaks."
+ },
+ "https://news.google.com/rss/articles/CBMiswFBVV95cUxONkV2T1l4S0tsS1Fiek9tSC1pNGJmQmZLUmRWa21yQ1BQU2JzekxTT2t5YXRlOVlWaVNBYmp3czAtUUxNQUh3SWRHV0k4QTlWclpQUjRudGt1YzhTRlNVS2hoUlVPZDdzUENLX1oyVDlEbzVkUXJadGVFaVRHaTdBSmpvM1o0dm1sdWFKb0pfQmE1dU5ucnB3bXVSMC1oNlpUVTFrOU1NcWRuYThlQTVUNi1xOA?oc=5": {
+  "zh_title": "Meta 股价 560.84 美元：周跌 13% 后发布 Muse 安全报告",
+  "zh_oneliner": "Meta 股价一周下跌 13% 后发布 Muse 安全报告，股价报 560.84 美元。",
+  "en_oneliner": "Meta published a Muse safety report after its stock fell 13% in a week, with shares at $560.84."
+ },
+ "https://qiita.com/ai-muse-ai/items/e3cc1bc1e8a9bae7028e": {
+  "zh_title": "Muse 能做什么？工作、查资料、做资料时可用的功能汇总",
+  "zh_oneliner": "这篇日文文章汇总了 Muse 在工作、查资料和制作资料等场景中可以使用的功能。",
+  "en_oneliner": "This Japanese article summarizes the features of Muse for work, research, and preparing documents.",
+  "en_title": "What Can You Do with Muse? A Roundup of Features for Work, Research, and Creating Documents"
+ },
+ "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBtT3lLYk5pdnZKX1VTcjRLaWM0OHdweUFpLWwyZHp1eVRvclV6SFZOZXc3MS1UOGRIUnpQMTBwZDBCLWZUX0tQR1Q2blEzeGpuRDN6SnNQQ3hBVlFMREhuZ2plT1I?oc=5": {
+  "zh_title": "Meta新款Muse Charm设备售价或达300美元",
+  "zh_oneliner": "报道称 Meta 新款 Muse Charm 设备的售价可能达到 300 美元。",
+  "en_oneliner": "Meta's new Muse Charm device may reportedly be priced at $300.",
+  "en_title": "Meta's New Muse Charm Device May Cost $300"
+ },
+ "https://news.google.com/rss/articles/CBMihwFBVV95cUxNcjk4TDJia3VnWVNNLWxPNG5rQ1BfT1psQXhoVnV2UHNUUFhXeTZveEZKNE85Z0dFdEtNUW1QWVJHcnF0WVpkZDdvdWg5aTJvQ0M3NDdoUThGZlJGaThrNXdvc3U3MERWdXpOYl94OU5zaEdoRldZVnNtdUQ5Y2VaSWM0ZDZydnM?oc=5": {
+  "zh_title": "Meta押注300美元Muse Charm，发力AI硬件业务",
+  "zh_oneliner": "Meta 押注售价 300 美元的 Muse Charm，加码 AI 硬件业务。",
+  "en_oneliner": "Meta is betting on the $300 Muse Charm as it pushes into AI hardware.",
+  "en_title": "Meta Bets on the $300 Muse Charm to Grow Its AI Hardware Business"
  }
 }
