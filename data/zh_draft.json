@@ -6996,5 +6996,60 @@
   "zh_title": "让智能体订机票（邮箱填错了一次）",
   "zh_oneliner": "一位网友让 Muse 订机票，结果邮箱填错导致没收到确认邮件，算是一次部分成功。",
   "en_oneliner": "One user had Muse book flights, but it entered the email wrong so no confirmation arrived — a partial success."
+ },
+ "https://buc.ci/abucci/p/1795260992.755226": {
+  "zh_title": "Meta 又添一款「安全漏洞即服务」产品，名字叫 Muse",
+  "zh_oneliner": "网友调侃 Muse 是 Meta 安全漏洞即服务产品线的新成员，暗指其安全隐患。",
+  "en_oneliner": "A user jokes that Muse is the newest addition to Meta's 'Security Breach as a Service' lineup, hinting at its security flaws."
+ },
+ "https://mastodon.social/@promptifylab/117616041421579375": {
+  "zh_title": "Meta 个人 AI 助手 Muse 的早期增长已超过 ChatGPT 同期",
+  "zh_oneliner": "该帖称 Muse 的早期用户增长超过了 ChatGPT 同期，而 Anthropic 与 OpenAI 则在密集发布新模型。",
+  "en_oneliner": "The post says Muse's early growth is outpacing ChatGPT's early numbers, while Anthropic and OpenAI race ahead with rapid model releases."
+ },
+ "https://mastodon.social/@Tom_Java_Tech/117591588563751358": {
+  "zh_title": "智能体的工作大半不是比聪明，而是比次数：Meta 的 Muse Ember",
+  "zh_oneliner": "作者认为智能体的关键在于调用次数而非聪明程度，Muse Ember 定位轻量，适合工具调用与数据抽取，单任务成本约为同级模型的三分之一。",
+  "en_oneliner": "The author argues agent work is mostly about call volume, not cleverness, and notes Muse Ember is a lightweight model for tool calls and data extraction at about a third of the cost of peers.",
+  "en_title": "Most of an agent's work comes down to the number of calls, not cleverness: Meta's Muse"
+ },
+ "https://mastodon.ozioso.online/@ItalianNews/117588139804838695": {
+  "zh_title": "Meta 推出最轻量的 Muse Ember 模型",
+  "zh_oneliner": "Meta 推出面向智能体的最轻量、最便宜的 AI 模型 Muse Ember，支持文本、图片与音频。",
+  "en_oneliner": "Meta launches Muse Ember, its lightest and cheapest AI model for agents, supporting text, images, and audio.",
+  "en_title": "Meta Muse Ember: Meta's lightest AI model for agents"
+ },
+ "https://mastodon.ozioso.online/@ItalianNews/117568402362694377": {
+  "zh_title": "Kimi Antonelli 代言 Meta Muse 新功能：语音与表情头像",
+  "zh_oneliner": "Meta 更新 Muse 应用，助手现可语音回复并展示生动的动画头像，由 Kimi Antonelli 出镜介绍。",
+  "en_oneliner": "Meta updates the Muse app so the assistant now answers by voice and shows an expressive animated avatar, presented by Kimi Antonelli.",
+  "en_title": "Kimi Antonelli presents what's new in Meta Muse: voice and expressive avatars"
+ },
+ "https://infosec.exchange/@cyberworldops/117557292064844124": {
+  "zh_title": "Meta 公布 Muse 漏洞赏金计划的顶级发现，奖金高达 120 万美元",
+  "zh_oneliner": "Meta 披露 Muse 漏洞赏金计划的重要发现，奖金累计达 120 万美元，问题集中在 AI 辅助编程中的提示操纵与不安全输出风险。",
+  "en_oneliner": "Meta details the top findings from its Muse bug bounty program, with payouts reaching $1.2 million, focused on prompt manipulation and insecure output risks in AI-assisted coding."
+ },
+ "https://epsilon.social/@Trade/117548342525556096": {
+  "zh_title": "摩根大通、亚马逊等巨头为何封禁 Muse 这类 AI 智能体",
+  "zh_oneliner": "该帖称摩根大通、亚马逊等巨头正在封禁 Muse 这类 AI 智能体，硅谷与华尔街正为此对峙。",
+  "en_oneliner": "The post claims JPMorgan, Amazon, and other giants are blocking AI agents like Muse, in a high-stakes standoff between Silicon Valley and Wall Street."
+ },
+ "https://mastodon.social/@Caramba1/117528947815819889": {
+  "zh_title": "Meta Muse 打破了 ChatGPT 最烦人的习惯",
+  "zh_oneliner": "作者认为 Muse 一改 ChatGPT 冗长罗列的毛病，回答更简练，平均引用 25 个来源而非寥寥七个。",
+  "en_oneliner": "The author says Muse breaks ChatGPT's most annoying habit, giving concise answers with an average of 25 sources instead of a meager seven.",
+  "en_title": "Meta Muse breaks ChatGPT's most annoying habits"
+ },
+ "https://mastodon.ozioso.online/@ItalianNews/117518305551374637": {
+  "zh_title": "AMD EPYC 与 NVIDIA Vera Rubin 芯片将用于 Meta Muse",
+  "zh_oneliner": "Meta 将采用 AMD 与 NVIDIA 的芯片训练与运行 Muse 模型及未来的智能体。",
+  "en_oneliner": "Meta will use AMD and NVIDIA chips to train and run Muse models and future agents.",
+  "en_title": "AMD EPYC and NVIDIA Vera Rubin chips for Meta Muse"
+ },
+ "https://mastodon.social/@startupmac/117494663842780202": {
+  "zh_title": "Meta 个人 AI 助手 Muse 仅 40 天就在美国突破 1000 万次下载",
+  "zh_oneliner": "Muse 上线仅 40 天就在美国突破 1000 万次下载，标志着消费者期待的重大转变。",
+  "en_oneliner": "Muse crossed 10 million U.S. downloads in just 40 days, marking a major shift in consumer expectations."
  }
 }
