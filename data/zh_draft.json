@@ -7493,5 +7493,23 @@
   "zh_title": "厨师 Priyanka Naik 靠她的 Muse「Chunky」更高效地工作",
   "zh_oneliner": "主厨 Priyanka Naik 分享她如何借助昵称为 Chunky 的 Muse 助手，把厨房工作安排得更顺手高效。",
   "en_oneliner": "Chef Priyanka Naik shares how her Muse assistant, nicknamed Chunky, helps her run her kitchen work more smoothly and efficiently."
+ },
+ "https://news.google.com/rss/articles/CBMingJBVV95cUxQdEUzdGJmUmtweXZaTmxONWhrTHNlcF91YS1HSDM0QTVtaFpORkdqSkI0SS05TzE4dWxEZzFQOU5MU2I0eFEyRDdRRkdWWk43YXpuWnBHNnczLVNlbVVzWDA3c3M1MHc1TEczZ3RFVHhHbkNuTzBSaHE3dGpRZ1JSVUpwT244QXpzbWQtZVh4UDRlcU9VajJDaFBJUFJWQkVIejJFZzY1VE1EaTUtNHFQNkpKVy1xeVVJUDM3X3Vzdmd6aW9EMXdhOHJKQ2VNdnpmeGVFbG1JcUxGWGRmd2hJWlpBRkNwbG1tdWc1cHB5YnB4RzhFNHRPTlpoUjBGanp5dE5jMVgzQzNFLTAwcV8xYjREOFkzVFBGUFJJQzln?oc=5": {
+  "zh_title": "发布23天引爆消费级Agent！大摩深度解读“Muse 6大焦点问题”",
+  "zh_oneliner": "摩根士丹利深度解读 Muse 发布 23 天后引爆消费级智能体市场的六大焦点问题，并与 ChatGPT、Claude、Grok 作对比。",
+  "en_oneliner": "Morgan Stanley takes a deep dive into six key questions about Muse, which ignited the consumer agent market just 23 days after launch, comparing it with ChatGPT, Claude and Grok.",
+  "en_title": "Muse Ignites Consumer Agents 23 Days After Launch: Morgan Stanley Breaks Down Six Key Questions"
+ },
+ "https://zenn.dev/urin/articles/muse-free-tailscale-wsl": {
+  "zh_title": "用 Tailscale 让免费版 Muse 直接安全地操作家中 WSL 开发环境",
+  "zh_oneliner": "作者分享如何借助 Tailscale，让免费额度的 Muse 直接、安全地访问家里的 WSL 开发环境。",
+  "en_oneliner": "The author shows how Tailscale lets the free tier of Muse directly and securely access a home WSL development environment.",
+  "en_title": "Using Tailscale to Let Free-Tier Muse Directly and Securely Access a Home WSL Dev Environment"
+ },
+ "https://zenn.dev/mugipod/articles/henji-mado-no-hanashi": {
+  "zh_title": "声音往返的故事——回复窗口与把声音传出去的机制",
+  "zh_oneliner": "作者讲述声音来回传递的故事，介绍回复窗口与把声音向外传达的机制。",
+  "en_oneliner": "The author tells the story of voices travelling back and forth, introducing the reply window and the mechanism that carries voice outward.",
+  "en_title": "A Story of Voices Going Back and Forth: The Reply Window and the Mechanism That Carries Voice Outward"
  }
 }
