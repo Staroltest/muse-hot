@@ -7511,5 +7511,16 @@
   "zh_oneliner": "作者讲述声音来回传递的故事，介绍回复窗口与把声音向外传达的机制。",
   "en_oneliner": "The author tells the story of voices travelling back and forth, introducing the reply window and the mechanism that carries voice outward.",
   "en_title": "A Story of Voices Going Back and Forth: The Reply Window and the Mechanism That Carries Voice Outward"
+ },
+ "https://qiita.com/noguchi_offgrid/items/eb8102929927def90065": {
+  "zh_title": "试了试 Muse 还没用过的功能（下篇）——连接器、认证存储与 Muse Gadgets",
+  "zh_oneliner": "作者继续挖掘自己尚未尝试的 Muse 功能，实测连接器、认证存储和 Muse Gadgets 的用法。",
+  "en_oneliner": "The author keeps exploring Muse features they haven't tried yet, testing connectors, auth storage, and Muse Gadgets in practice.",
+  "en_title": "Exploring Muse Features I Haven't Tried Yet (Part 2) — Connectors, Auth Storage, and Muse Gadgets"
+ },
+ "https://news.google.com/rss/articles/CBMivgFBVV95cUxPbzRLNVBiMDlRTEthUEVSMUthWXVBNHdyaG9xR0FtVEc1ZE5ZYWNTQzM0Yl9CcnBnbzBsZGJRZDFIbmtBZVdxN3lJRlR5eXVQY2hSWmdDb2tSa2lVMUk3WW1zZ2xEU3VqQUhZN1hFdnkwTU1mOWtWUXZjQlhtcGV6dkc2UXdPMHZOWkhFRGNNYXhLZkxSREl3YjFEQlJvVnJlYW5DWFdkZnBZWUF4YXpLRWFjOHF3b3cxanNHZW1n?oc=5": {
+  "zh_title": "苹果股票提醒：苹果正开发与 Muse 竞争的 AI 智能体，投资者须知",
+  "zh_oneliner": "苹果正在开发一款与 Muse 竞争的 AI 智能体，本文梳理了投资者需要了解的关键信息。",
+  "en_oneliner": "Apple is developing an AI agent to compete with Muse, and this article outlines the key points investors should know."
  }
 }
