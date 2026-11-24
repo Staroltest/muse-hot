@@ -7722,5 +7722,36 @@
   "zh_oneliner": "Meta 把个人 AI 智能体 Muse 带到英国，同时上线了购买审批功能。",
   "en_oneliner": "Meta is bringing its personal AI agent Muse to the UK, along with a purchase-approval feature.",
   "en_title": "Meta Brings Personal AI Agent Muse and Purchase Approval to the UK"
+ },
+ "https://qiita.com/rino_yume/items/b495e34c455fb8450cc0": {
+  "zh_title": "Python + Muse + Docker Compose 打造 AI 智能体入门 r001：从 Tool Calling 开始",
+  "zh_oneliner": "这篇入门教程用 Python、Muse 和 Docker Compose 一步步搭建 AI 智能体，从 Tool Calling 讲起。",
+  "en_oneliner": "This beginner tutorial builds an AI agent step by step with Python, Muse, and Docker Compose, starting from tool calling.",
+  "en_title": "Getting Started with AI Agents Using Python, Muse, and Docker Compose r001: Beginning with Tool Calling"
+ },
+ "https://medium.com/@zobayerislam.uh/get-1-billion-free-muse-tokens-d936240ad3e1?source=rss------muse-5": {
+  "zh_title": "免费领取 10 亿 Muse 代币！",
+  "zh_oneliner": "这篇文章介绍了免费领取 Muse 代币的方法。",
+  "en_oneliner": "This post describes how to claim free Muse tokens."
+ },
+ "https://news.google.com/rss/articles/CBMimAFBVV95cUxPX3V1c0o4cXA1b0d0NFlqLU4zNmhfV1NlMlItVUx4UU5oZjJYOXVIRnNSeXMzam5jRFBXa2Y3NTI5U3RMLV9PSjVyR25uTWJKMG5DNHNCeXZ2UGktZkNreDlzN0h1TFU5TkpYZWtaV09iN2lZNHpzdlVQbDBMQ3N3NDZ1VWVWMW5mQkk4SFJ5VGNFTzIxT3B5ONIBngFBVV95cUxNeGZ3YjQ0UXNMUl9wazJROG1fY0djSTdQT21BUU1PRTRlQk1LYnVlQmx1a2ZjdXd3MmtkOFVVZ1BYTXhLenYtejJVeXFhakxMNWxkbU1kTUhIbVctb1FwQWFPWWw1VDFuUHpQdmQ2VzBGX1RTQk5oRTdkSmJ1Q2FFaXk1ZC0zb0RjNFF1emtqTUNnakJpZzBmZW9ZSDNwZw?oc=5": {
+  "zh_title": "Muse 登陆英国：由你掌控的个人 AI 智能体",
+  "zh_oneliner": "Meta 把个人 AI 智能体 Muse 带到英国，用户可以按自己的意愿使用和掌控它。",
+  "en_oneliner": "Meta is bringing its personal AI agent Muse to the UK, giving users control over how they use it."
+ },
+ "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNVnZKaXhud0doSXZPcjNwSllEcHpicWZxbWNRME5HMVpPZ1U5OFlUeUwtbmxFdFFLTEwyWUt4QlZyaGJVTjhqdmxGeGt6LUktNVNNeUZlQzJmSFg5aWUyMWNKZ283YXlQMXA5SVl1QlY0dERjLWlnWS1BMzRUSzVQbFI3S0ZrYW9yRXNlMHJlcWlVY0xtQVFCalVmb3dQanBJclpZbkZOSEZKN2xvRHIzbUNNS3dzaVpMRGdKRmh6Q1BsZGZkbnBJOA?oc=5": {
+  "zh_title": "Sainsbury's 面向英国顾客上线 Meta 的 Muse AI 智能体",
+  "zh_oneliner": "英国超市 Sainsbury's 开始为顾客提供 Meta 的 Muse AI 智能体服务。",
+  "en_oneliner": "UK supermarket Sainsbury's is now offering Meta's Muse AI agent to its customers."
+ },
+ "https://news.google.com/rss/articles/CBMizgFBVV95cUxPNEVrRk42aFdNR0Z2LVVybW8xLXR6eEEyZmxHVFVaeVpzSjBlcVc5T2s2YXVlZ2c1bkV0NzNfdnBNdF8waG9qZnlrQmNXZTdmRVZ3MGstWENHOTBQZU9BbkRrNExkeGZfVmFYS0NBbm5YN3J4Ry15MkhmYzQwOW1jcUhHYnk5N1k2YmdoOTd1ZjdXclp3ZzY1OUZHTHZZNVdYd0NlU0J1a0RReEVpOUhjMlFVVzc3WmlTdVc4RG1WV2h5emljUEowVWx2a0Q3Zw?oc=5": {
+  "zh_title": "Meta 个人 AI 智能体 Muse 在英国上线，Argos 顾客可用它购物",
+  "zh_oneliner": "Meta 的个人 AI 智能体 Muse 在英国正式上线，Argos 顾客现在可以用它来购物。",
+  "en_oneliner": "Meta's personal AI agent Muse has gone live in the UK, and Argos customers can now shop with it."
+ },
+ "https://news.google.com/rss/articles/CBMikgFBVV95cUxNVVRsV2VhWENMS3JST0NnZDBlN09SeWwxQk93UW9Iajg3Y0h5aWxSZ2U3RVQ3eW5YNHFreTZSRWhxWXFuQ3kyQUdmbkZpWnVEcURxMkF5dkJIRThhT0JWSExJOS1lRng1R25tcVdlbXU2Y25DYi15cXNEVXlyZ1RwMkhwd2U0X0Y4ZlVkcVVTSkhXUQ?oc=5": {
+  "zh_title": "JD Sports 与 Meta 合作，推出 AI 购物智能体 Muse",
+  "zh_oneliner": "JD Sports 与 Meta 合作，把 AI 购物智能体 Muse 带给顾客。",
+  "en_oneliner": "JD Sports is teaming up with Meta to bring the AI shopping agent Muse to shoppers."
  }
 }
