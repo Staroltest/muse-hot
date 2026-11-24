@@ -2583,10 +2583,28 @@ def _stem_word(w):
     return w
 
 
+def _canon_lat(w):
+    """拉丁词规范形：与 _stem_word 一致的词干，再把复数残留的 ie→y、
+    末尾 e 去掉（如 stories→storie→story、launches→launche→launch），
+    供通用词比对用——否则词干 'launche' 对不上通用表里的 'launch'。"""
+    w = _stem_word(w)
+    if w.endswith("ie"):
+        return w[:-2] + "y"
+    if w.endswith("e"):
+        return w[:-1]
+    return w
+
+
+def _is_generic_lat(w):
+    """通用拉丁词判定（规范形比对）：like/month/launche 之类不算主题词。"""
+    return _canon_lat(w) in _GENERIC_LAT_CANON
+
+
 def _sig_tokens(text):
     """标题显著词：拉丁词（去停用词、轻量词干）+ 中文双字（只从纯 CJK 片段取，
-    避免 "meta/muse" 本身拼出 me/et/ta 等垃圾双字）。"""
-    t = _strip_outlet(text or "").lower()
+    避免 "meta/muse" 本身拼出 me/et/ta 等垃圾双字；含“的”的双字是助词残片
+    （如 的智/己的），不是主题词，直接丢弃）。"""
+    t = (text or "").lower()
     lat, cjk = set(), set()
     for w in re.findall(r"[a-z0-9]+", t):
         if len(w) < 4 or w in _TOPIC_STOPWORDS:
@@ -2594,7 +2612,10 @@ def _sig_tokens(text):
         lat.add(_stem_word(w))
     for run in re.findall(r"[\u4e00-\u9fff]+", t):
         for i in range(len(run) - 1):
-            cjk.add(run[i:i + 2])
+            b = run[i:i + 2]
+            if "的" in b:
+                continue
+            cjk.add(b)
     return lat, cjk
 
 
@@ -2603,7 +2624,7 @@ _GENERIC_CJK = set("""智能 能体 报道 道称 用户 户的 助手 引发 �
 什么 怎么 如何 这样 那样 这些 那些 成为 已经 正在 还是 不过 但是 然而 此外
 同时 包括 例如 比如 关于 对于 由于 因此 然后 之后 之前 现在 今天 昨天 明天
 最近 目前 未来 过去 时候 方面 方式 方法 问题 情况 内容 相关 各种 那个 这里
-那里 这是 也是 都是 或者 如果 虽然 尽管""".split())
+那里 这是 也是 都是 或者 如果 虽然 尽管 推出 发布 宣布 上线 带来 自己 手把 把手 手教 教你""".split())
 
 _GENERIC_LAT = set("""spaces space wearable wearables glasses watch watches
 subscription subscriptions settings setup guide guides tutorial tutorials tips tip
@@ -2613,6 +2634,34 @@ message messages search data report reports news story stories phone phones call
 user users people person company business world week month year time thing things work
 works using used make makes take takes show shows face faces issue issues screen add adds
 added fix fixed""".split())
+
+_GENERIC_LAT_CANON = {_canon_lat(w) for w in _GENERIC_LAT}
+
+
+# 通用三字母缩写：标题首词是这些时不算品牌锚（如 API/SDK/GPT 是通用技术词，
+# COM/NET 是 outlet 后缀残留；规则 (5) 只认非通用品牌缩写）。
+_GENERIC_ACRONYMS = set("""API SDK CEO CTO CFO GPU CPU USA UK EU AI VR AR ML LLM APP WEB
+IOS MAC TV PC OS IT PR GPT PDF URL HTML CSS RSS USB LED LCD SEO ADS IOT UI UX QA
+CI CD AWS IBM SAP CRM ERP B2B B2C DOC XLS MP3 MP4 GIF JPG PNG SVG JSON XML SQL COM
+NET ORG WWW""".split())
+
+
+def _lead_acronym(it):
+    """标题首词品牌缩写：_sig_tokens 丢弃 <4 字母词，muse/meta 又是停用词，
+    品牌事件两标题除此无共享词时规则 (2)(3) 全漏。两种形式：
+    (a) 首词即三字母全大写（如 DXL）；(b) 首词是“首字母大写词 + 两字母全大写词”
+    （如 Destination XL → DXL，DXL 的全称正是 Destination XL Group）。
+    取 outlet 处理后的 title / zh_title 首词，两边一致才算。
+    (b) 要求第二词不在通用缩写表里（如 Meta AI 的 AI），防不同 Meta AI 报道误并。"""
+    for field in ("title", "zh_title"):
+        t = _strip_outlet(it.get(field) or "").strip()
+        m = re.match(r"([A-Z]{3})\b", t)
+        if m and m.group(1) not in _GENERIC_ACRONYMS:
+            return m.group(1)
+        m2 = re.match(r"([A-Z])[a-z]+ ([A-Z]{2})\b", t)
+        if m2 and m2.group(2) not in _GENERIC_ACRONYMS:
+            return m2.group(1) + m2.group(2)
+    return None
 
 
 _ANCHOR_LAT_VARIANTS = {
@@ -2696,14 +2745,19 @@ def _same_topic(a, b):
     (2) 标题显著词重叠——拉丁词共享 >=2 个且至少一个 >=6 字，
         或中文双字共享 >=6 个（如两家媒体同报路透社隐私调查，
         标题措辞不同但共享 privacy/signal/message 等词）。
-    (3) 2026-11-20 新增：标题+一句话简介取词（简介措辞比标题更收敛），
-        去掉通用双字（智能/能体/报道/用户/助手等“智能体”套话）后——
-        拉丁词共享 >=2，或中文双字共享 >=3，
-        或共享一个强锚拉丁词（>=5 字且非通用词，如 charm/privacy/breach）
-        再加 >=1 个中文双字。
+    (3) 2026-11-20 新增，2026-11-24 收紧：标题+一句话简介取词（简介措辞比标题更收敛），
+        去掉通用双字（智能/能体/报道/用户/助手等“智能体”套话，11-24 起加
+        推出/发布/宣布/上线/带来）后——
+        拉丁词共享 >=2（11-24 起先去标题 outlet 后缀、去掉通用拉丁词），
+        或中文双字共享 >=3，
+        或共享一个强锚拉丁词（>=5 字且非通用词，如 charm/privacy/breach，
+        11-24 起按规范形比对通用表，'launche' 不再漏网）
+        再加 >=2 个中文双字（11-24 起由 >=1 收紧：单双字常是苹果这类高频词）。
         背景：11-20 日报 10 条里 8 条同属路透隐私调查、热点 20 条里
         11 条是 Charm 300 美元，规则 (2) 的中文阈值 6 对短中文标题过严，
         且纯中文标题没有拉丁词可共享，导致同事件漏并。
+        11-24 背景：30 天库实测规则 (3) 误并——outlet 后缀、通用词、词干
+        漏网三处，见代码内注释。
     (4) 2026-11-20 再新增：共享一个事件锚词且发布时间相差 <=3 天。
         背景：同一调查的不同角度改写（如隐私调查的银行余额、加密消息、
         账号混淆、擅自预订几篇）措辞几乎不重叠，规则 (2)(3) 全漏，
@@ -2720,27 +2774,41 @@ def _same_topic(a, b):
     nb = _norm_title(tb)
     if len(na) >= 10 and len(nb) >= 10 and (na.startswith(nb) or nb.startswith(na)):
         return True
-    la, ca = _sig_tokens((a.get("title") or "") + " " + (a.get("zh_title") or ""))
-    lb, cb = _sig_tokens((b.get("title") or "") + " " + (b.get("zh_title") or ""))
+    # (2) 2026-11-24 起标题先去 outlet 后缀：两家同为 " - BigGo Finance" 的
+    # 不同事件（代打电话 vs 字节跳动竞品）会因共享 biggo/finance 被误并。
+    la, ca = _sig_tokens(_strip_outlet(a.get("title") or "") + " " + _strip_outlet(a.get("zh_title") or ""))
+    lb, cb = _sig_tokens(_strip_outlet(b.get("title") or "") + " " + _strip_outlet(b.get("zh_title") or ""))
     shared_lat = la & lb
     if len(shared_lat) >= 2 and any(len(w) >= 6 for w in shared_lat):
         return True
     if len(ca & cb) >= 6:
         return True
-    la2, ca2 = _sig_tokens((a.get("title") or "") + " " + (a.get("zh_title") or "")
+    # (3) 2026-11-20 新增，2026-11-24 收紧：标题+一句话简介取词（简介措辞比标题更收敛），
+    # 去掉通用双字（智能/能体/报道/用户/助手等“智能体”套话）后——
+    # 拉丁词共享 >=2，或中文双字共享 >=3，
+    # 或共享一个强锚拉丁词（>=5 字且非通用词，如 charm/privacy/breach）
+    # 再加 >=1 个中文双字。
+    # 2026-11-24 收紧原因：实测 30 天库误并——(a) 标题 outlet 后缀（BigGo Finance）
+    # 被当成共享主题词；(b) 共享拉丁词未排除通用词（like/month 就能并）；
+    # (c) 强锚词干 'launche' 对不上通用表 'launch'，配通用双字 '推出' 即误并。
+    # 收紧：标题先去 outlet 后缀；共享拉丁词去掉通用词；通用双字加 推出/发布/宣布/上线/带来。
+    la2, ca2 = _sig_tokens(_strip_outlet(a.get("title") or "") + " " + (a.get("zh_title") or "")
                            + " " + (a.get("zh_oneliner") or ""))
-    lb2, cb2 = _sig_tokens((b.get("title") or "") + " " + (b.get("zh_title") or "")
+    lb2, cb2 = _sig_tokens(_strip_outlet(b.get("title") or "") + " " + (b.get("zh_title") or "")
                            + " " + (b.get("zh_oneliner") or ""))
     ca2 = {c for c in ca2 if c not in _GENERIC_CJK}
     cb2 = {c for c in cb2 if c not in _GENERIC_CJK}
-    shared_lat2 = la2 & lb2
+    shared_lat2 = {w for w in la2 & lb2 if not _is_generic_lat(w)}
     shared_cjk2 = ca2 & cb2
     if len(shared_lat2) >= 2:
         return True
     if len(shared_cjk2) >= 3:
         return True
-    anchors = {w for w in shared_lat2 if len(w) >= 5 and w not in _GENERIC_LAT}
-    if anchors and len(shared_cjk2) >= 1:
+    anchors = {w for w in shared_lat2 if len(w) >= 5}
+    # 2026-11-24：强锚 + 中文双字由 >=1 改为 >=2——单双字常是“苹果”这类
+    # 高频公司名/泛词（如 Apple 造智能体 vs $300 Charm 两报道只共享 apple+苹果），
+    # >=1 会误并；真同事件一般共享 >=2 个中文双字。
+    if anchors and len(shared_cjk2) >= 2:
         return True
     # (4) 共享事件锚词且 3 天内发布：同一调查的不同角度改写。
     pa, pb = a.get("_pub"), b.get("_pub")
@@ -2748,6 +2816,21 @@ def _same_topic(a, b):
         try:
             if abs((pa - pb).total_seconds()) <= 3 * 86400:
                 if _story_anchors(a) & _story_anchors(b):
+                    return True
+        except TypeError:
+            pass
+    # (5) 2026-11-24 新增：两标题同以一个三字母品牌缩写开头且 3 天内发布。
+    # 背景：11-24 日报/热点各有 2 条 DXL（IT Brief 与 Unite.AI 角度不同），
+    # _sig_tokens 丢 <4 字母词、muse/meta 是停用词，共享词为 0，规则 (2)(3)(4) 全漏。
+    # 实测 30 天库：首词全大写三字母对 55 对全是 DXL 同一通稿事件，误并 0；
+    # 不加首词限制时 ALM/CNA/ESP/RAM 等 outlet 后缀与提交词会误并，故只认首词。
+    # 同日补：全称形式也算（Destination XL → DXL，同一家公司），否则
+    # Chain Store Age 的全称版仍会与 IT Brief 的缩写版各占热点一位。
+    if pa is not None and pb is not None:
+        try:
+            if abs((pa - pb).total_seconds()) <= 3 * 86400:
+                la, lb = _lead_acronym(a), _lead_acronym(b)
+                if la is not None and la == lb:
                     return True
         except TypeError:
             pass
