@@ -7745,9 +7745,9 @@
   "en_oneliner": "UK supermarket Sainsbury's is now offering Meta's Muse AI agent to its customers."
  },
  "https://news.google.com/rss/articles/CBMizgFBVV95cUxPNEVrRk42aFdNR0Z2LVVybW8xLXR6eEEyZmxHVFVaeVpzSjBlcVc5T2s2YXVlZ2c1bkV0NzNfdnBNdF8waG9qZnlrQmNXZTdmRVZ3MGstWENHOTBQZU9BbkRrNExkeGZfVmFYS0NBbm5YN3J4Ry15MkhmYzQwOW1jcUhHYnk5N1k2YmdoOTd1ZjdXclp3ZzY1OUZHTHZZNVdYd0NlU0J1a0RReEVpOUhjMlFVVzc3WmlTdVc4RG1WV2h5emljUEowVWx2a0Q3Zw?oc=5": {
-  "zh_title": "Meta 个人 AI 智能体 Muse 在英国上线，Argos 顾客可用它购物",
-  "zh_oneliner": "Meta 的个人 AI 智能体 Muse 在英国正式上线，Argos 顾客现在可以用它来购物。",
-  "en_oneliner": "Meta's personal AI agent Muse has gone live in the UK, and Argos customers can now shop with it."
+  "zh_title": "Argos 把旗下商品接入 Meta Muse AI 助手，在英国上线",
+  "zh_oneliner": "英国零售商 Argos 将自家商品目录接入 Meta 的 Muse AI 助手，用户可以直接通过 Muse 浏览和选购。",
+  "en_oneliner": "UK retailer Argos has linked its product range to Meta's Muse AI agent, letting shoppers browse and pick items through Muse."
  },
  "https://news.google.com/rss/articles/CBMikgFBVV95cUxNVVRsV2VhWENMS3JST0NnZDBlN09SeWwxQk93UW9Iajg3Y0h5aWxSZ2U3RVQ3eW5YNHFreTZSRWhxWXFuQ3kyQUdmbkZpWnVEcURxMkF5dkJIRThhT0JWSExJOS1lRng1R25tcVdlbXU2Y25DYi15cXNEVXlyZ1RwMkhwd2U0X0Y4ZlVkcVVTSkhXUQ?oc=5": {
   "zh_title": "JD Sports 与 Meta 合作，推出 AI 购物智能体 Muse",
@@ -8001,5 +8001,35 @@
   "zh_title": "Meta 在英国推出 Muse AI 智能体，已与多家零售伙伴合作——Retail Insight Network",
   "zh_oneliner": "Meta 在英国推出 Muse AI 智能体，并已与多家零售合作伙伴达成合作。",
   "en_oneliner": "Meta launches its Muse AI agent in the UK with several retail partners."
+ },
+ "https://github.com/oktana-coop/allume-web-export": {
+  "zh_title": "Show HN：把 Allume（原 Muse）画板导出为网页",
+  "zh_oneliner": "一款开源工具，可把 Allume 画板导出成可直接发布的网页，方便把 Muse 的协作画板分享到网上。",
+  "en_oneliner": "An open-source tool that exports Allume boards as publishable web pages, making it easy to share Muse collaboration boards online."
+ },
+ "https://news.google.com/rss/articles/CBMisAFBVV95cUxNV08wZzIwVGtyM0dlOWdlT3VhUE5IZllVS0VWU09ORVZsdjl3aU94RDR5Q1Z5UmRDMGhQcktsbEIzSVAxMnJzWEFxVDZEczdCbExuRU5TOTAtUUM1TXM2dVRfZm9PMjg0WW82eVgybFRtLWxkQVJyY1hKUUVGNlRlOXZEdzNJMVpMUE5IWVUyNVl6UHQyU0dIRVBIaVFxclRaUlVmbGpnZElsWVItQzl5Zw?oc=5": {
+  "zh_title": "Knudsen 牵头多州调查 Meta Muse AI，聚焦数据隐私问题",
+  "zh_oneliner": "美国多州联合调查 Meta 的 Muse AI 是否存在数据隐私问题，由 Knudsen 牵头推进。",
+  "en_oneliner": "A multi-state investigation led by Knudsen is examining whether Meta's Muse AI raises data privacy concerns."
+ },
+ "https://news.google.com/rss/articles/CBMipAFBVV95cUxNNk04R1pmSmpUWGE1YWI5NVJaNUNrbFhQUmFaNmtHckNGaFJRTEFaelBPM05nVkFJX2JmSVRfZU1kekNRTXNqcnVJbzFRUE95Rjc3b3hwOU5pNmNZQXl4V2xzTkd4cmxpTk5IQV9FVHhoTi1EeEpiOGY3QklqX1c3bmx6N1FpWWQ2NW5XdHJUYm1RclhydVVvY0hCLTNlb21JaUdzNQ?oc=5": {
+  "zh_title": "关于 Meta Muse 在英国上线的声明",
+  "zh_oneliner": "官方就 Meta Muse 在英国正式上线发表声明，介绍其面向英国用户的推出安排。",
+  "en_oneliner": "An official statement on Meta Muse's launch in the UK, outlining its rollout for British users."
+ },
+ "https://news.google.com/rss/articles/CBMilAFBVV95cUxObktGdnFmcXVTQ3JqaXIzTS13VXdWUFVWYk11Z3cwU1Jtd3A3X2l2bFd1aTg1X2hYWVJ4Z2JNX2pmVUdCQXNERzVlRU5xeUNsS0hIbHQwa2tINU15ZXhFTk5helJINWNYODFNQjhYbW1xa3JIN1UzeUhsSE0tM1hITlRyVk1SVDNWZkJycV9Va1F0V0Mt?oc=5": {
+  "zh_title": "Meta Muse 已在英国上线，我用着觉得挺有帮助",
+  "zh_oneliner": "一位英国用户分享 Meta Muse 上线后的实际使用体验，认为它在日常工作中确实帮得上忙。",
+  "en_oneliner": "A UK user shares hands-on impressions after Meta Muse's launch, finding it genuinely helpful in everyday work."
+ },
+ "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1PQTVrNlh0OFNJaVpBWC1FSUczUzZKb3h0ZGJWZjJVSWFmdEY5dHVlTmtJa2VfOXB4bDRHM2V3dXpTSmZRc0tpeDNYdUlkNVhVQW4tSTk4eWlZWThmQ1E?oc=5": {
+  "zh_title": "Argos 把旗下商品接入 Meta Muse AI 助手，在英国上线",
+  "zh_oneliner": "英国零售商 Argos 将自家商品目录接入 Meta 的 Muse AI 助手，用户可以直接通过 Muse 浏览和选购。",
+  "en_oneliner": "UK retailer Argos has linked its product range to Meta's Muse AI agent, letting shoppers browse and pick items through Muse."
+ },
+ "https://news.google.com/rss/articles/CBMilwFBVV95cUxQdnV6LXhfY1d3WkNoNU5JZjhwZjVjcXVya2pCRGgtMGpJZmRqQTZLbmlXSi1sYXBNSUgwNXFyUUtmVVpHR3hYbUR4YWdDc3g1RTY5VTVyOWFpLXRUR3lrdmd5LUNGdE5NTjRuQS02bmxvcFFkdVAwMmY4eW5FdzNrWWJXV1R4VFdTbmxoMjJVUzdhdnF1QUM4?oc=5": {
+  "zh_title": "Meta Muse AI 助手跨越大西洋，在英国上线",
+  "zh_oneliner": "Meta 的 Muse AI 助手正式登陆英国，标志着这款 AI 助手开始向美国以外的市场扩展。",
+  "en_oneliner": "Meta's Muse AI agent has officially launched in the UK, marking its expansion beyond the US market."
  }
 }
