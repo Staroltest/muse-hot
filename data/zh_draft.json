@@ -8503,5 +8503,84 @@
   "zh_title": "Meta 面向英国成年人推出 Muse，覆盖购物与旅行任务",
   "zh_oneliner": "Meta 将 Muse 带给英国成年用户，可协助处理购物和旅行等日常任务。",
   "en_oneliner": "Meta is bringing Muse to adults in the UK, where it can help with everyday tasks like shopping and travel."
+ },
+ "https://qiita.com/mii2026/items/dc4bcfff7a0bb92d93e1": {
+  "zh_title": "Muse 交换笔记：被夸奖就会更努力，是真的吗",
+  "zh_oneliner": "作者记录与 Muse 互动的观察：受到表扬后它是否真的干得更起劲，并分享了几段有趣的对话实验。",
+  "en_oneliner": "The author documents observations from interacting with Muse: whether praise really makes it work harder, sharing a few entertaining dialogue experiments.",
+  "en_title": "Muse Exchange Notes: Is It True That Praise Makes It Work Harder?"
+ },
+ "https://qiita.com/userisegg/items/9edf7a9b077b0d351e12": {
+  "zh_title": "和 Muse 一起打造常驻程序日志聚合查看器",
+  "zh_oneliner": "作者分享用 Muse 从零搭建一个日志聚合查看器的过程，让常驻程序的运行记录一目了然。",
+  "en_oneliner": "The author shares how they built a log-aggregation viewer from scratch with Muse, making the running records of resident programs easy to scan at a glance.",
+  "en_title": "Building a Log Aggregation Viewer for Resident Programs with Muse"
+ },
+ "https://qiita.com/userisegg/items/f4b0311af2319cd25530": {
+  "zh_title": "试着把服务器定期维护交给 AI 智能体 Muse",
+  "zh_oneliner": "作者尝试让 Muse 接手服务器的定期维护工作，记录了它在真实运维任务中的表现与踩过的坑。",
+  "en_oneliner": "The author tries handing routine server maintenance over to Muse and records how it performs on real operations tasks, including the pitfalls encountered.",
+  "en_title": "Letting the AI Agent Muse Handle Routine Server Maintenance"
+ },
+ "https://news.google.com/rss/articles/CBMikgFBVV95cUxPWm9pT3FRd18ycUNCMExrUlpfdmZPZ0RYTHpkVTBqWU5sT0lNQklYMmJOc2xhbGZpNWpMb2VCOFNmd3FJQ1ZvTEoxY2lqX09WNHNHQmYxOFJGQTRxNkgydDZKUGJRTXM1cW1Ca2VfVzlTVG54eUp3dnMwYUF0WVkxdW9GaGRKSHc1eUZCSGhRT25GQdIBlwFBVV95cUxOU2duTmgzM0FabkFQMGIxeHdfMmVZTm51cWRmZTc4REVrT3EyTWJNR1Vqcy01aG8wY1VUQkVlTzdJUXVFTTdhTjBpOWJ4ckFCbUtjN3VqWDdna1BVOG50Vy1TNDBELUpjN013XzMtaUczeEZuejJ6WE0wYkRScURCSGREZHVzdjY5bWpsMG5lVTMxTWo0UG5N?oc=5": {
+  "zh_title": "Meta 将 Muse AI 助手接入 Instagram 私信",
+  "zh_oneliner": "Meta 把 Muse AI 助手带进 Instagram 私信，用户可以直接在聊天里向它提问、寻求帮助。",
+  "en_oneliner": "Meta brings the Muse AI assistant into Instagram direct messages, letting users ask it questions and get help right inside their chats."
+ },
+ "https://news.google.com/rss/articles/CBMilwFBVV95cUxOU2duTmgzM0FabkFQMGIxeHdfMmVZTm51cWRmZTc4REVrT3EyTWJNR1Vqcy01aG8wY1VUQkVlTzdJUXVFTTdhTjBpOWJ4ckFCbUtjN3VqWDdna1BVOG50Vy1TNDBELUpjN013XzMtaUczeEZuejJ6WE0wYkRScURCSGREZHVzdjY5bWpsMG5lVTMxTWo0UG5N0gGXAUFVX3lxTE5TZ25OaDMzQVpuQVAwYjF4d18yZVlObnVxZGZlNzhERWtPcTJNYk1HVWpzLTVobzBjVVRCRWVPN0lRdUVNN2FOMGk5YnhyQUJtS2M3dWpYN2drUFU4bnRXLVM0MEQtSmM3TXdfMy1pRzN4Rm56MnpYTTBiRFJxREJIZERkdXN2NjltamwwbmVVMzFNajRQbk0?oc=5": {
+  "zh_title": "Meta 将 Muse AI 助手接入 Instagram 私信",
+  "zh_oneliner": "Meta 把 Muse AI 助手带进 Instagram 私信，用户可以直接在聊天里向它提问、寻求帮助。",
+  "en_oneliner": "Meta brings the Muse AI assistant into Instagram direct messages, letting users ask it questions and get help right inside their chats."
+ },
+ "https://qiita.com/userisegg/items/a1b46819187ef14c9462": {
+  "zh_title": "让 Muse 做了个 Wandbox 风格的代码执行空间",
+  "zh_oneliner": "作者请 Muse 搭建了一个类似 Wandbox 的在线代码执行空间，随写随跑，方便快速验证代码片段。",
+  "en_oneliner": "The author had Muse build a Wandbox-style online code execution space where snippets can be written and run instantly for quick verification.",
+  "en_title": "Having Muse Build a Wandbox-Style Code Execution Space"
+ },
+ "https://news.google.com/rss/articles/CBMihwFBVV95cUxPUzNDR3U2N1Zfcnh6azhVcmdmUXAwNW4xWTh2WThjOF9fQzBHZnN5cDdwbE5sSjJSWWdsMDAwQU5IXzVHUFQ4ZTEtMWZKcVd4V0xKbWQ3MnpUaGY0blIwYXg1dGpQSTNRLXdwdFR0T1V0cmw0U0M0YTJXeTVITF9ybjJicHIyV03SAYwBQVVfeXFMTW41eVRHTThJc3pBRnJuOEYzSEV4bFFKa19QVlJOLUdNZDNfQU1Na1A1aWRyN2VWMXlsX1pBbXdNNlo1SkFQRkE3eE5uUVhxeHpwbm9CYV9TWDl5Rk1iYzF5aGdJMzhhMHNZajF1TjFhTkE4VDVqTEpTM2FGQkFURGx5S0d6clJ4ZkswVUo?oc=5": {
+  "zh_title": "Meta 的 Muse AI 助手进驻 Instagram 私信",
+  "zh_oneliner": "Meta 的 Muse AI 助手正式进入 Instagram 私信，用户在聊天中就能直接使用它的各项能力。",
+  "en_oneliner": "Meta's Muse AI assistant moves into Instagram direct messages, putting its capabilities within reach right inside users' chats."
+ },
+ "https://qiita.com/userisegg/items/903740faf0b5c73aa139": {
+  "zh_title": "让 Muse 也能往 Qiita 上发帖了",
+  "zh_oneliner": "作者打通了从 Muse 到 Qiita 的投稿链路，以后可以直接让 Muse 帮自己发布文章。",
+  "en_oneliner": "The author connected Muse to Qiita posting, so Muse can now publish articles on their behalf.",
+  "en_title": "Enabling Posting to Qiita from Muse"
+ },
+ "https://news.google.com/rss/articles/CBMikAFBVV95cUxQaFhIeTNubk9hdktwZ1RhRkZhZ2lSZEpVZTF0cUFKR1pyeHhvZE82Q28yWWNLX1ByM0lPWVAzS3NqVjV1UHhZdmVLQXN6REdaRjJsYXRpZDhZeWdMcElud2x6ZkVCa29FeEhrbjEtbGdpcXB5SjFVUTNSYVluYmNtZkl6MHV0T3BRaVY3SGR4QVU?oc=5": {
+  "zh_title": "Meta 把 Muse AI 助手直接带进 Instagram 私信",
+  "zh_oneliner": "Meta 将 Muse AI 助手直接接入 Instagram 私信，在聊天窗口里就能随时调用。",
+  "en_oneliner": "Meta brings its Muse AI assistant directly into Instagram DMs, making it available right inside the chat window."
+ },
+ "https://qiita.com/mii2026/items/14974faecb001ab16234": {
+  "zh_title": "Muse 交换笔记：别把数字原样交给 AI",
+  "zh_oneliner": "作者提醒：涉及数字的任务不要直接丢给 AI，核对与复算仍是使用 Muse 时不可省的步骤。",
+  "en_oneliner": "The author warns against handing numbers straight to AI as-is: double-checking and recalculating remain essential steps when using Muse.",
+  "en_title": "Muse Exchange Notes: Don't Leave Numbers Entirely to AI"
+ },
+ "https://news.google.com/rss/articles/CBMijgFBVV95cUxNUzZWRFROcms0NU5RVXQ5ZnlFY21FaU82ZnZVM0FXby12bkdmUDdOU0pJLTEyeGUyZG9JNDVfUFVYaC1kek1jS05nbHFCWlVqNGhmd040OHpFS2pMb2VGazJYQ3FidGc5RldvWTI1aGVUX0NsQnduYWEzd3pnb1VzRS16alJLNUl5RDRCLWZ3?oc=5": {
+  "zh_title": "Meta 将 Muse 个人 AI 接入 Instagram",
+  "zh_oneliner": "Meta 把 Muse 个人 AI 助手带进 Instagram，用户在应用内就能直接与它对话、使用各项功能。",
+  "en_oneliner": "Meta brings the Muse personal AI assistant into Instagram, letting users chat with it and use its features right inside the app."
+ },
+ "https://zenn.dev/mii_mii/articles/kazu-wo-makasuna": {
+  "zh_title": "Muse 交换笔记：别把数字原样交给 AI",
+  "zh_oneliner": "作者提醒：涉及数字的任务不要直接丢给 AI，核对与复算仍是使用 Muse 时不可省的步骤。",
+  "en_oneliner": "The author warns against handing numbers straight to AI as-is: double-checking and recalculating remain essential steps when using Muse.",
+  "en_title": "Muse Exchange Notes: Don't Leave Numbers Entirely to AI"
+ },
+ "https://zenn.dev/mii_mii/articles/homerareru-to-ganbaru": {
+  "zh_title": "Muse 交换笔记：被夸奖就会更努力，是真的吗",
+  "zh_oneliner": "作者记录与 Muse 互动的观察：受到表扬后它是否真的干得更起劲，并分享了几段有趣的对话实验。",
+  "en_oneliner": "The author documents observations from interacting with Muse: whether praise really makes it work harder, sharing a few entertaining dialogue experiments.",
+  "en_title": "Muse Exchange Notes: Is It True That Praise Makes It Work Harder?"
+ },
+ "https://qiita.com/mii2026/items/38cef514010f649ea2f0": {
+  "zh_title": "Muse 交换笔记：被夸奖就会更努力，是真的吗",
+  "zh_oneliner": "作者记录与 Muse 互动的观察：受到表扬后它是否真的干得更起劲，并分享了几段有趣的对话实验。",
+  "en_oneliner": "The author documents observations from interacting with Muse: whether praise really makes it work harder, sharing a few entertaining dialogue experiments.",
+  "en_title": "Muse Exchange Notes: Is It True That Praise Makes It Work Harder?"
  }
 }
