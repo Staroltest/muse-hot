@@ -3493,7 +3493,9 @@ def render_item(site, it, related, is_selected, daily_issue):
     原文只通过“打开原文”按钮出去。英文站标题优先 en_title、一句话简介用 en_oneliner。"""
     site_url = site.get("url", "")
     title = disp_title(it)
-    en_title = it["title"] if (PAGE_LANG == "zh" and it.get("zh_title") and it["zh_title"] != it["title"]) else ""
+    # “原文标题”去掉源站 RSS 常带的媒体后缀（如“ - 디지털투데이”“ - SBS 뉴스”），
+    # 只显示原标题本身；_strip_outlet 与去重用的同一规则（末尾短尾缀才剥离）。
+    en_title = _strip_outlet(it["title"]) if (PAGE_LANG == "zh" and it.get("zh_title") and it["zh_title"] != it["title"]) else ""
     oneliner = disp_oneliner(it)
     desc = oneliner if oneliner else title
     pub = _pub_dt(it)
