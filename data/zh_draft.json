@@ -7685,5 +7685,26 @@
   "zh_title": "Meta 把个人 AI 助手 Muse 带到英国，并附带购物管控",
   "zh_oneliner": "Meta 的个人 AI 助手 Muse 于 2026 年 11 月 23 日在英国上线，面向 18 岁以上用户，可跨应用和网站规划并执行任务，并接入英国本地零售与旅行服务。",
   "en_oneliner": "Meta's personal AI agent Muse launched in the UK on November 23, 2026, for users aged 18 and over, able to plan and execute tasks across apps and websites with British retail and travel connections."
+ },
+ "https://news.google.com/rss/articles/CBMiggFBVV95cUxOVlBYam04a0FjZUZvZnVJSUZOMDRWM3hOcXpsakpvWGMweFp2eUFfR0FZN2pUT21qU05XbDJUY0U3YW1HUVVDUWh1Rlh6QUgwa1lodDRWcnJLdEcwSVVvZmw1T2dNRVBxT0czbWFTSWNRaElMckF6S3lRd1lZMU9SUXd3?oc=5": {
+  "zh_title": "Meta 在英国推出 Muse，发力消费级 AI 市场",
+  "zh_oneliner": "Meta 将 Muse 推向英国消费者市场，加码面向普通用户的 AI 布局。",
+  "en_oneliner": "Meta is bringing Muse to UK consumers, doubling down on AI for everyday users."
+ },
+ "https://news.google.com/rss/articles/CBMimgFBVV95cUxNeklPS3N1YnVaNXNPU3g5QUdhQ2EzX21SOTU5SFRyR0tVajRVZHpGLXZFMU9rRXdJRlNvNlJXbDMwSnpMYmQyTDJJUDJ4dXhVTVEyc19HLS1sUmxfRWNUXzB2SXZCeENuaGZvMU4xb21CYkdDNXo1X2NJaG5CQ2FiNEtlNVdmLXlSblhCUzZUU3JrZlhIaDZLTjNR?oc=5": {
+  "zh_title": "森宝利面向英国客户推出 Meta Muse 智能体服务",
+  "zh_oneliner": "英国零售商森宝利开始向英国客户提供 Meta 的 Muse 智能体服务。",
+  "en_oneliner": "UK retailer Sainsbury's has started offering Meta's Muse agent service to its UK customers.",
+  "en_title": "Sainsbury's launches Meta's Muse agent service for UK customers"
+ },
+ "https://github.com/facebookincubator/muse-gadget-sdk/commit/fbfe3b0f717f7f468d0a94aa370ea0ca1a94ebfe": {
+  "zh_title": "Linux 端仅接受已知服务器主机，并优化主机拒绝提示体验",
+  "zh_oneliner": "Muse gadget SDK 的 Linux 端现在只接受 Muse 应用下发的已知服务器主机，并改进了主机被拒绝时的提示体验。",
+  "en_oneliner": "The Linux side of the Muse gadget SDK now accepts only the known server hosts sent by the Muse app, with a tidier message when a host is refused."
+ },
+ "https://news.google.com/rss/articles/CBMilwFBVV95cUxOUEQxQXZuNGVUQUVYLTU4QTVPRlBLWTlubldzTjZwUGNKWHBUNUlqVFR0cE1DV2NuN1dQaW9HUklFMHVlTmFMd1JuQjhGNVQ0bWdqRllmTi10ejNMN29RMUtMU1BlQTZpV0tkLXBDcjR5c0FJV015NVJ6TjRaOUlXTWRWb1d3WW5xREpyN2hqM0pGWkZ6VDI4?oc=5": {
+  "zh_title": "Meta Muse 新增可自动更新的工具，可追踪价格与 Instagram 收藏",
+  "zh_oneliner": "Muse 新增了一批能自我更新的工具，可帮用户追踪商品价格变化和 Instagram 收藏内容。",
+  "en_oneliner": "Muse has gained self-updating tools that can track price changes and Instagram saves for users."
  }
 }
