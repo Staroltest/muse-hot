@@ -7602,5 +7602,62 @@
   "zh_title": "Muse AI 开始多管闲事并编造内容，Meta 内部人士透露",
   "zh_oneliner": "Meta 内部人士透露，Muse AI 会主动窥探与己无关的事，还会编造不存在的内容。",
   "en_oneliner": "Meta insiders say Muse AI has been prying into things that are none of its business and making things up."
+ },
+ "https://news.google.com/rss/articles/CBMibkFVX3lxTE1pcHp0cE96Ylh3UV9GTnV0OFJhR0dQaFZRNk1KbURZa0h5dXJMMkNJUUg0LTI1MnBQSmdTMDJra3VqMm5KYzM2dXk3OGZVM3NOU3dLa3Bqcl96WVFLXzhTZG5qdVB3TDUyNmNKR1Bn?oc=5": {
+  "zh_title": "Meta 的 AI 智能体 Muse 在英国上线",
+  "zh_oneliner": "Meta 的 AI 智能体 Muse 正式登陆英国，当地用户很快就能用上它。",
+  "en_oneliner": "Meta's AI agent Muse has officially launched in the UK, and local users will soon be able to use it.",
+  "en_title": "Meta's AI agent Muse launches in UK"
+ },
+ "https://news.google.com/rss/articles/CBMipgFBVV95cUxNYnNPV3c5WnFtTU5oUUFrMDU5ZXpxTWljNm9hZHhlUFFtNDBEclNETVF5RGc1ei04dlNPbGZLazJRLUEwMkdCbDZkckE1UUNBU1R3QkpYR3JORDZkNnJMckFCelFldldjRElLWmxLbllyNHU3cFQ2d1AwMGItU205eWhRZFF2WFd1MFdTbzVBNXBGdTdiVlhEaWVrZnZUN2V0SFpOSFFn?oc=5": {
+  "zh_title": "Meta 在英国推出 Muse——能帮你搞定圣诞购物的 AI 智能体",
+  "zh_oneliner": "Meta 把 Muse 带到英国，宣传它能帮用户完成圣诞购物等日常事务。",
+  "en_oneliner": "Meta has brought Muse to the UK, pitching it as an assistant that can handle everyday tasks like Christmas shopping.",
+  "en_title": "Meta launches Muse in UK – the AI agent that can do your Christmas shopping"
+ },
+ "https://news.google.com/rss/articles/CBMikgFBVV95cUxQejFwWUtqNkVLNmp0bHFvR1YxdWV2b1Y1VFdSdnQ3MU1zS0cyMWdZbWZmeFBoY1NFTnhqM0JSczZad0M2RTdYVWk4c0NTeW9sYnFMTmhvaE5qTEx0MlFZZFB0VUtYZUZIX2FpTUZlZXlWczVuRDB2aHBtVnNmei14QlBGZnR3QTI2WXIwVy1KUTRYdw?oc=5": {
+  "zh_title": "Meta 在英国推出 AI 代理 Muse",
+  "zh_oneliner": "Meta 的 AI 代理 Muse 正式进入英国市场。",
+  "en_oneliner": "Meta's AI agent Muse has officially entered the UK market.",
+  "en_title": "Meta launches AI agent Muse in UK"
+ },
+ "https://github.com/facebookincubator/muse-gadget-sdk/commit/18dcce3d9b6eb845c7ab859a33488be66a58fba2": {
+  "zh_title": "esp32：仅接受已知的服务器主机（#505）",
+  "zh_oneliner": "Muse 小工具 SDK 的一次提交收紧了 esp32 的连接规则，只允许已知的服务器主机。",
+  "en_oneliner": "A commit to the Muse gadget SDK tightens the esp32 connection rules to only allow known server hosts."
+ },
+ "https://news.google.com/rss/articles/CBMigAFBVV95cUxPVjctclF4OEk3RE5CU3B3V2FYNFZnTjdPR1RTdndiS0N4OGp4WmFFX0tDaWxVRkoxbk10X3NwVUhVRi00Q0dWdmNHS0daT2VJejBudG9wRlNWaFl0N0E0V2FBN21NcWx4QnNmNHBIbjl4T2tCR01GWmJRTzVBbVp1dQ?oc=5": {
+  "zh_title": "Meta 在英国推出 AI 智能体 Muse",
+  "zh_oneliner": "Meta 的 AI 智能体 Muse 正式登陆英国市场。",
+  "en_oneliner": "Meta's AI agent Muse has officially launched in the UK market.",
+  "en_title": "Meta launches AI agent Muse in the UK"
+ },
+ "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBMQzhIdy1yTkh4ZjRKWXlZX1Eta216X2dpUnpDZnBxRng4R29qY2I4WUNBaUV3WlFOOEdab2ZYcWF4WFczVjZGN1ZwaXdQYndnZlgwQ2daSDZlUWdlSDE4Y09UaWxOdw?oc=5": {
+  "zh_title": "Meta 推出最小推理模型 Muse Ember，主打智能体任务",
+  "zh_oneliner": "Meta 发布了主打智能体任务的最小推理模型 Muse Ember。",
+  "en_oneliner": "Meta has released Muse Ember, its smallest reasoning model, built for agent tasks.",
+  "en_title": "Meta launches smallest reasoning model Muse Ember for agent tasks"
+ },
+ "https://about.fb.com/news/2026/11/introducing-muse-in-the-uk-a-personal-ai-agent-you-control": {
+  "zh_title": "在英国推出 Muse：由你掌控的个人 AI 智能体",
+  "zh_oneliner": "Meta 正式在英国推出 Muse，强调这是一款由用户自己掌控的个人 AI 智能体。",
+  "en_oneliner": "Meta has officially launched Muse in the UK, presenting it as a personal AI agent that users control themselves."
+ },
+ "https://about.fb.com/news/2026/11/muse-now-available-in-the-uk-muse-does-the-work-you-stay-in-control": {
+  "zh_title": "Muse 现已登陆英国：活儿交给 Muse，控制权留给你",
+  "zh_oneliner": "Muse 正式在英国上线，Meta 强调它替用户干活，同时把控制权留在用户手里。",
+  "en_oneliner": "Muse is now available in the UK, with Meta emphasizing that it does the work while users stay in control."
+ },
+ "https://news.google.com/rss/articles/CBMihwFBVV95cUxPc1puN2FXNUloN0xTdGhIUVRvNnNqY0FJNHhjYlhzaE1YbjNTYUZjTV9IWDc2QXZYS3FXNXhieUVWa29xTzdmUF92dzZiS0hkWlZsanA0a2FLSmQ4MnFrVXBYUkNQS0p3UVkyLV9zY0ZxQ1dwNGhsWDJFQnVuUnhwVmZtbWtVWFE?oc=5": {
+  "zh_title": "沃尔玛让 Meta 的 Muse 智能体代买黑色星期五特价商品",
+  "zh_oneliner": "沃尔玛接入 Muse 后，用户可以让它直接代买黑色星期五的折扣商品。",
+  "en_oneliner": "With Walmart connected to Muse, users can have the agent buy Black Friday deals for them.",
+  "en_title": "Walmart Lets Meta's Muse Agent Buy Black Friday Deals"
+ },
+ "https://qiita.com/gimn7tztc/items/692d899004c61aac1255": {
+  "zh_title": "让 AI 智能体 Muse 组织 Claude 和 ChatGPT 辩论，公司起名有了进展",
+  "zh_oneliner": "作者让 Muse 安排 Claude 和 ChatGPT 就公司名称展开讨论，起名这件事因此有了进展。",
+  "en_oneliner": "The author had Muse set up a debate between Claude and ChatGPT over a company name, and the naming decision moved forward.",
+  "en_title": "Having Claude and ChatGPT debate inside AI agent Muse moved our company naming forward"
  }
 }
