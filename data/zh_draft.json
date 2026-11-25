@@ -8772,5 +8772,10 @@
   "zh_title": "Muse AI 智能体直接接入 Instagram 私信",
   "zh_oneliner": "Meta 的 AI 智能体 Muse 现已直接接入 Instagram 私信，用户可在聊天中直接使用。",
   "en_oneliner": "Meta's AI agent Muse is now integrated directly into Instagram DMs, so users can use it right inside their chats."
+ },
+ "https://github.com/facebookincubator/muse-gadget-sdk/commit/f9b593ca335c9ad3260173192e7e91ee2ac32ca9": {
+  "zh_title": "esp32：在标签文本中显示中日韩字符，并为 ASCII 提供备用字体（#493）",
+  "zh_oneliner": "Muse 小配件 SDK 的这项更新让 esp32 设备能在标签里正确显示中日韩字符，ASCII 字符则自动用备用字体兜底。",
+  "en_oneliner": "This update to the Muse gadget SDK lets esp32 devices display CJK characters correctly in labels, with ASCII characters automatically falling back to a backup font."
  }
 }
