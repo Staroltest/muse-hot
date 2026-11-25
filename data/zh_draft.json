@@ -8756,5 +8756,21 @@
   "zh_title": "ESP32 与 Linux：下次注册时向 Muse 汇报崩溃（#506）",
   "zh_oneliner": "Muse 小工具 SDK 新增崩溃上报：ESP32 与 Linux 设备在下次注册时把上一次崩溃情况告诉 Muse，便于排查问题。",
   "en_oneliner": "The Muse gadget SDK adds crash reporting: ESP32 and Linux devices tell Muse about a previous crash at the next registration, making it easier to diagnose issues."
+ },
+ "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBMcWdybzVlV2dGT2VOblBXSjYyVzYtYmwwVTRwdWFDSjRFZDJuSzhtMGhuWE1tUlkwZ21DeERhWWFFakp6OUVhYVJQNlNoU1JqUUx4eF9hU1lKN0ZZcUtwbg?oc=5": {
+  "zh_title": "沃尔玛接入Meta旗下AI购物助手Muse",
+  "zh_oneliner": "沃尔玛接入了 Meta 的 AI 购物助手 Muse，购物时可获得 AI 协助。",
+  "en_oneliner": "Walmart has integrated Meta's AI shopping assistant Muse, bringing AI assistance to shoppers.",
+  "en_title": "Walmart Integrates Meta's AI Shopping Assistant Muse"
+ },
+ "https://github.com/facebookincubator/muse-gadget-sdk/commit/93486b63c2ac7a03be4b77155f88bdff783227f8": {
+  "zh_title": "Linux：通过 Gadget API 向本地客户端提供 Muse 的名称（#501）",
+  "zh_oneliner": "Muse Gadget SDK 的一次更新，让 Linux 本地客户端能从 Gadget API 获知用户给 Muse 起的名字，不再只能写死 Muse。",
+  "en_oneliner": "A Muse Gadget SDK update lets Linux local clients learn the name a user gave their Muse from the Gadget API instead of hardcoding it."
+ },
+ "https://news.google.com/rss/articles/CBMimgFBVV95cUxOYW9XY2JXTm5KMzhhcGNNeWVxdUJTdnNYQ1c5dEN0N2VUVThlVFY3RFpHa2RwRi03RGtnRUstR3cxb2o4RTVJWU1GcWxqdkhJTTEwLXNtbERwVmI3VXlHUE1RakpUWmtOV2NsQlBILXZPOUJDbEY4blZvX3dybUU3RXVfN3BaNDg1NnFob0FxWE5rblVQOTdXNVdn?oc=5": {
+  "zh_title": "Muse AI 智能体直接接入 Instagram 私信",
+  "zh_oneliner": "Meta 的 AI 智能体 Muse 现已直接接入 Instagram 私信，用户可在聊天中直接使用。",
+  "en_oneliner": "Meta's AI agent Muse is now integrated directly into Instagram DMs, so users can use it right inside their chats."
  }
 }
