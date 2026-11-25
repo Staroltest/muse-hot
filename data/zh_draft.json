@@ -8871,5 +8871,74 @@
   "zh_title": "Instagram 把 Meta Muse AI 助手接入私信，并扩展帖子收藏功能",
   "zh_oneliner": "Instagram 在私信中加入 Meta Muse AI 助手，同时升级了帖子收藏功能。",
   "en_oneliner": "Instagram has added the Meta Muse AI assistant to direct messages and expanded its saved posts features."
+ },
+ "https://www.youtube.com/watch?v=56BfjWBbEtc": {
+  "zh_title": "用 Muse AI 实现健康目标：拍下食物照片，获得会调整的计划",
+  "zh_oneliner": "这支视频展示如何用 Muse AI 达成健康目标：拍下食物照片，就能得到一份会随情况调整的饮食计划。",
+  "en_oneliner": "This video shows how to use Muse AI for health goals: photograph your food and get a plan that adjusts as you go."
+ },
+ "https://news.google.com/rss/articles/CBMijwFBVV95cUxOeDhFUi12RVJRTlZXS0dFa1NROFZsMTJrR1NKTVdfMnpYWS1uZzRfVm0tQm1PMEU0S2ZnOVpEQmRZMnZnaDFPQXczZGUtWkJ5bHFQRHU2dXUzY19rMjQxZHlwMlFWZ0NrU05BMXh3NkV4U3JsUmdHMjM0czNPWFI3OF9tZDBnWVZmQ05XRTk3WQ?oc=5": {
+  "zh_title": "Meta 把 Muse AI 智能体带进 Instagram 私信",
+  "zh_oneliner": "Meta 将 Muse 智能体接入 Instagram 私信，用户可以在聊天里直接调用 AI 帮忙处理事务。",
+  "en_oneliner": "Meta brings its Muse agent into Instagram DMs, letting users call on the AI directly inside chats to get things done."
+ },
+ "https://news.google.com/rss/articles/CBMipgFBVV95cUxQbjA4SGQ5LXdlVXpBWHcyVVpmdnVjSmZwUGx4ZS1wcFgzTnZScC0xazJmbmxpRHQyQml2VG9GSER1V1lHb1ZwdUVwZGV1N0kxM09YT0lSQTAtVHdfcDlCcDBfV000TEwxc3c5NTV2UFR4ZFA4Y0hfRWVCdUpGQ2EyeTdNMUcxYVh5ZnNCYWw1dlVGRWtsYXpRcF9JQ2o3a0I4aUVqTU53?oc=5": {
+  "zh_title": "AI 智能体开始代购！沃尔玛接入 Meta Muse 并为 AI 代购划定边界",
+  "zh_oneliner": "沃尔玛接入 Meta Muse，让 AI 智能体帮顾客购物，同时明确了 AI 代购可以做什么、不能做什么。",
+  "en_oneliner": "Walmart integrates Meta Muse so AI agents can shop for customers, while setting clear limits on what AI-assisted purchasing may do."
+ },
+ "https://news.google.com/rss/articles/CBMipwFBVV95cUxPaGZFUE42akUtZEJ6NWhoWHRfazNjTE1nMDFqTjdnOFZocG82Sy01LWE1a1JDYWRYOHlfbTd3ZVVJYnpZVldETUc2RWgyRmFOWTI4U3lud0xva1dfT25JaDd6dUZDejNnbVo3b1ZJSEMwdzBhcUJiVERvc08zR0VmTjBoUl9ybDZuaTlKMjBfZjVaSkdHMUg5RjZtRUttTEZtSUNIX21TWQ?oc=5": {
+  "zh_title": "Meta 的 Muse 开始与英国零售商合作购物，但联盟佣金归谁？",
+  "zh_oneliner": "Muse 已开始帮用户在英国零售商处购物，随之而来的问题是：这笔订单的联盟推广佣金该算给谁。",
+  "en_oneliner": "Muse has started shopping with UK retailers, raising the question of who earns the affiliate commission on those orders."
+ },
+ "https://news.google.com/rss/articles/CBMiYkFVX3lxTFA0OGd1clFJaTlvWlVvcWJDN01hbmZxVVRsT0JoRHJWOFhMT3J3bVhtekdqbE5HcGZZcVJPZVNUNnFLOVFBTVB5QTUxOFNYa3hoSll0Rkwzd1VJb1BNcFp4MTRB?oc=5": {
+  "zh_title": "Meta与亚马逊据悉磋商解除对Muse购物机器人的封锁",
+  "zh_oneliner": "据报道，Meta 正与亚马逊磋商，希望解除亚马逊对 Muse 购物机器人的封锁。",
+  "en_oneliner": "Meta is reportedly in talks with Amazon to lift the block on its Muse shopping bot.",
+  "en_title": "Meta and Amazon Reportedly in Talks to Lift Block on Muse Shopping Bot"
+ },
+ "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5rb2N3enlTSXRFSVg4TEV3dC0tNVZsUWdmVnBNYWZscTJBWW42a2E1VjF4VU85aG5sRTBEOW9NdkR0V0VEWlUtRlNVWUdwX0NoREJHbWppN0tJMWRLMlE?oc=5": {
+  "zh_title": "Meta与亚马逊磋商解除对Muse购物AI代理的封锁",
+  "zh_oneliner": "报道称 Meta 与亚马逊正在磋商解除对 Muse 购物 AI 代理的封锁。",
+  "en_oneliner": "Meta and Amazon are reportedly negotiating to lift the block on the Muse shopping AI agent.",
+  "en_title": "Meta and Amazon Negotiate Lifting Block on Muse Shopping AI Agent"
+ },
+ "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQbmgxVF9CblBtU1FrZWRUd0ozUnRESDY2U1hOTzMyU1ZGZmpuWFl6RVN3ZVpBRjVjVXREQ0dQd3ZNQ3pLb1NZM2F3R3ptcXZHbVVyalBpX0xYaGxSVTBHRWNZSkV3Q3FmZFFidWdOR3RKMmZTMnZKSWx4elpNX2ZtdjBtSTBLeUVHbGVZX29VODBoUDlybHpmVmlrcS1jcjhkbENzMmctTUI1Zw?oc=5": {
+  "zh_title": "AI智能体来帮忙“买买买”！沃尔玛引入Meta Muse，并明确AI代购的范围",
+  "zh_oneliner": "沃尔玛引入 Meta Muse，让 AI 智能体协助顾客购物，同时明确了 AI 代购的适用范围。",
+  "en_oneliner": "Walmart adopts Meta Muse to let AI agents assist customers with shopping, while clarifying the scope of AI-assisted purchasing.",
+  "en_title": "AI Agents Support Shopping! Walmart Adopts Meta Muse and Clarifies Scope of AI-Assisted Purchasing"
+ },
+ "https://news.google.com/rss/articles/CBMipwFBVV95cUxQaEpyOG42ai1oTWlISGdqSUZZV1c3Tlk5c1FKZk02NXVwbXVBZ1BHUzlVdzh3UUlQNFJMVGxrMHQwRGxKZzV0cS05R3BfUFJNOGpnSUsxNHpTTGhlbDhtRWhvV2pWVkhfaVhJdUxxbGM5SWpPYVpVMHpLNUlnYTZ4YW1TM3VJaUk3SlBaX2ZfNDFyNUZBMk8xMUNxU2dJemRCYTAzRzhGVQ?oc=5": {
+  "zh_title": "Instagram 把 Muse AI 带进私信，帮用户整理收藏帖子",
+  "zh_oneliner": "Instagram 将 Muse AI 接入私信，可以帮用户整理和管理收藏的帖子。",
+  "en_oneliner": "Instagram brings Muse AI into DMs to help users organize their saved posts."
+ },
+ "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9UZXBJYVdJS2hPNGZISHNrX3JRcVNzcUhIU0xYNC0yaGVxNHdCNG5XWVlDaTFhLXBkZ01kYU5aQ25STENQRFpIMg?oc=5": {
+  "zh_title": "AI智能体来“买买买”！沃尔玛接入Meta Muse 并为AI代购划定边界",
+  "zh_oneliner": "沃尔玛接入 Meta Muse，AI 智能体开始帮用户代购，同时平台为 AI 代购划定了边界。",
+  "en_oneliner": "Walmart integrates Meta Muse, letting AI agents shop on users' behalf while setting boundaries for AI-assisted purchasing.",
+  "en_title": "AI Agents Go Shopping! Walmart Integrates Meta Muse and Sets Boundaries for AI-Assisted Purchasing"
+ },
+ "https://news.google.com/rss/articles/CBMia0FVX3lxTE1zaEowZThGdHQtd2thQTlVY2lMUDJrZXI5cUcxT3lRaTdkdjZBalN0SFJmQVN1Ym85NUV4NlNFTFNUc3JKUmY4SjdkajU5aXZuci1rWGM3X1luVm11VWlUaklJV2dycWRqVWdv?oc=5": {
+  "zh_title": "Meta 把 Muse 接入 Instagram，扩展 AI 购物",
+  "zh_oneliner": "Meta 将 Muse 接入 Instagram，进一步扩展 AI 购物功能。",
+  "en_oneliner": "Meta integrates Muse into Instagram to expand AI shopping."
+ },
+ "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNNHVVVzlBazJHODFZeVlyeHhrd2RoWWVaUEVoYnFZMVVrUWNrNko0Z0NWanY2Qmw4QWxWbnl1cTd4Um5OUzhUOVd0dVVoLW1CVTk1SVJaX3hJNkp6OUlhUkVtSG9JQy1wakxUUHkxdEdSZTNENWo3WXp2WEFmSW1JQ0t5NFY1ZkY2?oc=5": {
+  "zh_title": "Meta 的自主 Muse AI 智能体准备好进军英国零售业了吗？",
+  "zh_oneliner": "探讨 Meta 的自主 Muse 购物智能体能否胜任英国零售场景，以及零售商需要为此做哪些准备。",
+  "en_oneliner": "Examines whether Meta's autonomous Muse shopping agent is ready for UK retail and what retailers need to prepare."
+ },
+ "https://news.google.com/rss/articles/CBMimgFBVV95cUxPWnlQSEhjT3k3enJDd0xzbWJwdVQwaFdrMzVWSTZvQUZNUWp3TUpGMngzbG5tbUE2eTZSeWlpalpKbWttNWxXRXhjSnE3YkZ3UHNRVU1uQ0M2M2dzalhlNnlEQ1Z1Nmh3ck9UWkFXLXBXUGx1UVEwT0NpR2VMSGdLdVJKYmppOU5oVTFqN0dxVWZtR1hhZndTeEpn?oc=5": {
+  "zh_title": "Meta 与亚马逊商讨解除亚马逊对 Muse 购物智能体的封锁",
+  "zh_oneliner": "Meta 正与亚马逊协商，希望亚马逊放行 Muse 购物智能体，让它能在亚马逊上帮用户购物。",
+  "en_oneliner": "Meta is in talks with Amazon to lift its block on the Muse shopping agent so it can help users shop on Amazon."
+ },
+ "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9MT0RDYThjUndZTUdJdzVvTnBlVWlGX2tHRGpKZUJPUXBJUzIyV2I2UEpDNWQ0bkRLVHhFT0MxS2lpUE9IazgxM1lkcXo0NVo1TFF1QWJjeGl6SzZXQlhCQ18tbGI?oc=5": {
+  "zh_title": "Meta 把 Muse AI 接入 Instagram，扩展购物功能",
+  "zh_oneliner": "Meta 将 Muse AI 整合进 Instagram，借助 AI 助手扩展购物体验。",
+  "en_oneliner": "Meta integrates Muse AI into Instagram, expanding the shopping experience with the AI assistant."
  }
 }
