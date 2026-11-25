@@ -8777,5 +8777,10 @@
   "zh_title": "esp32：在标签文本中显示中日韩字符，并为 ASCII 提供备用字体（#493）",
   "zh_oneliner": "Muse 小配件 SDK 的这项更新让 esp32 设备能在标签里正确显示中日韩字符，ASCII 字符则自动用备用字体兜底。",
   "en_oneliner": "This update to the Muse gadget SDK lets esp32 devices display CJK characters correctly in labels, with ASCII characters automatically falling back to a backup font."
+ },
+ "https://news.google.com/rss/articles/CBMingFBVV95cUxOT2wyNUhubWZpNEFMZ0ZBejF2Y0xJMVlmUkJHeHc4d09EVHFPWk93V2o0OENmOG54b1ZQYjNjai1rQUZGZFkyLU80emZZZENfOU80RWZhUF9iQTFIcnZabXN1U0RkanpZbW1qUVB2SWZwLTZ1MVFYcDFBTTI0UmdVTWRLMy1PSmxRX2xXNlFZZzVndGowS1oyWFBQYnp1dw?oc=5": {
+  "zh_title": "Meta 将 Muse AI 助手接入 Instagram 私信",
+  "zh_oneliner": "Meta 已将 AI 助手 Muse 接入 Instagram 私信，用户无需离开聊天就能向它求助。",
+  "en_oneliner": "Meta has brought its AI assistant Muse into Instagram DMs, so users can ask it for help without leaving their chats."
  }
 }
