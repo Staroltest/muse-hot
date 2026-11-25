@@ -1953,17 +1953,28 @@ function slotHTML(it){
 function normTitle(t){
   return (t||'').toLowerCase().replace(/[\\s\\-_·•|/\\:;,.!?？！。、，；：（）()\\[\\]{}“”"'‘’<>《》]+/g,'');
 }
+function stripOutlet(t){
+  t=(t||'').trim();
+  var seps=[' ——《',' —— ',' - ',' | ',' — '];
+  for(var i=0;i<seps.length;i++){
+    var idx=t.lastIndexOf(seps[i]);
+    if(idx<0)continue;
+    var head=t.slice(0,idx),tail=t.slice(idx+seps[i].length);
+    if(head.length>=15&&tail.length<=25)return head.trim();
+  }
+  return t;
+}
 function groupSimilarJS(items){
   var groups=[];
   items.forEach(function(it){
-    var norm=normTitle(pickTitle(it));
+    var norm=normTitle(stripOutlet(pickTitle(it)));
     var date=cstParts(new Date(it.published)).iso;
     var merged=false;
     if(norm.length>=10){
       for(var i=0;i<groups.length;i++){
         var g=groups[i],m=g.main;
-        if(m.source_id!==it.source_id||cstParts(new Date(m.published)).iso!==date)continue;
-        var mn=normTitle(pickTitle(m));
+        if(cstParts(new Date(m.published)).iso!==date)continue;
+        var mn=normTitle(stripOutlet(pickTitle(m)));
         if(mn.length<10)continue;
         if(norm===mn||((norm.indexOf(mn)===0||mn.indexOf(norm)===0)
             &&Math.min(norm.length,mn.length)/Math.max(norm.length,mn.length)>=0.8)){
@@ -2524,21 +2535,25 @@ def _norm_title(title):
 
 
 def group_similar(items):
-    """保守版同事件归组（B13）：只合并同一来源、同一天、标题归一化后相同
+    """保守版同事件归组（B13）：只合并同一天、标题归一化后相同
     或仅差后缀（短的是长的的前缀，且长度比 ≥0.8；归一化后至少 10 字）。
-    返回 [{main, extra:[...]}]，顺序不变；跨来源不合并。"""
+    2026-11-25 把关：去掉“同一来源”限制——同一篇文章经不同订阅源
+    （不同 Google 新闻查询、Google 新闻 vs 原站）入库时标题相同，
+    之前因 source_id 不同各占时间线一格；跨来源合并后仍保留
+    “另有 N 篇报道”展开链接。时间线归组仍只认标题本身，不用
+    _same_topic（后者会把不同角度的同主题文章也并掉，时间线要的是
+    完整不是精选）。返回 [{main, extra:[...]}]，顺序不变。"""
     groups = []
     for it in items:
         pub = it["_pub"].astimezone(CST).date()
-        key = (it.get("source_id", ""), pub)
-        norm = _norm_title(it.get("zh_title") or it["title"])
+        norm = _norm_title(_strip_outlet(it.get("zh_title") or it["title"]))
         merged = False
         if len(norm) >= 10:
             for g in groups:
                 m = g["main"]
-                if (m.get("source_id", ""), m["_pub"].astimezone(CST).date()) != key:
+                if m["_pub"].astimezone(CST).date() != pub:
                     continue
-                mnorm = _norm_title(m.get("zh_title") or m["title"])
+                mnorm = _norm_title(_strip_outlet(m.get("zh_title") or m["title"]))
                 if len(mnorm) < 10:
                     continue
                 if norm == mnorm or (
@@ -2558,6 +2573,23 @@ first can could will would should may might also more most other another per via
 says said shows show faces facing amid report reports news anyone else have has get got
 make made take using used work works thing things way days day week today just still back even
 really much many very well one two three also screen add adds added fix fixed issue""".split())
+
+
+# _same_topic 规则 (6) 用：Meta 系社媒/通讯入口词与聊天标记。
+# 背景见 _same_topic：入口 + 聊天标记双条件才算同事件，广告角度与
+# 收藏整理教程因无聊天标记不受影响。
+_SURFACES = ("instagram", "whatsapp", "messenger", "facebook")
+_CHAT_MARKERS = ("私信", "聊天", "direct message")
+
+
+def _surf_chat(it):
+    """返回 (入口词集合, 是否含聊天标记)：标题+中英文简介一起看，
+    同一事件的不同 outlet 措辞不同，标题里未必有标记。"""
+    text = ((it.get("title") or "") + " " + (it.get("zh_title") or "")
+            + " " + (it.get("zh_oneliner") or "") + " " + (it.get("en_oneliner") or "")).lower()
+    surf = {w for w in _SURFACES if w in text}
+    chat = any(m in text for m in _CHAT_MARKERS) or re.search(r"\bdms?\b", text) is not None
+    return surf, chat
 
 
 def _strip_outlet(title):
@@ -2831,6 +2863,23 @@ def _same_topic(a, b):
             if abs((pa - pb).total_seconds()) <= 3 * 86400:
                 la, lb = _lead_acronym(a), _lead_acronym(b)
                 if la is not None and la == lb:
+                    return True
+        except TypeError:
+            pass
+    # (6) 2026-11-25 把关新增：同社媒/通讯入口的同事件——两标题+简介都含
+    # 同一入口词（instagram/whatsapp/messenger/facebook）且都含聊天标记
+    # （私信/聊天/direct message/DM），3 天内发布。
+    # 背景：11-24/25 的 Instagram 私信上线有 30+ 条变体标题，措辞几乎不重叠
+    # （显著词 Jaccard 0.02–0.06），规则 (2)(3) 全漏，热点前 20 里占 4 席、
+    # 日报占 2 席；30 天库实测本规则只并出 1 组 23 条（全是该事件），
+    # 收藏整理教程与广告角度因无聊天标记不受影响。
+    # 只用于精选/热点/日报去重，不进时间线归组（见 group_similar）。
+    if pa is not None and pb is not None:
+        try:
+            if abs((pa - pb).total_seconds()) <= 3 * 86400:
+                sa, ca6 = _surf_chat(a)
+                sb, cb6 = _surf_chat(b)
+                if (sa & sb) and ca6 and cb6:
                     return True
         except TypeError:
             pass
@@ -4213,6 +4262,31 @@ def main():
                 print(f"zh: {applied} items matched from zh_draft.json")
         except (json.JSONDecodeError, AttributeError) as e:
             print("zh_draft.json skipped (%s)" % e, file=sys.stderr)
+    # 2026-11-25 把关：入库标题索引——同一篇文章经不同订阅源/不同 Google
+    # 新闻查询会拿到不同的 CBM 链接，链接去重拦不住；30 天库实测 106 组
+    # 标题完全相同的重复（同日 98 组、3 天内跨日 16 组，全是同一篇重入）。
+    # 以归一化标题（去 outlet 后缀，≥10 字）+ 3 天发布窗口为准，
+    # 比对原文标题与已入库条目的原文标题/中文标题；本轮新入库的也即时进索引。
+    def _ingest_title_key(title):
+        t = _norm_title(_strip_outlet(title or ""))
+        return t if len(t) >= 10 else ""
+
+    _cutoff_idx = now - timedelta(days=sc["history_days"])
+    title_index = {}
+    for _old in history.values():
+        try:
+            _op = datetime.fromisoformat(_old["published"])
+        except ValueError:
+            continue
+        if _op.tzinfo is None:
+            _op = _op.replace(tzinfo=timezone.utc)
+        if _op < _cutoff_idx:
+            continue
+        for _t in {_ingest_title_key(_old.get("title")),
+                   _ingest_title_key(_old.get("zh_title"))}:
+            if _t:
+                title_index.setdefault(_t, []).append(_old)
+
     for src in sources:
         try:
             body = fetch(src["url"])
@@ -4238,6 +4312,21 @@ def main():
             it["id"] = hashlib.sha1(norm_link(it["link"]).encode()).hexdigest()
             if it["id"] in history:
                 continue  # 已收录：去重
+            tk = _ingest_title_key(it["title"])
+            if tk:
+                _dup = False
+                for _old in title_index.get(tk, ()):
+                    try:
+                        _op = datetime.fromisoformat(_old["published"])
+                    except ValueError:
+                        continue
+                    if _op.tzinfo is None:
+                        _op = _op.replace(tzinfo=timezone.utc)
+                    if abs((pub - _op).total_seconds()) <= 3 * 86400:
+                        _dup = True
+                        break
+                if _dup:
+                    continue  # 同文重入：标题相同且 3 天内已收录（不同链接同一篇）
             entry = {
                 "id": it["id"], "title": it["title"], "link": it["link"],
                 "source": it["source"], "source_id": it["source_id"],
@@ -4248,6 +4337,8 @@ def main():
                 entry["summary_full"] = it["summary_full"]
             enrich_store_item(entry)
             history[it["id"]] = entry
+            if tk:
+                title_index.setdefault(tk, []).append(entry)
     # 淘汰超过 history_days 的旧条目
     cutoff_hist = now - timedelta(days=sc["history_days"])
     history = {k: v for k, v in history.items()

@@ -545,17 +545,28 @@ function slotHTML(it){
 function normTitle(t){
   return (t||'').toLowerCase().replace(/[\s\-_·•|/\:;,.!?？！。、，；：（）()\[\]{}“”"'‘’<>《》]+/g,'');
 }
+function stripOutlet(t){
+  t=(t||'').trim();
+  var seps=[' ——《',' —— ',' - ',' | ',' — '];
+  for(var i=0;i<seps.length;i++){
+    var idx=t.lastIndexOf(seps[i]);
+    if(idx<0)continue;
+    var head=t.slice(0,idx),tail=t.slice(idx+seps[i].length);
+    if(head.length>=15&&tail.length<=25)return head.trim();
+  }
+  return t;
+}
 function groupSimilarJS(items){
   var groups=[];
   items.forEach(function(it){
-    var norm=normTitle(pickTitle(it));
+    var norm=normTitle(stripOutlet(pickTitle(it)));
     var date=cstParts(new Date(it.published)).iso;
     var merged=false;
     if(norm.length>=10){
       for(var i=0;i<groups.length;i++){
         var g=groups[i],m=g.main;
-        if(m.source_id!==it.source_id||cstParts(new Date(m.published)).iso!==date)continue;
-        var mn=normTitle(pickTitle(m));
+        if(cstParts(new Date(m.published)).iso!==date)continue;
+        var mn=normTitle(stripOutlet(pickTitle(m)));
         if(mn.length<10)continue;
         if(norm===mn||((norm.indexOf(mn)===0||mn.indexOf(norm)===0)
             &&Math.min(norm.length,mn.length)/Math.max(norm.length,mn.length)>=0.8)){
