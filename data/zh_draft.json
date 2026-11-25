@@ -8751,5 +8751,10 @@
   "zh_title": "Meta 的 Muse AI 承诺改变你的生活，前提是能获取你最宝贵的数据",
   "zh_oneliner": "Meta 宣称 Muse AI 能改变用户生活，但前提是获取用户最宝贵的数据，隐私与便利之间的权衡再次成为焦点。",
   "en_oneliner": "Meta says Muse AI can change users' lives, but only by accessing their most valuable personal data, putting the privacy-versus-convenience trade-off back in focus."
+ },
+ "https://github.com/facebookincubator/muse-gadget-sdk/commit/a4f4ea97a1a18b5ea79c5d4c048ab31636563f17": {
+  "zh_title": "ESP32 与 Linux：下次注册时向 Muse 汇报崩溃（#506）",
+  "zh_oneliner": "Muse 小工具 SDK 新增崩溃上报：ESP32 与 Linux 设备在下次注册时把上一次崩溃情况告诉 Muse，便于排查问题。",
+  "en_oneliner": "The Muse gadget SDK adds crash reporting: ESP32 and Linux devices tell Muse about a previous crash at the next registration, making it easier to diagnose issues."
  }
 }
