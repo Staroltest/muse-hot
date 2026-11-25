@@ -8782,5 +8782,25 @@
   "zh_title": "Meta 将 Muse AI 助手接入 Instagram 私信",
   "zh_oneliner": "Meta 已将 AI 助手 Muse 接入 Instagram 私信，用户无需离开聊天就能向它求助。",
   "en_oneliner": "Meta has brought its AI assistant Muse into Instagram DMs, so users can ask it for help without leaving their chats."
+ },
+ "https://news.google.com/rss/articles/CBMinAFBVV95cUxNbFZrb3pJUHc3MGFvSnI5cV9GSE40UnhHQU9uRDB2MHlYNnZIVk9JX3lhdEsxXzlNaTg1OFhSN0FBdG9UcGJ4MUVLQjlYM015bXZUWXpQdzA5Tnd1czQ3a2lzN05NV0ZUSkx1VWdhakF4WGJxb3NxQmxWaXNVelFiTWlZRjNlN1ZiWkE1SEZTY3JRa1RWRlJUQVpMYVU?oc=5": {
+  "zh_title": "独家：Meta 与亚马逊商讨结束对 Muse 购物机器人的封锁，广告与搜索成关键议题",
+  "zh_oneliner": "Meta 与亚马逊正在商讨解除针对 Muse 购物机器人的封锁，广告和搜索成为谈判中的关键议题。",
+  "en_oneliner": "Meta and Amazon are discussing lifting the blockade on Muse shopping bots, with ads and search emerging as the key issues in the talks."
+ },
+ "https://github.com/facebookincubator/muse-gadget-sdk/commit/090b01e010150e0b8e5a2b482e4de2d485b643bc": {
+  "zh_title": "esp32：Muse 恢复连接后清除轮次失败提示（#495）",
+  "zh_oneliner": "ESP32 小工具在 Muse 重新连通后，会自动清除之前显示的轮次失败提示。",
+  "en_oneliner": "The ESP32 gadget now clears the turn-failure caption once Muse becomes reachable again."
+ },
+ "https://news.google.com/rss/articles/CBMirgFBVV95cUxPal83WHB2T25nNllTTFRCUWNhUEVqSzc5b291RV9hNURCR013VVBvaGpmWmdTZi1NY1I3VERISXNOdUs1ejFJcXJBZDRfb2VpUkRzN2sxX0lwdENEZFFmQXlDbF9zSmc3dDQwb09YcDJuOE1CTkFIWldhRVhuTnlyOWVDN3Z1QldtV0FPclY3RFpNM1dtSUdYMmh2cERtWWtPd1JPZkY5WmRmS3A5M1HSAbIBQVVfeXFMTVNlWnhyVEVjRUlhOEJSNjFqWDZ5T2F4M0I0YzlNSTdZRkUyWXhjYTVBUGVfTVFQMjdpMzNTY1FWb3BIWHNmTEpqNWJJeldXbUtXTkVVTlVuLXo2U1ZIOTFZaUJEcjZJTHcwbDdyLUdDcHp1V2RWTERlQVRYaGw0VUtjcWdYZUczdW10LTJHTklBbUtubnl0THdMandVWXg0NGRKQXQxME1XejZ4MFdJTjBBUQ?oc=5": {
+  "zh_title": "Meta 把 Muse AI 带进 Instagram 私信，印度用户还得再等等",
+  "zh_oneliner": "Muse AI 已进入 Instagram 私信，但印度用户暂时还用不上。",
+  "en_oneliner": "Muse AI has arrived in Instagram DMs, though users in India will have to wait a little longer."
+ },
+ "https://news.google.com/rss/articles/CBMieEFVX3lxTE5Ga3FsaGdYaUtRSWJCRTdNNE5OQ093Zi16ZnBXYS1nb0w1bmpUUXcyQmxRQ1BiZnNUcXYtQzU1YnN2bnZMV3lxUl9HUk5hLUZ3dkV0cDFveDhCV0VETlVlRHd5YTRzN2R1ZTVVcGdPTWlWaU44c0lZQQ?oc=5": {
+  "zh_title": "揭秘苹果打造类 Muse AI 智能体的计划",
+  "zh_oneliner": "苹果正在筹划一款类似 Meta Muse 的 AI 智能体，相关计划细节浮出水面。",
+  "en_oneliner": "Apple is reportedly planning an AI agent similar to Meta's Muse, with details of the plan now surfacing."
  }
 }
