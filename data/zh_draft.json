@@ -8802,5 +8802,42 @@
   "zh_title": "揭秘苹果打造类 Muse AI 智能体的计划",
   "zh_oneliner": "苹果正在筹划一款类似 Meta Muse 的 AI 智能体，相关计划细节浮出水面。",
   "en_oneliner": "Apple is reportedly planning an AI agent similar to Meta's Muse, with details of the plan now surfacing."
+ },
+ "https://news.google.com/rss/articles/CBMimwFBVV95cUxPMm56a29ZbmFac2lXSi1rM0JKNTV3NWtSNkxhWmRHd1YwTHE1LXhFME02ZGhzNGlaVWR5bHMzakc3T2dNSkNobWEtb2FDMnJLN1RmaWt0eU9OWTdoY08xTXFyQ2RjUHNxdnVNSDkwU3k3aUp1V2JJeHotQUh3M0JGS2Z3Ym5qR3hSdmFsRjNaOGJWdDcwaXJBMDdjTQ?oc=5": {
+  "zh_title": "Meta 携 Muse AI 助手进军英国市场，联手零售合作伙伴",
+  "zh_oneliner": "Meta 把 Muse AI 助手带到英国，与当地零售商合作，让购物者可以直接在聊天里选购商品。",
+  "en_oneliner": "Meta is bringing its Muse AI agent to the UK with retail partners, letting shoppers pick products right inside a chat."
+ },
+ "https://news.google.com/rss/articles/CBMiswFBVV95cUxOQkg4OXBmZGwyX0Z6RzZ0MzYzb1Zac3U4MTE2OFRLNHZmMWRTWk9CQ3Z6d0xSLUdrTDBLMk43ck5JSG84d0I2YjBBdERjWWpTNzM2bGp3Y0p6YnlyVmZsX3p6MTlXOXBKTkpuNVZVV3BvV053TTl4b25RX0MwZkRveU54RjM0VHZTaDFJTFNkeE00TlRtajlSNXJzQ01ycEMwenNSOGtiWVNFRlVMWXJtWUUzZw?oc=5": {
+  "zh_title": "Meta 用 Muse AI 助手推动 Instagram 购物转化",
+  "zh_oneliner": "Meta 正在用 Muse AI 助手帮 Instagram 上的商家把浏览变成下单，让购物流程更顺畅。",
+  "en_oneliner": "Meta is using its Muse AI agent to help Instagram merchants turn browsing into purchases with a smoother shopping flow."
+ },
+ "https://github.com/facebookincubator/muse-gadget-sdk/commit/8dcf1135ee7fbce97f81123ca4f1a312b2b985a8": {
+  "zh_title": "Linux：安装程序下载文件前先检查系统信任库",
+  "zh_oneliner": "Muse 小工具 SDK 在 Linux 上做了个小改进：安装程序下载文件之前先检查系统的信任库，让下载更安全。",
+  "en_oneliner": "A small improvement to the Muse gadget SDK on Linux: the installer now checks the system trust store before downloading files, making downloads safer."
+ },
+ "https://news.google.com/rss/articles/CBMipAFBVV95cUxPSkZGaXlMc282YnhWclNQX01ON1ZYc0h0VUUybWF5bUdOcDRLZTU3VXVMZUV3UDRzNnZXMEZJTFVzQnBWUnB3ZTlRWlZkLW1sSDY0TkdiOG1PZ0R5S3JlOGxDZXpRMGI5Y2FGeHk5b1JBYnpnNXkwNnAzOTJlYlVvQS1LeVY1d2JIcUpRczhxYkVVQk9SbWRaTjhnOE91eDFuS1JJMg?oc=5": {
+  "zh_title": "现在可以用 Meta 的 Muse 在沃尔玛购物了",
+  "zh_oneliner": "Meta 的 Muse 助手接入了沃尔玛，用户可以直接在对话里挑选商品、下单购物。",
+  "en_oneliner": "Meta's Muse assistant now works with Walmart, letting users pick products and place orders right in a conversation."
+ },
+ "https://news.google.com/rss/articles/CBMiTEFVX3lxTFB1NGFYLXFMUEU4R3YtQjJORjJIcWw4UlRmM2xXanR4d0VmZmdST1U2SnMzQnpUaS1OM3ota192QnM3dENoUmYyM2RYWTc?oc=5": {
+  "zh_title": "Meta旗下AI助手Muse进军新加坡和日本市场",
+  "zh_oneliner": "Meta 把旗下 AI 助手 Muse 推向新加坡和日本市场，进一步扩大它在亚洲的落地范围。",
+  "en_oneliner": "Meta is expanding its Muse AI assistant into Singapore and Japan, widening its footprint in Asia.",
+  "en_title": "Meta's AI Assistant Muse Expands into Singapore and Japan Markets"
+ },
+ "https://news.google.com/rss/articles/CBMirgFBVV95cUxNY3h6WnZkOE5oc2p4a2hmZlhSQmNMNTY0aGxGUlZkS1VfOVZJcHUwajlLVU5KM3Y3bEV2UURpU3lNbkxMSjktQzlia3BzR0Y1bEtCVncxeVBhdGxLNE1weDRTMTh0N05MZHN2Y2VzMGo2UGtfTXczMUNJMGJCcmNfYzBESW9GVXUxX0xFT0NEdGJPRXdYUFhlc2llT0VobHUtOHlNUnpqRHVhZmFyTnc?oc=5": {
+  "zh_title": "亚马逊与 Meta 商讨让 Muse AI 助手接入线上商店",
+  "zh_oneliner": "亚马逊和 Meta 正在商讨，让 Muse AI 助手可以直接访问亚马逊的线上商店，帮用户在对话里完成购物。",
+  "en_oneliner": "Amazon and Meta are discussing giving the Muse AI agent access to Amazon's online store, so users can shop right inside a conversation."
+ },
+ "https://news.google.com/rss/articles/CBMicEFVX3lxTFBvcjdKSTdCWlE0YnVyc0Z1MTZxQ2lJOWtJT2hrWnRTa0xjaVhWLU5uN1gwbUdBRFBFOFVDY0VremNXYUl1VTVZZF9CRFVfZndFU092aW1Wc0xGcDdKU1A4blZ1ZDNYZkdCaVBIa2NPQWU?oc=5": {
+  "zh_title": "51%份额领跑Agent购物！Meta正靠Muse重塑Instagram广告链路",
+  "zh_oneliner": "Meta 靠 Muse 在 Agent 购物领域拿下 51% 的份额，正在用它重塑 Instagram 的广告链路。",
+  "en_oneliner": "Meta is using Muse to reshape Instagram's advertising pipeline, leading agent-driven shopping with a 51% share.",
+  "en_title": "Leading Agent Shopping with a 51% Share: Meta Is Reshaping Instagram's Ad Pipeline with Muse"
  }
 }
