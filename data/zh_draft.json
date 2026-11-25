@@ -8701,5 +8701,10 @@
   "zh_oneliner": "作者核查了「拒绝许可后仍被读取 18.7 万件」的说法，指出这个数字真正指的是数据库里的「位置」。",
   "en_oneliner": "The author fact-checks the claim that 187,000 items were read despite permission being denied, showing the number really refers to a 'position' in the database.",
   "en_title": "Is It True That 187,000 Items Were Read Despite Permission Being Denied? The Real Story Behind the Number Was the Database's 'Position'"
+ },
+ "https://github.com/facebookincubator/muse-gadget-sdk/commit/29e3b1d2ac673182e836f9a859124cf7cc30fcfb": {
+  "zh_title": "ESP32：逐条显示已输入回合的回复（#510）",
+  "zh_oneliner": "Muse 小工具 SDK 的这项提交让 ESP32 设备在输入回合中逐条呈现回复，消息一条一条出现，而不是整段一次性输出。",
+  "en_oneliner": "This commit to the Muse gadget SDK lets ESP32 devices show a typed turn's reply one message at a time, so messages appear one by one instead of all at once."
  }
 }
