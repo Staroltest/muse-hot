@@ -9498,5 +9498,10 @@
   "zh_oneliner": "一位把 Muse 当作生活搭档的用户记录了自己的实践：由常驻的 Muse 智能体按实测结果，把任务分给本地 LLM 和云端最上位模型。",
   "en_oneliner": "A user who treats Muse as a daily companion documents a hands-on setup where a resident Muse agent routes tasks between a local LLM and the top cloud model based on measured results.",
   "en_title": "A Resident AI Agent Runs a Hybrid LLM: Splitting Work Between Local and Top Cloud Models by Measured Results"
+ },
+ "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNbDIyajNLWGRPckFUWUw1aGx6RU9yWkh0X3BkUzJmN2FYUkxNM3dUdUYwMmpXRmoyS1BXTnlIQXh6dDlSNHdwMFlQVFpOY0xxS1JtUFBaQUdqRGtsM3ljdFF3OXZYRDNPamRZcTFUZ3ptNXhYRzh6d3dUZFhRcU9mU1lyMzNsREVG?oc=5": {
+  "zh_title": "Meta 的 Muse AI 智能体登陆 Instagram 消息",
+  "zh_oneliner": "Meta 把 Muse AI 智能体带进 Instagram 消息，用户可以直接在私信里与它对话。",
+  "en_oneliner": "Meta is bringing its Muse AI agent to Instagram Messages, letting users chat with it right in their DMs."
  }
 }
