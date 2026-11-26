@@ -9751,5 +9751,16 @@
   "zh_title": "Meta 与沃尔玛联手，把 Muse AI 智能体放进购物车",
   "zh_oneliner": "Meta 与沃尔玛达成合作，将 Muse AI 智能体带入沃尔玛的购物车，购物时也能随时用上 AI 助手。",
   "en_oneliner": "Meta and Walmart are teaming up to bring the Muse AI agent into Walmart's shopping cart, so shoppers can use the AI assistant while they shop."
+ },
+ "https://github.com/facebookincubator/muse-gadget-sdk/commit/520d9465d2daa66bc38042b21d152940f388769c": {
+  "zh_title": "为 Zephyr 小工具新增首款 Seeed XIAO nRF54L15 支持（#527）",
+  "zh_oneliner": "Muse 小工具 SDK 接入首款基于 Zephyr 的 Seeed XIAO nRF54L15 开发板，硬件生态再添一员。",
+  "en_oneliner": "The Muse gadget SDK adds the Seeed XIAO nRF54L15 as its first Zephyr-based gadget, growing its hardware ecosystem."
+ },
+ "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5Sb0hEVkw5c3M3LXV2V3lXTTR0d2lzYzhFUmdJTmlPNzF4QkNKLTRzTHEyLXJHNmpaQjB5cndxcEkxcUlERnhhVlJn?oc=5": {
+  "zh_title": "Meta联手沃尔玛：Muse AI代理可直接搜货下单，赶在黑色星期五前上线",
+  "zh_oneliner": "Meta 与沃尔玛合作，Muse AI 代理能直接在沃尔玛搜货下单，赶在黑色星期五前上线。",
+  "en_oneliner": "Meta is partnering with Walmart so Muse AI agents can search for products and place orders directly, launching ahead of Black Friday.",
+  "en_title": "Meta Partners with Walmart: Muse AI Agents Can Search and Order Directly, Launching Before Black Friday"
  }
 }
