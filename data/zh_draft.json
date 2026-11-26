@@ -9462,5 +9462,29 @@
   "zh_title": "亚马逊洽谈将 Meta 的 Muse 接入亚马逊商店",
   "zh_oneliner": "亚马逊正在洽谈把 Meta 的 Muse 助手接入自家商店，让购物者能在购物时直接使用这款 AI 助手。",
   "en_oneliner": "Amazon is in talks to integrate Meta's Muse assistant into its store, letting shoppers use the AI helper while they shop."
+ },
+ "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBiNElTWmRjRU9ReGlnZE1WZzRpZkUtNDRWVDJGOWZLZ243dUZwaGRYNzVzSWMtM0FSYy03Zk03ejgzRmhhVGF5eF8tVU9LMzJHVzFIeUNR?oc=5": {
+  "zh_title": "Muse无广告反哺广告，Meta智能体订单份额达51%",
+  "zh_oneliner": "没有广告的 Muse 反而拉动了广告收入，Meta 智能体订单份额达到 51%。",
+  "en_oneliner": "The ad-free Muse is nonetheless boosting ad revenue, with Meta's AI-agent order share reaching 51%.",
+  "en_title": "Muse's Ad-Free Model Feeds the Ad Business as Meta's AI-Agent Order Share Reaches 51%"
+ },
+ "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPNlhuNUxjZHI1TlBlcEhHanNJcUc3U2U3eXRxbm9Vb1lqUmlDbnBiM0JmblNhbTR6aXdtOC1ReHVlaHlESWVRNEIzeXB1VFFqSzd5aGVpbEdlRk1ZNUg0Y0RLc3Y2YXRUMHJDRGFKVGYwcWI2RUNJcDctT1ZLVFVXSVFlVU53dy1taWhmN0VWX0ZJcmZmSmNydzBHV0hWYkpMNkpYRTZUVkQwYlRUYVNuaUlvbTFjZzROcUlBeUVpQlhoVlBEREc4OWdNUzdkVS13WXEweg?oc=5": {
+  "zh_title": "Meta 将 AI 助手 Muse 引入 Instagram 私信，可总结聊天并按收藏规划行程",
+  "zh_oneliner": "Muse 进了 Instagram 私信，能帮用户总结聊天记录，还能根据收藏内容规划行程。",
+  "en_oneliner": "Muse has arrived in Instagram DMs, where it can summarize chats and plan trips based on saved posts.",
+  "en_title": "Meta Brings AI Assistant Muse to Instagram DMs, Summarizing Chats and Planning Trips from Saved Content"
+ },
+ "https://news.google.com/rss/articles/CBMibkFVX3lxTE5fQnBnRTh0TnJCbkJkeXRNaHBfOUdJX28zLVFoaktET0lWb0NpLUl5SVdVNUNfNlI0VW1VcnlwTzFhc1M0MnUycW1ZMlltbUxsYWcxZG9tMV9LdjlRX1JFR1dNUWJ0Zm9qM0VkSEFR0gFzQVVfeXFMT0NYX09NeTg2TkNRTnBpd1I0RlFMWXZHSko3Yy04WVRHZERzMzJlMGNYM2EwamEtalpJRE9WTDlKbDdxOGdualI0eEpWMkgxdEpOS1JMbndCcDk2VDgxLUxZemZrc1NHS0FVSWk0aUlDRm04SQ?oc=5": {
+  "zh_title": "Meta 与亚马逊磋商，拟解除对 Muse 的封锁",
+  "zh_oneliner": "Meta 与亚马逊正在就一项潜在协议展开磋商，目标是解除对 Muse 的封锁。",
+  "en_oneliner": "Meta and Amazon are negotiating a potential agreement aimed at lifting the block on Muse.",
+  "en_title": "Meta and Amazon in Talks to Lift the Block on Muse"
+ },
+ "https://qiita.com/oozunzun/items/146795ef2597e9138a5e": {
+  "zh_title": "把测试、SSH 部署到 GitHub 记录全交给 AI 智能体：一套自动化运维方案",
+  "zh_oneliner": "作者搭建了一套运维方案，让 AI 智能体从测试、SSH 部署到 GitHub 记录全程包办。",
+  "en_oneliner": "The author built an operations setup that lets an AI agent handle everything from testing and SSH deployment to GitHub logging.",
+  "en_title": "I Built an Operations Scheme That Hands Testing, SSH Deployment, and GitHub Logging to an AI Agent"
  }
 }
