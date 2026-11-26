@@ -9486,5 +9486,17 @@
   "zh_oneliner": "作者搭建了一套运维方案，让 AI 智能体从测试、SSH 部署到 GitHub 记录全程包办。",
   "en_oneliner": "The author built an operations setup that lets an AI agent handle everything from testing and SSH deployment to GitHub logging.",
   "en_title": "I Built an Operations Scheme That Hands Testing, SSH Deployment, and GitHub Logging to an AI Agent"
+ },
+ "https://zenn.dev/satofun/articles/a90cf44029d7fa": {
+  "zh_title": "Muse Image 图片生成失败怎么办？结合 PixAI API 的制作工作流",
+  "zh_oneliner": "作者分享用 Muse Image 生成图片失败时的排查思路，并演示如何通过 PixAI API 让 Muse 统筹多模型插画制作，提升创作效率。",
+  "en_oneliner": "The author shares how to troubleshoot failed image generation with Muse Image and shows how connecting PixAI via API lets Muse coordinate multi-model illustration work for a smoother creative workflow.",
+  "en_title": "What to Do When Muse Image Generation Fails: A Production Workflow Using the PixAI API"
+ },
+ "https://zenn.dev/mii_mii/articles/hybrid-llm-jissoku": {
+  "zh_title": "常驻 AI 智能体统筹混合 LLM：本地模型与云端顶级模型按实测分工",
+  "zh_oneliner": "一位把 Muse 当作生活搭档的用户记录了自己的实践：由常驻的 Muse 智能体按实测结果，把任务分给本地 LLM 和云端最上位模型。",
+  "en_oneliner": "A user who treats Muse as a daily companion documents a hands-on setup where a resident Muse agent routes tasks between a local LLM and the top cloud model based on measured results.",
+  "en_title": "A Resident AI Agent Runs a Hybrid LLM: Splitting Work Between Local and Top Cloud Models by Measured Results"
  }
 }
