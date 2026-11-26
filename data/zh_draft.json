@@ -9762,5 +9762,15 @@
   "zh_oneliner": "Meta 与沃尔玛合作，Muse AI 代理能直接在沃尔玛搜货下单，赶在黑色星期五前上线。",
   "en_oneliner": "Meta is partnering with Walmart so Muse AI agents can search for products and place orders directly, launching ahead of Black Friday.",
   "en_title": "Meta Partners with Walmart: Muse AI Agents Can Search and Order Directly, Launching Before Black Friday"
+ },
+ "https://github.com/facebookincubator/muse-gadget-sdk/commit/83ef889291e0f3f2e993a97b097d81776c58907e": {
+  "zh_title": "在 Muse Gadgets 测试应用中加入 bench 工具与蓝牙低功耗支持（#528）",
+  "zh_oneliner": "Muse Gadgets 测试应用新增 bench 工具与 BLE 支持，推进蓝牙协议栈第七部分的开发。",
+  "en_oneliner": "The Muse Gadgets test apps gain bench tools and BLE support, advancing part seven of the BLE stack."
+ },
+ "https://news.google.com/rss/articles/CBMinwFBVV95cUxNSGlCaXRTRDN4RlM1R2t4Q1ZuRFM3WER6eEhCR3R0UGdIX2VHT0RJWTMyVWhveDZ0Xy1iLThmdS1QQ2kyQmJJUHFqbkhVS2tBcnBWLW1PeXZRRjB5Q01hcGtoZHNUckxXd29URXNmWTBDcDZJUVNIMnZxenNxaGIzQWJmUmlGNm5JNFdjYzJ4TGx1NUVLdmRweFNrdlVHMms?oc=5": {
+  "zh_title": "Instagram 将 Muse AI 接入私信：购物、旅行与内容精选工具",
+  "zh_oneliner": "Instagram 把 Muse AI 带进私信，带来购物、旅行规划与内容精选等新功能。",
+  "en_oneliner": "Instagram brings Muse AI into Direct, adding shopping, travel planning, and curation tools."
  }
 }
