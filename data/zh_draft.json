@@ -9715,5 +9715,31 @@
   "zh_title": "Meta Muse 拒绝 FCA 沙盒：1 项联合测试被拒",
   "zh_oneliner": "Meta Muse 拒绝参与 FCA 沙盒的一次联合测试，显示其在监管试验合作上持谨慎态度。",
   "en_oneliner": "Meta Muse declined to take part in a joint test in the FCA sandbox, showing a cautious stance toward regulatory trial partnerships."
+ },
+ "https://github.com/facebookincubator/muse-gadget-sdk/commit/7460ee754a94ca8bab284eab4750bf3857582794": {
+  "zh_title": "ESP32：通过 BLE 接入 Muse Gadgets（#525）",
+  "zh_oneliner": "Muse Gadgets 蓝牙协议栈的第四部分：让带完整界面的 ESP32 开发板通过 BLE 以 Muse Gadget 的身份接入。",
+  "en_oneliner": "Part four of the Muse Gadgets BLE stack: ESP32 boards with the full UI can now connect as Muse Gadgets over BLE."
+ },
+ "https://news.google.com/rss/articles/CBMifEFVX3lxTE1fUTZ0RnFiT2c3TUZ0b2lKNUY3QkNMdzhfSnB5TklRcldSWGUzZVpWZzl3cGcyWFJRSHhhVHpmRXVsdHlrX2N5VkNnaFF2Z0NIS3J2SnVIOXlFOUJsV3VlaGphZnA0S0FEcEV6RDhCcm1kblJ6ZnVnc1FWOTg?oc=5": {
+  "zh_title": "Meta Muse 登陆英国：访问方式、定价与隐私 - Online Tech Tips",
+  "zh_oneliner": "Meta Muse 正式进入英国市场，这篇报道梳理了当地用户如何访问、如何收费以及隐私方面的安排。",
+  "en_oneliner": "Meta Muse is now launching in the UK, and this report walks through how local users can access it, what it costs, and how privacy is handled."
+ },
+ "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQVF9hTE84QzJSeVlhUlViSktDMDZwaGFIdzgxTXBSYkVVQ0dLUlJFVDVnSHFJMjg0Z3dlSzlKWkNkaEJZUFZxSlVhS3lCNktrTWQ0SzNDNV9Gdy0tS3dMeDhWWUVqVjE1dGJHNnVjT1A1XzcyeTBGSDRkLUliWXJIbl9pRUQzSUtF?oc=5": {
+  "zh_title": "亚马逊与 Meta 洽谈让 Muse 购物助手回归 - Wisevoter",
+  "zh_oneliner": "亚马逊与 Meta 正在协商，计划让此前下线的 Muse 购物助手重新回到购物场景中。",
+  "en_oneliner": "Amazon and Meta are in talks to bring back the Muse shopping agent after it was taken down."
+ },
+ "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9zSDRVVEhJcFl4OVdUaVhFOEpKVHVkSW9CaTNIYXUxcGk3dS1zOEdneVlrT3ZvMlN6aW9tZ1poZHJnWk1YV2MtX3M2Z3dmcHNJTDB1YWxiYnFtZkVYU1pz?oc=5": {
+  "zh_title": "Meta为Muse投电视广告：AI创作工具大众化传播与产品逻辑解析 - CSDN",
+  "zh_oneliner": "Meta 为 Muse 投放电视广告，这篇文章解析了 AI 创作工具走向大众传播背后的产品逻辑。",
+  "en_oneliner": "Meta is running TV ads for Muse, and this article breaks down the product thinking behind taking an AI creation tool to a mass audience.",
+  "en_title": "Meta Runs TV Ads for Muse: Mass-Market Reach for an AI Creation Tool and the Product Logic Behind It"
+ },
+ "https://news.google.com/rss/articles/CBMiswFBVV95cUxPWG9iR09KazhDbWQyWWZzRUdaTzhmRm1oZWNONzNsOW1UdWotdmQ0bUlUX3p4RDgtMnB4Y3hOOGRuSFl3dEgwYXdIbTBTUVRRNVA0SXAyakpDSWF4UkItWHhLYnR3WHk5U0pKTW9wTXIyODlkRGZsdzlqUFI4OTZlUjlPVzc5bTQxYmZfYXQxWUZrZ2xUVzRDYTRyalJ1bW9CZ1hQWVJvZTRHbnlBejU5Z1lLZw?oc=5": {
+  "zh_title": "我为 Etsy 店铺做了 5 个 Muse Spaces，然后把指南免费分享了出来 | by Machine Minds | Nov, 2026 - Startup Stash",
+  "zh_oneliner": "作者为自己的 Etsy 店铺搭建了 5 个 Muse Spaces，并把完整指南免费公开，方便其他卖家照着做。",
+  "en_oneliner": "The author built five Muse Spaces for their Etsy shop and published the full guide for free so other sellers can follow along."
  }
 }
