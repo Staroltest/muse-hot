@@ -9557,5 +9557,15 @@
   "zh_title": "亚马逊与 Meta 的 Muse 洽谈让零售广告成为焦点",
   "zh_oneliner": "亚马逊与 Meta 正在就 Muse 展开洽谈，零售广告成为双方合作的焦点。",
   "en_oneliner": "Amazon and Meta are in talks over Muse, with retail advertising emerging as the focus of the potential partnership."
+ },
+ "https://news.google.com/rss/articles/CBMicEFVX3lxTE55bzJNLVB5eUprSWo5LW5NeGVDNkVWMEc2WjRKMmFrZXBKWjhwRDdKSHQtWGtsYnAza0w2ZlhHUUxqSEdMTFZZMHJKXzdhTWlIdE9MZGdmY2d2aWJiS2lua0lzbnh3ZVhuUHZaaW9uM2o?oc=5": {
+  "zh_title": "蒙大拿州总检察长 Knudsen 牵头多州调查 Meta 的 Muse AI 隐私问题",
+  "zh_oneliner": "蒙大拿州总检察长 Knudsen 牵头多州对 Meta 的 Muse AI 展开隐私调查。",
+  "en_oneliner": "Montana AG Knudsen is leading a multistate probe into privacy concerns around Meta's Muse AI."
+ },
+ "https://github.com/facebookincubator/muse-gadget-sdk/commit/eea308e79fcfd6403433c3d23e700a50829c66f7": {
+  "zh_title": "新增优化的 LC3 与 SBC 编解码器（#522）",
+  "zh_oneliner": "Muse Gadgets 蓝牙协议栈迎来优化的 LC3 与 SBC 编解码器，覆盖 ESP32、Zephyr、Android 与 JVM 客户端。",
+  "en_oneliner": "The Muse Gadgets BLE stack gains optimized LC3 and SBC codecs for ESP32, Zephyr, Android, and JVM clients."
  }
 }
