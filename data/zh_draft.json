@@ -9572,5 +9572,16 @@
   "zh_title": "Meta 向英国用户推出 Muse AI 智能体",
   "zh_oneliner": "Meta 的 Muse AI 智能体开始面向英国用户开放，更多地区的用户也能用上这款 AI 助手了。",
   "en_oneliner": "Meta's Muse AI agent is now rolling out to users in the UK, bringing the AI assistant to more people in the region."
+ },
+ "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9BdWZhTTJUd0E0Q2ZOOU9rclRnUmUyUTNZUTNJWm54NWJReWpXS0llbGg5Y25YWG54UWw0T2ZmdGhkS0pFYzJzSS1nMTZJNTlEWWV6Vw?oc=5": {
+  "zh_title": "Meta旗下Muse拿下五成代理订单 远超Grok与ChatGPT",
+  "zh_oneliner": "据报道，Meta 的 Muse 在代理订单中拿下约一半份额，领先 Grok 与 ChatGPT。",
+  "en_oneliner": "Meta's Muse reportedly takes about half of agent orders, ahead of Grok and ChatGPT.",
+  "en_title": "Meta's Muse Takes Half of Agent Orders, Far Ahead of Grok and ChatGPT"
+ },
+ "https://github.com/facebookincubator/muse-gadget-sdk/commit/084025f0e5eab85cd4d69f232974ed92e0eed701": {
+  "zh_title": "新增 musegadgets 蓝牙低功耗协议（#523）",
+  "zh_oneliner": "Muse Gadget SDK 新增 musegadgets 蓝牙协议，定义了蓝牙小配件与 Muse 应用之间的通信规范。",
+  "en_oneliner": "The Muse Gadget SDK adds the musegadgets BLE protocol, defining the communication contract between BLE gadgets and the Muse apps."
  }
 }
