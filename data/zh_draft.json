@@ -9567,5 +9567,10 @@
   "zh_title": "新增优化的 LC3 与 SBC 编解码器（#522）",
   "zh_oneliner": "Muse Gadgets 蓝牙协议栈迎来优化的 LC3 与 SBC 编解码器，覆盖 ESP32、Zephyr、Android 与 JVM 客户端。",
   "en_oneliner": "The Muse Gadgets BLE stack gains optimized LC3 and SBC codecs for ESP32, Zephyr, Android, and JVM clients."
+ },
+ "https://news.google.com/rss/articles/CBMihAFBVV95cUxNbnFzbmFLT29nd19Ta0hVc2xZUXlRb0ZMV3RlcVFyencycW5qZjhSRDQzcFJsaXROX2VuNFdkVFY2blpRUHAzVUE2UFRKX09aZkI1SmxQSVJVbXJNM2ZJNV9Jd0VONmdHZGltN0tDZS1IVHBDRDZ0dnNUMWx3WnNKaXRVYng?oc=5": {
+  "zh_title": "Meta 向英国用户推出 Muse AI 智能体",
+  "zh_oneliner": "Meta 的 Muse AI 智能体开始面向英国用户开放，更多地区的用户也能用上这款 AI 助手了。",
+  "en_oneliner": "Meta's Muse AI agent is now rolling out to users in the UK, bringing the AI assistant to more people in the region."
  }
 }
