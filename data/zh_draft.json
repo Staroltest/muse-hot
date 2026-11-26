@@ -9526,5 +9526,26 @@
   "zh_oneliner": "据报亚马逊与 Meta 正在谈判，讨论解除对 Muse AI 代理的限制。",
   "en_oneliner": "Amazon and Meta are reportedly in talks about lifting restrictions on the Muse AI agent.",
   "en_title": "Amazon and Meta Reportedly in Talks to Unblock the Muse AI Agent"
+ },
+ "https://news.google.com/rss/articles/CBMiqAFBVV95cUxONlNlRnBaZndLb0VOd3pQUTJ5OXFoZ1pzMGJUdjd0Ml9GNGVjVkhUdnprcVpmMjZBanAtTUVjdmc3aFM3a1dlSUVSYmg5R3k2QjMtRjF0M2tOcXBBYkNQUHI4MGxkOURUa2F4dkxTS1h1YjlBeFY5YzhocHBxN3BhLXIwOUlBMmI2Yko2ZVVZTTEzQUdKUVJ5bER0YWh6RzFqSTNRd3BOaHY?oc=5": {
+  "zh_title": "亚马逊与 Meta 洽谈解除对 Muse AI 购物智能体的封锁",
+  "zh_oneliner": "亚马逊与 Meta 正在商谈解除对 Muse AI 购物智能体的限制，有望让这款 AI 购物助手进入亚马逊平台。",
+  "en_oneliner": "Amazon and Meta are reportedly in talks to lift restrictions on the Muse AI shopping agent, which could bring the AI shopping assistant onto Amazon."
+ },
+ "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQR1RKcFR3SHdrRzg0WlhhS2FjQnZmMGJpUndzaUlkeHp6UzZTWVBObHk5aWQzZDl1Zko4N3pYTWZpaHBUTkU2aklBdE16dWhZeTRlbTdEdXR6cC1QVWJIeXNLaE9KZXAxaEVrbm13MjBxOHdzVTViVkpudkZhaTl5OHZ4ZkdKQldGMHk4ZDdyblZJLWNzQmRSSDZjUHhBN0FYSHRpLWE2dFZKZw?oc=5": {
+  "zh_title": "你好，Meta Muse！亚马逊终于要克服对 AI 购物智能体的恐惧了吗？",
+  "zh_oneliner": "亚马逊与 Meta 的洽谈引发猜测，这家电商巨头是否终于准备接纳 AI 购物智能体。",
+  "en_oneliner": "Talks between Amazon and Meta have sparked speculation over whether the e-commerce giant is finally ready to embrace AI shopping agents."
+ },
+ "https://news.google.com/rss/articles/CBMifkFVX3lxTE13Y1JXZjA0VjlYdHhLVnRjVmZaWW5UeUVSdXBXUGtHTDYxb1l3NTAxT1h5bDVSQTdmN0F2a0xMUlp1RXBocEREdVk5XzZzOUhfVTNrQ2xIdWRmYzg1U3RfVjQ1bFZwbnVnQURWQjhYZUlmZmpzdmlJQUVycDlQUQ?oc=5": {
+  "zh_title": "受亚马逊洽谈 Muse 消息提振，Meta 股价上涨 3.4%",
+  "zh_oneliner": "有报道称亚马逊正与 Meta 洽谈 Muse 相关合作，Meta 股价随之上涨 3.4%。",
+  "en_oneliner": "Meta shares rose 3.4% on reports that Amazon is in talks with Meta over Muse."
+ },
+ "https://qiita.com/fantatchi/items/49413a5a435e25d08025": {
+  "zh_title": "手机下单，家中电脑上的 AI 开始工作——以 Muse 为指挥塔，Claude Code、Codex 与 Antigravity 接力协作的架构",
+  "zh_oneliner": "作者分享了一套以 Muse 为指挥塔的配置：手机发出指令后，家中的电脑自动调度 Claude Code、Codex 与 Antigravity 接力完成任务。",
+  "en_oneliner": "The author shares a setup with Muse as command hub: instructions sent from a phone trigger the home PC to hand tasks across Claude Code, Codex, and Antigravity.",
+  "en_title": "Order from your phone and AI starts working on your home PC — a setup with Muse as command hub, handing tasks across Claude Code, Codex, and Antigravity"
  }
 }
