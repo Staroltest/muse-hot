@@ -297,13 +297,6 @@
   },
   {
    "category_hint": "usage",
-   "id": "agent-usecases-new",
-   "name": "Agent Use Cases：每日新用例",
-   "tier": "T2",
-   "url": "https://agentusecases.ai/feed.xml"
-  },
-  {
-   "category_hint": "usage",
    "id": "mastodon-metamuse",
    "name": "Mastodon：#metamuse",
    "tier": "T3",
