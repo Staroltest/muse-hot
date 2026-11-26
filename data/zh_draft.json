@@ -9588,5 +9588,10 @@
   "zh_title": "亚马逊与 Meta 据传洽谈合作，拟让 Muse AI 智能体在亚马逊上购物",
   "zh_oneliner": "据报道，亚马逊与 Meta 正在洽谈合作，计划让 Muse AI 智能体直接在亚马逊平台上帮用户购物。",
   "en_oneliner": "Amazon and Meta are reportedly in talks on a deal that would let the Muse AI agent shop directly on Amazon for users."
+ },
+ "https://github.com/facebookincubator/muse-gadget-sdk/commit/fb2560b468c2a44007a07680a0e664215359421d": {
+  "en_oneliner": "A Muse gadget SDK commit adds portable Link setup, device session management, and RNG libraries, making it easier for developers to wire up connectivity and sessions in gadgets.",
+  "zh_oneliner": "Muse gadget SDK 的一次提交新增便携式 Link 配置、设备会话管理和随机数生成库，方便开发者在小工具里接入连接与会话功能。",
+  "zh_title": "新增便携式 Link 配置、设备会话与随机数生成库（#524）"
  }
 }
