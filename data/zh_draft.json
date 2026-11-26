@@ -9583,5 +9583,10 @@
   "zh_title": "新增 musegadgets 蓝牙低功耗协议（#523）",
   "zh_oneliner": "Muse Gadget SDK 新增 musegadgets 蓝牙协议，定义了蓝牙小配件与 Muse 应用之间的通信规范。",
   "en_oneliner": "The Muse Gadget SDK adds the musegadgets BLE protocol, defining the communication contract between BLE gadgets and the Muse apps."
+ },
+ "https://news.google.com/rss/articles/CBMiswFBVV95cUxPNUZEZ2ZhVUo5UEZtTzEtQXZFMUNKTnRpUExWQ041YXdRb2MwSTdIY05FOUtGUmxSalM1aTBCMzRTcXVRQXpwbmt0eWVUVXVTci1ZSDNQbWlPekEtbmJ6WUh5QzVGOHc0ZEQxejF4X1JPTTlFX256eTd4d2RtMDRWRmN5a3kxUXFSckNtRGcyZjdBcXpZajNFcWFNRV9DNnNFN0Z1ZDdiN21ITVBsTHR2bS1aOA?oc=5": {
+  "zh_title": "亚马逊与 Meta 据传洽谈合作，拟让 Muse AI 智能体在亚马逊上购物",
+  "zh_oneliner": "据报道，亚马逊与 Meta 正在洽谈合作，计划让 Muse AI 智能体直接在亚马逊平台上帮用户购物。",
+  "en_oneliner": "Amazon and Meta are reportedly in talks on a deal that would let the Muse AI agent shop directly on Amazon for users."
  }
 }
