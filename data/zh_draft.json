@@ -9741,5 +9741,15 @@
   "zh_title": "我为 Etsy 店铺做了 5 个 Muse Spaces，然后把指南免费分享了出来 | by Machine Minds | Nov, 2026 - Startup Stash",
   "zh_oneliner": "作者为自己的 Etsy 店铺搭建了 5 个 Muse Spaces，并把完整指南免费公开，方便其他卖家照着做。",
   "en_oneliner": "The author built five Muse Spaces for their Etsy shop and published the full guide for free so other sellers can follow along."
+ },
+ "https://github.com/facebookincubator/muse-gadget-sdk/commit/2c3acfcc7efbda69c791daacf541295e264934f5": {
+  "zh_title": "新增 BLE 实时通话（#526）",
+  "zh_oneliner": "Muse Gadget SDK 加入了基于低功耗蓝牙（BLE）的实时通话功能，让设备可以直接进行语音通话。",
+  "en_oneliner": "The Muse Gadget SDK adds live calling over Bluetooth Low Energy (BLE), letting devices make voice calls directly."
+ },
+ "https://news.google.com/rss/articles/CBMidEFVX3lxTE1IZ3Y5OURKekxTSUx4SEswMmdPVlZJZ3NIZWF1QXVoc05WTW5vYXdUM1EyazdpNnU2Ykh4eDJSMHFobUZZMndYd0FEWTVicFJVaGtHRUtZclR6eXI5Q1VrcVVHbWVnS2xMQU9ITFFUNm1YV3FV?oc=5": {
+  "zh_title": "Meta 与沃尔玛联手，把 Muse AI 智能体放进购物车",
+  "zh_oneliner": "Meta 与沃尔玛达成合作，将 Muse AI 智能体带入沃尔玛的购物车，购物时也能随时用上 AI 助手。",
+  "en_oneliner": "Meta and Walmart are teaming up to bring the Muse AI agent into Walmart's shopping cart, so shoppers can use the AI assistant while they shop."
  }
 }
