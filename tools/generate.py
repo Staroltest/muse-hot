@@ -4649,10 +4649,25 @@ def main():
                 continue
         _add_sitemap(("en/" + _p) if _p else "en/", _lm)
     sm = ["<?xml version=\"1.0\" encoding=\"UTF-8\"?>",
-          "<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">"]
+          "<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\" xmlns:xhtml=\"http://www.w3.org/1999/xhtml\">"]
     for _p, _lm in sitemap_entries.items():
         _loc = site_url + "/" if not _p else f"{site_url}/{_p}"
-        sm.append(f"<url><loc>{_enc_url(_loc)}</loc><lastmod>{_lm}</lastmod></url>")
+        _enc_loc = _enc_url(_loc)
+        # 中英对照：有对应语言版本时加 hreflang（与页头 link alternate 一致，
+        # x-default 指向英文版）；feed.xml / geo-audit.html 无英文版，不加
+        if _p.startswith("en/"):
+            _zh_p, _en_p = _p[len("en/"):], _p
+        else:
+            _zh_p = _p
+            _en_p = "en/" if not _p else "en/" + _p
+        _alt = ""
+        if _zh_p in sitemap_entries and _en_p in sitemap_entries:
+            _zh_loc = _enc_url(site_url + "/" if not _zh_p else f"{site_url}/{_zh_p}")
+            _en_loc = _enc_url(f"{site_url}/{_en_p}")
+            _alt = (f"<xhtml:link rel=\"alternate\" hreflang=\"zh-CN\" href=\"{_zh_loc}\"/>"
+                    f"<xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"{_en_loc}\"/>"
+                    f"<xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"{_en_loc}\"/>")
+        sm.append(f"<url><loc>{_enc_loc}</loc>{_alt}<lastmod>{_lm}</lastmod></url>")
     sm.append("</urlset>")
     with open(os.path.join(root, "sitemap.xml"), "w", encoding="utf-8") as f:
         f.write("\n".join(sm) + "\n")
@@ -4826,12 +4841,16 @@ def main():
                             ("monthly", monthly_reports)):
             for _r in _reps:
                 _loc = f"{site_url}/{_out}/{_r['key']}.html"
-                if _loc not in _existing_locs:
-                    _sm_extra.append(f"<url><loc>{_loc}</loc>"
-                                     f"<lastmod>{_r['date_iso']}</lastmod></url>")
                 _loc_en = f"{site_url}/en/{_out}/{_r['key']}.html"
+                # 日报/周报/月报中英版成对出现，补的条目也带 hreflang
+                _alt = (f"<xhtml:link rel=\"alternate\" hreflang=\"zh-CN\" href=\"{_loc}\"/>"
+                        f"<xhtml:link rel=\"alternate\" hreflang=\"en\" href=\"{_loc_en}\"/>"
+                        f"<xhtml:link rel=\"alternate\" hreflang=\"x-default\" href=\"{_loc_en}\"/>")
+                if _loc not in _existing_locs:
+                    _sm_extra.append(f"<url><loc>{_loc}</loc>{_alt}"
+                                     f"<lastmod>{_r['date_iso']}</lastmod></url>")
                 if _loc_en not in _existing_locs:
-                    _sm_extra.append(f"<url><loc>{_loc_en}</loc>"
+                    _sm_extra.append(f"<url><loc>{_loc_en}</loc>{_alt}"
                                      f"<lastmod>{_r['date_iso']}</lastmod></url>")
         if _sm_extra:
             with open(os.path.join(root, "sitemap.xml"), encoding="utf-8") as _sf:
