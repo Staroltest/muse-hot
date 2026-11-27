@@ -10150,5 +10150,10 @@
   "zh_oneliner": "Meta 凭借 Muse 在 Agent 购物领域拿下 51% 的份额，正在重塑 Instagram 的广告链路。",
   "en_oneliner": "Meta is leveraging Muse to reshape Instagram's advertising pipeline, leading agent-powered shopping with a 51% share.",
   "en_title": "Leading Agent Shopping with a 51% Share! Meta Is Reshaping Instagram's Ad Pipeline with Muse"
+ },
+ "https://shipwithmuse.live/builds/musecodeicon": {
+  "zh_title": "MuseCodeIcon：给 Muse Code 配上桌面图形界面",
+  "zh_oneliner": "免费开源的桌面应用，把命令行版的 Muse Code 装进图形窗口：按项目管理编码会话、清晰展示审批与代码差异，还能看用量、管技能与 MCP 服务器。",
+  "en_oneliner": "A free, open-source desktop app that wraps the command-line Muse Code in a graphical window: project-grouped coding sessions, clear approvals and diffs, plus usage meters and management for skills and MCP servers."
  }
 }
