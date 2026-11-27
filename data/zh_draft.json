@@ -10060,5 +10060,16 @@
   "zh_title": "据报道亚马逊与 Meta 正商讨恢复 Muse 的购物功能",
   "zh_oneliner": "据报道亚马逊与 Meta 正在商讨恢复 Muse 的购物接入，Muse 或将重新获得在亚马逊购物的能力。",
   "en_oneliner": "Amazon and Meta are reportedly in talks to restore Muse's shopping access, which would let the assistant shop on Amazon again."
+ },
+ "https://news.google.com/rss/articles/CBMihwFBVV95cUxQdVhsZDUzWl9OZGZiLTNESzA0WllmWkJDSTNmTFoyZnFwbHFabEpPeUI5V19aZ0hFSHBGaE50aC1xVEVUZjFtanp1OW44SkRyZ21JWU5keGpiX0NObGcwMlZVWmhhdmYzU3FMWlZkZEthOHp2YUszT1VNX0phQTB2OTlnc1pfN3M?oc=5": {
+  "zh_title": "Meta 拒绝让 Muse AI 智能体参加 FCA 沙盒测试",
+  "zh_oneliner": "Meta 决定不让自家的 Muse AI 智能体进入英国金融行为监管局的沙盒测试，监管合作的节奏因此放缓。",
+  "en_oneliner": "Meta has decided not to put its Muse AI agent through the UK Financial Conduct Authority's sandbox testing, slowing the pace of regulatory cooperation."
+ },
+ "https://qiita.com/hisashi-ito/items/3c0e54a00ced751c6032": {
+  "zh_title": "用 Muse 玩转 Google Colab CLI 的方法",
+  "zh_oneliner": "这篇教程介绍如何从 Muse 出发，把 Google Colab CLI 用到极致，让命令行下的云端开发更顺手。",
+  "en_oneliner": "This tutorial shows how to make full use of Google Colab CLI from Muse, making cloud development from the command line smoother.",
+  "en_title": "How to Make Full Use of Google Colab CLI from Muse"
  }
 }
