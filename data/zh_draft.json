@@ -9880,5 +9880,16 @@
   "zh_oneliner": "一本面向初学者的 Muse 日文实践指南，从上手到日常委托，覆盖调查、购物、旅行、成果物制作，以及连接器、设备联动与开发者用的 GitHub 集成和 Skill。",
   "en_oneliner": "A beginner-friendly Japanese hands-on guide to Muse, from getting started to everyday delegation, covering research, shopping, travel, deliverable creation, connectors, device integration, and GitHub integration and Skills for developers.",
   "en_title": "Getting Started with Muse: A Practical Guide to Living with Your Own AI Agent"
+ },
+ "https://www.youtube.com/watch?v=J8FhqFoWhAI": {
+  "zh_title": "Muse AI 每次对话都忘了你是谁？教它一次就能记住——25% 优惠周一截止",
+  "zh_oneliner": "这条视频讲怎么让 Muse 记住你的偏好，免得每次对话都从头介绍自己，还附带限时折扣。",
+  "en_oneliner": "This video shows how to get Muse to remember your preferences so you don't have to reintroduce yourself in every chat, plus a limited-time discount."
+ },
+ "https://news.google.com/rss/articles/CBMifkFVX3lxTE44ZEVQRzZmQ29INTlmVlZTVVJ2a2VPMWM4aGN0eEVHUXhHRm1YX0pxQ2czdDhZa1cxYkJDRW9QTVk5RVZHT3FMLXpXR01sNDV3SjcxdTdRcE1Rc2xwZlkwUzRRQWdUX1l1djNLbXQ5MU1vbGliWkdsX3RWZ1pBdw?oc=5": {
+  "zh_title": "Meta 拒绝 FCA 对 Muse 智能体的测试，英国监管缺口扩大",
+  "zh_oneliner": "Meta 拒绝让英国金融监管机构测试 Muse 智能体，监管空白随之扩大。",
+  "en_oneliner": "Meta declined to let the UK financial regulator test its Muse agents, widening the regulatory gap.",
+  "en_title": "Meta Refuses FCA Testing of Muse Agents as UK Regulatory Gap Widens"
  }
 }
