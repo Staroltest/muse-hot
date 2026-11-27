@@ -9863,5 +9863,22 @@
   "zh_title": "当 Meta 的 Muse AI 替人购物时，哪些商家能入选？ - Inside Retail Asia",
   "zh_oneliner": "Meta 的 Muse 开始替用户购物，零售商们正在争夺被它选中的机会。",
   "en_oneliner": "Meta's Muse has started shopping on users' behalf, and retailers are competing to be the ones it picks."
+ },
+ "https://medium.com/@shukun6668/i-gave-my-personal-ai-a-body-heres-what-i-learned-building-a-desk-companion-cad60943ec63?source=rss------muse-5": {
+  "zh_title": "我给个人 AI 造了个身体——打造桌面伙伴的收获",
+  "zh_oneliner": "作者把 Meta 的 Muse 接入 D-Robotics RDK X5 与双目摄像头，让 AI 从浏览器标签里走出来，变成桌上的实体伙伴。",
+  "en_oneliner": "The author connected Meta's Muse to a D-Robotics RDK X5 and a stereo camera, bringing AI out of the browser tab and onto the desk as a physical companion."
+ },
+ "https://zenn.dev/satofun/articles/5a380c1566deda": {
+  "zh_title": "用 Muse × PixAI API 验证角色一致性：参考图与 LoRA 生成控制",
+  "zh_oneliner": "作者用 Muse 结合 PixAI API 与角色专属 LoRA，尝试在变换姿势、服装与画风时保持原创角色的一致性，并记录了实际生成效果与消耗的点数。",
+  "en_oneliner": "The author combined Muse with the PixAI API and a character-specific LoRA to test whether an original character stays consistent across poses, outfits, and art styles, recording actual results and credits spent.",
+  "en_title": "Testing Character Consistency with Muse × PixAI API: Reference Images and LoRA-Based Generation Control"
+ },
+ "https://zenn.dev/mar_kun/books/muse-personal-agent-guide-jp": {
+  "zh_title": "Muse 入门——与专属 AI 智能体共同生活的实践指南",
+  "zh_oneliner": "一本面向初学者的 Muse 日文实践指南，从上手到日常委托，覆盖调查、购物、旅行、成果物制作，以及连接器、设备联动与开发者用的 GitHub 集成和 Skill。",
+  "en_oneliner": "A beginner-friendly Japanese hands-on guide to Muse, from getting started to everyday delegation, covering research, shopping, travel, deliverable creation, connectors, device integration, and GitHub integration and Skills for developers.",
+  "en_title": "Getting Started with Muse: A Practical Guide to Living with Your Own AI Agent"
  }
 }
