@@ -10017,5 +10017,11 @@
   "zh_title": "Muse Ember 定价：指数 36，每任务 14 美分（OrcaRouter）",
   "zh_oneliner": "OrcaRouter 公布了 Muse Ember 的定价数据：指数为 36，每项任务约 14 美分。",
   "en_oneliner": "OrcaRouter published Muse Ember pricing data: 36 on the index, at about 14 cents per task."
+ },
+ "https://qiita.com/y_n4124/items/a35ae0c883a1627fb974": {
+  "zh_title": "【Muse 用法详解·实务篇 D24】股票候选筛选只做到「提供信息」为止｜向 Muse 要 10 只不足一手的股票候选时应划清的界线",
+  "zh_oneliner": "作者用实例说明，让 Muse 列出不足一手的股票候选时，它只能提供信息参考，不能替人做投资判断，关键在于划清辅助与决策的界线。",
+  "en_oneliner": "Using a real example, the author shows that when Muse lists odd-lot stock candidates, it can only offer information for reference and cannot make investment decisions for you — the key is drawing the line between assistance and decision-making.",
+  "en_title": "Muse Usage Guide, Detailed & Practical Edition D24: Stock Screening Stops at 'Information Only' — Where to Draw the Line When Asking for 10 Odd-Lot Stock Candidates"
  }
 }
