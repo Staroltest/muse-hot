@@ -9991,5 +9991,31 @@
   "zh_title": "Muse AI 正接受调查——意味着什么，以及现在要做的 3 项检查",
   "zh_oneliner": "视频梳理了针对 Muse AI 的调查进展，并给出用户当下可以自查的三件事。",
   "en_oneliner": "The video walks through the investigation into Muse AI and offers three checks users can do right now."
+ },
+ "https://news.google.com/rss/articles/CBMimAFBVV95cUxQeF9xSXBYQmFZNWdXUkVHWERFMW0yM0s0alhGdTJQWnR2VUVPRk1WdVBoTzc2Y3haaG9LQXA2dzBSR3dXeHoyTnNiTEhkNl84bWFoQ1RvUFpfTnlpMF9mV0RYTk5EMGRsNVNOdXN0Z1h3SlVTOVV3SVF3N0tLYWQwdkJxMmZPd0tJM2ZLZ0xnTHJfMUJSOU1IdA?oc=5": {
+  "zh_title": "亚马逊两个月前封禁 Meta 的 Muse，如今正谈判放行购物功能，沃尔玛已先行一步",
+  "zh_oneliner": "亚马逊曾在两个月前封禁 Muse，如今正与 Meta 谈判允许其代为购物，而沃尔玛已经率先放行。",
+  "en_oneliner": "Amazon blocked Muse two months ago and is now in talks to let it shop on behalf of users, while Walmart has already allowed it."
+ },
+ "https://qiita.com/y_n4124/items/c6a1e7580e1ef883006a": {
+  "zh_title": "【Muse 用法详解_JARVIS 开发篇_D48】摄像头画面为何被搁置：API 调研与 go2rtc 桥接的调研及搁置判断",
+  "zh_oneliner": "作者在用 Muse 开发 JARVIS 的第 48 天，调查了摄像头画面接入的 API 与 go2rtc 桥接方案，并说明了暂时搁置的判断依据。",
+  "en_oneliner": "On day 48 of building JARVIS with Muse, the author investigates camera-feed APIs and a go2rtc bridge, and explains why the feature is on hold for now.",
+  "en_title": "Muse How-To, Detailed Edition: JARVIS Development, Day 48 — Why the Camera Feed Is on Hold: API Research and go2rtc Bridge Research and the Decision to Hold"
+ },
+ "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPVmFvTDgxZUo3ZHA2R3JlM0ptSTc0TVhIR0MzbGMzaTJRNHd1VmpkRjdaT2dMWnU5Mmt1LUNxSW14clYwOXdUc1BacmVKempuclBxZUlCTmdfTF9LbWI0VEZ1Z1RIRE44Ujk1dnBIZFZ1OXJ6OW10UmZHS3kyVGo3dDd2OHVRelNod2otTVpjWXpZWTcxOXFoZHpvOEhOUW9LVjNKRHRjM3ItR0w4VldzaF8wb1ZYZklhaXgyOTdlZ2RWVVJzSXk0b1RKYkFodmY2NExuZTBETXhzMms?oc=5": {
+  "zh_title": "Meta Muse 合作是 Sainsbury's 的重要一步，该零售商正探索智能体 AI 如何改善客户体验",
+  "zh_oneliner": "英国连锁超市 Sainsbury's 正探索如何用 Muse 这类智能体 AI 改善顾客体验，此举被视为其数字化转型的重要一步。",
+  "en_oneliner": "UK grocer Sainsbury's is exploring how agentic AI like Muse can improve the customer experience, a move seen as a major step in its digital transformation."
+ },
+ "https://www.youtube.com/watch?v=dBCoiY_DizI": {
+  "zh_title": "本周 Muse AI：Muse 正接受调查，外加一个触及“保险库”的网页",
+  "zh_oneliner": "本期视频盘点 Muse 本周动态，包括其正面临调查的消息，以及一个据称触及了 Muse 内部“保险库”的网页。",
+  "en_oneliner": "This week's video rounds up Muse news, including an investigation into the assistant and a webpage said to have reached its internal \"vault\"."
+ },
+ "https://news.google.com/rss/articles/CBMickFVX3lxTE05TUN3UjlwdW1rNmdFZk5zc3FBbGczTTRhenVRV0VLSlF2R054ek1RcFROeGw4c2JVQTJWR1U2aVV2dUR3NzZhQjJaOS1POGM3UmRkbm92a1RCTThNUlhHYW1wNUhSR28yeG9sTFJWZWY1QQ?oc=5": {
+  "zh_title": "Muse Ember 定价：指数 36，每任务 14 美分（OrcaRouter）",
+  "zh_oneliner": "OrcaRouter 公布了 Muse Ember 的定价数据：指数为 36，每项任务约 14 美分。",
+  "en_oneliner": "OrcaRouter published Muse Ember pricing data: 36 on the index, at about 14 cents per task."
  }
 }
