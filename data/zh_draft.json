@@ -9901,5 +9901,11 @@
   "zh_title": "Meta Muse 广告转化：被报道的 Instagram 链接 - NeoTeo",
   "zh_oneliner": "这篇报道追踪了与 Meta Muse 广告转化相关的 Instagram 链接，梳理了它被提及的来龙去脉。",
   "en_oneliner": "This report traces the Instagram link cited in connection with Meta Muse ad conversions and how it came to be mentioned."
+ },
+ "https://zenn.dev/ocha50107/articles/56b70a8ff61540": {
+  "zh_title": "「没用过的人的档案也会每小时生成」是真的吗｜核心内容已在官方帮助中得到证实",
+  "zh_oneliner": "该文核查 WIRED 关于 Muse 会为未使用者也每小时生成详细档案的说法，对照官方帮助文档验证其核心是否属实。",
+  "en_oneliner": "This article fact-checks WIRED's claim that Muse builds detailed profiles even for people who never used it, verifying its core against official help documentation.",
+  "en_title": "Is It True That Profiles Are Created Hourly Even for People Who Don't Use It? The Core Is Confirmed in Official Help"
  }
 }
