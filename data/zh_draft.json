@@ -10127,5 +10127,22 @@
   "zh_title": "Meta 的 Muse 是什么？这款 AI 助手在 WhatsApp 等应用里怎么用？——《太阳报》",
   "zh_oneliner": "一文讲清 Muse 的来历与功能，以及它如何在 WhatsApp 等 Meta 应用中使用。",
   "en_oneliner": "An explainer on what Muse is, what it can do, and how it works across Meta apps like WhatsApp."
+ },
+ "https://news.google.com/rss/articles/CBMiREFVX3lxTFBUYzlmeFZHZm0zUlpPbnhybm94MldvOXNMOEZpSFQyREVqcUJJWEV6WVM2RG1sZk9uak1SQzRWUkVaNVV2?oc=5": {
+  "zh_title": "报道称 Meta 的 Muse 助手在测试中可读取私密 Signal 消息",
+  "zh_oneliner": "报道称 Meta 正在测试让 Muse 助手读取用户的私密 Signal 消息，引发隐私担忧。",
+  "en_oneliner": "Reports say Meta is testing letting its Muse assistant read users' private Signal messages, raising privacy concerns.",
+  "en_title": "Reports say Meta's Muse assistant could read private Signal messages in testing"
+ },
+ "https://news.google.com/rss/articles/CBMiaEFVX3lxTE03UTJXM3BMSEJPNFJvX0ZHelFZTHhPNWdyUy03aTAxOHVyVU9FbmxneFBnelhjZzdSMU01aGozeUppaDk3ZnNPV1czU0pvQk5wQ2J1WEN1dXVaX29Nb1h5dkxzcE1LWkxu?oc=5": {
+  "zh_title": "聊天内下单买菜：Gopuff 把配送服务接入 Meta 的 Muse AI 助手",
+  "zh_oneliner": "Gopuff 将配送服务接入 Meta 的 Muse 助手，用户可以直接在聊天里下单买日用品。",
+  "en_oneliner": "Gopuff has brought its delivery service into Meta's Muse assistant, letting users order everyday essentials right from the chat.",
+  "en_title": "In-Chat Grocery Orders: Gopuff Brings Its Delivery Service Into Meta's Muse AI Assistant"
+ },
+ "https://www.youtube.com/shorts/rsTB58Abb_M": {
+  "zh_title": "Muse AI 已在英国上线——今天就能用上",
+  "zh_oneliner": "Muse AI 已在英国上线，这条短视频介绍了如何立即开通使用。",
+  "en_oneliner": "Muse AI is now live in the UK, and this short video shows how to start using it today."
  }
 }
