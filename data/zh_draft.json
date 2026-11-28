@@ -10214,5 +10214,11 @@
   "zh_oneliner": "沃尔玛的 Agent Gateway 正式上线，Muse 率先在黑五期间替顾客完成购物。",
   "en_oneliner": "Walmart's Agent Gateway is live, with Muse taking the lead in shopping for customers during Black Friday.",
   "en_title": "Walmart's Agent Gateway Goes Live, with Muse Shopping for Customers on Black Friday"
+ },
+ "https://qiita.com/hisashi-ito/items/9d63d07f19134c0c2d86": {
+  "zh_title": "能从声音推断年龄吗？用 Common Voice 日语版做年代分类的实验结果",
+  "zh_oneliner": "作者与 Muse 合作，用 Common Voice 日语语音数据做实验，测试仅凭声音能把说话者分到哪个年龄段。",
+  "en_oneliner": "The author teamed up with Muse to test how well speakers can be sorted into age groups from voice alone, using Japanese speech data from Common Voice.",
+  "en_title": "Can Age Be Estimated from Voice? Age-Group Classification with the Japanese Common Voice Dataset"
  }
 }
