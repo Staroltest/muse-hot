@@ -10246,5 +10246,22 @@
   "zh_title": "我用 Meta 的 Muse 完成了黑色星期五购物，结果如何",
   "zh_oneliner": "作者让 Muse 负责黑色星期五的购物，实测它在选品和下单上的表现究竟如何。",
   "en_oneliner": "The author let Muse handle Black Friday shopping and tested how well it actually performed at picking products and placing orders."
+ },
+ "https://www.youtube.com/watch?v=BvGf85P6OWQ": {
+  "zh_title": "什么是 Muse AI 令牌？哪些操作在消耗你的每周额度——以及如何让免费额度更持久",
+  "zh_oneliner": "这期视频讲清了 Muse 的令牌与每周额度是怎么消耗的，并分享让免费额度用得更久的办法。",
+  "en_oneliner": "This video explains how Muse tokens and the weekly allowance get used up, and shares ways to make the free allowance last longer."
+ },
+ "https://zenn.dev/optimisuke/articles/muse-3dprint-makerworld": {
+  "zh_title": "把建模到 MakerWorld 注册全交给 AI 智能体，用手机发起 3D 打印",
+  "zh_oneliner": "作者把 3D 建模、上传 MakerWorld 注册等步骤都交给 AI 智能体处理，最后直接用手机完成 3D 打印。",
+  "en_oneliner": "The author hands 3D modeling and MakerWorld registration over to an AI agent, then completes the 3D print right from a phone.",
+  "en_title": "Handing everything from modeling to MakerWorld registration to an AI agent, and 3D printing from a phone"
+ },
+ "https://zenn.dev/ai_nichijou0/articles/01310137b85700": {
+  "zh_title": "交给 Muse 的事第二天早上就不见了，原来是因为没有留下记录",
+  "zh_oneliner": "作者发现交给 Muse 的任务隔天就消失不见，原因是没有把过程记录下来，并分享了避免重蹈覆辙的做法。",
+  "en_oneliner": "The author found tasks given to Muse had vanished by the next morning because nothing was recorded, and shares how to avoid losing them again.",
+  "en_title": "What I asked Muse to do was gone by the next morning — because nothing had been recorded"
  }
 }
