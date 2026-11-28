@@ -10236,5 +10236,10 @@
   "zh_title": "ESP32：从 Gadget API 读取已配对的头像（#521）",
   "zh_oneliner": "Muse Gadget SDK 新增 ESP32 支持，可从 Gadget API 读取已配对的头像。",
   "en_oneliner": "The Muse Gadget SDK adds ESP32 support to read the paired avatar from the Gadget API."
+ },
+ "https://news.google.com/rss/articles/CBMijAFBVV95cUxQa2VGN29WcEJqVVoweXpQbDd2cWpaMUM0NnFzcjlNYmdCSHVFQ3E2Qmk3czd1VmRRUFpZTVhrMFl5SkV1UFp2TnNvSVFoUkJ0RHRrOXZJRzVTS2toMl9aUGdJV1MzNUJ5WWlTNklrdVlHcWJVTWRYbjRxS3lIMVhITXpfV1ljV3RxLVdWNA?oc=5": {
+  "zh_title": "Muse：你的个人 AI 助手",
+  "zh_oneliner": "《The Week》介绍了 Muse 这位个人 AI 助手，带读者了解它能如何协助日常工作与生活。",
+  "en_oneliner": "The Week introduces Muse, a personal AI assistant, and shows how it can help with everyday work and life."
  }
 }
