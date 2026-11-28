@@ -10170,5 +10170,11 @@
   "zh_title": "英国监管机构警告：AI 助手须让用户掌控数据访问与自主权，Meta Muse 上线之际",
   "zh_oneliner": "英国竞争与市场管理局提醒，AI 助手必须让用户自主决定它能访问哪些数据、做哪些事。",
   "en_oneliner": "The UK competition regulator says AI agents must let users control what data they can access and what they can do."
+ },
+ "https://zenn.dev/userisdev/articles/qiita-posting-with-muse": {
+  "zh_title": "用 Muse 向 Qiita 发帖",
+  "zh_oneliner": "作者把 Muse 接入 Qiita 官方 API，让智能体从撰写到投稿一手包办，本文就是它自己发出来的。",
+  "en_oneliner": "The author connected Muse to Qiita's official API so the agent handles everything from drafting to posting — this very article was published by it.",
+  "en_title": "Posting to Qiita from Muse"
  }
 }
