@@ -10160,5 +10160,15 @@
   "zh_title": "亚马逊与 Meta 洽谈让 Muse 接入亚马逊商店",
   "zh_oneliner": "亚马逊与 Meta 正在商谈，让 Muse 能够直接访问亚马逊商店。",
   "en_oneliner": "Amazon and Meta are in talks about giving Muse access to Amazon's store."
+ },
+ "https://news.google.com/rss/articles/CBMic0FVX3lxTE9sbXhNU1lROXJfQnpIbWdQLXJHQ2o4QWJZajlwaVV1MGF2aGxLMUczalZGRDBRYjNPYzFuNFM0WkJRemFoV2dVdDhZWE8yWXg0blhzWkpDclpCQk4tSkZSbmJPalZOUk0wejJTOTFYdzdtbzg?oc=5": {
+  "zh_title": "Meta 的 Muse 遇阻：零售商抵制 AI 购物助手",
+  "zh_oneliner": "零售商对 AI 购物助手说不，Meta 的 Muse 推广撞上了阻力。",
+  "en_oneliner": "Retailers are pushing back against AI shopping agents, slowing Meta's Muse rollout."
+ },
+ "https://www.medianama.com/2026/11/223-uk-cma-ai-agent-user-control-meta-muse-launch": {
+  "zh_title": "英国监管机构警告：AI 助手须让用户掌控数据访问与自主权，Meta Muse 上线之际",
+  "zh_oneliner": "英国竞争与市场管理局提醒，AI 助手必须让用户自主决定它能访问哪些数据、做哪些事。",
+  "en_oneliner": "The UK competition regulator says AI agents must let users control what data they can access and what they can do."
  }
 }
