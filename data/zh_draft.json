@@ -10176,5 +10176,15 @@
   "zh_oneliner": "作者把 Muse 接入 Qiita 官方 API，让智能体从撰写到投稿一手包办，本文就是它自己发出来的。",
   "en_oneliner": "The author connected Muse to Qiita's official API so the agent handles everything from drafting to posting — this very article was published by it.",
   "en_title": "Posting to Qiita from Muse"
+ },
+ "https://news.google.com/rss/articles/CBMidkFVX3lxTE44cWdlXzM3dnJjOFIxdWVUOFJDdVdySHJrMjRFUVNvYUc4YmFsdGVlZmFBU0hXdm9pWDRqQ1VjTlFJMzEyeGd0LTctUTVEcjZyM1p4YVU2Z09WV1loSVhWWVo0dm1Wc3dVQkE4MzBGdHhseTJIb3c?oc=5": {
+  "zh_title": "Meta 拒绝让 Muse 智能体接受英国 FCA 测试，英国监管缺口扩大",
+  "zh_oneliner": "Meta 拒绝让其 Muse 智能体接受英国金融监管机构的测试，凸显 AI 智能体监管的空白正在扩大。",
+  "en_oneliner": "Meta declined to let its Muse agent undergo testing by the UK financial regulator, highlighting a widening gap in AI agent oversight."
+ },
+ "https://news.google.com/rss/articles/CBMilAFBVV95cUxPXzZkSTlhRVY5cG9LVkw3dkpkRVhrVzY1SlNQcmRSZzg4Q3NHX0sxYzd5V1VWQXVuMDI4OWJKTmdqNHdyRnBXbnkwUktzeU5NTENCdmFlRlBzRmxQRUg1ZUZqTzhVSjhuUU4wWGpCM2QyVEJKRUZmajN5MFduUUgwN0pOQ3NkbEhwLTJ3VTN0SF9mODJP?oc=5": {
+  "zh_title": "亚马逊或终于允许 Meta 的 Muse AI 智能体在其商城购物，此前已拦截结账两个月",
+  "zh_oneliner": "在拦截 Muse 智能体结账两个月后，亚马逊可能终于放行，让它可以直接在亚马逊商城里购物。",
+  "en_oneliner": "After blocking Muse agent checkouts for two months, Amazon may finally let it shop directly on its store."
  }
 }
