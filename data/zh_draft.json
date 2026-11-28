@@ -10220,5 +10220,10 @@
   "zh_oneliner": "作者与 Muse 合作，用 Common Voice 日语语音数据做实验，测试仅凭声音能把说话者分到哪个年龄段。",
   "en_oneliner": "The author teamed up with Muse to test how well speakers can be sorted into age groups from voice alone, using Japanese speech data from Common Voice.",
   "en_title": "Can Age Be Estimated from Voice? Age-Group Classification with the Japanese Common Voice Dataset"
+ },
+ "https://news.google.com/rss/articles/CBMioAFBVV95cUxQczRaMldKMC1RdDJ3eG4wbmNCS1Y0ME1GcDQzY0xTQjE4X0dSeFVtaC1ZblYwNGVyRkJlZlg0THBmTHJ3WV9fd3VfTkJwQXpZR0xCakczZ01vUmxjZUxubGZpdUNaTktzLTFoTmExT0lZLTVNbTBMN1JNRUVacTR2SWd0ZnRxWnhZZ3NuY0JYU28zbkZOUk5pWjM5LWdqcGVa?oc=5": {
+  "zh_title": "对 Meta Muse 的延伸思考：这款智能体 AI 只为助你一臂之力",
+  "zh_oneliner": "一篇长文细谈 Meta Muse 作为智能体 AI 的定位与体验，认为它的存在就是为了帮用户把事情做好。",
+  "en_oneliner": "A long-form piece reflects on Meta Muse's positioning and experience as an agentic AI, arguing that it exists simply to help users get things done."
  }
 }
