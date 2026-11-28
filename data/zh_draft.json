@@ -10225,5 +10225,11 @@
   "zh_title": "对 Meta Muse 的延伸思考：这款智能体 AI 只为助你一臂之力",
   "zh_oneliner": "一篇长文细谈 Meta Muse 作为智能体 AI 的定位与体验，认为它的存在就是为了帮用户把事情做好。",
   "en_oneliner": "A long-form piece reflects on Meta Muse's positioning and experience as an agentic AI, arguing that it exists simply to help users get things done."
+ },
+ "https://qiita.com/gimn7tztc/items/0ca7fef39811a01f78f6": {
+  "zh_title": "把 5 项工作交给 AI 智能体 Muse 后明白的事：权限设计与人类需要确认的环节",
+  "zh_oneliner": "作者把 5 项工作交给 Muse 后总结：权限要先设计好，哪些环节必须由人把关。",
+  "en_oneliner": "After delegating five tasks to Muse, the author shares what they learned about designing permissions and which steps still need a human check.",
+  "en_title": "What I Learned Delegating Five Tasks to the Muse AI Agent: Permission Design and What Humans Should Verify"
  }
 }
