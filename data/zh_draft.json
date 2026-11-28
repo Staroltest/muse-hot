@@ -10202,5 +10202,17 @@
   "zh_title": "沃尔玛允许 Meta 的 Muse AI 助手在不看到用户银行卡信息的情况下购买黑五特价商品",
   "zh_oneliner": "沃尔玛通过智能体网关让 Muse 代买黑五特价商品，全程不接触用户的银行卡信息。",
   "en_oneliner": "Walmart lets Muse shop Black Friday deals through its agent gateway without ever seeing the shopper's card details."
+ },
+ "https://qiita.com/k_ent_a/items/c7c8da96f441bdf20405": {
+  "zh_title": "非工程师把工作交给 AI 智能体，将 Instagram 上 241 条保存内容整理成 Google 我的地图",
+  "zh_oneliner": "一位非工程师让 AI 智能体接手整理工作，把 Instagram 里 241 条收藏转成一张 Google 我的地图。",
+  "en_oneliner": "A non-engineer handed the organizing work to an AI agent, turning 241 saved Instagram posts into a Google My Map.",
+  "en_title": "A Non-Engineer Had an AI Agent Turn 241 Saved Instagram Posts into a Google My Map"
+ },
+ "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBuWXowd2lvSmxVZGZkbENZdEZtRHVJSlljdWJ3MjNvQ1JQVWQ2NlRZQ2l4S2RoRlhZcDRNbFRtWW9iWF9zZGluQUd0Q1dmam5kME8ybHBn?oc=5": {
+  "zh_title": "沃尔玛 Agent Gateway 上线，Muse 率先代客黑五购物",
+  "zh_oneliner": "沃尔玛的 Agent Gateway 正式上线，Muse 率先在黑五期间替顾客完成购物。",
+  "en_oneliner": "Walmart's Agent Gateway is live, with Muse taking the lead in shopping for customers during Black Friday.",
+  "en_title": "Walmart's Agent Gateway Goes Live, with Muse Shopping for Customers on Black Friday"
  }
 }
