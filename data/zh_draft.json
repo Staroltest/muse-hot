@@ -10231,5 +10231,10 @@
   "zh_oneliner": "作者把 5 项工作交给 Muse 后总结：权限要先设计好，哪些环节必须由人把关。",
   "en_oneliner": "After delegating five tasks to Muse, the author shares what they learned about designing permissions and which steps still need a human check.",
   "en_title": "What I Learned Delegating Five Tasks to the Muse AI Agent: Permission Design and What Humans Should Verify"
+ },
+ "https://github.com/facebookincubator/muse-gadget-sdk/commit/440e06ff7122a902e552e0590cbfcf093881b34c": {
+  "zh_title": "ESP32：从 Gadget API 读取已配对的头像（#521）",
+  "zh_oneliner": "Muse Gadget SDK 新增 ESP32 支持，可从 Gadget API 读取已配对的头像。",
+  "en_oneliner": "The Muse Gadget SDK adds ESP32 support to read the paired avatar from the Gadget API."
  }
 }
